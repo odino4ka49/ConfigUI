@@ -1,0 +1,29 @@
+svg {
+    margin-top: 32px;
+    border: 1px solid #aaa;
+    background-color: #45B7FF;
+}
+.person rect {
+    fill: #fff;
+    stroke: #072356;
+    stroke-width: 1px;
+}
+.details rect {
+    fill: #fff;
+    stroke: #072356;
+    stroke-width: 1px;
+}
+.person {
+    font: 14px sans-serif;
+    cursor: pointer;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+.attributes{
+    /*overflow-y: scroll;
+    overflow-x: hidden;
+    --webkit-transform: translate(50px,25px);*/
+}

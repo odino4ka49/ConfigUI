@@ -1,0 +1,4496 @@
+[
+  {
+    "Class": "Module Type",
+    "Name": "ИВИ-8",
+    "System": "CHAN",
+    "System_ID": 12,
+    "Dispatcher": false,
+    "Comment": "Измеритель интервалов времени: 0 - 6.7 мс, дискретность .1 мкс",
+    "Channels number": 8,
+    "Width": 1,
+    "+6 V current": 0.6,
+    "-6 V current": 0,
+    "+24 V current": 0,
+    "-24 V current": 0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "ИВИ-8121",
+    "System": "CHAN",
+    "System_ID": 28,
+    "Dispatcher": false,
+    "Comment": "Измеритель интервалов времени: 0 - 2.4 мкс, дискретность .6 нс",
+    "Channels number": 8,
+    "Width": 1,
+    "+6 V current": 0.6,
+    "-6 V current": 0.8,
+    "+24 V current": 0.04,
+    "-24 V current": 0.11
+  },
+  {
+    "Class": "Module Type",
+    "Name": "СДС",
+    "System": "CHAN",
+    "System_ID": 23,
+    "Dispatcher": false,
+    "Comment": "Сборщик двоичных состояний",
+    "Channels number": 16,
+    "Width": 1,
+    "+6 V current": 1.1,
+    "-6 V current": 0,
+    "+24 V current": 0,
+    "-24 V current": 0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "Б0634",
+    "System": "CHAN",
+    "System_ID": 43,
+    "Dispatcher": true,
+    "Comment": "Диспетчер последовательной связи",
+    "Channels number": 4,
+    "Width": 2,
+    "+6 V current": 3.0,
+    "-6 V current": 0,
+    "+24 V current": 0.1,
+    "-24 V current": 0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "DS-24",
+    "System": "CHAN",
+    "System_ID": 35,
+    "Dispatcher": true,
+    "Comment": "Диспетчер периферийных КАМАК-крейтов",
+    "Channels number": 4,
+    "Width": 2,
+    "+6 V current": 1.7,
+    "-6 V current": 0.0,
+    "+24 V current": 0.15,
+    "-24 V current": 0.15
+  },
+  {
+    "Class": "Module Type",
+    "Name": "FP",
+    "System": "CHAN",
+    "System_ID": 40,
+    "Dispatcher": false,
+    "Comment": "Генератор выходных импульсов по команде с магистрали: +24 В, 0.4 мкс",
+    "Channels number": 8,
+    "Width": 1,
+    "+6 V current": 1.0,
+    "-6 V current": 0.0,
+    "+24 V current": 0.01,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "РП-16",
+    "System": "CHAN",
+    "System_ID": 38,
+    "Dispatcher": false,
+    "Comment": "Регистр (генератор) прерываний от входных импульсов",
+    "Channels number": 16,
+    "Width": 1,
+    "+6 V current": 0.8,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "ETHERNET",
+    "System": "CHAN",
+    "System_ID": 31,
+    "Dispatcher": true,
+    "Comment": "Ethernet adapter",
+    "Channels number": null,
+    "Width": 2,
+    "+6 V current": 1.0,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "ОЗУ-256",
+    "System": "CHAN",
+    "System_ID": 37,
+    "Dispatcher": false,
+    "Comment": "Электронный диск одренка",
+    "Channels number": null,
+    "Width": 1,
+    "+6 V current": 2.5,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "Одренок",
+    "System": "CHAN",
+    "System_ID": 22,
+    "Dispatcher": false,
+    "Comment": "Контроллер КАМАК-крейта Одренок",
+    "Channels number": null,
+    "Width": 2,
+    "+6 V current": 3.5,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "CC-24",
+    "System": "CHAN",
+    "System_ID": 36,
+    "Dispatcher": false,
+    "Comment": "Контроллер периферийного КАМАК-крейта",
+    "Channels number": null,
+    "Width": 2,
+    "+6 V current": 1.4,
+    "-6 V current": 0.0,
+    "+24 V current": 0.04,
+    "-24 V current": 0.04
+  },
+  {
+    "Class": "Module Type",
+    "Name": "УР-16",
+    "System": "CHAN",
+    "System_ID": 3,
+    "Dispatcher": false,
+    "Comment": "Релейный управляющий регистр",
+    "Channels number": 16,
+    "Width": 1,
+    "+6 V current": 1.2,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "ПКС-8",
+    "System": "CHAN",
+    "System_ID": 7,
+    "Dispatcher": false,
+    "Comment": "Преобразователь код-скважность, интервал скважности 6.7 мс, дискретность 0.1 мкс",
+    "Channels number": 8,
+    "Width": 2,
+    "+6 V current": 2.0,
+    "-6 V current": 0.0,
+    "+24 V current": 0.01,
+    "-24 V current": 0.01
+  },
+  {
+    "Class": "Module Type",
+    "Name": "ГВИ-8М",
+    "System": "CHAN",
+    "System_ID": 1,
+    "Dispatcher": false,
+    "Comment": "Генератор задержанных импульсов, интервал задержки 6.7 мс, дискретность 0.1 мкс",
+    "Channels number": 8,
+    "Width": 2,
+    "+6 V current": 1.9,
+    "-6 V current": 0.0,
+    "+24 V current": 0.003,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "КАС-128",
+    "System": "CHAN",
+    "System_ID": 13,
+    "Dispatcher": false,
+    "Comment": "Коммутатор аналоговых сигналов транзисторный",
+    "Channels number": 128,
+    "Width": 2,
+    "+6 V current": 0.5,
+    "-6 V current": 0.0,
+    "+24 V current": 0.8,
+    "-24 V current": 0.8
+  },
+  {
+    "Class": "Module Type",
+    "Name": "АЦП-20",
+    "System": "CHAN",
+    "System_ID": 8,
+    "Dispatcher": false,
+    "Comment": "Интегрирующий АЦП 20 бит",
+    "Channels number": 256,
+    "Width": 1,
+    "+6 V current": 1.5,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "БР",
+    "System": "CHAN",
+    "System_ID": 17,
+    "Dispatcher": false,
+    "Comment": "Преобразователь импульсов запуска для БИИП",
+    "Channels number": 6,
+    "Width": 1,
+    "+6 V current": 0.5,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "БИИП-4",
+    "System": "CHAN",
+    "System_ID": 9,
+    "Dispatcher": false,
+    "Comment": "Блок измерения импульсных параметров",
+    "Channels number": 4,
+    "Width": 2,
+    "+6 V current": 0.8,
+    "-6 V current": 0.01,
+    "+24 V current": 0.14,
+    "-24 V current": 0.18
+  },
+  {
+    "Class": "Module Type",
+    "Name": "БИИП-4М",
+    "System": "CHAN",
+    "System_ID": 27,
+    "Dispatcher": false,
+    "Comment": "Блок измерения импульсных параметров",
+    "Channels number": 4,
+    "Width": 1,
+    "+6 V current": 0.7,
+    "-6 V current": 0.32,
+    "+24 V current": 0.15,
+    "-24 V current": 0.16
+  },
+  {
+    "Class": "Module Type",
+    "Name": "КВЧ-8-1",
+    "System": "CHAN",
+    "System_ID": 14,
+    "Dispatcher": false,
+    "Comment": "ВЧ коммутатор: 8 входов, 1 выход",
+    "Channels number": 8,
+    "Width": 1,
+    "+6 V current": 0.5,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "ADC-101S",
+    "System": "CHAN",
+    "System_ID": 16,
+    "Dispatcher": false,
+    "Comment": "4-х канальный осциллограф",
+    "Channels number": 4,
+    "Width": 1,
+    "+6 V current": 1.1,
+    "-6 V current": 0.11,
+    "+24 V current": 0.11,
+    "-24 V current": 0.08
+  },
+  {
+    "Class": "Module Type",
+    "Name": "GZI",
+    "System": "CHAN",
+    "System_ID": 18,
+    "Dispatcher": false,
+    "Comment": "генератор задержек КАМАК, дискретность 0.2 нс",
+    "Channels number": 2,
+    "Width": 1,
+    "+6 V current": 0.5,
+    "-6 V current": 1.4,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "UR GZI",
+    "System": "CHAN",
+    "System_ID": 19,
+    "Dispatcher": false,
+    "Comment": "разрешение выходного импульса генератора задержек GZI",
+    "Channels number": 2,
+    "Width": 1,
+    "+6 V current": 0.0,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "LZ.2",
+    "System": "CHAN",
+    "System_ID": 20,
+    "Dispatcher": false,
+    "Comment": " генератор задержек ГЗИ-8, величины задержек, дискретность 0.2 нс",
+    "Channels number": 8,
+    "Width": 1,
+    "+6 V current": 0.0,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module Type",
+    "Name": "UR LZ.2",
+    "System": "CHAN",
+    "System_ID": 21,
+    "Dispatcher": false,
+    "Comment": "разрешение выходных импульсов генератора задержек ГЗИ-8",
+    "Channels number": 8,
+    "Width": 1,
+    "+6 V current": 0.0,
+    "-6 V current": 0.0,
+    "+24 V current": 0.0,
+    "-24 V current": 0.0
+  },
+  {
+    "Class": "Module",
+    "Name": "CHAN",
+    "Module Type": "Одренок",
+    "System": "CHAN",
+    "Comment": "Одренок CHAN"
+  },
+  {
+    "Class": "Module",
+    "Name": "1IVI",
+    "Module Type": "ИВИ-8",
+    "System": "CHAN",
+    "Comment": "измерение времен появления синхроимпульсов в системе CHAN"
+  },
+  {
+    "Class": "Module",
+    "Name": "0SDS",
+    "Module Type": "СДС",
+    "System": "CHAN",
+    "Comment": "обслуживание кнопок на пульте 5, программа #SDSC "
+  },
+  {
+    "Class": "Module",
+    "Name": "11DC",
+    "Module Type": "Б0634",
+    "System": "CHAN",
+    "Comment": "подключение блока задержки ГЗИ-8 "
+  },
+  {
+    "Class": "Module",
+    "Name": "10DS",
+    "Module Type": "DS-24",
+    "System": "CHAN",
+    "Comment": "подключение переферийных крейтов CHAN: I1011, I1012, I1013, I1014"
+  },
+  {
+    "Class": "Module",
+    "Name": "11DS",
+    "Module Type": "DS-24",
+    "System": "CHAN",
+    "Comment": "подключение переферийных крейтов CHAN: I1015, I1016, I1017"
+  },
+  {
+    "Class": "Module",
+    "Name": "10FP",
+    "Module Type": "FP",
+    "System": "CHAN",
+    "Comment": "генератор пинтов CHAN"
+  },
+  {
+    "Class": "Module",
+    "Name": "11RP",
+    "Module Type": "РП-16",
+    "System": "CHAN",
+    "Comment": "регистр пинтов CHAN"
+  },
+  {
+    "Class": "Module",
+    "Name": "10ET",
+    "Module Type": "ETHERNET",
+    "System": "CHAN",
+    "Comment": "Ethernet-adapter CHAN"
+  },
+  {
+    "Class": "Module",
+    "Name": "11ZU",
+    "Module Type": "ОЗУ-256",
+    "System": "CHAN",
+    "Comment": "ОЗУ CHAN"
+  },
+  {
+    "Class": "Module",
+    "Name": "0CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1011"
+  },
+  {
+    "Class": "Module",
+    "Name": "1UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "3UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1PKS",
+    "Module Type": "ПКС-8",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2PKS",
+    "Module Type": "ПКС-8",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "0GV",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1GV",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2GV",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1012"
+  },
+  {
+    "Class": "Module",
+    "Name": "4UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "5UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "0KAS",
+    "Module Type": "КАС-128",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "0ACP",
+    "Module Type": "АЦП-20",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "3PKS",
+    "Module Type": "ПКС-8",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "4PKS",
+    "Module Type": "ПКС-8",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "3GV",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "4GV",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1013"
+  },
+  {
+    "Class": "Module",
+    "Name": "1BR",
+    "Module Type": "БР",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "0BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "3BP",
+    "Module Type": "БИИП-4М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "4BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "5BP",
+    "Module Type": "БИИП-4М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "3CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1014"
+  },
+  {
+    "Class": "Module",
+    "Name": "2BR",
+    "Module Type": "БР",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "6BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "7BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "8BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "9BP",
+    "Module Type": "БИИП-4М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "10BP",
+    "Module Type": "БИИП-4",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "11BP",
+    "Module Type": "БИИП-4М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1KAS",
+    "Module Type": "КАС-128",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1ACP",
+    "Module Type": "АЦП-20",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "4CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1015"
+  },
+  {
+    "Class": "Module",
+    "Name": "8UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "7GVI",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "6PKS",
+    "Module Type": "ПКС-8",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "0KVC",
+    "Module Type": "КВЧ-8-1",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "1KVC",
+    "Module Type": "КВЧ-8-1",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2KVC",
+    "Module Type": "КВЧ-8-1",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "3KVC",
+    "Module Type": "КВЧ-8-1",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "4KVC",
+    "Module Type": "КВЧ-8-1",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "ACPS",
+    "Module Type": "ADC-101S",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "5CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1016"
+  },
+  {
+    "Class": "Module",
+    "Name": "GZI1",
+    "Module Type": "GZI",
+    "System": "CHAN",
+    "Comment": "синхронизация X-удара и осциллографа"
+  },
+  {
+    "Class": "Module",
+    "Name": "URG1",
+    "Module Type": "UR GZI",
+    "System": "CHAN",
+    "Comment": "включение синхронизации X-удара и осциллографа (модуль GZI1, 17-й бит регистра)"
+  },
+  {
+    "Class": "Module",
+    "Name": "1SDS",
+    "Module Type": "СДС",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "GVIT",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": "синхронизация цикла, дискретность 6.4 мкс"
+  },
+  {
+    "Class": "Module",
+    "Name": "6UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": "управление синхронизацией"
+  },
+  {
+    "Class": "Module",
+    "Name": "6CC",
+    "Module Type": "CC-24",
+    "System": "CHAN",
+    "Comment": "контроллер крейта I1017"
+  },
+  {
+    "Class": "Module",
+    "Name": "2KAS",
+    "Module Type": "КАС-128",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2ACP",
+    "Module Type": "АЦП-20",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2IVS",
+    "Module Type": "ИВИ-8121",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "2SDS",
+    "Module Type": "СДС",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "7UR",
+    "Module Type": "УР-16",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "5GVI",
+    "Module Type": "ГВИ-8М",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "5PKS",
+    "Module Type": "ПКС-8",
+    "System": "CHAN",
+    "Comment": null
+  },
+  {
+    "Class": "Module",
+    "Name": "LZD",
+    "Module Type": "LZ.2",
+    "System": "CHAN",
+    "Comment": "Значения задержек каналов ГЗИ-8"
+  },
+  {
+    "Class": "Module",
+    "Name": "URLZ",
+    "Module Type": "UR LZ.2",
+    "System": "CHAN",
+    "Comment": "Включение выходных импульсов ГЗИ-8"
+  },
+
+  {
+    "Class": "CAMAC",
+    "Name": "I1000",
+    "System": "CHAN",
+    "Comment": "крейт с одренком CHAN",
+    "Controller": "CHAN",
+    "Dispatcher name": null,
+    "PINT": null,
+    "Address": null,
+    "Area": "Радио Пультовая",
+    "Rack/cabinet": "KC31",
+    "Rack level": 4,
+    "Modules": [
+      {
+        "Position": 3,
+        "Module": "1IVI"
+      },
+      {
+        "Position": 4,
+        "Module": "0SDS"
+      },
+      {
+        "Position": 6,
+        "Module": "11DC"
+      },
+      {
+        "Position": 9,
+        "Module": "10DS"
+      },
+      {
+        "Position": 11,
+        "Module": "11DS"
+      },
+      {
+        "Position": 15,
+        "Module": "10FP"
+      },
+      {
+        "Position": 16,
+        "Module": "11RP"
+      },
+      {
+        "Position": 20,
+        "Module": "10ET"
+      },
+      {
+        "Position": 21,
+        "Module": "11ZU"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1011",
+    "System": "CHAN",
+    "Comment": "Крейт с ГВИ и ПКС (основные магниты) ",
+    "Controller": "0CC",
+    "Dispatcher name": "10DS",
+    "PINT": 1,
+    "Address": "#220",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "KC1",
+    "Rack level": 1,
+    "Modules": [
+      {
+        "Position": 4,
+        "Module": "1UR"
+      },
+      {
+        "Position": 6,
+        "Module": "2UR"
+      },
+      {
+        "Position": 8,
+        "Module": "3UR"
+      },
+      {
+        "Position": 12,
+        "Module": "1PKS"
+      },
+      {
+        "Position": 14,
+        "Module": "2PKS"
+      },
+      {
+        "Position": 16,
+        "Module": "0GV"
+      },
+      {
+        "Position": 18,
+        "Module": "1GV"
+      },
+      {
+        "Position": 20,
+        "Module": "2GV"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1012",
+    "System": "CHAN",
+    "Comment": "Крейт с ГВИ, ПКС и АЦП-20 ",
+    "Controller": "1CC",
+    "Dispatcher name": "10DS",
+    "PINT": 2,
+    "Address": "#221",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "KC1",
+    "Rack level": 2,
+    "Modules": [
+      {
+        "Position": 3,
+        "Module": "4UR"
+      },
+      {
+        "Position": 5,
+        "Module": "5UR"
+      },
+      {
+        "Position": 8,
+        "Module": "0KAS"
+      },
+      {
+        "Position": 9,
+        "Module": "0ACP"
+      },
+      {
+        "Position": 12,
+        "Module": "3PKS"
+      },
+      {
+        "Position": 14,
+        "Module": "4PKS"
+      },
+      {
+        "Position": 16,
+        "Module": "3GV"
+      },
+      {
+        "Position": 18,
+        "Module": "4GV"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1013",
+    "System": "CHAN",
+    "Comment": "Крейт с БИИП ",
+    "Controller": "2CC",
+    "Dispatcher name": "10DS",
+    "PINT": 3,
+    "Address": "#222",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "KC1",
+    "Rack level": 3,
+    "Modules": [
+      {
+        "Position": 3,
+        "Module": "1BR"
+      },
+      {
+        "Position": 5,
+        "Module": "0BP"
+      },
+      {
+        "Position": 7,
+        "Module": "1BP"
+      },
+      {
+        "Position": 9,
+        "Module": "2BP"
+      },
+      {
+        "Position": 11,
+        "Module": "3BP"
+      },
+      {
+        "Position": 13,
+        "Module": "4BP"
+      },
+      {
+        "Position": 15,
+        "Module": "5BP"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1014",
+    "System": "CHAN",
+    "Comment": "Крейт с БИИП и АЦП-20",
+    "Controller": "3CC",
+    "Dispatcher name": "10DS",
+    "PINT": 4,
+    "Address": "#223",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "KC1",
+    "Rack level": 4,
+    "Modules": [
+      {
+        "Position": 3,
+        "Module": "2BR"
+      },
+      {
+        "Position": 5,
+        "Module": "6BP"
+      },
+      {
+        "Position": 7,
+        "Module": "7BP"
+      },
+      {
+        "Position": 9,
+        "Module": "8BP"
+      },
+      {
+        "Position": 11,
+        "Module": "9BP"
+      },
+      {
+        "Position": 13,
+        "Module": "10BP"
+      },
+      {
+        "Position": 15,
+        "Module": "11BP"
+      },
+      {
+        "Position": 17,
+        "Module": "1KAS"
+      },
+      {
+        "Position": 18,
+        "Module": "1ACP"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1015",
+    "System": "CHAN",
+    "Comment": "Крейт с КВЧ",
+    "Controller": "4CC",
+    "Dispatcher name": "11DS",
+    "PINT": 5,
+    "Address": "#260",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "KC1",
+    "Rack level": 5,
+    "Modules": [
+      {
+        "Position": 3,
+        "Module": "8UR"
+      },
+      {
+        "Position": 6,
+        "Module": "7GVI"
+      },
+      {
+        "Position": 8,
+        "Module": "6PKS"
+      },
+      {
+        "Position": 10,
+        "Module": "0KVC"
+      },
+      {
+        "Position": 12,
+        "Module": "1KVC"
+      },
+      {
+        "Position": 14,
+        "Module": "2KVC"
+      },
+      {
+        "Position": 16,
+        "Module": "3KVC"
+      },
+      {
+        "Position": 18,
+        "Module": "4KVC"
+      },
+      {
+        "Position": 20,
+        "Module": "ACPS"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1016",
+    "System": "CHAN",
+    "Comment": "Крейт с КВЧ",
+    "Controller": "5CC",
+    "Dispatcher name": "11DS",
+    "PINT": 6,
+    "Address": "#261",
+    "Area": "Радио Пультовая",
+    "Rack/cabinet": "KC31",
+    "Rack level": 3,
+    "Modules": [
+      {
+        "Position": 2,
+        "Module": "GZI1"
+      },
+      {
+        "Position": 2,
+        "Module": "URG1"
+      },
+      {
+        "Position": 4,
+        "Module": "1SDS"
+      },
+      {
+        "Position": 6,
+        "Module": "GVIT"
+      },
+      {
+        "Position": 11,
+        "Module": "6UR"
+      }
+    ]
+  },
+  {
+    "Class": "CAMAC",
+    "Name": "I1017",
+    "System": "CHAN",
+    "Comment": "Управление инфлекторами ВЭПП-4 и дефлектором ВЭПП-3",
+    "Controller": "6CC",
+    "Dispatcher name": "11DS",
+    "PINT": 7,
+    "Address": "#262",
+    "Area": "Комната T",
+    "Rack/cabinet": "KC1",
+    "Rack level": 5,
+    "Modules": [
+      {
+        "Position": 3,
+        "Module": "2ACP"
+      },
+      {
+        "Position": 5,
+        "Module": "2KAS"
+      },
+      {
+        "Position": 8,
+        "Module": "2IVS"
+      },
+      {
+        "Position": 12,
+        "Module": "2SDS"
+      },
+      {
+        "Position": 14,
+        "Module": "7UR"
+      },
+      {
+        "Position": 16,
+        "Module": "5GVI"
+      },
+      {
+        "Position": 18,
+        "Module": "5PKS"
+      }
+    ]
+  },
+
+  {
+    "Class": "DS-24",
+    "Name": "10DS",
+    "System": "CHAN",
+    "Comment": "диспетчер 10DS одренка CHAN, крейты I1011, I1012, I1013, I1014",
+    "Channels": [
+      {
+        "ID": 0,
+        "CAMAC": "I1011"
+      },
+      {
+        "ID": 1,
+        "CAMAC": "I1012"
+      },
+      {
+        "ID": 2,
+        "CAMAC": "I1013"
+      },
+      {
+        "ID": 3,
+        "CAMAC": "I1014"
+      }
+    ]
+  },
+  {
+    "Class": "DS-24",
+    "Name": "11DS",
+    "System": "CHAN",
+    "Comment": "диспетчер 10DS одренка CHAN, крейты I1011, I1012, I1013, I1014",
+    "Channels": [
+      {
+        "ID": 0,
+        "CAMAC": "I1015"
+      },
+      {
+        "ID": 1,
+        "CAMAC": "I1016"
+      },
+      {
+        "ID": 2,
+        "CAMAC": "I1017"
+      }
+    ]
+  },
+
+  {
+    "Class": "ACP-KAS",
+    "Name": "0ACP",
+    "System": "CHAN",
+    "Comment": "подключение КАС-128 к 0ACP",
+    "Channels": 64,
+    " Modules": [
+      {
+        "ID": 0,
+        "Module": "0KAS"
+      }
+    ]
+  },
+  {
+    "Class": " ACP-KAS",
+    "Name": "1ACP",
+    "System": "CHAN",
+    "Comment": "подключение КАС-128 к 1ACP",
+    "Channels": 64,
+    "Modules": [
+      {
+        "ID": 0,
+        "Module": "1KAS"
+      }
+    ]
+  },
+  {
+    "Class": " ACP-KAS",
+    "Name": "2ACP",
+    "System": "CHAN",
+    "Comment": "подключение КАС-128 к 2ACP",
+    "Channels": 64,
+    "Modules": [
+      {
+        "ID": 0,
+        "Module": "2KAS"
+      }
+    ]
+  },
+
+  {
+    "Class": "Serial",
+    "Name": "I100002",
+    "System": "CHAN",
+    "Comment": "Связь с блоком ГЗИ-8",
+    "Dispatcher name": "10DC",
+    "Address": "#02000*",
+    "Modules": [
+      {
+        "S6": 0,
+        "Module": "LZD"
+      },
+      {
+        "S6": 0,
+        "Module": "URLZ"
+      }
+    ]
+  },
+
+  {
+    "Class": "Б0634",
+    "Name": "10DС",
+    "System": "CHAN",
+    "Comment": "диспетчер 10DC (Б0634) одренка CHAN",
+    "Channels": [
+      {
+        "ID": 2,
+        "Serial": "I100002"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M1",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотный магнит-септум",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM1"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM1"
+      },
+      {
+        "OK": false,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M2",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотный магнит",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM2"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM2"
+      },
+      {
+        "OK": false,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N1",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector X",
+    "Comment": "нацеливающая катушка по X",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN1"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN1"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M3",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотный магнит",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM3"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM3"
+      },
+      {
+        "OK": true,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N2",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN2"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN2"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N3",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector X",
+    "Comment": "нацеливающая катушка по X",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN3"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN3"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N4",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN4"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN4"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N5",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector X",
+    "Comment": "нацеливающая катушка по X",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN5"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN5"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N6",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector X",
+    "Comment": "нацеливающая катушка по X",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN6"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN6"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M4",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотные магниты M4 и M5",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM4"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM4"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HL2"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HL5"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM5"
+      },
+      {
+        "OK": true,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N7",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN7"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN7"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N8",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector X",
+    "Comment": "нацеливающая катушка по X",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN8"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN8"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M6",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотный магнит",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM6"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM6"
+      },
+      {
+        "OK": true,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N9",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN9"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN9"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N10",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN10"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN10"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N11",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector X",
+    "Comment": "нацеливающая катушка по X",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN11"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN11"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M7",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотный магнит",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM7"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM7"
+      },
+      {
+        "OK": false,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "M8",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Magnet",
+    "Comment": "поворотныe магниты M8, M9 и линза L8 (e+) или M12, M13 и линза L11 (e-) ",
+    "Polarity": null,
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UM8"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM8"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HL8"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM9"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM12"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HL11"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HM13"
+      },
+      {
+        "OK": true,
+        "UR channel": "BL"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      },
+      {
+        "OK": true,
+        "UR channel": "POZI"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N12",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z (позитронное направление)",
+    "Polarity": "+",
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN12"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN12"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+  {
+    "Class": "Element",
+    "Name": "N13",
+    "System": "CHAN",
+    "Group": "Magnetic System",
+    "Type": "Corrector Z",
+    "Comment": "нацеливающая катушка по Z (позитронное направление)",
+    "Polarity": "+",
+    "Channels": [
+      {
+        "OK": true,
+        "Control channel": "U"
+      },
+      {
+        "OK": true,
+        "Control channel": "T"
+      },
+      {
+        "OK": true,
+        "ADC channel": "UN13"
+      },
+      {
+        "OK": true,
+        "Meas channel": "HN13"
+      },
+      {
+        "OK": true,
+        "DBLUR channel": "W"
+      }
+    ]
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 1,
+    "Module": "1PKS",
+    "Channel": 0,
+    "Cod/Value": 7.364,
+    "Units": "V",
+    "Max": 8500.0,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 2,
+    "Module": "1GV",
+    "Channel": 0,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM1",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 3,
+    "Module": "0ACP",
+    "Channel": 9,
+    "Cod/Value": 71.248,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM1",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 4,
+    "Module": "0BP",
+    "Channel": 0,
+    "Cod/Value": 10.646,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.05
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M1",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 1",
+    "Relay ON": " 1"
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН M1",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": " вкл. M1 в полярности -",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 1",
+    "Relay ON": " 1"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "M1",
+    "System": "CHAN",
+    "Comment": " вкл. M1 в полярности +",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 2",
+    "Relay ON": " 2"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 5,
+    "Module": "1PKS",
+    "Channel": 1,
+    "Cod/Value": 7.384,
+    "Units": "V",
+    "Max": 8499.86,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 6,
+    "Module": "1GV",
+    "Channel": 1,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM2",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 7,
+    "Module": "0ACP",
+    "Channel": 10,
+    "Cod/Value": 71.794,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM2",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 8,
+    "Module": "0BP",
+    "Channel": 1,
+    "Cod/Value": 8.95,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.05
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M2",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 2",
+    "Relay ON": " 2"
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН M2",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": "вкл. M2 в полярности -",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 3",
+    "Relay ON": " 3"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "M2",
+    "System": "CHAN",
+    "Comment": " вкл. M2 в полярности +",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 4",
+    "Relay ON": " 4"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 9,
+    "Module": "3PKS",
+    "Channel": 0,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 10,
+    "Module": "3GV",
+    "Channel": 0,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN1",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 11,
+    "Module": "0ACP",
+    "Channel": 0,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN1",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 12,
+    "Module": "6BP",
+    "Channel": 0,
+    "Cod/Value": 19.806,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N1",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": " вкл. N1 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 1",
+    "Relay ON": " 1"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N1",
+    "System": "CHAN",
+    "Comment": " вкл. N1 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 2",
+    "Relay ON": " 2"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 13,
+    "Module": "1PKS",
+    "Channel": 2,
+    "Cod/Value": 8.617,
+    "Units": "V",
+    "Max": 4899.97,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 14,
+    "Module": "1GV",
+    "Channel": 2,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM3",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 15,
+    "Module": "0ACP",
+    "Channel": 11,
+    "Cod/Value": 82.425,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM3",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 16,
+    "Module": "0BP",
+    "Channel": 2,
+    "Cod/Value": 8.95,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.05
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M1",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 3",
+    "Relay ON": " 3"
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН M3",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": " вкл. M3 в полярности -",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 5",
+    "Relay ON": " 6"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "M3",
+    "System": "CHAN",
+    "Comment": " вкл. M3 в полярности +",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 6",
+    "Relay ON": " 6"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 17,
+    "Module": "3PKS",
+    "Channel": 1,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 18,
+    "Module": "3GV",
+    "Channel": 1,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN2",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 19,
+    "Module": "0ACP",
+    "Channel": 6,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN2",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 20,
+    "Module": "6BP",
+    "Channel": 1,
+    "Cod/Value": 10.326,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N2",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": " вкл. N2 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 3",
+    "Relay ON": " 3"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N2",
+    "System": "CHAN",
+    "Comment": " вкл. N2 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 4",
+    "Relay ON": " 4"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 25,
+    "Module": "3PKS",
+    "Channel": 2,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 26,
+    "Module": "3GV",
+    "Channel": 2,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN3",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 27,
+    "Module": "0ACP",
+    "Channel": 1,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN3",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 28,
+    "Module": "6BP",
+    "Channel": 2,
+    "Cod/Value": 20.938,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N3",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": " вкл. N3 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 5",
+    "Relay ON": " 5"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N3",
+    "System": "CHAN",
+    "Comment": " вкл. N3 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 6",
+    "Relay ON": " 6"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 33,
+    "Module": "3PKS",
+    "Channel": 3,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 34,
+    "Module": "3GV",
+    "Channel": 3,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN4",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 35,
+    "Module": "0ACP",
+    "Channel": 2,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN4",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 36,
+    "Module": "6BP",
+    "Channel": 3,
+    "Cod/Value": 19.806,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N4",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": " вкл. N4 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 7",
+    "Relay ON": " 7"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N4",
+    "System": "CHAN",
+    "Comment": " вкл. N4 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 8",
+    "Relay ON": " 8"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 37,
+    "Module": "3PKS",
+    "Channel": 4,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 38,
+    "Module": "3GV",
+    "Channel": 4,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN5",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 39,
+    "Module": "0ACP",
+    "Channel": 3,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN5",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 40,
+    "Module": "7BP",
+    "Channel": 0,
+    "Cod/Value": 19.806,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N5",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": " вкл. N5 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 9",
+    "Relay ON": " 9"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N5",
+    "System": "CHAN",
+    "Comment": " вкл. N5 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 10",
+    "Relay ON": " 10"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 41,
+    "Module": "3PKS",
+    "Channel": 5,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 42,
+    "Module": "3GV",
+    "Channel": 5,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN6",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 43,
+    "Module": "0ACP",
+    "Channel": 7,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN6",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 44,
+    "Module": "7BP",
+    "Channel": 1,
+    "Cod/Value": 19.806,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N6",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": " вкл. N6 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 11",
+    "Relay ON": " 11"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N6",
+    "System": "CHAN",
+    "Comment": " вкл. N6 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 12",
+    "Relay ON": " 12"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 45,
+    "Module": "1PKS",
+    "Channel": 5,
+    "Cod/Value": 12.673,
+    "Units": "V",
+    "Max": 4900.0,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 46,
+    "Module": "1GV",
+    "Channel": 5,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM4",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 47,
+    "Module": "0ACP",
+    "Channel": 14,
+    "Cod/Value": 122.548,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM4",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 48,
+    "Module": "1BP",
+    "Channel": 1,
+    "Cod/Value": 14.049,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HL2",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "измерение поля в линзе около магнита",
+    "BANK": 49,
+    "Module": "1BP",
+    "Channel": 2,
+    "Cod/Value": 405.44,
+    "Units": "kA",
+    "Polarity": null,
+    "Monit": false,
+    "MonitType": null,
+    "Deviation": null
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HL5",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "измерение поля в линзе около магнита",
+    "BANK": 50,
+    "Module": "1BP",
+    "Channel": 3,
+    "Cod/Value": 411.67,
+    "Units": "kA",
+    "Polarity": null,
+    "Monit": false,
+    "MonitType": null,
+    "Deviation": null
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM5",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 51,
+    "Module": "2BP",
+    "Channel": 0,
+    "Cod/Value": 12.435,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.1
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M4",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 6",
+    "Relay ON": " 6"
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН M4",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": " вкл. M4 в полярности -",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 11",
+    "Relay ON": " 11"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "M4",
+    "System": "CHAN",
+    "Comment": " вкл. M4 в полярности +",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 12",
+    "Relay ON": " 12"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N7",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 52,
+    "Module": "3PKS",
+    "Channel": 6,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN7",
+    "Element": "N7",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 54,
+    "Module": "0ACP",
+    "Channel": 4,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN7",
+    "Element": "N7",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 55,
+    "Module": "7BP",
+    "Channel": 2,
+    "Cod/Value": 19.806,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N7",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N7",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N7",
+    "System": "CHAN",
+    "Comment": " вкл. N7 в полярности -",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 13",
+    "Relay ON": " 13"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N7",
+    "System": "CHAN",
+    "Comment": " вкл. N7 в полярности +",
+    "BANK": 294,
+    "Module": "4UR",
+    "Relay": " 14",
+    "Relay ON": " 14"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N8",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 56,
+    "Module": "4PKS",
+    "Channel": 0,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN8",
+    "Element": "N8",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 58,
+    "Module": "0ACP",
+    "Channel": 5,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN8",
+    "Element": "N8",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 59,
+    "Module": "7BP",
+    "Channel": 3,
+    "Cod/Value": 19.806,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N8",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N8",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N8",
+    "System": "CHAN",
+    "Comment": " вкл. N8 в полярности -",
+    "BANK": 294,
+    "Module": "5UR",
+    "Relay": " 1",
+    "Relay ON": " 1"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N8",
+    "System": "CHAN",
+    "Comment": " вкл. N8 в полярности +",
+    "BANK": 294,
+    "Module": "5UR",
+    "Relay": " 2",
+    "Relay ON": " 2"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 60,
+    "Module": "1PKS",
+    "Channel": 6,
+    "Cod/Value": 12.787,
+    "Units": "V",
+    "Max": 4900.0,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.1
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 61,
+    "Module": "1GV",
+    "Channel": 6,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM6",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 62,
+    "Module": "1ACP",
+    "Channel": 8,
+    "Cod/Value": 122.836,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM6",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 63,
+    "Module": "2BP",
+    "Channel": 1,
+    "Cod/Value": 8.1348,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.1
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M1",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 7",
+    "Relay ON": " 7"
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН M6",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": " вкл. M6 в полярности -",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 13",
+    "Relay ON": " 13"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "M6",
+    "System": "CHAN",
+    "Comment": " вкл. M6 в полярности +",
+    "BANK": 291,
+    "Module": "1UR",
+    "Relay": " 14",
+    "Relay ON": " 14"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N9",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 64,
+    "Module": "4PKS",
+    "Channel": 1,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN9",
+    "Element": "N9",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 66,
+    "Module": "1ACP",
+    "Channel": 0,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN9",
+    "Element": "N9",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 67,
+    "Module": "8BP",
+    "Channel": 0,
+    "Cod/Value": 13.869,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N9",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N9",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N9",
+    "System": "CHAN",
+    "Comment": " вкл. N9 в полярности -",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 3",
+    "Relay ON": " 3"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N9",
+    "System": "CHAN",
+    "Comment": " вкл. N9 в полярности +",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 4",
+    "Relay ON": " 4"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N10",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 72,
+    "Module": "4PKS",
+    "Channel": 2,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN10",
+    "Element": "N10",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 74,
+    "Module": "1ACP",
+    "Channel": 1,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN10",
+    "Element": "N10",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 75,
+    "Module": "8BP",
+    "Channel": 1,
+    "Cod/Value": 19.806,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N10",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N10",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N10",
+    "System": "CHAN",
+    "Comment": " вкл. N10 в полярности -",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 5",
+    "Relay ON": " 5"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N10",
+    "System": "CHAN",
+    "Comment": " вкл. N10 в полярности +",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 6",
+    "Relay ON": " 6"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 53,
+    "Module": "4PKS",
+    "Channel": 3,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 1.7
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 57,
+    "Module": "4GV",
+    "Channel": 3,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN11",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 65,
+    "Module": "1ACP",
+    "Channel": 5,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 1.7
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN11",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 83,
+    "Module": "8BP",
+    "Channel": 2,
+    "Cod/Value": 2.7617,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N11",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": " вкл. N11 в полярности -",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 7",
+    "Relay ON": " 7"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N11",
+    "System": "CHAN",
+    "Comment": " вкл. N11 в полярности +",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 8",
+    "Relay ON": " 8"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 109,
+    "Module": "2PKS",
+    "Channel": 1,
+    "Cod/Value": 13.04,
+    "Units": "V",
+    "Max": 8499.86,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 110,
+    "Module": "2GV",
+    "Channel": 1,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM7",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 111,
+    "Module": "1ACP",
+    "Channel": 11,
+    "Cod/Value": 123.807,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.5
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM7",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 112,
+    "Module": "0BP",
+    "Channel": 1,
+    "Cod/Value": 5.898,
+    "Units": "MeV",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.05
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M7",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 10",
+    "Relay ON": " 10"
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН M7",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": "вкл. M7 в полярности -",
+    "BANK": 292,
+    "Module": "2UR",
+    "Relay": " 3",
+    "Relay ON": " 3"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "M7",
+    "System": "CHAN",
+    "Comment": " вкл. M7 в полярности +",
+    "BANK": 292,
+    "Module": "2UR",
+    "Relay": " 4",
+    "Relay ON": " 4"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 113,
+    "Module": "2PKS",
+    "Channel": 2,
+    "Cod/Value": 12.774,
+    "Units": "V",
+    "Max": 4900.0,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 114,
+    "Module": "2GV",
+    "Channel": 2,
+    "Cod/Value": 10.0,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UM8",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 115,
+    "Module": "1ACP",
+    "Channel": 12,
+    "Cod/Value": 122.402,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM8",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 116,
+    "Module": "3BP",
+    "Channel": 1,
+    "Cod/Value": 1.0,
+    "Units": "MeV",
+    "Polarity": "+",
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HL8",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение поля в линзе около магнита",
+    "BANK": 117,
+    "Module": "3BP",
+    "Channel": 2,
+    "Cod/Value": 428.05,
+    "Units": "kA",
+    "Polarity": "+",
+    "Monit": false,
+    "MonitType": null,
+    "Deviation": null
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM9",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 118,
+    "Module": "3BP",
+    "Channel": 3,
+    "Cod/Value": 1.0,
+    "Units": "MeV",
+    "Polarity": "+",
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 1.0
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM12",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 119,
+    "Module": "4BP",
+    "Channel": 0,
+    "Cod/Value": 15.271,
+    "Units": "MeV",
+    "Polarity": "-",
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.05
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HL11",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение поля в линзе около магнита",
+    "BANK": 120,
+    "Module": "4BP",
+    "Channel": 1,
+    "Cod/Value": 400.54,
+    "Units": "kA",
+    "Polarity": "-",
+    "Monit": false,
+    "MonitType": null,
+    "Deviation": null
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HM13",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 121,
+    "Module": "4BP",
+    "Channel": 2,
+    "Cod/Value": 15.303,
+    "Units": "MeV",
+    "Polarity": "-",
+    "Monit": true,
+    "MonitType": "O",
+    "Deviation": 0.05
+  },
+  {
+    "Class": "UR channel",
+    "Name": "BL",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "блокировка запуска M8",
+    "BANK": 293,
+    "Module": "3UR",
+    "Relay": " 11",
+    "Relay ON": " 11"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "включение высокого у M8",
+    "BANK": 292,
+    "Module": "2UR",
+    "Relay": " 6",
+    "Relay ON": " 6"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "POZI",
+    "Element": "M8",
+    "System": "CHAN",
+    "Comment": "включение высокого у M8",
+    "BANK": 292,
+    "Module": "2UR",
+    "Relay": " 5",
+    "Relay ON": " 5"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N12",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 84,
+    "Module": "4PKS",
+    "Channel": 4,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN12",
+    "Element": "N12",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 86,
+    "Module": "1ACP",
+    "Channel": 2,
+    "Cod/Value": 1000,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "5 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN12",
+    "Element": "N12",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 87,
+    "Module": "8BP",
+    "Channel": 3,
+    "Cod/Value": 13.686,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N12",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N12",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N12",
+    "System": "CHAN",
+    "Comment": " вкл. N12 в полярности -",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 9",
+    "Relay ON": " 9"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N12",
+    "System": "CHAN",
+    "Comment": " вкл. N12 в полярности +",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 10",
+    "Relay ON": " 10"
+  },
+
+  {
+    "Class": "Control channel",
+    "Name": "U",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": "уставка напряжения на конденсаторной батарее",
+    "BANK": 89,
+    "Module": "4PKS",
+    "Channel": 5,
+    "Cod/Value": 65.0,
+    "Units": "V",
+    "Max": 900.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Control channel",
+    "Name": "T",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": "уставка задержки запуска",
+    "BANK": 90,
+    "Module": "4GV",
+    "Channel": 5,
+    "Cod/Value": 10,
+    "Units": "mks",
+    "Max": 6500.0,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 0.2
+  },
+  {
+    "Class": "ADC channel",
+    "Name": "UN13",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": "измерение напряжения на конденсаторной батарее",
+    "BANK": 92,
+    "Module": "1ACP",
+    "Channel": 3,
+    "Cod/Value": 1035.73,
+    "Units": "V",
+    "Polarity": null,
+    "Int time": "10 ms",
+    "Diapasone": 0,
+    "Interval": 2,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 5.0
+  },
+  {
+    "Class": "Meas channel",
+    "Name": "HN13",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": "измерение поля в магните",
+    "BANK": 91,
+    "Module": "9BP",
+    "Channel": 0,
+    "Cod/Value": 13.335,
+    "Units": "Gs",
+    "Polarity": null,
+    "Monit": true,
+    "MonitType": "A",
+    "Deviation": 10
+  },
+  {
+    "Class": "DBLUR channel",
+    "Name": "W",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": "УРы для переключения полярности ГИМН N13",
+    "Relays": [
+      {
+        "Polarity": "-",
+        " UR channel": "W-"
+      },
+      {
+        "Polarity": "+",
+        " UR channel": "W+"
+      }
+    ]
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W-",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": " вкл. N13 в полярности -",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 11",
+    "Relay ON": " 11"
+  },
+  {
+    "Class": "UR channel",
+    "Name": "W+",
+    "Element": "N13",
+    "System": "CHAN",
+    "Comment": " вкл. N13 в полярности +",
+    "BANK": 295,
+    "Module": "5UR",
+    "Relay": " 12",
+    "Relay ON": " 12"
+  },
+
+  {
+    "Class": "Power Supply",
+    "Name": "M1",
+    "System": "CHAN",
+    "Element": "M1",
+    "Comment": " размещается в 3 ряду слева в конце, 2 шкафа",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M1",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "M2",
+    "System": "CHAN",
+    "Element": "M2",
+    "Comment": " размещается в 3 ряду слева",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M2",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N1",
+    "System": "CHAN",
+    "Element": "N1",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 6,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "M3",
+    "System": "CHAN",
+    "Element": "M3",
+    "Comment": " размещается в 3 ряду слева",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M3",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N2",
+    "System": "CHAN",
+    "Element": "N2",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-1.0",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС6",
+    "Rack level": 6,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N3",
+    "System": "CHAN",
+    "Element": "N3",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 5,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N4",
+    "System": "CHAN",
+    "Element": "N4",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 4,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N5",
+    "System": "CHAN",
+    "Element": "N5",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 3,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N6",
+    "System": "CHAN",
+    "Element": "N6",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-1.0",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС6",
+    "Rack level": 5,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "M4",
+    "System": "CHAN",
+    "Element": "M4",
+    "Comment": " размещается в 4 ряду справа, 3 шкафа",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M4,5",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N7",
+    "System": "CHAN",
+    "Element": "N7",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 6,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N8",
+    "System": "CHAN",
+    "Element": "N8",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 5,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "M6",
+    "System": "CHAN",
+    "Element": "M6",
+    "Comment": " размещается в 4 ряду справа",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M6",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N9",
+    "System": "CHAN",
+    "Element": "N9",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 4,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N10",
+    "System": "CHAN",
+    "Element": "N10",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС8",
+    "Rack level": 3,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N11",
+    "System": "CHAN",
+    "Element": "N11",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-1.0",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС6",
+    "Rack level": 4,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "M7",
+    "System": "CHAN",
+    "Element": "M7",
+    "Comment": " размещается в 4 ряду слева",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M7",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "M8",
+    "System": "CHAN",
+    "Element": "M8",
+    "Comment": " размещается в 4 ряду слева, 3 шкафа",
+    "Type": "ГИМН-10",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "M8,9",
+    "Rack level": null,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N12",
+    "System": "CHAN",
+    "Element": "N12",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС7",
+    "Rack level": 6,
+    "Responsible": "Каштанкин, т. 44-88"
+  },
+  {
+    "Class": "Power Supply",
+    "Name": "N13",
+    "System": "CHAN",
+    "Element": "N13",
+    "Comment": "размещается в 3 ряду слева",
+    "Type": "ГИМН-0.1",
+    "Area": "Помещение Гимнов",
+    "Rack/cabinet": "РС7",
+    "Rack level": 5,
+    "Responsible": "Каштанкин, т. 44-88"
+  }
+]
+

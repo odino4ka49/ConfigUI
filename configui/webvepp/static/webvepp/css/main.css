@@ -1,0 +1,23 @@
+body {
+    text-align: left;
+}
+/*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    height: 5px;
+    display: block;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track-piece  {
+    background-color: white;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 20px;
+    background-color: grey;
+    border: 1px solid #eee;
+    -webkit-border-radius: 6px;
+}*/

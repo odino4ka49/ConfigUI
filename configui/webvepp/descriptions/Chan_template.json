@@ -1,0 +1,832 @@
+[
+  {
+    "class": "CAMAC",
+    "comment": "шаблон CAMAC",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "Dispatcher name",
+        "type": "string"
+      },
+      {
+        "key": "Address",
+        "type": "integer"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Controller",
+        "type": "string"
+      },
+      {
+        "key": "PINT",
+        "type": "integer"
+      },
+      {
+        "key": "Area",
+        "type": "string"
+      },
+      {
+        "key": "Rack/cabinet",
+        "type": "string"
+      },
+      {
+        "key": "Rack level",
+        "type": "integer"
+      }
+    ],
+    "display_fields": [
+      "Comment","Controller","Area","Rack/cabinet","Rack level"
+    ],
+    "display_min":["Name","Address","Dispatcher name",
+      {
+        "key": "Dispatcher channel",
+        "link_to": {
+          "Name": "&Dispatcher name",
+          "System": "&System",
+          "Class": "DS-24"
+        },
+        "value": "ID"
+      },
+      "PINT"
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Modules",
+    "component_ID": "Position",
+    "component_types": [
+      "Module"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "Module Type",
+    "comment": "содержит общие для всех модулей одного типа атрибуты",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "System_ID",
+        "type": "integer"
+      },
+      {
+        "key": "Dispatcher",
+        "type": "boolean"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Channels number",
+        "type": "integer"
+      },
+      {
+        "key": "Width",
+        "type": "integer"
+      },
+      {
+        "key": "+6 V current",
+        "type": "float"
+      },
+      {
+        "key": "-6 V current",
+        "type": "float"
+      },
+      {
+        "key": "+24 V current",
+        "type": "float"
+      },
+      {
+        "key": "-24 V current",
+        "type": "float"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "Module",
+    "comment": "шаблон модуля",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Module type",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "ACP-KAS",
+    "comment": "шаблон связи для соединения АЦП-20 с КАС",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Channels",
+        "type": "integer"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Modules",
+    "component_ID": "ID",
+    "component_types": [
+      "Module"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "MilStd",
+    "comment": "шаблон для магистрали MilStd",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Address",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Modules",
+    "component_ID": "Address",
+    "component_types": [
+      "Module"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "КЛИПС",
+    "comment": "шаблон связи  для соединения с MilStd через КЛИПС",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Channels",
+    "component_connection_num": "Channel",
+    "component_types": [
+      "MilStd"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "Serial",
+    "comment": "шаблон для нифонтовской связи S7-S6-S5-S4/3",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Dispatcher name",
+        "type": "string"
+      },
+      {
+        "key": "Address",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Modules",
+    "component_ID": "S6",
+    "component_types": [
+      "Module"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "Б0634",
+    "comment": "шаблон cвязи для соединения через Б0634",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Channels",
+    "component_ID": "ID",
+    "component_types": [
+      "Serial"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "CAN",
+    "comment": "шаблон для линии связи CAN",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Controller",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Modules",
+    "component_ID": "Address",
+    "component_types": [
+      "Module"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "CAMAC-CAN",
+    "comment": "шаблон cвязи для соединения с CAN",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Channels",
+    "component_ID": "Channel",
+    "component_types": [
+      "CAN"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "Element",
+    "comment": "шаблон для элемента системы",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Group",
+        "type": "string"
+      },
+      {
+        "key": "Type",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Polarity",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Channels",
+    "component_ID": "OK",
+    "component_types": [
+      "Control channel",
+      "ADC channel",
+      "Meas channel",
+      "UR channel",
+      "DBLUR channel"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System",
+      "Name"
+    ]
+  },
+  {
+    "class": "Control channel",
+    "comment": "шаблон для канала управления",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "BANK",
+        "type": "integer"
+      },
+      {
+        "key": "Channel",
+        "type": "integer"
+      },
+      {
+        "key": "Cod/Value",
+        "type": "double"
+      },
+      {
+        "key": "Units",
+        "type": "string"
+      },
+      {
+        "key": "Max",
+        "type": "double"
+      },
+      {
+        "key": "Monit",
+        "type": "boolean"
+      },
+      {
+        "key": "MonitType",
+        "type": "string"
+      },
+      {
+        "key": "Deviation",
+        "type": "double"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "ADC channel",
+    "comment": "шаблон для канала измерения АЦП-20",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "BANK",
+        "type": "integer"
+      },
+      {
+        "key": "Channel",
+        "type": "integer"
+      },
+      {
+        "key": "Cod/Value",
+        "type": "double"
+      },
+      {
+        "key": "Units",
+        "type": "string"
+      },
+      {
+        "key": "Int time",
+        "type": "string"
+      },
+      {
+        "key": "Diapasone",
+        "type": "integer"
+      },
+      {
+        "key": "Interval",
+        "type": "integer"
+      },
+      {
+        "key": "Monit",
+        "type": "boolean"
+      },
+      {
+        "key": "MonitType",
+        "type": "string"
+      },
+      {
+        "key": "Deviation",
+        "type": "double"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "Meas channel",
+    "comment": "шаблон для канала измерения",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "BANK",
+        "type": "integer"
+      },
+      {
+        "key": "Channel",
+        "type": "integer"
+      },
+      {
+        "key": "Cod/Value",
+        "type": "double"
+      },
+      {
+        "key": "Units",
+        "type": "string"
+      },
+      {
+        "key": "Polarity",
+        "type": "string"
+      },
+      {
+        "key": "Monit",
+        "type": "boolean"
+      },
+      {
+        "key": "MonitType",
+        "type": "string"
+      },
+      {
+        "key": "Deviation",
+        "type": "double"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "UR channel",
+    "comment": "шаблон для канала UR",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "BANK",
+        "type": "integer"
+      },
+      {
+        "key": "Relay",
+        "type": "integer"
+      },
+      {
+        "key": "Relay ON",
+        "type": "integer"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "DBLUR channel",
+    "comment": "шаблон для канала DBLUR",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": "Relays",
+    "component_ID": "Polarity",
+    "component_types": [
+      "UR channel"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System",
+      "Element"
+    ]
+  },
+  {
+    "class": "DS-24",
+    "comment": "шаблон для диспетчера DS-24",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": "Channels",
+    "component_ID": "ID",
+    "component_types": [
+      "CAMAC"
+    ],
+    "component_check_values": [
+      "CAMAC",
+      "System"
+    ]
+  },
+  {
+    "class": "Power Supply",
+    "comment": "шаблон для источника питания",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Type",
+        "type": "string"
+      },
+      {
+        "key": "Responsible",
+        "type": "string"
+      },
+      {
+        "key": "Area",
+        "type": "string"
+      },
+      {
+        "key": "Rack/cabinet",
+        "type": "string"
+      },
+      {
+        "key": "Rack level",
+        "type": "integer"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": null,
+    "component_connection_num": null,
+    "component_types": null,
+    "component_check_values": null
+  }
+]
