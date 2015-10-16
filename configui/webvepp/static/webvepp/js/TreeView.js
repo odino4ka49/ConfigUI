@@ -11,8 +11,8 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         // Offset so that first pan and zoom does not jump back to the origin
         .translate([400, 200]);
     var svg = d3.select("body").append("svg")
-        .attr('width', 1000)
-        .attr('height', 500)
+        .attr('width', "100%")
+        .attr('height', "100%")
         .call(zoom)
         .append('g')
         // Left padding of tree so that the whole root node is on the screen.

@@ -1,5 +1,9 @@
 body {
     text-align: left;
+    height:100%;
+}
+html{
+    height: 100%;
 }
 /*::-webkit-scrollbar {
     width: 10px;

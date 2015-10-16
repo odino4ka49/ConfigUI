@@ -81,7 +81,8 @@ WEBVEPP.Tree = function(params){
                   .on('wheel.zoom', function(){
                     d3.event.stopPropagation();
                   })
-                  .on('mouseover', function(person){
+                  .on('contextmenu', function(person){
+                    d3.event.preventDefault();
                     revealPerson(person);
                   })
                   /*.on('mouseout', function(person){
@@ -263,7 +264,8 @@ WEBVEPP.Tree = function(params){
         if(!svg.select("g.details").empty())
             return;
         var det_obj = svg.append("g").attr("class", "details")
-            .on("mouseout",function(){
+            .on("contextmenu",function(){
+                d3.event.preventDefault();
                 revealPerson(details_obj);
             });
         det_obj.append("rect")
