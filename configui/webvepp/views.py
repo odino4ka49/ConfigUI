@@ -14,13 +14,45 @@ def getTreeData(request):
         tree = {"name":"CHAN","id":"8","_parents":[],"attributes":{"min":[{"key":"System","value":"CHAN"}],"extra":[]}}
         file_data = getAllObjects()
         camac_list = getOneClass("CAMAC")
-        camac_temp = getClassTemplate("CAMAC")
         for camac in camac_list:
-            camac_attributes = parseAttributes(camac_temp,camac)
-            tree["_parents"].append({"name":camac["Name"],"id":camac["Name"],"attributes":camac_attributes})
+            tree["_parents"].append(parseObject(camac))
     except Exception as e:
         print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
+
+#returns packed object
+def parseObject(object):
+    #if "link_id" in object:
+        #result = {"name":object["Name"],"id":object["Name"],"link_id":object["link_id"],"_parents":[]}
+    result = {"name":object["Name"],"id":object["Name"],"_parents":[]}
+    template = getTemplate(object)
+    obj_attributes = parseAttributes(template,object)
+    result["attributes"]=obj_attributes
+    if template["components"]:
+        for comp in object[template["components"]]:
+            comp_class = ""
+            for key in comp:
+                if key in template["component_types"]:
+                    comp_class = key
+            comp_temp = getTemplate({"Class":comp_class})
+            rules = {}
+            rules["Class"] = comp_class
+            for i in range(0,len(comp_temp["primary_keys"])-1):
+                field1 = template["component_check_values"][i]
+                field2 = comp_temp["primary_keys"][i]
+                rule_val = None
+                if field1=="Component_name":
+                    rule_val = comp[comp_class]
+                elif comp[field1]:
+                    rule_val = comp[field1]
+                else:
+                    rule_val=object[field1]
+                rules[field2] = rule_val
+            comp_obj = getObject(rules)
+            #if we do number of position on link:
+            comp_obj["link_id"] = comp[template["component_ID"]]
+            result["_parents"].append(parseObject(comp_obj))
+    return result
 
 #returns list of attributes of the object according to its template
 def parseAttributes(template,object):
@@ -28,7 +60,18 @@ def parseAttributes(template,object):
     def parsing(field_list):
         attrs = []
         for field in field_list:
-            if (type(field) is dict) and (field['link_to']):
+            if (type(field) is dict) and ('link_to' in field) and ('link_from' in field):
+                print field
+                #rules = parseRulesToString(object,field['link_from'])
+                obj1 = getObject(parseRulesToString(object,field['link_from']))
+                obj2 = getObject(parseRulesToString(object,field['link_to']))
+                if obj2 and obj1:
+                    link = getLink(obj1,obj2)
+                    attrs += [{
+                        "key": field["key"],
+                        "value": link[field["value"]]
+                    }]
+            elif (type(field) is dict) and ('link_to' in field):
                 #if we do this channels->id thing
                 rules = parseRulesToString(object,field['link_to'])
                 obj2 = getObject(rules)
@@ -38,6 +81,11 @@ def parseAttributes(template,object):
                         "key": field["key"],
                         "value": link[field["value"]]
                     }]
+            elif (type(field) is dict) and ("value" in field) and (field["value"]=="link_id") and ("link_id" in object):
+                attrs += [{
+                        "key": field["key"],
+                        "value": object["link_id"]
+                    }]
             else:
                 attrs += [{
                     "key": field,
@@ -45,7 +93,7 @@ def parseAttributes(template,object):
                 }]
         return attrs
 
-    if(template["display_fields"]):
+    if("display_fields" in template):
         attributes["min"] = parsing(template["display_min"])
         attributes["extra"] = parsing(template["display_fields"])
     else:
@@ -89,7 +137,17 @@ def getObject(rules):
     def filter(o):
         result = True
         for r in rules:
-            if o[r]!=rules[r]:
+            """ if we use '->':
+            deep_r = r.split("->")
+            o_value = o
+            for i in range(0,len(deep_r)-1):
+                if deep_r[i] in o_value:
+                    o_value = o_value[deep_r[i]]
+                else:
+                    result = False
+            if (o_value!=rules[r]):
+                result = False"""
+            if r in o and o[r]!=rules[r]:
                 result = False
         return result
     for obj in data:
@@ -108,7 +166,7 @@ def getLink(obj1,obj2):
     class1 = getTemplate(obj1)
     class2 = getTemplate(obj2)
     #sort objects to and from
-    if obj1["Class"] in class2["component_types"]:
+    if class2["component_types"] and obj1["Class"] in class2["component_types"]:
         obj1,obj2 = obj2,obj1
         class1,class2 = class2,class1
     #let's get the Link!
@@ -119,7 +177,10 @@ def getLink(obj1,obj2):
             a=0
             field1 = class1["component_check_values"][i]
             field2 = class2["primary_keys"][i]
-            if l[field1]:
+            if field1=="Component_name":
+                if l[obj2["Class"]]!=obj2[field2]:
+                    found = False
+            elif l[field1]:
                 if l[field1]!=obj2[field2]:
                     found = False
             else:

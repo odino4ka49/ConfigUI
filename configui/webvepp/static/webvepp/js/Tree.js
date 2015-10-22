@@ -36,30 +36,78 @@ WEBVEPP.Tree = function(params){
         drawLinks = function(links, source){
             var self = this;
 
-            var link = svg.selectAll("path.link." + selector)
+            var link = svg.selectAll(".link." + selector)
                 .data(links, function(d){ return d.target.id; });
 
-            link.enter().append("path")
+            /*link.enter().insert("path",":first-child")
                 .attr("class", "link " + selector)
                 .attr("d", function(d) {
                     var o = {x: source.x0, y: direction * (source.y0 + boxWidth/2)};
                     return transitionElbow({source: o, target: o});
                 });
 
-            link.transition()
-                .duration(duration)
+            link.insert("text",":first-child")
+                .attr("font-family", "Arial, Helvetica, sans-serif")
+                .attr("fill", "Black")
+                .style("font", "normal 12px Arial")
+                .attr("transform", function(d) {
+                    return "translate(" +
+                        ((d.source.y + d.target.y)/2) + "," +
+                        ((d.source.x + d.target.x)/2) + ")";
+                })
+                .attr("dy", ".35em")
+                .attr("text-anchor", "middle")
+                .text(function(d) {
+                    console.log(d.target.link_id);
+                     return d.target.link_id;
+                });*/
+
+            var newlink = link.enter().insert("g",":first-child")
+                .attr("class", "link " + selector);
+            newlink.append("path")
+              .attr("d", function(d) {
+                var o = {x: source.x0, y: direction * (source.y0 + boxWidth/2)};
+                return transitionElbow({source: o, target: o});
+              });
+            newlink.append("text");
+
+            var link_update = link.transition()
+                .duration(duration);
+
+            link_update.select("path")
                 .attr("d", function(d){
                     return elbow(d, direction);
                 });
 
-            link.exit()
+            link_update.select("text")
+                .attr("transform", function(d) {
+                    return "translate(" +
+                        (d.target.y-boxWidth/2-20) + "," +
+                        (d.target.x-5) + ")";
+                })
+                .text(function(d) {
+                    if(d.target.link_id)
+                     return d.target.link_id;
+                });
+
+            link_remove = link.exit()
                 .transition()
                 .duration(duration)
-                .attr("d", function(d) {
-                    var o = {x: source.x, y: direction * (source.y + boxWidth/2)};
-                    return transitionElbow({source: o, target: o});
-                })
                 .remove();
+
+            link_remove.select("path")
+              .attr("d", function(d) {
+                var o = {x: source.x, y: direction * (source.y + boxWidth/2)};
+                return transitionElbow({source: o, target: o});
+              });
+
+            link_remove.select("text")
+                .attr("transform", function(d) {
+                    return "translate(" +
+                        (d.source.y) + "," +
+                        (d.source.x) + ")";
+                });
+
             },
             drawNodes = function(nodes, source){
 
@@ -67,7 +115,7 @@ WEBVEPP.Tree = function(params){
                   .data(nodes, function(person){ return person.id; });
 
                 // Add any new nodes
-                var nodeEnter = node.enter().append("g")
+                var nodeEnter = node.enter().insert("g",":first-child")
                   .attr("class", "person " + selector)
 
                   // Add new nodes at the right side of their child's box.

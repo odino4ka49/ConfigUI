@@ -47,7 +47,21 @@
     "display_fields": [
       "Comment","Controller","Area","Rack/cabinet","Rack level"
     ],
-    "display_min":["Name","Address","Dispatcher name",
+    "display_min":["Name",
+      {
+        "key": "Dispatcher position",
+        "link_to": {
+          "Name": "&Dispatcher name",
+          "System": "&System",
+          "Class": "Module"
+        },
+        "link_from": {
+          "Controller": "CHAN",
+          "System": "&System",
+          "Class": "CAMAC"
+        },
+        "value": "Position"
+      },
       {
         "key": "Dispatcher channel",
         "link_to": {
@@ -57,7 +71,7 @@
         },
         "value": "ID"
       },
-      "PINT"
+      "PINT","Dispatcher name","Address"
     ],
     "primary_keys": [
       "Name",
@@ -144,7 +158,7 @@
         "type": "string"
       },
       {
-        "key": "Module type",
+        "key": "Module Type",
         "type": "string"
       },
       {
@@ -155,6 +169,15 @@
     "primary_keys": [
       "Name",
       "System"
+    ],
+    "display_fields": [
+      "Comment"
+    ],
+    "display_min":["Name","Module Type",
+      {
+        "key": "Module position",
+        "value": "link_id"
+      }
     ],
     "components": null,
     "component_ID": null,

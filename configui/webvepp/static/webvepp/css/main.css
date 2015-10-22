@@ -5,6 +5,10 @@ body {
 html{
     height: 100%;
 }
+text{
+    stroke: none;
+    fill: black;
+}
 /*::-webkit-scrollbar {
     width: 10px;
     height: 10px;
