@@ -18,6 +18,13 @@ WEBVEPP.namespace = function (ns_string) {
 WEBVEPP.serveradr = function(){
 	return "http://127.0.0.1:8000/";
 };
+
+$(document).on("set_loading_cursor",function(){
+    document.body.style.cursor='wait';
+});
+$(document).on("unset_loading_cursor",function(){
+    document.body.style.cursor='default';
+});
 $(document).ready(function(){
     var tree_model = WEBVEPP.TreeModel(),
         tree = "",
@@ -28,4 +35,7 @@ $(document).ready(function(){
         /*tree_controller = WEBVEPP.TreeController({
             "storage": storage
         },tree_view);*/
+
 });
+
+
