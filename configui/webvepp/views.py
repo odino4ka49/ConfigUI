@@ -113,8 +113,14 @@ def parseTree(name):
     sample = getSample(name)
 
     def parseObjectInfo(obj_sample,object):
-        result = {"name":object["Name"],"id":object["Name"],"_parents":[]}
-        #if "type" in obj_sample and obj_sample["type"]=="new":
+        result = {"name":object["Name"],"id":"","_parents":[]}
+        if "Class" in object:
+            template = getTemplate(object)
+            pr_k = template["primary_keys"]
+            for key in pr_k:
+                result["id"] += object[key]
+        if "type" in obj_sample and obj_sample["type"]=="new":
+            result["id"] = object["Name"]
         display_details = obj_sample["display_filter"]
         obj_attributes = parseAttributes(display_details,object)
         result["attributes"]=obj_attributes
@@ -123,16 +129,15 @@ def parseTree(name):
         if level in sample:
             sample_l = sample[level]
             if "type" in obj_sample and obj_sample["type"]=="new":
-                neighbours = getObjects(sample_l["filter"])
+                neighbours = getObjects(parseRulesToString(object,sample_l["filter"]))
                 for n in neighbours:
                     result["_parents"].append(parseObjectInfo(sample_l,n))
             else:
-                neighbours = getObjects(sample_l["filter"])
+                neighbours = getObjects(parseRulesToString(object,sample_l["filter"]))
                 for n in neighbours:
                     link = getLink(n,object)
                     #TODO: make it faster loading graph by parts
                     if link!= {}:
-                        template = getTemplate(object)
                         if template["component_ID"]!=None:
                             n["link_id"] = link[template["component_ID"]]
                         result["_parents"].append(parseObjectInfo(sample_l,n))
@@ -223,9 +228,6 @@ def getLink(obj1,obj2):
     link = {}
     class1 = getTemplate(obj1)
     class2 = getTemplate(obj2)
-    """#check if they're connected
-    if (obj1["Class"] not in obj2) and (obj2["Class"] not in obj1) and not class2["component_types"]and not class1["component_types"]:
-        return link"""
     #sort objects to and from
     if class2["component_types"] and obj1["Class"] in class2["component_types"]:
         obj1,obj2 = obj2,obj1
