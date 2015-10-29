@@ -1,0 +1,83 @@
+[{
+  "name": "Chan_camacs",
+  "root": {
+    "type": "new",
+    "level": 0,
+    "fields":{
+      "System": "CHAN",
+      "Name": "CHAN_camacs"
+    },
+    "display_filter":{
+      "min": ["System"],
+      "max": []
+    }
+  },
+  "level1": {
+    "type": "filter",
+    "level": 1,
+    "filter":{
+      "Class": ["CAMAC"]
+    },
+    "display_filter":{
+      "min": ["Name",
+        {
+          "key": "Dispatcher position",
+          "link_to": {
+            "Name": "&Dispatcher name",
+            "System": "&System",
+            "Class": "Module"
+          },
+          "link_from": {
+            "Controller": "CHAN",
+            "System": "&System",
+            "Class": "CAMAC"
+          },
+          "value": "Position"
+        },
+        {
+          "key": "Dispatcher channel",
+          "link_to": {
+            "Name": "&Dispatcher name",
+            "System": "&System",
+            "Class": "DS-24"
+          },
+          "value": "ID"
+        },
+        "PINT","Dispatcher name","Address"
+      ],
+      "max": [
+        "Comment","Controller","Area","Rack/cabinet","Rack level"
+      ]
+    }
+  },
+  "level2": {
+    "type": "filter",
+    "level": 2,
+    "filter":{
+      "Class": ["Module"]
+    },
+    "display_filter":{
+      "min": ["Name","Module Type",
+      {
+        "key": "Module position",
+        "value": "link_id"
+      }
+      ],
+      "max": [
+        "Comment"
+      ]
+    }
+  },
+  "level3": {
+    "type": "filter",
+    "level": 3,
+    "filter":{
+      "Class": ["UR channel","Control channel","ADC channel","Meas channel","DBLUR channel"],
+      "Module": "&Name"
+    },
+    "display_filter":{
+      "min": ["Name","Element"],
+      "max": []
+    }
+  }
+}]
