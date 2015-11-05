@@ -289,8 +289,15 @@ WEBVEPP.Tree = function(params){
                 }
                 // Non-root nodes
                 else {
-                    if(person.collapsed){
+                    if(person.collapsed||(person._parents.length==0)){
+                      $(document).trigger("load_neighbours",person);
                       person.collapsed = false;
+                      //if we don't want to see any sibling's _parents
+                      person.parent._parents.forEach(function(sibling){
+                        if(sibling.id!=person.id){
+                            collapse(sibling);
+                        }
+                      })
                     } else {
                       collapse(person);
                     }

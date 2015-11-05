@@ -23,7 +23,7 @@ svg {
     stroke-width: 1.5px;
 }
 .attributes{
-    /*overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-y: hidden;
+    /*overflow-x: hidden;
     --webkit-transform: translate(50px,25px);*/
 }

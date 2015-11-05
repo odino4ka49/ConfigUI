@@ -9,17 +9,23 @@ def index(request):
     template = loader.get_template('webvepp/index.html')
     return HttpResponse(template.render())
 
-def getTreeData(request):
+def loadTreeData(request):
     try:
         tree = parseTree("Chan_camacs")
-        """{"name":"CHAN","id":"8","_parents":[],"attributes":{"min":[{"key":"System","value":"CHAN"}],"extra":[]}}
-        file_data = getAllObjects()
-        camac_list = getOneClass("CAMAC")
-        for camac in camac_list:
-            tree["_parents"].append(parseObject(camac))"""
     except Exception as e:
         print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
+
+def loadNodeNeighbours(request):
+    try:
+        data = request.GET
+        node_id = data["node_id"]
+        level = data["level"]
+        node = getObjectById(node_id)
+        n_list = getNodeNeighbours(node,level)
+    except Exception as e:
+        print e
+    return HttpResponse(json.dumps(n_list, ensure_ascii=False), content_type="application/json")
 
 #returns packed object
 def parseObject(object):
@@ -108,9 +114,46 @@ def parseAttributes(template,object):
             }]
     return attributes
 
+def getNodeNeighbours(node,level):
+    neighbours = []
+    sample = getSample("Chan_camacs")
+    if level=="0":
+        obj_sample = sample["root"]
+    else:
+        obj_sample = sample["level"+level]
+
+    level_n = "level"+str(int(level)+1)
+    if level_n in sample:
+        sample_l = sample[level_n]
+        if "type" in obj_sample and obj_sample["type"]=="new":
+            next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
+            #for n in neighbours:
+                #neighbours.append(parseObjectInfo(sample_l,n))
+        else:
+            next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
+            for n in next_level:
+                link = getLink(n,node)
+                if link != {}:
+                    template = getTemplate(node)
+                    if template["component_ID"]!=None:
+                        n["link_id"] = link[template["component_ID"]]
+                    neighbour = {"name":n["Name"],"id":"","_parents":[]}
+                    if "Class" in n:
+                        template = getTemplate(n)
+                        pr_k = template["primary_keys"]
+                        for key in pr_k:
+                            neighbour["id"] += n[key]
+                    display_details = sample_l["display_filter"]
+                    print display_details
+                    obj_attributes = parseAttributes(display_details,n)
+                    neighbour["attributes"] = obj_attributes
+                    neighbours.append(neighbour)
+    return neighbours
+
 def parseTree(name):
     tree = {}
     sample = getSample(name)
+    max_level = 1
 
     def parseObjectInfo(obj_sample,object):
         result = {"name":object["Name"],"id":"","_parents":[]}
@@ -126,7 +169,7 @@ def parseTree(name):
         result["attributes"]=obj_attributes
 
         level = "level"+str(obj_sample["level"]+1)
-        if level in sample:
+        if obj_sample["level"]<max_level and level in sample:
             sample_l = sample[level]
             if "type" in obj_sample and obj_sample["type"]=="new":
                 neighbours = getObjects(parseRulesToString(object,sample_l["filter"]))
@@ -161,6 +204,25 @@ def getClassTemplate(classname):
     for temp in file_data:
         if(temp["class"]==classname):
             return temp
+
+def getObjectById(id):
+    object = {}
+    data = getAllObjects()
+    def filter(o):
+        result = True
+        o_id = ""
+        template = getTemplate(o)
+        if template:
+            pr_k = template["primary_keys"]
+            for key in pr_k:
+                o_id += o[key]
+        if o_id!= id:
+            result = False
+        return result
+    for obj in data:
+        if(filter(obj)):
+            object = obj
+    return object
 
 def findObject(array,check_object,check_rules):
     result_object = {"Channels":[{"ID":8}]}

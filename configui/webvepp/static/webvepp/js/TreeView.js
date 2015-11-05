@@ -64,9 +64,9 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         //var descendantRoot = rootProxy(tree_data);
 
         // Start with only the first few generations of ancestors showing
-        ancestorRoot._parents.forEach(function(parents){
-          //parents._parents.forEach(collapse);
-        });
+        /*ancestorRoot._parents.forEach(function(parents){
+          parents._parents.forEach(collapse);
+        });*/
 
         // Start with only one generation of descendants showing
         //descendantRoot._children.forEach(collapse);
@@ -95,9 +95,13 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
       };
     };
 
-    $(document).on("tree_changed",function(){
+    $(document).on("tree_created",function(){
         reloadTree();
     });
+
+    $(document).on("tree_changed",function(){
+        reloadTree();//ancestorTree.draw();
+    })
 
     return {
     };
