@@ -10,6 +10,10 @@
     "display_filter":{
       "min": ["System"],
       "max": []
+    },
+    "display_attributes":{
+      "width": 170,
+      "height": 50
     }
   },
   "level1": {
@@ -48,6 +52,10 @@
       "max": [
         "Comment","Controller","Area","Rack/cabinet","Rack level"
       ]
+    },
+    "display_attributes":{
+      "width": 170,
+      "height": 120
     }
   },
   "level2": {
@@ -66,6 +74,10 @@
       "max": [
         "Comment"
       ]
+    },
+    "display_attributes":{
+      "width": 170,
+      "height": 70
     }
   },
   "level3": {
@@ -78,6 +90,10 @@
     "display_filter":{
       "min": ["Element","Name"],
       "max": []
+    },
+    "display_attributes":{
+      "width": 170,
+      "height": 50
     }
   }
 }]

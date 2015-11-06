@@ -20,7 +20,7 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         .attr("transform", "translate(400,200)");
 
 
-    var params = {"svg":svg,"selector":'ancestor', "direction":1, "nodeWidth":100, "nodeHeight":250, "duration":400, "separation":1.2, "boxWidth":170, "boxHeight":110, "boxWidthMax":300, "boxHeightMax":300}
+    var params = {"svg":svg,"selector":'ancestor', "direction":1, "nodeWidth":100, "nodeHeight":250, "duration":400, "separation":1.3, "boxWidth":170, "boxHeight":110, "boxWidthMax":300, "boxHeightMax":300}
 
     var ancestorTree = WEBVEPP.Tree(params);
         ancestorTree.setChildren(function(person){
@@ -88,6 +88,8 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         id: root.id,
         x0: 0,
         y0: 0,
+        width: root.width,
+        height: root.height,
         _children: root._children,
         _parents: root._parents,
         collapsed: false,

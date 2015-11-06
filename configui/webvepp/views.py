@@ -147,6 +147,9 @@ def getNodeNeighbours(node,level):
                     print display_details
                     obj_attributes = parseAttributes(display_details,n)
                     neighbour["attributes"] = obj_attributes
+                    n_display_attributes = sample_l["display_attributes"]
+                    neighbour["width"] = n_display_attributes["width"]
+                    neighbour["height"] = n_display_attributes["height"]
                     neighbours.append(neighbour)
     return neighbours
 
@@ -167,6 +170,9 @@ def parseTree(name):
         display_details = obj_sample["display_filter"]
         obj_attributes = parseAttributes(display_details,object)
         result["attributes"]=obj_attributes
+        obj_display_attributes = obj_sample["display_attributes"]
+        result["width"] = obj_display_attributes["width"]
+        result["height"] = obj_display_attributes["height"]
 
         level = "level"+str(obj_sample["level"]+1)
         if obj_sample["level"]<max_level and level in sample:

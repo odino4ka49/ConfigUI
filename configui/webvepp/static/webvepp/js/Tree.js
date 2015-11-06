@@ -39,29 +39,6 @@ WEBVEPP.Tree = function(params){
             var link = svg.selectAll(".link." + selector)
                 .data(links, function(d){ return d.target.id; });
 
-            /*link.enter().insert("path",":first-child")
-                .attr("class", "link " + selector)
-                .attr("d", function(d) {
-                    var o = {x: source.x0, y: direction * (source.y0 + boxWidth/2)};
-                    return transitionElbow({source: o, target: o});
-                });
-
-            link.insert("text",":first-child")
-                .attr("font-family", "Arial, Helvetica, sans-serif")
-                .attr("fill", "Black")
-                .style("font", "normal 12px Arial")
-                .attr("transform", function(d) {
-                    return "translate(" +
-                        ((d.source.y + d.target.y)/2) + "," +
-                        ((d.source.x + d.target.x)/2) + ")";
-                })
-                .attr("dy", ".35em")
-                .attr("text-anchor", "middle")
-                .text(function(d) {
-                    console.log(d.target.link_id);
-                     return d.target.link_id;
-                });*/
-
             var newlink = link.enter().insert("g",":first-child")
                 .attr("class", "link " + selector);
             newlink.append("path")
@@ -121,7 +98,7 @@ WEBVEPP.Tree = function(params){
                   // Add new nodes at the right side of their child's box.
                   // They will be transitioned into their proper position.
                   .attr('transform', function(person){
-                    return 'translate(' + (direction * (source.y0 + boxWidth/2)) + ',' + source.x0 + ')';
+                    return 'translate(' + (direction * (source.y0 + person.width/2)) + ',' + source.x0 + ')';
                   })
                   .on('click', function(person){
                     togglePerson(person);
@@ -168,7 +145,7 @@ WEBVEPP.Tree = function(params){
                         .html(function(d){
                             var text = attributesToString(d.attributes.min);
                             text += d.revealed? attributesToString(d.attributes.extra): "";
-                            return '<div style="width: '+(boxWidth)+'px; height: '+(boxHeight)+'px" class="attributes">'+text+'</div>'
+                            return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
                         });
 
 
@@ -179,26 +156,32 @@ WEBVEPP.Tree = function(params){
 
                 // Grow boxes to their proper size
                 nodeUpdate.select('rect')
-                  .attr({
-                    x: -(boxWidth/2),
-                    y: -(boxHeight/2)-5
+                  .attr('x',function(d){
+                    return -(d.width/2)
+                  })
+                  .attr('y',function(d){
+                    return -(d.height/2)-5
                   })
                   .attr('width', function(d){
-                    return boxWidth;//d.revealed ? boxWidthMax: boxWidth
+                    return d.width;//d.revealed ? boxWidthMax: boxWidth
                   })
                   .attr('height', function(d){
-                    return boxHeight;//d.revealed ? boxHeightMax: boxHeight
+                    return d.height;//d.revealed ? boxHeightMax: boxHeight
                   });
 
                 // Move text to it's proper position
                 nodeUpdate.select('foreignObject')
-                    .attr("x", -(boxWidth/2))
-                    .attr("y", -(boxHeight/2))
+                    .attr("x", function(d){
+                        return -(d.width/2)
+                    })
+                    .attr("y", function(d){
+                        return -(d.height/2)
+                    })
                     .attr('width', function(d){
-                        return boxWidth;//d.revealed ? boxWidthMax: boxWidth
+                        return d.width;//d.revealed ? boxWidthMax: boxWidth
                     })
                     .attr('height', function(d){
-                        return boxHeight;//d.revealed ? boxHeightMax: boxHeight
+                        return d.height;//d.revealed ? boxHeightMax: boxHeight
                     })
                     .style('fill-opacity', 1);
 
@@ -217,7 +200,7 @@ WEBVEPP.Tree = function(params){
                   .duration(duration)
 
                   // Transition exit nodes to the source's position
-                  .attr("transform", function(d) { return "translate(" + (direction * (source.y + boxWidth/2)) + "," + source.x + ")"; })
+                  .attr("transform", function(d) { return "translate(" + (direction * (source.y + d.width/2)) + "," + source.x + ")"; })
                   .remove();
 
                 // Shrink boxes as we remove them
@@ -254,9 +237,11 @@ WEBVEPP.Tree = function(params){
                     height = boxHeightMax;
                 }
                 details.select("rect")
-                    .attr({
-                        x: details_obj.y-(boxWidth/2),
-                        y: details_obj.x-(boxHeight/2)-5
+                    .attr('x',function(d){
+                        return details_obj.y-(width/2)
+                    })
+                    .attr('y',function(d){
+                        return details_obj.x-(height/2)-5
                     })
                     .attr('width', function(d){
                         return width;
@@ -265,9 +250,11 @@ WEBVEPP.Tree = function(params){
                         return height;
                     });
                 details.select("foreignObject")
-                    .attr({
-                        x: details_obj.y-(boxWidth/2),
-                        y: details_obj.x-(boxHeight/2)-5
+                    .attr('x',function(d){
+                        return details_obj.y-(width/2)
+                    })
+                    .attr('y',function(d){
+                        return details_obj.x-(height/2)
                     })
                     .attr('width', function(d){
                         return width;
@@ -312,9 +299,11 @@ WEBVEPP.Tree = function(params){
 
     tree = d3.layout.tree()
         .nodeSize([nodeWidth, nodeHeight])
-        .separation(function(){
-            return separation;
-        });
+        .separation(function(a, b) {
+               var height = (a.height + b.height)/100,
+                   distance = height / 2 + 0.1; // horizontal distance between nodes = 16
+                   return distance;
+           });
     function newDetailsObj(){
         if(!svg.select("g.details").empty())
             return;
