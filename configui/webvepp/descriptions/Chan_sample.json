@@ -92,8 +92,11 @@
       "max": []
     },
     "display_attributes":{
-      "width": 170,
-      "height": 50
+      "width": 70,
+      "height": 50,
+      "positioning": "matrix",
+      "matrix_rows": 3,
+      "matrix_columns": 4
     }
   }
 }]

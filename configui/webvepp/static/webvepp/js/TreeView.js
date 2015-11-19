@@ -73,6 +73,7 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
 
         // Set the root nodes
         ancestorTree.setData(ancestorRoot);
+        ancestorTree.setSettings(model.getTreeSettings());
         //descendantsTree.data(descendantRoot);
 
         // Draw the tree

@@ -16,6 +16,13 @@ def loadTreeData(request):
         print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
 
+def loadTreeSample(request):
+    try:
+        sample = getSample("Chan_camacs")
+    except Exception as e:
+        print e
+    return HttpResponse(json.dumps(sample, ensure_ascii=False), content_type="application/json")
+
 def loadNodeNeighbours(request):
     try:
         data = request.GET
