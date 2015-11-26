@@ -94,7 +94,8 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         _children: root._children,
         _parents: root._parents,
         collapsed: false,
-        attributes: root.attributes
+        attributes: root.attributes,
+        additional_links: root.additional_links
       };
     };
 

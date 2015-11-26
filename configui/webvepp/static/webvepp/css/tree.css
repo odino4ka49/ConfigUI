@@ -8,6 +8,9 @@ svg {
     stroke: #072356;
     stroke-width: 1px;
 }
+rect.inmatrix {
+    stroke-width: 0;
+}
 .details rect {
     fill: #FEED8B; /*#EEF66C;*/
     stroke: #072356;
@@ -21,6 +24,9 @@ svg {
     fill: none;
     stroke: #262626;
     stroke-width: 1.5px;
+}
+.link.additional{
+    stroke: #94FE67;
 }
 .attributes{
     overflow-y: hidden;

@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.template import RequestContext, loader
 import json
 import inspect, os
+import math
 
 
 def index(request):
@@ -12,6 +13,7 @@ def index(request):
 def loadTreeData(request):
     try:
         tree = parseTree("Chan_camacs")
+        tree["additional_links"] = []
     except Exception as e:
         print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
@@ -30,14 +32,13 @@ def loadNodeNeighbours(request):
         level = data["level"]
         node = getObjectById(node_id)
         n_list = getNodeNeighbours(node,level)
+        l_list = getAdditionalLinks(n_list,int(level)+1)
     except Exception as e:
         print e
-    return HttpResponse(json.dumps(n_list, ensure_ascii=False), content_type="application/json")
+    return HttpResponse(json.dumps([n_list,l_list], ensure_ascii=False), content_type="application/json")
 
 #returns packed object
 def parseObject(object):
-    #if "link_id" in object:
-        #result = {"name":object["Name"],"id":object["Name"],"link_id":object["link_id"],"_parents":[]}
     result = {"name":object["Name"],"id":object["Name"],"_parents":[]}
     """if "type" in object and object["type"]=="new":
         template = None
@@ -78,7 +79,6 @@ def parseAttributes(template,object):
         attrs = []
         for field in field_list:
             if (type(field) is dict) and ('link_to' in field) and ('link_from' in field):
-                #rules = parseRulesToString(object,field['link_from'])
                 obj1 = getObject(parseRulesToString(object,field['link_from']))
                 obj2 = getObject(parseRulesToString(object,field['link_to']))
                 if obj2 and obj1:
@@ -134,8 +134,6 @@ def getNodeNeighbours(node,level):
         sample_l = sample[level_n]
         if "type" in obj_sample and obj_sample["type"]=="new":
             next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
-            #for n in neighbours:
-                #neighbours.append(parseObjectInfo(sample_l,n))
         else:
             next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
             for n in next_level:
@@ -146,19 +144,82 @@ def getNodeNeighbours(node,level):
                         n["link_id"] = link[template["component_ID"]]
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
-                        template = getTemplate(n)
-                        pr_k = template["primary_keys"]
-                        for key in pr_k:
-                            neighbour["id"] += n[key]
+                        neighbour["id"] = parseId(n)
                     display_details = sample_l["display_filter"]
-                    print display_details
                     obj_attributes = parseAttributes(display_details,n)
                     neighbour["attributes"] = obj_attributes
                     n_display_attributes = sample_l["display_attributes"]
                     neighbour["width"] = n_display_attributes["width"]
                     neighbour["height"] = n_display_attributes["height"]
                     neighbours.append(neighbour)
+            #if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours
+            if "positioning" in sample_l["display_attributes"] and sample_l["display_attributes"]["positioning"]=="matrix":
+                #create matrix element with all needed stuff
+                matrix = {"name":"Matrix","id":parseId(node)+"matrix","_parents":[],"attributes":{"min":[],"extra":[]}}
+                #load matrix size and then count all matrix sizes
+                matrix_size = sample_l["display_attributes"]["matrix_size"]
+                if matrix_size[0]=="&":
+                    matrix_size = getValueByPath(node,matrix_size)
+                if matrix_size:
+                    matrix_cols = math.ceil(math.sqrt(matrix_size))
+                    matrix_rows = math.ceil(matrix_size/matrix_cols)
+                    matrix["cols"]=matrix_cols
+                    matrix["rows"]=matrix_rows
+                    matrix["width"]=(sample_l["display_attributes"]["width"]+20)*matrix_cols
+                    matrix["height"]=(sample_l["display_attributes"]["height"]+20)*matrix_rows
+                    neighbours = sortObjects(neighbours,sample_l["display_attributes"]["matrix_sort"],matrix_size,node)
+                    print matrix
+                    #append it to neighbours
+                    neighbours.append(matrix)
     return neighbours
+
+def sortObjects(objects,sortname,size,parent_node):
+    sorted = []
+    def findObject(number):
+        for obj in objects:
+            for field in obj["attributes"]["min"]:
+                if field["key"]==sortname and field["value"]==number:
+                    return obj
+        return None
+
+    for i in range(0,size):
+        object = findObject(i)
+        if object!=None:
+            sorted.append(object)
+        else:
+            object = {"name":"Matrix","id":parseId(parent_node)+str(i),"_parents":[],"attributes":{"min":[{"key":"Channel","value":i}],"extra":[]},"width":50,"height":50}
+            sorted.append(object)
+    return sorted
+
+def getAdditionalLinks(nodes,level):
+    add_links = []
+    sample = getSample("Chan_camacs")
+    if level==0:
+        return add_links
+    else:
+        level_n = "level"+str(level)
+        if level_n not in sample:
+            return add_links
+        sample_l = sample[level_n]
+        if "additional_links" in sample_l:
+            for add_link in sample_l["additional_links"]:
+                links_class = getOneClass(add_link)
+                for lc in links_class:
+                    for n in nodes:
+                        if lc["Name"]==n["name"]:
+                            template = getTemplate(lc)
+                            if template["components"]!= None:
+                                lc_links = lc[template["components"]]
+                                for to_obj in lc_links:
+                                    rules = {}
+                                    for key in to_obj:
+                                        if key in template["component_types"]:
+                                            rules = {"Class":key,"Name":to_obj[key],"System":lc["System"]}
+                                    to_object = getObject(rules)
+                                    to_id = parseId(to_object)
+                                    add_links.append({"from":n["id"],"to":to_id,"id":n["id"]+to_id,"text":to_obj[template["component_ID"]]})
+    return add_links
+
 
 def parseTree(name):
     tree = {}
@@ -168,10 +229,7 @@ def parseTree(name):
     def parseObjectInfo(obj_sample,object):
         result = {"name":object["Name"],"id":"","_parents":[]}
         if "Class" in object:
-            template = getTemplate(object)
-            pr_k = template["primary_keys"]
-            for key in pr_k:
-                result["id"] += object[key]
+            result["id"] = parseId(object)
         if "type" in obj_sample and obj_sample["type"]=="new":
             result["id"] = object["Name"]
         display_details = obj_sample["display_filter"]
@@ -199,12 +257,27 @@ def parseTree(name):
                         result["_parents"].append(parseObjectInfo(sample_l,n))
         return result
 
-    def parseObjectNeighbours(object):
-        None
-
     tree = parseObjectInfo(sample["root"],sample["root"]["fields"])
-    parseObjectNeighbours(sample["root"])
     return tree
+
+def getValueByPath(object,path):
+    value = object
+    #split path
+    path = path.replace("&", "").split("->")
+    #loop where we go through path and change current value (it might be an object if it's not the end of the path)
+    for i in range(0,len(path)-1):
+        value = getNeighbour(value,path[i])
+    if path[-1] in value:
+        value = value[path[-1]]
+    return value
+
+def getNeighbour(object,foreign_key):
+    neighbour = None
+    #create rules
+    rules = {"Class":foreign_key,"Name":object[foreign_key],"System":object["System"]}
+    #get object
+    neighbour = getObject(rules)
+    return neighbour
 
 def getCamac(request):
     with open(os.path.dirname(os.path.abspath(__file__))+'/descriptions/CHAN.json') as data_file:
@@ -218,17 +291,21 @@ def getClassTemplate(classname):
         if(temp["class"]==classname):
             return temp
 
+def parseId(object):
+    id = object["Class"]
+    template = getTemplate(object)
+    if template:
+        pr_k = template["primary_keys"]
+        for key in pr_k:
+            id+=object[key]
+    return id
+
 def getObjectById(id):
     object = {}
     data = getAllObjects()
     def filter(o):
         result = True
-        o_id = ""
-        template = getTemplate(o)
-        if template:
-            pr_k = template["primary_keys"]
-            for key in pr_k:
-                o_id += o[key]
+        o_id=parseId(o)
         if o_id!= id:
             result = False
         return result
@@ -236,14 +313,6 @@ def getObjectById(id):
         if(filter(obj)):
             object = obj
     return object
-
-def findObject(array,check_object,check_rules):
-    result_object = {"Channels":[{"ID":8}]}
-    for object in array:
-        for check_field in check_rules:
-            #if(object[check_field]==check_object[check_rules[check_field].replace("&", "")]):
-                print "hohoh"
-    return result_object
 
 def getSample(name):
     samples = getDataFile("Chan_sample.json")

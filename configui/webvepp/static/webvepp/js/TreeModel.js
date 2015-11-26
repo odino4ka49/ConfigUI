@@ -28,7 +28,6 @@ WEBVEPP.TreeModel = function(){
                 },
                 success: function(data){
                     tree_data = data;
-                    console.log(tree_data);
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("tree_created");
                 }
@@ -62,12 +61,25 @@ WEBVEPP.TreeModel = function(){
                     $(document).trigger("error_message",thrownError);
                 },
                 success: function(data){
-                    node._parents = data;
+                    node._parents = data[0];
+                    tree_data.additional_links = unique_check(tree_data.additional_links.concat(data[1]));
+                    console.log(tree_data);
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("tree_changed");
                 }
             });
         };
+
+    function unique_check(array){
+        var a = array;
+        for(var i=0; i<a.length; ++i) {
+            for(var j=i+1; j<a.length; ++j) {
+                if(a[i].id === a[j].id)
+                    a.splice(j--, 1);
+            }
+        }
+        return a;
+    }
 
     loadTreeSettings();
     loadTreeData();

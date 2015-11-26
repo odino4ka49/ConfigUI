@@ -78,7 +78,8 @@
     "display_attributes":{
       "width": 170,
       "height": 70
-    }
+    },
+    "additional_links":["ACP-KAS"]
   },
   "level3": {
     "type": "filter",
@@ -88,7 +89,7 @@
       "Module": "&Name"
     },
     "display_filter":{
-      "min": ["Element","Name"],
+      "min": ["Channel","Element","Name"],
       "max": []
     },
     "display_attributes":{
@@ -96,7 +97,9 @@
       "height": 50,
       "positioning": "matrix",
       "matrix_rows": 3,
-      "matrix_columns": 4
+      "matrix_columns": 4,
+      "matrix_size": "&Module Type->Channels number",
+      "matrix_sort": "Channel"
     }
   }
 }]
