@@ -7,6 +7,7 @@
       "System": "CHAN",
       "Name": "CHAN_camacs"
     },
+    "sort_field":"Name",
     "display_filter":{
       "min": ["System"],
       "max": []
@@ -22,6 +23,7 @@
     "filter":{
       "Class": ["CAMAC"]
     },
+    "sort_field":"Name",
     "display_filter":{
       "min": ["Name",
         {
@@ -64,6 +66,7 @@
     "filter":{
       "Class": ["Module"]
     },
+    "sort_field":"Module position",
     "display_filter":{
       "min": ["Name","Module Type",
       {
@@ -92,6 +95,7 @@
       "min": ["Channel","Element","Name"],
       "max": []
     },
+    "sort_field": "Channel",
     "display_attributes":{
       "width": 70,
       "height": 50,

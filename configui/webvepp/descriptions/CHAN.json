@@ -505,15 +505,15 @@
  },
  {
    "Class": "Module",
-   "Name": "0KAS",
-   "Module Type": "КАС-128",
+   "Name": "0ACP",
+   "Module Type": "АЦП-20",
    "System": "CHAN",
    "Comment": null
  },
  {
    "Class": "Module",
-   "Name": "0ACP",
-   "Module Type": "АЦП-20",
+   "Name": "0KAS",
+   "Module Type": "КАС-128",
    "System": "CHAN",
    "Comment": null
  },

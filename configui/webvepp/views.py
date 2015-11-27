@@ -161,24 +161,26 @@ def getNodeNeighbours(node,level):
                 if matrix_size[0]=="&":
                     matrix_size = getValueByPath(node,matrix_size)
                 if matrix_size:
-                    matrix_cols = math.ceil(math.sqrt(matrix_size))
-                    matrix_rows = math.ceil(matrix_size/matrix_cols)
+                    matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
+                    matrix_rows = math.ceil(float(matrix_size)/matrix_cols)
                     matrix["cols"]=matrix_cols
                     matrix["rows"]=matrix_rows
                     matrix["width"]=(sample_l["display_attributes"]["width"]+20)*matrix_cols
                     matrix["height"]=(sample_l["display_attributes"]["height"]+20)*matrix_rows
-                    neighbours = sortObjects(neighbours,sample_l["display_attributes"]["matrix_sort"],matrix_size,node)
-                    print matrix
+                    neighbours = sortMatrixObjects(neighbours,sample_l["sort_field"],matrix_size,node)
                     #append it to neighbours
                     neighbours.append(matrix)
+            else:
+                neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
     return neighbours
 
-def sortObjects(objects,sortname,size,parent_node):
+def sortMatrixObjects(objects,sortname,size,parent_node):
     sorted = []
     def findObject(number):
         for obj in objects:
             for field in obj["attributes"]["min"]:
                 if field["key"]==sortname and field["value"]==number:
+                    field["key"]="Index"
                     return obj
         return None
 
@@ -187,7 +189,7 @@ def sortObjects(objects,sortname,size,parent_node):
         if object!=None:
             sorted.append(object)
         else:
-            object = {"name":"Matrix","id":parseId(parent_node)+str(i),"_parents":[],"attributes":{"min":[{"key":"Channel","value":i}],"extra":[]},"width":50,"height":50}
+            object = {"name":"Matrix","id":parseId(parent_node)+str(i),"_parents":[],"attributes":{"min":[{"key":"Index","value":i}],"extra":[]},"width":50,"height":50}
             sorted.append(object)
     return sorted
 

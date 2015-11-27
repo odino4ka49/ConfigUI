@@ -579,8 +579,14 @@ WEBVEPP.Tree = function(params){
     function attributesToShortString(attributes){
         var text = "";
         attributes.forEach(function(attr){
-            text += attr.value+"<br/>";
+            if(attr.key=="Index"){
+                text += "<div style='display: inline-table;'>" + attr.value+"</div><div style='display: inline-table; margin-left:5px'>";
+            }
+            else{
+                text += attr.value+"<br/>";
+            }
         });
+        text += "</div>";
         return text;
     };
 
