@@ -88,7 +88,7 @@
     "type": "filter",
     "level": 3,
     "filter":{
-      "Class": ["UR channel","Control channel","ADC channel","Meas channel","DBLUR channel"],
+      "Class": ["Control channel","UR channel","ADC channel","Meas channel","DBLUR channel"],
       "Module": "&Name"
     },
     "display_filter":{

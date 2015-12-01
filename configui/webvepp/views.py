@@ -4,6 +4,7 @@ from django.template import RequestContext, loader
 import json
 import inspect, os
 import math
+import copy
 
 
 def index(request):
@@ -179,9 +180,18 @@ def sortMatrixObjects(objects,sortname,size,parent_node):
     def findObject(number):
         for obj in objects:
             for field in obj["attributes"]["min"]:
-                if field["key"]==sortname and field["value"]==number:
-                    field["key"]="Index"
-                    return obj
+                if field["key"]==sortname:
+                    if field["value"]==number:
+                        field["key"]="Index"
+                        return obj
+                    elif type(field["value"]) is list and number in field["value"]:
+                        object = copy.deepcopy(obj)
+                        object["id"]+=str(number)
+                        for f in object["attributes"]["min"]:
+                            if f["key"]==sortname:
+                                f["key"]="Index"
+                                f["value"]=number
+                        return object
         return None
 
     for i in range(0,size):

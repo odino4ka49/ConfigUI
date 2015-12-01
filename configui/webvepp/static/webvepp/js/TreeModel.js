@@ -63,7 +63,6 @@ WEBVEPP.TreeModel = function(){
                 success: function(data){
                     node._parents = data[0];
                     tree_data.additional_links = unique_check(tree_data.additional_links.concat(data[1]));
-                    console.log(tree_data);
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("tree_changed");
                 }

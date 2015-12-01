@@ -133,6 +133,9 @@ WEBVEPP.Tree = function(params){
             }
             return result;
         },
+        removeAdditionalLink = function(link){
+            root.additional_links.splice(root.additional_links.indexOf(link),1);
+        },
         drawLinks = function(links, source){
             var self = this;
 
@@ -358,8 +361,10 @@ WEBVEPP.Tree = function(params){
                     .attr("d", function(d){
                         if(d.source && d.target)
                             return backward_elbow(d, direction);
-                        else
+                        else{
+                            removeAdditionalLink(d);
                             link_update.remove();
+                        }
                     });
 
                 link_update.select("text")
