@@ -85,20 +85,25 @@ WEBVEPP.Tree = function(params){
                 allofus = node.parent._parents;
                 index = allofus.indexOf(node);
             }
-            for(var i=0;i<=depth;i++){
+            for(var i=1;i<=depth;i++){
                 var level_name = i==0? "root":"level"+i;
                 var level_info = settings[level_name].display_attributes;
                 var node_width = level_info.width;
                 if("positioning" in level_info && level_info.positioning=="matrix"){
                     var matrix = allofus[allofus.length-1]
-                    if(index==allofus.length-1){
-                        return countLevelX(node.depth)-45+matrix.width/2;
-                    }
                     if(i==depth){
+                        if(index==allofus.length-1){
+                            return countLevelX(node)-45+matrix.width/2;
+                        }
                         result+=(index%matrix.cols)*(node_width+20)
                     }
                     else{
-                        result += matrix.width;
+                        if("hiding" in level_info && level_info.hiding){
+                            result = countNodeX(node.parent)+50;
+                        }
+                        else{
+                            result += matrix.width*2;
+                        }
                     }
                 }
                 if(i!=depth)
@@ -108,30 +113,72 @@ WEBVEPP.Tree = function(params){
         },
         countNodeClass = function(node){
             if(node.depth==0)
-                return "";
+                return "hidden";
             var level_name = "level"+node.depth;
             var level_info = settings[level_name].display_attributes;
+            var result = ""
             if("positioning" in level_info && level_info.positioning=="matrix"){
                 var allofus = node.parent._parents;
-                if(allofus.indexOf(node)!=allofus.length-1){
-                    return "inmatrix";
+                if(!node.unhidden&&allofus.indexOf(node)!=allofus.length-1){
+                    result += " inmatrix";
                 }
             }
+            if(node.hidden)
+                result += " hidden";
+            return result;
         },
-        countLevelX = function(depth){
+        countLevelX = function(node){
+            var depth = node.depth
             if(depth==0)
                 return 0;
             var result = 0;
-            for(var i=0;i<depth;i++){
+            for(var i=1;i<depth;i++){
                 var level_name = i==0? "root":"level"+i;
                 var level_info = settings[level_name].display_attributes;
                 var node_width = level_info.width;
                 if("positioning" in level_info && level_info.positioning=="matrix"){
-                    result += (node_width+30)*level_info.matrix_columns;
+                    if(node.parent.unhidden){
+                        result += countNodeX(node.parent)+50;
+                    }
+                    else{
+                        var columns = (level_info.matrix_size>16)? 8:4;
+                        result += (node_width+30)*columns;
+                    }
                 }
                 result += node_width+50;
             }
             return result;
+        },
+        hideSiblings = function(person){
+            var level_name = "level"+person.depth;
+            var hiding = false;
+            if("hiding" in settings[level_name].display_attributes){
+                hiding = settings[level_name].display_attributes.hiding;
+            }
+            person.parent._parents.forEach(function(sibling){
+                if(sibling.id!=person.id){
+                    collapse(sibling);
+                    if(hiding){
+                        sibling.hidden = true;
+                    }
+                }
+            })
+            if(hiding){
+                person.unhidden = true;
+            }
+        },
+        showSiblings = function(person){
+            var level_name = "level"+person.depth;
+            var hiding = false;
+            if("hiding" in settings[level_name].display_attributes){
+                hiding = settings[level_name].display_attributes.hiding;
+            }
+            if(hiding){
+                person.unhidden = false;
+                person.parent._parents.forEach(function(sibling){
+                    sibling.hidden = false;
+                })
+            }
         },
         removeAdditionalLink = function(link){
             root.additional_links.splice(root.additional_links.indexOf(link),1);
@@ -156,6 +203,8 @@ WEBVEPP.Tree = function(params){
 
             link_update.select("path")
                 .attr("d", function(d){
+                    if(d.source.depth==0)
+                        return "";
                     return elbow(d, direction);
                 });
 
@@ -252,7 +301,10 @@ WEBVEPP.Tree = function(params){
                             var text = (d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
                             //text += d.revealed? attributesToString(d.attributes.extra): "";
                             return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
-                        });
+                        })
+                      .attr("class",function(d){
+                        return countNodeClass(d);
+                      });
 
 
                 // Update the position of both old and new nodes
@@ -263,37 +315,59 @@ WEBVEPP.Tree = function(params){
                 // Grow boxes to their proper size
                 nodeUpdate.select('rect')
                   .attr('x',function(d){
+                    if(d.depth==0)
+                        return 0;
                     var x = countNodeX(d);
                     return x-(d.width/2);
                   })
                   .attr('y',function(d){
+                    if(d.depth==0)
+                        return 0;
                     var y = countNodeY(d);
                     return y-(d.height/2)-5;
                   })
                   .attr('width', function(d){
+                    if(d.depth==0)
+                        return 0;
                     return d.width;//d.revealed ? boxWidthMax: boxWidth
                   })
                   .attr('height', function(d){
+                    if(d.depth==0)
+                        return 0;
                     return d.height;//d.revealed ? boxHeightMax: boxHeight
+                  })
+                  .attr("class",function(d){
+                    return countNodeClass(d);
                   });
 
                 // Move text to it's proper position
                 nodeUpdate.select('foreignObject')
                     .attr("x", function(d){
+                        if(d.depth==0)
+                            return 0;
                         var x = countNodeX(d);
                         return x-(d.width/2);
                     })
                     .attr("y", function(d){
+                        if(d.depth==0)
+                            return 0;
                         var y = countNodeY(d);
                         return y-(d.height/2)-5;
                     })
                     .attr('width', function(d){
+                        if(d.depth==0)
+                            return 0;
                         return d.width;//d.revealed ? boxWidthMax: boxWidth
                     })
                     .attr('height', function(d){
+                        if(d.depth==0)
+                            return 0;
                         return d.height;//d.revealed ? boxHeightMax: boxHeight
                     })
-                    .style('fill-opacity', 1);
+                    .style('fill-opacity', 1)
+                  .attr("class",function(d){
+                    return countNodeClass(d);
+                  });
 
                 /*node.select('foreignObject')
                     .select("body")
@@ -442,22 +516,19 @@ WEBVEPP.Tree = function(params){
             togglePerson = function(person){
                 // Don't allow the root to be collapsed because that's
                 // silly (it also makes our life easier)
-                if(person === this.root){
+                if(person.depth<1){
                     return;
                 }
                 // Non-root nodes
                 else {
                     if(person.collapsed||(person._parents.length==0)){
-                      $(document).trigger("load_neighbours",person);
-                      person.collapsed = false;
-                      //if we don't want to see any sibling's _parents
-                      person.parent._parents.forEach(function(sibling){
-                        if(sibling.id!=person.id){
-                            collapse(sibling);
-                        }
-                      })
+                        $(document).trigger("load_neighbours",person);
+                        person.collapsed = false;
+                        //if we don't want to see any sibling's _parents
+                        hideSiblings(person);
                     } else {
-                      collapse(person);
+                        showSiblings(person);
+                        collapse(person);
                     }
                     draw(person);
                 }
@@ -538,12 +609,13 @@ WEBVEPP.Tree = function(params){
         sourceY = countNodeX(d.source) + (d.source.width / 2),
         targetX = countNodeY(d.target),
         targetY = countNodeX(d.target) - (d.target.width / 2),
-        target_levelY = countLevelX(d.target.depth) - (d.target.width / 2);
+        target_levelY = countLevelX(d.target) - (d.target.width / 2);
 
         if(d.source.depth!=0){
             var level_info = settings["level"+d.target.depth].display_attributes;
-            if("positioning" in level_info && level_info.positioning=="matrix")
+            if("positioning" in level_info && level_info.positioning=="matrix"){
                 return "M" + (direction * sourceY) + "," + sourceX + "H" + (direction * targetY);
+            }
         }
 
         return "M" + (direction * sourceY) + "," + sourceX
@@ -556,7 +628,7 @@ WEBVEPP.Tree = function(params){
         sourceY = countNodeX(d.source) - (d.source.width / 2),
         targetX = countNodeY(d.target),
         targetY = countNodeX(d.target) + (d.target.width / 2),
-        target_levelY = countLevelX(d.target.depth) + (d.target.width / 2);
+        target_levelY = countLevelX(d.target) + (d.target.width / 2);
 
         if(sourceY==target_levelY - d.target.width ){
             target_levelY = target_levelY + d.source.width+50;

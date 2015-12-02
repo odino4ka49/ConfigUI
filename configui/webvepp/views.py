@@ -6,14 +6,32 @@ import inspect, os
 import math
 import copy
 
+tree_data = []
+tree_template = []
+tree_sample = []
+tree_sample_name = ""
 
 def index(request):
+    global tree_data, tree_sample, tree_template,tree_sample_name
     template = loader.get_template('webvepp/index.html')
+    tree_data = getDataFile("CHAN.json")
+    tree_template = getDataFile("Chan_template.json")
+    tree_sample = getDataFile("Chan_sample.json")
+    tree_sample_name = "Chan_camacs"
+    return HttpResponse(template.render())
+
+def elements(request):
+    global tree_data, tree_sample, tree_template,tree_sample_name
+    template = loader.get_template('webvepp/index.html')
+    tree_data = getDataFile("CHAN.json")
+    tree_template = getDataFile("Chan_template.json")
+    tree_sample = getDataFile("Chan_sample.json")
+    tree_sample_name = "Chan_elements"
     return HttpResponse(template.render())
 
 def loadTreeData(request):
     try:
-        tree = parseTree("Chan_camacs")
+        tree = parseTree()
         tree["additional_links"] = []
     except Exception as e:
         print e
@@ -21,21 +39,21 @@ def loadTreeData(request):
 
 def loadTreeSample(request):
     try:
-        sample = getSample("Chan_camacs")
+        sample = getSample()
     except Exception as e:
         print e
     return HttpResponse(json.dumps(sample, ensure_ascii=False), content_type="application/json")
 
 def loadNodeNeighbours(request):
-    try:
-        data = request.GET
-        node_id = data["node_id"]
-        level = data["level"]
-        node = getObjectById(node_id)
-        n_list = getNodeNeighbours(node,level)
-        l_list = getAdditionalLinks(n_list,int(level)+1)
-    except Exception as e:
-        print e
+    #try:
+    data = request.GET
+    node_id = data["node_id"]
+    level = data["level"]
+    node = getObjectById(node_id)
+    n_list = getNodeNeighbours(node,level)
+    l_list = getAdditionalLinks(n_list,int(level)+1)
+    """except Exception as e:
+        print e"""
     return HttpResponse(json.dumps([n_list,l_list], ensure_ascii=False), content_type="application/json")
 
 #returns packed object
@@ -124,7 +142,7 @@ def parseAttributes(template,object):
 
 def getNodeNeighbours(node,level):
     neighbours = []
-    sample = getSample("Chan_camacs")
+    sample = getSample()
     if level=="0":
         obj_sample = sample["root"]
     else:
@@ -133,10 +151,20 @@ def getNodeNeighbours(node,level):
     level_n = "level"+str(int(level)+1)
     if level_n in sample:
         sample_l = sample[level_n]
+        next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
         if "type" in obj_sample and obj_sample["type"]=="new":
-            next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
+            for n in next_level:
+                neighbour = {"name":n["Name"],"id":"","_parents":[]}
+                if "Class" in n:
+                    neighbour["id"] = parseId(n)
+                display_details = sample_l["display_filter"]
+                obj_attributes = parseAttributes(display_details,n)
+                neighbour["attributes"] = obj_attributes
+                n_display_attributes = sample_l["display_attributes"]
+                neighbour["width"] = n_display_attributes["width"]
+                neighbour["height"] = n_display_attributes["height"]
+                neighbours.append(neighbour)
         else:
-            next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
             for n in next_level:
                 link = getLink(n,node)
                 if link != {}:
@@ -153,26 +181,30 @@ def getNodeNeighbours(node,level):
                     neighbour["width"] = n_display_attributes["width"]
                     neighbour["height"] = n_display_attributes["height"]
                     neighbours.append(neighbour)
-            #if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours
-            if "positioning" in sample_l["display_attributes"] and sample_l["display_attributes"]["positioning"]=="matrix":
-                #create matrix element with all needed stuff
-                matrix = {"name":"Matrix","id":parseId(node)+"matrix","_parents":[],"attributes":{"min":[],"extra":[]}}
-                #load matrix size and then count all matrix sizes
-                matrix_size = sample_l["display_attributes"]["matrix_size"]
-                if matrix_size[0]=="&":
-                    matrix_size = getValueByPath(node,matrix_size)
-                if matrix_size:
-                    matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
-                    matrix_rows = math.ceil(float(matrix_size)/matrix_cols)
-                    matrix["cols"]=matrix_cols
-                    matrix["rows"]=matrix_rows
-                    matrix["width"]=(sample_l["display_attributes"]["width"]+20)*matrix_cols
-                    matrix["height"]=(sample_l["display_attributes"]["height"]+20)*matrix_rows
-                    neighbours = sortMatrixObjects(neighbours,sample_l["sort_field"],matrix_size,node)
-                    #append it to neighbours
-                    neighbours.append(matrix)
-            else:
-                neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
+        #if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours
+        if "positioning" in sample_l["display_attributes"] and sample_l["display_attributes"]["positioning"]=="matrix":
+            #create matrix element with all needed stuff
+            matrix = {"name":"Matrix","id":parseId(node)+"matrix","_parents":[],"attributes":{"min":[],"extra":[]}}
+            #load matrix size and then count all matrix sizes
+            matrix_size = sample_l["display_attributes"]["matrix_size"]
+            if type(matrix_size) is unicode and matrix_size[0]=="&":
+                matrix_size = getValueByPath(node,matrix_size)
+            if matrix_size:
+                matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
+                matrix_rows = math.ceil(float(matrix_size)/matrix_cols)
+                matrix["cols"]=matrix_cols
+                matrix["rows"]=matrix_rows
+                matrix["width"]=(sample_l["display_attributes"]["width"]+20)*matrix_cols
+                matrix["height"]=(sample_l["display_attributes"]["height"]+20)*matrix_rows
+                if "sort_field" in sample_l:
+                    if sample_l["display_attributes"]["matrix_type"]=="channels":
+                        neighbours = sortMatrixObjects(neighbours,sample_l["sort_field"],matrix_size,node)
+                    else:
+                        neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
+                #append it to neighbours
+                neighbours.append(matrix)
+        elif "sort_field" in sample_l:
+            neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
     return neighbours
 
 def sortMatrixObjects(objects,sortname,size,parent_node):
@@ -205,7 +237,7 @@ def sortMatrixObjects(objects,sortname,size,parent_node):
 
 def getAdditionalLinks(nodes,level):
     add_links = []
-    sample = getSample("Chan_camacs")
+    sample = getSample()
     if level==0:
         return add_links
     else:
@@ -233,9 +265,9 @@ def getAdditionalLinks(nodes,level):
     return add_links
 
 
-def parseTree(name):
+def parseTree():
     tree = {}
-    sample = getSample(name)
+    sample = getSample()
     max_level = 1
 
     def parseObjectInfo(obj_sample,object):
@@ -251,7 +283,8 @@ def parseTree(name):
         result["width"] = obj_display_attributes["width"]
         result["height"] = obj_display_attributes["height"]
 
-        level = "level"+str(obj_sample["level"]+1)
+        result["_parents"]=getNodeNeighbours(result,"0")
+        """level = "level"+str(obj_sample["level"]+1)
         if obj_sample["level"]<max_level and level in sample:
             sample_l = sample[level]
             if "type" in obj_sample and obj_sample["type"]=="new":
@@ -266,10 +299,11 @@ def parseTree(name):
                     if link!= {}:
                         if template["component_ID"]!=None:
                             n["link_id"] = link[template["component_ID"]]
-                        result["_parents"].append(parseObjectInfo(sample_l,n))
+                        result["_parents"].append(parseObjectInfo(sample_l,n))"""
         return result
 
-    tree = parseObjectInfo(sample["root"],sample["root"]["fields"])
+    if sample["root"]["type"]=="new":
+        tree = parseObjectInfo(sample["root"],sample["root"]["fields"])
     return tree
 
 def getValueByPath(object,path):
@@ -304,6 +338,8 @@ def getClassTemplate(classname):
             return temp
 
 def parseId(object):
+    if "Class" not in object:
+        return object["name"]
     id = object["Class"]
     template = getTemplate(object)
     if template:
@@ -326,15 +362,18 @@ def getObjectById(id):
             object = obj
     return object
 
-def getSample(name):
-    samples = getDataFile("Chan_sample.json")
-    return next((x for x in samples if x["name"] == name), None)
+def getSample():
+    global tree_sample,tree_sample_name
+    samples = tree_sample#getDataFile("Chan_sample.json")
+    return next((x for x in samples if x["name"] == tree_sample_name), None)
 
 def getAllTemplates():
-    return getDataFile("Chan_template.json")
+    global tree_template
+    return tree_template#getDataFile("Chan_template.json")
 
 def getAllObjects():
-    return getDataFile("CHAN.json")
+    global tree_data
+    return tree_data#getDataFile("CHAN.json")
 
 def getObjects(rules):
     objects = []
@@ -407,6 +446,7 @@ def getLink(obj1,obj2):
             elif field2 in obj1:
                 if obj1[field2]!=obj2[field2]:
                     found = False
+
             else:
                  found = False
         if found == True:
@@ -420,9 +460,12 @@ def getLink(obj1,obj2):
             field1 = class1["component_check_values"][i]
             field2 = class2["primary_keys"][i]
             if field1=="Component_name":
-                if l[obj2["Class"]]!=obj2[field2]:
+                if obj2["Class"] in l:
+                    if l[obj2["Class"]]!=obj2[field2]:
+                        found = False
+                else:
                     found = False
-            elif l[field1]:
+            elif field1 in l and l[field1]:
                 if l[field1]!=obj2[field2]:
                     found = False
             else:

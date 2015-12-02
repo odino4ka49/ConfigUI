@@ -20,6 +20,9 @@ rect.inmatrix {
     font: 14px sans-serif;
     cursor: pointer;
 }
+.hidden{
+    display: none;
+}
 .link {
     fill: none;
     stroke: #262626;
