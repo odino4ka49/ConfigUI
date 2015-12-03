@@ -74,7 +74,7 @@ WEBVEPP.Tree = function(params){
             else{
                 pos = index - Math.floor(number/2);
             }
-            return (20+level_info.height)*(pos)+countNodeY(node.parent);
+            return (10+level_info.height)*(pos)+countNodeY(node.parent);
         },
         countNodeX = function(node){
             var result = 0,
@@ -93,9 +93,9 @@ WEBVEPP.Tree = function(params){
                     var matrix = allofus[allofus.length-1]
                     if(i==depth){
                         if(index==allofus.length-1){
-                            return countLevelX(node)-45+matrix.width/2;
+                            return countLevelX(node)-90+matrix.width/2;
                         }
-                        result+=(index%matrix.cols)*(node_width+20)
+                        result+=(index%matrix.cols)*(node_width+20)-45
                     }
                     else{
                         if("hiding" in level_info && level_info.hiding){

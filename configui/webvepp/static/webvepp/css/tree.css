@@ -1,11 +1,11 @@
 svg {
     margin-top: 32px;
     border: 1px solid #aaa;
-    background-color: #45B7FF;
+    background-color: #E0E6E6;/*#45B7FF;*/
 }
 .person rect {
     fill: #fff;
-    stroke: #072356;
+    stroke: black;/*#072356;*/
     stroke-width: 1px;
 }
 rect.inmatrix {
@@ -29,7 +29,7 @@ rect.inmatrix {
     stroke-width: 1.5px;
 }
 .link.additional{
-    stroke: #94FE67;
+    stroke: #0A3A4A;/*#94FE67;*/
 }
 .attributes{
     overflow-y: hidden;

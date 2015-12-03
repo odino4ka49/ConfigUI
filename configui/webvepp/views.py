@@ -195,7 +195,7 @@ def getNodeNeighbours(node,level):
                 matrix["cols"]=matrix_cols
                 matrix["rows"]=matrix_rows
                 matrix["width"]=(sample_l["display_attributes"]["width"]+20)*matrix_cols
-                matrix["height"]=(sample_l["display_attributes"]["height"]+20)*matrix_rows
+                matrix["height"]=(sample_l["display_attributes"]["height"]+10)*matrix_rows
                 if "sort_field" in sample_l:
                     if sample_l["display_attributes"]["matrix_type"]=="channels":
                         neighbours = sortMatrixObjects(neighbours,sample_l["sort_field"],matrix_size,node)
