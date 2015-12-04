@@ -99,7 +99,11 @@ WEBVEPP.Tree = function(params){
                     }
                     else{
                         if("hiding" in level_info && level_info.hiding){
-                            result = countNodeX(node.parent)+50;
+                            var unhidden,d=node;
+                            while(d.depth!=i){
+                                d = d.parent;
+                            }
+                            result = countNodeX(d)+50;
                         }
                         else{
                             result += matrix.width*2;
@@ -137,8 +141,12 @@ WEBVEPP.Tree = function(params){
                 var level_info = settings[level_name].display_attributes;
                 var node_width = level_info.width;
                 if("positioning" in level_info && level_info.positioning=="matrix"){
-                    if(node.parent.unhidden){
-                        result += countNodeX(node.parent)+50;
+                    if("hiding" in level_info && level_info.hiding){
+                        var unhidden,d=node;
+                        while(d.depth!=i){
+                            d = d.parent;
+                        }
+                        result += countNodeX(d)+50;
                     }
                     else{
                         var columns = (level_info.matrix_size>16)? 8:4;
@@ -148,6 +156,16 @@ WEBVEPP.Tree = function(params){
                 result += node_width+50;
             }
             return result;
+        },
+        isMatrix = function(person){
+            var level_name = "level"+person.depth;
+            var level_info = settings[level_name].display_attributes;
+            var allofus = person.parent._parents;
+            var index = allofus.indexOf(person);
+            if(index==allofus.length-1 && "positioning" in level_info && level_info.positioning=="matrix"){
+                return true;
+            }
+            return false;
         },
         hideSiblings = function(person){
             var level_name = "level"+person.depth;
@@ -516,7 +534,7 @@ WEBVEPP.Tree = function(params){
             togglePerson = function(person){
                 // Don't allow the root to be collapsed because that's
                 // silly (it also makes our life easier)
-                if(person.depth<1){
+                if(person.depth<1 || isMatrix(person)){
                     return;
                 }
                 // Non-root nodes

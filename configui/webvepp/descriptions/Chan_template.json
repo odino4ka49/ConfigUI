@@ -459,7 +459,7 @@
       "System"
     ],
     "components": "Channels",
-    "component_ID": "OK",
+    "component_ID": null,
     "component_types": [
       "Control channel",
       "ADC channel",

@@ -109,13 +109,20 @@ def parseAttributes(template,object):
             elif (type(field) is dict) and ('link_to' in field):
                 #if we do this channels->id thing
                 rules = parseRulesToString(object,field['link_to'])
-                obj2 = getObject(rules)
-                if obj2:
+                objs2 = getObjects(rules)
+                for obj2 in objs2:
                     link = getLink(object,obj2)
-                    attrs += [{
-                        "key": field["key"],
-                        "value": link[field["value"]]
-                    }]
+                    if link:
+                        attrs += [{
+                            "key": field["key"],
+                            "value": link[field["value"]]
+                        }]
+            elif (type(field) is dict) and (field["value"][0]=="&"):
+                value = getValueByPath(object,field["value"])
+                attrs += [{
+                    "key": field["key"],
+                    "value": value
+                }]
             elif ("link_id" in object) and (type(field) is dict) and ("value" in field) and (field["value"]=="link_id"):
                 attrs += [{
                         "key": field["key"],
@@ -180,6 +187,8 @@ def getNodeNeighbours(node,level):
                     n_display_attributes = sample_l["display_attributes"]
                     neighbour["width"] = n_display_attributes["width"]
                     neighbour["height"] = n_display_attributes["height"]
+                    if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
+                        neighbour["_parents"]=getNodeNeighbours(n,str(int(level)+1))
                     neighbours.append(neighbour)
         #if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours
         if "positioning" in sample_l["display_attributes"] and sample_l["display_attributes"]["positioning"]=="matrix":
@@ -319,10 +328,19 @@ def getValueByPath(object,path):
 
 def getNeighbour(object,foreign_key):
     neighbour = None
-    #create rules
-    rules = {"Class":foreign_key,"Name":object[foreign_key],"System":object["System"]}
-    #get object
-    neighbour = getObject(rules)
+    if foreign_key in object:
+        #create rules
+        rules = {"Class":foreign_key,"Name":object[foreign_key],"System":object["System"]}
+        #get object
+        neighbour = getObject(rules)
+    else:
+        rules = {"Class":foreign_key,"System":object["System"]}
+        neighbours = getObjects(rules)
+        link = {}
+        for n in neighbours:
+            link = getLink(object,n)
+            if link!={}:
+                neighbour = n
     return neighbour
 
 def getCamac(request):
@@ -423,13 +441,9 @@ def getLink(obj1,obj2):
     link = {}
     class1 = getTemplate(obj1)
     class2 = getTemplate(obj2)
-    #sort objects to and from
-    if class2["component_types"] and obj1["Class"] in class2["component_types"]:
-        obj1,obj2 = obj2,obj1
-        class1,class2 = class2,class1
-    elif class1["component_types"] and obj2["Class"] in class1["component_types"]:
-        None
-    else:
+
+    def checkForLinkLike(obj1,obj2,class1,class2):
+        link = {}
         if obj1["Class"] in obj2:
             obj1,obj2 = obj2,obj1
             class1,class2 = class2,class1
@@ -452,6 +466,16 @@ def getLink(obj1,obj2):
         if found == True:
             link["Class"]=obj2["Name"]
         return link
+
+    #sort objects to and from
+    if class2["component_types"] and obj1["Class"] in class2["component_types"]:
+        obj1,obj2 = obj2,obj1
+        class1,class2 = class2,class1
+    elif class1["component_types"] and obj2["Class"] in class1["component_types"]:
+        None
+    else:
+    #check for linklike (not in components) connection
+        return checkForLinkLike(obj1,obj2,class1,class2)
     #let's get the Link!
     links = obj1[class1["components"]]
     for l in links:
@@ -473,6 +497,8 @@ def getLink(obj1,obj2):
                     found = False
         if found == True:
             link = l
+    if link=={}:
+        return checkForLinkLike(obj1,obj2,class1,class2)
     return link
 
 def parseRulesToString(object,rules):
