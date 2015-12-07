@@ -30,11 +30,11 @@ def elements(request):
     return HttpResponse(template.render())
 
 def loadTreeData(request):
-    try:
-        tree = parseTree()
-        tree["additional_links"] = []
-    except Exception as e:
-        print e
+    #try:
+    tree = parseTree()
+    tree["additional_links"] = []
+    #except Exception as e:
+    #    print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
 
 def loadTreeSample(request):
@@ -180,7 +180,11 @@ def getNodeNeighbours(node,level):
                         n["link_id"] = link[template["component_ID"]]
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
-                        neighbour["id"] = parseId(n)
+                        if("autorevealing" in obj_sample["display_attributes"] and obj_sample["display_attributes"]["autorevealing"]):
+                            neighbour["id"] = parseId(node)+"->"+parseId(n)
+                            print neighbour["id"]
+                        else:
+                            neighbour["id"] = parseId(n)
                     display_details = sample_l["display_filter"]
                     obj_attributes = parseAttributes(display_details,n)
                     neighbour["attributes"] = obj_attributes
@@ -368,6 +372,8 @@ def parseId(object):
 
 def getObjectById(id):
     object = {}
+    id_way = id.split("->")
+    id = id_way[len(id_way)-1]
     data = getAllObjects()
     def filter(o):
         result = True
@@ -378,6 +384,7 @@ def getObjectById(id):
     for obj in data:
         if(filter(obj)):
             object = obj
+    print id
     return object
 
 def getSample():
@@ -399,8 +406,14 @@ def getObjects(rules):
     def filter(o):
         result = True
         for r in rules:
-            if r in o and o[r]!=rules[r] and o[r] not in rules[r]:
+            if rules[r]==None:
                 result = False
+            elif type(rules[r]) is unicode:
+                if r in o and o[r]!=rules[r]:
+                    result = False
+            elif type(rules[r]) is list:
+                if r in o and o[r] not in rules[r]:
+                    result = False
         return result
     for obj in data:
         if(filter(obj)):

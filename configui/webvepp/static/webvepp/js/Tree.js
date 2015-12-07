@@ -169,13 +169,15 @@ WEBVEPP.Tree = function(params){
         },
         hideSiblings = function(person){
             var level_name = "level"+person.depth;
+            var level_info = settings[level_name].display_attributes;
             var hiding = false;
-            if("hiding" in settings[level_name].display_attributes){
-                hiding = settings[level_name].display_attributes.hiding;
+            if("hiding" in level_info){
+                hiding = level_info.hiding;
             }
             person.parent._parents.forEach(function(sibling){
                 if(sibling.id!=person.id){
-                    collapse(sibling);
+                    if(!("autorevealing" in level_info)||("autorevealing" in level_info && !level_info.autorevealing))
+                        collapse(sibling);
                     if(hiding){
                         sibling.hidden = true;
                     }
