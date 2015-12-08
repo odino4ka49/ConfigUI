@@ -174,7 +174,10 @@ WEBVEPP.Tree = function(params){
             if("hiding" in level_info){
                 hiding = level_info.hiding;
             }
-            person.parent._parents.forEach(function(sibling){
+            var nodes = tree.nodes(root);
+            nodes.forEach(function(sibling){
+                if(sibling.depth!=person.depth)
+                    return;
                 if(sibling.id!=person.id){
                     if(!("autorevealing" in level_info)||("autorevealing" in level_info && !level_info.autorevealing))
                         collapse(sibling);
@@ -274,6 +277,14 @@ WEBVEPP.Tree = function(params){
                   })
                   .on('click', function(person){
                     togglePerson(person);
+                    if("link_to_map" in person){
+                        var win = window.open(WEBVEPP.serveradr()+"webvepp/"+person.link_to_map,'_blank');
+                        if(win){
+                            win.focus();
+                        }else{
+                            alert('Please allow popups for this site');
+                        }
+                    }
                   })
                   .on('wheel.zoom', function(){
                     d3.event.stopPropagation();

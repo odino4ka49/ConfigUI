@@ -130,6 +130,11 @@
         "positioning": "matrix",
         "matrix_type": "channels",
         "matrix_size": "&Module Type->Channels number"
+      },
+      "action":{
+        "type": "open_another_map",
+        "map": "elements",
+        "info": "&Element"
       }
     }
   },
@@ -235,6 +240,58 @@
       "display_attributes": {
         "width": 170,
         "height": 60
+      }
+    },
+    "level4": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "CAMAC","Serial"
+        ]
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "Name",
+          {
+            "key": "Dispatcher position",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "Module"
+            },
+            "link_from": {
+              "Controller": "CHAN",
+              "System": "&System",
+              "Class": "CAMAC"
+            },
+            "value": "Position"
+          },
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "DS-24"
+            },
+            "value": "ID"
+          },
+          "PINT",
+          "Dispatcher name",
+          "Address"
+        ],
+        "max": [
+          "Comment",
+          "Controller",
+          "Area",
+          "Rack/cabinet",
+          "Rack level"
+        ]
+      },
+      "display_attributes": {
+        "width": 170,
+        "height": 110
       }
     }
   }

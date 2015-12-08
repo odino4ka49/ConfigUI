@@ -11,6 +11,7 @@ tree_data = []
 tree_template = []
 tree_sample = []
 tree_sample_name = ""
+start_name = None
 
 def index(request):
     global tree_data, tree_sample, tree_template,tree_sample_name
@@ -21,8 +22,10 @@ def index(request):
     tree_sample_name = "Chan_camacs"
     return HttpResponse(template.render())
 
-def elements(request):
-    global tree_data, tree_sample, tree_template,tree_sample_name
+def elements(request,id=None):
+    global tree_data, tree_sample, tree_template,tree_sample_name,start_name
+    start_name = id
+    print id
     template = loader.get_template('webvepp/index.html')
     tree_data = getDataFile("CHAN.json")
     tree_template = getDataFile("Chan_template.json")
@@ -31,8 +34,11 @@ def elements(request):
     return HttpResponse(template.render())
 
 def loadTreeData(request):
+    global start_name
     #try:
     tree = parseTree()
+    if start_name:
+        hideSiblings(tree["_parents"],start_name)
     tree["additional_links"] = []
     #except Exception as e:
     #    print e
@@ -192,6 +198,10 @@ def getNodeNeighbours(node,level):
                     n_display_attributes = sample_l["display_attributes"]
                     neighbour["width"] = n_display_attributes["width"]
                     neighbour["height"] = n_display_attributes["height"]
+                    if "action" in sample_l:
+                        action = parseRulesToString(n,sample_l["action"])
+                        if action["type"]=="open_another_map":
+                            neighbour["link_to_map"] = action["map"]+"/"+action["info"]
                     if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
                         neighbour["_parents"]=getNodeNeighbours(n,str(int(level)+1))
                     neighbours.append(neighbour)
@@ -292,6 +302,14 @@ def getAdditionalLinks(nodes,level):
             #create additional link and remove _parent
     return add_links
 
+def hideSiblings(neighbours,start_name):
+    print start_name
+    for n in neighbours:
+        if n["name"]!=start_name:
+            None#n["hidden"] = True
+        else:
+            n["unhidden"] = True
+    return
 
 def parseTree():
     tree = {}
