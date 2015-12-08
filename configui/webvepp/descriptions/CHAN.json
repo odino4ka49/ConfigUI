@@ -419,6 +419,15 @@
    "System": "CHAN",
    "Comment": "ОЗУ CHAN"
  },
+ 
+ {
+   "Class": "Module",
+   "Name": "CHAN",
+   "Module Type": "Одренок",
+   "System": "CHAN",
+   "Comment": "Одренок CHAN"
+ },
+ 
  {
    "Class": "Module",
    "Name": "0CC",
@@ -903,6 +912,10 @@
      {
        "Position": 21,
        "Module": "11ZU"
+     },
+     {
+       "Position": 25,
+       "Module": "CHAN"
      }
    ]
  },
@@ -1224,7 +1237,6 @@
    ]
  },
 
-
  {
    "Class": "DS-24",
    "Name": "10DS",
@@ -1328,7 +1340,6 @@
      }
    ]
  },
-
 
  {
    "Class": "Б0634",
@@ -2519,6 +2530,66 @@
      {
        "OK": true,
        "DBLUR channel": "W"
+     }
+   ]
+ },    
+
+{
+   "Class": "Element",
+   "Name": "DV3",
+   "System": "CHAN",
+   "Group": "Injection/Exraction",
+   "Type": "El.static plates",
+   "Comment": "электростатические пластины",
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "TZDV"
+     },
+     {
+       "OK": true,
+       "Control channel": "TDU"
+     },
+     {
+       "OK": true,
+       "Control channel": "TDD"
+     },
+     {
+       "OK": true,
+       "Control channel": "TUD"
+     },
+     {
+       "OK": true,
+       "Control channel": "UZ"
+     },
+     {
+       "OK": true,
+       "ADC channel": "VDU3"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VDU3"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VDD3"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLDU"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLDD"
+     },
+     {
+       "OK": true,
+       "UR channel": "W"
+     },
+     {
+       "OK": true,
+       "Lock channel": "TDD"
      }
    ]
  },    
@@ -6469,6 +6540,180 @@
    "Channel": 6,
    "Channel ON": 6
  },
+
+ {
+   "Class": "Control channel",
+   "Name": "TZDV",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска ГИМНа",
+   "BANK": 129,
+   "Module": "5GVI",
+   "Channel": 0,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },
+ {
+   "Class": "Control channel",
+   "Name": "TDU",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 137,
+   "Module": "LZD",
+   "Channel": 4,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "TDD",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 138,
+   "Module": "LZD",
+   "Channel": 5,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "TUD",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 190,
+   "Module": "LZD",
+   "Channel": null,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "UZ",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "уставка напряжения на ГИМНе",
+   "BANK": 153,
+   "Module": "4PKS",
+   "Channel": 7,
+   "Cod/Value": 1.0833,
+   "Units": "V",
+   "Max": 30000.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 150.0
+ },    
+ {
+   "Class": "ADC channel",
+   "Name": "UDV3",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "измерение напряжения на конденсаторной батарее ГИМНа",
+   "BANK": 155,
+   "Module": "0KAS",
+   "Channel": 15,
+   "Cod/Value": 8.0333,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "10 ms",
+   "Diapasone": 0,
+   "Interval": 2,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 150.0
+ },   
+ {
+   "Class": "Meas channel",
+   "Name": "VDU3",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "измерение времени прихода сигнла с пластины",
+   "BANK": 147,
+   "Module": "2IVS",
+   "Channel": 6,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },
+ {
+   "Class": "Meas channel",
+   "Name": "VDD3",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "измерение времени прихода сигнла с пластины",
+   "BANK": 148,
+   "Module": "2IVS",
+   "Channel": 5,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },   
+ {
+   "Class": "UR channel",
+   "Name": "BLDU",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": " вкл. блокировки запуска тиратрона",
+   "BANK": 139,
+   "Module": "URLZ",
+   "Channel": 4,
+   "Channel ON": 4
+ },   
+ {
+   "Class": "UR channel",
+   "Name": "BLDD",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": " вкл. блокировки запуска тиратрона",
+   "BANK": 140,
+   "Module": "URLZ",
+   "Channel": 5,
+   "Channel ON": 5
+ },   
+ {
+   "Class": "UR channel",
+   "Name": "W",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": " вкл. ГИМНа",
+   "BANK": 294,
+   "Module": "4UR",
+   "Channel": 14,
+   "Channel ON": 14
+ },      
+ {
+   "Class": "Lock channel",
+   "Name": "TDD",
+   "Element": "DV3",
+   "System": "CHAN",
+   "Comment": "привязанный канал",
+   "Master element": "DV3",
+   "Master channel": "TDU" 
+ },   
 
  {
    "Class": "Power Supply",

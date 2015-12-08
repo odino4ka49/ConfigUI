@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
+from sets import Set
 import json
 import inspect, os
 import math
@@ -180,11 +181,11 @@ def getNodeNeighbours(node,level):
                         n["link_id"] = link[template["component_ID"]]
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
-                        if("autorevealing" in obj_sample["display_attributes"] and obj_sample["display_attributes"]["autorevealing"]):
+                        #if we do autoopeneverything thing
+                        """if("autorevealing" in obj_sample["display_attributes"] and obj_sample["display_attributes"]["autorevealing"]):
                             neighbour["id"] = parseId(node)+"->"+parseId(n)
-                            print neighbour["id"]
-                        else:
-                            neighbour["id"] = parseId(n)
+                        else:"""
+                        neighbour["id"] = parseId(n)
                     display_details = sample_l["display_filter"]
                     obj_attributes = parseAttributes(display_details,n)
                     neighbour["attributes"] = obj_attributes
@@ -275,6 +276,20 @@ def getAdditionalLinks(nodes,level):
                                     to_object = getObject(rules)
                                     to_id = parseId(to_object)
                                     add_links.append({"from":n["id"],"to":to_id,"id":n["id"]+to_id,"text":to_obj[template["component_ID"]]})
+        level_info = sample_l["display_attributes"]
+        if "autorevealing" in level_info and level_info["autorevealing"]:
+            #get thelist of id's
+            uniq_ids = Set([])
+            for n in nodes:
+                for nl in n["_parents"]:
+                    if nl["id"] in uniq_ids:
+                        n["_parents"]=[]
+                        add_links.append({"from":nl["id"],"to":n["id"],"id":nl["id"]+n["id"],"text":""})
+                    else:
+                        uniq_ids.add(nl["id"])
+            #walk through nextlevel
+            #if there are same id's
+            #create additional link and remove _parent
     return add_links
 
 
@@ -326,7 +341,7 @@ def getValueByPath(object,path):
     #loop where we go through path and change current value (it might be an object if it's not the end of the path)
     for i in range(0,len(path)-1):
         value = getNeighbour(value,path[i])
-    if path[-1] in value:
+    if value and path[-1] in value:
         value = value[path[-1]]
     return value
 
@@ -384,7 +399,6 @@ def getObjectById(id):
     for obj in data:
         if(filter(obj)):
             object = obj
-    print id
     return object
 
 def getSample():

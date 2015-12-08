@@ -453,8 +453,9 @@ WEBVEPP.Tree = function(params){
 
                 link_update.select("path")
                     .attr("d", function(d){
-                        if(d.source && d.target)
+                        if(d.source && d.target){
                             return backward_elbow(d, direction);
+                        }
                         else{
                             removeAdditionalLink(d);
                             link_update.remove();
@@ -652,13 +653,12 @@ WEBVEPP.Tree = function(params){
 
         if(sourceY==target_levelY - d.target.width ){
             target_levelY = target_levelY + d.source.width+50;
-            direction *= -1;
         }
 
-        return "M" + (-direction * sourceY) + "," + sourceX
-        + "H" + (-direction * (sourceY + (target_levelY-sourceY)/2))
+        return "M" + (direction * sourceY) + "," + sourceX
+        + "H" + (direction * (sourceY + (target_levelY-sourceY)/2))
         + "V" + targetX
-        + "H" + (-direction * targetY);
+        + "H" + (direction * targetY);
     };
     function transitionElbow(d){
         return "M" + d.source.y + "," + d.source.x

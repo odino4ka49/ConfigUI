@@ -25,7 +25,7 @@
       "level": 1,
       "filter": {
         "Class": [
-          "CAMAC"
+          "CAMAC","Serial"
         ]
       },
       "sort_field": "Name",
@@ -198,7 +198,6 @@
         ],
         "max": []
       },
-      "sort_field": "Channel",
       "display_attributes": {
         "width": 170,
         "height": 60,
