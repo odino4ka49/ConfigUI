@@ -14,18 +14,18 @@ tree_sample_name = ""
 start_name = None
 
 def index(request):
-    global tree_data, tree_sample, tree_template,tree_sample_name
+    global tree_data, tree_sample, tree_template,tree_sample_name,start_name
     template = loader.get_template('webvepp/index.html')
     tree_data = getDataFile("CHAN.json")
     tree_template = getDataFile("Chan_template.json")
     tree_sample = getDataFile("Chan_sample.json")
     tree_sample_name = "Chan_camacs"
+    start_name = None
     return HttpResponse(template.render())
 
 def elements(request,id=None):
     global tree_data, tree_sample, tree_template,tree_sample_name,start_name
     start_name = id
-    print id
     template = loader.get_template('webvepp/index.html')
     tree_data = getDataFile("CHAN.json")
     tree_template = getDataFile("Chan_template.json")
@@ -39,6 +39,9 @@ def loadTreeData(request):
     tree = parseTree()
     if start_name:
         hideSiblings(tree["_parents"],start_name)
+        for n in tree["_parents"]:
+            if n["name"]==start_name:
+                n["_parents"] = getNodeNeighbours(getObjectById(n["id"]),"1")
     tree["additional_links"] = []
     #except Exception as e:
     #    print e
@@ -58,10 +61,11 @@ def loadNodeNeighbours(request):
     level = data["level"]
     node = getObjectById(node_id)
     n_list = getNodeNeighbours(node,level)
+    n_left_list = getNodeNeighbours(node,level,-1)
     l_list = getAdditionalLinks(n_list,int(level)+1)
     """except Exception as e:
         print e"""
-    return HttpResponse(json.dumps([n_list,l_list], ensure_ascii=False), content_type="application/json")
+    return HttpResponse(json.dumps([n_list,n_left_list,l_list], ensure_ascii=False), content_type="application/json")
 
 #returns packed object
 def parseObject(object):
@@ -135,6 +139,12 @@ def parseAttributes(template,object):
                         "key": field["key"],
                         "value": object["link_id"]
                     }]
+            elif field=="*":
+                for key in object:
+                    attrs += [{
+                        "key": key,
+                        "value": object[key]
+                    }]
             elif field in object:
                 attrs += [{
                     "key": field,
@@ -142,9 +152,16 @@ def parseAttributes(template,object):
                 }]
         return attrs
 
+    def check_unique(attrs):
+        for attr in attrs["extra"]:
+            if attr in attrs["min"]:
+                attrs["extra"].remove(attr)
+        return attrs
+
     if("min" in template):
         attributes["min"] = parsing(template["min"])
         attributes["extra"] = parsing(template["max"])
+        check_unique(attributes)
     else:
         for field in template["fields"]:
             field_name = field["key"]
@@ -154,7 +171,7 @@ def parseAttributes(template,object):
             }]
     return attributes
 
-def getNodeNeighbours(node,level):
+def getNodeNeighbours(node,level,direction=1):
     neighbours = []
     sample = getSample()
     if level=="0":
@@ -162,7 +179,15 @@ def getNodeNeighbours(node,level):
     else:
         obj_sample = sample["level"+level]
 
-    level_n = "level"+str(int(level)+1)
+    if direction==-1:
+        if level=="1":
+            level_n = "level-1"
+        elif int(level)<0:
+            level_n = "level"+str(int(level)-1)
+        else:
+            return neighbours
+    else:
+        level_n = "level"+str(int(level)+1)
     if level_n in sample:
         sample_l = sample[level_n]
         next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
@@ -177,6 +202,7 @@ def getNodeNeighbours(node,level):
                 n_display_attributes = sample_l["display_attributes"]
                 neighbour["width"] = n_display_attributes["width"]
                 neighbour["height"] = n_display_attributes["height"]
+                neighbour["direction"] = direction
                 neighbours.append(neighbour)
         else:
             for n in next_level:
@@ -187,10 +213,6 @@ def getNodeNeighbours(node,level):
                         n["link_id"] = link[template["component_ID"]]
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
-                        #if we do autoopeneverything thing
-                        """if("autorevealing" in obj_sample["display_attributes"] and obj_sample["display_attributes"]["autorevealing"]):
-                            neighbour["id"] = parseId(node)+"->"+parseId(n)
-                        else:"""
                         neighbour["id"] = parseId(n)
                     display_details = sample_l["display_filter"]
                     obj_attributes = parseAttributes(display_details,n)
@@ -198,6 +220,7 @@ def getNodeNeighbours(node,level):
                     n_display_attributes = sample_l["display_attributes"]
                     neighbour["width"] = n_display_attributes["width"]
                     neighbour["height"] = n_display_attributes["height"]
+                    neighbour["direction"] = direction
                     if "action" in sample_l:
                         action = parseRulesToString(n,sample_l["action"])
                         if action["type"]=="open_another_map":
@@ -208,7 +231,7 @@ def getNodeNeighbours(node,level):
         #if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours
         if "positioning" in sample_l["display_attributes"] and sample_l["display_attributes"]["positioning"]=="matrix":
             #create matrix element with all needed stuff
-            matrix = {"name":"Matrix","id":parseId(node)+"matrix","_parents":[],"attributes":{"min":[],"extra":[]}}
+            matrix = {"name":"Matrix","id":parseId(node)+"matrix","_parents":[],"attributes":{"min":[],"extra":[]},"direction":direction}
             #load matrix size and then count all matrix sizes
             matrix_size = sample_l["display_attributes"]["matrix_size"]
             if type(matrix_size) is unicode and matrix_size[0]=="&":
@@ -303,10 +326,10 @@ def getAdditionalLinks(nodes,level):
     return add_links
 
 def hideSiblings(neighbours,start_name):
-    print start_name
+    #hide siblings
     for n in neighbours:
         if n["name"]!=start_name:
-            None#n["hidden"] = True
+            n["hidden"] = True
         else:
             n["unhidden"] = True
     return

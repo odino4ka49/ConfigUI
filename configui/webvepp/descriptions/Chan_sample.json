@@ -160,6 +160,25 @@
         "height": 50
       }
     },
+    "level-1": {
+      "type": "filter",
+      "level": -1,
+      "filter": {
+        "Class": [
+          "Power Supply"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "Name"
+        ],
+        "max": ["*"]
+      },
+      "display_attributes": {
+        "width": 170,
+        "height": 60
+      }
+    },
     "level1": {
       "type": "filter",
       "level": 1,
@@ -201,7 +220,7 @@
           "Module",
           "Channel"
         ],
-        "max": []
+        "max": ["*"]
       },
       "display_attributes": {
         "width": 170,

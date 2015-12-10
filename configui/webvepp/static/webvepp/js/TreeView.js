@@ -28,8 +28,10 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         // that they don't have any ancestors.
         if(person.collapsed){
           return;
+        } else if(person._children){
+          return person._parents.concat(person._children);
         } else {
-          return person._parents;
+            return person._parents;
         }
     });
 

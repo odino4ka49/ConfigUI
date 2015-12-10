@@ -56,7 +56,10 @@ WEBVEPP.Tree = function(params){
                 return 0;
             }
             var allofus = node.parent._parents;
-                index = allofus.indexOf(node);
+            if("direction" in node && node.direction==-1){
+                allofus = node.parent._children;
+            }
+            var index = allofus.indexOf(node);
                 number = allofus.length;
                 level_name = "level"+depth;
                 level_info = settings[level_name].display_attributes;
@@ -80,13 +83,26 @@ WEBVEPP.Tree = function(params){
             var result = 0,
                 depth = node.depth,
                 index = 0,
-                allofus;
+                allofus,
+                direction = 1;
+            if("direction" in node && node.direction==-1){
+                direction = -1;
+            }
             if(node.depth!=0){
-                allofus = node.parent._parents;
+                if(direction==-1){
+                    allofus = node.parent._children;
+                }
+                else {
+                    allofus = node.parent._parents;
+                }
                 index = allofus.indexOf(node);
             }
             for(var i=1;i<=depth;i++){
-                var level_name = i==0? "root":"level"+i;
+                var ii = i
+                if(direction==-1 && i!=1){
+                        ii = -(i-1);
+                }
+                var level_name = ii==0? "root":"level"+ii;
                 var level_info = settings[level_name].display_attributes;
                 var node_width = level_info.width;
                 if("positioning" in level_info && level_info.positioning=="matrix"){
@@ -103,7 +119,7 @@ WEBVEPP.Tree = function(params){
                             while(d.depth!=i){
                                 d = d.parent;
                             }
-                            result = countNodeX(d)+50;
+                            result = countNodeX(d)+50*direction;
                         }
                         else{
                             result += matrix.width*2;
@@ -111,7 +127,7 @@ WEBVEPP.Tree = function(params){
                     }
                 }
                 if(i!=depth)
-                    result += node_width+50;
+                    result += (node_width+50)*direction;
             }
             return result;
         },
@@ -132,12 +148,20 @@ WEBVEPP.Tree = function(params){
             return result;
         },
         countLevelX = function(node){
-            var depth = node.depth
+            var depth = node.depth;
             if(depth==0)
                 return 0;
-            var result = 0;
+            var result = 0,
+                direction = 1;
+            if("direction" in node && node.direction==-1){
+                direction = -1;
+            }
             for(var i=1;i<depth;i++){
-                var level_name = i==0? "root":"level"+i;
+                var ii = i
+                if(direction==-1 && i!=1){
+                        ii = -(i-1);
+                }
+                var level_name = ii==0? "root":"level"+ii;
                 var level_info = settings[level_name].display_attributes;
                 var node_width = level_info.width;
                 if("positioning" in level_info && level_info.positioning=="matrix"){
@@ -146,14 +170,14 @@ WEBVEPP.Tree = function(params){
                         while(d.depth!=i){
                             d = d.parent;
                         }
-                        result += countNodeX(d)+50;
+                        result += countNodeX(d)+50*direction;
                     }
                     else{
                         var columns = (level_info.matrix_size>16)? 8:4;
-                        result += (node_width+30)*columns;
+                        result += (node_width+30)*columns*direction;
                     }
                 }
-                result += node_width+50;
+                result += (node_width+50)*direction;
             }
             return result;
         },
@@ -204,7 +228,7 @@ WEBVEPP.Tree = function(params){
             }
         },
         removeAdditionalLink = function(link){
-            root.additional_links.splice(root.additional_links.indexOf(link),1);
+            //root.additional_links.splice(root.additional_links.indexOf(link),1);
         },
         drawLinks = function(links, source){
             var self = this;
@@ -228,7 +252,12 @@ WEBVEPP.Tree = function(params){
                 .attr("d", function(d){
                     if(d.source.depth==0)
                         return "";
-                    return elbow(d, direction);
+                    if(d.target.direction){
+                        return elbow(d, d.target.direction);
+                    }
+                    else{
+                        return elbow(d, direction);
+                    }
                 });
 
             link_update.select("text")
@@ -327,15 +356,15 @@ WEBVEPP.Tree = function(params){
                         .attr('y', 0)
                         .attr('width', 0)
                         .attr('height', 0)
+                        .attr("class",function(d){
+                            return countNodeClass(d);
+                        })
                         .append("xhtml:body")
                         .html(function(d){
                             var text = (d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
                             //text += d.revealed? attributesToString(d.attributes.extra): "";
                             return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
                         })
-                      .attr("class",function(d){
-                        return countNodeClass(d);
-                      });
 
 
                 // Update the position of both old and new nodes
@@ -465,11 +494,16 @@ WEBVEPP.Tree = function(params){
                 link_update.select("path")
                     .attr("d", function(d){
                         if(d.source && d.target){
-                            return backward_elbow(d, direction);
+                            if(d.target.direction){
+                                return backward_elbow(d, d.target.direction);
+                            }
+                            else{
+                                return backward_elbow(d, direction);
+                            }
                         }
                         else{
                             removeAdditionalLink(d);
-                            link_update.remove();
+                            //link_update.remove();
                         }
                     });
 
@@ -524,7 +558,7 @@ WEBVEPP.Tree = function(params){
                         return width;
                     })
                     .attr('height', function(d){
-                        return height;
+                        return height+10;
                     });
                 details.select("foreignObject")
                     .attr('x',function(d){
@@ -638,10 +672,10 @@ WEBVEPP.Tree = function(params){
           targetX = d.target.x,
           targetY = d.target.y - (boxWidth / 2);*/
         var sourceX = countNodeY(d.source),
-        sourceY = countNodeX(d.source) + (d.source.width / 2),
+        sourceY = countNodeX(d.source) + (d.source.width / 2)*direction,
         targetX = countNodeY(d.target),
-        targetY = countNodeX(d.target) - (d.target.width / 2),
-        target_levelY = countLevelX(d.target) - (d.target.width / 2);
+        targetY = countNodeX(d.target) - (d.target.width / 2)*direction,
+        target_levelY = countLevelX(d.target) - (d.target.width / 2)*direction;
 
         if(d.source.depth!=0){
             var level_info = settings["level"+d.target.depth].display_attributes;
@@ -650,10 +684,10 @@ WEBVEPP.Tree = function(params){
             }
         }
 
-        return "M" + (direction * sourceY) + "," + sourceX
-        + "H" + (direction * (sourceY + (target_levelY-sourceY)/2))
+        return "M" + (sourceY) + "," + sourceX
+        + "H" + ((sourceY + (target_levelY-sourceY)/2))
         + "V" + targetX
-        + "H" + (direction * targetY);
+        + "H" + (targetY);
     };
     function backward_elbow(d,direction) {
         var sourceX = countNodeY(d.source),
@@ -663,7 +697,8 @@ WEBVEPP.Tree = function(params){
         target_levelY = countLevelX(d.target) + (d.target.width / 2);
 
         if(sourceY==target_levelY - d.target.width ){
-            target_levelY = target_levelY + d.source.width+50;
+            target_levelY = target_levelY+50;
+            sourceY = targetY;
         }
 
         return "M" + (direction * sourceY) + "," + sourceX

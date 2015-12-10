@@ -465,7 +465,8 @@
       "ADC channel",
       "Meas channel",
       "UR channel",
-      "DBLUR channel"
+      "DBLUR channel",
+      "Lock channel"
     ],
     "component_check_values": [
       "Component_name",
@@ -765,6 +766,45 @@
       "System",
       "Element"
     ]
+  },
+  {
+    "class": "Lock channel",
+    "comment": "шаблон для привязанного канала",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Element",
+        "type": "string"
+      },
+      {
+        "key": "Master element",
+        "type": "string"
+      },
+      {
+        "key": "Master channel",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Element"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
   },
   {
     "class": "DS-24",

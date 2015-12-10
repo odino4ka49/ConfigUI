@@ -2595,6 +2595,362 @@
  },    
   
 {
+   "Class": "Element",
+   "Name": "IV4E",
+   "System": "CHAN",
+   "Group": "Injection/Exraction",
+   "Type": "El.static plates",
+   "Comment": "электростатические пластины",
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "TD"
+     },
+     {
+       "OK": true,
+       "Control channel": "TU"
+     },
+     {
+       "OK": true,
+       "Control channel": "TZ"
+     },
+     {
+       "OK": true,
+       "Control channel": "UZ"
+     },
+     {
+       "OK": true,
+       "ADC channel": "UIE"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VIEU"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VIED"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLD"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLU"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLW"
+     },
+     {
+       "OK": true,
+       "Lock channel": "TD"
+     }
+   ]
+ },    
+ 
+ {
+   "Class": "Element",
+   "Name": "IV4P",
+   "System": "CHAN",
+   "Group": "Injection/Exraction",
+   "Type": "El.static plates",
+   "Comment": "электростатические пластины",
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "TD"
+     },
+     {
+       "OK": true,
+       "Control channel": "TU"
+     },
+     {
+       "OK": true,
+       "Control channel": "TZ"
+     },
+     {
+       "OK": true,
+       "Control channel": "UZ"
+     },
+     {
+       "OK": true,
+       "ADC channel": "UIP"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VIPU"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VIPD"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLD"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLU"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLW"
+     },
+     {
+       "OK": true,
+       "Lock channel": "TD"
+     }
+   ]
+ },    
+ 
+ {
+   "Class": "Element",
+   "Name": "UDAR",
+   "System": "CHAN",
+   "Group": "Injection/Exraction",
+   "Type": "El.static plates",
+   "Comment": "электростатические пластины X-удар",
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "UX"
+     },
+     {
+       "OK": true,
+       "Control channel": "TZ"
+     },
+     {
+       "OK": true,
+       "Control channel": "T"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VUD"
+     },
+     {
+       "OK": true,
+       "ADC channel": "UZAR"
+     },
+     {
+       "OK": true,
+       "UR channel": "W"
+     },
+     {
+       "OK": true,
+       "UR channel": "BL"
+     }
+   ]
+ },    
+ 
+ {
+   "Class": "Element",
+   "Name": "BEAM",
+   "System": "CHAN",
+   "Group": "Service",
+   "Type": "Time control",
+   "Comment": null,
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "TFIG"
+     },
+     {
+       "OK": true,
+       "Meas channel": "TELM"
+     },
+     {
+       "OK": true,
+       "Meas channel": "TPOM"
+     }
+   ]
+ },    
+ 
+ {
+   "Class": "Element",
+   "Name": "SERV",
+   "System": "CHAN",
+   "Group": "Service",
+   "Type": "Time control",
+   "Comment": null,
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "RB1"
+     },
+     {
+       "OK": true,
+       "Control channel": "RB2"
+     },
+     {
+       "OK": true,
+       "Control channel": "RB3"
+     },
+     {
+       "OK": true,
+       "Control channel": "TIVS"
+     },
+     {
+       "OK": true,
+       "Control channel": "TMPI"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VCON"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VPP"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VIPP"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VRB1"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VRB2"
+     },
+     {
+       "OK": true,
+       "Meas channel": "VRB3"
+     },
+     {
+       "OK": true,
+       "Meas channel": "SVED"
+     },
+     {
+       "OK": true,
+       "Meas channel": "INFL"
+     },
+     {
+       "OK": true,
+       "Meas channel": "BTRK"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLIS"
+     }
+   ]
+ }, 
+ 
+ {
+   "Class": "Element",
+   "Name": "PICK",
+   "System": "CHAN",
+   "Group": "Service",
+   "Type": "Time control",
+   "Comment": null,
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "GZI"
+     },
+     {
+       "OK": true,
+       "Control channel": "TIPP"
+     },
+     {
+       "OK": true,
+       "UR channel": "BL"
+     }
+   ]
+ }, 
+ 
+ {
+   "Class": "Element",
+   "Name": "ELPO",
+   "System": "CHAN",
+   "Group": "Service",
+   "Type": "Time control",
+   "Comment": null,
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "UR channel": "POZI"
+     }
+   ]
+ }, 
+ 
+ {
+   "Class": "Element",
+   "Name": "OSCL",
+   "System": "CHAN",
+   "Group": "Service",
+   "Type": "Time control",
+   "Comment": null,
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "TSY1"
+     },
+     {
+       "OK": true,
+       "Control channel": "TSY2"
+     },
+     {
+       "OK": true,
+       "Control channel": "TSY3"
+     },
+     {
+       "OK": true,
+       "Control channel": "TOS1"
+     },
+     {
+       "OK": true,
+       "Control channel": "TSYN"
+     },
+     {
+       "OK": true,
+       "Control channel": "TOSC"
+     },
+     {
+       "OK": true,
+       "UR channel": "BLOS"
+     }
+   ]
+ }, 
+ 
+ {
+   "Class": "Element",
+   "Name": "EEDB",
+   "System": "CHAN",
+   "Group": "Service",
+   "Type": "Time control",
+   "Comment": null,
+   "Polarity": null,
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "TSYN"
+     },
+     {
+       "OK": true,
+       "Meas channel": "SWED"
+     },
+     {
+       "OK": true,
+       "Meas channel": "SWIT"
+     },
+     {
+       "OK": true,
+       "Meas channel": "STUR"
+     }
+   ]
+ }, 
+ 
+ {
    "Class": "Control channel",
    "Name": "U",
    "Element": "M1",
@@ -6596,7 +6952,7 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 190,
-   "Module": "LZD",
+   "Module": "Одренок",
    "Channel": null,
    "Cod/Value": 5.0,
    "Units": "ns",
@@ -6668,7 +7024,7 @@
    "Cod/Value": 10.0,
    "Units": "ns",
    "Polarity": null,
-   "Monit": false,
+   "Monit": true,
    "MonitType": "A",
    "Deviation": 2.0
  },   
@@ -6715,6 +7071,945 @@
    "Master channel": "TDU" 
  },   
 
+ {
+   "Class": "Control channel",
+   "Name": "TD",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 162,
+   "Module": "LZD",
+   "Channel": 2,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "TU",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 163,
+   "Module": "LZD",
+   "Channel": 3,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },    
+ {
+   "Class": "Control channel",
+   "Name": "TZ",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска ГИМНа",
+   "BANK": 172,
+   "Module": "5GVI",
+   "Channel": 2,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },     
+ {
+   "Class": "Control channel",
+   "Name": "UZ",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "уставка напряжения на ГИМНе",
+   "BANK": 176,
+   "Module": "5PKS",
+   "Channel": 2,
+   "Cod/Value": 1.617,
+   "Units": "V",
+   "Max": 25000.0,
+   "Monit": true,
+   "MonitType": "O",
+   "Deviation": 1.0
+ },    
+ {
+   "Class": "ADC channel",
+   "Name": "UIE",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "измерение напряжения на конденсаторной батарее ГИМНа",
+   "BANK": 151,
+   "Module": "2KAS",
+   "Channel": 1,
+   "Cod/Value": 12.553,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "10 ms",
+   "Diapasone": 0,
+   "Interval": 2,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 50.0
+ },        
+ {
+   "Class": "Meas channel",
+   "Name": "VIEU",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "измерение времени прихода сигнла с пластины",
+   "BANK": 143,
+   "Module": "2IVS",
+   "Channel": 3,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },
+ {
+   "Class": "Meas channel",
+   "Name": "VIED",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "измерение времени прихода сигнла с пластины",
+   "BANK": 144,
+   "Module": "2IVS",
+   "Channel": 4,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },    
+ {
+   "Class": "UR channel",
+   "Name": "BLD",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": " вкл. блокировки запуска тиратрона",
+   "BANK": 166,
+   "Module": "URLZ",
+   "Channel": 2,
+   "Channel ON": 2
+ },     
+ {
+   "Class": "UR channel",
+   "Name": "BLU",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": " вкл. блокировки запуска тиратрона",
+   "BANK": 167,
+   "Module": "URLZ",
+   "Channel": 3,
+   "Channel ON": 3
+ },      
+ {
+   "Class": "UR channel",
+   "Name": "BLW",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": " вкл. ГИМНа",
+   "BANK": 297,
+   "Module": "7UR",
+   "Channel": 15,
+   "Channel ON": 15
+ },       
+ {
+   "Class": "Lock channel",
+   "Name": "TD",
+   "Element": "IV4E",
+   "System": "CHAN",
+   "Comment": "привязанный канал",
+   "Master element": "IV4E",
+   "Master channel": "TU" 
+ },   
+ 
+ {
+   "Class": "Control channel",
+   "Name": "TD",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 160,
+   "Module": "LZD",
+   "Channel": 0,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "TU",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 161,
+   "Module": "LZD",
+   "Channel": 3,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },    
+ {
+   "Class": "Control channel",
+   "Name": "TZ",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска ГИМНа",
+   "BANK": 173,
+   "Module": "5GVI",
+   "Channel": 1,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },     
+ {
+   "Class": "Control channel",
+   "Name": "UZ",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "уставка напряжения на ГИМНе",
+   "BANK": 177,
+   "Module": "5PKS",
+   "Channel": 1,
+   "Cod/Value": 1.617,
+   "Units": "V",
+   "Max": 27000.0,
+   "Monit": true,
+   "MonitType": "O",
+   "Deviation": 1.0
+ },    
+ {
+   "Class": "ADC channel",
+   "Name": "UIP",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "измерение напряжения на конденсаторной батарее ГИМНа",
+   "BANK": 156,
+   "Module": "2KAS",
+   "Channel": 1,
+   "Cod/Value": 12.553,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "10 ms",
+   "Diapasone": 0,
+   "Interval": 2,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 50.0
+ },        
+ {
+   "Class": "Meas channel",
+   "Name": "VIPU",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "измерение времени прихода сигнла с пластины",
+   "BANK": 141,
+   "Module": "2IVS",
+   "Channel": 1,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },
+ {
+   "Class": "Meas channel",
+   "Name": "VIPD",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "измерение времени прихода сигнла с пластины",
+   "BANK": 142,
+   "Module": "2IVS",
+   "Channel": 2,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },    
+ {
+   "Class": "UR channel",
+   "Name": "BLD",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": " вкл. блокировки запуска тиратрона",
+   "BANK": 164,
+   "Module": "URLZ",
+   "Channel": 0,
+   "Channel ON": 0
+ },     
+ {
+   "Class": "UR channel",
+   "Name": "BLU",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": " вкл. блокировки запуска тиратрона",
+   "BANK": 165,
+   "Module": "URLZ",
+   "Channel": 2,
+   "Channel ON": 2
+ },      
+ {
+   "Class": "UR channel",
+   "Name": "BLW",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": " вкл. ГИМНа",
+   "BANK": 297,
+   "Module": "7UR",
+   "Channel": 14,
+   "Channel ON": 14
+ },       
+ {
+   "Class": "Lock channel",
+   "Name": "TD",
+   "Element": "IV4P",
+   "System": "CHAN",
+   "Comment": "привязанный канал",
+   "Master element": "IV4P",
+   "Master channel": "TU" 
+ },   
+
+{
+   "Class": "Control channel",
+   "Name": "UX",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": "уставка напряжения на ГИМНе",
+   "BANK": 181,
+   "Module": "5PKS",
+   "Channel": 3,
+   "Cod/Value": 1.46,
+   "Units": "V",
+   "Max": 25000.7,
+   "Monit": true,
+   "MonitType": "O",
+   "Deviation": 1.0
+ },    
+ {
+   "Class": "Control channel",
+   "Name": "TZ",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска ГИМНа",
+   "BANK": 182,
+   "Module": "5GVI",
+   "Channel": 5,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },     
+  {
+   "Class": "Control channel",
+   "Name": "T",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска тиратрона",
+   "BANK": 183,
+   "Module": "GZI1",
+   "Channel": 0,
+   "Cod/Value": 12.8,
+   "Units": "ns",
+   "Max": 5000.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },        
+ {
+   "Class": "Meas channel",
+   "Name": "VUD",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 192,
+   "Module": "Одренок",
+   "Channel": null,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },    
+ {
+   "Class": "ADC channel",
+   "Name": "UZAR",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": "измерение напряжения на конденсаторной батарее ГИМНа",
+   "BANK": 191,
+   "Module": "2KAS",
+   "Channel": 15,
+   "Cod/Value": -10.77,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "10 ms",
+   "Diapasone": 0,
+   "Interval": 2,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 50.0
+ },        
+ {
+   "Class": "UR channel",
+   "Name": "W",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": " вкл. ГИМНа",
+   "BANK": 297,
+   "Module": "7UR",
+   "Channel": 10,
+   "Channel ON": 10
+ },      
+ {
+   "Class": "UR channel",
+   "Name": "BL",
+   "Element": "UDAR",
+   "System": "CHAN",
+   "Comment": "блокировка запуска тиратрона",
+   "BANK": 193,
+   "Module": "URG1",
+   "Channel": 0,
+   "Channel ON": 0
+ },     
+
+ {
+   "Class": "Control channel",
+   "Name": "TFIG",
+   "Element": "BEAM",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 209,
+   "Module": "4GV",
+   "Channel": 7,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },     
+ {
+   "Class": "Meas channel",
+   "Name": "TELM",
+   "Element": "BEAM",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 210,
+   "Module": "2IVS",
+   "Channel": 8,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },    
+ {
+   "Class": "Meas channel",
+   "Name": "TPOM",
+   "Element": "BEAM",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 211,
+   "Module": "2IVS",
+   "Channel": 7,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },       
+ 
+ {
+   "Class": "Control channel",
+   "Name": "RB1",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 130,
+   "Module": "0GV",
+   "Channel": 1,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },
+ {
+   "Class": "Control channel",
+   "Name": "RB2",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 131,
+   "Module": "0GV",
+   "Channel": 2,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },    
+ {
+   "Class": "Control channel",
+   "Name": "RB3",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 132,
+   "Module": "0GV",
+   "Channel": 3,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },
+  {
+   "Class": "Control channel",
+   "Name": "TIVS",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска IVIS",
+   "BANK": 145,
+   "Module": "LZD",
+   "Channel": 6,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+  },       
+  {
+   "Class": "Control channel",
+   "Name": "TMPI",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 199,
+   "Module": "5GVI",
+   "Channel": 7,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },       
+  {
+   "Class": "Meas channel",
+   "Name": "VCON",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 178,
+   "Module": "1IVI",
+   "Channel": 7,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },        
+  {
+   "Class": "Meas channel",
+   "Name": "VPP",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 179,
+   "Module": "1IVI",
+   "Channel": 0,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },      
+  {
+   "Class": "Meas channel",
+   "Name": "VIPP",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 158,
+   "Module": "1IVI",
+   "Channel": 2,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },     
+  {
+   "Class": "Meas channel",
+   "Name": "VRB1",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 159,
+   "Module": "1IVI",
+   "Channel": 3,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },    
+  {
+   "Class": "Meas channel",
+   "Name": "VRB2",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 168,
+   "Module": "1IVI",
+   "Channel": 4,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },  
+  {
+   "Class": "Meas channel",
+   "Name": "VRB3",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 169,
+   "Module": "1IVI",
+   "Channel": 5,
+   "Cod/Value": 10.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },   
+  {
+   "Class": "Meas channel",
+   "Name": "SWED",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": "сведение чстот ВЭПП-3 и ВЭПП-4",
+   "BANK": 154,
+   "Module": "1SDS",
+   "Channel": 0,
+   "Cod/Value": 1.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 0.1
+  },  
+  {
+   "Class": "Meas channel",
+   "Name": "INFL",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 157,
+   "Module": "2SDS",
+   "Channel": 0,
+   "Cod/Value": 1.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 0.1
+  },  
+  {
+   "Class": "ADC channel",
+   "Name": "BTRK",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 185,
+   "Module": "0KAS",
+   "Channel": 27,
+   "Cod/Value": 100000,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "20 ms",
+   "Diapasone": 0,
+   "Interval": 0,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 1.0
+  },    
+  {
+   "Class": "UR channel",
+   "Name": "BLIS",
+   "Element": "SERV",
+   "System": "CHAN",
+   "Comment": "вкл. блокировки запуска IVIS",
+   "BANK": 146,
+   "Module": "URLZ",
+   "Channel": 6,
+   "Channel ON": 6
+  },    
+
+  {
+   "Class": "Control channel",
+   "Name": "GZI",
+   "Element": "PICK",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска IVIS",
+   "BANK": 170,
+   "Module": "LZD",
+   "Channel": 7,
+   "Cod/Value": 5.0,
+   "Units": "ns",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+  },     
+  {
+   "Class": "Control channel",
+   "Name": "TIPP",
+   "Element": "PICK",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 180,
+   "Module": "0GV",
+   "Channel": 7,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },  
+ {
+   "Class": "UR channel",
+   "Name": "BL",
+   "Element": "PICK",
+   "System": "CHAN",
+   "Comment": "вкл. блокировки запуска пикапов",
+   "BANK": 171,
+   "Module": "URLZ",
+   "Channel": 7,
+   "Channel ON": 7
+  },    
+  
+  {
+   "Class": "UR channel",
+   "Name": "POZI",
+   "Element": "ELPO",
+   "System": "CHAN",
+   "Comment": " вкл. позитронной полярности",
+   "BANK": 292,
+   "Module": "2UR",
+   "Channel": 4,
+   "Channel ON": 4
+ },         
+ 
+ {
+   "Class": "Control channel",
+   "Name": "TSY1",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 174,
+   "Module": "5GVI",
+   "Channel": 3,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },   
+ {
+   "Class": "Control channel",
+   "Name": "TSY2",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 175,
+   "Module": "5GVI",
+   "Channel": 6,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },
+ {
+   "Class": "Control channel",
+   "Name": "TSY3",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 156,
+   "Module": "5GVI",
+   "Channel": 7,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },      
+  {
+   "Class": "Control channel",
+   "Name": "TOS1",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 149,
+   "Module": "4GV",
+   "Channel": 0,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },      
+  {
+   "Class": "Control channel",
+   "Name": "TSYN",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 150,
+   "Module": "4GV",
+   "Channel": 1,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  },    
+  {
+   "Class": "Control channel",
+   "Name": "TSYN",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска Tektronix",
+   "BANK": 184,
+   "Module": "GZI1",
+   "Channel": 1,
+   "Cod/Value": 12.8,
+   "Units": "ns",
+   "Max": 5000.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 1.0
+ },  
+  {
+   "Class": "UR channel",
+   "Name": "BLOS",
+   "Element": "OSCL",
+   "System": "CHAN",
+   "Comment": "блокировка запуска Tektronix",
+   "BANK": 194,
+   "Module": "URG1",
+   "Channel": 1,
+   "Channel ON": 1
+ },      
+  
+   {
+   "Class": "Control channel",
+   "Name": "TSYN",
+   "Element": "EEDB",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 186,
+   "Module": "4GV",
+   "Channel": 2,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+  }, 
+  {
+   "Class": "Meas channel",
+   "Name": "SWED",
+   "Element": "EEDB",
+   "System": "CHAN",
+   "Comment": "сведение чстот ВЭПП-3 и ВЭПП-4",
+   "BANK": 189,
+   "Module": "1SDS",
+   "Channel": 0,
+   "Cod/Value": 1.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 0.1
+  },  
+  {
+   "Class": "Meas channel",
+   "Name": "SWIT",
+   "Element": "EEDB",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 188,
+   "Module": "Одренок",
+   "Channel": null,
+   "Cod/Value": 1.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+ },      
+  {
+   "Class": "Meas channel",
+   "Name": "STUR",
+   "Element": "EEDB",
+   "System": "CHAN",
+   "Comment": null,
+   "BANK": 187,
+   "Module": "Одренок",
+   "Channel": null,
+   "Cod/Value": 1.0,
+   "Units": "ns",
+   "Polarity": null,
+   "Monit": false,
+   "MonitType": "A",
+   "Deviation": 2.0
+  },
+  
  {
    "Class": "Power Supply",
    "Name": "M1",
