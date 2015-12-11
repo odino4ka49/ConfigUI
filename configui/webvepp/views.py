@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# -*- coding: iso-8859-15 -*-
+# -*- coding: latin-1 -*-
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
@@ -41,8 +45,12 @@ def loadTreeData(request):
         hideSiblings(tree["_parents"],start_name)
         for n in tree["_parents"]:
             if n["name"]==start_name:
-                n["_parents"] = getNodeNeighbours(getObjectById(n["id"]),"1")
-    tree["additional_links"] = []
+                node = getObjectById(n["id"])
+                n["_parents"] = getNodeNeighbours(node,"1")
+                n["_children"] = getNodeNeighbours(node,"1",-1)
+                tree["additional_links"] = getAdditionalLinks(n["_parents"],2)
+    else:
+        tree["additional_links"] = []
     #except Exception as e:
     #    print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
@@ -145,6 +153,11 @@ def parseAttributes(template,object):
                         "key": key,
                         "value": object[key]
                     }]
+            elif (field in object) and (type(object[field]) is list):
+                attrs += [{
+                    "key": field,
+                    "value": len(object[field])
+                }]
             elif field in object:
                 attrs += [{
                     "key": field,
@@ -153,15 +166,14 @@ def parseAttributes(template,object):
         return attrs
 
     def check_unique(attrs):
-        for attr in attrs["extra"]:
-            if attr in attrs["min"]:
+        for attr in attrs["min"]:
+            if attr in attrs["extra"]:
                 attrs["extra"].remove(attr)
         return attrs
 
     if("min" in template):
         attributes["min"] = parsing(template["min"])
         attributes["extra"] = parsing(template["max"])
-        check_unique(attributes)
     else:
         for field in template["fields"]:
             field_name = field["key"]
@@ -236,7 +248,10 @@ def getNodeNeighbours(node,level,direction=1):
             matrix_size = sample_l["display_attributes"]["matrix_size"]
             if type(matrix_size) is unicode and matrix_size[0]=="&":
                 matrix_size = getValueByPath(node,matrix_size)
-            if matrix_size:
+            if matrix_size==None:
+                matrix_size = len(neighbours)
+                print neighbours
+            if matrix_size!=0:
                 matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
                 matrix_rows = math.ceil(float(matrix_size)/matrix_cols)
                 matrix["cols"]=matrix_cols
@@ -262,6 +277,10 @@ def sortMatrixObjects(objects,sortname,size,parent_node):
                 if field["key"]==sortname:
                     if field["value"]==number:
                         field["key"]="Index"
+                        return obj
+                    elif field["value"]==None:
+                        field["key"]="Index"
+                        field["value"]=number
                         return obj
                     elif type(field["value"]) is list and number in field["value"]:
                         object = copy.deepcopy(obj)

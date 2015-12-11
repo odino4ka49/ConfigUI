@@ -51,7 +51,7 @@
             "link_to": {
               "Name": "&Dispatcher name",
               "System": "&System",
-              "Class": "DS-24"
+              "Class": ["DS-24","Б0634"]
             },
             "value": "ID"
           },
@@ -60,11 +60,27 @@
           "Address"
         ],
         "max": [
+          "Class",
+          "Name",
+          "System",
           "Comment",
           "Controller",
+          "Dispatcher name",
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": ["DS-24","Б0634"]
+            },
+            "value": "ID"
+          },
+          "PINT",
+          "Address",
           "Area",
           "Rack/cabinet",
-          "Rack level"
+          "Rack level",
+          "Modules"
         ]
       },
       "display_attributes": {
@@ -91,7 +107,10 @@
           }
         ],
         "max": [
-          "Comment"
+          "Name",
+          "System",
+          "Comment",
+          "Module Type"
         ]
       },
       "display_attributes": {
@@ -121,7 +140,30 @@
           "Element",
           "Name"
         ],
-        "max": []
+        "max": [
+          "Class",
+          "Name",
+          "Element",
+          "System",
+          "Comment",
+          "BANK",
+          "Module",
+          "Channel",
+          "Cod/Value",
+          "Units",
+          "Max",
+          "Polarity",
+          "Int time",
+          "Diapasone",
+          "Interval",
+          "Monit",
+          "MonitType",
+          "Deviation",
+          "Relay",
+          "Relay ON",
+          "Master Element",
+          "Maste Channel"
+        ]
       },
       "sort_field": "Channel",
       "display_attributes": {
@@ -170,7 +212,9 @@
       },
       "display_filter": {
         "min": [
-          "Name"
+          "Type",
+          "Rack/cabinet",
+          "Rack level"
         ],
         "max": ["*"]
       },
@@ -191,7 +235,16 @@
         "min": [
           "Name"
         ],
-        "max": []
+        "max": [
+          "Class",
+          "Name",
+          "System",
+          "Group",
+          "Type",
+          "Comment",
+          "Polarity",
+          "Channels"
+        ]
       },
       "display_attributes": {
         "width": 60,
@@ -220,7 +273,30 @@
           "Module",
           "Channel"
         ],
-        "max": ["*"]
+        "max": [
+          "Class",
+          "Name",
+          "Element",
+          "System",
+          "Comment",
+          "BANK",
+          "Module",
+          "Channel",
+          "Cod/Value",
+          "Units",
+          "Max",
+          "Polarity",
+          "Int time",
+          "Diapasone",
+          "Interval",
+          "Monit",
+          "MonitType",
+          "Deviation",
+          "Relay",
+          "Relay ON",
+          "Master Element",
+          "Maste Channel"
+        ]
       },
       "display_attributes": {
         "width": 170,
@@ -253,7 +329,12 @@
             "value": "&CAMAC->Name"
           }
         ],
-        "max": []
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type"
+        ]
       },
       "sort_field": "Name",
       "display_attributes": {
@@ -301,11 +382,27 @@
           "Address"
         ],
         "max": [
+          "Class",
+          "Name",
+          "System",
           "Comment",
           "Controller",
+          "Dispatcher name",
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "DS-24"
+            },
+            "value": "ID"
+          },
+          "PINT",
+          "Address",
           "Area",
           "Rack/cabinet",
-          "Rack level"
+          "Rack level",
+          "Modules"
         ]
       },
       "display_attributes": {

@@ -351,7 +351,7 @@
  },
  {
    "Class": "Module",
-   "Name": "CHAN",
+   "Name": "Odrenok",
    "Module Type": "Одренок",
    "System": "CHAN",
    "Comment": "Одренок CHAN"
@@ -419,15 +419,6 @@
    "System": "CHAN",
    "Comment": "ОЗУ CHAN"
  },
- 
- {
-   "Class": "Module",
-   "Name": "CHAN",
-   "Module Type": "Одренок",
-   "System": "CHAN",
-   "Comment": "Одренок CHAN"
- },
- 
  {
    "Class": "Module",
    "Name": "0CC",
@@ -915,7 +906,7 @@
      },
      {
        "Position": 25,
-       "Module": "CHAN"
+       "Module": "Odrenok"
      }
    ]
  },
@@ -1328,7 +1319,7 @@
    "System": "CHAN",
    "Comment": "Связь с блоком ГЗИ-8",
    "Dispatcher name": "10DC",
-   "Address": "#02000*",
+   "Address": "#02000",
    "Modules": [
      {
        "S6": 0,
@@ -1343,7 +1334,7 @@
 
  {
    "Class": "Б0634",
-   "Name": "10DС",
+   "Name": "10DC",
    "System": "CHAN",
    "Comment": "диспетчер 10DC (Б0634) одренка CHAN",
    "Channels": [
@@ -6952,7 +6943,7 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 190,
-   "Module": "Одренок",
+   "Module": "Odrenok",
    "Channel": null,
    "Cod/Value": 5.0,
    "Units": "ns",
@@ -7442,7 +7433,7 @@
    "System": "CHAN",
    "Comment": null,
    "BANK": 192,
-   "Module": "Одренок",
+   "Module": "Odrenok",
    "Channel": null,
    "Cod/Value": 10.0,
    "Units": "ns",
@@ -7984,7 +7975,7 @@
    "System": "CHAN",
    "Comment": null,
    "BANK": 188,
-   "Module": "Одренок",
+   "Module": "Odrenok",
    "Channel": null,
    "Cod/Value": 1.0,
    "Units": "ns",
@@ -8000,7 +7991,7 @@
    "System": "CHAN",
    "Comment": null,
    "BANK": 187,
-   "Module": "Одренок",
+   "Module": "Odrenok",
    "Channel": null,
    "Cod/Value": 1.0,
    "Units": "ns",

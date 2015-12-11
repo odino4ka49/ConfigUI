@@ -575,7 +575,7 @@ WEBVEPP.Tree = function(params){
                     })
                     .select("body")
                     .html(function(){
-                        var text = attributesToString(details_obj.attributes.min.concat(details_obj.attributes.extra));
+                        var text = attributesToString(details_obj.attributes.extra);
                         return '<div style="width: '+(width)+'px; height: '+(height)+'px" class="attributes">'+text+'</div>'
                     })
             },
@@ -587,6 +587,10 @@ WEBVEPP.Tree = function(params){
                 }
                 // Non-root nodes
                 else {
+                    var level_name = "level"+person.depth;
+                    var level_info = settings[level_name].display_attributes;
+                    if(level_info.autorevealing)
+                        return;
                     if(person.collapsed||(person._parents.length==0)){
                         $(document).trigger("load_neighbours",person);
                         person.collapsed = false;
