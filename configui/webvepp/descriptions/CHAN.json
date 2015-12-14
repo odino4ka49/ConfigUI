@@ -7910,7 +7910,7 @@
   },    
   {
    "Class": "Control channel",
-   "Name": "TSYN",
+   "Name": "TOSC",
    "Element": "OSCL",
    "System": "CHAN",
    "Comment": "уставка задержки запуска Tektronix",
@@ -8011,7 +8011,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M1",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8023,7 +8023,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M2",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8035,7 +8035,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 6,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8047,7 +8047,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M3",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8059,7 +8059,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС6",
    "Rack level": 6,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8071,7 +8071,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 5,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8083,7 +8083,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 4,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8095,7 +8095,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 3,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8107,7 +8107,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС6",
    "Rack level": 5,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8119,7 +8119,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M4,5",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8131,7 +8131,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 6,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8143,7 +8143,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 5,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8155,7 +8155,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M6",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8167,7 +8167,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 4,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8179,7 +8179,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС8",
    "Rack level": 3,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8191,7 +8191,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС6",
    "Rack level": 4,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8203,7 +8203,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M7",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8215,7 +8215,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M8,9",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8227,7 +8227,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 6,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8239,7 +8239,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 5,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
 {
    "Class": "Power Supply",
@@ -8251,7 +8251,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 4,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8263,7 +8263,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M10,M14",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8275,7 +8275,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "M11,M15",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8287,7 +8287,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 6,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8299,7 +8299,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 3,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8311,7 +8311,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 5,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8323,7 +8323,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 4,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8335,7 +8335,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "D1",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8347,7 +8347,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "D2",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8359,7 +8359,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "D3",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8371,7 +8371,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "D4",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8383,7 +8383,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС6",
    "Rack level": 3,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8395,7 +8395,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС6",
    "Rack level": 2,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8407,7 +8407,7 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "РС7",
    "Rack level": 2,
-   "Responsible": "Каштанкин, т. 44-88"
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
  },
  {
    "Class": "Power Supply",
@@ -8419,7 +8419,82 @@
    "Area": "Помещение Гимнов",
    "Rack/cabinet": "SOL",
    "Rack level": null,
-   "Responsible": "Каштанкин, т. 44-88"
- }
+   "Responsible": "Дмитрий Каштанкин, т. 44-88, 9231729544"
+ },
+ {
+   "Class": "Power Supply",
+   "Name": "DV3",
+   "System": "CHAN",
+   "Element": "DV3",
+   "Comment": "Гимн расположен в РС-02, шкаф дефлектора - слева от входа",
+   "Type": "ГИМН-0.1",
+   "Area": "Блок впуск/выпуск",
+   "Rack/cabinet": "РС-02",
+   "Rack level": 4,
+   "Responsible": "Олег Анчугов, т. 48-58, 9137571384"
+ },
+ {
+   "Class": "Power Supply",
+   "Name": "IV4E",
+   "System": "CHAN",
+   "Element": "IV4E",
+   "Comment": "Гимн расположен в PC1, 3 этаж, левый, шкаф инфлектора - справа от радиостойки",
+   "Type": "ГИМН-0.1",
+   "Area": "ВЧ ВЭПП-2, 1-ый этаж",
+   "Rack/cabinet": "РС1",
+   "Rack level": 3,
+   "Responsible": "Олег Анчугов, т. 48-58, 9137571384"
+ },
+ {
+   "Class": "Power Supply",
+   "Name": "IV4P",
+   "System": "CHAN",
+   "Element": "IV4P",
+   "Comment": "Гимн расположен в PC1, 3 этаж, правый, шкаф инфлектора - справа от радиостойки",
+   "Type": "ГИМН-0.1",
+   "Area": "ВЧ ВЭПП-2, 1-ый этаж",
+   "Rack/cabinet": "РС1",
+   "Rack level": 3,
+   "Responsible": "Олег Анчугов, т. 48-58, 9137571384"
+ },
+ {
+   "Class": "Power Supply",
+   "Name": "X-UDAR",
+   "System": "CHAN",
+   "Element": "UDAR",
+   "Comment": "Гимн расположен в PC1, шкаф генератора - 2-ой справа от радиостойки",
+   "Type": "ГИМН-0.1",
+   "Area": "ВЧ ВЭПП-2, 1-ый этаж",
+   "Rack/cabinet": "РС1",
+   "Rack level": 8,
+   "Responsible": "Олег Анчугов, т. 48-58, 9137571384"
+ },
  
+ {
+   "Class": "Hand",
+   "Name": "XE",
+   "Type": "A",
+   "EnergyLock": true, 
+   "Inputs": 2, 
+   "Outputs": 2,
+   "Shift": 0, 
+   "Elements": ["N11", "N17"],
+   "BANK": [53, 105], 
+   "Lines": [[-731.2, 1445.6], [2721.0, -17006.0]],
+   "Graphs": [[-0.002, -0.00032], [-0.00017, -0.000086]]
+ },
+ {
+   "Class": "Hand",
+   "Name": "ZE",
+   "Type": "A",
+   "EnergyLock": true, 
+   "Inputs": 2, 
+   "Outputs": 2,
+   "Shift": 0, 
+   "Elements": ["N15Z", "N16"],
+   "BANK": [97, 101], 
+   "Lines": [[-2509.4, 5480.2], [-3057.4, 18171.3]],
+   "Graphs": [[-0.00063, -0.000106], [0.00019, 0.000087]]
+ }
+
  ]

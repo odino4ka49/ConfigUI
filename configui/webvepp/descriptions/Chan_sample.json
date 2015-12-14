@@ -55,8 +55,8 @@
             },
             "value": "ID"
           },
-          "PINT",
           "Dispatcher name",
+          "PINT",
           "Address"
         ],
         "max": [
@@ -80,7 +80,15 @@
           "Area",
           "Rack/cabinet",
           "Rack level",
-          "Modules"
+          "Modules",
+          {
+            "key": "+24",
+            "to_array": {
+              "Path": "&Modules->Module->Module Type->+24 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          }
         ]
       },
       "display_attributes": {
@@ -377,8 +385,8 @@
             },
             "value": "ID"
           },
-          "PINT",
           "Dispatcher name",
+          "PINT",
           "Address"
         ],
         "max": [
@@ -408,6 +416,11 @@
       "display_attributes": {
         "width": 170,
         "height": 110
+      },
+      "action":{
+        "type": "open_another_map",
+        "map": "camacs",
+        "info": "&Name"
       }
     }
   }

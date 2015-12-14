@@ -27,6 +27,16 @@ def index(request):
     start_name = None
     return HttpResponse(template.render())
 
+def camacs(request,id=None):
+    global tree_data, tree_sample, tree_template,tree_sample_name,start_name
+    start_name = id
+    template = loader.get_template('webvepp/index.html')
+    tree_data = getDataFile("CHAN.json")
+    tree_template = getDataFile("Chan_template.json")
+    tree_sample = getDataFile("Chan_sample.json")
+    tree_sample_name = "Chan_camacs"
+    return HttpResponse(template.render())
+
 def elements(request,id=None):
     global tree_data, tree_sample, tree_template,tree_sample_name,start_name
     start_name = id
@@ -42,7 +52,7 @@ def loadTreeData(request):
     #try:
     tree = parseTree()
     if start_name:
-        hideSiblings(tree["_parents"],start_name)
+        hideSiblings(tree["_parents"],start_name,1)
         for n in tree["_parents"]:
             if n["name"]==start_name:
                 node = getObjectById(n["id"])
@@ -142,6 +152,9 @@ def parseAttributes(template,object):
                     "key": field["key"],
                     "value": value
                 }]
+            elif (type(field) is dict) and ("to_array" in field):
+                field_array = None #getValueByPath(object,field["to_array"])
+                print field_array
             elif ("link_id" in object) and (type(field) is dict) and ("value" in field) and (field["value"]=="link_id"):
                 attrs += [{
                         "key": field["key"],
@@ -344,8 +357,16 @@ def getAdditionalLinks(nodes,level):
             #create additional link and remove _parent
     return add_links
 
-def hideSiblings(neighbours,start_name):
+def hideSiblings(neighbours,start_name,level):
     #hide siblings
+    if len(neighbours)==0:
+        return
+    sample = getSample()
+    level_n = "level"+str(level)
+    sample_l = sample[level_n]
+    level_info = sample_l["display_attributes"]
+    if "hiding" not in level_info or level_info["hiding"]==False:
+        return
     for n in neighbours:
         if n["name"]!=start_name:
             n["hidden"] = True
@@ -393,6 +414,22 @@ def parseTree():
     if sample["root"]["type"]=="new":
         tree = parseObjectInfo(sample["root"],sample["root"]["fields"])
     return tree
+
+def getValuesByPath(object,path):
+    value = object
+    values = []
+    #split path
+    path = path.replace("&", "").split("->")
+    #loop where we go through path and change current value (it might be an object if it's not the end of the path)
+    for i in range(0,len(path)-1):
+        template = getClassTemplate(value["Class"])
+        if path[i]==template["components"]:
+            None
+        else:
+            value = getNeighbour(value,path[i])
+    if value and path[-1] in value:
+        value = value[path[-1]]
+    return value
 
 def getValueByPath(object,path):
     value = object

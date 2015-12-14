@@ -555,7 +555,10 @@ WEBVEPP.Tree = function(params){
                         return countNodeY(details_obj)-(height/2)-5
                     })
                     .attr('width', function(d){
-                        return width;
+                        if(width!=0)
+                            return width+10;
+                        else
+                            return 0;
                     })
                     .attr('height', function(d){
                         return height+10;
