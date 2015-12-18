@@ -320,6 +320,8 @@ WEBVEPP.Tree = function(params){
                   })
                   .on('contextmenu', function(person){
                     d3.event.preventDefault();
+                    if(!person.attributes.extra || person.attributes.extra.length == 0)
+                        $(document).trigger("load_details",person);
                     revealPerson(person);
                   })
                   /*.on('mouseout', function(person){

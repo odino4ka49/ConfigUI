@@ -768,6 +768,45 @@
     ]
   },
   {
+    "class": "Module channel",
+    "comment": "шаблон для каналов камаков",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "Module",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Channel",
+        "type": "integer"
+      },
+      {
+        "key": "Cabling",
+        "type": "integer"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System",
+      "Module"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
     "class": "Lock channel",
     "comment": "шаблон для привязанного канала",
     "fields": [

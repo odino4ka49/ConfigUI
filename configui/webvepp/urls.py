@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^getTreeData', 'webvepp.views.loadTreeData', name="views-tree-data"),
     url(r'^getTreeSample', 'webvepp.views.loadTreeSample', name="views-tree-sample"),
     url(r'^getNodeNeighbours', 'webvepp.views.loadNodeNeighbours', name="views-node-data"),
+    url(r'^getMaxAttributes', 'webvepp.views.loadMaxAttributes', name="views-max-data"),
 ]

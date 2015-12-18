@@ -16,7 +16,7 @@ WEBVEPP.namespace = function (ns_string) {
     return parent;
 };
 WEBVEPP.serveradr = function(){
-	return "http://127.0.0.1:8000/";
+	return location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '')+"/";
 };
 
 $(document).on("set_loading_cursor",function(){

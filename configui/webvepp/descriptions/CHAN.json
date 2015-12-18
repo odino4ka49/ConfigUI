@@ -377,6 +377,7 @@
    "System": "CHAN",
    "Comment": "подключение блока задержки ГЗИ-8 "
  },
+ 
  {
    "Class": "Module",
    "Name": "10DS",
@@ -1345,6 +1346,71 @@
    ]
  },
 
+ {
+   "Class": "Module channel",
+   "Name": "I1011",
+   "Module": "10DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1011",
+   "Channel": 0,
+   "Cabling": null
+ },
+ {
+   "Class": "Module channel",
+   "Name": "I1012",
+   "Module": "10DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1012",
+   "Channel": 1,
+   "Cabling": null
+ },
+ {
+   "Class": "Module channel",
+   "Name": "I1013",
+   "Module": "10DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1013",
+   "Channel": 2,
+   "Cabling": null
+ },
+ {
+   "Class": "Module channel",
+   "Name": "I1014",
+   "Module": "10DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1014",
+   "Channel": 3,
+   "Cabling": null
+ },
+ 
+ {
+   "Class": "Module channel",
+   "Name": "I1015",
+   "Module": "11DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1015",
+   "Channel": 0,
+   "Cabling": null
+ },
+ {
+   "Class": "Module channel",
+   "Name": "I1016",
+   "Module": "11DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1016",
+   "Channel": 1,
+   "Cabling": null
+ },
+ {
+   "Class": "Module channel",
+   "Name": "I1017",
+   "Module": "11DS",
+   "System": "CHAN",
+   "Comment": "подсоединение КАМАК-крейта I1017",
+   "Channel": 2,
+   "Cabling": null
+ },
+ 
  {
    "Class": "Element",
    "Name": "M1",

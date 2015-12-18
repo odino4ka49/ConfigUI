@@ -6,49 +6,41 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
 from sets import Set
+from django.template import Context
 import json
 import inspect, os
 import math
 import copy
 
-tree_data = []
-tree_template = []
-tree_sample = []
+tree_data = {}
+tree_template = {}
+tree_sample = {}
 tree_sample_name = ""
 start_name = None
+current_scheme_name = {"system":"CHAN","sample":"camacs"}
 
 def index(request):
-    global tree_data, tree_sample, tree_template,tree_sample_name,start_name
+    global start_name
     template = loader.get_template('webvepp/index.html')
-    tree_data = getDataFile("CHAN.json")
-    tree_template = getDataFile("Chan_template.json")
-    tree_sample = getDataFile("Chan_sample.json")
-    tree_sample_name = "Chan_camacs"
     start_name = None
     return HttpResponse(template.render())
 
 def camacs(request,id=None):
-    global tree_data, tree_sample, tree_template,tree_sample_name,start_name
+    global start_name
     start_name = id
     template = loader.get_template('webvepp/index.html')
-    tree_data = getDataFile("CHAN.json")
-    tree_template = getDataFile("Chan_template.json")
-    tree_sample = getDataFile("Chan_sample.json")
-    tree_sample_name = "Chan_camacs"
     return HttpResponse(template.render())
 
 def elements(request,id=None):
-    global tree_data, tree_sample, tree_template,tree_sample_name,start_name
+    global start_name
     start_name = id
     template = loader.get_template('webvepp/index.html')
-    tree_data = getDataFile("CHAN.json")
-    tree_template = getDataFile("Chan_template.json")
-    tree_sample = getDataFile("Chan_sample.json")
-    tree_sample_name = "Chan_elements"
     return HttpResponse(template.render())
 
 def loadTreeData(request):
-    global start_name
+    global start_name,current_scheme_name
+    data = request.GET
+    current_scheme_name = json.loads(data['scheme_names'])
     #try:
     tree = parseTree()
     if start_name:
@@ -66,24 +58,39 @@ def loadTreeData(request):
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
 
 def loadTreeSample(request):
+    global current_scheme_name
     try:
+        data = request.GET
+        current_scheme_name = json.loads(data['scheme_names'])
         sample = getSample()
     except Exception as e:
         print e
     return HttpResponse(json.dumps(sample, ensure_ascii=False), content_type="application/json")
 
 def loadNodeNeighbours(request):
-    #try:
+    global current_scheme_name
     data = request.GET
     node_id = data["node_id"]
     level = data["level"]
+    current_scheme_name = json.loads(data['scheme_names'])
+
     node = getObjectById(node_id)
     n_list = getNodeNeighbours(node,level)
     n_left_list = getNodeNeighbours(node,level,-1)
     l_list = getAdditionalLinks(n_list,int(level)+1)
-    """except Exception as e:
-        print e"""
     return HttpResponse(json.dumps([n_list,n_left_list,l_list], ensure_ascii=False), content_type="application/json")
+
+
+def loadMaxAttributes(request):
+    global current_scheme_name
+    data = request.GET
+    node_id = data["node_id"]
+    level = data["level"]
+    current_scheme_name = json.loads(data['scheme_names'])
+
+    node = getObjectById(node_id)
+    attributes = getMaxAttributes(node,level)
+    return HttpResponse(json.dumps(attributes, ensure_ascii=False), content_type="application/json")
 
 #returns packed object
 def parseObject(object):
@@ -121,7 +128,7 @@ def parseObject(object):
     return result
 
 #returns list of attributes of the object according to its template
-def parseAttributes(template,object):
+def parseAttributes(template,object,attr_type="min"):
     attributes = {"min":[],"extra":[]}
     def parsing(field_list):
         attrs = []
@@ -153,8 +160,16 @@ def parseAttributes(template,object):
                     "value": value
                 }]
             elif (type(field) is dict) and ("to_array" in field):
-                field_array = None #getValueByPath(object,field["to_array"])
-                print field_array
+                field_array = getValuesByPath(object,field["to_array"]["Path"])
+                if field["to_array"]["Operation"]=="sum":
+                    sum = 0
+                    for val in field_array:
+                        sum+=val
+                    if sum!=0:
+                        attrs += [{
+                            "key": field["key"],
+                            "value": sum
+                        }]
             elif ("link_id" in object) and (type(field) is dict) and ("value" in field) and (field["value"]=="link_id"):
                 attrs += [{
                         "key": field["key"],
@@ -184,9 +199,12 @@ def parseAttributes(template,object):
                 attrs["extra"].remove(attr)
         return attrs
 
-    if("min" in template):
-        attributes["min"] = parsing(template["min"])
-        attributes["extra"] = parsing(template["max"])
+    if(attr_type in template):
+        if(attr_type=="max"):
+            attributes["extra"] = parsing(template["max"])
+        else:
+            attributes[attr_type] = parsing(template[attr_type])
+        #attributes["extra"] = parsing(template["max"])
     else:
         for field in template["fields"]:
             field_name = field["key"]
@@ -196,12 +214,20 @@ def parseAttributes(template,object):
             }]
     return attributes
 
+def getMaxAttributes(node,level):
+    sample = getSample()
+    sample_l = sample["level"+level]
+    display_details = sample_l["display_filter"]
+    obj_attributes = parseAttributes(display_details,node,"max")
+    return obj_attributes["extra"]
+
 def getNodeNeighbours(node,level,direction=1):
     neighbours = []
     sample = getSample()
     if level=="0":
         obj_sample = sample["root"]
     else:
+
         obj_sample = sample["level"+level]
 
     if direction==-1:
@@ -248,7 +274,7 @@ def getNodeNeighbours(node,level,direction=1):
                     neighbour["direction"] = direction
                     if "action" in sample_l:
                         action = parseRulesToString(n,sample_l["action"])
-                        if action["type"]=="open_another_map":
+                        if action["type"]=="open_another_map" and "info" in action:
                             neighbour["link_to_map"] = action["map"]+"/"+action["info"]
                     if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
                         neighbour["_parents"]=getNodeNeighbours(n,str(int(level)+1))
@@ -263,7 +289,6 @@ def getNodeNeighbours(node,level,direction=1):
                 matrix_size = getValueByPath(node,matrix_size)
             if matrix_size==None:
                 matrix_size = len(neighbours)
-                print neighbours
             if matrix_size!=0:
                 matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
                 matrix_rows = math.ceil(float(matrix_size)/matrix_cols)
@@ -416,20 +441,33 @@ def parseTree():
     return tree
 
 def getValuesByPath(object,path):
-    value = object
-    values = []
+    values = [object]
     #split path
     path = path.replace("&", "").split("->")
+
+    def getObjectInChain(object,step):
+        template = getClassTemplate(object["Class"])
+        next = []
+        if step==template["components"]:
+            for comp in object[step]:
+                for key in comp:
+                    if key in template["component_types"]:
+                        rules = {"Class":key,"Name":comp[key],"System":object["System"]}
+                next += getObjects(rules)
+        else:
+            next.append(getNeighbour(object,step))
+        return next
     #loop where we go through path and change current value (it might be an object if it's not the end of the path)
     for i in range(0,len(path)-1):
-        template = getClassTemplate(value["Class"])
-        if path[i]==template["components"]:
-            None
-        else:
-            value = getNeighbour(value,path[i])
-    if value and path[-1] in value:
-        value = value[path[-1]]
-    return value
+        next_vals = []
+        for obj in values:
+            next_vals += getObjectInChain(obj,path[i])
+        values = next_vals
+    next_vals = []
+    for value in values:
+        if value and path[-1] in value:
+            next_vals.append(value[path[-1]])
+    return next_vals
 
 def getValueByPath(object,path):
     value = object
@@ -499,17 +537,39 @@ def getObjectById(id):
     return object
 
 def getSample():
-    global tree_sample,tree_sample_name
-    samples = tree_sample#getDataFile("Chan_sample.json")
+    global tree_sample,current_scheme_name
+    system_name = current_scheme_name["system"]
+    sample_name = current_scheme_name["sample"]
+    tree_sample_name = "Chan_camacs"
+    if sample_name == "elements":
+        tree_sample_name = "Chan_elements"
+    if system_name not in tree_sample:
+        if system_name == "CHAN":
+            tree_sample[system_name] = getDataFile("Chan_sample.json")
+        else:
+            tree_sample[system_name] = []
+    samples = tree_sample[system_name]
     return next((x for x in samples if x["name"] == tree_sample_name), None)
 
 def getAllTemplates():
-    global tree_template
-    return tree_template#getDataFile("Chan_template.json")
+    global tree_template,current_scheme_name
+    system_name = current_scheme_name["system"]
+    if system_name not in tree_template:
+        if system_name == "CHAN":
+            tree_template[system_name] = getDataFile("Chan_template.json")
+        else:
+            tree_template[system_name] = []
+    return tree_template[system_name]
 
 def getAllObjects():
-    global tree_data
-    return tree_data#getDataFile("CHAN.json")
+    global tree_data,current_scheme_name
+    system_name = current_scheme_name["system"]
+    if system_name not in tree_data:
+        if system_name == "CHAN":
+            tree_data[system_name] = getDataFile("CHAN.json")
+        else:
+            tree_data[system_name] = []
+    return tree_data[system_name]
 
 def getObjects(rules):
     objects = []
@@ -629,7 +689,9 @@ def parseRulesToString(object,rules):
     result = {}
     for rule in rules:
         if rules[rule][0] == "&":
-            result[rule] = object[rules[rule].replace("&", "")]
+            new_rule = rules[rule].replace("&", "")
+            if new_rule in object:
+                result[rule] = object[new_rule]
         else:
             result[rule] = rules[rule]
     return result

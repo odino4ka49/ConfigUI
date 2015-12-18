@@ -2,6 +2,7 @@ WEBVEPP.namespace("WEBVEPP.TreeModel");
 WEBVEPP.TreeModel = function(){
     var tree_data = {},
         tree_settings = {},
+        tree_scheme_names = {"system":"","sample":""},
 
         getTreeData = function(){
             var result = tree_data;//(tree_data===undefined)? undefined: jQuery.extend(true,{},tree_data);
@@ -10,17 +11,28 @@ WEBVEPP.TreeModel = function(){
 
         getTreeSettings = function(){
             return tree_settings;
-        }
-
-        addNodeNeighbours= function(node,neighbours){
-            //var tree_node = tree_data.filter(function(d){return (d.id === node.id);})[0];
-            //tree_node._parents = neighbours;
         };
+
+    function setSchemeNames(){
+        var pathname = location.pathname;
+        var path = pathname.split('/');
+        if(path[1]=="webvepp"){
+            tree_scheme_names.system = "CHAN"
+            if(path[2]==""||path[2]=="camacs"){
+                tree_scheme_names.sample = "camacs";
+            }
+            else if (path[2]=="elements")
+            {
+                tree_scheme_names.sample = "elements";
+            }
+        }
+    };
 
     function loadTreeData(){
             $(document).trigger("set_loading_cursor");
             $.ajax({
                 type: "GET",
+                data: {scheme_names: JSON.stringify(tree_scheme_names) },
                 url: WEBVEPP.serveradr()+"webvepp/getTreeData",
                 error: function(xhr, ajaxOptions, thrownError) {
                     $(document).trigger("unset_loading_cursor");
@@ -38,6 +50,7 @@ WEBVEPP.TreeModel = function(){
             $(document).trigger("set_loading_cursor");
             $.ajax({
                 type: "GET",
+                data: {scheme_names: JSON.stringify(tree_scheme_names) },
                 url: WEBVEPP.serveradr()+"webvepp/getTreeSample",
                 error: function(xhr, ajaxOptions, thrownError) {
                     $(document).trigger("unset_loading_cursor");
@@ -55,7 +68,7 @@ WEBVEPP.TreeModel = function(){
             $.ajax({
                 type: "GET",
                 url: WEBVEPP.serveradr()+"webvepp/getNodeNeighbours",
-                data: {node_id:node.id,level:node.depth},
+                data: {node_id:node.id,level:node.depth,scheme_names: JSON.stringify(tree_scheme_names) },
                 error: function(xhr, ajaxOptions, thrownError) {
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("error_message",thrownError);
@@ -69,6 +82,23 @@ WEBVEPP.TreeModel = function(){
                 }
             });
         };
+    function loadDetails(node){
+        $(document).trigger("set_loading_cursor");
+            $.ajax({
+                type: "GET",
+                url: WEBVEPP.serveradr()+"webvepp/getMaxAttributes",
+                data: {node_id:node.id,level:node.depth,scheme_names: JSON.stringify(tree_scheme_names) },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    $(document).trigger("unset_loading_cursor");
+                    $(document).trigger("error_message",thrownError);
+                },
+                success: function(data){
+                    node.attributes.extra = data;
+                    $(document).trigger("unset_loading_cursor");
+                    $(document).trigger("tree_changed");
+                }
+            });
+    };
 
     function unique_check(array){
         var a = array;
@@ -81,6 +111,7 @@ WEBVEPP.TreeModel = function(){
         return a;
     }
 
+    setSchemeNames();
     loadTreeSettings();
     loadTreeData();
 
@@ -88,5 +119,6 @@ WEBVEPP.TreeModel = function(){
         getTreeData: getTreeData,
         getTreeSettings: getTreeSettings,
         loadNodeNeighbours: loadNodeNeighbours,
+        loadDetails: loadDetails,
     };
 }

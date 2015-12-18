@@ -84,7 +84,47 @@
           {
             "key": "+24",
             "to_array": {
-              "Path": "&Modules->Module->Module Type->+24 V current",
+              "Path": "&Modules->Module Type->+24 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "-24",
+            "to_array": {
+              "Path": "&Modules->Module Type->-24 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "+12",
+            "to_array": {
+              "Path": "&Modules->Module Type->+12 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "-12",
+            "to_array": {
+              "Path": "&Modules->Module Type->-12 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "+6",
+            "to_array": {
+              "Path": "&Modules->Module Type->+6 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "+-6",
+            "to_array": {
+              "Path": "&Modules->Module Type->-6 V current",
               "Operation": "sum"
             },
             "value": "sum"
@@ -138,7 +178,8 @@
           "UR channel",
           "ADC channel",
           "Meas channel",
-          "DBLUR channel"
+          "DBLUR channel",
+          "Module channel"
         ],
         "Module": "&Name"
       },
