@@ -315,7 +315,7 @@ def getRemoteAttributes(node,level):
     sample = getSample()
     obj_sample = {}
     if level=="0":
-        return {}
+        return None
     else:
         obj_sample = sample["level"+level]
     if "remote_attributes" in obj_sample and "Class" in obj_sample["remote_attributes"] and node["Class"] in obj_sample["remote_attributes"]["Class"]:
@@ -339,7 +339,7 @@ def getRemoteAttributes(node,level):
             remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*8+10
             remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*11+5
     else:
-        return {}
+        return None
     return remote
 
 def countMatrixWidthHeight(matrix):
