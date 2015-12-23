@@ -8539,6 +8539,7 @@
  {
    "Class": "Hand",
    "Name": "XE",
+   "System": "CHAN",
    "Type": "A",
    "EnergyLock": true, 
    "Inputs": 2, 
@@ -8552,6 +8553,7 @@
  {
    "Class": "Hand",
    "Name": "ZE",
+   "System": "CHAN",
    "Type": "A",
    "EnergyLock": true, 
    "Inputs": 2, 

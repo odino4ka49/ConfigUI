@@ -363,7 +363,13 @@ WEBVEPP.Tree = function(params){
                         })
                         .append("xhtml:body")
                         .html(function(d){
-                            var text = (d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
+                            var text = "";
+                            if(d.attributes.min){
+                                text=(d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
+                            }
+                            else if(d.type=="matrix_equation"){
+                                text = attributesToEquation(d.attributes);
+                            }
                             //text += d.revealed? attributesToString(d.attributes.extra): "";
                             return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
                         })
@@ -740,6 +746,40 @@ WEBVEPP.Tree = function(params){
         });
         text += "</div>";
         return text;
+    };
+    function attributesToEquation(attributes){
+        var text = "";
+        text += "<table><tr><td>";
+        text += matrixToTable(attributes[0]);
+        text += "</td><td>=</td><td>";
+        text += matrixToTable(attributes[1]);
+        text += "</td><td>x</td><td>";
+        text += matrixToTable(attributes[2]);
+        text += "</td></tr><tr><td>";
+        text += matrixToTable(attributes[3]);
+        text += "</td><td>=</td><td>";
+        text += matrixToTable(attributes[4]);
+        text += "</td><td>x</td><td>";
+        text += matrixToTable(attributes[5]);
+        text += "</td></tr></table>";
+        return text;
+    };
+    function matrixToTable(matrix){
+        var matrixtype = (typeof(matrix[0])=="string") ? "vector":"matrix";
+        var table = "<table><tr><td>";
+        matrix.forEach(function(row){
+            if(matrixtype == "vector"){
+                table += row+"</td></tr><tr><td>";
+            }
+            else{
+                row.forEach(function(item){
+                    table += item+"</td><td>";
+                })
+                table += "</td></tr><tr><td>"
+            }
+        });
+        table += "</td></tr></table>";
+        return table;
     };
 
     return {

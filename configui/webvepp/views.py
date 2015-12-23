@@ -77,8 +77,9 @@ def loadNodeNeighbours(request):
     node = getObjectById(node_id)
     n_list = getNodeNeighbours(node,level)
     n_left_list = getNodeNeighbours(node,level,-1)
+    r_list = getRemoteAttributes(node,level)
     l_list = getAdditionalLinks(n_list,int(level)+1)
-    return HttpResponse(json.dumps([n_list,n_left_list,l_list], ensure_ascii=False), content_type="application/json")
+    return HttpResponse(json.dumps([n_list,n_left_list,l_list,r_list], ensure_ascii=False), content_type="application/json")
 
 
 def loadMaxAttributes(request):
@@ -205,6 +206,9 @@ def parseAttributes(template,object,attr_type="min"):
         else:
             attributes[attr_type] = parsing(template[attr_type])
         #attributes["extra"] = parsing(template["max"])
+        """elif(attr_type=="remote"):
+        attributes = parsing(template)
+        print object"""
     else:
         for field in template["fields"]:
             field_name = field["key"]
@@ -227,7 +231,6 @@ def getNodeNeighbours(node,level,direction=1):
     if level=="0":
         obj_sample = sample["root"]
     else:
-
         obj_sample = sample["level"+level]
 
     if direction==-1:
@@ -306,6 +309,52 @@ def getNodeNeighbours(node,level,direction=1):
         elif "sort_field" in sample_l:
             neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
     return neighbours
+
+def getRemoteAttributes(node,level):
+    remote = {}
+    sample = getSample()
+    obj_sample = {}
+    if level=="0":
+        return {}
+    else:
+        obj_sample = sample["level"+level]
+    if "remote_attributes" in obj_sample and "Class" in obj_sample["remote_attributes"] and node["Class"] in obj_sample["remote_attributes"]["Class"]:
+        attribute_names = obj_sample["remote_attributes"]["attributes"]
+        obj_attributes = []
+        for attr in attribute_names:
+            if attr == "variables":
+                if node["Inputs"]==2:
+                    obj_attributes.append(["X","Y"])
+                elif node["Inputs"]==1:
+                    obj_attributes.append(["X"])
+            else:
+                obj_attributes.append(getValueByPath(node,attr))
+        remote["attributes"]=obj_attributes
+        remote["type"] = obj_sample["remote_attributes"]["type"]
+        if remote["type"]=="matrix_equation":
+            vector1 = countMatrixWidthHeight(obj_attributes[0])
+            vector2 = countMatrixWidthHeight(obj_attributes[2])
+            matrix1 = countMatrixWidthHeight(obj_attributes[1])
+            matrix2 = countMatrixWidthHeight(obj_attributes[4])
+            remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*8+10
+            remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*11+5
+    else:
+        return {}
+    return remote
+
+def countMatrixWidthHeight(matrix):
+    width = 0
+    height = len(matrix)
+    matrixtype = "matrix" if type(matrix[0]) is list else "vector"
+    for row in matrix:
+        if matrixtype=="vector":
+            width = max(width,len(str(row)))
+        elif matrixtype=="matrix":
+            row_width = 0
+            for item in row:
+                row_width += len(str(item))+1
+            width = max(width,row_width)
+    return {"width": width,"height": height}
 
 def sortMatrixObjects(objects,sortname,size,parent_node):
     sorted = []

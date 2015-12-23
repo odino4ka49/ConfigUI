@@ -40,6 +40,7 @@ WEBVEPP.TreeModel = function(){
                 },
                 success: function(data){
                     tree_data = data;
+                    console.log(tree_data);
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("tree_created");
                 }
@@ -76,6 +77,7 @@ WEBVEPP.TreeModel = function(){
                 success: function(data){
                     node._parents = data[0];
                     node._children = data[1];
+                    node._parents.push(data[3]);
                     tree_data.additional_links = unique_check(tree_data.additional_links.concat(data[2]));
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("tree_changed");

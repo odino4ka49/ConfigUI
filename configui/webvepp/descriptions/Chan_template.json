@@ -930,5 +930,63 @@
     "component_connection_num": null,
     "component_types": null,
     "component_check_values": null
+  },
+  {
+    "class": "Hand",
+    "comment": "ручка",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Type",
+        "type": "string"
+      },
+      {
+        "key": "EnergyLock",
+        "type": "boolean"
+      },
+      {
+        "key": "Inputs",
+        "type": "integer"
+      },
+      {
+        "key": "Outputs",
+        "type": "integer"
+      },
+      {
+        "key": "Shift",
+        "type": "integer"
+      },
+      {
+        "key": "Elements",
+        "type": "array"
+      },
+      {
+        "key": "BANK",
+        "type": "array"
+      },
+      {
+        "key": "Lines",
+        "type": "array"
+      },
+      {
+        "key": "Graphs",
+        "type": "array"
+      }
+    ],
+    "primary_keys": [
+      "Name",
+      "System"
+    ],
+    "components": null,
+    "component_connection_num": null,
+    "component_types": null,
+    "component_check_values": null
   }
 ]

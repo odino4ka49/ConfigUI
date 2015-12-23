@@ -277,7 +277,7 @@
       "level": 1,
       "filter": {
         "Class": [
-          "Element"
+          "Element","Hand"
         ]
       },
       "display_filter": {
@@ -292,7 +292,11 @@
           "Type",
           "Comment",
           "Polarity",
-          "Channels"
+          "Channels",
+          "EnergyLock",
+          "Inputs",
+          "Outputs",
+          "Shift"
         ]
       },
       "display_attributes": {
@@ -302,6 +306,11 @@
         "matrix_type": "simple",
         "matrix_size": 64,
         "hiding": "true"
+      },
+      "remote_attributes":{
+        "Class": "Hand",
+        "type": "matrix_equation",
+        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements"]
       }
     },
     "level2": {
