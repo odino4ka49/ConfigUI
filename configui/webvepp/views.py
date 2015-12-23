@@ -336,8 +336,8 @@ def getRemoteAttributes(node,level):
             vector2 = countMatrixWidthHeight(obj_attributes[2])
             matrix1 = countMatrixWidthHeight(obj_attributes[1])
             matrix2 = countMatrixWidthHeight(obj_attributes[4])
-            remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*8+10
-            remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*11+5
+            remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*8+30
+            remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*11+20
     else:
         return None
     return remote

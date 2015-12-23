@@ -34,7 +34,11 @@ rect.inmatrix {
 .link.additional{
     stroke: #0A3A4A;/*#94FE67;*/
 }
-table{
+table.matrix{
+    border-style: solid;
+    border-color: white;
+    border-left-color: black;
+    border-right-color: black;
 }
 .attributes{
     overflow-y: hidden;

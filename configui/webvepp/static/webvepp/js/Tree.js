@@ -766,7 +766,7 @@ WEBVEPP.Tree = function(params){
     };
     function matrixToTable(matrix){
         var matrixtype = (typeof(matrix[0])=="string") ? "vector":"matrix";
-        var table = "<table><tr><td>";
+        var table = "<table class='matrix'><tr><td>";
         matrix.forEach(function(row){
             if(matrixtype == "vector"){
                 table += row+"</td></tr><tr><td>";
