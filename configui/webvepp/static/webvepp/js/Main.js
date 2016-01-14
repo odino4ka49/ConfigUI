@@ -32,8 +32,8 @@ $(document).ready(function(){
             //"canvas": d3.select("#tree_map"),
             "body": d3.select("body")
         },tree);
-        tree_controller = WEBVEPP.TreeController(tree_model,tree_view);
-
+        tree_controller = WEBVEPP.TreeController(tree_model,tree_view),
+        menu_bar = WEBVEPP.MenuBar();
 });
 
 

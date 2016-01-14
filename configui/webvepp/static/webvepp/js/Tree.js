@@ -43,9 +43,8 @@ WEBVEPP.Tree = function(params){
         recountXY = function(){
             var nodes = tree.nodes(root);
             nodes.forEach(function(d){
-                if(d.depth==0) return;
-                var allofus = d.parent._parents;
-                d.x = countNodeX(d.depth,allofus.indexOf(d));
+                if(d.depth==0||d.coord) return;
+                d.coord = [countNodeX(d),countNodeY(d)];
             });
         },
         countNodeY = function(node){
@@ -84,7 +83,8 @@ WEBVEPP.Tree = function(params){
                 depth = node.depth,
                 index = 0,
                 allofus,
-                direction = 1;
+                direction = 1,
+                parent = node.parent;
             if("direction" in node && node.direction==-1){
                 direction = -1;
             }
@@ -97,7 +97,57 @@ WEBVEPP.Tree = function(params){
                 }
                 index = allofus.indexOf(node);
             }
-            for(var i=1;i<=depth;i++){
+            var level_name = "level"+depth;
+            var level_info = settings[level_name].display_attributes;
+            //if depth == 2 and it's matrix, we just count it the way it's supposed to be
+            if(depth==1){
+                if ("positioning" in level_info && level_info.positioning=="matrix"){
+                    var matrix = allofus[allofus.length-1]
+                    if(index==allofus.length-1){
+                        result+= matrix.width/2 - level_info.width - 20;
+                    }
+                    else{
+                        result+=(index%matrix.cols)*(node.width+20)-45;
+                    }
+                }
+                else{
+                    result = 0;
+                }
+                return result;
+            }
+            else if(depth>1){
+                var parent_level_name = "level"+(depth-1);
+                var parent_level_info = settings[level_name].display_attributes;
+                if("positioning" in parent_level_info && parent_level_info.positioning=="matrix" && !("hiding" in parent_level_info && parent_level_info.hiding)){
+                    var parent_level;
+                    if(direction==-1){
+                        parent_level= parent.parent._children;
+                    }
+                    else{
+                        parent_level= parent.parent._parents;
+                    }
+                    var matrix = parent_level[parent_level.length-1];
+                    result = matrix.coord[0]+(matrix.width/2)*direction;
+                }
+                else{
+                    result = parent.coord[0]+(parent.width/2)*direction;
+                }
+                result += 50*direction;
+                if ("positioning" in level_info && level_info.positioning=="matrix"){
+                    var matrix = allofus[allofus.length-1]
+                    //result += (matrix.width/2)*direction;
+                    if(index==allofus.length-1){
+                        result+= (matrix.width/2-10)*direction;
+                    }
+                    else{
+                        result+=((index%matrix.cols)*(node.width+20)+node.width/2)*direction;
+                    }
+                }
+                else{
+                    result += (node.width/2)*direction;
+                }
+            }
+            /*for(var i=1;i<=depth;i++){
                 var ii = i
                 if(direction==-1 && i!=1){
                         ii = -(i-1);
@@ -111,7 +161,7 @@ WEBVEPP.Tree = function(params){
                         if(index==allofus.length-1){
                             return countLevelX(node)-90+matrix.width/2;
                         }
-                        result+=(index%matrix.cols)*(node_width+20)-45
+                        result+=(index%matrix.cols)*(node.width+20)-45
                     }
                     else{
                         if("hiding" in level_info && level_info.hiding){
@@ -119,7 +169,7 @@ WEBVEPP.Tree = function(params){
                             while(d.depth!=i){
                                 d = d.parent;
                             }
-                            result = countNodeX(d)+50*direction;
+                            result = d.coord[0]+(d.width/2+20)*direction;
                         }
                         else{
                             result += matrix.width*2;
@@ -128,7 +178,7 @@ WEBVEPP.Tree = function(params){
                 }
                 if(i!=depth)
                     result += (node_width+50)*direction;
-            }
+            }*/
             return result;
         },
         countNodeClass = function(node){
@@ -170,7 +220,7 @@ WEBVEPP.Tree = function(params){
                         while(d.depth!=i){
                             d = d.parent;
                         }
-                        result += countNodeX(d)+50*direction;
+                        result += d.coord[0]+50*direction;
                     }
                     else{
                         var columns = (level_info.matrix_size>16)? 8:4;
@@ -385,13 +435,13 @@ WEBVEPP.Tree = function(params){
                   .attr('x',function(d){
                     if(d.depth==0)
                         return 0;
-                    var x = countNodeX(d);
+                    var x = d.coord[0];
                     return x-(d.width/2);
                   })
                   .attr('y',function(d){
                     if(d.depth==0)
                         return 0;
-                    var y = countNodeY(d);
+                    var y = d.coord[1];
                     return y-(d.height/2)-5;
                   })
                   .attr('width', function(d){
@@ -413,13 +463,13 @@ WEBVEPP.Tree = function(params){
                     .attr("x", function(d){
                         if(d.depth==0)
                             return 0;
-                        var x = countNodeX(d);
+                        var x = d.coord[0];
                         return x-(d.width/2);
                     })
                     .attr("y", function(d){
                         if(d.depth==0)
                             return 0;
-                        var y = countNodeY(d);
+                        var y = d.coord[1];
                         return y-(d.height/2)-5;
                     })
                     .attr('width', function(d){
@@ -519,8 +569,8 @@ WEBVEPP.Tree = function(params){
                     .attr("transform", function(d) {
                         if(d.source && d.target)
                             return "translate(" +
-                            (countNodeX(d.target)+d.target.width/2+10) + "," +
-                            (countNodeY(d.target)-5) + ")";
+                            (d.target.coord[0]+d.target.width/2+10) + "," +
+                            (d.target.coord[1]-5) + ")";
                     })
                     .text(function(d) {
                         return d.text;
@@ -557,10 +607,10 @@ WEBVEPP.Tree = function(params){
                 }
                 details.select("rect")
                     .attr('x',function(d){
-                        return countNodeX(details_obj)-(width/2)
+                        return details_obj.coord[0]-(width/2)
                     })
                     .attr('y',function(d){
-                        return countNodeY(details_obj)-(height/2)-5
+                        return details_obj.coord[1]-(height/2)-5
                     })
                     .attr('width', function(d){
                         if(width!=0)
@@ -573,10 +623,10 @@ WEBVEPP.Tree = function(params){
                     });
                 details.select("foreignObject")
                     .attr('x',function(d){
-                        return countNodeX(details_obj)-(width/2)
+                        return details_obj.coord[0]-(width/2)
                     })
                     .attr('y',function(d){
-                        return countNodeY(details_obj)-(height/2)
+                        return details_obj.coord[1]-(height/2)
                     })
                     .attr('width', function(d){
                         return width;
@@ -687,9 +737,9 @@ WEBVEPP.Tree = function(params){
           targetX = d.target.x,
           targetY = d.target.y - (boxWidth / 2);*/
         var sourceX = countNodeY(d.source),
-        sourceY = countNodeX(d.source) + (d.source.width / 2)*direction,
-        targetX = countNodeY(d.target),
-        targetY = countNodeX(d.target) - (d.target.width / 2)*direction,
+        sourceY = d.source.coord[0] + (d.source.width / 2)*direction,
+        targetX = d.target.coord[1],
+        targetY = d.target.coord[0] - (d.target.width / 2)*direction,
         target_levelY = countLevelX(d.target) - (d.target.width / 2)*direction;
 
         if(d.source.depth!=0){
@@ -705,10 +755,10 @@ WEBVEPP.Tree = function(params){
         + "H" + (targetY);
     };
     function backward_elbow(d,direction) {
-        var sourceX = countNodeY(d.source),
-        sourceY = countNodeX(d.source) - (d.source.width / 2),
-        targetX = countNodeY(d.target),
-        targetY = countNodeX(d.target) + (d.target.width / 2),
+        var sourceX = d.source.coord[1],
+        sourceY = d.source.coord[0] - (d.source.width / 2),
+        targetX = d.target.coord[1],
+        targetY = d.target.coord[0] + (d.target.width / 2),
         target_levelY = countLevelX(d.target) + (d.target.width / 2);
 
         if(sourceY==target_levelY - d.target.width ){

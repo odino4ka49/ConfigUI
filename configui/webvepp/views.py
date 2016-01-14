@@ -384,7 +384,12 @@ def sortMatrixObjects(objects,sortname,size,parent_node):
         if object!=None:
             sorted.append(object)
         else:
-            object = {"name":"Matrix","id":parseId(parent_node)+str(i),"_parents":[],"attributes":{"min":[{"key":"Index","value":i}],"extra":[]},"width":50,"height":50}
+            width = 50
+            height = 50
+            if len(objects)!=0:
+                width = objects[0]["width"]
+                height = objects[0]["height"]
+            object = {"name":"Matrix","id":parseId(parent_node)+str(i),"_parents":[],"attributes":{"min":[{"key":"Index","value":i}],"extra":[]},"width":width,"height":height}
             sorted.append(object)
     return sorted
 
