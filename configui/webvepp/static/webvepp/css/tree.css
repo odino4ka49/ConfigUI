@@ -17,7 +17,7 @@ rect.inmatrix {
     stroke-width: 1px;
 }
 .details div{
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 .person {
     font: 14px sans-serif;

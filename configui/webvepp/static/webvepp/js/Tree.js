@@ -43,9 +43,17 @@ WEBVEPP.Tree = function(params){
         recountXY = function(){
             var nodes = tree.nodes(root);
             nodes.forEach(function(d){
-                if(d.depth==0||d.coord) return;
+                if(d.depth==0) return;
+                loadDetailsOpenExtra(d);
+                if(d.coord) return;
                 d.coord = [countNodeX(d),countNodeY(d)];
             });
+        },
+        loadDetailsOpenExtra = function(node){
+            if(node.open_extra){
+                if(!node.attributes.extra || node.attributes.extra.length == 0)
+                    $(document).trigger("load_details",node);
+            }
         },
         countNodeY = function(node){
             var index,number,
@@ -262,6 +270,11 @@ WEBVEPP.Tree = function(params){
             })
             if(hiding){
                 person.unhidden = true;
+                if(person.open_extra){
+                    person.collapsed_size = [person.width,person.height]
+                    person.width = person.open_extra[0];
+                    person.height = person.open_extra[1];
+                }
             }
         },
         showSiblings = function(person){
@@ -275,6 +288,10 @@ WEBVEPP.Tree = function(params){
                 person.parent._parents.forEach(function(sibling){
                     sibling.hidden = false;
                 })
+                if(person.open_extra){
+                    person.width = person.collapsed_size[0];
+                    person.height = person.collapsed_size[1];
+                }
             }
         },
         removeAdditionalLink = function(link){
@@ -370,6 +387,8 @@ WEBVEPP.Tree = function(params){
                   })
                   .on('contextmenu', function(person){
                     d3.event.preventDefault();
+                    if(person.type=="matrix_equation")
+                        return;
                     if(!person.attributes.extra || person.attributes.extra.length == 0)
                         $(document).trigger("load_details",person);
                     revealPerson(person);
@@ -411,22 +430,12 @@ WEBVEPP.Tree = function(params){
                         .attr("class",function(d){
                             return countNodeClass(d);
                         })
-                        .append("xhtml:body")
-                        .html(function(d){
-                            var text = "";
-                            if(d.attributes.min){
-                                text=(d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
-                            }
-                            else if(d.type=="matrix_equation"){
-                                text = attributesToEquation(d.attributes);
-                            }
-                            //text += d.revealed? attributesToString(d.attributes.extra): "";
-                            return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
-                        })
+                        .append("xhtml:body");
 
 
                 // Update the position of both old and new nodes
-                var nodeUpdate = node.transition()
+                var nodeUpdate = node;
+                node.transition()
                   .duration(duration)
                   .attr("transform", function(d) { return "translate(" + (direction * d.y) + "," + d.x + ")"; });
 
@@ -483,19 +492,24 @@ WEBVEPP.Tree = function(params){
                         return d.height;//d.revealed ? boxHeightMax: boxHeight
                     })
                     .style('fill-opacity', 1)
-                  .attr("class",function(d){
-                    return countNodeClass(d);
-                  });
+                      .attr("class",function(d){
+                        return countNodeClass(d);
+                      })
+                      .select("body")
+                      .html(function(d){
+                            var text = "";
+                            if(d.open_extra && (!d.collapsed&&("collapsed" in d))){
+                                text= attributesToString(d.attributes.extra)
+                            }
+                            else if(d.attributes.min){
+                                text=(d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
+                            }
+                            else if(d.type=="matrix_equation"){
+                                text = attributesToEquation(d.attributes);
+                            }
+                            return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
+                      });
 
-                /*node.select('foreignObject')
-                    .select("body")
-                    .html(function(d){
-                            var text = attributesToString(d.attributes.min);
-                            var width = d.revealed ? boxWidthMax: boxWidth,
-                                height = d.revealed ? boxHeightMax: boxHeight;
-                            text += d.revealed? attributesToString(d.attributes.extra): "";
-                            return '<div style="width: '+(width)+'px; height: '+(height)+'px" class="attributes">'+text+'</div>'
-                        });*/
                 // Remove nodes we aren't showing anymore
                 var nodeExit = node.exit()
                   .transition()
@@ -596,14 +610,14 @@ WEBVEPP.Tree = function(params){
 
             },
             drawDetails = function (){
-                if(!details_obj)
+                if(!details_obj||!details_obj.attributes.extra)
                     return;
                 var details = svg.select("g.details"),
                     width=0,
                     height=0;
                 if(details_obj.revealed){
                     width = boxWidthMax;
-                    height = boxHeightMax;
+                    height = countTextHeight(details_obj.attributes.extra,width);
                 }
                 details.select("rect")
                     .attr('x',function(d){
@@ -668,6 +682,10 @@ WEBVEPP.Tree = function(params){
                 person.revealed = !person.revealed;
                 details_obj = person;
                 drawDetails();
+            }
+            hideDetails = function(person){
+                person.revealed = false;
+                drawDetails();
             };
 
     tree = d3.layout.tree()
@@ -684,6 +702,9 @@ WEBVEPP.Tree = function(params){
             .on("contextmenu",function(){
                 d3.event.preventDefault();
                 revealPerson(details_obj);
+            })
+            .on("mouseout",function(){
+                hideDetails(details_obj);
             });
         det_obj.append("rect")
             .attr({
@@ -777,6 +798,21 @@ WEBVEPP.Tree = function(params){
             + "V" + d.source.x
             + "H" + d.source.y;
     };
+    function countTextHeight(rows,width){
+        var rows_number = 0,row;
+        for(i=0;i<rows.length;i++){
+            var row_width;
+            row = rows[i];
+            if(row.value==null){
+                row_width += row.key.length*5;
+            }
+            else{
+                row_width = (row.key.length+row.value.length+2)*10;
+            }
+            rows_number+=(row_width/width>>0)+1;
+        }
+        return rows_number*19;
+    };
     function attributesToString(attributes){
         var text = "";
         attributes.forEach(function(attr){
@@ -805,7 +841,7 @@ WEBVEPP.Tree = function(params){
         text += matrixToTable(attributes[1]);
         text += "</td><td>x</td><td>";
         text += matrixToTable(attributes[2]);
-        text += "</td></tr><tr><td>";
+        text += "</td></tr></table><table><tr><td>";
         text += matrixToTable(attributes[3]);
         text += "</td><td>=</td><td>";
         text += matrixToTable(attributes[4]);

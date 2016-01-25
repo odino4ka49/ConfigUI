@@ -163,13 +163,13 @@ def parseAttributes(template,object,attr_type="min"):
             elif (type(field) is dict) and ("to_array" in field):
                 field_array = getValuesByPath(object,field["to_array"]["Path"])
                 if field["to_array"]["Operation"]=="sum":
-                    sum = 0
+                    sum = 0.0
                     for val in field_array:
                         sum+=val
                     if sum!=0:
                         attrs += [{
                             "key": field["key"],
-                            "value": sum
+                            "value": round(sum,1)
                         }]
             elif ("link_id" in object) and (type(field) is dict) and ("value" in field) and (field["value"]=="link_id"):
                 attrs += [{
@@ -257,6 +257,9 @@ def getNodeNeighbours(node,level,direction=1):
                 neighbour["width"] = n_display_attributes["width"]
                 neighbour["height"] = n_display_attributes["height"]
                 neighbour["direction"] = direction
+                if "remote_attributes" in sample_l and "Class" in sample_l["remote_attributes"] and n["Class"] in sample_l["remote_attributes"]["Class"]:
+                    if "open_extra" in sample_l["remote_attributes"]:
+                        neighbour["open_extra"] = sample_l["remote_attributes"]["open_extra"]
                 neighbours.append(neighbour)
         else:
             for n in next_level:
@@ -275,6 +278,9 @@ def getNodeNeighbours(node,level,direction=1):
                     neighbour["width"] = n_display_attributes["width"]
                     neighbour["height"] = n_display_attributes["height"]
                     neighbour["direction"] = direction
+                    if "remote_attributes" in sample_l and "Class" in sample_l["remote_attributes"] and neighbour["Class"] in sample_l["remote_attributes"]["Class"]:
+                        if "open_extra" in sample_l["remote_attributes"]:
+                            neighbour["open_extra"] = sample_l["remote_attributes"]["open_extra"]
                     if "action" in sample_l:
                         action = parseRulesToString(n,sample_l["action"])
                         if action["type"]=="open_another_map" and "info" in action:
@@ -319,6 +325,8 @@ def getRemoteAttributes(node,level):
     else:
         obj_sample = sample["level"+level]
     if "remote_attributes" in obj_sample and "Class" in obj_sample["remote_attributes"] and node["Class"] in obj_sample["remote_attributes"]["Class"]:
+        if "open_extra" in obj_sample["remote_attributes"] and obj_sample["remote_attributes"]["open_extra"]=="true":
+            node["open_extra"] = "true"
         attribute_names = obj_sample["remote_attributes"]["attributes"]
         obj_attributes = []
         for attr in attribute_names:
