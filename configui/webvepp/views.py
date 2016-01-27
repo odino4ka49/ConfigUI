@@ -6,6 +6,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
 from sets import Set
+from xml.dom import minidom
 from django.template import Context
 import json
 import inspect, os
@@ -37,6 +38,10 @@ def elements(request,id=None):
     template = loader.get_template('webvepp/index.html')
     return HttpResponse(template.render())
 
+def scheme(request):
+    template = loader.get_template('webvepp/scheme.html')
+    return HttpResponse(template.render())
+
 def loadTreeData(request):
     global start_name,current_scheme_name
     data = request.GET
@@ -56,6 +61,15 @@ def loadTreeData(request):
     #except Exception as e:
     #    print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
+
+def loadSchemeData(request):
+    data = request.GET
+    scheme_name = "bg/"+json.loads(data["scheme_name"])+".svg"
+    doc = minidom.parse(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+scheme_name)
+    svg = doc.getElementsByTagName("svg")[0]
+    #json.JSONEncoder.encode(svg)
+    print type(svg)
+    return HttpResponse(svg)
 
 def loadTreeSample(request):
     global current_scheme_name

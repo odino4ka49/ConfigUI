@@ -132,8 +132,8 @@
         ]
       },
       "display_attributes": {
-        "width": 170,
-        "height": 110
+        "width": 200,
+        "height": 130
       }
     },
     "level2": {
@@ -162,8 +162,8 @@
         ]
       },
       "display_attributes": {
-        "width": 170,
-        "height": 60
+        "width": 200,
+        "height": 80
       },
       "additional_links": [
         "ACP-KAS"
@@ -247,8 +247,8 @@
         "max": []
       },
       "display_attributes": {
-        "width": 170,
-        "height": 50
+        "width": 200,
+        "height": 70
       }
     },
     "level-1": {
@@ -268,8 +268,8 @@
         "max": ["*"]
       },
       "display_attributes": {
-        "width": 170,
-        "height": 60
+        "width": 200,
+        "height": 80
       }
     },
     "level1": {
@@ -358,8 +358,8 @@
         ]
       },
       "display_attributes": {
-        "width": 170,
-        "height": 60,
+        "width": 200,
+        "height": 80,
         "autorevealing": true
       }
     },
@@ -397,8 +397,8 @@
       },
       "sort_field": "Name",
       "display_attributes": {
-        "width": 170,
-        "height": 60
+        "width": 200,
+        "height": 80
       }
     },
     "level4": {
@@ -465,8 +465,8 @@
         ]
       },
       "display_attributes": {
-        "width": 170,
-        "height": 110
+        "width": 200,
+        "height": 130
       },
       "action":{
         "type": "open_another_map",
