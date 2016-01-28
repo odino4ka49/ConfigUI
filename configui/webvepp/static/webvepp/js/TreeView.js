@@ -86,6 +86,17 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
       //});
       };
 
+    function toggleStartName(){
+        //figure out start name
+        var path = location.pathname.split('/');
+        var startname = path[3];
+        if(startname!=""){
+            var person = ancestorTree.findObjectByName(startname);
+            ancestorTree.togglePerson(person);
+            ancestorTree.moveToStartPosition(person);
+        }
+    };
+
     function rootProxy(root){
       return {
         name: root.name,
@@ -104,6 +115,7 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
 
     $(document).on("tree_created",function(){
         reloadTree();
+        toggleStartName();
     });
 
     $(document).on("tree_changed",function(){

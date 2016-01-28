@@ -48,7 +48,7 @@ def loadTreeData(request):
     current_scheme_name = json.loads(data['scheme_names'])
     #try:
     tree = parseTree()
-    if start_name:
+    """if start_name:
         hideSiblings(tree["_parents"],start_name,1)
         for n in tree["_parents"]:
             if n["name"]==start_name:
@@ -56,8 +56,8 @@ def loadTreeData(request):
                 n["_parents"] = getNodeNeighbours(node,"1")
                 n["_children"] = getNodeNeighbours(node,"1",-1)
                 tree["additional_links"] = getAdditionalLinks(n["_parents"],2)
-    else:
-        tree["additional_links"] = []
+    else:"""
+    tree["additional_links"] = []
     #except Exception as e:
     #    print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")

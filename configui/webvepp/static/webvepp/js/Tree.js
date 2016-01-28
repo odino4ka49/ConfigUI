@@ -63,6 +63,7 @@ WEBVEPP.Tree = function(params){
                 return 0;
             }
             var allofus = node.parent._parents;
+            var parent_y = (node.parent.coord) ? node.parent.coord[1]: 0;
             if("direction" in node && node.direction==-1){
                 allofus = node.parent._children;
             }
@@ -73,7 +74,7 @@ WEBVEPP.Tree = function(params){
             if("positioning" in level_info && level_info.positioning=="matrix"){
                 var matrix = allofus[allofus.length-1]
                 if(index==number-1){
-                    return countNodeY(node.parent);
+                    return parent_y;
                 }
                 else{
                     pos = Math.floor(index/matrix.cols) - Math.floor(matrix.rows/2);
@@ -84,7 +85,7 @@ WEBVEPP.Tree = function(params){
             else{
                 pos = index - Math.floor(number/2);
             }
-            return (10+level_info.height)*(pos)+countNodeY(node.parent);
+            return (10+level_info.height)*(pos)+parent_y;
         },
         countNodeX = function(node){
             var result = 0,
@@ -677,12 +678,12 @@ WEBVEPP.Tree = function(params){
                     }
                     draw(person);
                 }
-            }
+            },
             revealPerson = function(person){
                 person.revealed = !person.revealed;
                 details_obj = person;
                 drawDetails();
-            }
+            },
             hideDetails = function(person){
                 person.revealed = false;
                 drawDetails();
@@ -734,6 +735,13 @@ WEBVEPP.Tree = function(params){
         });
         return node[0];
     };
+    function findObjectByName(name){
+        var nodes = tree.nodes(root);
+        var node = nodes.filter(function(n){
+            return n.name==name;
+        });
+        return node[0];
+    };
     function collapse(person){
         person.collapsed = true;
             if(person._parents){
@@ -757,7 +765,7 @@ WEBVEPP.Tree = function(params){
           sourceY = d.source.y + (boxWidth / 2),
           targetX = d.target.x,
           targetY = d.target.y - (boxWidth / 2);*/
-        var sourceX = countNodeY(d.source),
+        var sourceX = d.source.coord[1],
         sourceY = d.source.coord[0] + (d.source.width / 2)*direction,
         targetX = d.target.coord[1],
         targetY = d.target.coord[0] - (d.target.width / 2)*direction,
@@ -867,6 +875,20 @@ WEBVEPP.Tree = function(params){
         table += "</td></tr></table>";
         return table;
     };
+    function movePerson(person,shift){
+        if(person.coord){
+            person.coord = [person.coord[0]+shift[0],person.coord[1]+shift[1]];
+            console.log(person);
+        }
+    };
+    function moveToStartPosition(person){
+        var coords = person.coord;
+        var nodes = tree.nodes(root);
+        var shift = [-coords[0],-coords[1]];
+        nodes.forEach(function(n){
+            movePerson(n,shift);
+        });
+    };
 
     return {
         setChildren:setChildren,
@@ -877,5 +899,7 @@ WEBVEPP.Tree = function(params){
         drawLinks:drawLinks,
         togglePerson:togglePerson,
         recountXY:recountXY,
+        findObjectByName: findObjectByName,
+        moveToStartPosition: moveToStartPosition,
     };
 };
