@@ -1,6 +1,6 @@
 WEBVEPP.namespace("WEBVEPP.Scheme");
 WEBVEPP.Scheme = function(){
-    var scheme = scheme,
+    var scheme, schemeSVG,
         svg,
 
         zoom = d3.behavior.zoom()
@@ -30,16 +30,23 @@ WEBVEPP.Scheme = function(){
             var parser = new DOMParser();
             d3.xml(WEBVEPP.serveradr()+"static/webvepp/bg/"+"Chan_V3-V4_scheme-no_lines_black.svg", "image/svg+xml", function(error, xml) {
                 if (error) throw error;
-                //console.log(xml.documentElement.getElementById("Слой_x0020_1"));
                 var defs = xml.documentElement.getElementById("defs");
-                document.getElementById("schemeSVG").appendChild(defs)
+                document.getElementById("schemeSVG").appendChild(defs);
                 scheme = xml.documentElement.getElementById("Слой_x0020_1");
-                var schemeSVG = document.adoptNode(scheme)
-                document.getElementById("schemeSVG").appendChild(scheme)
-                //svg.append(scheme);
-                //document.body.appendChild(group);
+                document.getElementById("schemeSVG").appendChild(scheme);
+                addLinks();
             });
-                //.call(zoom);
+        },
+        addLinks = function(){
+            $(".link").click(function(){
+                var id = $(this).attr("id");
+                var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_blank');
+                if(win){
+                    win.focus();
+                }else{
+                    alert('Please allow popups for this site');
+                }
+            });
         };
 
     svg = d3.select("body").append("svg")

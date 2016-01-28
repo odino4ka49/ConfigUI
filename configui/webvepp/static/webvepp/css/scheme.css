@@ -2,3 +2,10 @@ svg {
     font-size: 3px;
     font-family: arial;
 }
+
+.link{
+    cursor: pointer;
+}
+.link:hover{
+    fill:white;
+}
