@@ -35,6 +35,7 @@ WEBVEPP.Scheme = function(){
                 scheme = xml.documentElement.getElementById("Слой_x0020_1");
                 document.getElementById("schemeSVG").appendChild(scheme);
                 addLinks();
+                svg.transition().attr("transform",'translate(' + zoom.translate() + ') scale(' + zoom.scale() + ')');
             });
         },
         addLinks = function(){

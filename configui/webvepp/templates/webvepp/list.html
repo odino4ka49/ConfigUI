@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+
 <html>
 <head>
     <meta charset="UTF-8">
     <title></title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/static/webvepp/js/MainScheme.js"></script>
-    <script type="text/javascript" src="/static/webvepp/js/Scheme.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/MainList.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/List.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/MenuBar.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/webvepp/css/main.css" >
-    <link rel="stylesheet" type="text/css" href="/static/webvepp/css/scheme.css" >
+    <link rel="stylesheet" type="text/css" href="/static/webvepp/css/list.css" >
 </head>
 <body>
     <ul id="Navigation_bar">
@@ -19,5 +20,6 @@
       <li id="menu_scheme"><a href="javascript: goToPage('scheme');">Схема</a></li>
       <li id="menu_bank"><a href="javascript: goToPage('bank');">BANK</a></li>
     </ul>
+    <table id="list"></table>
 </body>
 </html>

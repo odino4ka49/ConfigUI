@@ -21,9 +21,9 @@ WEBVEPP.TreeModel = function(){
             if(path[2]==""||path[2]=="camacs"){
                 tree_scheme_names.sample = "camacs";
             }
-            else if (path[2]=="elements")
+            else
             {
-                tree_scheme_names.sample = "elements";
+                tree_scheme_names.sample = path[2];
             }
         }
     };

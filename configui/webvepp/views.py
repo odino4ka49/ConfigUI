@@ -38,6 +38,10 @@ def elements(request,id=None):
     template = loader.get_template('webvepp/index.html')
     return HttpResponse(template.render())
 
+def bank(request):
+    template = loader.get_template('webvepp/list.html')
+    return HttpResponse(template.render())
+
 def scheme(request):
     template = loader.get_template('webvepp/scheme.html')
     return HttpResponse(template.render())
@@ -46,28 +50,22 @@ def loadTreeData(request):
     global start_name,current_scheme_name
     data = request.GET
     current_scheme_name = json.loads(data['scheme_names'])
-    #try:
     tree = parseTree()
-    """if start_name:
-        hideSiblings(tree["_parents"],start_name,1)
-        for n in tree["_parents"]:
-            if n["name"]==start_name:
-                node = getObjectById(n["id"])
-                n["_parents"] = getNodeNeighbours(node,"1")
-                n["_children"] = getNodeNeighbours(node,"1",-1)
-                tree["additional_links"] = getAdditionalLinks(n["_parents"],2)
-    else:"""
     tree["additional_links"] = []
-    #except Exception as e:
-    #    print e
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
+
+def loadListData(request):
+    global current_scheme_name
+    data = request.GET
+    current_scheme_name = json.loads(data['scheme_names'])
+    list = parseList()
+    return HttpResponse(json.dumps(list, ensure_ascii=False), content_type="application/json")
 
 def loadSchemeData(request):
     data = request.GET
     scheme_name = "bg/"+json.loads(data["scheme_name"])+".svg"
     doc = minidom.parse(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+scheme_name)
     svg = doc.getElementsByTagName("svg")[0]
-    #json.JSONEncoder.encode(svg)
     print type(svg)
     return HttpResponse(svg)
 
@@ -313,7 +311,10 @@ def getNodeNeighbours(node,level,direction=1):
             if matrix_size==None:
                 matrix_size = len(neighbours)
             if matrix_size!=0:
-                matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
+                if "matrix_cols" in sample_l["display_attributes"]:
+                    matrix_cols = sample_l["display_attributes"]["matrix_cols"]
+                else:
+                    matrix_cols = 8 if matrix_size > 16 else 4#math.ceil(math.sqrt(matrix_size))
                 matrix_rows = math.ceil(float(matrix_size)/matrix_cols)
                 matrix["cols"]=matrix_cols
                 matrix["rows"]=matrix_rows
@@ -494,27 +495,33 @@ def parseTree():
         result["height"] = obj_display_attributes["height"]
 
         result["_parents"]=getNodeNeighbours(result,"0")
-        """level = "level"+str(obj_sample["level"]+1)
-        if obj_sample["level"]<max_level and level in sample:
-            sample_l = sample[level]
-            if "type" in obj_sample and obj_sample["type"]=="new":
-                neighbours = getObjects(parseRulesToString(object,sample_l["filter"]))
-                for n in neighbours:
-                    result["_parents"].append(parseObjectInfo(sample_l,n))
-            else:
-                neighbours = getObjects(parseRulesToString(object,sample_l["filter"]))
-                for n in neighbours:
-                    link = getLink(n,object)
-                    #TODO: make it faster loading graph by parts
-                    if link!= {}:
-                        if template["component_ID"]!=None:
-                            n["link_id"] = link[template["component_ID"]]
-                        result["_parents"].append(parseObjectInfo(sample_l,n))"""
         return result
 
     if sample["root"]["type"]=="new":
         tree = parseObjectInfo(sample["root"],sample["root"]["fields"])
     return tree
+
+def parseList():
+    list = []
+    samples = getSample()
+    if "type" not in samples or samples["type"]!="list":
+        return list
+    sample = samples["root"]
+
+    basic_list = getObjects(parseRulesToString({},sample["filter"]))
+    for base_obj in basic_list:
+        obj = {"name":base_obj["Name"],"id":"","_parents":[]}
+        obj["id"] = parseId(base_obj)
+        display_details = sample["display_filter"]
+        obj_attributes = parseAttributes(display_details,base_obj)
+        obj["attributes"] = obj_attributes
+        display_attributes = sample["display_attributes"]
+        #object["width"] = n_display_attributes["width"]
+        #object["height"] = n_display_attributes["height"]
+        list.append(obj)
+        if "sort_field" in sample:
+            list = sorted(list, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample["sort_field"]),{"value":""})["value"])
+    return list
 
 def getValuesByPath(object,path):
     values = [object]
@@ -619,6 +626,8 @@ def getSample():
     tree_sample_name = "Chan_camacs"
     if sample_name == "elements":
         tree_sample_name = "Chan_elements"
+    elif sample_name == "bank":
+        tree_sample_name = "Chan_banks"
     if system_name not in tree_sample:
         if system_name == "CHAN":
             tree_sample[system_name] = getDataFile("Chan_sample.json")

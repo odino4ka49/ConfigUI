@@ -681,7 +681,7 @@
  },
  {
    "Class": "Module",
-   "Name": "8UR",
+   "Name": "8URR",
    "Module Type": "УР-16",
    "System": "CHAN",
    "Comment": null
@@ -1114,7 +1114,7 @@
    "Modules": [
      {
        "Position": 3,
-       "Module": "8UR"
+       "Module": "8URR"
      },
      {
        "Position": 6,
@@ -2470,7 +2470,7 @@
    "Group": "Magnetic System",
    "Type": "Quadrupole",
    "Comment": "квадрупольная линза",
-   "Polarity": "+",
+   "Polarity": null,
    "Channels": [
      {
        "OK": true,
@@ -2502,7 +2502,7 @@
    "Group": "Magnetic System",
    "Type": "Quadrupole",
    "Comment": "квадрупольная линза",
-   "Polarity": "+",
+   "Polarity": null,
    "Channels": [
      {
        "OK": true,
@@ -2534,7 +2534,7 @@
    "Group": "Magnetic System",
    "Type": "Quadrupole",
    "Comment": "квадрупольная линза",
-   "Polarity": "+",
+   "Polarity": null,
    "Channels": [
      {
        "OK": true,
@@ -2566,7 +2566,7 @@
    "Group": "Magnetic System",
    "Type": "Solenoid",
    "Comment": "линза-соленоид",
-   "Polarity": "+",
+   "Polarity": null,
    "Channels": [
      {
        "OK": true,
@@ -3412,7 +3412,7 @@
    "BANK": 16,
    "Module": "0BP",
    "Channel": 2,
-   "Cod/Value": 8.95,
+   "Cod/Value": 13.942,
    "Units": "MeV",
    "Polarity": null,
    "Monit": true,
@@ -3963,7 +3963,7 @@
    "BANK": 44,
    "Module": "7BP",
    "Channel": 1,
-   "Cod/Value": 19.806,
+   "Cod/Value": 5.953,
    "Units": "MeV",
    "Polarity": null,
    "Monit": true,
@@ -4222,7 +4222,7 @@
    "BANK": 55,
    "Module": "7BP",
    "Channel": 2,
-   "Cod/Value": 19.806,
+   "Cod/Value": 7.458,
    "Units": "MeV",
    "Polarity": null,
    "Monit": true,
@@ -4344,7 +4344,7 @@
    "Element": "N8",
    "System": "CHAN",
    "Comment": " вкл. N8 в полярности -",
-   "BANK": 294,
+   "BANK": 295,
    "Module": "5UR",
    "Channel": 0,
    "Channel ON": 0
@@ -4355,7 +4355,7 @@
    "Element": "N8",
    "System": "CHAN",
    "Comment": " вкл. N8 в полярности +",
-   "BANK": 294,
+   "BANK": 295,
    "Module": "5UR",
    "Channel": 1,
    "Channel ON": 1
@@ -4757,8 +4757,8 @@
    "Comment": " вкл. N11 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": 7,
+   "Channel ON": 7
  },
  {
    "Class": "UR channel",
@@ -4768,8 +4768,8 @@
    "Comment": " вкл. N11 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": 6,
+   "Channel ON": 6
  },
 
  {
@@ -4783,7 +4783,7 @@
    "Channel": 1,
    "Cod/Value": 13.04,
    "Units": "V",
-   "Max": 8499.86,
+   "Max": 4900.00,
    "Monit": true,
    "MonitType": "O",
    "Deviation": 1.0
@@ -4817,7 +4817,7 @@
    "Units": "V",
    "Polarity": null,
    "Int time": "10 ms",
-   "Diapasone": 0,
+   "Diapasone": 2,
    "Interval": 2,
    "Monit": true,
    "MonitType": "O",
@@ -4830,8 +4830,8 @@
    "System": "CHAN",
    "Comment": "измерение поля в магните",
    "BANK": 112,
-   "Module": "0BP",
-   "Channel": 1,
+   "Module": "3BP",
+   "Channel": 0,
    "Cod/Value": 5.898,
    "Units": "MeV",
    "Polarity": null,
@@ -4936,7 +4936,7 @@
    "Units": "V",
    "Polarity": null,
    "Int time": "10 ms",
-   "Diapasone": 0,
+   "Diapasone": 2,
    "Interval": 2,
    "Monit": true,
    "MonitType": "O",
@@ -4988,7 +4988,7 @@
    "Polarity": "+",
    "Monit": true,
    "MonitType": "O",
-   "Deviation": 1.0
+   "Deviation": 0.05
  },
  {
    "Class": "Meas channel",
@@ -5173,7 +5173,7 @@
    "BANK": 89,
    "Module": "4PKS",
    "Channel": 5,
-   "Cod/Value": 65.0,
+   "Cod/Value": 67.4473,
    "Units": "V",
    "Max": 900.0,
    "Monit": true,
@@ -5407,7 +5407,7 @@
    "Units": "V",
    "Polarity": "+",
    "Int time": "10 ms",
-   "Diapasone": 0,
+   "Diapasone": 2,
    "Interval": 2,
    "Monit": true,
    "MonitType": "O",
@@ -5426,7 +5426,7 @@
    "Units": "V",
    "Polarity": "-",
    "Int time": "10 ms",
-   "Diapasone": 0,
+   "Diapasone": 2,
    "Interval": 2,
    "Monit": true,
    "MonitType": "O",
@@ -5443,7 +5443,7 @@
    "Channel": 3,
    "Cod/Value": 1.0,
    "Units": "MeV",
-   "Polarity": null,
+   "Polarity": "+",
    "Monit": true,
    "MonitType": "O",
    "Deviation": 0.05
@@ -5459,7 +5459,7 @@
    "Channel": 0,
    "Cod/Value": 16.166,
    "Units": "MeV",
-   "Polarity": null,
+   "Polarity": "-",
    "Monit": true,
    "MonitType": "O",
    "Deviation": 0.05
@@ -5560,7 +5560,7 @@
    "Units": "V",
    "Polarity": null,
    "Int time": "10 ms",
-   "Diapasone": 0,
+   "Diapasone": 2,
    "Interval": 2,
    "Monit": true,
    "MonitType": "O",
@@ -5576,8 +5576,8 @@
    "Module": "5BP",
    "Channel": 1,
    "Cod/Value": 2.56609,
-   "Units": "MeV",
-   "Polarity": null,
+   "Units": "Gs",
+   "Polarity": "+",
    "Monit": true,
    "MonitType": "O",
    "Deviation": 0.2
@@ -5593,7 +5593,7 @@
    "Channel": 2,
    "Cod/Value": 9.2013,
    "Units": "MeV",
-   "Polarity": null,
+   "Polarity": "-",
    "Monit": true,
    "MonitType": "O",
    "Deviation": 0.2
@@ -5619,17 +5619,6 @@
    "Module": "2UR",
    "Channel": 9,
    "Channel ON": 9
- },
- {
-   "Class": "UR channel",
-   "Name": "W-",
-   "Element": "M11",
-   "System": "CHAN",
-   "Comment": " вкл. M1 в полярности -",
-   "BANK": 291,
-   "Module": "1UR",
-   "Channel": 0,
-   "Channel ON": 0
  },
  {
    "Class": "UR channel",
@@ -5773,7 +5762,7 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска",
    "BANK": 197,
-   "Module": "7GV",
+   "Module": "7GVI",
    "Channel": 5,
    "Cod/Value": 10.0,
    "Units": "mks",
@@ -5841,7 +5830,7 @@
    "System": "CHAN",
    "Comment": " вкл. N15X в полярности -",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 10,
    "Channel ON": 10
  },
@@ -5852,7 +5841,7 @@
    "System": "CHAN",
    "Comment": " вкл. N15X в полярности +",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 11,
    "Channel ON": 11
  },
@@ -6473,7 +6462,7 @@
    "Polarity": null,
    "Monit": true,
    "MonitType": "O",
-   "Deviation": 0.1
+   "Deviation": 1.5
  },
  {
    "Class": "UR channel",
@@ -6549,7 +6538,7 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска",
    "BANK": 80,
-   "Module": "7GV",
+   "Module": "7GVI",
    "Channel": 0,
    "Cod/Value": 10.0,
    "Units": "mks",
@@ -6617,7 +6606,7 @@
    "System": "CHAN",
    "Comment": " вкл. LP1 в полярности -",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 1,
    "Channel ON": 1
  },
@@ -6628,7 +6617,7 @@
    "System": "CHAN",
    "Comment": " вкл. LP1 в полярности +",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 0,
    "Channel ON": 0
  },
@@ -6656,7 +6645,7 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска",
    "BANK": 94,
-   "Module": "7GV",
+   "Module": "7GVI",
    "Channel": 1,
    "Cod/Value": 10.0,
    "Units": "mks",
@@ -6697,7 +6686,7 @@
    "Units": "Gs/cm",
    "Polarity": null,
    "Monit": true,
-   "MonitType": "O",
+   "MonitType": "A",
    "Deviation": 7.0
  },
  {
@@ -6724,7 +6713,7 @@
    "System": "CHAN",
    "Comment": " вкл. LP2 в полярности -",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 3,
    "Channel ON": 3
  },
@@ -6735,7 +6724,7 @@
    "System": "CHAN",
    "Comment": " вкл. LP2 в полярности +",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 2,
    "Channel ON": 2
  },
@@ -6763,7 +6752,7 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска",
    "BANK": 202,
-   "Module": "7GV",
+   "Module": "7GVI",
    "Channel": 2,
    "Cod/Value": 10.0,
    "Units": "mks",
@@ -6804,7 +6793,7 @@
    "Units": "Gs/cm",
    "Polarity": null,
    "Monit": true,
-   "MonitType": "O",
+   "MonitType": "A",
    "Deviation": 7.0
  },
  {
@@ -6831,7 +6820,7 @@
    "System": "CHAN",
    "Comment": " вкл. LP3 в полярности -",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 5,
    "Channel ON": 5
  },
@@ -6842,7 +6831,7 @@
    "System": "CHAN",
    "Comment": " вкл. LP3 в полярности +",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 4,
    "Channel ON": 4
  },
@@ -6908,11 +6897,11 @@
    "Module": "11BP",
    "Channel": 3,
    "Cod/Value": 1.28,
-   "Units": "Gs",
+   "Units": "Gs/cm",
    "Polarity": null,
    "Monit": false,
-   "MonitType": "O",
-   "Deviation": 7.0
+   "MonitType": null,
+   "Deviation": null
  },
  {
    "Class": "DBLUR channel",
@@ -6938,7 +6927,7 @@
    "System": "CHAN",
    "Comment": " вкл. SOL в полярности -",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 7,
    "Channel ON": 7
  },
@@ -6949,7 +6938,7 @@
    "System": "CHAN",
    "Comment": " вкл. SOL в полярности +",
    "BANK": 298,
-   "Module": "8UR",
+   "Module": "8URR",
    "Channel": 6,
    "Channel ON": 6
  },

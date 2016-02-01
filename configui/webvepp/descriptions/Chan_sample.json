@@ -17,7 +17,8 @@
       },
       "display_attributes": {
         "width": 170,
-        "height": 40
+        "height": 40,
+        "field_name": false
       }
     },
     "level1": {
@@ -133,7 +134,8 @@
       },
       "display_attributes": {
         "width": 200,
-        "height": 130
+        "height": 130,
+        "field_name": true
       }
     },
     "level2": {
@@ -163,7 +165,8 @@
       },
       "display_attributes": {
         "width": 200,
-        "height": 80
+        "height": 80,
+        "field_name": true
       },
       "additional_links": [
         "ACP-KAS"
@@ -220,7 +223,8 @@
         "height": 60,
         "positioning": "matrix",
         "matrix_type": "channels",
-        "matrix_size": "&Module Type->Channels number"
+        "matrix_size": "&Module Type->Channels number",
+        "field_name": false
       },
       "action":{
         "type": "open_another_map",
@@ -248,7 +252,8 @@
       },
       "display_attributes": {
         "width": 200,
-        "height": 70
+        "height": 70,
+        "field_name": false
       }
     },
     "level-1": {
@@ -269,7 +274,8 @@
       },
       "display_attributes": {
         "width": 200,
-        "height": 80
+        "height": 80,
+        "field_name": true
       }
     },
     "level1": {
@@ -305,7 +311,8 @@
         "positioning": "matrix",
         "matrix_type": "simple",
         "matrix_size": 64,
-        "hiding": "true"
+        "hiding": "true",
+        "field_name": false
       },
       "remote_attributes":{
         "Class": "Hand",
@@ -360,7 +367,8 @@
       "display_attributes": {
         "width": 200,
         "height": 80,
-        "autorevealing": true
+        "autorevealing": true,
+        "field_name": true
       }
     },
     "level3": {
@@ -398,7 +406,8 @@
       "sort_field": "Name",
       "display_attributes": {
         "width": 200,
-        "height": 80
+        "height": 80,
+        "field_name": true
       }
     },
     "level4": {
@@ -466,12 +475,48 @@
       },
       "display_attributes": {
         "width": 200,
-        "height": 130
+        "height": 130,
+        "field_name": true
       },
       "action":{
         "type": "open_another_map",
         "map": "camacs",
         "info": "&Name"
+      }
+    }
+  },
+  {
+    "name": "Chan_banks",
+    "type": "list",
+    "root": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "Control channel",
+          "UR channel",
+          "ADC channel",
+          "Meas channel",
+          "DBLUR channel",
+          "Module channel"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "BANK",
+          "Name",
+          "Element"
+        ],
+        "max": [
+          "BANK",
+          "Name",
+          "Element"
+        ]
+      },
+      "sort_field": "BANK",
+      "display_attributes": {
+        "field_name": false,
+        "inline": true
       }
     }
   }

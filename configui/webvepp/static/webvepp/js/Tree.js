@@ -116,7 +116,7 @@ WEBVEPP.Tree = function(params){
                         result+= matrix.width/2 - level_info.width - 20;
                     }
                     else{
-                        result+=(index%matrix.cols)*(node.width+20)-45;
+                        result+=(index%matrix.cols)*(node.width+20) - level_info.width/2-10;
                     }
                 }
                 else{
@@ -384,7 +384,7 @@ WEBVEPP.Tree = function(params){
                     }
                   })
                   .on('wheel.zoom', function(){
-                    d3.event.stopPropagation();
+                    //d3.event.stopPropagation();
                   })
                   .on('contextmenu', function(person){
                     d3.event.preventDefault();
@@ -503,7 +503,7 @@ WEBVEPP.Tree = function(params){
                                 text= attributesToString(d.attributes.extra)
                             }
                             else if(d.attributes.min){
-                                text=(d.width>100) ? attributesToString(d.attributes.min): attributesToShortString(d.attributes.min);
+                                text=minAttributesToString(d)
                             }
                             else if(d.type=="matrix_equation"){
                                 text = attributesToEquation(d.attributes);
@@ -654,6 +654,12 @@ WEBVEPP.Tree = function(params){
                         var text = attributesToString(details_obj.attributes.extra);
                         return '<div style="width: '+(width)+'px; height: '+(height)+'px" class="attributes">'+text+'</div>'
                     })
+            },
+            getLevelInfo = function(person){
+                if(person.depth==0) return settings["root"];
+                var level_name = "level"+person.depth;
+                var level_info = settings[level_name].display_attributes;
+                return level_info
             },
             togglePerson = function(person){
                 // Don't allow the root to be collapsed because that's
@@ -821,6 +827,15 @@ WEBVEPP.Tree = function(params){
         }
         return rows_number*20;
     };
+    function minAttributesToString(d){
+        var level_info = getLevelInfo(d);
+        if(level_info.field_name){
+            return attributesToString(d.attributes.min);
+        }
+        else{
+            return attributesToShortString(d.attributes.min,level_info.inline)
+        }
+    };
     function attributesToString(attributes){
         var text = "";
         attributes.forEach(function(attr){
@@ -828,10 +843,10 @@ WEBVEPP.Tree = function(params){
         });
         return text;
     };
-    function attributesToShortString(attributes){
+    function attributesToShortString(attributes,inline){
         var text = "";
         attributes.forEach(function(attr){
-            if(attr.key=="Index"){
+            if(attr.key=="Index" || inline){
                 text += "<div style='display: inline-table;'>" + attr.value+"</div><div style='display: inline-table; margin-left:5px'>";
             }
             else{
