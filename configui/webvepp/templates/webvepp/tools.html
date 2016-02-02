@@ -7,19 +7,24 @@
     <title></title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/static/webvepp/js/MainList.js"></script>
-    <script type="text/javascript" src="/static/webvepp/js/List.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/MainTools.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/Tools.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/MenuBar.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/webvepp/css/main.css" >
-    <link rel="stylesheet" type="text/css" href="/static/webvepp/css/list.css" >
+    <link rel="stylesheet" type="text/css" href="/static/webvepp/css/tools.css" >
 </head>
 <body>
     <ul id="Navigation_bar">
       <li id="menu_camacs"><a href="javascript: goToPage('camacs');">Аппаратура</a></li>
       <li id="menu_elements"><a href="javascript: goToPage('elements');">Элементы</a></li>
       <li id="menu_scheme"><a href="javascript: goToPage('scheme');">Схема</a></li>
-      <li id="menu_bank"><a href="javascript: goToPage('bank');">BANK</a></li>
+      <li id="menu_tools"><a href="javascript: goToPage('tools');">Инструменты</a></li>
     </ul>
+    <div id="toolbar">
+    <ul id="Tool_bar">
+      <li id="tool_bank">BANK</li>
+      <li id="tool_modules">Модули</li>
+    </ul></div>
     <table id="list"></table>
 </body>
 </html>

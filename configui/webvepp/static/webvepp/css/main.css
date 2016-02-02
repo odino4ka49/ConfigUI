@@ -2,6 +2,11 @@ body {
     text-align: left;
     height:100%;
     font-family: Helvetica, serif;
+    font-size: 12pt;
+    line-height: 110%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
 }
 html{
     height: 100%;
@@ -44,6 +49,10 @@ li a:hover {
 }
 .active {
     background-color: #84FAA2;
+}
+foreignobject body{
+    margin: 0;
+    padding: 5px;
 }
 /*::-webkit-scrollbar {
     width: 10px;

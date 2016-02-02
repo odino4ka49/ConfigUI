@@ -1,0 +1,25 @@
+#toolbar{
+    display: inline-table;
+    width: 140px;
+    top: 0px;
+    vertical-align: top;
+}
+#toolbar li {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 140px;
+}
+#Tool_bar{
+    top: 20px;
+}
+#list {
+    display: inline-table;
+    font-size: 11pt;
+}
+#list body{
+    margin: 0px;
+}

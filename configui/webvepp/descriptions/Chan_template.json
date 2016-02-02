@@ -44,6 +44,7 @@
         "type": "integer"
       }
     ],
+    "foreign_keys":[ "Dispatcher name", "Controller" ],
     "display_fields": [
       "Comment","Controller","Area","Rack/cabinet","Rack level"
     ],
@@ -136,6 +137,7 @@
         "type": "float"
       }
     ],
+    "foreign_keys":[],
     "primary_keys": [
       "Name",
       "System"
@@ -166,6 +168,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ "Module Type" ],
     "primary_keys": [
       "Name",
       "System"
@@ -205,6 +208,7 @@
         "type": "integer"
       }
     ],
+    "foreign_keys":[],
     "primary_keys": [
       "Name",
       "System"
@@ -240,6 +244,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ ],
     "primary_keys": [
       "Name",
       "System"
@@ -271,6 +276,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[],
     "primary_keys": [
       "Name",
       "System"
@@ -376,6 +382,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ "Controller" ],
     "primary_keys": [
       "Name",
       "System"
@@ -411,6 +418,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ "Module" ],
     "primary_keys": [
       "Name",
       "System"
@@ -531,6 +539,7 @@
         "type": "double"
       }
     ],
+    "foreign_keys":[ "Element", "Module" ],
     "primary_keys": [
       "Name",
       "System",
@@ -606,6 +615,7 @@
         "type": "double"
       }
     ],
+    "foreign_keys":[ "Element", "Module" ],
     "primary_keys": [
       "Name",
       "System",
@@ -673,6 +683,7 @@
         "type": "double"
       }
     ],
+    "foreign_keys":[ "Element", "Module" ],
     "primary_keys": [
       "Name",
       "System",
@@ -720,6 +731,7 @@
         "type": "integer"
       }
     ],
+    "foreign_keys":[ "Element", "Module" ],
     "primary_keys": [
       "Name",
       "System",
@@ -751,6 +763,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ "Element" ],
     "primary_keys": [
       "Name",
       "System",
@@ -796,6 +809,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ "Module" ],
     "primary_keys": [
       "Name",
       "System",
@@ -835,6 +849,7 @@
         "type": "string"
       }
     ],
+    "foreign_keys":[ "Element" ],
     "primary_keys": [
       "Name",
       "System",
@@ -921,6 +936,7 @@
         "type": "integer"
       }
     ],
+    "foreign_keys":[ "Element", "Module" ],
     "primary_keys": [
       "Name",
       "System",

@@ -28,7 +28,7 @@ WEBVEPP.Scheme = function(){
                 }
             });*/
             var parser = new DOMParser();
-            d3.xml(WEBVEPP.serveradr()+"static/webvepp/bg/"+"Chan_V3-V4_scheme-no_lines_black.svg", "image/svg+xml", function(error, xml) {
+            d3.xml(WEBVEPP.serveradr()+"static/webvepp/bg/"+"Chan_V3-V4_scheme_bbg.svg", "image/svg+xml", function(error, xml) {
                 if (error) throw error;
                 var defs = xml.documentElement.getElementById("defs");
                 document.getElementById("schemeSVG").appendChild(defs);
@@ -40,7 +40,7 @@ WEBVEPP.Scheme = function(){
         },
         addLinks = function(){
             $(".link").click(function(){
-                var id = $(this).attr("id");
+                var id = $(this).attr("link");
                 var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_blank');
                 if(win){
                     win.focus();

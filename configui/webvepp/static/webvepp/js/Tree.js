@@ -452,7 +452,7 @@ WEBVEPP.Tree = function(params){
                     if(d.depth==0)
                         return 0;
                     var y = d.coord[1];
-                    return y-(d.height/2)-5;
+                    return y-(d.height/2);
                   })
                   .attr('width', function(d){
                     if(d.depth==0)
@@ -480,7 +480,7 @@ WEBVEPP.Tree = function(params){
                         if(d.depth==0)
                             return 0;
                         var y = d.coord[1];
-                        return y-(d.height/2)-5;
+                        return y-(d.height/2);
                     })
                     .attr('width', function(d){
                         if(d.depth==0)
@@ -821,11 +821,11 @@ WEBVEPP.Tree = function(params){
                 row_width += row.key.length*6;
             }
             else{
-                row_width = (row.key.length+row.value.length+2)*11;
+                row_width = (row.key.length+row.value.length+2)*10;
             }
             rows_number+=(row_width/width>>0)+1;
         }
-        return rows_number*20;
+        return rows_number*17+20;
     };
     function minAttributesToString(d){
         var level_info = getLevelInfo(d);

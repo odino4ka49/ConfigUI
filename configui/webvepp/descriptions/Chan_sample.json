@@ -81,7 +81,10 @@
           "Area",
           "Rack/cabinet",
           "Rack level",
-          "Modules",
+          {
+            "key":"Modules",
+            "value": "len"
+          },
           {
             "key": "+24",
             "to_array": {
@@ -298,7 +301,10 @@
           "Type",
           "Comment",
           "Polarity",
-          "Channels",
+          {
+            "key":"Channels",
+            "value": "len"
+          },
           "EnergyLock",
           "Inputs",
           "Outputs",
@@ -498,7 +504,8 @@
           "ADC channel",
           "Meas channel",
           "DBLUR channel",
-          "Module channel"
+          "Module channel",
+          "Hand"
         ]
       },
       "display_filter": {
@@ -516,7 +523,8 @@
       "sort_field": "BANK",
       "display_attributes": {
         "field_name": false,
-        "inline": true
+        "inline": true,
+        "sort_type": "cells"
       }
     }
   }

@@ -20,7 +20,6 @@ rect.inmatrix {
     overflow-y: hidden;
 }
 .person {
-    font: 14px sans-serif;
     cursor: pointer;
 }
 .hidden{

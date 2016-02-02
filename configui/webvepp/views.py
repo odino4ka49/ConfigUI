@@ -38,8 +38,8 @@ def elements(request,id=None):
     template = loader.get_template('webvepp/index.html')
     return HttpResponse(template.render())
 
-def bank(request):
-    template = loader.get_template('webvepp/list.html')
+def tools(request):
+    template = loader.get_template('webvepp/tools.html')
     return HttpResponse(template.render())
 
 def scheme(request):
@@ -166,6 +166,12 @@ def parseAttributes(template,object,attr_type="min"):
                             "key": field["key"],
                             "value": link[field["value"]]
                         }]
+            elif (type(field) is dict) and (field["value"]=="len"):
+                if field["key"] in object:
+                    attrs += [{
+                        "key": field["key"],
+                        "value": len(object[field["key"]])
+                    }]
             elif (type(field) is dict) and (field["value"][0]=="&"):
                 value = getValueByPath(object,field["value"])
                 attrs += [{
@@ -194,11 +200,6 @@ def parseAttributes(template,object,attr_type="min"):
                         "key": key,
                         "value": object[key]
                     }]
-            elif (field in object) and (type(object[field]) is list):
-                attrs += [{
-                    "key": field,
-                    "value": len(object[field])
-                }]
             elif field in object:
                 attrs += [{
                     "key": field,
@@ -416,6 +417,23 @@ def sortMatrixObjects(objects,sortname,size,parent_node):
             sorted.append(object)
     return sorted
 
+def listFillGaps(list,sortname):
+    sorted = []
+    index = 1
+    for obj in list:
+        attrs = obj["attributes"]["min"]
+        sortfield = next((x for x in attrs if x["key"]==sortname),None)
+        if sortfield!=None and sortfield["value"]!=None:
+            if sortfield["value"]-index==1:
+                index+=1
+            elif sortfield["value"]-index>1:
+                for i in range(index+1,sortfield["value"]):
+                    gap_obj = {"id":i,"attributes":{"min":[{"key":sortname,"value":i}],"extra":[]}}
+                    sorted.append(gap_obj)
+                index=sortfield["value"]
+            sorted.append(obj)
+    return sorted
+
 def getAdditionalLinks(nodes,level):
     add_links = []
     sample = getSample()
@@ -502,10 +520,10 @@ def parseTree():
     return tree
 
 def parseList():
-    list = []
+    result = []
     samples = getSample()
     if "type" not in samples or samples["type"]!="list":
-        return list
+        return result
     sample = samples["root"]
 
     basic_list = getObjects(parseRulesToString({},sample["filter"]))
@@ -516,12 +534,25 @@ def parseList():
         obj_attributes = parseAttributes(display_details,base_obj)
         obj["attributes"] = obj_attributes
         display_attributes = sample["display_attributes"]
-        #object["width"] = n_display_attributes["width"]
-        #object["height"] = n_display_attributes["height"]
-        list.append(obj)
-        if "sort_field" in sample:
-            list = sorted(list, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample["sort_field"]),{"value":""})["value"])
-    return list
+        if "sort_field" in sample and "sort_type" in display_attributes and display_attributes["sort_type"]=="cells":
+            #if sort_field is array than split on two objects
+            sortname = sample["sort_field"]
+            sortfield = next((x for x in obj_attributes["min"] if x["key"]==sortname),None)
+            if sortfield and type(sortfield["value"]) is list:
+                for sf_value in sortfield["value"]:
+                    copyobj = copy.deepcopy(obj)
+                    splitting_field = next((x for x in copyobj["attributes"]["min"] if x["key"]==sortname),None)
+                    splitting_field["value"] = sf_value
+                    print obj,copyobj
+                    result.append(copyobj)
+            else:
+                result.append(obj)
+        else:
+            result.append(obj)
+    if "sort_field" in sample:
+        result = sorted(result, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample["sort_field"]),{"value":""})["value"])
+        result = listFillGaps(result,sample["sort_field"])
+    return result
 
 def getValuesByPath(object,path):
     values = [object]
@@ -626,7 +657,7 @@ def getSample():
     tree_sample_name = "Chan_camacs"
     if sample_name == "elements":
         tree_sample_name = "Chan_elements"
-    elif sample_name == "bank":
+    elif sample_name == "tools":
         tree_sample_name = "Chan_banks"
     if system_name not in tree_sample:
         if system_name == "CHAN":
@@ -769,6 +800,7 @@ def getLink(obj1,obj2):
     if link=={}:
         return checkForLinkLike(obj1,obj2,class1,class2)
     return link
+
 
 def parseRulesToString(object,rules):
     result = {}
