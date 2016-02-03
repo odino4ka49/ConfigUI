@@ -496,7 +496,6 @@
     "type": "list",
     "root": {
       "type": "filter",
-      "level": 1,
       "filter": {
         "Class": [
           "Control channel",
@@ -525,6 +524,42 @@
         "field_name": false,
         "inline": true,
         "sort_type": "cells"
+      }
+    }
+  },
+  {
+    "name": "Tool_modules",
+    "type": "list",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "Module"
+        ]
+      },
+      "sort_field": "Module Type",
+      "display_filter": {
+        "min": [
+          "Module Type",
+          "Name",
+          {
+            "key": "Module Position",
+            "link_to": {
+              "System": "&System",
+              "Class": ["CAMAC"]
+            },
+            "value": "Position"
+          },
+          {
+            "key": "Crate",
+            "value": "&CAMAC->Name"
+          }
+        ],
+        "max": [
+        ]
+      },
+      "display_attributes": {
+        "field_name": false
       }
     }
   }

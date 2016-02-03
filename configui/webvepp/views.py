@@ -66,7 +66,6 @@ def loadSchemeData(request):
     scheme_name = "bg/"+json.loads(data["scheme_name"])+".svg"
     doc = minidom.parse(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+scheme_name)
     svg = doc.getElementsByTagName("svg")[0]
-    print type(svg)
     return HttpResponse(svg)
 
 def loadTreeSample(request):
@@ -527,6 +526,7 @@ def parseList():
     sample = samples["root"]
 
     basic_list = getObjects(parseRulesToString({},sample["filter"]))
+    print basic_list
     for base_obj in basic_list:
         obj = {"name":base_obj["Name"],"id":"","_parents":[]}
         obj["id"] = parseId(base_obj)
@@ -543,7 +543,6 @@ def parseList():
                     copyobj = copy.deepcopy(obj)
                     splitting_field = next((x for x in copyobj["attributes"]["min"] if x["key"]==sortname),None)
                     splitting_field["value"] = sf_value
-                    print obj,copyobj
                     result.append(copyobj)
             else:
                 result.append(obj)
@@ -551,7 +550,8 @@ def parseList():
             result.append(obj)
     if "sort_field" in sample:
         result = sorted(result, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample["sort_field"]),{"value":""})["value"])
-        result = listFillGaps(result,sample["sort_field"])
+        if "sort_type" in display_attributes and display_attributes["sort_type"]=="cells":
+            result = listFillGaps(result,sample["sort_field"])
     return result
 
 def getValuesByPath(object,path):
@@ -657,8 +657,10 @@ def getSample():
     tree_sample_name = "Chan_camacs"
     if sample_name == "elements":
         tree_sample_name = "Chan_elements"
-    elif sample_name == "tools":
+    elif sample_name == "bank":
         tree_sample_name = "Chan_banks"
+    elif sample_name == "tool_modules":
+        tree_sample_name = "Tool_modules"
     if system_name not in tree_sample:
         if system_name == "CHAN":
             tree_sample[system_name] = getDataFile("Chan_sample.json")
