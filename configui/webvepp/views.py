@@ -433,6 +433,17 @@ def listFillGaps(list,sortname):
             sorted.append(obj)
     return sorted
 
+def listNumbering(list):
+    index = 1
+    for obj in list:
+        attrs = obj["attributes"]["min"]
+        attrs.insert(0,{
+            "key": "Index",
+            "value": index
+        })
+        index+=1
+    return
+
 def getAdditionalLinks(nodes,level):
     add_links = []
     sample = getSample()
@@ -526,7 +537,6 @@ def parseList():
     sample = samples["root"]
 
     basic_list = getObjects(parseRulesToString({},sample["filter"]))
-    print basic_list
     for base_obj in basic_list:
         obj = {"name":base_obj["Name"],"id":"","_parents":[]}
         obj["id"] = parseId(base_obj)
@@ -552,6 +562,8 @@ def parseList():
         result = sorted(result, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample["sort_field"]),{"value":""})["value"])
         if "sort_type" in display_attributes and display_attributes["sort_type"]=="cells":
             result = listFillGaps(result,sample["sort_field"])
+        if "sort_type" in display_attributes and display_attributes["sort_type"]=="numbered":
+            listNumbering(result);
     return result
 
 def getValuesByPath(object,path):

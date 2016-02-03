@@ -41,12 +41,14 @@ WEBVEPP.Scheme = function(){
         addLinks = function(){
             $(".link").click(function(){
                 var id = $(this).attr("link");
-                var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_blank');
-                if(win){
+                var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_self');
+                //this is for new tab
+                //'_blank');
+                /*if(win){
                     win.focus();
                 }else{
                     alert('Please allow popups for this site');
-                }
+                }*/
             });
         };
 

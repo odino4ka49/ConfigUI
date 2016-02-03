@@ -955,6 +955,10 @@
      {
        "Position": 20,
        "Module": "2GV"
+     },
+     {
+       "Position": 25,
+       "Module": "0CC"
      }
    ]
  },
@@ -1002,6 +1006,10 @@
      {
        "Position": 18,
        "Module": "4GV"
+     },
+     {
+       "Position": 25,
+       "Module": "1CC"
      }
    ]
  },
@@ -1045,6 +1053,10 @@
      {
        "Position": 15,
        "Module": "5BP"
+     },
+     {
+       "Position": 25,
+       "Module": "2CC"
      }
    ]
  },
@@ -1096,6 +1108,10 @@
      {
        "Position": 18,
        "Module": "1ACP"
+     },
+     {
+       "Position": 25,
+       "Module": "3CC"
      }
    ]
  },
@@ -1147,6 +1163,10 @@
      {
        "Position": 20,
        "Module": "ACPS"
+     },
+     {
+       "Position": 25,
+       "Module": "4CC"
      }
    ]
  },
@@ -1182,6 +1202,10 @@
      {
        "Position": 11,
        "Module": "6UR"
+     },
+     {
+       "Position": 25,
+       "Module": "5CC"
      }
    ]
  },
@@ -1225,6 +1249,10 @@
      {
        "Position": 18,
        "Module": "5PKS"
+     },
+     {
+       "Position": 25,
+       "Module": "6CC"
      }
    ]
  },
@@ -6973,7 +7001,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },
  {
    "Class": "Control channel",
@@ -6989,7 +7017,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },
  {
    "Class": "Control channel",
@@ -7005,7 +7033,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },
  {
    "Class": "Control channel",
@@ -7020,8 +7048,8 @@
    "Units": "V",
    "Max": 30000.0,
    "Monit": true,
-   "MonitType": "A",
-   "Deviation": 150.0
+   "MonitType": "O",
+   "Deviation": 1.0
  },    
  {
    "Class": "ADC channel",
@@ -7070,7 +7098,7 @@
    "Cod/Value": 10.0,
    "Units": "ns",
    "Polarity": null,
-   "Monit": true,
+   "Monit": false,
    "MonitType": "A",
    "Deviation": 2.0
  },   
@@ -7131,7 +7159,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },
  {
    "Class": "Control channel",
@@ -7147,7 +7175,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },    
  {
    "Class": "Control channel",
@@ -7289,7 +7317,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },
  {
    "Class": "Control channel",
@@ -7299,13 +7327,13 @@
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 161,
    "Module": "LZD",
-   "Channel": 3,
+   "Channel": 1,
    "Cod/Value": 5.0,
    "Units": "ns",
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },    
  {
    "Class": "Control channel",
@@ -7345,9 +7373,9 @@
    "Element": "IV4P",
    "System": "CHAN",
    "Comment": "измерение напряжения на конденсаторной батарее ГИМНа",
-   "BANK": 156,
+   "BANK": 152,
    "Module": "2KAS",
-   "Channel": 1,
+   "Channel": 0,
    "Cod/Value": 12.553,
    "Units": "V",
    "Polarity": null,
@@ -7409,8 +7437,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 165,
    "Module": "URLZ",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": 1,
+   "Channel ON": 1
  },      
  {
    "Class": "UR channel",
@@ -7479,7 +7507,7 @@
    "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },        
  {
    "Class": "Meas channel",
@@ -7488,8 +7516,8 @@
    "System": "CHAN",
    "Comment": null,
    "BANK": 192,
-   "Module": "Odrenok",
-   "Channel": null,
+   "Module": "2IVS",
+   "Channel": 7,
    "Cod/Value": 10.0,
    "Units": "ns",
    "Polarity": null,
@@ -7650,7 +7678,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
   },       
   {
    "Class": "Control channel",
@@ -7678,7 +7706,7 @@
    "Module": "1IVI",
    "Channel": 7,
    "Cod/Value": 10.0,
-   "Units": "ns",
+   "Units": "mks",
    "Polarity": null,
    "Monit": false,
    "MonitType": "A",
@@ -7694,7 +7722,7 @@
    "Module": "1IVI",
    "Channel": 0,
    "Cod/Value": 10.0,
-   "Units": "ns",
+   "Units": "mks",
    "Polarity": null,
    "Monit": true,
    "MonitType": "A",
@@ -7710,7 +7738,7 @@
    "Module": "1IVI",
    "Channel": 2,
    "Cod/Value": 10.0,
-   "Units": "ns",
+   "Units": "mks",
    "Polarity": null,
    "Monit": true,
    "MonitType": "A",
@@ -7726,9 +7754,9 @@
    "Module": "1IVI",
    "Channel": 3,
    "Cod/Value": 10.0,
-   "Units": "ns",
+   "Units": "mks",
    "Polarity": null,
-   "Monit": true,
+   "Monit": false,
    "MonitType": "A",
    "Deviation": 0.2
   },    
@@ -7742,9 +7770,9 @@
    "Module": "1IVI",
    "Channel": 4,
    "Cod/Value": 10.0,
-   "Units": "ns",
+   "Units": "mks",
    "Polarity": null,
-   "Monit": true,
+   "Monit": false,
    "MonitType": "A",
    "Deviation": 0.2
   },  
@@ -7758,9 +7786,9 @@
    "Module": "1IVI",
    "Channel": 5,
    "Cod/Value": 10.0,
-   "Units": "ns",
+   "Units": "mks",
    "Polarity": null,
-   "Monit": true,
+   "Monit": false,
    "MonitType": "A",
    "Deviation": 0.2
   },   
@@ -7774,11 +7802,11 @@
    "Module": "1SDS",
    "Channel": 0,
    "Cod/Value": 1.0,
-   "Units": "ns",
+   "Units": "DEL",
    "Polarity": null,
    "Monit": false,
    "MonitType": "A",
-   "Deviation": 0.1
+   "Deviation": 1
   },  
   {
    "Class": "Meas channel",
@@ -7790,11 +7818,11 @@
    "Module": "2SDS",
    "Channel": 0,
    "Cod/Value": 1.0,
-   "Units": "ns",
+   "Units": "DEL",
    "Polarity": null,
    "Monit": false,
    "MonitType": "A",
-   "Deviation": 0.1
+   "Deviation": 1
   },  
   {
    "Class": "ADC channel",
@@ -7805,7 +7833,7 @@
    "BANK": 185,
    "Module": "0KAS",
    "Channel": 27,
-   "Cod/Value": 100000,
+   "Cod/Value": -100000,
    "Units": "V",
    "Polarity": null,
    "Int time": "20 ms",
@@ -7841,7 +7869,7 @@
    "Max": 6500.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
   },     
   {
    "Class": "Control channel",
@@ -7977,7 +8005,7 @@
    "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 1.0
+   "Deviation": 2.0
  },  
   {
    "Class": "UR channel",
@@ -8016,12 +8044,12 @@
    "BANK": 189,
    "Module": "1SDS",
    "Channel": 0,
-   "Cod/Value": 1.0,
-   "Units": "ns",
+   "Cod/Value": 1,
+   "Units": "DEL",
    "Polarity": null,
    "Monit": false,
    "MonitType": "A",
-   "Deviation": 0.1
+   "Deviation": 1
   },  
   {
    "Class": "Meas channel",
@@ -8032,12 +8060,12 @@
    "BANK": 188,
    "Module": "Odrenok",
    "Channel": null,
-   "Cod/Value": 1.0,
-   "Units": "ns",
+   "Cod/Value": 1,
+   "Units": "DEL",
    "Polarity": null,
    "Monit": false,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1
  },      
   {
    "Class": "Meas channel",
@@ -8048,12 +8076,12 @@
    "BANK": 187,
    "Module": "Odrenok",
    "Channel": null,
-   "Cod/Value": 1.0,
-   "Units": "ns",
+   "Cod/Value": 1,
+   "Units": "DEL",
    "Polarity": null,
    "Monit": false,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1
   },
   
  {
@@ -8536,7 +8564,7 @@
    "Shift": 0, 
    "Elements": ["N11", "N17"],
    "BANK": [53, 105], 
-   "Lines": [[-731.2, 1445.6], [2721.0, -17006.0]],
+   "Lines": [[-731.29, 1445.6], [2721.0, -17006.0]],
    "Graphs": [[-0.002, -0.00032], [-0.00017, -0.000086]]
  },
  {

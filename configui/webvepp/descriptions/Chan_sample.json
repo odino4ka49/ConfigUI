@@ -476,7 +476,10 @@
           "Area",
           "Rack/cabinet",
           "Rack level",
-          "Modules"
+          {
+            "key":"Modules",
+            "value": "len"
+          }
         ]
       },
       "display_attributes": {
@@ -543,23 +546,24 @@
           "Module Type",
           "Name",
           {
+            "key": "Crate",
+            "value": "&CAMAC->Name"
+          },
+          {
             "key": "Module Position",
             "link_to": {
               "System": "&System",
               "Class": ["CAMAC"]
             },
             "value": "Position"
-          },
-          {
-            "key": "Crate",
-            "value": "&CAMAC->Name"
           }
         ],
         "max": [
         ]
       },
       "display_attributes": {
-        "field_name": false
+        "field_name": false,
+        "sort_type": "numbered"
       }
     }
   }
