@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/MainSettings.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/Cookies.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/Settings.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/MenuBar.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/webvepp/css/main.css" >
+    <link rel="stylesheet" type="text/css" href="/static/webvepp/css/scheme.css" >
+</head>
+<body>
+    <ul id="Navigation_bar">
+        <li id="menu_camacs"><a href="javascript: goToPage('camacs');">Аппаратура</a></li>
+        <li id="menu_elements"><a href="javascript: goToPage('elements');">Элементы</a></li>
+        <li id="menu_scheme"><a href="javascript: goToPage('scheme');">Схема</a></li>
+        <li id="menu_tools"><a href="javascript: goToPage('tools');">Инструменты</a></li>
+        <li id="menu_settings"><a href="javascript: goToPage('settings');">Настройки</a></li>
+    </ul>
+    <br/>
+    <table>
+        <tr>
+            <td>Выбрать систему:</td>
+            <td>
+                <select id="settings_system_name">
+                    <option value="CHAN">CHAN</option>
+                    <option value="V4">Vepp4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Сохранить" onclick="saveSettings()">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,5 +1,4 @@
 var WEBVEPP = WEBVEPP||{};
-//создание пространства имен
 WEBVEPP.namespace = function (ns_string) {
     var parts = ns_string.split('.'),
         parent = WEBVEPP,
@@ -27,9 +26,8 @@ $(document).on("unset_loading_cursor",function(){
 });
 $(document).ready(function(){
     var cookies = WEBVEPP.Cookies(),
-        settings = WEBVEPP.Settings(cookies),
-        scheme = WEBVEPP.Scheme(settings),
-        menu_bar = WEBVEPP.MenuBar();
+        settings = WEBVEPP.Settings(cookies);
+    var menu_bar = WEBVEPP.MenuBar();
 });
 
 

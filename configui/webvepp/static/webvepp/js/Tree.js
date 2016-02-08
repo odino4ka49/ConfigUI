@@ -876,6 +876,9 @@ WEBVEPP.Tree = function(params){
         return text;
     };
     function matrixToTable(matrix){
+        if(matrix==null){
+            return "<table><tr><td>Null</td></tr></table>";
+        }
         var matrixtype = (typeof(matrix[0])=="string") ? "vector":"matrix";
         var table = "<table class='matrix'><tr><td>";
         matrix.forEach(function(row){

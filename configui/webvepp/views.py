@@ -42,6 +42,10 @@ def tools(request):
     template = loader.get_template('webvepp/tools.html')
     return HttpResponse(template.render())
 
+def settings(request):
+    template = loader.get_template('webvepp/settings.html')
+    return HttpResponse(template.render())
+
 def scheme(request):
     template = loader.get_template('webvepp/scheme.html')
     return HttpResponse(template.render())
@@ -346,9 +350,9 @@ def getRemoteAttributes(node,level):
         obj_attributes = []
         for attr in attribute_names:
             if attr == "variables":
-                if node["Inputs"]==2:
+                if node["Outputs"]==2:
                     obj_attributes.append(["X","Y"])
-                elif node["Inputs"]==1:
+                elif node["Outputs"]==1:
                     obj_attributes.append(["X"])
             else:
                 obj_attributes.append(getValueByPath(node,attr))
@@ -359,13 +363,15 @@ def getRemoteAttributes(node,level):
             vector2 = countMatrixWidthHeight(obj_attributes[2])
             matrix1 = countMatrixWidthHeight(obj_attributes[1])
             matrix2 = countMatrixWidthHeight(obj_attributes[4])
-            remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*8+30
-            remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*11+20
+            remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*9+30
+            remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*17+20
     else:
         return None
     return remote
 
 def countMatrixWidthHeight(matrix):
+    if matrix==None:
+        return {"width": 1,"height": 1}
     width = 0
     height = len(matrix)
     matrixtype = "matrix" if type(matrix[0]) is list else "vector"
@@ -676,6 +682,8 @@ def getSample():
     if system_name not in tree_sample:
         if system_name == "CHAN":
             tree_sample[system_name] = getDataFile("Chan_sample.json")
+        elif system_name == "V4":
+            tree_sample[system_name] = getDataFile("Chan_sample.json")
         else:
             tree_sample[system_name] = []
     samples = tree_sample[system_name]
@@ -687,6 +695,8 @@ def getAllTemplates():
     if system_name not in tree_template:
         if system_name == "CHAN":
             tree_template[system_name] = getDataFile("Chan_template.json")
+        elif system_name == "V4":
+            tree_template[system_name] = getDataFile("Chan_template.json")
         else:
             tree_template[system_name] = []
     return tree_template[system_name]
@@ -697,6 +707,8 @@ def getAllObjects():
     if system_name not in tree_data:
         if system_name == "CHAN":
             tree_data[system_name] = getDataFile("CHAN.json")
+        elif system_name == "V4":
+            tree_data[system_name] = getDataFile("V4.json")
         else:
             tree_data[system_name] = []
     return tree_data[system_name]

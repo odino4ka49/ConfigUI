@@ -50,6 +50,11 @@ li a:hover {
 .active {
     background-color: #84FAA2;
 }
+#menu_settings
+{
+    position: absolute;
+    right: 0px;
+}
 foreignobject body{
     margin: 0;
     padding: 5px;

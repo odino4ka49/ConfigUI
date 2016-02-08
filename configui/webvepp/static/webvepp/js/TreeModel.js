@@ -1,8 +1,9 @@
 WEBVEPP.namespace("WEBVEPP.TreeModel");
-WEBVEPP.TreeModel = function(){
+WEBVEPP.TreeModel = function(settings){
     var tree_data = {},
         tree_settings = {},
         tree_scheme_names = {"system":"","sample":""},
+        settings = settings,
 
         getTreeData = function(){
             var result = tree_data;//(tree_data===undefined)? undefined: jQuery.extend(true,{},tree_data);
@@ -16,8 +17,8 @@ WEBVEPP.TreeModel = function(){
     function setSchemeNames(){
         var pathname = location.pathname;
         var path = pathname.split('/');
+        tree_scheme_names.system = settings.getSystemName();
         if(path[1]=="webvepp"){
-            tree_scheme_names.system = "CHAN"
             if(path[2]==""||path[2]=="camacs"){
                 tree_scheme_names.sample = "camacs";
             }

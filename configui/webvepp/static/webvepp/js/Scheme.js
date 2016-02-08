@@ -1,5 +1,7 @@
 WEBVEPP.namespace("WEBVEPP.Scheme");
-WEBVEPP.Scheme = function(){
+WEBVEPP.Scheme = function(settings){
+    var scheme_names = {"system":"","sample":""},
+        settings = settings;
     var scheme, schemeSVG,
         svg,
 

@@ -1,14 +1,15 @@
 WEBVEPP.namespace("WEBVEPP.List");
-WEBVEPP.List = function(){
+WEBVEPP.List = function(settings){
     var list, list_settings,
+        settings = settings,
         scheme_names = {"system":"","sample":""},
         table = d3.select("body").select("table");
 
     function setSchemeNames(tool_name){
         var pathname = location.pathname;
         var path = pathname.split('/');
+        scheme_names.system = settings.getSystemName();
         if(path[1]=="webvepp"){
-            scheme_names.system = "CHAN"
             if(path[2]=="tools"){
                 if(tool_name=="bank"){
                     scheme_names.sample = "bank";

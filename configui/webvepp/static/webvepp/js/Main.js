@@ -26,7 +26,9 @@ $(document).on("unset_loading_cursor",function(){
     document.body.style.cursor='default';
 });
 $(document).ready(function(){
-    var tree_model = WEBVEPP.TreeModel(),
+    var cookies = WEBVEPP.Cookies(),
+        settings = WEBVEPP.Settings(cookies),
+        tree_model = WEBVEPP.TreeModel(settings),
         tree = "",
         tree_view = WEBVEPP.TreeView(tree_model,{
             //"canvas": d3.select("#tree_map"),
