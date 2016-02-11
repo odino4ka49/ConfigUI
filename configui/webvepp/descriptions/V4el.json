@@ -1,0 +1,7142 @@
+[
+    {
+        "Class": "Element",
+        "Name": "H",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EL1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEM",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEM",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EL3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EL4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EZM",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EM3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EL5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEMS",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEMS",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NL1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "USO",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "USO",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NL4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "USO",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SL1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "USO",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "USO",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SL4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "USO",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEO2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEX0",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NES3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEQ@",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NES1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEO@",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEX4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NES2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEO@",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEX4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SES2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEO2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEX0",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SES3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEQ@",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SES1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX0",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX0",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIM4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIM1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIM4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIM1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIL",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIL",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "FS1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "FS2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "DS1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "DS2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTW",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STW",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRSI",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRSI",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "D7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIW",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UNAG",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TL1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TL3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TL4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TREZ",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "F7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            },
+            {
+                "ADC channel": "UN",
+                "OK": true
+            },
+            {
+                "ADC channel": "UK",
+                "OK": true
+            },
+            {
+                "ADC channel": "UCAP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU1",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU2",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU3",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU4",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU1",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU2",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU3",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU4",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU5",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SU1",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SU2",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SU3",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SU4",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NU1",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NU2",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NU3",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NU4",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU8",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU9",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "HOLL",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TOK",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU3SV",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU3RZ",
+        "System": "V4",
+        "Group": "Electrostatics",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "U",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "-URSR",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "-URRF",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "-UREL1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "-UREL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "KED1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "KED2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TOKKS",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Main Structure",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTZ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTZ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTS0",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ1-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ2-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ3-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ4-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NTG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG6",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG8",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "CTX",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STZ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STZ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STZ0",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ1-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ2-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ3-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ4-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "STG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG6",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG8",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX6",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX8",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX9",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ5-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ6",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ6-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ7-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ8",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ8-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ9",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ9-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG9",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG10",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG11",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG12",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG13",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG14",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG15",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG16",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG17",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG18",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX10",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX11",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX12",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX13",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX14",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "@NL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "@NL4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ10",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ10-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ11",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ11-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ12",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ12-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ13",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ13-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ14",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ14-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIX3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIX4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NIG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG19",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG20",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG21",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG22",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG23",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG24",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG25",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG26",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG27",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG28",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX6",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX8",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX9",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "@SL2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ5-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ6",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ6-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ7",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ7-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ8",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ8-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ9",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ9-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "@SL1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "@SL4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG9",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG10",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG11",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG12",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG13",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG14",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG15",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG16",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG17",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG18",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIX1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIX2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX10",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX11",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX12",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX13",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX14",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ10",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ10-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ11",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ11-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ12",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ12-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ13",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ13-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ14",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ14-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIX3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIX4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SIG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG19",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG20",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG21",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG22",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG23",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG24",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG25",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG26",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG27",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG28",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX15",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX16",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRX17",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEX5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEX3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEZ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ15",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ15-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ16",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRZ16-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEZ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG29",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG30",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG31",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG32",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NRG33",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEG5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEQ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NEQ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX15",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX16",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRX17",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEX5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEX3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ15",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ15-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ16",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRZ16-2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEZ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEZ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Orbit Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG29",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG30",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG31",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG32",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SRG33",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEG5",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEG4",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEG3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEG2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEG1",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Gradient Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEQ3",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SEQ2",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Non-linearity Correction",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "I",
+                "OK": true
+            },
+            {
+                "ADC channel": "IM",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "URF",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "URF",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "JRF",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "JRF",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TR",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "TR",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TP",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "TP",
+                "OK": true
+            },
+            {
+                "ADC channel": "TPM",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV1",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV2",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TX",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "TX",
+                "OK": true
+            },
+            {
+                "ADC channel": "TXM",
+                "OK": true
+            },
+            {
+                "ADC channel": "URF1",
+                "OK": true
+            },
+            {
+                "ADC channel": "URF2",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "PH",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "PH",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "-FR",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "-FR",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NSEP",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "NSEP",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX11",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX11",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX12",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX12",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX13",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX13",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX21",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX21",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX22",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX22",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX23",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX23",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX31",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX31",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX32",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX32",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX33",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX33",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX41",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX41",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX42",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX42",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX43",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX43",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX51",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX51",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX52",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX52",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX53",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX53",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX61",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX61",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX62",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX62",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX63",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "MEX63",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "RAZU",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "RAZU",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "RAZF",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "Control channel": "RAZF",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "ZERO",
+        "System": "V4",
+        "Group": "Magnetic System",
+        "Type": "Measurements",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "ADC channel": "ZE",
+                "OK": true
+            },
+            {
+                "ADC channel": "ZN",
+                "OK": true
+            },
+            {
+                "ADC channel": "ZT",
+                "OK": true
+            },
+            {
+                "ADC channel": "ZS",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX1",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "Measurements",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "ADC channel": "CAV1",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV2",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV3",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX2",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "Measurements",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "ADC channel": "CAV1",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV2",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV3",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEX3",
+        "System": "V4",
+        "Group": "RF System",
+        "Type": "Measurements",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "ADC channel": "CAV1",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV2",
+                "OK": true
+            },
+            {
+                "ADC channel": "CAV3",
+                "OK": true
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TRON",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "TRON"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TPON",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "TPON"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TXON",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "TXON"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "ONRF",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "ONRF"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "OFRF",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "OFRF"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NUSW",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "NUSW"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TUSW",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "TUSW"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SUSW",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "SUSW"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU3W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "EU3W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU4W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "EU4W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EU5W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "EU5W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "EUSW",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "EUSW"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "RAZV",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "RAZV"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "MEXSW",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "MEXSW"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU9W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "TU9W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "TU8W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "TU8W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "NU1W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "NU1W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "U21W",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "U21W"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "SR",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "SR"
+            }
+        ]
+    },
+    {
+        "Class": "Element",
+        "Name": "URSR2",
+        "System": "V4",
+        "Group": "Relays",
+        "Type": "Electrostatics",
+        "Comment": null,
+        "Polarity": null,
+        "Channels": [
+            {
+                "OK": true,
+                "UR channel": "URSR2"
+            }
+        ]
+    }
+]

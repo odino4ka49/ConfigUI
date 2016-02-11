@@ -59,6 +59,15 @@ foreignobject body{
     margin: 0;
     padding: 5px;
 }
+#settings_system_name{
+    border-radius: 0;
+    background: transparent;
+    height: 50px;
+    padding: 5px;
+    border: 0;
+    font-size: 14px;
+    width: 130px;
+}
 /*::-webkit-scrollbar {
     width: 10px;
     height: 10px;

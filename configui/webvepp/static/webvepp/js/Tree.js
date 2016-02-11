@@ -44,7 +44,7 @@ WEBVEPP.Tree = function(params){
             var nodes = tree.nodes(root);
             nodes.forEach(function(d){
                 if(d.depth==0) return;
-                loadDetailsOpenExtra(d);
+                //loadDetailsOpenExtra(d);
                 if(d.coord) return;
                 d.coord = [countNodeX(d),countNodeY(d)];
             });
@@ -289,7 +289,7 @@ WEBVEPP.Tree = function(params){
                 person.parent._parents.forEach(function(sibling){
                     sibling.hidden = false;
                 })
-                if(person.open_extra){
+                if(person.collapsed_size){
                     person.width = person.collapsed_size[0];
                     person.height = person.collapsed_size[1];
                 }
@@ -508,7 +508,8 @@ WEBVEPP.Tree = function(params){
                                 text=minAttributesToString(d)
                             }
                             else if(d.type=="matrix_equation"){
-                                text = attributesToEquation(d.attributes);
+                                var borders = d.noborders ? false:true;
+                                text = attributesToEquation(d.attributes,borders);
                             }
                             return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
                       });
@@ -675,9 +676,13 @@ WEBVEPP.Tree = function(params){
                     var level_info = settings[level_name].display_attributes;
                     if(level_info.autorevealing)
                         return;
-                    if(person.collapsed||(person._parents.length==0)){
-                        $(document).trigger("load_neighbours",person);
+                    if(person.collapsed){
+                        if(person._parents.length==0)
+                            $(document).trigger("load_neighbours",person);
                         person.collapsed = false;
+                        if(person.open_extra&&person.attributes.extra.length==0){
+                            loadDetailsOpenExtra(person);
+                        }
                         //if we don't want to see any sibling's _parents
                         hideSiblings(person);
                     } else {
@@ -693,8 +698,10 @@ WEBVEPP.Tree = function(params){
                 drawDetails();
             },
             hideDetails = function(person){
-                person.revealed = false;
-                drawDetails();
+                if(person){
+                    person.revealed = false;
+                    drawDetails();
+                }
             };
 
     tree = d3.layout.tree()
@@ -757,6 +764,15 @@ WEBVEPP.Tree = function(params){
             }
             if(person._children){
                 person._children.forEach(collapse);
+        }
+    };
+    function uncollapse(person){
+        person.collapsed = false;
+            if(person._parents){
+                person._parents.forEach(uncollapse);
+            }
+            if(person._children){
+                person._children.forEach(uncollapse);
         }
     };
     function loadLinkEnds(links){
@@ -858,20 +874,20 @@ WEBVEPP.Tree = function(params){
         text += "</div>";
         return text;
     };
-    function attributesToEquation(attributes){
+    function attributesToEquation(attributes,borders){
         var text = "";
         text += "<table><tr><td>";
-        text += matrixToTable(attributes[0]);
+        text += borders ? matrixToTable(attributes[0]):attributes[0][0];
         text += "</td><td>=</td><td>";
-        text += matrixToTable(attributes[1]);
+        text += borders ? matrixToTable(attributes[1]):attributes[1][0];
         text += "</td><td>x</td><td>";
-        text += matrixToTable(attributes[2]);
+        text += borders ? matrixToTable(attributes[2]):attributes[2][0];
         text += "</td></tr></table><table><tr><td>";
-        text += matrixToTable(attributes[3]);
+        text += borders ? matrixToTable(attributes[3]):attributes[3][0];
         text += "</td><td>=</td><td>";
-        text += matrixToTable(attributes[4]);
+        text += borders ? matrixToTableReversed(attributes[4]):attributes[4][0];
         text += "</td><td>x</td><td>";
-        text += matrixToTable(attributes[5]);
+        text += borders ? matrixToTable(attributes[5]):attributes[5][0];
         text += "</td></tr></table>";
         return text;
     };
@@ -879,7 +895,7 @@ WEBVEPP.Tree = function(params){
         if(matrix==null){
             return "<table><tr><td>Null</td></tr></table>";
         }
-        var matrixtype = (typeof(matrix[0])=="string") ? "vector":"matrix";
+        var matrixtype = (!Array.isArray(matrix[0])) ? "vector":"matrix";
         var table = "<table class='matrix'><tr><td>";
         matrix.forEach(function(row){
             if(matrixtype == "vector"){
@@ -893,6 +909,29 @@ WEBVEPP.Tree = function(params){
             }
         });
         table += "</td></tr></table>";
+        return table;
+    };
+    function matrixToTableReversed(matrix){
+        if(matrix==null){
+            return "<table><tr><td>Null</td></tr></table>";
+        }
+        var matrixtype = (!Array.isArray(matrix[0])) ? "vector":"matrix";
+        var table = "<table class='matrix'><tr>";
+        matrix.forEach(function(row){
+            if(matrixtype=="vector"){
+                table += "<td>"+row+"</td>";
+            }
+            else{
+                table += "<td>"+row[0]+"</td>";
+            }
+        });
+        if(matrixtype != "vector"){
+            table += "</tr><tr>"
+            matrix.forEach(function(row){
+                table += "<td>"+row[1]+"</td>";
+            });
+        }
+        table += "</tr></table>";
         return table;
     };
     function movePerson(person,shift){

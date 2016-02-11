@@ -20,7 +20,12 @@
       <li id="menu_elements"><a href="javascript: goToPage('elements');">Элементы</a></li>
       <li id="menu_scheme"><a href="javascript: goToPage('scheme');">Схема</a></li>
       <li id="menu_tools"><a href="javascript: goToPage('tools');">Инструменты</a></li>
-      <li id="menu_settings"><a href="javascript: goToPage('settings');">Настройки</a></li>
+      <li id="menu_settings">
+          <select id="settings_system_name" onchange="saveSettings()">
+              <option value="CHAN">CHAN</option>
+              <option value="V4">Vepp4</option>
+          </select>
+      </li>
     </ul>
 </body>
 </html>

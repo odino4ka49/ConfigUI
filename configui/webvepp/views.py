@@ -354,20 +354,68 @@ def getRemoteAttributes(node,level):
                     obj_attributes.append(["X","Y"])
                 elif node["Outputs"]==1:
                     obj_attributes.append(["X"])
+            #wanted to reverse matrix here
+            #elif attr == "Graphs":
+            #    obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))
             else:
-                obj_attributes.append(getValueByPath(node,attr))
+                obj_attributes.append(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"]))
         remote["attributes"]=obj_attributes
+        if node["Outputs"]==1 and node["Inputs"]==1:
+            remote["noborders"] = True
         remote["type"] = obj_sample["remote_attributes"]["type"]
         if remote["type"]=="matrix_equation":
             vector1 = countMatrixWidthHeight(obj_attributes[0])
             vector2 = countMatrixWidthHeight(obj_attributes[2])
             matrix1 = countMatrixWidthHeight(obj_attributes[1])
-            matrix2 = countMatrixWidthHeight(obj_attributes[4])
+            matrix2 = countMatrixWidthHeightReversed(obj_attributes[4])
             remote["width"] = (vector1["width"]+vector2["width"]+max(matrix1["width"],matrix2["width"])+8)*9+30
             remote["height"] = (max(vector1["height"],vector2["height"],matrix1["height"])+max(vector1["height"],vector2["height"],matrix2["height"])+5)*17+20
     else:
         return None
     return remote
+
+def reverseMatrix(matrix):
+    if matrix==None or len(matrix)==0:
+        return matrix
+    matrixtype = "matrix" if type(matrix[0]) is list else "vector"
+    if matrixtype=="vector":
+        return matrix
+    result = [[] for x in range(len(matrix[0]))]
+    for row in matrix:
+        for i in range(0,len(row)):
+            result[i].append(row[i])
+        print result,row
+    return result
+
+def normalizeMatrix(matrix,inputs,outputs):
+    if matrix==None or len(matrix)==0:
+        return matrix
+    result = []
+    matrixtype = "matrix" if type(matrix[0]) is list else "vector"
+    if outputs == 1:
+        if matrixtype == "matrix":
+            for row in matrix:
+                item_to_add = 0
+                for item in row:
+                    if item!=0:
+                        item_to_add = item
+                        print item_to_add
+                        break
+                result.append(item_to_add)
+    for i in range(0,inputs):
+        if len(matrix)-1>=i:
+            if matrixtype=="matrix":
+                line = matrix[i]
+                if len(line)<outputs:
+                    line.append([0]*(outputs-len(line)))
+        else:
+            if matrixtype=="vector":
+                matrix.append(0)
+            else:
+                matrix.append([0]*outputs)
+    if result == []:
+        return matrix
+    return result
 
 def countMatrixWidthHeight(matrix):
     if matrix==None:
@@ -383,6 +431,26 @@ def countMatrixWidthHeight(matrix):
             for item in row:
                 row_width += len(str(item))+1
             width = max(width,row_width)
+    return {"width": width,"height": height}
+
+def countMatrixWidthHeightReversed(matrix):
+    if matrix==None:
+        return {"width": 1,"height": 1}
+    matrixtype = "matrix" if type(matrix[0]) is list else "vector"
+    if matrixtype=="vector":
+        height = 1
+    else:
+        height = len(matrix[0])
+    width = len(matrix)
+    for row in matrix:
+        item_width = 0
+        if matrixtype=="vector":
+            item_width = len(str(row))+1
+        else:
+            for item in row:
+                item_width = max(item_width,len(str(item))+1)
+        width+=item_width
+    print width
     return {"width": width,"height": height}
 
 def sortMatrixObjects(objects,sortname,size,parent_node):
@@ -683,7 +751,7 @@ def getSample():
         if system_name == "CHAN":
             tree_sample[system_name] = getDataFile("Chan_sample.json")
         elif system_name == "V4":
-            tree_sample[system_name] = getDataFile("Chan_sample.json")
+            tree_sample[system_name] = getDataFile("V4_sample.json")
         else:
             tree_sample[system_name] = []
     samples = tree_sample[system_name]

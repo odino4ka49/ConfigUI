@@ -1,0 +1,570 @@
+[
+  {
+    "name": "Chan_camacs",
+    "root": {
+      "type": "new",
+      "level": 0,
+      "fields": {
+        "System": "CHAN",
+        "Name": "CHAN_camacs"
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "System"
+        ],
+        "max": []
+      },
+      "display_attributes": {
+        "width": 170,
+        "height": 40,
+        "field_name": false
+      }
+    },
+    "level1": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "CAMAC","Serial"
+        ]
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "Name",
+          {
+            "key": "Dispatcher position",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "Module"
+            },
+            "link_from": {
+              "Controller": "CHAN",
+              "System": "&System",
+              "Class": "CAMAC"
+            },
+            "value": "Position"
+          },
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": ["DS-24","Б0634"]
+            },
+            "value": "ID"
+          },
+          "Dispatcher name",
+          "PINT",
+          "Address"
+        ],
+        "max": [
+          "Class",
+          "Name",
+          "System",
+          "Comment",
+          "Controller",
+          "Dispatcher name",
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": ["DS-24","Б0634"]
+            },
+            "value": "ID"
+          },
+          "PINT",
+          "Address",
+          "Area",
+          "Rack/cabinet",
+          "Rack level",
+          {
+            "key":"Modules",
+            "value": "len"
+          },
+          {
+            "key": "+24",
+            "to_array": {
+              "Path": "&Modules->Module Type->+24 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "-24",
+            "to_array": {
+              "Path": "&Modules->Module Type->-24 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "+12",
+            "to_array": {
+              "Path": "&Modules->Module Type->+12 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "-12",
+            "to_array": {
+              "Path": "&Modules->Module Type->-12 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "+6",
+            "to_array": {
+              "Path": "&Modules->Module Type->+6 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          },
+          {
+            "key": "-6",
+            "to_array": {
+              "Path": "&Modules->Module Type->-6 V current",
+              "Operation": "sum"
+            },
+            "value": "sum"
+          }
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 130,
+        "field_name": true
+      }
+    },
+    "level2": {
+      "type": "filter",
+      "level": 2,
+      "filter": {
+        "Class": [
+          "Module"
+        ]
+      },
+      "sort_field": "Module position",
+      "display_filter": {
+        "min": [
+          "Name",
+          "Module Type",
+          {
+            "key": "Module position",
+            "value": "link_id"
+          }
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      },
+      "additional_links": [
+        "ACP-KAS"
+      ]
+    },
+    "level3": {
+      "type": "filter",
+      "level": 3,
+      "filter": {
+        "Class": [
+          "Control channel",
+          "UR channel",
+          "ADC channel",
+          "Meas channel",
+          "DBLUR channel",
+          "Module channel"
+        ],
+        "Module": "&Name"
+      },
+      "display_filter": {
+        "min": [
+          "Channel",
+          "Element",
+          "Name"
+        ],
+        "max": [
+          "Class",
+          "Name",
+          "Element",
+          "System",
+          "Comment",
+          "BANK",
+          "Module",
+          "Channel",
+          "Cod/Value",
+          "Units",
+          "Max",
+          "Polarity",
+          "Int time",
+          "Diapasone",
+          "Interval",
+          "Monit",
+          "MonitType",
+          "Deviation",
+          "Relay",
+          "Relay ON",
+          "Master Element",
+          "Maste Channel"
+        ]
+      },
+      "sort_field": "Channel",
+      "display_attributes": {
+        "width": 70,
+        "height": 60,
+        "positioning": "matrix",
+        "matrix_type": "channels",
+        "matrix_size": "&Module Type->Channels number",
+        "field_name": false
+      },
+      "action":{
+        "type": "open_another_map",
+        "map": "elements",
+        "info": "&Element"
+      }
+    }
+  },
+  {
+    "name": "Chan_elements",
+    "root": {
+      "type": "new",
+      "level": 0,
+      "fields": {
+        "System": "CHAN",
+        "Name": "CHAN_elements"
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "System",
+          "Name"
+        ],
+        "max": []
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 70,
+        "field_name": false
+      }
+    },
+    "level-1": {
+      "type": "filter",
+      "level": -1,
+      "filter": {
+        "Class": [
+          "Power Supply"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "Type",
+          "Rack/cabinet",
+          "Rack level"
+        ],
+        "max": ["*"]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      }
+    },
+    "level1": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "Element","Hand"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "Name"
+        ],
+        "max": [
+          "Class",
+          "Name",
+          "System",
+          "Group",
+          "Type",
+          "Comment",
+          "Polarity",
+          {
+            "key":"Channels",
+            "value": "len"
+          },
+          "EnergyLock",
+          "Inputs",
+          "Outputs",
+          "Shift"
+        ]
+      },
+      "display_attributes": {
+        "width": 70,
+        "height": 30,
+        "positioning": "matrix",
+        "matrix_type": "simple",
+        "matrix_size": 430,
+        "hiding": "true",
+        "field_name": false
+      },
+      "remote_attributes":{
+        "Class": "Hand",
+        "type": "matrix_equation",
+        "open_extra": [150,150],
+        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements"]
+      }
+    },
+    "level2": {
+      "type": "filter",
+      "level": 2,
+      "filter": {
+        "Class": [
+          "Control channel",
+          "UR channel",
+          "ADC channel",
+          "Meas channel"
+        ],
+        "Element": "&Name"
+      },
+      "display_filter": {
+        "min": [
+          "Name",
+          "Module",
+          "Channel"
+        ],
+        "max": [
+          "Class",
+          "Name",
+          "Element",
+          "System",
+          "Comment",
+          "BANK",
+          "Module",
+          "Channel",
+          "Cod/Value",
+          "Units",
+          "Max",
+          "Polarity",
+          "Int time",
+          "Diapasone",
+          "Interval",
+          "Monit",
+          "MonitType",
+          "Deviation",
+          "Relay",
+          "Relay ON",
+          "Master Element",
+          "Maste Channel"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "autorevealing": true,
+        "field_name": true
+      }
+    },
+    "level3": {
+      "type": "filter",
+      "level": 3,
+      "filter": {
+        "Class": [
+          "Module"
+        ],
+        "Name": "&Module"
+      },
+      "display_filter": {
+        "min": [
+          "Name",
+          {
+            "key": "Position",
+            "link_to": {
+              "System": "&System",
+              "Class": "CAMAC"
+            },
+            "value": "Position"
+          },
+          {
+            "key": "CAMAC",
+            "value": "&CAMAC->Name"
+          }
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type"
+        ]
+      },
+      "sort_field": "Name",
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      }
+    },
+    "level4": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "CAMAC","Serial"
+        ]
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "Name",
+          {
+            "key": "Dispatcher position",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "Module"
+            },
+            "link_from": {
+              "Controller": "CHAN",
+              "System": "&System",
+              "Class": "CAMAC"
+            },
+            "value": "Position"
+          },
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "DS-24"
+            },
+            "value": "ID"
+          },
+          "Dispatcher name",
+          "PINT",
+          "Address"
+        ],
+        "max": [
+          "Class",
+          "Name",
+          "System",
+          "Comment",
+          "Controller",
+          "Dispatcher name",
+          {
+            "key": "Dispatcher channel",
+            "link_to": {
+              "Name": "&Dispatcher name",
+              "System": "&System",
+              "Class": "DS-24"
+            },
+            "value": "ID"
+          },
+          "PINT",
+          "Address",
+          "Area",
+          "Rack/cabinet",
+          "Rack level",
+          {
+            "key":"Modules",
+            "value": "len"
+          }
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 130,
+        "field_name": true
+      },
+      "action":{
+        "type": "open_another_map",
+        "map": "camacs",
+        "info": "&Name"
+      }
+    }
+  },
+  {
+    "name": "Chan_banks",
+    "type": "list",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "Control channel",
+          "UR channel",
+          "ADC channel",
+          "Meas channel",
+          "DBLUR channel",
+          "Module channel",
+          "Hand"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "BANK",
+          "Name",
+          "Element"
+        ],
+        "max": [
+          "BANK",
+          "Name",
+          "Element"
+        ]
+      },
+      "sort_field": "BANK",
+      "display_attributes": {
+        "field_name": false,
+        "inline": true,
+        "sort_type": "cells"
+      }
+    }
+  },
+  {
+    "name": "Tool_modules",
+    "type": "list",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "Module"
+        ]
+      },
+      "sort_field": "Module Type",
+      "display_filter": {
+        "min": [
+          "Module Type",
+          "Name",
+          {
+            "key": "Crate",
+            "value": "&CAMAC->Name"
+          },
+          {
+            "key": "Module Position",
+            "link_to": {
+              "System": "&System",
+              "Class": ["CAMAC"]
+            },
+            "value": "Position"
+          }
+        ],
+        "max": [
+        ]
+      },
+      "display_attributes": {
+        "field_name": false,
+        "sort_type": "numbered"
+      }
+    }
+  }
+]

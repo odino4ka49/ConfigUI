@@ -1,0 +1,376 @@
+H           MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A BIT1  A ****  A IGND  A
+EL1         MAGS    OSST    4   I     C IM    A UN    A BIT2  A 
+EL2         MAGS    OSST    4   I     C IM    A UN    A BIT2  A 
+NEM         MAGS    OSST    4   I     C IM    A UN    A I75   A 
+SEM         MAGS    OSST    4   I     C IM    A UN    A I75   A 
+EL3         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+EL4         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+EZM         MAGS    OSST    4   I     C IM    A UN    A I75   A 
+EM3         MAGS    OSST    4   I     C IM    A UN    A I75   A 
+EL5         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+SEMS        MAGS    OSST    3   I     C IM    A UN    A 
+NEMS        MAGS    OSST    3   I     C IM    A UN    A 
+NL1         MAGS    OSST    6   I     C IM    A USO   A UCAP  A IWR   A NOWAT A 
+NL2         MAGS    OSST    6   I     C IM    A USO   A UCAP  A IWR   A NOWAT A 
+NL4         MAGS    OSST    6   I     C IM    A USO   A UCAP  A IWR   A NOWAT A 
+SL1         MAGS    OSST    6   I     C IM    A USO   A UCAP  A IWR   A NOWAT A 
+SL2         MAGS    OSST    6   I     C IM    A USO   A UCAP  A IWR   A NOWAT A 
+SL4         MAGS    OSST    6   I     C IM    A USO   A UCAP  A IWR   A NOWAT A 
+NEO2        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+NIZ1        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+NEX0        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+NES3        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+NEQ@        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+NES1        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+NEO@        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+NEX4        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+NEX2        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+NEX1        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+NES2        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+NEZ1        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SEO@        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SEX4        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SEX2        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SEX1        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SES2        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+SEZ1        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SEO2        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+SIZ1        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SEX0        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SES3        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+SEQ@        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+SES1        MAGS    NELN    5   I     C IM    A UN    A UCAP  A USO   A 
+NRX0        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SRX0        MAGS    COOR    5   I     C IM    A UN    A UCAP  A USO   A 
+SIM4        MAGS    OSST    5   I     C IM    A UN    A UCAP  A USO   A 
+SIM1        MAGS    OSST    5   I     C IM    A UN    A UCAP  A USO   A 
+NIM4        MAGS    OSST    5   I     C IM    A UN    A UCAP  A USO   A 
+NIM1        MAGS    OSST    5   I     C IM    A UN    A UCAP  A USO   A 
+NIL         MAGS    OSST    4   I     C IM    A UN    A I75   A 
+SIL         MAGS    OSST    4   I     C IM    A UN    A I75   A 
+FS1         MAGS    NELN    3   I     C IM    A UN    A 
+FS2         MAGS    NELN    3   I     C IM    A UN    A 
+DS1         MAGS    NELN    3   I     C IM    A UN    A 
+DS2         MAGS    NELN    3   I     C IM    A UN    A 
+NTW         MAGS    OSST    3   I     C IM    A UN    A 
+STW         MAGS    OSST    3   I     C IM    A UN    A 
+NRSI        MAGS    OSST    3   I     C IM    A UN    A 
+SRSI        MAGS    OSST    3   I     C IM    A UN    A 
+D7          MAGS    OSST    4   I     C IM    A UN    A I75   A 
+NIW         MAGS    OSST    6   I     C IM    A UNAG  A ZERO  A UCAP  A USO   A 
+TL1         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+TL3         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+TL2         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+TL4         MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+TREZ        MAGS    OSST    8   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A 
+F7          MAGS    OSST    9   I     C IM    A UN    A UK    A UCAP  A USO   A UP1   A UP2   A I75   A 
+TU1         ELST    ELST    2   U     C UM    A 
+TU2         ELST    ELST    2   U     C UM    A 
+TU3         ELST    ELST    2   U     C UM    A 
+TU4         ELST    ELST    2   U     C UM    A 
+EU1         ELST    ELST    2   U     C UM    A 
+EU2         ELST    ELST    2   U     C UM    A 
+EU3         ELST    ELST    2   U     C UM    A 
+EU4         ELST    ELST    2   U     C UM    A 
+EU5         ELST    ELST    2   U     C UM    A 
+SU1         ELST    ELST    2   U     C UM    A 
+SU2         ELST    ELST    2   U     C UM    A 
+SU3         ELST    ELST    2   U     C UM    A 
+SU4         ELST    ELST    2   U     C UM    A 
+NU1         ELST    ELST    2   U     C UM    A 
+NU2         ELST    ELST    2   U     C UM    A 
+NU3         ELST    ELST    2   U     C UM    A 
+NU4         ELST    ELST    2   U     C UM    A 
+TU8         ELST    ELST    2   U     C UM    A 
+TU9         ELST    ELST    2   U     C UM    A 
+HOLL        MAGS    NOTY    2   I     C IM    A 
+TOK         MAGS    NOTY    2   I     C IM    A 
+EU3SV       ELST    ELST    2   U     C UM    A 
+EU3RZ       ELST    ELST    2   U     C UM    A 
+-URSR       MAGS    ELST    2   I     C IM    A 
+-URRF       MAGS    RFSY    2   I     C IM    A 
+-UREL1      MAGS    ELST    2   I     C IM    A 
+-UREL2      MAGS    ELST    2   I     C IM    A 
+KED1        MAGS    OSST    2   I     C IM    A 
+KED2        MAGS    OSST    2   I     C IM    A 
+TOKKS       MAGS    OSST    2   I     C IM    A 
+NTX1        MAGS    COOR    3   I     C IM    A UN    A 
+NTX2        MAGS    COOR    3   I     C IM    A UN    A 
+NRX1        MAGS    COOR    3   I     C IM    A UN    A 
+NRX2        MAGS    COOR    3   I     C IM    A UN    A 
+NRX3        MAGS    COOR    3   I     C IM    A UN    A 
+NRX4        MAGS    COOR    3   I     C IM    A UN    A 
+NTZ1        MAGS    COOR    3   I     C IM    A UN    A 
+NTZ2        MAGS    COOR    3   I     C IM    A UN    A 
+NTZ3        MAGS    COOR    3   I     C IM    A UN    A 
+NTS0        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ1        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ1-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ2        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ2-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ3        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ3-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ4        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ4-2      MAGS    COOR    3   I     C IM    A UN    A 
+NTG1        MAGS    COGR    3   I     C IM    A UN    A 
+NTG2        MAGS    COGR    3   I     C IM    A UN    A 
+NTG3        MAGS    COGR    3   I     C IM    A UN    A 
+NTG4        MAGS    COGR    3   I     C IM    A UN    A 
+NRG1        MAGS    COGR    3   I     C IM    A UN    A 
+NRG2        MAGS    COGR    3   I     C IM    A UN    A 
+NRG3        MAGS    COGR    3   I     C IM    A UN    A 
+NRG4        MAGS    COGR    3   I     C IM    A UN    A 
+NRG5        MAGS    COGR    3   I     C IM    A UN    A 
+NRG6        MAGS    COGR    3   I     C IM    A UN    A 
+NRG7        MAGS    COGR    3   I     C IM    A UN    A 
+NRG8        MAGS    COGR    3   I     C IM    A UN    A 
+STX1        MAGS    COOR    3   I     C IM    A UN    A 
+STX2        MAGS    COOR    3   I     C IM    A UN    A 
+CTX         MAGS    COOR    3   I     C IM    A UN    A 
+SRX1        MAGS    COOR    3   I     C IM    A UN    A 
+SRX2        MAGS    COOR    3   I     C IM    A UN    A 
+SRX3        MAGS    COOR    3   I     C IM    A UN    A 
+SRX4        MAGS    COOR    3   I     C IM    A UN    A 
+STZ1        MAGS    COOR    3   I     C IM    A UN    A 
+STZ2        MAGS    COOR    3   I     C IM    A UN    A 
+STZ3        MAGS    COOR    3   I     C IM    A UN    A 
+STZ0        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ1        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ1-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ2        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ2-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ3        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ3-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ4        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ4-2      MAGS    COOR    3   I     C IM    A UN    A 
+STG1        MAGS    COGR    3   I     C IM    A UN    A 
+STG2        MAGS    COGR    3   I     C IM    A UN    A 
+STG3        MAGS    COGR    3   I     C IM    A UN    A 
+STG4        MAGS    COGR    3   I     C IM    A UN    A 
+SRG1        MAGS    COGR    3   I     C IM    A UN    A 
+SRG2        MAGS    COGR    3   I     C IM    A UN    A 
+SRG3        MAGS    COGR    3   I     C IM    A UN    A 
+SRG4        MAGS    COGR    3   I     C IM    A UN    A 
+SRG5        MAGS    COGR    3   I     C IM    A UN    A 
+SRG6        MAGS    COGR    3   I     C IM    A UN    A 
+SRG7        MAGS    COGR    3   I     C IM    A UN    A 
+SRG8        MAGS    COGR    3   I     C IM    A UN    A 
+NRX5        MAGS    COOR    3   I     C IM    A UN    A 
+NRX6        MAGS    COOR    3   I     C IM    A UN    A 
+NRX7        MAGS    COOR    3   I     C IM    A UN    A 
+NRX8        MAGS    COOR    3   I     C IM    A UN    A 
+NRX9        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ5        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ5-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ6        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ6-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ7        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ7-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ8        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ8-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRZ9        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ9-2      MAGS    COOR    3   I     C IM    A UN    A 
+NRG9        MAGS    COGR    3   I     C IM    A UN    A 
+NRG10       MAGS    COGR    3   I     C IM    A UN    A 
+NRG11       MAGS    COGR    3   I     C IM    A UN    A 
+NRG12       MAGS    COGR    3   I     C IM    A UN    A 
+NRG13       MAGS    COGR    3   I     C IM    A UN    A 
+NRG14       MAGS    COGR    3   I     C IM    A UN    A 
+NRG15       MAGS    COGR    3   I     C IM    A UN    A 
+NRG16       MAGS    COGR    3   I     C IM    A UN    A 
+NRG17       MAGS    COGR    3   I     C IM    A UN    A 
+NRG18       MAGS    COGR    3   I     C IM    A UN    A 
+NIG1        MAGS    COGR    3   I     C IM    A UN    A 
+NIG2        MAGS    COGR    3   I     C IM    A UN    A 
+NIX1        MAGS    COOR    3   I     C IM    A UN    A 
+NIX2        MAGS    COOR    3   I     C IM    A UN    A 
+NRX10       MAGS    COOR    3   I     C IM    A UN    A 
+NRX11       MAGS    COOR    3   I     C IM    A UN    A 
+NRX12       MAGS    COOR    3   I     C IM    A UN    A 
+NRX13       MAGS    COOR    3   I     C IM    A UN    A 
+NRX14       MAGS    COOR    3   I     C IM    A UN    A 
+@NL2        MAGS    COOR    3   I     C IM    A UN    A 
+@NL4        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ10       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ10-2     MAGS    COOR    3   I     C IM    A UN    A 
+NRZ11       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ11-2     MAGS    COOR    3   I     C IM    A UN    A 
+NRZ12       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ12-2     MAGS    COOR    3   I     C IM    A UN    A 
+NRZ13       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ13-2     MAGS    COOR    3   I     C IM    A UN    A 
+NRZ14       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ14-2     MAGS    COOR    3   I     C IM    A UN    A 
+NIX3        MAGS    COOR    3   I     C IM    A UN    A 
+NIX4        MAGS    COOR    3   I     C IM    A UN    A 
+NIG3        MAGS    COGR    3   I     C IM    A UN    A 
+NIG4        MAGS    COGR    3   I     C IM    A UN    A 
+NRG19       MAGS    COGR    3   I     C IM    A UN    A 
+NRG20       MAGS    COGR    3   I     C IM    A UN    A 
+NRG21       MAGS    COGR    3   I     C IM    A UN    A 
+NRG22       MAGS    COGR    3   I     C IM    A UN    A 
+NRG23       MAGS    COGR    3   I     C IM    A UN    A 
+NRG24       MAGS    COGR    3   I     C IM    A UN    A 
+NRG25       MAGS    COGR    3   I     C IM    A UN    A 
+NRG26       MAGS    COGR    3   I     C IM    A UN    A 
+NRG27       MAGS    COGR    3   I     C IM    A UN    A 
+NRG28       MAGS    COGR    3   I     C IM    A UN    A 
+SRX5        MAGS    COOR    3   I     C IM    A UN    A 
+SRX6        MAGS    COOR    3   I     C IM    A UN    A 
+SRX7        MAGS    COOR    3   I     C IM    A UN    A 
+SRX8        MAGS    COOR    3   I     C IM    A UN    A 
+SRX9        MAGS    COOR    3   I     C IM    A UN    A 
+@SL2        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ5        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ5-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ6        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ6-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ7        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ7-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ8        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ8-2      MAGS    COOR    3   I     C IM    A UN    A 
+SRZ9        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ9-2      MAGS    COOR    3   I     C IM    A UN    A 
+@SL1        MAGS    COOR    3   I     C IM    A UN    A 
+@SL4        MAGS    COOR    3   I     C IM    A UN    A 
+SRG9        MAGS    COGR    3   I     C IM    A UN    A 
+SRG10       MAGS    COGR    3   I     C IM    A UN    A 
+SRG11       MAGS    COGR    3   I     C IM    A UN    A 
+SRG12       MAGS    COGR    3   I     C IM    A UN    A 
+SRG13       MAGS    COGR    3   I     C IM    A UN    A 
+SRG14       MAGS    COGR    3   I     C IM    A UN    A 
+SRG15       MAGS    COGR    3   I     C IM    A UN    A 
+SRG16       MAGS    COGR    3   I     C IM    A UN    A 
+SRG17       MAGS    COGR    3   I     C IM    A UN    A 
+SRG18       MAGS    COGR    3   I     C IM    A UN    A 
+SIG1        MAGS    COGR    3   I     C IM    A UN    A 
+SIG2        MAGS    COGR    3   I     C IM    A UN    A 
+SIX1        MAGS    COOR    3   I     C IM    A UN    A 
+SIX2        MAGS    COOR    3   I     C IM    A UN    A 
+SRX10       MAGS    COOR    3   I     C IM    A UN    A 
+SRX11       MAGS    COOR    3   I     C IM    A UN    A 
+SRX12       MAGS    COOR    3   I     C IM    A UN    A 
+SRX13       MAGS    COOR    3   I     C IM    A UN    A 
+SRX14       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ10       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ10-2     MAGS    COOR    3   I     C IM    A UN    A 
+SRZ11       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ11-2     MAGS    COOR    3   I     C IM    A UN    A 
+SRZ12       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ12-2     MAGS    COOR    3   I     C IM    A UN    A 
+SRZ13       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ13-2     MAGS    COOR    3   I     C IM    A UN    A 
+SRZ14       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ14-2     MAGS    COOR    3   I     C IM    A UN    A 
+SIX3        MAGS    COOR    3   I     C IM    A UN    A 
+SIX4        MAGS    COOR    3   I     C IM    A UN    A 
+SIG3        MAGS    COGR    3   I     C IM    A UN    A 
+SIG4        MAGS    COGR    3   I     C IM    A UN    A 
+SRG19       MAGS    COGR    3   I     C IM    A UN    A 
+SRG20       MAGS    COGR    3   I     C IM    A UN    A 
+SRG21       MAGS    COGR    3   I     C IM    A UN    A 
+SRG22       MAGS    COGR    3   I     C IM    A UN    A 
+SRG23       MAGS    COGR    3   I     C IM    A UN    A 
+SRG24       MAGS    COGR    3   I     C IM    A UN    A 
+SRG25       MAGS    COGR    3   I     C IM    A UN    A 
+SRG26       MAGS    COGR    3   I     C IM    A UN    A 
+SRG27       MAGS    COGR    3   I     C IM    A UN    A 
+SRG28       MAGS    COGR    3   I     C IM    A UN    A 
+NRX15       MAGS    COOR    3   I     C IM    A UN    A 
+NRX16       MAGS    COOR    3   I     C IM    A UN    A 
+NRX17       MAGS    COOR    3   I     C IM    A UN    A 
+NEX5        MAGS    COOR    3   I     C IM    A UN    A 
+NEX3        MAGS    COOR    3   I     C IM    A UN    A 
+NEZ2        MAGS    COOR    3   I     C IM    A UN    A 
+NRZ15       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ15-2     MAGS    COOR    3   I     C IM    A UN    A 
+NRZ16       MAGS    COOR    3   I     C IM    A UN    A 
+NRZ16-2     MAGS    COOR    3   I     C IM    A UN    A 
+NEZ3        MAGS    COOR    3   I     C IM    A UN    A 
+NRG29       MAGS    COGR    3   I     C IM    A UN    A 
+NRG30       MAGS    COGR    3   I     C IM    A UN    A 
+NRG31       MAGS    COGR    3   I     C IM    A UN    A 
+NRG32       MAGS    COGR    3   I     C IM    A UN    A 
+NRG33       MAGS    COGR    3   I     C IM    A UN    A 
+NEG5        MAGS    COGR    3   I     C IM    A UN    A 
+NEG4        MAGS    COGR    3   I     C IM    A UN    A 
+NEG3        MAGS    COGR    3   I     C IM    A UN    A 
+NEG2        MAGS    COGR    3   I     C IM    A UN    A 
+NEG1        MAGS    COGR    3   I     C IM    A UN    A 
+NEQ3        MAGS    NELN    3   I     C IM    A UN    A 
+NEQ2        MAGS    NELN    3   I     C IM    A UN    A 
+SRX15       MAGS    COOR    3   I     C IM    A UN    A 
+SRX16       MAGS    COOR    3   I     C IM    A UN    A 
+SRX17       MAGS    COOR    3   I     C IM    A UN    A 
+SEX5        MAGS    COOR    3   I     C IM    A UN    A 
+SEX3        MAGS    COOR    3   I     C IM    A UN    A 
+SRZ15       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ15-2     MAGS    COOR    3   I     C IM    A UN    A 
+SRZ16       MAGS    COOR    3   I     C IM    A UN    A 
+SRZ16-2     MAGS    COOR    3   I     C IM    A UN    A 
+SEZ3        MAGS    COOR    3   I     C IM    A UN    A 
+SEZ2        MAGS    COOR    3   I     C IM    A UN    A 
+SRG29       MAGS    COGR    3   I     C IM    A UN    A 
+SRG30       MAGS    COGR    3   I     C IM    A UN    A 
+SRG31       MAGS    COGR    3   I     C IM    A UN    A 
+SRG32       MAGS    COGR    3   I     C IM    A UN    A 
+SRG33       MAGS    COGR    3   I     C IM    A UN    A 
+SEG5        MAGS    COGR    3   I     C IM    A UN    A 
+SEG4        MAGS    COGR    3   I     C IM    A UN    A 
+SEG3        MAGS    COGR    3   I     C IM    A UN    A 
+SEG2        MAGS    COGR    3   I     C IM    A UN    A 
+SEG1        MAGS    COGR    3   I     C IM    A UN    A 
+SEQ3        MAGS    NELN    3   I     C IM    A UN    A 
+SEQ2        MAGS    NELN    3   I     C IM    A UN    A 
+URF         RFRF    RFSY    2   URF   C URFM      A 
+JRF         RFRF    RFSY    2   JRF   C JRFM      A 
+TR          RFRF    RFSY    2   TR    C TRM       A 
+TP          RFRF    RFSY    8   TP    C TPM       A CAV1  A CAV2  A CAV3  A CAV4  A CAV5  A CAV6  A 
+TX          RFRF    RFSY    8   TX    C TXM       A URF1  A URF2  A URF3  A URF4  A URF5  A URF6  A 
+PH          RFRF    RFSY    1   PH    C 
+-FR         RFRF    RFSY    1   -FR   C 
+NSEP        RFRF    RFSY    1   NSEP  C 
+MEX11       RFRF    RFSY    2   MEX11 C MEX11M    A 
+MEX12       RFRF    RFSY    2   MEX12 C MEX12M    A 
+MEX13       RFRF    RFSY    2   MEX13 C MEX13M    A 
+MEX21       RFRF    RFSY    2   MEX21 C MEX21M    A 
+MEX22       RFRF    RFSY    2   MEX22 C MEX22M    A 
+MEX23       RFRF    RFSY    2   MEX23 C MEX23M    A 
+MEX31       RFRF    RFSY    2   MEX31 C MEX31M    A 
+MEX32       RFRF    RFSY    2   MEX32 C MEX32M    A 
+MEX33       RFRF    RFSY    2   MEX33 C MEX33M    A 
+MEX41       RFRF    RFSY    2   MEX41 C MEX41M    A 
+MEX42       RFRF    RFSY    2   MEX42 C MEX42M    A 
+MEX43       RFRF    RFSY    2   MEX43 C MEX43M    A 
+MEX51       RFRF    RFSY    2   MEX51 C MEX51M    A 
+MEX52       RFRF    RFSY    2   MEX52 C MEX52M    A 
+MEX53       RFRF    RFSY    2   MEX53 C MEX53M    A 
+MEX61       RFRF    RFSY    2   MEX61 C MEX61M    A 
+MEX62       RFRF    RFSY    2   MEX62 C MEX62M    A 
+MEX63       RFRF    RFSY    2   MEX63 C MEX63M    A 
+RAZU        RFRF    RFSY    2   RAZU  C RAZUM     A 
+RAZF        RFRF    RFSY    2   RAZF  C RAZFM     A 
+ZERO        MAGS    DOPM    8   ZE    A ZN    A ZT    A ZS    A Z13I  A Z13S  A Z15I  A Z15S  A 
+MEX1        RFRF    DOPM    6   CAV1  A CAV2  A CAV3  A CAV4  A CAV5  A CAV6  A 
+MEX2        RFRF    DOPM    6   CAV1  A CAV2  A CAV3  A CAV4  A CAV5  A CAV6  A 
+MEX3        RFRF    DOPM    6   CAV1  A CAV2  A CAV3  A CAV4  A CAV5  A CAV6  A 
+TRON        URUR    RFSY    1   TRON  U 
+TPON        URUR    RFSY    1   TPON  U 
+TXON        URUR    RFSY    1   TXON  U 
+ONRF        URUR    RFSY    1   ONRF  U 
+OFRF        URUR    RFSY    1   OFRF  U 
+NUSW        URUR    ELST    1   NUSW  U 
+TUSW        URUR    ELST    1   TUSW  U 
+SUSW        URUR    ELST    1   SUSW  U 
+EU3W        URUR    ELST    1   EU3W  U 
+EU4W        URUR    ELST    1   EU4W  U 
+EU5W        URUR    ELST    1   EU5W  U 
+EUSW        URUR    ELST    1   EUSW  U 
+RAZV        URUR    ELST    1   RAZV  U 
+MEXSW       URUR    RFSY    1   MEXSW U 
+TU9W        URUR    ELST    1   TU9W  U 
+TU8W        URUR    ELST    1   TU8W  U 
+NU1W        URUR    ELST    1   NU1W  U 
+U21W        URUR    ELST    1   U21W  U 
+SR          URUR    ELST    1   SR    U 
+URSR2       URUR    ELST    1   URSR2 U 
