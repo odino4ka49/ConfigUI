@@ -14,6 +14,7 @@
     <script type="text/javascript" src="/static/webvepp/js/TreeController.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/TreeView.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/TreeModel.js"></script>
+    <script type="text/javascript" src="/static/webvepp/js/FilterBar.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/MenuBar.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/webvepp/css/main.css" >
     <link rel="stylesheet" type="text/css" href="/static/webvepp/css/tree.css" >
@@ -27,9 +28,11 @@
       <li id="menu_settings">
           <select id="settings_system_name" onchange="saveSettings()">
               <option value="CHAN">CHAN</option>
-              <option value="V4">Vepp4</option>
+              <option value="V4">VEPP4</option>
           </select>
       </li>
     </ul>
+    <br/>
+    <ul id="Filter_bar"></ul>
 </body>
 </html>

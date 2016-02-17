@@ -35,7 +35,8 @@ $(document).ready(function(){
             "body": d3.select("body")
         },tree);
         tree_controller = WEBVEPP.TreeController(tree_model,tree_view),
-        menu_bar = WEBVEPP.MenuBar();
+        menu_bar = WEBVEPP.MenuBar(),
+        filter_bar = WEBVEPP.FilterBar();
 });
 
 

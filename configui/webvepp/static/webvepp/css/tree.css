@@ -38,6 +38,10 @@ table.matrix{
     border-color: white;
     border-left-color: black;
     border-right-color: black;
+    text-align: center;
+}
+table.matrix td{
+    padding: 0px 5px;
 }
 .attributes{
     overflow-y: hidden;

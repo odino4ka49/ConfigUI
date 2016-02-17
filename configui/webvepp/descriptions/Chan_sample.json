@@ -506,8 +506,7 @@
           "ADC channel",
           "Meas channel",
           "DBLUR channel",
-          "Module channel",
-          "Hand"
+          "Module channel"
         ]
       },
       "display_filter": {

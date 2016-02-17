@@ -54,7 +54,9 @@ def loadTreeData(request):
     global start_name,current_scheme_name
     data = request.GET
     current_scheme_name = json.loads(data['scheme_names'])
-    tree = parseTree()
+    filter_name = json.loads(data['filter_name'])
+    rules = getFilter(filter_name)
+    tree = parseTree(rules)
     tree["additional_links"] = []
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
 
@@ -241,7 +243,7 @@ def getMaxAttributes(node,level):
     obj_attributes = parseAttributes(display_details,node,"max")
     return obj_attributes["extra"]
 
-def getNodeNeighbours(node,level,direction=1):
+def getNodeNeighbours(node,level,direction=1,rules=None):
     neighbours = []
     sample = getSample()
     if level=="0":
@@ -261,6 +263,9 @@ def getNodeNeighbours(node,level,direction=1):
     if level_n in sample:
         sample_l = sample[level_n]
         next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
+        #let's filter if there's some additional filter as 'rules'
+        if rules:
+            next_level = filterObjects(next_level,rules)
         if "type" in obj_sample and obj_sample["type"]=="new":
             for n in next_level:
                 neighbour = {"name":n["Name"],"id":"","_parents":[]}
@@ -324,13 +329,14 @@ def getNodeNeighbours(node,level,direction=1):
                 matrix["rows"]=matrix_rows
                 matrix["width"]=(sample_l["display_attributes"]["width"]+20)*matrix_cols
                 matrix["height"]=(sample_l["display_attributes"]["height"]+10)*matrix_rows
+                matrix["matrix"]=True
                 if "sort_field" in sample_l:
                     if sample_l["display_attributes"]["matrix_type"]=="channels":
                         neighbours = sortMatrixObjects(neighbours,sample_l["sort_field"],matrix_size,node)
                     else:
                         neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
                 #append it to neighbours
-                neighbours.append(matrix)
+                neighbours.insert(0,matrix)
         elif "sort_field" in sample_l:
             neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
     return neighbours
@@ -384,7 +390,6 @@ def reverseMatrix(matrix):
     for row in matrix:
         for i in range(0,len(row)):
             result[i].append(row[i])
-        print result,row
     return result
 
 def normalizeMatrix(matrix,inputs,outputs):
@@ -399,9 +404,10 @@ def normalizeMatrix(matrix,inputs,outputs):
                 for item in row:
                     if item!=0:
                         item_to_add = item
-                        print item_to_add
                         break
                 result.append(item_to_add)
+            matrix = result
+            matrixtype = "matrix" if type(matrix[0]) is list else "vector"
     for i in range(0,inputs):
         if len(matrix)-1>=i:
             if matrixtype=="matrix":
@@ -450,7 +456,6 @@ def countMatrixWidthHeightReversed(matrix):
             for item in row:
                 item_width = max(item_width,len(str(item))+1)
         width+=item_width
-    print width
     return {"width": width,"height": height}
 
 def sortMatrixObjects(objects,sortname,size,parent_node):
@@ -578,7 +583,7 @@ def hideSiblings(neighbours,start_name,level):
             n["unhidden"] = True
     return
 
-def parseTree():
+def parseTree(rules):
     tree = {}
     sample = getSample()
     max_level = 1
@@ -596,7 +601,7 @@ def parseTree():
         result["width"] = obj_display_attributes["width"]
         result["height"] = obj_display_attributes["height"]
 
-        result["_parents"]=getNodeNeighbours(result,"0")
+        result["_parents"]=getNodeNeighbours(result,"0",1,rules)
         return result
 
     if sample["root"]["type"]=="new":
@@ -782,24 +787,8 @@ def getAllObjects():
     return tree_data[system_name]
 
 def getObjects(rules):
-    objects = []
     data = getAllObjects()
-    def filter(o):
-        result = True
-        for r in rules:
-            if rules[r]==None:
-                result = False
-            elif type(rules[r]) is unicode:
-                if r in o and o[r]!=rules[r]:
-                    result = False
-            elif type(rules[r]) is list:
-                if r in o and o[r] not in rules[r]:
-                    result = False
-        return result
-    for obj in data:
-        if(filter(obj)):
-            objects.append(obj)
-    return objects
+    return filterObjects(data,rules)
 
 def getObject(rules):
     object = {}
@@ -824,6 +813,34 @@ def getObject(rules):
         if(filter(obj)):
             object = obj
     return object
+
+def filterObjects(data,rules):
+    objects = []
+    def filter(o):
+        result = True
+        for r in rules:
+            if rules[r]==None:
+                result = False
+            elif type(rules[r]) is unicode:
+                if r in o and o[r]!=rules[r]:
+                    result = False
+            elif type(rules[r]) is list:
+                if r in o and o[r] not in rules[r]:
+                    result = False
+        return result
+    for obj in data:
+        if(filter(obj)):
+            objects.append(obj)
+    return objects
+
+def getFilter(filter_name):
+    sample = getSample()
+    rules = None
+    if "filter_buttons" in sample:
+        rules = next((x for x in sample["filter_buttons"] if x["name"] == filter_name), None)
+    if rules and "filter" in rules:
+        rules = rules["filter"]
+    return rules
 
 def getTemplate(object):
     templates = getAllTemplates()

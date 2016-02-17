@@ -71,9 +71,11 @@ WEBVEPP.Tree = function(params){
                 number = allofus.length;
                 level_name = "level"+depth;
                 level_info = settings[level_name].display_attributes;
+            if(allofus[0].matrix) index -=1;
             if("positioning" in level_info && level_info.positioning=="matrix"){
-                var matrix = allofus[allofus.length-1]
-                if(index==number-1){
+                var matrix = $.grep(allofus, function(e){ return e.matrix; })[0];
+                //var matrix = allofus[allofus.length-1]
+                if(isMatrix(node)){
                     return parent_y;
                 }
                 else{
@@ -105,14 +107,15 @@ WEBVEPP.Tree = function(params){
                     allofus = node.parent._parents;
                 }
                 index = allofus.indexOf(node);
+                if(allofus[0].matrix) index --;
             }
             var level_name = "level"+depth;
             var level_info = settings[level_name].display_attributes;
             //if depth == 2 and it's matrix, we just count it the way it's supposed to be
             if(depth==1){
                 if ("positioning" in level_info && level_info.positioning=="matrix"){
-                    var matrix = allofus[allofus.length-1]
-                    if(index==allofus.length-1){
+                    var matrix = $.grep(allofus, function(e){ return e.matrix; })[0];
+                    if(isMatrix(node)){
                         result+= matrix.width/2 - level_info.width - 20;
                     }
                     else{
@@ -126,7 +129,7 @@ WEBVEPP.Tree = function(params){
             }
             else if(depth>1){
                 var parent_level_name = "level"+(depth-1);
-                var parent_level_info = settings[level_name].display_attributes;
+                var parent_level_info = settings[parent_level_name].display_attributes;
                 if("positioning" in parent_level_info && parent_level_info.positioning=="matrix" && !("hiding" in parent_level_info && parent_level_info.hiding)){
                     var parent_level;
                     if(direction==-1){
@@ -135,7 +138,8 @@ WEBVEPP.Tree = function(params){
                     else{
                         parent_level= parent.parent._parents;
                     }
-                    var matrix = parent_level[parent_level.length-1];
+                    var matrix = $.grep(parent_level, function(e){ return e.matrix; })[0];
+                    //var matrix = parent_level[parent_level.length-1];
                     result = matrix.coord[0]+(matrix.width/2)*direction;
                 }
                 else{
@@ -143,9 +147,10 @@ WEBVEPP.Tree = function(params){
                 }
                 result += 50*direction;
                 if ("positioning" in level_info && level_info.positioning=="matrix"){
-                    var matrix = allofus[allofus.length-1]
+                    //var matrix = allofus[allofus.length-1]
+                    var matrix = $.grep(allofus, function(e){ return e.matrix; })[0];
                     //result += (matrix.width/2)*direction;
-                    if(index==allofus.length-1){
+                    if(isMatrix(node)){
                         result+= (matrix.width/2-10)*direction;
                     }
                     else{
@@ -198,7 +203,7 @@ WEBVEPP.Tree = function(params){
             var result = ""
             if("positioning" in level_info && level_info.positioning=="matrix"){
                 var allofus = node.parent._parents;
-                if(!node.unhidden&&allofus.indexOf(node)!=allofus.length-1){
+                if(!node.unhidden&&!isMatrix(node)){
                     result += " inmatrix";
                 }
             }
@@ -241,14 +246,15 @@ WEBVEPP.Tree = function(params){
             return result;
         },
         isMatrix = function(person){
-            var level_name = "level"+person.depth;
+            /*var level_name = "level"+person.depth;
             var level_info = settings[level_name].display_attributes;
             var allofus = person.parent._parents;
             var index = allofus.indexOf(person);
             if(index==allofus.length-1 && "positioning" in level_info && level_info.positioning=="matrix"){
                 return true;
             }
-            return false;
+            return false;*/
+            return person.matrix;
         },
         hideSiblings = function(person){
             var level_name = "level"+person.depth;
@@ -304,7 +310,7 @@ WEBVEPP.Tree = function(params){
             var link = svg.selectAll(".link." + selector)
                 .data(links, function(d){ return d.target.id; });
 
-            var newlink = link.enter().insert("g",":first-child")
+            var newlink = link.enter().insert("g")
                 .attr("class", "link " + selector);
             newlink.append("path")
               .attr("d", function(d) {
@@ -364,7 +370,7 @@ WEBVEPP.Tree = function(params){
                   .data(nodes, function(person){ return person.id; });
 
                 // Add any new nodes
-                var nodeEnter = node.enter().insert("g",":first-child")
+                var nodeEnter = node.enter().insert("g")
                   .attr("class", "person " + selector)
 
                   // Add new nodes at the right side of their child's box.
@@ -877,17 +883,21 @@ WEBVEPP.Tree = function(params){
     function attributesToEquation(attributes,borders){
         var text = "";
         text += "<table><tr><td>";
-        text += borders ? matrixToTable(attributes[0]):attributes[0][0];
-        text += "</td><td>=</td><td>";
-        text += borders ? matrixToTable(attributes[1]):attributes[1][0];
-        text += "</td><td>x</td><td>";
-        text += borders ? matrixToTable(attributes[2]):attributes[2][0];
-        text += "</td></tr></table><table><tr><td>";
-        text += borders ? matrixToTable(attributes[3]):attributes[3][0];
-        text += "</td><td>=</td><td>";
-        text += borders ? matrixToTableReversed(attributes[4]):attributes[4][0];
-        text += "</td><td>x</td><td>";
-        text += borders ? matrixToTable(attributes[5]):attributes[5][0];
+        if(attributes[1]!=null){
+            text += borders ? matrixToTable(attributes[0]):attributes[0][0];
+            text += "</td><td>=</td><td>";
+            text += borders ? matrixToTable(attributes[1]):attributes[1][0];
+            text += "</td><td>x</td><td>";
+            text += borders ? matrixToTable(attributes[2]):attributes[2][0];
+            text += "</td></tr></table><table><tr><td>";
+        }
+        if(attributes[4]!=null){
+            text += borders ? matrixToTable(attributes[3]):attributes[3][0];
+            text += "</td><td>=</td><td>";
+            text += borders ? matrixToTableReversed(attributes[4]):attributes[4][0];
+            text += "</td><td>x</td><td>";
+            text += borders ? matrixToTable(attributes[5]):attributes[5][0];
+        }
         text += "</td></tr></table>";
         return text;
     };
@@ -896,19 +906,20 @@ WEBVEPP.Tree = function(params){
             return "<table><tr><td>Null</td></tr></table>";
         }
         var matrixtype = (!Array.isArray(matrix[0])) ? "vector":"matrix";
-        var table = "<table class='matrix'><tr><td>";
+        var table = "<table class='matrix'>";
         matrix.forEach(function(row){
+            table += "<tr>"
             if(matrixtype == "vector"){
-                table += row+"</td></tr><tr><td>";
+                table += "<td>"+row+"</td>";
             }
             else{
                 row.forEach(function(item){
-                    table += item+"</td><td>";
+                    table += "<td>"+item+"</td>";
                 })
-                table += "</td></tr><tr><td>"
             }
+            table+="</tr>"
         });
-        table += "</td></tr></table>";
+        table += "</table>";
         return table;
     };
     function matrixToTableReversed(matrix){

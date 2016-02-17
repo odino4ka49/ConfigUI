@@ -1501,7 +1501,7 @@
         "Module": "8ACP"
       },
       {
-        "Position": 7,
+        "Position": 20,
         "Module": "80KAS"
       }
     ]
@@ -1608,6 +1608,243 @@
   },
 
   {
+   "Class": "MilStd",
+   "Name": "KLIPS1",
+   "System": "V4",
+   "Comment": "MilStd, направление 13 зд., ЦАПИ-1",
+   "Dispatcher name": "1KLIPS",
+   "Address": "#040000",
+   "Modules": [
+     {
+       "ID": 2,
+       "Module": "02CAPI1"
+     },
+     {
+       "ID": 3,
+       "Module": "03CAPI1"
+     },
+     {
+       "ID": 4,
+       "Module": "04CAPI1"
+     },
+     {
+       "ID": 5,
+       "Module": "05CAPI1"
+     },
+     {
+       "ID": 6,
+       "Module": "06CAPI1"
+     },
+     {
+       "ID": 7,
+       "Module": "07CAPI1"
+     },
+     {
+       "ID": 8,
+       "Module": "08CAPI1"
+     },
+     {
+       "ID": 9,
+       "Module": "09CAPI1"
+     },
+     {
+       "ID": 10,
+       "Module": "10CAPI1"
+     }
+   ]
+ },
+
+ {
+   "Class": "MilStd",
+   "Name": "KLIPS2",
+   "System": "V4",
+   "Comment": "MilStd, направление 15 зд., ЦАПИ-1",
+   "Dispatcher name": "2KLIPS",
+   "Address": "#060000",
+   "Modules": [
+     {
+       "ID": 1,
+       "Module": "11CAPI1"
+     },
+     {
+       "ID": 2,
+       "Module": "12CAPI1"
+     },
+     {
+       "ID": 3,
+       "Module": "13CAPI1"
+     },
+     {
+       "ID": 4,
+       "Module": "14CAPI1"
+     },
+     {
+       "ID": 5,
+       "Module": "15CAPI1"
+     },
+     {
+       "ID": 6,
+       "Module": "16CAPI1"
+     },
+     {
+       "ID": 8,
+       "Module": "17CAPI1"
+     },
+     {
+       "ID": 9,
+       "Module": "18CAPI1"
+     },
+     {
+       "ID": 12,
+       "Module": "19CAPI1"
+     },
+     {
+       "ID": 15,
+       "Module": "20CAPI1"
+     },
+     {
+       "ID": 14,
+       "Module": "21CAPI1"
+     },
+     {
+       "ID": 16,
+       "Module": "22CAPI1"
+     },
+     {
+       "ID": 17,
+       "Module": "23CAPI1"
+     },
+     {
+       "ID": 18,
+       "Module": "01CAPI1"
+     }
+   ]
+ },
+ 
+ {
+   "Class": "MilStd",
+   "Name": "KLIPS3",
+   "System": "V4",
+   "Comment": "MilStd, направление 13 зд. и S, ЦАПИ-16",
+   "Dispatcher name": "3KLIPS",
+   "Address": "#100000",
+   "Modules": [
+     {
+       "ID": 2,
+       "Module": "01CAPI16"
+     },
+     {
+       "ID": 3,
+       "Module": "02CAPI16"
+     },
+     {
+       "ID": 4,
+       "Module": "03CAPI16"
+     },
+     {
+       "ID": 5,
+       "Module": "04CAPI16"
+     },
+     {
+       "ID": 6,
+       "Module": "05CAPI16"
+     },
+     {
+       "ID": 7,
+       "Module": "06CAPI16"
+     },
+     {
+       "ID": 8,
+       "Module": "07CAPI16"
+     },
+     {
+       "ID": 9,
+       "Module": "08CAPI16"
+     },
+     {
+       "ID": 11,
+       "Module": "09CAPI16"
+     },    
+     {
+       "ID": 12,
+       "Module": "10CAPI16"
+     },
+     {
+       "ID": 16,
+       "Module": "11CAPI16"
+     },
+     {
+       "ID": 17,
+       "Module": "12CAPI16"
+     },
+     {
+       "ID": 18,
+       "Module": "13CAPI16"
+     },
+     {
+       "ID": 19,
+       "Module": "14CAPI16"
+     },     
+     {
+       "ID": 20,
+       "Module": "15CAPI16"
+     }
+   ]
+ },
+
+{
+   "Class": "MilStd",
+   "Name": "KLIPS4",
+   "System": "V4",
+   "Comment": "MilStd, направление 15 зд. и N, ЦАПИ-16",
+   "Dispatcher name": "4KLIPS",
+   "Address": "#120000",
+   "Modules": [
+     {
+       "ID": 2,
+       "Module": "16CAPI16"
+     },
+     {
+       "ID": 3,
+       "Module": "17CAPI16"
+     },
+     {
+       "ID": 4,
+       "Module": "18CAPI16"
+     },
+     {
+       "ID": 5,
+       "Module": "19CAPI16"
+     },
+     {
+       "ID": 6,
+       "Module": "20CAPI16"
+     },
+     {
+       "ID": 7,
+       "Module": "21CAPI16"
+     },
+     {
+       "ID": 8,
+       "Module": "22CAPI16"
+     },
+     {
+       "ID": 9,
+       "Module": "23CAPI16"
+     },
+     {
+       "ID": 10,
+       "Module": "24CAPI16"
+     },    
+     {
+       "ID": 11,
+       "Module": "25CAPI16"
+     }
+   ]
+ },
+
+
+  {
     "Class": "DS-24",
     "Name": "10DS",
     "System": "V4",
@@ -1666,187 +1903,189 @@
     ]
   },
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "0ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "00KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "01KAS"
-      },
-      {
-        "ID": 2,
-        "Module": "02KAS"
-      }
-    ]
-  },
+ {
+   "Class": "ACP-KAS",
+   "Name": "0ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 0ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "00KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "01KAS"
+     },
+     {
+       "ID": 2,
+       "Module": "02KAS"
+     }
+   ]
+ },
+ 
+{
+   "Class": "ACP-KAS",
+   "Name": "1ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 1ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "10KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "11KAS"
+     }
+   ]
+ },
+ 
+{
+   "Class": "ACP-KAS",
+   "Name": "2ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 2ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "20KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "21KAS"
+     }
+   ]
+ },
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "1ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "10KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "11KAS"
-      }
-    ]
-  },
+{
+   "Class": "ACP-KAS",
+   "Name": "3ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 3ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": null,
+       "Module": "30KAS"
+     }
+   ]
+ },
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "2ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "20KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "21KAS"
-      }
-    ]
-  },
+{
+   "Class": "ACP-KAS",
+   "Name": "4ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 4ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "40KAS"
+     }
+   ]
+ },
+ 
+ 
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "3ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": null,
-        "Module": "30KAS"
-      }
-    ]
-  },
+{
+   "Class": "ACP-KAS",
+   "Name": "5ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 5ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "50KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "51KAS"
+     },
+     {
+       "ID": 2,
+       "Module": "52KAS"
+     }
+   ]
+ },
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "4ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "40KAS"
-      }
-    ]
-  },
+{
+   "Class": "ACP-KAS",
+   "Name": "6ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 6ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "60KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "61KAS"
+     }
+   ]
+ },
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "5ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "50KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "51KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "52KAS"
-      }
-    ]
-  },
+{
+   "Class": "ACP-KAS",
+   "Name": "7ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 7ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "70KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "71KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "71KAS"
+     }
+   ]
+ },
 
-  {
-    "Class": "ACP-KAS",
-    "Name": "6ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "60KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "61KAS"
-      }
-    ]
-  },
-
-  {
-    "Class": "ACP-KAS",
-    "Name": "7ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "70KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "71KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "71KAS"
-      }
-    ]
-  },
-
-  {
-    "Class": "ACP-KAS",
-    "Name": "8ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": null,
-        "Module": "80KAS"
-      }
-    ]
-  },
-
-  {
-    "Class": "ACP-KAS",
-    "Name": "9ACP",
-    "System": "V4",
-    "Comment": "подключение КАС-128 к 0ACP",
-    "Channels": 64,
-    "Modules": [
-      {
-        "ID": 0,
-        "Module": "90KAS"
-      },
-      {
-        "ID": 1,
-        "Module": "91KAS"
-      }
-    ]
-  },
-
-  {
+{
+   "Class": "ACP-KAS",
+   "Name": "8ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 8ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": null,
+       "Module": "80KAS"
+     }
+   ]
+ },
+ 
+ {
+   "Class": "ACP-KAS",
+   "Name": "9ACP",
+   "System": "V4",
+   "Comment": "подключение КАС-128 к 9ACP",
+   "Channels": 64,
+   "Modules": [
+     {
+       "ID": 0,
+       "Module": "90KAS"
+     },
+     {
+       "ID": 1,
+       "Module": "91KAS"
+     }
+   ]
+ },
+ 
+ {
     "Class": "Serial",
     "Name": "I100001",
     "System": "V4",
@@ -4052,7 +4291,7 @@
     "Name": "HOLL",
     "System": "V4",
     "Group": "Magnetic System",
-    "Type": "",
+    "Type": "Measurements",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -4067,7 +4306,7 @@
     "Name": "TOK",
     "System": "V4",
     "Group": "Magnetic System",
-    "Type": "",
+    "Type": "Measurements",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -4112,7 +4351,7 @@
     "Name": "-URSR",
     "System": "V4",
     "Group": "Magnetic System",
-    "Type": "Electrostatics",
+    "Type": "Controls",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -4126,8 +4365,8 @@
     "Class": "Element",
     "Name": "-URRF",
     "System": "V4",
-    "Group": "Magnetic System",
-    "Type": "",
+    "Group": "RF System",
+    "Type": "Controls",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -4142,7 +4381,7 @@
     "Name": "-UREL1",
     "System": "V4",
     "Group": "Magnetic System",
-    "Type": "Electrostatics",
+    "Type": "Controls",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -4157,7 +4396,7 @@
     "Name": "-UREL2",
     "System": "V4",
     "Group": "Magnetic System",
-    "Type": "Electrostatics",
+    "Type": "Controls",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8549,7 +8788,7 @@
     "Name": "URF",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8564,7 +8803,7 @@
     "Name": "JRF",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8579,7 +8818,7 @@
     "Name": "TR",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8594,7 +8833,7 @@
     "Name": "TP",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8621,7 +8860,7 @@
     "Name": "TX",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8648,7 +8887,7 @@
     "Name": "PH",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8663,7 +8902,7 @@
     "Name": "-FR",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8678,7 +8917,7 @@
     "Name": "NSEP",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8693,7 +8932,7 @@
     "Name": "MEX11",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8708,7 +8947,7 @@
     "Name": "MEX12",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8723,7 +8962,7 @@
     "Name": "MEX13",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8738,7 +8977,7 @@
     "Name": "MEX21",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8753,7 +8992,7 @@
     "Name": "MEX22",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8768,7 +9007,7 @@
     "Name": "MEX23",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8783,7 +9022,7 @@
     "Name": "MEX31",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8798,7 +9037,7 @@
     "Name": "MEX32",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8813,7 +9052,7 @@
     "Name": "MEX33",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8828,7 +9067,7 @@
     "Name": "MEX41",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8843,7 +9082,7 @@
     "Name": "MEX42",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8858,7 +9097,7 @@
     "Name": "MEX43",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8873,7 +9112,7 @@
     "Name": "MEX51",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8888,7 +9127,7 @@
     "Name": "MEX52",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8903,7 +9142,7 @@
     "Name": "MEX53",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8918,7 +9157,7 @@
     "Name": "MEX61",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8933,7 +9172,7 @@
     "Name": "MEX62",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8948,7 +9187,7 @@
     "Name": "MEX63",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8963,7 +9202,7 @@
     "Name": "RAZU",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -8978,7 +9217,7 @@
     "Name": "RAZF",
     "System": "V4",
     "Group": "RF System",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -9089,7 +9328,7 @@
     "Name": "TRON",
     "System": "V4",
     "Group": "Relays",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -9104,7 +9343,7 @@
     "Name": "TPON",
     "System": "V4",
     "Group": "Relays",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -9119,7 +9358,7 @@
     "Name": "TXON",
     "System": "V4",
     "Group": "Relays",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -9134,7 +9373,7 @@
     "Name": "ONRF",
     "System": "V4",
     "Group": "Relays",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -9149,7 +9388,7 @@
     "Name": "OFRF",
     "System": "V4",
     "Group": "Relays",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [
@@ -9284,7 +9523,7 @@
     "Name": "MEXSW",
     "System": "V4",
     "Group": "Relays",
-    "Type": "",
+    "Type": "RF System",
     "Comment": null,
     "Polarity": null,
     "Channels": [

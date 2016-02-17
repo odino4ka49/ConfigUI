@@ -5,8 +5,8 @@
       "type": "new",
       "level": 0,
       "fields": {
-        "System": "CHAN",
-        "Name": "CHAN_camacs"
+        "System": "V4",
+        "Name": "V4_camacs"
       },
       "sort_field": "Name",
       "display_filter": {
@@ -26,7 +26,7 @@
       "level": 1,
       "filter": {
         "Class": [
-          "CAMAC","Serial"
+          "CAMAC","Serial","MilStd"
         ]
       },
       "sort_field": "Name",
@@ -238,6 +238,56 @@
   },
   {
     "name": "Chan_elements",
+    "filter_buttons": [
+      {
+        "name": "Main",
+        "filter": {
+          "Type": ["Main Structure"]
+        }
+      },
+      {
+        "name": "Non-linear",
+        "filter": {
+          "Type": ["Non-linearity Correction"]
+        }
+      },
+      {
+        "name": "Orbit",
+        "filter": {
+          "Type": ["Orbit Correction"]
+        }
+      },
+      {
+        "name": "Gradient",
+        "filter": {
+          "Type": ["Gradient Correction"]
+        }
+      },
+      {
+        "name": "Electrostatic",
+        "filter": {
+          "Type": ["Electrostatics"]
+        }
+      },
+      {
+        "name": "RF",
+        "filter": {
+          "Type": ["RF System"]
+        }
+      },
+      {
+        "name": "Aux",
+        "filter": {
+          "Type": ["Measurements","Controls"]
+        }
+      },
+      {
+        "name": "Hand",
+        "filter": {
+          "Class": ["Hand"]
+        }
+      }
+    ],
     "root": {
       "type": "new",
       "level": 0,
@@ -316,7 +366,7 @@
         "height": 30,
         "positioning": "matrix",
         "matrix_type": "simple",
-        "matrix_size": 430,
+        "matrix_size": null,
         "hiding": "true",
         "field_name": false
       },
@@ -506,8 +556,7 @@
           "ADC channel",
           "Meas channel",
           "DBLUR channel",
-          "Module channel",
-          "Hand"
+          "Module channel"
         ]
       },
       "display_filter": {

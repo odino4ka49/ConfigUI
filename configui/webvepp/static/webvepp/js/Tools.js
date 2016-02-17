@@ -84,7 +84,7 @@ WEBVEPP.List = function(settings){
                         key = attrs[j];
                     }
                     else if(typeof(attrs[j]=="object")){
-                        key = attrs[j].key
+                        key = attrs[j].key;
                     }
                     row.append("td").text(key);
                 }
