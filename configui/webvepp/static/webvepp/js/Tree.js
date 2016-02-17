@@ -47,6 +47,7 @@ WEBVEPP.Tree = function(params){
                 //loadDetailsOpenExtra(d);
                 if(d.coord) return;
                 d.coord = [countNodeX(d),countNodeY(d)];
+                d.collapsed = true;
             });
         },
         loadDetailsOpenExtra = function(node){
@@ -310,7 +311,7 @@ WEBVEPP.Tree = function(params){
             var link = svg.selectAll(".link." + selector)
                 .data(links, function(d){ return d.target.id; });
 
-            var newlink = link.enter().insert("g")
+            var newlink = link.enter().insert("g",":first-child")
                 .attr("class", "link " + selector);
             newlink.append("path")
               .attr("d", function(d) {
@@ -622,9 +623,12 @@ WEBVEPP.Tree = function(params){
             drawDetails = function (){
                 if(!details_obj||!details_obj.attributes.extra)
                     return;
-                var details = svg.select("g.details"),
+                var details = svg.select("g.details").remove(),
                     width=0,
                     height=0;
+                svg.append(function(){
+                    return details.node();
+                })
                 if(details_obj.revealed){
                     width = boxWidthMax;
                     height = countTextHeight(details_obj.attributes.extra,width);
@@ -948,7 +952,6 @@ WEBVEPP.Tree = function(params){
     function movePerson(person,shift){
         if(person.coord){
             person.coord = [person.coord[0]+shift[0],person.coord[1]+shift[1]];
-            console.log(person);
         }
     };
     function moveToStartPosition(person){
