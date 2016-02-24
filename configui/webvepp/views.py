@@ -307,6 +307,7 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                         if action["type"]=="open_another_map" and "info" in action:
                             neighbour["link_to_map"] = action["map"]+"/"+action["info"]
                     if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
+                        neighbour["collapsed"]=False
                         neighbour["_parents"]=getNodeNeighbours(n,str(int(level)+1))
                     neighbours.append(neighbour)
         #if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours

@@ -44,6 +44,13 @@ def abbr_to_type(argument):
     }
     return switcher.get(argument, "")
 
+def abbr_to_boolean(argument):
+    switcher = {
+        "T": True,
+        "F": False
+    }
+    return switcher.get(argument, True)
+
 def abbr_to_channel(argument):
     switcher = {
         "C": "Control channel",
@@ -69,17 +76,72 @@ def makeElementObject(line):
         })
     return element
 
+def to_int(string):
+    if string=="NUL":
+        return None
+    else:
+        return int(string)
+
+def to_float(string):
+    if string=="NUL":
+        return None
+    else:
+        return float(string)
+
+def makeChannelObject(line):
+    channel = {}
+    channel["Class"] = abbr_to_channel(line[2])
+    channel["Name"] = line[1]
+    channel["Element"] = line[0]
+    channel["Comment"] = ""
+    channel["System"] = "V4"
+    channel["BANK"] = to_int(line[3])
+    channel["Module"] = line[4]
+    channel["Channel"] = to_int(line[5])
+    channel["Cod/Value"] = to_float(line[6])
+    channel["Units"] = line[7]
+    channel["Max"] = to_float(line[8])
+    channel["Monit"] = abbr_to_boolean(line[9])
+    channel["MonitType"] = line[10]
+    channel["Deviation"] = to_float(line[11])
+    """for index in range(4,4+int(line[3]),2):
+        element["Channels"].append({
+            "OK": True,
+            abbr_to_channel(line[index+1]): line[index]
+        })"""
+    return channel
+
+def addAttributesToElement(element,line):
+    element["Efficiency"] = to_float(line[12])
+    element["Location"] = to_int(line[13])
+    element["Resistance"] = to_float(line[14])
+
+def findElement(elements,name):
+    result = next((x for x in elements if x["Name"] == name), None)
+    return result
+
 def saveJson(objects,name):
     with open(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+name, 'w') as outfile:
         json.dump(objects,outfile,indent=4, separators=(',', ': '))
 
+def getDataFile(name):
+    with open(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+name) as data_file:
+        data = json.load(data_file)
+    return data
 
-file_txt = getTextFile("v4el.txt")
-py_elements = []
-custom_sort = make_custom_sort([["Class","Name","System","Group","Type","Comment","Polarity","Channels"]])
+
+file_txt = getTextFile("V4CH.koi")
+py_channels = []
+elements = getDataFile("V4el.json")
+custom_sort = make_custom_sort([["Class", "Name", "Element", "System", "Comment", "BANK", "Module", "Channel", "Cod/Value", "Units", "Max", "Monit", "MonitType", "Deviation"]])
+el_sort = make_custom_sort([["Class","Name","System","Group","Type","Comment","Polarity","Resistance", "Efficiency", "Location","Channels"]])
 for line_txt in file_txt:
     line_splitted = line_txt.split()
-    py_object = makeElementObject(line_splitted)
-    py_elements.append(py_object)
-py_elements = custom_sort(py_elements)
-saveJson(py_elements,"V4el.json")
+    py_object = makeChannelObject(line_splitted)
+    if line_splitted[2]=="C":
+        addAttributesToElement(findElement(elements,line_splitted[0]),line_splitted)
+    py_channels.append(py_object)
+channels = custom_sort(py_channels)
+#saveJson(channels,"V4ch.json")
+elements_sorted = el_sort(elements)
+saveJson(elements_sorted,"V4eladd.json")

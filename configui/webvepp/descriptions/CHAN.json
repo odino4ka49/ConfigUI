@@ -3110,8 +3110,8 @@
    "Comment": "блокировка запуска M1",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },
  {
    "Class": "DBLUR channel",
@@ -3138,8 +3138,8 @@
    "Comment": " вкл. M1 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },
  {
    "Class": "UR channel",
@@ -3149,8 +3149,8 @@
    "Comment": " вкл. M1 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },
 
  {
@@ -3228,8 +3228,8 @@
    "Comment": "блокировка запуска M2",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },
  {
    "Class": "DBLUR channel",
@@ -3256,8 +3256,8 @@
    "Comment": "вкл. M2 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },
  {
    "Class": "UR channel",
@@ -3267,8 +3267,8 @@
    "Comment": " вкл. M2 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },
 
 
@@ -3364,8 +3364,8 @@
    "Comment": " вкл. N1 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },
  {
    "Class": "UR channel",
@@ -3375,8 +3375,8 @@
    "Comment": " вкл. N1 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },
 
 
@@ -3455,8 +3455,8 @@
    "Comment": "блокировка запуска M1",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },
  {
    "Class": "DBLUR channel",
@@ -3483,8 +3483,8 @@
    "Comment": " вкл. M3 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },
  {
    "Class": "UR channel",
@@ -3494,8 +3494,8 @@
    "Comment": " вкл. M3 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },
 
 
@@ -3591,8 +3591,8 @@
    "Comment": " вкл. N2 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },
  {
    "Class": "UR channel",
@@ -3602,8 +3602,8 @@
    "Comment": " вкл. N2 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },
 
 
@@ -3699,8 +3699,8 @@
    "Comment": " вкл. N3 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },
  {
    "Class": "UR channel",
@@ -3710,8 +3710,8 @@
    "Comment": " вкл. N3 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },
 
 
@@ -3807,8 +3807,8 @@
    "Comment": " вкл. N4 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
  },
  {
    "Class": "UR channel",
@@ -3818,8 +3818,8 @@
    "Comment": " вкл. N4 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
  },
 
 
@@ -3915,8 +3915,8 @@
    "Comment": " вкл. N5 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 8,
-   "Channel ON": 8
+   "Channel": [8],
+   "Channel ON": [8]
  },
  {
    "Class": "UR channel",
@@ -3926,8 +3926,8 @@
    "Comment": " вкл. N5 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 9,
-   "Channel ON": 9
+   "Channel": [9],
+   "Channel ON": [9]
  },
 
 
@@ -4023,8 +4023,8 @@
    "Comment": " вкл. N6 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },
  {
    "Class": "UR channel",
@@ -4034,8 +4034,8 @@
    "Comment": " вкл. N6 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 11,
-   "Channel ON": 11
+   "Channel": [11],
+   "Channel ON": [11]
  },
 
 
@@ -4162,8 +4162,8 @@
    "Comment": "блокировка запуска M4",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },
  {
    "Class": "DBLUR channel",
@@ -4190,8 +4190,8 @@
    "Comment": " вкл. M4 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },
  {
    "Class": "UR channel",
@@ -4201,8 +4201,8 @@
    "Comment": " вкл. M4 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 11,
-   "Channel ON": 11
+   "Channel": [11],
+   "Channel ON": [11]
  },
 
 
@@ -4282,8 +4282,8 @@
    "Comment": " вкл. N7 в полярности -",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 12,
-   "Channel ON": 12
+   "Channel": [12],
+   "Channel ON": [12]
  },
  {
    "Class": "UR channel",
@@ -4293,8 +4293,8 @@
    "Comment": " вкл. N7 в полярности +",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 13,
-   "Channel ON": 13
+   "Channel": [13],
+   "Channel ON": [13]
  },
 
 
@@ -4374,8 +4374,8 @@
    "Comment": " вкл. N8 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },
  {
    "Class": "UR channel",
@@ -4385,8 +4385,8 @@
    "Comment": " вкл. N8 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },
 
 
@@ -4465,8 +4465,8 @@
    "Comment": "блокировка запуска M1",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
  },
  {
    "Class": "DBLUR channel",
@@ -4493,8 +4493,8 @@
    "Comment": " вкл. M6 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 12,
-   "Channel ON": 12
+   "Channel": [12],
+   "Channel ON": [12]
  },
  {
    "Class": "UR channel",
@@ -4504,8 +4504,8 @@
    "Comment": " вкл. M6 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 13,
-   "Channel ON": 13
+   "Channel": [13],
+   "Channel ON": [13]
  },
 
 
@@ -4585,8 +4585,8 @@
    "Comment": " вкл. N9 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },
  {
    "Class": "UR channel",
@@ -4596,8 +4596,8 @@
    "Comment": " вкл. N9 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },
 
 
@@ -4677,8 +4677,8 @@
    "Comment": " вкл. N10 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },
  {
    "Class": "UR channel",
@@ -4688,8 +4688,8 @@
    "Comment": " вкл. N10 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },
 
 
@@ -4785,8 +4785,8 @@
    "Comment": " вкл. N11 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
  },
  {
    "Class": "UR channel",
@@ -4796,8 +4796,8 @@
    "Comment": " вкл. N11 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
  },
 
  {
@@ -4875,8 +4875,8 @@
    "Comment": "блокировка запуска M7",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 9,
-   "Channel ON": 9
+   "Channel": [9],
+   "Channel ON": [9]
  },
  {
    "Class": "DBLUR channel",
@@ -4903,8 +4903,8 @@
    "Comment": "вкл. M7 в полярности -",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },
  {
    "Class": "UR channel",
@@ -4914,8 +4914,8 @@
    "Comment": " вкл. M7 в полярности +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },
 
 
@@ -5074,8 +5074,8 @@
    "Comment": "блокировка запуска M8",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },
  {
    "Class": "UR channel",
@@ -5085,8 +5085,8 @@
    "Comment": "включение высокого у M8",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },
  {
    "Class": "UR channel",
@@ -5096,8 +5096,8 @@
    "Comment": "включение высокого у M8",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },
 
 
@@ -5177,8 +5177,8 @@
    "Comment": " вкл. N12 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 8,
-   "Channel ON": 8
+   "Channel": [8],
+   "Channel ON": [8]
  },
  {
    "Class": "UR channel",
@@ -5188,8 +5188,8 @@
    "Comment": " вкл. N12 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 9,
-   "Channel ON": 9
+   "Channel": [9],
+   "Channel ON": [9]
  },
 
  {
@@ -5284,8 +5284,8 @@
    "Comment": " вкл. N13 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },
  {
    "Class": "UR channel",
@@ -5295,8 +5295,8 @@
    "Comment": " вкл. N13 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 11,
-   "Channel ON": 11
+   "Channel": [11],
+   "Channel ON": [11]
  },
 
 {
@@ -5375,8 +5375,8 @@
    "Comment": " вкл. N14 в полярности -",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 12,
-   "Channel ON": 12
+   "Channel": [12],
+   "Channel ON": [12]
  },
  {
    "Class": "UR channel",
@@ -5386,8 +5386,8 @@
    "Comment": " вкл. N14 в полярности +",
    "BANK": 295,
    "Module": "5UR",
-   "Channel": 13,
-   "Channel ON": 13
+   "Channel": [13],
+   "Channel ON": [13]
  },
 
 {
@@ -5500,8 +5500,8 @@
    "Comment": "блокировка запуска M10",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 11,
-   "Channel ON": 11
+   "Channel": [11],
+   "Channel ON": [11]
  },
  {
    "Class": "DBLUR channel",
@@ -5528,8 +5528,8 @@
    "Comment": "вкл. M10 в полярности -",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
  },
  {
    "Class": "UR channel",
@@ -5539,8 +5539,8 @@
    "Comment": " вкл. M7 в полярности +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
  },
 
 {
@@ -5634,8 +5634,8 @@
    "Comment": "блокировка запуска M11",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 12,
-   "Channel ON": 12
+   "Channel": [12],
+   "Channel ON": [12]
  },
  {
    "Class": "UR channel",
@@ -5645,8 +5645,8 @@
    "Comment": "включние высокого M11",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 9,
-   "Channel ON": 9
+   "Channel": [9],
+   "Channel ON": [9]
  },
  {
    "Class": "UR channel",
@@ -5656,8 +5656,8 @@
    "Comment": " вкл. M11 в полярность +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 8,
-   "Channel ON": 8
+   "Channel": [8],
+   "Channel ON": [8]
  },
 
 {
@@ -5752,8 +5752,8 @@
    "Comment": " вкл. N15Z в полярности -",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },
  {
    "Class": "UR channel",
@@ -5763,8 +5763,8 @@
    "Comment": " вкл. N15Z в полярности +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 11,
-   "Channel ON": 11
+   "Channel": [11],
+   "Channel ON": [11]
  },
 
 {
@@ -5859,8 +5859,8 @@
    "Comment": " вкл. N15X в полярности -",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },
  {
    "Class": "UR channel",
@@ -5870,8 +5870,8 @@
    "Comment": " вкл. N15X в полярности +",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 11,
-   "Channel ON": 11
+   "Channel": [11],
+   "Channel ON": [11]
  },
 {
    "Class": "Control channel",
@@ -5949,8 +5949,8 @@
    "Comment": " вкл. N16 в полярности -",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 12,
-   "Channel ON": 12
+   "Channel": [12],
+   "Channel ON": [12]
  },
  {
    "Class": "UR channel",
@@ -5960,8 +5960,8 @@
    "Comment": " вкл. N16 в полярности +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 13,
-   "Channel ON": 13
+   "Channel": [13],
+   "Channel ON": [13]
  },
  
 {
@@ -6056,8 +6056,8 @@
    "Comment": " вкл. N17 в полярности -",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 14,
-   "Channel ON": 14
+   "Channel": [14],
+   "Channel ON": [14]
  },
  {
    "Class": "UR channel",
@@ -6067,8 +6067,8 @@
    "Comment": " вкл. N17 в полярности +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 15,
-   "Channel ON": 15
+   "Channel": [15],
+   "Channel ON": [15]
  },
  
 {
@@ -6146,8 +6146,8 @@
    "Comment": "блокировка запуска D1",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },
  {
    "Class": "DBLUR channel",
@@ -6174,8 +6174,8 @@
    "Comment": " вкл. D1 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
  },
  {
    "Class": "UR channel",
@@ -6185,8 +6185,8 @@
    "Comment": " вкл. D1 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
  },
  
 {
@@ -6264,8 +6264,8 @@
    "Comment": "блокировка запуска D2",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },
  {
    "Class": "DBLUR channel",
@@ -6292,8 +6292,8 @@
    "Comment": " вкл. D2 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 8,
-   "Channel ON": 8
+   "Channel": [8],
+   "Channel ON": [8]
  },
  {
    "Class": "UR channel",
@@ -6303,8 +6303,8 @@
    "Comment": " вкл. D2 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 9,
-   "Channel ON": 9
+   "Channel": [9],
+   "Channel ON": [9]
  },
 
 {
@@ -6382,8 +6382,8 @@
    "Comment": "блокировка запуска D3",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
  },
  {
    "Class": "DBLUR channel",
@@ -6410,8 +6410,8 @@
    "Comment": " вкл. D3 в полярности -",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 14,
-   "Channel ON": 14
+   "Channel": [14],
+   "Channel ON": [14]
  },
  {
    "Class": "UR channel",
@@ -6421,8 +6421,8 @@
    "Comment": " вкл. D3 в полярности +",
    "BANK": 291,
    "Module": "1UR",
-   "Channel": 15,
-   "Channel ON": 15
+   "Channel": [15],
+   "Channel ON": [15]
  },
 
 {
@@ -6500,8 +6500,8 @@
    "Comment": "блокировка запуска D4",
    "BANK": 293,
    "Module": "3UR",
-   "Channel": 8,
-   "Channel ON": 8
+   "Channel": [8],
+   "Channel ON": [8]
  },
  {
    "Class": "DBLUR channel",
@@ -6528,8 +6528,8 @@
    "Comment": " вкл. D4 в полярности -",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },
  {
    "Class": "UR channel",
@@ -6539,8 +6539,8 @@
    "Comment": " вкл. D4 в полярности +",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },
 
 {
@@ -6635,8 +6635,8 @@
    "Comment": " вкл. LP1 в полярности -",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },
  {
    "Class": "UR channel",
@@ -6646,8 +6646,8 @@
    "Comment": " вкл. LP1 в полярности +",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },
 
 {
@@ -6742,8 +6742,8 @@
    "Comment": " вкл. LP2 в полярности -",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },
  {
    "Class": "UR channel",
@@ -6753,8 +6753,8 @@
    "Comment": " вкл. LP2 в полярности +",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },
 
 {
@@ -6849,8 +6849,8 @@
    "Comment": " вкл. LP3 в полярности -",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },
  {
    "Class": "UR channel",
@@ -6860,8 +6860,8 @@
    "Comment": " вкл. LP3 в полярности +",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },
 
 {
@@ -6956,8 +6956,8 @@
    "Comment": " вкл. SOL в полярности -",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
  },
  {
    "Class": "UR channel",
@@ -6967,8 +6967,8 @@
    "Comment": " вкл. SOL в полярности +",
    "BANK": 298,
    "Module": "8URR",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
  },
 
  {
@@ -7110,8 +7110,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 139,
    "Module": "URLZ",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },   
  {
    "Class": "UR channel",
@@ -7121,8 +7121,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 140,
    "Module": "URLZ",
-   "Channel": 5,
-   "Channel ON": 5
+   "Channel": [5],
+   "Channel ON": [5]
  },   
  {
    "Class": "UR channel",
@@ -7132,8 +7132,8 @@
    "Comment": " вкл. ГИМНа",
    "BANK": 294,
    "Module": "4UR",
-   "Channel": 14,
-   "Channel ON": 14
+   "Channel": [14],
+   "Channel ON": [14]
  },      
  {
    "Class": "Lock channel",
@@ -7268,8 +7268,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 166,
    "Module": "URLZ",
-   "Channel": 2,
-   "Channel ON": 2
+   "Channel": [2],
+   "Channel ON": [2]
  },     
  {
    "Class": "UR channel",
@@ -7279,8 +7279,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 167,
    "Module": "URLZ",
-   "Channel": 3,
-   "Channel ON": 3
+   "Channel": [3],
+   "Channel ON": [3]
  },      
  {
    "Class": "UR channel",
@@ -7290,8 +7290,8 @@
    "Comment": " вкл. ГИМНа",
    "BANK": 297,
    "Module": "7UR",
-   "Channel": 15,
-   "Channel ON": 15
+   "Channel": [15],
+   "Channel ON": [15]
  },       
  {
    "Class": "Lock channel",
@@ -7426,8 +7426,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 164,
    "Module": "URLZ",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },     
  {
    "Class": "UR channel",
@@ -7437,8 +7437,8 @@
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 165,
    "Module": "URLZ",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },      
  {
    "Class": "UR channel",
@@ -7448,8 +7448,8 @@
    "Comment": " вкл. ГИМНа",
    "BANK": 297,
    "Module": "7UR",
-   "Channel": 14,
-   "Channel ON": 14
+   "Channel": [14],
+   "Channel ON": [14]
  },       
  {
    "Class": "Lock channel",
@@ -7552,8 +7552,8 @@
    "Comment": " вкл. ГИМНа",
    "BANK": 297,
    "Module": "7UR",
-   "Channel": 10,
-   "Channel ON": 10
+   "Channel": [10],
+   "Channel ON": [10]
  },      
  {
    "Class": "UR channel",
@@ -7563,8 +7563,8 @@
    "Comment": "блокировка запуска тиратрона",
    "BANK": 193,
    "Module": "URG1",
-   "Channel": 0,
-   "Channel ON": 0
+   "Channel": [0],
+   "Channel ON": [0]
  },     
 
  {
@@ -7851,8 +7851,8 @@
    "Comment": "вкл. блокировки запуска IVIS",
    "BANK": 146,
    "Module": "URLZ",
-   "Channel": 6,
-   "Channel ON": 6
+   "Channel": [6],
+   "Channel ON": [6]
   },    
 
   {
@@ -7895,8 +7895,8 @@
    "Comment": "вкл. блокировки запуска пикапов",
    "BANK": 171,
    "Module": "URLZ",
-   "Channel": 7,
-   "Channel ON": 7
+   "Channel": [7],
+   "Channel ON": [7]
   },    
   
   {
@@ -7907,8 +7907,8 @@
    "Comment": " вкл. позитронной полярности",
    "BANK": 292,
    "Module": "2UR",
-   "Channel": 4,
-   "Channel ON": 4
+   "Channel": [4],
+   "Channel ON": [4]
  },         
  
  {
@@ -8015,8 +8015,8 @@
    "Comment": "блокировка запуска Tektronix",
    "BANK": 194,
    "Module": "URG1",
-   "Channel": 1,
-   "Channel ON": 1
+   "Channel": [1],
+   "Channel ON": [1]
  },      
   
    {

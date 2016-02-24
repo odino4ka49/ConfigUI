@@ -47,6 +47,8 @@ WEBVEPP.Tree = function(params){
                 //loadDetailsOpenExtra(d);
                 if(d.coord) return;
                 d.coord = [countNodeX(d),countNodeY(d)];
+                if("collapsed" in d)
+                    return
                 d.collapsed = true;
             });
         },
