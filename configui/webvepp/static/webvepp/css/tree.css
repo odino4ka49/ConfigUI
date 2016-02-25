@@ -33,6 +33,9 @@ rect.inmatrix {
 .link.additional{
     stroke: #0A3A4A;/*#94FE67;*/
 }
+.dashed{
+    stroke-dasharray: 3;
+}
 table.matrix{
     border-style: solid;
     border-color: white;

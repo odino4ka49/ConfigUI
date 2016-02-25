@@ -570,6 +570,11 @@ WEBVEPP.Tree = function(params){
                   .attr("d", function(d) {
                     var o = {x: 0, y: 0};
                     return transitionElbow({source: o, target: o});
+                  })
+                  .attr("class",function(d){
+                    if(d.text==null){
+                        return "dashed";
+                    }
                   });
                 newlink.append("text");
 
