@@ -1,0 +1,360 @@
+[
+    {
+        "Class": "UR channel",
+        "Name": "TRON",
+        "Element": "TRON",
+        "System": "",
+        "Comment": "",
+        "BANK": 94,
+        "Module": "3UR",
+        "Channel": [
+            "2",
+            "3"
+        ],
+        "Channel ON": [
+            "ON",
+            "2"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "TPON",
+        "Element": "TPON",
+        "System": "",
+        "Comment": "",
+        "BANK": 94,
+        "Module": "3UR",
+        "Channel": [
+            "2",
+            "3"
+        ],
+        "Channel ON": [
+            "ON"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "TXON",
+        "Element": "TXON",
+        "System": "",
+        "Comment": "",
+        "BANK": 94,
+        "Module": "3UR",
+        "Channel": [
+            "2",
+            "3"
+        ],
+        "Channel ON": [
+            "ON",
+            "3"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "ONRF",
+        "Element": "ONRF",
+        "System": "",
+        "Comment": "",
+        "BANK": 94,
+        "Module": "3UR",
+        "Channel": [
+            "0",
+            "1"
+        ],
+        "Channel ON": [
+            "ON",
+            "0"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "OFRF",
+        "Element": "OFRF",
+        "System": "",
+        "Comment": "",
+        "BANK": 94,
+        "Module": "3UR",
+        "Channel": [
+            "0",
+            "1"
+        ],
+        "Channel ON": [
+            "ON",
+            "1"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "NUSW",
+        "Element": "NUSW",
+        "System": "",
+        "Comment": "",
+        "BANK": 95,
+        "Module": "1UR",
+        "Channel": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ],
+        "Channel ON": [
+            "ON",
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "TUSW",
+        "Element": "TUSW",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "Channel ON": [
+            "ON",
+            "9",
+            "10",
+            "11",
+            "12"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "SUSW",
+        "Element": "SUSW",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "Channel ON": [
+            "ON",
+            "5",
+            "6",
+            "7",
+            "8"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "EU3W",
+        "Element": "EU3W",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "2"
+        ],
+        "Channel ON": [
+            "ON",
+            "2"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "EU4W",
+        "Element": "EU4W",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "3"
+        ],
+        "Channel ON": [
+            "ON",
+            "3"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "EU5W",
+        "Element": "EU5W",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "4",
+            "15"
+        ],
+        "Channel ON": [
+            "ON",
+            "4",
+            "15"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "EUSW",
+        "Element": "EUSW",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "2",
+            "3",
+            "4",
+            "15"
+        ],
+        "Channel ON": [
+            "ON",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "RAZV",
+        "Element": "RAZV",
+        "System": "",
+        "Comment": "",
+        "BANK": 95,
+        "Module": "1UR",
+        "Channel": [
+            "5"
+        ],
+        "Channel ON": [
+            "ON",
+            "5"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "MEXSW",
+        "Element": "MEXSW",
+        "System": "",
+        "Comment": "",
+        "BANK": 94,
+        "Module": "3UR",
+        "Channel": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "Channel ON": [
+            "ON",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "TU9W",
+        "Element": "TU9W",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "13"
+        ],
+        "Channel ON": [
+            "ON",
+            "13"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "TU8W",
+        "Element": "TU8W",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "14"
+        ],
+        "Channel ON": [
+            "ON",
+            "14"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "NU1W",
+        "Element": "NU1W",
+        "System": "",
+        "Comment": "",
+        "BANK": 96,
+        "Module": "2UR",
+        "Channel": [
+            "15"
+        ],
+        "Channel ON": [
+            "ON",
+            "15"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "U21W",
+        "Element": "U21W",
+        "System": "",
+        "Comment": "",
+        "BANK": 95,
+        "Module": "1UR",
+        "Channel": [
+            "4"
+        ],
+        "Channel ON": [
+            "ON",
+            "4"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "SR",
+        "Element": "SR",
+        "System": "",
+        "Comment": "",
+        "BANK": 93,
+        "Module": "5UR",
+        "Channel": [
+            "0"
+        ],
+        "Channel ON": [
+            "ON",
+            "0"
+        ]
+    },
+    {
+        "Class": "UR channel",
+        "Name": "URSR2",
+        "Element": "URSR2",
+        "System": "",
+        "Comment": "",
+        "BANK": 93,
+        "Module": "5UR",
+        "Channel": [
+            "1"
+        ],
+        "Channel ON": [
+            "ON",
+            "1"
+        ]
+    }
+]

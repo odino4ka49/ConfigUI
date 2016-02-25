@@ -14,7 +14,7 @@ def make_custom_sort(orders):
             l = [(k, process(v)) for (k, v) in stuff.items()]
             keys = set(stuff)
             for order in orders:
-                #if keys.issuperset(order):
+                if keys.issuperset(order):
                     return OrderedDict(sorted(l, key=lambda x: order.get(x[0], 0)))
             return OrderedDict(sorted(l))
         if isinstance(stuff, list):
@@ -94,57 +94,32 @@ def makeChannelObject(line):
     channel["Name"] = line[1]
     channel["Element"] = line[0]
     channel["Comment"] = ""
-    channel["System"] = "V4"
+    channel["System"] = abbr_to_group(line[1])
     channel["BANK"] = to_int(line[3])
     channel["Module"] = line[4]
-    channel["Channel"] = to_int(line[5])
-    channel["Cod/Value"] = to_float(line[6])
-    channel["Units"] = line[7]
-    channel["Max"] = to_float(line[8])
-    channel["Monit"] = abbr_to_boolean(line[9])
-    channel["MonitType"] = line[10]
-    channel["Deviation"] = to_float(line[11])
-    """for index in range(4,4+int(line[3]),2):
-        element["Channels"].append({
-            "OK": True,
-            abbr_to_channel(line[index+1]): line[index]
-        })"""
+    channel["Channel"] = []
+    channel["Channel ON"] = []
+    index = 6
+    while line[index]!="ON":
+        channel["Channel"].append(to_int(line[index]))
+        index+=1
+    index+=1
+    while index<len(line):
+        channel["Channel ON"].append(to_int(line[index]))
+        index+=1
     return channel
-
-def addAttributesToElement(element,line):
-    if line[12]!="NUL":
-        element["Efficiency"] = to_float(line[12])
-    if line[13]!="NUL":
-        element["Location"] = to_int(line[13])
-    if line[14]!="NUL":
-        element["Resistance"] = to_float(line[14])
-
-def findElement(elements,name):
-    result = next((x for x in elements if x["Name"] == name), None)
-    return result
 
 def saveJson(objects,name):
     with open(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+name, 'w') as outfile:
         json.dump(objects,outfile,indent=4, separators=(',', ': '))
 
-def getDataFile(name):
-    with open(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+name) as data_file:
-        data = json.load(data_file)
-    return data
 
-
-file_txt = getTextFile("V4CH.koi")
+file_txt = getTextFile("V4chUR.koi")
 py_channels = []
-elements = getDataFile("V4el.json")
-custom_sort = make_custom_sort([["Class", "Name", "Element", "System", "Comment", "BANK", "Module", "Channel", "Cod/Value", "Units", "Max", "Monit", "MonitType", "Deviation"]])
-el_sort = make_custom_sort([["Class","Name","System","Group","Type","Comment","Polarity","Efficiency","Location","Resistance","Channels"]])
+custom_sort = make_custom_sort([["Class", "Name", "Element", "System", "Comment", "BANK", "Module", "Channel", "Channel ON"]])
 for line_txt in file_txt:
     line_splitted = line_txt.split()
     py_object = makeChannelObject(line_splitted)
-    if line_splitted[2]=="C":
-        addAttributesToElement(findElement(elements,line_splitted[0]),line_splitted)
     py_channels.append(py_object)
 channels = custom_sort(py_channels)
-#saveJson(channels,"V4ch.json")
-elements_sorted = el_sort(elements)
-saveJson(elements_sorted,"V4eladd.json")
+saveJson(channels,"V4ur.json")

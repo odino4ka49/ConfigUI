@@ -222,7 +222,7 @@
       },
       "sort_field": "Channel",
       "display_attributes": {
-        "width": 70,
+        "width": 90,
         "height": 60,
         "positioning": "matrix",
         "matrix_type": "channels",

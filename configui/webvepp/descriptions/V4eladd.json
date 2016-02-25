@@ -6,10 +6,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -52,10 +53,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -78,10 +80,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -104,10 +107,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 1.66,
+        "Location": 19200,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -130,10 +135,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 1.66,
+        "Location": 17400,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -156,10 +163,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -202,10 +210,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -248,10 +257,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -274,10 +284,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 1.43,
+        "Location": 18304,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -300,10 +312,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -346,10 +359,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -368,10 +382,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -390,10 +405,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -424,10 +440,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -458,10 +475,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -492,10 +510,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -526,10 +545,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -560,10 +580,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -594,10 +615,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 21.0,
+        "Location": 20213,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -624,10 +647,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 0.75,
+        "Location": 26750,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -654,10 +679,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": -0.35,
+        "Location": 18504,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -684,10 +711,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 27137,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -714,10 +743,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 27534,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -744,10 +775,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 28032,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -774,10 +807,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 34200,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -804,10 +839,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.0,
+        "Location": 20851,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -834,10 +871,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.51,
+        "Location": 19406,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -864,10 +903,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.51,
+        "Location": 19006,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -894,10 +935,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 13.3,
+        "Location": 18892,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -924,10 +967,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 18504,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -954,10 +999,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 2400,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -984,10 +1031,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.0,
+        "Location": 15757,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1014,10 +1063,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.51,
+        "Location": 17202,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1044,10 +1095,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.51,
+        "Location": 17602,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1074,10 +1127,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 13.3,
+        "Location": 17716,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1104,10 +1159,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 18104,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1134,10 +1191,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 21.0,
+        "Location": 16395,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1164,10 +1223,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 0.75,
+        "Location": 9578,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1194,10 +1255,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 0.35,
+        "Location": 18104,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1224,10 +1287,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 9471,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1254,10 +1319,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 9074,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1284,10 +1351,12 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 126.0,
+        "Location": 8576,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1314,10 +1383,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 34200,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1344,10 +1415,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 2400,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1374,10 +1447,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 7.55,
+        "Location": 9798,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1404,10 +1479,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 7.55,
+        "Location": 8655,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1434,10 +1511,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 7.55,
+        "Location": 26968,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1464,10 +1543,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 7.55,
+        "Location": 28111,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1494,10 +1575,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1520,10 +1602,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1546,10 +1629,11 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1568,10 +1652,11 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1590,10 +1675,11 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1612,10 +1698,11 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1634,10 +1721,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1656,10 +1744,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1678,10 +1767,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1700,10 +1790,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1722,10 +1813,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1748,10 +1840,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1782,10 +1875,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1828,10 +1922,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1874,10 +1969,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1920,10 +2016,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -1966,10 +2063,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2008,10 +2106,11 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2054,10 +2153,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2072,10 +2173,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2090,10 +2193,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2108,10 +2213,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2126,10 +2233,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2144,10 +2253,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2162,10 +2273,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2180,10 +2293,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2198,10 +2313,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2216,10 +2333,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2234,10 +2353,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2252,10 +2373,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2270,10 +2393,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2288,10 +2413,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2306,10 +2433,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2324,10 +2453,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2342,10 +2473,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2360,10 +2493,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2378,10 +2513,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2396,10 +2533,11 @@
         "Group": "Magnetic System",
         "Type": "",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2414,10 +2552,11 @@
         "Group": "Magnetic System",
         "Type": "",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2432,10 +2571,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2450,10 +2591,12 @@
         "Group": "Electrostatics",
         "Type": "Electrostatics",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "U",
-                "OK": true
+                "OK": true,
+                "Control channel": "U"
             },
             {
                 "ADC channel": "UM",
@@ -2468,10 +2611,11 @@
         "Group": "Magnetic System",
         "Type": "Electrostatics",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2486,10 +2630,11 @@
         "Group": "Magnetic System",
         "Type": "",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2504,10 +2649,11 @@
         "Group": "Magnetic System",
         "Type": "Electrostatics",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2522,10 +2668,11 @@
         "Group": "Magnetic System",
         "Type": "Electrostatics",
         "Comment": null,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2540,10 +2687,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2558,10 +2707,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2576,10 +2727,12 @@
         "Group": "Magnetic System",
         "Type": "Main Structure",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 3,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2594,10 +2747,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 35634,
+        "Resistance": 1.64,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2616,10 +2772,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 34860,
+        "Resistance": 1.56,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2638,10 +2797,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 34115,
+        "Resistance": 1.06,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2660,10 +2822,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 33579,
+        "Resistance": 1.76,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2682,10 +2847,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 32864,
+        "Resistance": 1.75,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2704,10 +2872,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 32150,
+        "Resistance": 1.74,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2726,10 +2897,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.83,
+        "Location": 36350,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2748,10 +2922,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 35461,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2770,10 +2947,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 34890,
+        "Resistance": 1.53,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2792,10 +2972,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2814,10 +2996,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 33936,
+        "Resistance": 1.76,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2836,10 +3021,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.88,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2858,10 +3045,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 33222,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2880,10 +3070,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.18,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2902,10 +3094,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 32507,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2924,10 +3119,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.83,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2946,10 +3143,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 31792,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2968,10 +3168,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.79,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -2990,10 +3192,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 36237,
+        "Resistance": 1.77,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3012,10 +3217,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 36082,
+        "Resistance": 1.73,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3034,10 +3242,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 35189,
+        "Resistance": 2.45,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3056,10 +3267,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 35034,
+        "Resistance": 1.87,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3078,10 +3292,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 34294,
+        "Resistance": 1.59,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3100,10 +3317,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 33936,
+        "Resistance": 1.44,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3122,10 +3342,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 33579,
+        "Resistance": 1.56,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3144,10 +3367,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 33222,
+        "Resistance": 1.47,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3166,10 +3392,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 32864,
+        "Resistance": 1.53,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3188,10 +3417,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 32507,
+        "Resistance": 1.59,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3210,10 +3442,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 32150,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3232,10 +3467,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 31792,
+        "Resistance": 1.79,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3254,10 +3492,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 974,
+        "Resistance": 1.78,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3276,10 +3517,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.25,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3298,10 +3541,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.34,
+        "Resistance": 2.2,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3320,10 +3565,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 2493,
+        "Resistance": 1.13,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3342,10 +3590,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 3029,
+        "Resistance": 1.87,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3364,10 +3615,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 3744,
+        "Resistance": 1.94,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3386,10 +3640,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 4458,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3408,10 +3665,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.83,
+        "Location": 258,
+        "Resistance": 1.58,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3430,10 +3690,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.83,
+        "Location": 1147,
+        "Resistance": 1.63,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3452,10 +3715,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.83,
+        "Location": 1718,
+        "Resistance": 1.51,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3474,10 +3740,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3496,10 +3764,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 2672,
+        "Resistance": 1.86,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3518,10 +3789,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.86,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3540,10 +3813,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 3386,
+        "Resistance": 1.88,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3562,10 +3838,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.99,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3584,10 +3862,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 4101,
+        "Resistance": 1.81,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3606,10 +3887,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3628,10 +3911,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 4816,
+        "Resistance": 1.92,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3650,10 +3936,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.97,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3672,10 +3960,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 371,
+        "Resistance": 2.41,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3694,10 +3985,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 526,
+        "Resistance": 2.05,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3716,10 +4010,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 1419,
+        "Resistance": 1.8,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3738,10 +4035,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 1574,
+        "Resistance": 2.12,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3760,10 +4060,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 2314,
+        "Resistance": 1.54,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3782,10 +4085,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 2672,
+        "Resistance": 1.53,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3804,10 +4110,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 3029,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3826,10 +4135,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 3386,
+        "Resistance": 1.45,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3848,10 +4160,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 3744,
+        "Resistance": 1.73,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3870,10 +4185,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 4101,
+        "Resistance": 1.76,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3892,10 +4210,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 4458,
+        "Resistance": 1.68,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3914,10 +4235,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 4816,
+        "Resistance": 1.69,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3936,10 +4260,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 31435,
+        "Resistance": 2.03,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3958,10 +4285,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 30720,
+        "Resistance": 1.88,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -3980,10 +4310,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 30005,
+        "Resistance": 1.24,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4002,10 +4335,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 29291,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4024,10 +4360,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 28576,
+        "Resistance": 1.85,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4046,10 +4385,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 31077,
+        "Resistance": 1.95,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4068,10 +4410,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.85,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4090,10 +4434,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 30363,
+        "Resistance": 1.92,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4112,10 +4459,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4134,10 +4483,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 29648,
+        "Resistance": 2.01,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4156,10 +4508,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.98,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4178,10 +4532,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 28933,
+        "Resistance": 1.91,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4200,10 +4557,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.19,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4222,10 +4581,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 28219,
+        "Resistance": 1.89,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4244,10 +4606,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.56,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4266,10 +4630,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 31435,
+        "Resistance": 1.57,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4288,10 +4655,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 31077,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4310,10 +4680,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 30720,
+        "Resistance": 1.66,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4332,10 +4705,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 30363,
+        "Resistance": 1.5,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4354,10 +4730,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 30005,
+        "Resistance": 1.7,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4376,10 +4755,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 29648,
+        "Resistance": 1.55,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4398,10 +4780,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 29291,
+        "Resistance": 1.52,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4420,10 +4805,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 28933,
+        "Resistance": 1.54,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4442,10 +4830,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 28576,
+        "Resistance": 1.54,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4464,10 +4855,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 28219,
+        "Resistance": 1.77,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4486,10 +4880,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 27829,
+        "Resistance": 0.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4508,10 +4905,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 27412,
+        "Resistance": 0.98,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4530,10 +4930,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 28111,
+        "Resistance": 4.41,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4552,10 +4955,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 27613,
+        "Resistance": 4.45,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4574,10 +4980,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 26432,
+        "Resistance": 1.88,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4596,10 +5005,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 25717,
+        "Resistance": 1.81,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4618,10 +5030,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": -2.82,
+        "Location": 25003,
+        "Resistance": 1.95,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4640,10 +5055,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 24288,
+        "Resistance": 1.73,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4662,10 +5080,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 23573,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4684,10 +5105,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4706,10 +5129,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4728,10 +5153,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 26075,
+        "Resistance": 2.25,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4750,10 +5178,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.95,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4772,10 +5202,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 25360,
+        "Resistance": 1.97,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4794,10 +5227,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.95,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4816,10 +5251,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 24645,
+        "Resistance": 2.07,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4838,10 +5276,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.97,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4860,10 +5300,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 23930,
+        "Resistance": 1.99,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4882,10 +5325,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.01,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4904,10 +5349,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 23216,
+        "Resistance": 2.01,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4926,10 +5374,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.02,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4948,10 +5398,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 27369,
+        "Resistance": 4.5,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4970,10 +5423,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 26968,
+        "Resistance": 4.94,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -4992,10 +5448,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 27137,
+        "Resistance": 1.24,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5014,10 +5473,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 26760,
+        "Resistance": 1.05,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5036,10 +5498,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 26432,
+        "Resistance": 1.83,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5058,10 +5523,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 26075,
+        "Resistance": 1.81,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5080,10 +5548,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 25717,
+        "Resistance": 1.67,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5102,10 +5573,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 25360,
+        "Resistance": 1.76,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5124,10 +5598,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 25003,
+        "Resistance": 1.78,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5146,10 +5623,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 24645,
+        "Resistance": 1.81,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5168,10 +5648,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 24288,
+        "Resistance": 1.57,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5190,10 +5673,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 23930,
+        "Resistance": 1.66,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5212,10 +5698,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 23573,
+        "Resistance": 1.48,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5234,10 +5723,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 23216,
+        "Resistance": 1.79,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5256,10 +5748,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 5173,
+        "Resistance": 1.8,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5278,10 +5773,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 5888,
+        "Resistance": 1.72,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5300,10 +5798,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 6603,
+        "Resistance": 1.86,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5322,10 +5823,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 7317,
+        "Resistance": 1.78,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5344,10 +5848,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 8032,
+        "Resistance": 1.79,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5366,10 +5873,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5388,10 +5897,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 5531,
+        "Resistance": 1.94,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5410,10 +5922,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.89,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5432,10 +5946,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 6245,
+        "Resistance": 1.86,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5454,10 +5971,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.83,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5476,10 +5995,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 6960,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5498,10 +6020,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.09,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5520,10 +6044,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 7318,
+        "Resistance": 1.76,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5542,10 +6069,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.94,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5564,10 +6093,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 8389,
+        "Resistance": 1.86,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5586,10 +6118,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.82,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5608,10 +6142,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5630,10 +6166,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5652,10 +6190,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 5173,
+        "Resistance": 1.61,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5674,10 +6215,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 5531,
+        "Resistance": 1.58,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5696,10 +6240,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 5888,
+        "Resistance": 1.65,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5718,10 +6265,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 6245,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5740,10 +6290,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 6603,
+        "Resistance": 1.69,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5762,10 +6315,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 6960,
+        "Resistance": 1.59,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5784,10 +6340,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 7317,
+        "Resistance": 1.55,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5806,10 +6365,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 7675,
+        "Resistance": 1.59,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5828,10 +6390,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 8032,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5850,10 +6415,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 8389,
+        "Resistance": 1.57,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5872,10 +6440,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 8779,
+        "Resistance": 1.07,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5894,10 +6465,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 9196,
+        "Resistance": 1.15,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5916,10 +6490,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 8655,
+        "Resistance": 4.67,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5938,10 +6515,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 9153,
+        "Resistance": 4.7,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5960,10 +6540,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 10176,
+        "Resistance": 1.72,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -5982,10 +6565,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 10891,
+        "Resistance": 1.77,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6004,10 +6590,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 11605,
+        "Resistance": 1.74,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6026,10 +6615,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 12320,
+        "Resistance": 1.77,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6048,10 +6640,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 13035,
+        "Resistance": 1.87,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6070,10 +6665,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 10533,
+        "Resistance": 2.08,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6092,10 +6690,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.86,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6114,10 +6714,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 11248,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6136,10 +6739,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.01,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6158,10 +6763,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 11963,
+        "Resistance": 2.13,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6180,10 +6788,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.91,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6202,10 +6812,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 12678,
+        "Resistance": 1.93,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6224,10 +6837,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.89,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6246,10 +6861,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 13392,
+        "Resistance": 1.96,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6268,10 +6886,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 2.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6290,10 +6910,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 9397,
+        "Resistance": 4.65,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6312,10 +6935,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 5.45,
+        "Location": 9798,
+        "Resistance": 4.67,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6334,10 +6960,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 9471,
+        "Resistance": 1.01,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6356,10 +6985,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Location": 9848,
+        "Resistance": 1.01,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6378,10 +7010,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 10176,
+        "Resistance": 1.67,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6400,10 +7035,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 10533,
+        "Resistance": 1.59,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6422,10 +7060,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 10891,
+        "Resistance": 1.58,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6444,10 +7085,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 11248,
+        "Resistance": 1.65,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6466,10 +7110,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 11605,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6488,10 +7135,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 11963,
+        "Resistance": 1.96,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6510,10 +7160,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 12320,
+        "Resistance": 1.79,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6532,10 +7185,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 12678,
+        "Resistance": 1.71,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6554,10 +7210,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 13035,
+        "Resistance": 1.69,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6576,10 +7235,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 13392,
+        "Resistance": 1.69,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6598,10 +7260,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 22858,
+        "Resistance": 1.83,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6620,10 +7285,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 22144,
+        "Resistance": 1.79,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6642,10 +7310,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 21429,
+        "Resistance": 1.2,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6664,10 +7335,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 21228,
+        "Resistance": 1.49,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6686,10 +7360,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 20273,
+        "Resistance": 1.63,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6708,10 +7385,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": -1.54,
+        "Location": 20303,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6730,10 +7410,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 22501,
+        "Resistance": 1.96,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6752,10 +7435,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.98,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6774,10 +7459,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 21786,
+        "Resistance": 1.91,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6796,10 +7484,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.88,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6818,10 +7508,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 21198,
+        "Resistance": 1.47,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6840,10 +7533,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 22858,
+        "Resistance": 1.66,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6862,10 +7558,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 22501,
+        "Resistance": 1.56,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6884,10 +7583,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 22144,
+        "Resistance": 1.71,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6906,10 +7608,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 21768,
+        "Resistance": 1.66,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6928,10 +7633,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 21429,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6950,10 +7658,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 21108,
+        "Resistance": 1.81,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6972,10 +7683,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 20646,
+        "Resistance": 1.88,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -6994,10 +7708,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 20069,
+        "Resistance": 1.89,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7016,10 +7733,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 30.0,
+        "Location": 18779,
+        "Resistance": 1.39,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7038,10 +7758,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 120.0,
+        "Location": 18569,
+        "Resistance": 2.34,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7060,10 +7783,13 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 563.0,
+        "Location": 21261,
+        "Resistance": 1.51,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7082,10 +7808,13 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 563.0,
+        "Location": 20243,
+        "Resistance": 1.0,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7104,10 +7833,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 13750,
+        "Resistance": 1.65,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7126,10 +7858,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 2.82,
+        "Location": 14464,
+        "Resistance": 1.66,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7148,10 +7883,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.41,
+        "Location": 15179,
+        "Resistance": 1.18,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7170,10 +7908,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 15380,
+        "Resistance": 1.45,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7192,10 +7933,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 16305,
+        "Resistance": 1.34,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7214,10 +7958,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 14107,
+        "Resistance": 1.78,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7236,10 +7983,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.89,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7258,10 +8007,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.44,
+        "Location": 14822,
+        "Resistance": 1.61,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7280,10 +8032,12 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.0,
+        "Resistance": 1.76,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7302,10 +8056,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 15410,
+        "Resistance": 1.43,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7324,10 +8081,13 @@
         "Group": "Magnetic System",
         "Type": "Orbit Correction",
         "Comment": null,
+        "Efficiency": 1.54,
+        "Location": 16335,
+        "Resistance": 1.41,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7346,10 +8106,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 13750,
+        "Resistance": 1.49,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7368,10 +8131,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 14107,
+        "Resistance": 1.52,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7390,10 +8156,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 14464,
+        "Resistance": 1.43,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7412,10 +8181,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 14822,
+        "Resistance": 1.39,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7434,10 +8206,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 128.0,
+        "Location": 15179,
+        "Resistance": 1.94,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7456,10 +8231,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 15500,
+        "Resistance": 1.69,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7478,10 +8256,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 15962,
+        "Resistance": 1.71,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7500,10 +8281,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 407.0,
+        "Location": 16539,
+        "Resistance": 1.62,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7522,10 +8306,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 30.0,
+        "Location": 17829,
+        "Resistance": 0.96,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7544,10 +8331,13 @@
         "Group": "Magnetic System",
         "Type": "Gradient Correction",
         "Comment": null,
+        "Efficiency": 120.0,
+        "Location": 18039,
+        "Resistance": 2.32,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7566,10 +8356,13 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 563.0,
+        "Location": 15347,
+        "Resistance": 1.39,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7588,10 +8381,13 @@
         "Group": "Magnetic System",
         "Type": "Non-linearity Correction",
         "Comment": null,
+        "Efficiency": 563.0,
+        "Location": 16365,
+        "Resistance": 1.45,
         "Channels": [
             {
-                "Control channel": "I",
-                "OK": true
+                "OK": true,
+                "Control channel": "I"
             },
             {
                 "ADC channel": "IM",
@@ -7610,10 +8406,11 @@
         "Group": "RF System",
         "Type": "",
         "Comment": null,
+        "Efficiency": 1.0,
         "Channels": [
             {
-                "Control channel": "URF",
-                "OK": true
+                "OK": true,
+                "Control channel": "URF"
             },
             {
                 "ADC channel": "URFM",
@@ -7630,8 +8427,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "JRF",
-                "OK": true
+                "OK": true,
+                "Control channel": "JRF"
             },
             {
                 "ADC channel": "JRFM",
@@ -7648,8 +8445,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "TR",
-                "OK": true
+                "OK": true,
+                "Control channel": "TR"
             },
             {
                 "ADC channel": "TRM",
@@ -7666,8 +8463,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "TP",
-                "OK": true
+                "OK": true,
+                "Control channel": "TP"
             },
             {
                 "ADC channel": "TPM",
@@ -7708,8 +8505,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "TX",
-                "OK": true
+                "OK": true,
+                "Control channel": "TX"
             },
             {
                 "ADC channel": "TXM",
@@ -7750,8 +8547,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "PH",
-                "OK": true
+                "OK": true,
+                "Control channel": "PH"
             }
         ]
     },
@@ -7762,10 +8559,11 @@
         "Group": "RF System",
         "Type": "",
         "Comment": null,
+        "Efficiency": 1.0,
         "Channels": [
             {
-                "Control channel": "-FR",
-                "OK": true
+                "OK": true,
+                "Control channel": "-FR"
             }
         ]
     },
@@ -7776,10 +8574,11 @@
         "Group": "RF System",
         "Type": "",
         "Comment": null,
+        "Efficiency": 1.0,
         "Channels": [
             {
-                "Control channel": "NSEP",
-                "OK": true
+                "OK": true,
+                "Control channel": "NSEP"
             }
         ]
     },
@@ -7792,8 +8591,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX11",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX11"
             },
             {
                 "ADC channel": "MEX11M",
@@ -7810,8 +8609,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX12",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX12"
             },
             {
                 "ADC channel": "MEX12M",
@@ -7828,8 +8627,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX13",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX13"
             },
             {
                 "ADC channel": "MEX13M",
@@ -7846,8 +8645,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX21",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX21"
             },
             {
                 "ADC channel": "MEX21M",
@@ -7864,8 +8663,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX22",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX22"
             },
             {
                 "ADC channel": "MEX22M",
@@ -7882,8 +8681,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX23",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX23"
             },
             {
                 "ADC channel": "MEX23M",
@@ -7900,8 +8699,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX31",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX31"
             },
             {
                 "ADC channel": "MEX31M",
@@ -7918,8 +8717,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX32",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX32"
             },
             {
                 "ADC channel": "MEX32M",
@@ -7936,8 +8735,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX33",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX33"
             },
             {
                 "ADC channel": "MEX33M",
@@ -7954,8 +8753,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX41",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX41"
             },
             {
                 "ADC channel": "MEX41M",
@@ -7972,8 +8771,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX42",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX42"
             },
             {
                 "ADC channel": "MEX42M",
@@ -7990,8 +8789,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX43",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX43"
             },
             {
                 "ADC channel": "MEX43M",
@@ -8008,8 +8807,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX51",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX51"
             },
             {
                 "ADC channel": "MEX51M",
@@ -8026,8 +8825,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX52",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX52"
             },
             {
                 "ADC channel": "MEX52M",
@@ -8044,8 +8843,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX53",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX53"
             },
             {
                 "ADC channel": "MEX53M",
@@ -8062,8 +8861,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX61",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX61"
             },
             {
                 "ADC channel": "MEX61M",
@@ -8080,8 +8879,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX62",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX62"
             },
             {
                 "ADC channel": "MEX62M",
@@ -8098,8 +8897,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "MEX63",
-                "OK": true
+                "OK": true,
+                "Control channel": "MEX63"
             },
             {
                 "ADC channel": "MEX63M",
@@ -8116,8 +8915,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "RAZU",
-                "OK": true
+                "OK": true,
+                "Control channel": "RAZU"
             },
             {
                 "ADC channel": "RAZUM",
@@ -8134,8 +8933,8 @@
         "Comment": null,
         "Channels": [
             {
-                "Control channel": "RAZF",
-                "OK": true
+                "OK": true,
+                "Control channel": "RAZF"
             },
             {
                 "ADC channel": "RAZFM",

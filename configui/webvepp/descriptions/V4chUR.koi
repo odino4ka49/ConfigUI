@@ -1,0 +1,20 @@
+TRON    TRON     U  94  3UR     CH  2   3   ON  2
+TPON    TPON     U  94  3UR     CH  2   3   ON
+TXON    TXON     U  94  3UR     CH  2   3   ON  3
+ONRF    ONRF     U  94  3UR     CH  0   1   ON  0
+OFRF    OFRF     U  94  3UR     CH  0   1   ON  1
+NUSW    NUSW     U  95  1UR     CH  0   1   2   4   ON  0   1   2   4
+TUSW    TUSW     U  96  2UR     CH  9   10  11  12  ON  9   10  11  12
+SUSW    SUSW     U  96  2UR     CH  5   6   7   8   ON  5   6   7   8
+EU3W    EU3W     U  96  2UR     CH  2   ON  2
+EU4W    EU4W     U  96  2UR     CH  3   ON  3
+EU5W    EU5W     U  96  2UR     CH  4   15  ON  4   15
+EUSW    EUSW     U  96  2UR     CH  2   3   4   15  ON  2   3
+RAZV    RAZV     U  95  1UR     CH  5   ON  5
+MEXSW   MEXSW    U  94  3UR     CH  4   5   6   7   8   9   ON  4   5   6   7   8   9
+TU9W    TU9W     U  96  2UR     CH  13  ON  13
+TU8W    TU8W     U  96  2UR     CH  14  ON  14
+NU1W    NU1W     U  96  2UR     CH  15  ON  15
+U21W    U21W     U  95  1UR     CH  4   ON  4
+SR      SR       U  93  5UR     CH  0   ON  0
+URSR2   URSR2    U  93  5UR     CH  1   ON  1
