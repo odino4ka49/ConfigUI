@@ -512,8 +512,8 @@
       "display_filter": {
         "min": [
           "BANK",
-          "Name",
-          "Element"
+          "Element",
+          "Name"
         ],
         "max": [
           "BANK",

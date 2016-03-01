@@ -39,7 +39,7 @@ def abbr_to_type(argument):
         "COOR": "Orbit Correction",
         "COGR": "Gradient Correction",
         "ELST": "Electrostatics",
-        "RFRF": "RF System",
+        "RFSY": "RF System",
         "DOPM": "Measurements"
     }
     return switcher.get(argument, "")

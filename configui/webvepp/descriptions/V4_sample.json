@@ -252,9 +252,17 @@
         }
       },
       {
-        "name": "Orbit",
+        "name": "Orbit X",
         "filter": {
-          "Type": ["Orbit Correction"]
+          "Type": ["Orbit Correction"],
+          "Name": "X"
+        }
+      },
+      {
+        "name": "Orbit Z",
+        "filter": {
+          "Type": ["Orbit Correction"],
+          "Name": "Z"
         }
       },
       {
@@ -562,8 +570,14 @@
       "display_filter": {
         "min": [
           "BANK",
+          "Element",
           "Name",
-          "Element"
+          "Cod/Value",
+          "Units",
+          "MonitType",
+          "Deviation",
+          "Module",
+          "Channel"
         ],
         "max": [
           "BANK",

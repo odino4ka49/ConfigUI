@@ -12,6 +12,7 @@ import json
 import inspect, os
 import math
 import copy
+import re
 
 tree_data = {}
 tree_template = {}
@@ -823,7 +824,7 @@ def filterObjects(data,rules):
             if rules[r]==None:
                 result = False
             elif type(rules[r]) is unicode:
-                if r in o and o[r]!=rules[r]:
+                if r in o and not re.search(rules[r],o[r]):#o[r]!=rules[r]:
                     result = False
             elif type(rules[r]) is list:
                 if r in o and o[r] not in rules[r]:

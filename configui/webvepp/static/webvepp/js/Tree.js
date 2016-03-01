@@ -556,9 +556,6 @@ WEBVEPP.Tree = function(params){
 
             },
             drawAdditionalLinks = function(links){
-                if(!links || links.length==0)
-                    return;
-
                 var self = this;
 
                 var link = svg.selectAll(".link.additional")
@@ -609,22 +606,16 @@ WEBVEPP.Tree = function(params){
                     });
 
                 link_remove = link.exit()
-                    .transition()
-                    .duration(duration)
                     .remove();
 
-                link_remove.select("path")
+                /*link_remove.select("path")
                   .attr("d", function(d) {
                     var o = {x: 0, y:0};
                     return transitionElbow({source: o, target: o});
                   });
 
                 link_remove.select("text")
-                    .attr("transform", function(d) {
-                        return "translate(" +
-                            0 + "," +
-                            0 + ")";
-                    });
+                    .remove();*/
 
             },
             drawDetails = function (){

@@ -20,7 +20,6 @@ WEBVEPP.FilterBar = function(){
         button_update
             .on('click', function(d){
                $(document).trigger("reload_tree",d.name);
-               console.log(d);
             })
             .text(function(d) {
                 if(d.name)

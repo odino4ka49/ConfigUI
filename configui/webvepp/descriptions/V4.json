@@ -24361,7 +24361,7 @@
       "Name": "-URRF",
       "System": "V4",
       "Group": "Magnetic System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Location": 3,
       "Channels": [
@@ -30137,7 +30137,7 @@
       "Name": "URF",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Efficiency": 1.0,
       "Channels": [
@@ -30156,7 +30156,7 @@
       "Name": "JRF",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30174,7 +30174,7 @@
       "Name": "TR",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30192,7 +30192,7 @@
       "Name": "TP",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30234,7 +30234,7 @@
       "Name": "TX",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30276,7 +30276,7 @@
       "Name": "PH",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30290,7 +30290,7 @@
       "Name": "-FR",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Efficiency": 1.0,
       "Channels": [
@@ -30305,7 +30305,7 @@
       "Name": "NSEP",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Efficiency": 1.0,
       "Channels": [
@@ -30320,7 +30320,7 @@
       "Name": "MEX11",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30338,7 +30338,7 @@
       "Name": "MEX12",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30356,7 +30356,7 @@
       "Name": "MEX13",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30374,7 +30374,7 @@
       "Name": "MEX21",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30392,7 +30392,7 @@
       "Name": "MEX22",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30410,7 +30410,7 @@
       "Name": "MEX23",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30428,7 +30428,7 @@
       "Name": "MEX31",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30446,7 +30446,7 @@
       "Name": "MEX32",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30464,7 +30464,7 @@
       "Name": "MEX33",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30482,7 +30482,7 @@
       "Name": "MEX41",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30500,7 +30500,7 @@
       "Name": "MEX42",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30518,7 +30518,7 @@
       "Name": "MEX43",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30536,7 +30536,7 @@
       "Name": "MEX51",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30554,7 +30554,7 @@
       "Name": "MEX52",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30572,7 +30572,7 @@
       "Name": "MEX53",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30590,7 +30590,7 @@
       "Name": "MEX61",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30608,7 +30608,7 @@
       "Name": "MEX62",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30626,7 +30626,7 @@
       "Name": "MEX63",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30644,7 +30644,7 @@
       "Name": "RAZU",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30662,7 +30662,7 @@
       "Name": "RAZF",
       "System": "V4",
       "Group": "RF System",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30824,7 +30824,7 @@
       "Name": "TRON",
       "System": "V4",
       "Group": "Relays",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30838,7 +30838,7 @@
       "Name": "TPON",
       "System": "V4",
       "Group": "Relays",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30852,7 +30852,7 @@
       "Name": "TXON",
       "System": "V4",
       "Group": "Relays",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30866,7 +30866,7 @@
       "Name": "ONRF",
       "System": "V4",
       "Group": "Relays",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -30880,7 +30880,7 @@
       "Name": "OFRF",
       "System": "V4",
       "Group": "Relays",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
@@ -31006,7 +31006,7 @@
       "Name": "MEXSW",
       "System": "V4",
       "Group": "Relays",
-      "Type": "",
+      "Type": "RF System",
       "Comment": null,
       "Channels": [
           {
