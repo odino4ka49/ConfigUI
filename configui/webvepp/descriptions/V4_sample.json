@@ -286,7 +286,7 @@
       {
         "name": "Aux",
         "filter": {
-          "Type": ["Measurements","Controls"]
+          "Type": ["Measurements","Controls",""]
         }
       },
       {
@@ -382,7 +382,7 @@
         "Class": "Hand",
         "type": "matrix_equation",
         "open_extra": [150,150],
-        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements"]
+        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements","Elements","BANK"]
       }
     },
     "level2": {
@@ -401,7 +401,8 @@
         "min": [
           "Name",
           "Module",
-          "Channel"
+          "Channel",
+          "Channel ON"
         ],
         "max": [
           "Class",
@@ -412,6 +413,7 @@
           "BANK",
           "Module",
           "Channel",
+          "Channel ON",
           "Cod/Value",
           "Units",
           "Max",

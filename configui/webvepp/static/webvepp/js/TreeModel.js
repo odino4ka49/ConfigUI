@@ -79,6 +79,7 @@ WEBVEPP.TreeModel = function(settings){
                 },
                 success: function(data){
                     node._parents = data[0];
+                    console.log(data[0]);
                     node._children = data[1];
                     if(data[3]){
                         node._parents.push(data[3]);

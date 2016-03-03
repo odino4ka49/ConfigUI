@@ -324,7 +324,7 @@
         "Class": "Hand",
         "type": "matrix_equation",
         "open_extra": [150,150],
-        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements"]
+        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements","Elements","BANK"]
       }
     },
     "level2": {
@@ -513,7 +513,13 @@
         "min": [
           "BANK",
           "Element",
-          "Name"
+          "Name",
+          "Cod/Value",
+          "Units",
+          "MonitType",
+          "Deviation",
+          "Module",
+          "Channel"
         ],
         "max": [
           "BANK",

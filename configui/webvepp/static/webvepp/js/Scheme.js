@@ -11,26 +11,23 @@ WEBVEPP.Scheme = function(settings){
             svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
         }),
 
-        loadScheme = function(){
-            /*$(document).trigger("set_loading_cursor");
-            $.ajax({
-                type: "GET",
-                data: {scheme_name: JSON.stringify("Chan_V3-V4_scheme-no_lines_black") },
-                url: WEBVEPP.serveradr()+"webvepp/getSchemeData",
-                //accepts: "application/xml",
-                error: function(xhr, ajaxOptions, thrownError) {
-                    $(document).trigger("unset_loading_cursor");
-                    console.log(xhr);
-                    $(document).trigger("error_message",thrownError);
-                },
-                success: function(data){
-                    scheme = data;
-                    console.log("hi");
-                    $(document).trigger("unset_loading_cursor");
+        getSchemeName = function(){
+            var system_name = settings.getSystemName();
+            switch(system_name){
+                case "CHAN":
+                    return "Chan_V3-V4_scheme_bbg"
+                case "V4":
+                    return null
+                default:
+                    return null
                 }
-            });*/
+        },
+
+        loadScheme = function(scheme_name){
             var parser = new DOMParser();
-            d3.xml(WEBVEPP.serveradr()+"static/webvepp/bg/"+"Chan_V3-V4_scheme_bbg.svg", "image/svg+xml", function(error, xml) {
+            if(!scheme_name)
+                return;
+            d3.xml(WEBVEPP.serveradr()+"static/webvepp/bg/"+scheme_name+".svg", "image/svg+xml", function(error, xml) {
                 if (error) throw error;
                 var defs = xml.documentElement.getElementById("defs");
                 document.getElementById("schemeSVG").appendChild(defs);
@@ -60,7 +57,7 @@ WEBVEPP.Scheme = function(settings){
         .call(zoom)
         .append('g')
         .attr('id','schemeSVG');
-    loadScheme();
+    loadScheme(getSchemeName());
 
     return {
     };

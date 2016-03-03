@@ -767,12 +767,12 @@ WEBVEPP.Tree = function(params){
     };
     function collapse(person){
         person.collapsed = true;
-            if(person._parents){
-                person._parents.forEach(collapse);
-            }
-            if(person._children){
-                person._children.forEach(collapse);
+        /*if(person._parents){
+            person._parents.forEach(collapse);
         }
+        if(person._children){
+            person._children.forEach(collapse);
+        }*/
     };
     function uncollapse(person){
         person.collapsed = false;
@@ -899,6 +899,12 @@ WEBVEPP.Tree = function(params){
             text += borders ? matrixToTableReversed(attributes[4]):attributes[4][0];
             text += "</td><td>x</td><td>";
             text += borders ? matrixToTable(attributes[5]):attributes[5][0];
+            text += "</td></tr></table><table><tr><td>";
+        }
+        if(attributes[7]){
+            text += borders ? matrixToTable(attributes[6]):attributes[6][0];
+            text += "</td><td>=</td><td>";
+            text += borders ? matrixToTable(attributes[7]):attributes[7][0];
         }
         text += "</td></tr></table>";
         return text;
