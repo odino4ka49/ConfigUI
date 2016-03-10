@@ -880,210 +880,210 @@
   },
   {
     "Class": "Module",
-    "Name": "01САРI1",
+    "Name": "01CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EL1"
   },
   {
     "Class": "Module",
-    "Name": "02САРI1",
+    "Name": "02CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EL2"
   },
   {
     "Class": "Module",
-    "Name": "03САРI1",
+    "Name": "03CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "NEM"
   },
   {
     "Class": "Module",
-    "Name": "04САРI1",
+    "Name": "04CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "SEM"
   },
   {
     "Class": "Module",
-    "Name": "05САРI1",
+    "Name": "05CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EL3"
   },
   {
     "Class": "Module",
-    "Name": "06САРI1",
+    "Name": "06CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EL4"
   },
   {
     "Class": "Module",
-    "Name": "07САРI1",
+    "Name": "07CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EZM"
   },
   {
     "Class": "Module",
-    "Name": "08САРI1",
+    "Name": "08CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EM3"
   },
   {
     "Class": "Module",
-    "Name": "09САРI1",
+    "Name": "09CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "EL5"
   },
   {
     "Class": "Module",
-    "Name": "10САРI1",
+    "Name": "10CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "NIL"
   },
   {
     "Class": "Module",
-    "Name": "11САРI1",
+    "Name": "11CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "SIL"
   },
   {
     "Class": "Module",
-    "Name": "12САРI1",
+    "Name": "12CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "FS1"
   },
   {
     "Class": "Module",
-    "Name": "13САРI1",
+    "Name": "13CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "FS2"
   },
   {
     "Class": "Module",
-    "Name": "14САРI1",
+    "Name": "14CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "DS1"
   },
   {
     "Class": "Module",
-    "Name": "15САРI1",
+    "Name": "15CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "DS2"
   },
   {
     "Class": "Module",
-    "Name": "16САРI1",
+    "Name": "16CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "NTW"
   },
   {
     "Class": "Module",
-    "Name": "17САРI1",
+    "Name": "17CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "STW"
   },
   {
     "Class": "Module",
-    "Name": "18САРI1",
+    "Name": "18CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "D7"
   },
   {
     "Class": "Module",
-    "Name": "19САРI1",
+    "Name": "19CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "TL1"
   },
   {
     "Class": "Module",
-    "Name": "20САРI1",
+    "Name": "20CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "TL2"
   },
   {
     "Class": "Module",
-    "Name": "21САРI1",
+    "Name": "21CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "TL3"
   },
   {
     "Class": "Module",
-    "Name": "22САРI1",
+    "Name": "22CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "TL4"
   },
   {
     "Class": "Module",
-    "Name": "23САРI1",
+    "Name": "23CAPI1",
     "Module Type": "ЦАПИ-1",
     "System": "V4",
     "Comment": "H"
   },
   {
     "Class": "Module",
-    "Name": "01САРI16",
+    "Name": "01CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "NE UP"
   },
   {
     "Class": "Module",
-    "Name": "02САРI16",
+    "Name": "02CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "NE DOWN"
   },
   {
     "Class": "Module",
-    "Name": "03САРI16",
+    "Name": "03CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "SE UP"
   },
   {
     "Class": "Module",
-    "Name": "04САРI16",
+    "Name": "04CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "SE DOWN"
   },
   {
     "Class": "Module",
-    "Name": "05САРI16",
+    "Name": "05CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "S1 UP"
   },
   {
     "Class": "Module",
-    "Name": "06САРI16",
+    "Name": "06CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "S1 DOWN"
   },
   {
     "Class": "Module",
-    "Name": "07САРI16",
+    "Name": "07CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "S2 UP"
@@ -1097,21 +1097,21 @@
   },
   {
     "Class": "Module",
-    "Name": "09САРI16",
+    "Name": "09CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "Электросатика 1"
   },
   {
     "Class": "Module",
-    "Name": "10САРI16",
+    "Name": "10CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "Электросатика 2"
   },
   {
     "Class": "Module",
-    "Name": "11САРI16",
+    "Name": "11CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ТИРы 1"
@@ -1125,91 +1125,91 @@
   },
   {
     "Class": "Module",
-    "Name": "13САРI16",
+    "Name": "13CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ТИРы 3"
   },
   {
     "Class": "Module",
-    "Name": "14САРI16",
+    "Name": "14CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ТИРы 4"
   },
   {
     "Class": "Module",
-    "Name": "15САРI16",
+    "Name": "15CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ТИРы 5"
   },
   {
     "Class": "Module",
-    "Name": "16САРI16",
+    "Name": "16CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "NT UP"
   },
   {
     "Class": "Module",
-    "Name": "17САРI16",
+    "Name": "17CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "NT DOWN"
   },
   {
     "Class": "Module",
-    "Name": "18САРI16",
+    "Name": "18CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ST UP"
   },
   {
     "Class": "Module",
-    "Name": "19САРI16",
+    "Name": "19CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ST DOWN"
   },
   {
     "Class": "Module",
-    "Name": "20САРI16",
+    "Name": "20CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "N1 UP"
   },
   {
     "Class": "Module",
-    "Name": "21САРI16",
+    "Name": "21CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "N1 DOWN"
   },
   {
     "Class": "Module",
-    "Name": "22САРI16",
+    "Name": "22CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "N2 UP"
   },
   {
     "Class": "Module",
-    "Name": "23САРI16",
+    "Name": "23CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "N2 DOWN"
   },
   {
     "Class": "Module",
-    "Name": "24САРI16",
+    "Name": "24CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "URF"
   },
   {
     "Class": "Module",
-    "Name": "25САРI16",
+    "Name": "25CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "MEX"

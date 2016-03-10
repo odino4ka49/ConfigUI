@@ -250,7 +250,7 @@
       "System"
     ],
     "components": "Modules",
-    "component_ID": "Address",
+    "component_ID": "ID",
     "component_types": [
       "Module"
     ],

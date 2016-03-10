@@ -481,7 +481,7 @@
       "level": 1,
       "filter": {
         "Class": [
-          "CAMAC","Serial"
+          "CAMAC","Serial","MilStd"
         ]
       },
       "sort_field": "Name",

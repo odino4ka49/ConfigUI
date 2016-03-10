@@ -289,6 +289,7 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 if link != {}:
                     template = getTemplate(node)
                     if template["component_ID"]!=None:
+                        print template["component_ID"],link
                         n["link_id"] = link[template["component_ID"]]
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
