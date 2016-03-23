@@ -180,10 +180,11 @@ def parseAttributes(template,object,attr_type="min"):
                     }]
             elif (type(field) is dict) and (field["value"][0]=="&"):
                 value = getValueByPath(object,field["value"])
-                attrs += [{
-                    "key": field["key"],
-                    "value": value
-                }]
+                if value!=None:
+                    attrs += [{
+                        "key": field["key"],
+                        "value": value
+                    }]
             elif (type(field) is dict) and ("to_array" in field):
                 field_array = getValuesByPath(object,field["to_array"]["Path"])
                 if field["to_array"]["Operation"]=="sum":
@@ -289,7 +290,6 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 if link != {}:
                     template = getTemplate(node)
                     if template["component_ID"]!=None:
-                        print template["component_ID"],link
                         n["link_id"] = link[template["component_ID"]]
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
@@ -826,8 +826,12 @@ def filterObjects(data,rules):
             if rules[r]==None:
                 result = False
             elif type(rules[r]) is unicode:
-                if r in o and not re.search(rules[r],o[r]):#o[r]!=rules[r]:
-                    result = False
+                if rules[r].startswith("has"):
+                    if r in o and not re.search(rules[r][3:],o[r]):
+                        result = False
+                else:
+                    if r in o and o[r]!=rules[r]:
+                        result = False
             elif type(rules[r]) is list:
                 if r in o and o[r] not in rules[r]:
                     result = False
