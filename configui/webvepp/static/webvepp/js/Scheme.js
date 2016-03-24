@@ -17,7 +17,7 @@ WEBVEPP.Scheme = function(settings){
                 case "CHAN":
                     return "Chan_V3-V4_scheme_bbg"
                 case "V4":
-                    return null
+                    return "vepp4_main"
                 default:
                     return null
                 }
