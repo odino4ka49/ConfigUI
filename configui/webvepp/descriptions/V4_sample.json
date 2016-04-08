@@ -608,6 +608,16 @@
     }
   },
   {
+    "name": "Scheme",
+    "type": "list",
+    "schemes": {
+      "Main": "vepp4_main",
+      "Non-linear": "vepp4_RF_elstat_non-linear",
+      "Orbit": "vepp4_corr_X_Z",
+      "Gradient": "vepp4_gradient"
+    }
+  },
+  {
     "name": "Tool_modules",
     "type": "list",
     "root": {

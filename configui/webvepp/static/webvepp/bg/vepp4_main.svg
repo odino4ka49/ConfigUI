@@ -142,9 +142,9 @@ viewBox="0 0 297 210"
     .fil38 {fill:url(#id83)}
     .fil72 {fill:url(#id84)}
     .fil36 {fill:url(#id85)}
-    .fnt2 {font-weight:bold;font-size:3.175;font-family:'Arial'}
-    .fnt0 {font-weight:bold;font-size:3.5278;font-family:'Arial'}
-    .fnt1 {font-weight:bold;font-size:3.9429;font-family:'Arial'}
+    .fnt2 {font-weight:bold;font-size:3.175px;font-family:'Arial'}
+    .fnt0 {font-weight:bold;font-size:3.5278px;font-family:'Arial'}
+    .fnt1 {font-weight:bold;font-size:3.9429px;font-family:'Arial'}
    ]]>
   </style>
   <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="106.254" y1="113.617" x2="192.411" y2="75.9037">

@@ -199,10 +199,10 @@ viewBox="0 0 297 210"
     .fil13 {fill:url(#id143)}
     .fil0 {fill:url(#id144)}
     .fil117 {fill:url(#id145)}
-    .fnt2 {font-weight:bold;font-size:3.175;font-family:'Arial'}
-    .fnt3 {font-weight:bold;font-size:3.4802;font-family:'Arial'}
-    .fnt0 {font-weight:bold;font-size:3.5278;font-family:'Arial'}
-    .fnt1 {font-weight:bold;font-size:3.9429;font-family:'Arial'}
+    .fnt2 {font-weight:bold;font-size:3.175px;font-family:'Arial'}
+    .fnt3 {font-weight:bold;font-size:3.4802px;font-family:'Arial'}
+    .fnt0 {font-weight:bold;font-size:3.5278px;font-family:'Arial'}
+    .fnt1 {font-weight:bold;font-size:3.9429px;font-family:'Arial'}
    ]]>
   </style>
   <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="19.8261" y1="123.796" x2="19.8261" y2="130.113">
@@ -1295,9 +1295,11 @@ viewBox="0 0 297 210"
     <text x="148.5" y="105" id="_41153176" class="fil11 fnt0">NRG23</text>
    </g>
   </g>
-  <g transform="matrix(0.80799 -0.589196 0.589196 0.80799 -162.506 157.938)">
-   <text x="148.5" y="105"  class="fil11 fnt0">NRG24</text>
-  </g>
+  <g id="_72462296" link="NRG24" class="link">
+   <polygon id="_43517872" class="fil92 str0" points="29.0497,145.327 30.3007,147.059 32.3413,145.585 31.0903,143.853 "/>
+   <g transform="matrix(0.80799 -0.589196 0.589196 0.80799 -162.506 157.938)">
+    <text x="148.5" y="105" id="_72462320" class="fil11 fnt0">NRG24</text>
+   </g>
   <polygon class="fil93 str0" points="30.7525,147.685 34.6838,151.942 36.5329,150.234 32.6016,145.977 "/>
   <polygon class="fil94 str0" points="35.0703,152.524 39.2363,156.552 40.9857,154.743 36.8197,150.715 "/>
   <g id="_77440304" link="NRG25" class="link" >
