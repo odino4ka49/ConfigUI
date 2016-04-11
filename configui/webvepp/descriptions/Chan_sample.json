@@ -538,9 +538,12 @@
   {
     "name": "Scheme",
     "type": "single",
-    "schemes": {
-      "Main": "Chan_V3-V4_scheme_bbg"
-    }
+    "schemes": [
+      {
+        "name": "Main",
+        "filename": "Chan_V3-V4_scheme_bbg"
+      }
+    ]
   },
   {
     "name": "Tool_modules",

@@ -756,6 +756,8 @@ def getSample():
         tree_sample_name = "Chan_banks"
     elif sample_name == "tool_modules":
         tree_sample_name = "Tool_modules"
+    elif sample_name == "Scheme":
+        tree_sample_name = sample_name
     if system_name not in tree_sample:
         if system_name == "CHAN":
             tree_sample[system_name] = getDataFile("Chan_sample.json")

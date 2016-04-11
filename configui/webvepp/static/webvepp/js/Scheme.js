@@ -3,6 +3,7 @@ WEBVEPP.Scheme = function(settings){
     var scheme_names = {},
         settings = settings;
     var scheme, schemeSVG,
+        tree_scheme_names = {"system":"","sample":""},
         svg,
         scheme_button=null,
         switch_bar = d3.select("#Scheme_switcher_bar"),
@@ -40,15 +41,31 @@ WEBVEPP.Scheme = function(settings){
                             },
                             {
                               "name":"Non-linear",
-                              "filename": "vepp4_RF_elstat_non-linear",
+                              "filename": "vepp4_RF_elstat_non-linear"
                             },
                             {
-                              "name":"Orbit",
-                              "filename": "vepp4_corr_X_Z",
+                              "name":"Orbit X",
+                              "filename": "vepp4_corr_X_Z"
+                            },
+                            {
+                              "name":"Orbit Z",
+                              "filename": "vepp4_corr_X_Z"
                             },
                             {
                               "name":"Gradient",
-                              "filename": "vepp4_gradient"
+                              "filename": "vepp4_gradient "
+                            },
+                            {
+                              "name":"Electrostatic",
+                              "filename": "vepp4_RF_elstat_non-linear"
+                            },
+                            {
+                              "name":"RF",
+                              "filename": "vepp4_RF_elstat_non-linear"
+                            },
+                            {
+                              "name":"Hand",
+                              "filename": "vepp4_main"
                             }
                         ]
                     }
@@ -57,6 +74,49 @@ WEBVEPP.Scheme = function(settings){
                     scheme_names = {"type":null,"schemes":{}}
                     break;
                }
+        },
+
+        loadSchemeSample = function(){
+            $(document).trigger("set_loading_cursor");
+            $.ajax({
+                type: "GET",
+                data: {scheme_names: JSON.stringify(tree_scheme_names) },
+                url: WEBVEPP.serveradr()+"webvepp/getTreeSample",
+                error: function(xhr, ajaxOptions, thrownError) {
+                    $(document).trigger("unset_loading_cursor");
+                    $(document).trigger("error_message",thrownError);
+                },
+                success: function(data){
+                    scheme_names = data;
+                    drawButtons();
+                    loadScheme(getSchemeName());
+                    $(document).trigger("settings_loaded",data);
+                    $(document).trigger("unset_loading_cursor");
+                }
+            });
+        },
+
+        //zooms to defined area
+        zoomToArea = function(cx,cy,areasize){
+            var scale,
+                canvasel = d3.select("#mainSVG")[0][0],
+                x = -cx,
+                y = -cy,
+                relation = [canvasel.clientWidth/areasize[0],canvasel.clientHeight/areasize[1]];
+
+            scale = (relation[0]>=relation[1])?relation[1]:relation[0];
+
+            svg.transition()
+                .duration(750)
+                .attr("transform", "scale("+scale+") translate("+x+","+y+")");
+            zoom.translate([x*scale,y*scale]);
+            zoom.scale([scale]);
+        },
+
+        zoomToNode = function(node){
+            var bbox = node.getBBox();
+            console.log(node.getBBox());
+            zoomToArea(bbox.x,bbox.y,[bbox.width,bbox.height]);
         },
 
         drawButtons = function(){
@@ -105,13 +165,14 @@ WEBVEPP.Scheme = function(settings){
                 return;
             d3.xml(WEBVEPP.serveradr()+"static/webvepp/bg/"+scheme_name+".svg", "image/svg+xml", function(error, xml) {
                 if (error) throw error;
-                console.log(xml);
                 var defs = xml.documentElement.getElementById("defs");
-                document.getElementById("schemeSVG").appendChild(defs);
+                schemeSVG = document.getElementById("schemeSVG");
+                schemeSVG.appendChild(defs);
                 scheme = xml.documentElement.getElementById("Слой_x0020_1");
-                document.getElementById("schemeSVG").appendChild(scheme);
+                schemeSVG.appendChild(scheme);
                 addLinks();
                 svg.transition().attr("transform",'translate(' + zoom.translate() + ') scale(' + zoom.scale() + ')');
+                zoomToNode(schemeSVG);
             });
         },
         addLinks = function(){
@@ -128,15 +189,20 @@ WEBVEPP.Scheme = function(settings){
             });
         };
 
+    function setSchemeNames(){
+        tree_scheme_names.system = settings.getSystemName();
+        tree_scheme_names.sample = "Scheme";
+    };
+
     svg = d3.select("body").append("svg")
+        .attr('id','mainSVG')
         .attr('width', "100%")
         .attr('height', "100%")
         .call(zoom)
         .append('g')
         .attr('id','schemeSVG');
-    setSchemeSample();
-    drawButtons();
-    loadScheme(getSchemeName());
+    setSchemeNames();
+    loadSchemeSample();
 
     return {
     };

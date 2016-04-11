@@ -608,14 +608,42 @@
     }
   },
   {
-    "name": "Scheme",
-    "type": "list",
-    "schemes": {
-      "Main": "vepp4_main",
-      "Non-linear": "vepp4_RF_elstat_non-linear",
-      "Orbit": "vepp4_corr_X_Z",
-      "Gradient": "vepp4_gradient"
-    }
+      "name": "Scheme",
+      "type": "list",
+      "schemes": [
+        {
+          "name":"Main",
+          "filename": "vepp4_main"
+        },
+        {
+          "name":"Non-linear",
+          "filename": "vepp4_RF_elstat_non-linear"
+        },
+        {
+          "name":"Orbit X",
+          "filename": "vepp4_corr_X_Z"
+        },
+        {
+          "name":"Orbit Z",
+          "filename": "vepp4_corr_X_Z"
+        },
+        {
+          "name":"Gradient",
+          "filename": "vepp4_gradient "
+        },
+        {
+          "name":"Electrostatic",
+          "filename": "vepp4_RF_elstat_non-linear"
+        },
+        {
+          "name":"RF",
+          "filename": "vepp4_RF_elstat_non-linear"
+        },
+        {
+          "name":"Hand",
+          "filename": "vepp4_main"
+        }
+      ]
   },
   {
     "name": "Tool_modules",
