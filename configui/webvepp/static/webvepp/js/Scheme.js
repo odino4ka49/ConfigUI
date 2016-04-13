@@ -100,11 +100,17 @@ WEBVEPP.Scheme = function(settings){
         zoomToArea = function(cx,cy,areasize){
             var scale,
                 canvasel = d3.select("#mainSVG")[0][0],
+                canwidth = (canvasel.clientWidth || canvasel.parentNode.clientWidth)*0.8,
+                canheight = (canvasel.clientHeight || canvasel.parentNode.clientHeight)*0.8,
                 x = -cx,
                 y = -cy,
-                relation = [canvasel.clientWidth/areasize[0],canvasel.clientHeight/areasize[1]];
+                relation = [canwidth/areasize[0],canheight/areasize[1]];
 
+            console.log(cx,x,canwidth);
+            if(relation[0]==0) return;
             scale = (relation[0]>=relation[1])?relation[1]:relation[0];
+            x += canwidth/8/scale;
+            y += 50/scale;
 
             svg.transition()
                 .duration(750)
@@ -115,8 +121,10 @@ WEBVEPP.Scheme = function(settings){
 
         zoomToNode = function(node){
             var bbox = node.getBBox();
+            var width = bbox.width,
+                height = bbox.height;
             console.log(node.getBBox());
-            zoomToArea(bbox.x,bbox.y,[bbox.width,bbox.height]);
+            zoomToArea(bbox.x,bbox.y,[width,height]);
         },
 
         drawButtons = function(){
@@ -125,14 +133,18 @@ WEBVEPP.Scheme = function(settings){
             var buttons = switch_bar.selectAll("li")
                 .data(scheme_names.schemes);
             var button = buttons.enter();
-            button.append("li");
+            button.append("li")
+                .attr("id",function(d){
+                    return "scheme_"+d.name;
+                });
 
             var button_update = buttons;
 
             button_update
                 .on('click', function(d){
-                   scheme_button = d.name;
-                   reloadScheme(d.filename);
+                   //scheme_button = d.name;
+                   goToScheme(d.name);
+                   //reloadScheme(d.filename);
                 })
                 .text(function(d) {
                     if(d.name)
@@ -142,12 +154,21 @@ WEBVEPP.Scheme = function(settings){
                 .remove();
         },
 
+        goToScheme = function(address){
+            document.location.href = WEBVEPP.serveradr() + 'webvepp/scheme/'+address;
+        },
+
         getSchemeName = function(){
-            if(scheme_names.type=="single"||scheme_button==null){
+            var sname = decodeURI(location.pathname.split('/')[3]);
+            if(sname == "") sname = "Main";
+            console.log("#scheme_"+sname);
+            $("#scheme_"+sname).addClass("active");
+            if(scheme_names.type=="single"||sname==null){
                 return $.grep(scheme_names.schemes, function(e){ return e.name == "Main"; })[0].filename;
             }
             else{
-                return $.grep(scheme_names.schemes, function(e){ return e.name == "scheme_button"; }).filename;
+                console.log($.grep(scheme_names.schemes, function(e){ return e.name == sname; }));
+                return $.grep(scheme_names.schemes, function(e){ return e.name == sname; })[0].filename;
             }
         },
 

@@ -27,8 +27,8 @@
       <file leaf-file-name="TreeModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/TreeModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.928572">
-              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,28 @@
       <file leaf-file-name="Scheme.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.428571">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state vertical-scroll-proportion="-8.571428">
+              <caret line="167" column="13" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/FilterBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6785715">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="8" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -57,28 +77,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.785714">
-              <caret line="768" column="46" selection-start-line="768" selection-start-column="46" selection-end-line="768" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vepp4_gradient.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.428572">
-              <caret line="515" column="28" selection-start-line="515" selection-start-column="28" selection-end-line="515" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chan_sample.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.416667">
-              <caret line="544" column="7" selection-start-line="544" selection-start-column="7" selection-end-line="544" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="782" column="20" selection-start-line="782" selection-start-column="20" selection-end-line="782" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/templates/webvepp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.25">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="35" selection-end-column="29" />
+            <state vertical-scroll-proportion="-17.5">
+              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -97,18 +97,18 @@
       <file leaf-file-name="V4_sample.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_sample.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6666667">
-              <caret line="651" column="23" selection-start-line="651" selection-start-column="23" selection-end-line="651" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.84444445">
+              <caret line="647" column="3" selection-start-line="647" selection-start-column="3" selection-end-line="647" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vepp4_main.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg">
+      <file leaf-file-name="MenuBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/MenuBar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1006" column="47" selection-start-line="1006" selection-start-column="47" selection-end-line="1006" selection-end-column="47" />
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -127,8 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css" />
-        <option value="$PROJECT_DIR$/webvepp/urls.py" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/MainSetings.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/MainSettings.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Cookies.js" />
@@ -166,16 +164,18 @@
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/scheme.css" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/Chan_V3-V4_scheme_bbg.svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_corr_X_Z (1).svg" />
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_RF_elstat_non-linear.svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_corr_X_Z.svg" />
         <option value="$PROJECT_DIR$/webvepp/templates/webvepp/scheme.html" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient (1).svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient (2).svg" />
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient .svg" />
         <option value="$PROJECT_DIR$/webvepp/views.py" />
+        <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg" />
+        <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg" />
+        <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient_old.svg" />
+        <option value="$PROJECT_DIR$/webvepp/urls.py" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/V4_sample.json" />
       </list>
@@ -212,8 +212,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,6 +392,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,13 +570,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32489452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -600,13 +600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4ch.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18912" column="5" selection-start-line="1" selection-start-column="4" selection-end-line="18912" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4eladd.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84090906">
@@ -768,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/MenuBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/MainTools.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -849,15 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/FilterBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="29" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31560284">
           <caret line="1298" column="78" selection-start-line="1298" selection-start-column="78" selection-end-line="1298" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,47 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.5">
           <caret line="213" column="48" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient_old.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.714286">
-          <caret line="916" column="2" selection-start-line="916" selection-start-column="2" selection-end-line="1133" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.428572">
-          <caret line="515" column="28" selection-start-line="515" selection-start-column="28" selection-end-line="515" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/templates/webvepp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.25">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="35" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.416667">
-          <caret line="544" column="7" selection-start-line="544" selection-start-column="7" selection-end-line="544" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1006" column="47" selection-start-line="1006" selection-start-column="47" selection-end-line="1006" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51502144">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,22 +863,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64377683">
           <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48584202">
+          <caret line="1009" column="62" selection-start-line="1009" selection-start-column="62" selection-end-line="1009" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/TreeModel.js">
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.928572">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.7777778">
+          <caret line="580" column="31" selection-start-line="580" selection-start-column="31" selection-end-line="580" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3546945">
+          <caret line="1291" column="23" selection-start-line="1291" selection-start-column="23" selection-end-line="1291" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient_old.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3546945">
+          <caret line="1297" column="89" selection-start-line="1297" selection-start-column="89" selection-end-line="1297" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.785714">
-          <caret line="768" column="46" selection-start-line="768" selection-start-column="46" selection-end-line="768" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="782" column="20" selection-start-line="782" selection-start-column="20" selection-end-line="782" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/TreeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/MenuBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/templates/webvepp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -957,18 +938,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/FilterBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6785715">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.428571">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state vertical-scroll-proportion="-8.571428">
+          <caret line="167" column="13" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_sample.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
-          <caret line="651" column="23" selection-start-line="651" selection-start-column="23" selection-end-line="651" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.84444445">
+          <caret line="647" column="3" selection-start-line="647" selection-start-column="3" selection-end-line="647" selection-end-column="3" />
           <folding />
         </state>
       </provider>

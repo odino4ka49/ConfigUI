@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="297mm" height="210mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 297 210"
@@ -198,7 +199,7 @@ viewBox="0 0 297 210"
     .fil13 {fill:url(#id143)}
     .fil0 {fill:url(#id144)}
     .fil117 {fill:url(#id145)}
-    .fnt2 {font-weight:bold;font-size:3.17px;font-family:'Arial'}
+    .fnt2 {font-weight:bold;font-size:3.175px;font-family:'Arial'}
     .fnt3 {font-weight:bold;font-size:3.4802px;font-family:'Arial'}
     .fnt0 {font-weight:bold;font-size:3.5278px;font-family:'Arial'}
     .fnt1 {font-weight:bold;font-size:3.9429px;font-family:'Arial'}
@@ -1287,7 +1288,6 @@ viewBox="0 0 297 210"
   </g>
   <polygon class="fil89 str0" points="23.3686,136.886 26.4574,141.788 28.587,140.447 25.4982,135.544 "/>
   <polygon class="fil90 str0" points="26.9083,142.361 30.3007,147.059 32.3413,145.585 28.9489,140.887 "/>
-  <polygon class="fil91 str0" points="29.0497,145.327 30.3007,147.059 32.3413,145.585 31.0903,143.853 "/>
   <g id="_43653280" link="NRG23" class="link" >
    <polygon id="_77603472" class="fil92 str0" points="25.3183,139.98 26.4574,141.788 28.587,140.447 27.4479,138.639 "/>
    <g transform="matrix(0.849508 -0.527576 0.527576 0.849508 -166.424 137.82)">

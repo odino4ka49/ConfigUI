@@ -620,16 +620,16 @@
           "filename": "vepp4_RF_elstat_non-linear"
         },
         {
-          "name":"Orbit X",
+          "name":"Orbit_X",
           "filename": "vepp4_corr_X_Z"
         },
         {
-          "name":"Orbit Z",
+          "name":"Orbit_Z",
           "filename": "vepp4_corr_X_Z"
         },
         {
           "name":"Gradient",
-          "filename": "vepp4_gradient_old"
+          "filename": "vepp4_gradient"
         },
         {
           "name":"Electrostatic",
