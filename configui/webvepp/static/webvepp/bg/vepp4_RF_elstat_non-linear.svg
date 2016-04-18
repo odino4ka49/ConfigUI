@@ -758,7 +758,7 @@ viewBox="0 0 210 297"
   <polyline class="fil0 str3" points="101.863,179.479 101.863,180.414 109.213,180.414 109.213,179.5 "/>
   <polyline class="fil0 str3" points="101.863,184.755 101.863,183.82 109.213,183.82 109.213,184.734 "/>
   <polyline class="fil0 str3" points="99.301,178.601 99.301,176.14 112.684,176.139 112.684,185.653 111.805,185.653 "/>
-  <g id="_42369520" link="UDAR" class="link" >
+  <g id="_42369520" link="UDAR" system="CHAN" class="link" >
    <rect id="_43781064" class="fil40 str2" x="99.301" y="178.601" width="2.5618" height="0.878024"/>
    <rect id="_41769088" class="fil40 str2" x="99.3313" y="184.784" width="2.5618" height="0.878024"/>
    <rect id="_43730088" class="fil40 str2" x="109.213" y="178.591" width="2.5618" height="0.878024"/>
@@ -773,7 +773,7 @@ viewBox="0 0 210 297"
    <rect id="_42994368" class="fil23 str2" x="64.641" y="184.775" width="2.5618" height="0.878024"/>
    <text x="64.4566" y="187.136" id="_41750216" class="fil8 fnt0">TU2</text>
   </g>
-  <g id="_73931664" link="IV4P" class="link" >
+  <g id="_73931664" link="IV4P" system="CHAN" class="link" >
    <rect id="_42896640" class="fil23 str2" x="67.489" y="178.623" width="2.5618" height="0.878024"/>
    <text x="67.7769" y="178.15" id="_41677384" class="fil8 fnt0">IV4P</text>
    <rect id="_41676984" class="fil23 str2" x="67.4199" y="184.775" width="2.5618" height="0.878024"/>
@@ -786,7 +786,7 @@ viewBox="0 0 210 297"
    <rect id="_41979264" class="fil23 str2" x="143.835" y="184.866" width="2.5618" height="0.878024"/>
    <text x="144.014" y="187.23" id="_41749312" class="fil8 fnt0">TU2</text>
   </g>
-  <g id="_73893672" link="IV4E" class="link" >
+  <g id="_73893672" link="IV4E" system="CHAN" class="link" >
    <rect id="_41673456" class="fil23 str2" x="141.096" y="178.714" width="2.5618" height="0.878024"/>
    <rect id="_41683208" class="fil23 str2" x="141.056" y="184.866" width="2.5618" height="0.878024"/>
    <text x="140.441" y="178.241" id="_41423824" class="fil8 fnt0">IV4E</text>

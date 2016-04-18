@@ -23,6 +23,12 @@ WEBVEPP.Settings = function(cookies){
         $(document).trigger("set_cookie",["system_name",system_name]);
         location.reload();
     });
+    $(document).on("switch_system",function(event,name){
+        system_name = name;
+        document.getElementById("settings_system_name").value = system_name;
+        $(document).trigger("set_cookie",["system_name",system_name]);
+        location.reload();
+    });
 
     setSystem();
 

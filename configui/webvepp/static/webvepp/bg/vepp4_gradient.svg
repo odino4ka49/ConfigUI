@@ -532,8 +532,8 @@ viewBox="0 0 297 210"
   <rect class="fil4 str2" transform="matrix(-0.010709 -1.14302 1.14302 -0.010709 11.5146 97.7691)" width="3.562" height="2.74"/>
   <rect class="fil4 str2" transform="matrix(-1.10191 -0.303955 0.303955 -1.10191 87.6989 180.708)" width="3.562" height="2.74"/>
   <rect class="fil4 str2" transform="matrix(1.10191 -0.303955 -0.303955 -1.10191 210.565 180.56)" width="3.562" height="2.74"/>
-  <polygon class="fil5 str2" points="93.165,182.02 89.2349,180.956 90.0535,177.933 93.9836,178.997 "/>
-  <polygon class="fil6 str2" points="205.18,182.02 209.11,180.956 208.291,177.933 204.361,178.997 "/>
+  <polygon class="fil13 str2" points="93.165,182.02 89.2349,180.956 90.0535,177.933 93.9836,178.997 "/>
+  <polygon class="fil13 str2" points="205.18,182.02 209.11,180.956 208.291,177.933 204.361,178.997 "/>
   <rect class="fil7 str2" transform="matrix(-0.27981 -0.960056 -0.960056 0.27981 217.512 178.419)" width="2.9455" height="1.5755"/>
   <rect class="fil4 str2" transform="matrix(-1.56294 -0.293299 0.293299 -1.56294 122.977 190.484)" width="3.562" height="2.74"/>
   <rect class="fil4 str2" transform="matrix(1.56294 -0.293299 -0.293299 -1.56294 175.368 190.484)" width="3.562" height="2.74"/>
@@ -888,7 +888,7 @@ viewBox="0 0 297 210"
   <g transform="matrix(0.999999 -0.00150517 0.00150517 0.999999 -3.50964 85.8039)">
    <text x="148.5" y="105"  class="fil11 fnt2">KEDR</text>
   </g>
-  <polygon class="fil12 str0" points="96.8788,12.7257 96.8788,10.1983 101.578,10.1983 101.578,12.7257 "/>
+  <polygon class="fil13 str0" points="96.8788,12.7257 96.8788,10.1983 101.578,10.1983 101.578,12.7257 "/>
   <polygon class="fil13 str0" points="196.919,12.7257 196.919,10.1983 201.618,10.1983 201.618,12.7257 "/>
   <rect class="fil14 str2" transform="matrix(0.264745 -0.964318 0.964318 0.264745 99.7268 183.881)" width="2.9455" height="1.5755"/>
   <g transform="matrix(0.262474 -0.964939 0.964939 0.262474 -37.4043 296.287)">
@@ -1505,7 +1505,7 @@ viewBox="0 0 297 210"
     <text x="148.5" y="105" id="_72695712" class="fil11 fnt3">NRG17</text>
    </g>
   </g>
-  <g id="_42394520" link="NRG19" class="link" >
+  <g id="_42394520" link="NRG18" class="link" >
    <polygon id="_72808416" class="fil153 str0" points="14.5666,73.5156 13.9727,75.5683 16.3906,76.2678 16.9845,74.2151 "/>
    <g transform="matrix(0.974609 0.223915 -0.223915 0.974609 -120.582 -63.2759)">
     <text x="148.5" y="105" id="_71524464" class="fil11 fnt0">NRG18</text>

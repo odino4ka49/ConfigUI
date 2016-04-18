@@ -360,9 +360,9 @@ def getRemoteAttributes(node,level):
         for attr in attribute_names:
             if attr == "variables":
                 if node["Outputs"]==2:
-                    obj_attributes.append(["X","Y"])
+                    obj_attributes.append(["Out1","Out2"])
                 elif node["Outputs"]==1:
-                    obj_attributes.append(["X"])
+                    obj_attributes.append(["Out1"])
             #wanted to reverse matrix here
             #elif attr == "Graphs":
             #    obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))

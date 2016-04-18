@@ -106,14 +106,13 @@ WEBVEPP.Scheme = function(settings){
                 y = -cy,
                 relation = [canwidth/areasize[0],canheight/areasize[1]];
 
-            console.log(cx,x,canwidth);
             if(relation[0]==0) return;
             scale = (relation[0]>=relation[1])?relation[1]:relation[0];
             x += canwidth/8/scale;
             y += 50/scale;
 
             svg.transition()
-                .duration(750)
+                .duration(0)
                 .attr("transform", "scale("+scale+") translate("+x+","+y+")");
             zoom.translate([x*scale,y*scale]);
             zoom.scale([scale]);
@@ -123,7 +122,6 @@ WEBVEPP.Scheme = function(settings){
             var bbox = node.getBBox();
             var width = bbox.width,
                 height = bbox.height;
-            console.log(node.getBBox());
             zoomToArea(bbox.x,bbox.y,[width,height]);
         },
 
@@ -161,13 +159,11 @@ WEBVEPP.Scheme = function(settings){
         getSchemeName = function(){
             var sname = decodeURI(location.pathname.split('/')[3]);
             if(sname == "") sname = "Main";
-            console.log("#scheme_"+sname);
             $("#scheme_"+sname).addClass("active");
             if(scheme_names.type=="single"||sname==null){
                 return $.grep(scheme_names.schemes, function(e){ return e.name == "Main"; })[0].filename;
             }
             else{
-                console.log($.grep(scheme_names.schemes, function(e){ return e.name == sname; }));
                 return $.grep(scheme_names.schemes, function(e){ return e.name == sname; })[0].filename;
             }
         },
@@ -199,7 +195,14 @@ WEBVEPP.Scheme = function(settings){
         addLinks = function(){
             $(".link").click(function(){
                 var id = $(this).attr("link");
+                var aim_system = $(this).attr("system");
+                if(aim_system){
+                    $(document).trigger("switch_system",aim_system);
+                }
                 var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_self');
+                win.onpopstate = function(){
+                    alert("yeah");
+                };
                 //this is for new tab
                 //'_blank');
                 /*if(win){

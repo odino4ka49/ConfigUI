@@ -1007,8 +1007,14 @@ viewBox="0 0 297 210"
    <rect id="_42336528" class="fil1 str1" x="163.984" y="84.7404" width="5.16943" height="5.83728"/>
    <text x="164.228" y="93.9618" id="_42087184" class="fil57 fnt0">NIL</text>
   </g>
-  <text x="111.267" y="105.76"  class="fil57 fnt0">QQXZ</text>
-  <text x="129.25" y="105.783"  class="fil57 fnt0">QZX</text>
+  <g id="_80991904" link="QQXZ" class="link" >
+   <rect id="_80031528" class="fil1 str1" x="113.144" y="96.5186" width="5.16943" height="5.83728"/>
+   <text x="111.267" y="105.76" id="_81832056" class="fil57 fnt0">QQXZ</text>
+  </g>
+  <g id="_81670312" link="QZX" class="link" >
+   <rect id="_43832448" class="fil1 str1" x="130.238" y="96.5541" width="5.16943" height="5.83728"/>
+   <text x="129.25" y="105.783" id="_42735808" class="fil57 fnt0">QZX</text>
+  </g>
   <g id="_71004584" link="H" class="link" >
    <rect id="_43137640" class="fil16 str3" transform="matrix(-0.0767233 -1.14049 -1.14049 0.0767233 286.726 90.397)" width="3.562" height="2.74"/>
    <rect id="_43136696" class="fil16 str3" transform="matrix(0.0767233 -1.14049 1.14049 0.0767233 11.6186 90.1222)" width="3.562" height="2.74"/>
