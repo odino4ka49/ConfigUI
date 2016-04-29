@@ -324,7 +324,7 @@
         "Class": "Hand",
         "type": "matrix_equation",
         "open_extra": [150,150],
-        "attributes": ["Elements","Lines","variables","variables","Graphs","Elements","Elements","BANK"]
+        "attributes": ["variables","Graphs","Elements","Elements","Lines","variables","Elements","BANK"]
       }
     },
     "level2": {

@@ -129,9 +129,9 @@ def parseObject(object):
             comp_temp = getTemplate({"Class":comp_class})
             rules = {}
             rules["Class"] = comp_class
-            for i in range(0,len(comp_temp["primary_keys"])-1):
+            for i in range(0,len(comp_temp["primary_key"])-1):
                 field1 = template["component_check_values"][i]
-                field2 = comp_temp["primary_keys"][i]
+                field2 = comp_temp["primary_key"][i]
                 rule_val = None
                 if field1=="Component_name":
                     rule_val = comp[comp_class]
@@ -724,7 +724,7 @@ def parseId(object):
     id = object["Class"]
     template = getTemplate(object)
     if template:
-        pr_k = template["primary_keys"]
+        pr_k = template["primary_key"]
         for key in pr_k:
             id+=object[key]
     return id
@@ -873,8 +873,8 @@ def getLink(obj1,obj2):
         else:
             return link
         found = True
-        for i in range(0,len(class2["primary_keys"])-1):
-            field2 = class2["primary_keys"][i]
+        for i in range(0,len(class2["primary_key"])-1):
+            field2 = class2["primary_key"][i]
             if field2=="Name":
                 if obj1[obj2["Class"]]!=obj2[field2]:
                     found = False
@@ -901,9 +901,9 @@ def getLink(obj1,obj2):
     links = obj1[class1["components"]]
     for l in links:
         found = True
-        for i in range(0,len(class2["primary_keys"])-1):
+        for i in range(0,len(class2["primary_key"])-1):
             field1 = class1["component_check_values"][i]
-            field2 = class2["primary_keys"][i]
+            field2 = class2["primary_key"][i]
             if field1=="Component_name":
                 if obj2["Class"] in l:
                     if l[obj2["Class"]]!=obj2[field2]:

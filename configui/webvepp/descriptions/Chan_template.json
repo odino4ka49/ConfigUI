@@ -13,7 +13,7 @@
       },
       {
         "key": "Address",
-        "type": "integer"
+        "type": "string"
       },
       {
         "key": "System",
@@ -42,39 +42,14 @@
       {
         "key": "Rack level",
         "type": "integer"
+      },
+      {
+        "key": "Modules",
+        "type": "array"
       }
     ],
-    "foreign_keys":[ "Dispatcher name", "Controller" ],
-    "display_fields": [
-      "Comment","Controller","Area","Rack/cabinet","Rack level"
-    ],
-    "display_min":["Name",
-      {
-        "key": "Dispatcher position",
-        "link_to": {
-          "Name": "&Dispatcher name",
-          "System": "&System",
-          "Class": "Module"
-        },
-        "link_from": {
-          "Controller": "CHAN",
-          "System": "&System",
-          "Class": "CAMAC"
-        },
-        "value": "Position"
-      },
-      {
-        "key": "Dispatcher channel",
-        "link_to": {
-          "Name": "&Dispatcher name",
-          "System": "&System",
-          "Class": "DS-24"
-        },
-        "value": "ID"
-      },
-      "PINT","Dispatcher name","Address"
-    ],
-    "primary_keys": [
+    "foreign_keys":[ ],
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -138,7 +113,7 @@
       }
     ],
     "foreign_keys":[],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -169,18 +144,9 @@
       }
     ],
     "foreign_keys":[ "Module Type" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
-    ],
-    "display_fields": [
-      "Comment"
-    ],
-    "display_min":["Name","Module Type",
-      {
-        "key": "Module position",
-        "value": "link_id"
-      }
     ],
     "components": null,
     "component_ID": null,
@@ -206,10 +172,14 @@
       {
         "key": "Channels",
         "type": "integer"
+      },
+      {
+        "key": "Modules",
+        "type": "array"
       }
     ],
     "foreign_keys":[],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -242,10 +212,14 @@
       {
         "key": "Address",
         "type": "string"
+      },
+      {
+        "key": "Modules",
+        "type": "array"
       }
     ],
     "foreign_keys":[ ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -274,10 +248,14 @@
       {
         "key": "Comment",
         "type": "string"
+      },
+      {
+        "key": "Channels",
+        "type": "array"
       }
     ],
     "foreign_keys":[],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -314,9 +292,13 @@
       {
         "key": "Address",
         "type": "string"
+      },
+      {
+        "key": "Modules",
+        "type": "array"
       }
     ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -345,9 +327,13 @@
       {
         "key": "Comment",
         "type": "string"
+      },
+      {
+        "key": "Channels",
+        "type": "array"
       }
     ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -380,10 +366,14 @@
       {
         "key": "Controller",
         "type": "string"
+      },
+      {
+        "key": "Modules",
+        "type": "array"
       }
     ],
     "foreign_keys":[ "Controller" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -416,10 +406,14 @@
       {
         "key": "Module",
         "type": "string"
+      },
+      {
+        "key": "Channels",
+        "type": "array"
       }
     ],
     "foreign_keys":[ "Module" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -460,9 +454,13 @@
       {
         "key": "Polarity",
         "type": "string"
+      },
+      {
+        "key": "Channels",
+        "type": "array"
       }
     ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -540,7 +538,7 @@
       }
     ],
     "foreign_keys":[ "Element", "Module" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -611,12 +609,16 @@
         "type": "string"
       },
       {
+        "key": "Polarity",
+        "type": "string"
+      },
+      {
         "key": "Deviation",
         "type": "double"
       }
     ],
     "foreign_keys":[ "Element", "Module" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -684,7 +686,7 @@
       }
     ],
     "foreign_keys":[ "Element", "Module" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -723,16 +725,16 @@
         "type": "integer"
       },
       {
-        "key": "Relay",
-        "type": "integer"
+        "key": "Channel",
+        "type": "array"
       },
       {
-        "key": "Relay ON",
-        "type": "integer"
+        "key": "Channel ON",
+        "type": "array"
       }
     ],
     "foreign_keys":[ "Element", "Module" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -761,10 +763,14 @@
       {
         "key": "Comment",
         "type": "string"
+      },
+      {
+        "key": "Relays",
+        "type": "array"
       }
     ],
     "foreign_keys":[ "Element" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -810,7 +816,7 @@
       }
     ],
     "foreign_keys":[ "Module" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Module"
@@ -850,7 +856,7 @@
       }
     ],
     "foreign_keys":[ "Element" ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -875,9 +881,13 @@
       {
         "key": "Comment",
         "type": "string"
+      },
+      {
+        "key": "Channels",
+        "type": "array"
       }
     ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
@@ -887,7 +897,7 @@
       "CAMAC"
     ],
     "component_check_values": [
-      "CAMAC",
+      "Component_name",
       "System"
     ]
   },
@@ -905,10 +915,6 @@
       },
       {
         "key": "Element",
-        "type": "string"
-      },
-      {
-        "key": "Module",
         "type": "string"
       },
       {
@@ -936,8 +942,8 @@
         "type": "integer"
       }
     ],
-    "foreign_keys":[ "Element", "Module" ],
-    "primary_keys": [
+    "foreign_keys":[ "Element" ],
+    "primary_key": [
       "Name",
       "System",
       "Element"
@@ -996,7 +1002,7 @@
         "type": "array"
       }
     ],
-    "primary_keys": [
+    "primary_key": [
       "Name",
       "System"
     ],
