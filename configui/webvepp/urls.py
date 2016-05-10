@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^getListData', 'webvepp.views.loadListData', name="views-list-data"),
     url(r'^getSchemeData', 'webvepp.views.loadSchemeData', name="views-scheme-data"),
     url(r'^getTreeSample', 'webvepp.views.loadTreeSample', name="views-tree-sample"),
+    url(r'^getValidationData', 'webvepp.views.loadValidationData', name="views-validation-data"),
     url(r'^getNodeNeighbours', 'webvepp.views.loadNodeNeighbours', name="views-node-data"),
     url(r'^getMaxAttributes', 'webvepp.views.loadMaxAttributes', name="views-max-data"),
 ]

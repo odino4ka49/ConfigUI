@@ -20,6 +20,7 @@
     display: inline-table;
     font-size: 11pt;
     text-align: center;
+    white-space:pre;
 }
 #list body{
     margin: 0px;

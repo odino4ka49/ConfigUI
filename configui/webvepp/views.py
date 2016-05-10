@@ -13,6 +13,7 @@ import inspect, os
 import math
 import copy
 import re
+import validation
 
 tree_data = {}
 tree_template = {}
@@ -74,6 +75,13 @@ def loadSchemeData(request):
     doc = minidom.parse(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+scheme_name)
     svg = doc.getElementsByTagName("svg")[0]
     return HttpResponse(svg)
+
+def loadValidationData(request):
+    data = request.GET
+    scheme_names = json.loads(data["scheme_names"])
+    validation.setSystemName(scheme_names["system"])
+    validation_log = validation.getValidationLog()
+    return HttpResponse(json.dumps(validation_log, ensure_ascii=False), content_type="application/json")
 
 def loadTreeSample(request):
     global current_scheme_name

@@ -1188,7 +1188,7 @@
        "Module": "GZI1"
      },
      {
-       "Position": 2,
+       "Position": 3,
        "Module": "URG1"
      },
      {
@@ -1351,11 +1351,11 @@
    "Address": "#02000",
    "Modules": [
      {
-       "S6": 0,
+       "S6": 1,
        "Module": "LZD"
      },
      {
-       "S6": 0,
+       "S6": 2,
        "Module": "URLZ"
      }
    ]
@@ -2037,7 +2037,7 @@
      },
      {
        "OK": true,
-       "DBLUR channel": "W"
+       "UR channel": "W"
      },
      {
        "OK": true,
@@ -2116,10 +2116,6 @@
      {
        "OK": true,
        "Control channel": "U"
-     },
-     {
-       "OK": true,
-       "Control channel": "T"
      },
      {
        "OK": true,
@@ -2207,7 +2203,7 @@
      },
      {
        "OK": true,
-       "Meas channel": "HM14"
+       "Meas channel": "HM15"
      },   
      {
        "OK": true,
@@ -2215,7 +2211,7 @@
      },
      {
        "OK": true,
-       "DBLUR channel": "W"
+       "UR channel": "W"
      },
      {
        "OK": true,
@@ -2650,7 +2646,7 @@
      },
      {
        "OK": true,
-       "ADC channel": "VDU3"
+       "ADC channel": "UDV3"
      },
      {
        "OK": true,
@@ -2910,7 +2906,7 @@
      },
      {
        "OK": true,
-       "Meas channel": "SVED"
+       "Meas channel": "SWED"
      },
      {
        "OK": true,
@@ -2918,7 +2914,7 @@
      },
      {
        "OK": true,
-       "Meas channel": "BTRK"
+       "ADC channel": "BTRK"
      },
      {
        "OK": true,

@@ -506,7 +506,8 @@
       },
       {
         "key": "BANK",
-        "type": "integer"
+        "type": "integer",
+        "uniqueness": true
       },
       {
         "key": "Channel",
@@ -910,7 +911,7 @@
         "type": "string"
       },
       {
-        "key": "System",
+        "key": "Systm",
         "type": "string"
       },
       {

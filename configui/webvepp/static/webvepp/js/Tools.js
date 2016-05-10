@@ -3,7 +3,8 @@ WEBVEPP.List = function(settings){
     var list, list_settings,
         settings = settings,
         scheme_names = {"system":"","sample":""},
-        table = d3.select("body").select("table");
+        table = d3.select("body").select("table"),
+        text_data = "";
 
     function setSchemeNames(tool_name){
         var pathname = location.pathname;
@@ -49,7 +50,7 @@ WEBVEPP.List = function(settings){
     };
 
     function loadListSettings(){
-            $(document).trigger("set_loading_cursor");
+        $(document).trigger("set_loading_cursor");
             $.ajax({
                 type: "GET",
                 data: {scheme_names: JSON.stringify(scheme_names) },
@@ -64,6 +65,33 @@ WEBVEPP.List = function(settings){
                 }
             });
         };
+
+    function loadValidationData(){
+        $(document).trigger("set_loading_cursor");
+            $.ajax({
+                type: "GET",
+                data: {scheme_names: JSON.stringify(scheme_names) },
+                url: WEBVEPP.serveradr()+"webvepp/getValidationData",
+                error: function(xhr, ajaxOptions, thrownError) {
+                    $(document).trigger("unset_loading_cursor");
+                    $(document).trigger("error_message",thrownError);
+                },
+                success: function(data){
+                    text_data = data;
+                    drawTextData();
+                    $(document).trigger("unset_loading_cursor");
+                }
+            });
+    };
+
+    function drawTextData(){
+        //text_data.replace(/\n/g, "<br />");
+        table.select('thead').remove();
+        table.select('tbody').remove();
+        var thead = table.append('thead');
+        var tbody = table.append('tbody');
+        thead.append("tr").append("td").text(text_data);
+    };
 
     function drawListData(){
         table.select('thead').remove();
@@ -131,6 +159,10 @@ WEBVEPP.List = function(settings){
             setSchemeNames("tool_modules");
             loadListSettings();
             loadListData();
+        })
+        $("#validation").click(function(){
+            setSchemeNames("");
+            loadValidationData()
         })
     }
 

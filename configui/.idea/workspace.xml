@@ -24,21 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Scheme.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="198" column="31" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Chan_template.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_template.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.980769">
-              <caret line="869" column="19" selection-start-line="869" selection-start-column="14" selection-end-line="869" selection-end-column="19" />
+            <state vertical-scroll-proportion="-40.333332">
+              <caret line="933" column="22" selection-start-line="933" selection-start-column="22" selection-end-line="933" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -47,8 +37,8 @@
       <file leaf-file-name="Chan_sample.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.615385">
-              <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+            <state vertical-scroll-proportion="-33.125">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -57,8 +47,28 @@
       <file leaf-file-name="CHAN.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.730769">
-              <caret line="1273" column="6" selection-start-line="1273" selection-start-column="6" selection-end-line="1273" selection-end-column="6" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="7168" column="20" selection-start-line="7168" selection-start-column="20" selection-end-line="7168" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,8 +77,8 @@
       <file leaf-file-name="validation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webvepp/validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2631579">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.78161967">
+              <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
               <folding>
                 <element signature="e#21#32#0" expanded="true" />
               </folding>
@@ -79,8 +89,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.071428">
-              <caret line="916" column="46" selection-start-line="916" selection-start-column="46" selection-end-line="916" selection-end-column="46" />
+            <state vertical-scroll-proportion="-15.535714">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="e#102#137#0" expanded="true" />
               </folding>
@@ -88,33 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/templates/webvepp/settings.html">
+      <file leaf-file-name="validation_log.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configui/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-              <folding>
-                <element signature="e#381#390#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vepp4_main.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="999" column="49" selection-start-line="999" selection-start-column="49" selection-end-line="999" selection-end-column="49" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,15 +121,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Cookies.js" />
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/MainScheme.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/MainTools.js" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/v4el.txt" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/main.css" />
         <option value="$PROJECT_DIR$/webvepp/templates/webvepp/settings.html" />
-        <option value="$PROJECT_DIR$/webvepp/templates/webvepp/tools.html" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Main.js" />
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js" />
         <option value="$PROJECT_DIR$/webvepp/templates/webvepp/index.html" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/V4CH.koi" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/V4chUR.json" />
@@ -168,7 +152,6 @@
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient .svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient_old.svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main (1).svg" />
-        <option value="$PROJECT_DIR$/webvepp/urls.py" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_corr_X_Z.svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient (1).svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg" />
@@ -179,11 +162,16 @@
         <option value="$PROJECT_DIR$/configui/settings.py" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/V4_sample.json" />
-        <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/CHAN.json" />
+        <option value="$PROJECT_DIR$/webvepp/templates/webvepp/tools.html" />
+        <option value="$PROJECT_DIR$/webvepp/urls.py" />
         <option value="$PROJECT_DIR$/webvepp/views.py" />
-        <option value="$PROJECT_DIR$/webvepp/validation.py" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_template.json" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt" />
+        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js" />
+        <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css" />
+        <option value="$PROJECT_DIR$/webvepp/validation.py" />
       </list>
     </option>
   </component>
@@ -191,8 +179,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="324" />
     <option name="width" value="1200" />
-    <option name="height" value="1575" />
+    <option name="height" value="1251" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -265,7 +254,125 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="descriptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webvepp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="descriptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validation_log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,14 +568,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1200" height="1575" extended-state="6" />
+    <frame x="0" y="324" width="1200" height="1251" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26214406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3241279" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -505,13 +612,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4el.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/Table_to_elements.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5833333">
@@ -523,13 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -610,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/css/tree.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18305598">
@@ -628,13 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18154311">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/templates/webvepp/tools.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.625">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -670,13 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -818,6 +890,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27075" column="7" selection-start-line="27075" selection-start-column="7" selection-end-line="27075" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_main.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -826,51 +905,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
+    <entry file="file://$PROJECT_DIR$/webvepp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27075" column="7" selection-start-line="27075" selection-start-column="7" selection-end-line="27075" selection-end-column="7" />
+          <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/views.py">
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.071428">
-          <caret line="916" column="46" selection-start-line="916" selection-start-column="46" selection-end-line="916" selection-end-column="46" />
-          <folding>
-            <element signature="e#102#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.730769">
-          <caret line="1273" column="6" selection-start-line="1273" selection-start-column="6" selection-end-line="1273" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_template.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.980769">
-          <caret line="869" column="19" selection-start-line="869" selection-start-column="14" selection-end-line="869" selection-end-column="19" />
+        <state vertical-scroll-proportion="-40.333332">
+          <caret line="933" column="22" selection-start-line="933" selection-start-column="22" selection-end-line="933" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385">
-          <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+        <state vertical-scroll-proportion="-33.125">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="7168" column="20" selection-start-line="7168" selection-start-column="20" selection-end-line="7168" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.535714">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/templates/webvepp/tools.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46237534">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2631579">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.78161967">
+          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
           <folding>
             <element signature="e#21#32#0" expanded="true" />
           </folding>
