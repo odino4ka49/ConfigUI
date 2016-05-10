@@ -783,7 +783,7 @@ def getAllTemplates():
         if system_name == "CHAN":
             tree_template[system_name] = getDataFile("Chan_template.json")
         elif system_name == "V4":
-            tree_template[system_name] = getDataFile("Chan_template.json")
+            tree_template[system_name] = getDataFile("V4_template.json")
         else:
             tree_template[system_name] = []
     return tree_template[system_name]

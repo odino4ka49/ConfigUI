@@ -210,6 +210,10 @@
         "type": "string"
       },
       {
+        "key": "Dispatcher name",
+        "type": "string"
+      },
+      {
         "key": "Address",
         "type": "string"
       },
@@ -364,7 +368,11 @@
         "type": "string"
       },
       {
-        "key": "Controller",
+        "key": "Dispatcher name",
+        "type": "string"
+      },
+      {
+        "key": "Address",
         "type": "string"
       },
       {
@@ -372,7 +380,7 @@
         "type": "array"
       }
     ],
-    "foreign_keys":[ "Controller" ],
+    "foreign_keys":[ ],
     "primary_key": [
       "Name",
       "System"
@@ -452,8 +460,16 @@
         "type": "string"
       },
       {
-        "key": "Polarity",
-        "type": "string"
+        "key": "Efficiency",
+        "type": "float"
+      },
+      {
+        "key": "Resistance",
+        "type": "float"
+      },
+      {
+        "key": "Location",
+        "type": "integer"
       },
       {
         "key": "Channels",
@@ -590,16 +606,8 @@
         "type": "string"
       },
       {
-        "key": "Int time",
-        "type": "string"
-      },
-      {
-        "key": "Diapasone",
-        "type": "integer"
-      },
-      {
-        "key": "Interval",
-        "type": "integer"
+        "key": "Max",
+        "type": "float"
       },
       {
         "key": "Monit",
@@ -607,10 +615,6 @@
       },
       {
         "key": "MonitType",
-        "type": "string"
-      },
-      {
-        "key": "Polarity",
         "type": "string"
       },
       {
@@ -984,7 +988,7 @@
       },
       {
         "key": "Shift",
-        "type": "integer"
+        "type": "float"
       },
       {
         "key": "Elements",

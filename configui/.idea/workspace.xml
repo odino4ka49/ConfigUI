@@ -27,18 +27,28 @@
       <file leaf-file-name="Chan_template.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_template.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-40.333332">
-              <caret line="933" column="22" selection-start-line="933" selection-start-column="22" selection-end-line="933" selection-end-column="22" />
+            <state vertical-scroll-proportion="-7.4615383">
+              <caret line="560" column="22" selection-start-line="560" selection-start-column="21" selection-end-line="560" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chan_sample.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
+      <file leaf-file-name="V4_template.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_template.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.125">
-              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.7525581">
+              <caret line="477" column="6" selection-start-line="477" selection-start-column="6" selection-end-line="477" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="V4.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.884615">
+              <caret line="27534" column="23" selection-start-line="27534" selection-start-column="23" selection-end-line="27534" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -47,8 +57,18 @@
       <file leaf-file-name="CHAN.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="7168" column="20" selection-start-line="7168" selection-start-column="20" selection-end-line="7168" selection-end-column="20" />
+            <state vertical-scroll-proportion="-6.3076925">
+              <caret line="7206" column="7" selection-start-line="7206" selection-start-column="7" selection-end-line="7206" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.392857">
+              <caret line="806" column="21" selection-start-line="806" selection-start-column="21" selection-end-line="806" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -64,35 +84,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tools.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="validation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78161967">
-              <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.321428">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="e#21#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.535714">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="e#102#137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="823" column="85" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -121,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/MainTools.js" />
-        <option value="$PROJECT_DIR$/webvepp/descriptions/v4el.txt" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/main.css" />
         <option value="$PROJECT_DIR$/webvepp/templates/webvepp/settings.html" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Main.js" />
@@ -142,7 +138,6 @@
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/FilterBar.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/TreeModel.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Tree.js" />
-        <option value="$PROJECT_DIR$/webvepp/descriptions/V4.json" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_RF_elstat_non-linear (1).svg" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/scheme.css" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/Chan_V3-V4_scheme_bbg.svg" />
@@ -165,13 +160,16 @@
         <option value="$PROJECT_DIR$/webvepp/descriptions/CHAN.json" />
         <option value="$PROJECT_DIR$/webvepp/templates/webvepp/tools.html" />
         <option value="$PROJECT_DIR$/webvepp/urls.py" />
-        <option value="$PROJECT_DIR$/webvepp/views.py" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json" />
-        <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_template.json" />
-        <option value="$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/Chan_template.json" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/V4.json" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/validation_log/V4_template.json" />
         <option value="$PROJECT_DIR$/webvepp/validation.py" />
+        <option value="$PROJECT_DIR$/webvepp/views.py" />
+        <option value="$PROJECT_DIR$/webvepp/descriptions/V4_template.json" />
       </list>
     </option>
   </component>
@@ -417,16 +415,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webvepp/descriptions/validation_log" />
       <recent name="$PROJECT_DIR$/webvepp/static/webvepp/bg" />
       <recent name="$PROJECT_DIR$/webvepp" />
       <recent name="$PROJECT_DIR$/webvepp/descriptions" />
       <recent name="$PROJECT_DIR$/webvepp/static/webvepp/js" />
-      <recent name="$PROJECT_DIR$/webvepp/templates/webvepp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webvepp/descriptions" />
       <recent name="$PROJECT_DIR$/webvepp" />
       <recent name="$PROJECT_DIR$/webvepp/static/webvepp" />
-      <recent name="$PROJECT_DIR$/webvepp/descriptions" />
       <recent name="$PROJECT_DIR$/webvepp/static/webvepp/js" />
     </key>
   </component>
@@ -612,13 +610,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webvepp/Table_to_elements.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5833333">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/Table_to_json_urs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -877,7 +868,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
-            <element signature="e#381#390#0" expanded="true" />
+            <element signature="e#381#390#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,13 +878,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27075" column="7" selection-start-line="27075" selection-start-column="7" selection-end-line="27075" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -909,56 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_template.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-40.333332">
-          <caret line="933" column="22" selection-start-line="933" selection-start-column="22" selection-end-line="933" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.125">
-          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="7168" column="20" selection-start-line="7168" selection-start-column="20" selection-end-line="7168" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.535714">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#102#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -979,13 +913,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_template.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4615383">
+          <caret line="560" column="22" selection-start-line="560" selection-start-column="21" selection-end-line="560" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.392857">
+          <caret line="806" column="21" selection-start-line="806" selection-start-column="21" selection-end-line="806" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3076925">
+          <caret line="7206" column="7" selection-start-line="7206" selection-start-column="7" selection-end-line="7206" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/validation_log/validation_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="823" column="85" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/Chan_sample.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72076154">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78161967">
-          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.321428">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="e#21#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.884615">
+          <caret line="27534" column="23" selection-start-line="27534" selection-start-column="23" selection-end-line="27534" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_template.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7525581">
+          <caret line="477" column="6" selection-start-line="477" selection-start-column="6" selection-end-line="477" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -48,7 +48,7 @@
     "System_ID": 40,
     "Dispatcher": false,
     "Comment": "Генератор выходных импульсов по команде с магистрали: +24 В, 0.4 мкс",
-    "Channels 8number": 8,
+    "Channels number": 8,
     "Width": 1,
     "+6 V current": 1.0,
     "-6 V current": 0.0,
