@@ -92,7 +92,7 @@ def validateObject(object,template):
     for field in template["fields"]:
         #is there such field in object?
         if field["key"] not in object:
-            log(object,template,"There is no such field in object: "+field["key"] +".")
+            log_warning(object,template,"There is no such field in object: "+field["key"] +".")
             result = False
         #what about type?
         else:
@@ -385,7 +385,24 @@ def log_temp(template,message):
         template_name = unicode(template)
     else:
         template_name = template["class"]
-    logfile.write("Error: In the tempate for "+template_name+" there is a problem. "+message+"\n")
+    logfile.write("Error: tempate '"+template_name+"'. "+message+"\n")
+    return 0
+
+def log_warning(object,template,message):
+    object_name = ""
+    if "Class" not in object:
+        object_name = unicode(object)
+    elif not template or "primary_key" not in template:
+        object_name = object["Class"]+"/"
+        if "System" in object:
+            object_name += object["System"]+"/"
+        if "Name" in object:
+            object_name += object["Name"]
+    else:
+        object_name = object["Class"]+"/"
+        for pk in template["primary_key"]:
+            object_name+=object[pk]+"/"
+    logfile.write("Warning: object '"+object_name+"'. "+message+"\n")
     return 0
 
 def log(object,template,message):
@@ -402,7 +419,7 @@ def log(object,template,message):
         object_name = object["Class"]+"/"
         for pk in template["primary_key"]:
             object_name+=object[pk]+"/"
-    logfile.write("Error: In the object "+object_name+" there is a problem. "+message+"\n")
+    logfile.write("Error: object '"+object_name+"'. "+message+"\n")
     return 0
 
 def getDataFile(name):
@@ -422,7 +439,7 @@ def validate():
         validateObject(object,getTemplate(object))
 
 def getValidationLog():
-    global file_name,logfile
+    global file_name,logfile,system_name
     file_name = os.path.dirname(os.path.abspath(__file__))+"/descriptions/validation_log/validation_log.txt"
     logfile = open(file_name,"w")
     logfile.write("System name: " + system_name+"\n")

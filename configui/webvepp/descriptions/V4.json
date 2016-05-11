@@ -1090,7 +1090,7 @@
   },
   {
     "Class": "Module",
-    "Name": "08САРI16",
+    "Name": "08CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "S2 DOWN"
@@ -1118,7 +1118,7 @@
   },
   {
     "Class": "Module",
-    "Name": "12САРI16",
+    "Name": "12CAPI16",
     "Module Type": "ЦАПИ-16",
     "System": "V4",
     "Comment": "ТИРы 2"
@@ -2047,8 +2047,8 @@
       "Module": "71KAS"
     },
     {
-      "ID": 1,
-      "Module": "71KAS"
+      "ID": 2,
+      "Module": "72KAS"
     }
   ]
 },
@@ -2109,7 +2109,7 @@
   "Address": "0",
   "Modules": [
     {
-      "ID": 0,
+      "Address": 0,
       "Module": "ZG"
     }
   ]
@@ -2487,7 +2487,7 @@
       "Class": "UR channel",
       "Name": "TRON",
       "Element": "TRON",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 94,
       "Module": "3UR",
@@ -2503,7 +2503,7 @@
       "Class": "UR channel",
       "Name": "TPON",
       "Element": "TPON",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 94,
       "Module": "3UR",
@@ -2517,7 +2517,7 @@
       "Class": "UR channel",
       "Name": "TXON",
       "Element": "TXON",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 94,
       "Module": "3UR",
@@ -2533,7 +2533,7 @@
       "Class": "UR channel",
       "Name": "ONRF",
       "Element": "ONRF",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 94,
       "Module": "3UR",
@@ -2549,7 +2549,7 @@
       "Class": "UR channel",
       "Name": "OFRF",
       "Element": "OFRF",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 94,
       "Module": "3UR",
@@ -2565,7 +2565,7 @@
       "Class": "UR channel",
       "Name": "NUSW",
       "Element": "NUSW",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 95,
       "Module": "1UR",
@@ -2586,7 +2586,7 @@
       "Class": "UR channel",
       "Name": "TUSW",
       "Element": "TUSW",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2607,7 +2607,7 @@
       "Class": "UR channel",
       "Name": "SUSW",
       "Element": "SUSW",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2628,7 +2628,7 @@
       "Class": "UR channel",
       "Name": "EU3W",
       "Element": "EU3W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2643,7 +2643,7 @@
       "Class": "UR channel",
       "Name": "EU4W",
       "Element": "EU4W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2658,7 +2658,7 @@
       "Class": "UR channel",
       "Name": "EU5W",
       "Element": "EU5W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2675,7 +2675,7 @@
       "Class": "UR channel",
       "Name": "EUSW",
       "Element": "EUSW",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2694,7 +2694,7 @@
       "Class": "UR channel",
       "Name": "RAZV",
       "Element": "RAZV",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 95,
       "Module": "1UR",
@@ -2709,7 +2709,7 @@
       "Class": "UR channel",
       "Name": "MEXSW",
       "Element": "MEXSW",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 94,
       "Module": "3UR",
@@ -2734,7 +2734,7 @@
       "Class": "UR channel",
       "Name": "TU9W",
       "Element": "TU9W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2749,7 +2749,7 @@
       "Class": "UR channel",
       "Name": "TU8W",
       "Element": "TU8W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2764,7 +2764,7 @@
       "Class": "UR channel",
       "Name": "NU1W",
       "Element": "NU1W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 96,
       "Module": "2UR",
@@ -2779,7 +2779,7 @@
       "Class": "UR channel",
       "Name": "U21W",
       "Element": "U21W",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 95,
       "Module": "1UR",
@@ -2794,7 +2794,7 @@
       "Class": "UR channel",
       "Name": "SR",
       "Element": "SR",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 93,
       "Module": "5UR",
@@ -2809,7 +2809,7 @@
       "Class": "UR channel",
       "Name": "URSR2",
       "Element": "URSR2",
-      "System": "",
+      "System": "V4",
       "Comment": "",
       "BANK": 93,
       "Module": "5UR",
@@ -3787,7 +3787,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 11,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 198.0,
       "Units": "A",
@@ -3835,7 +3835,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 12,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 198.0,
       "Units": "A",
@@ -7275,7 +7275,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 60,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 198.0,
       "Units": "A",
@@ -7323,7 +7323,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 61,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 198.0,
       "Units": "A",
@@ -8390,7 +8390,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "TU1",
       "System": "V4",
       "Comment": "",
@@ -8422,7 +8422,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "TU2",
       "System": "V4",
       "Comment": "",
@@ -8454,7 +8454,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "TU3",
       "System": "V4",
       "Comment": "",
@@ -8486,7 +8486,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "TU4",
       "System": "V4",
       "Comment": "",
@@ -8518,7 +8518,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU1",
       "System": "V4",
       "Comment": "",
@@ -8550,7 +8550,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU2",
       "System": "V4",
       "Comment": "",
@@ -8582,7 +8582,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU3",
       "System": "V4",
       "Comment": "",
@@ -8614,7 +8614,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU4",
       "System": "V4",
       "Comment": "",
@@ -8646,7 +8646,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU5",
       "System": "V4",
       "Comment": "",
@@ -8678,7 +8678,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SU1",
       "System": "V4",
       "Comment": "",
@@ -8710,7 +8710,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SU2",
       "System": "V4",
       "Comment": "",
@@ -8742,7 +8742,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SU3",
       "System": "V4",
       "Comment": "",
@@ -8774,7 +8774,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SU4",
       "System": "V4",
       "Comment": "",
@@ -8806,7 +8806,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NU1",
       "System": "V4",
       "Comment": "",
@@ -8838,7 +8838,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NU2",
       "System": "V4",
       "Comment": "",
@@ -8870,7 +8870,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NU3",
       "System": "V4",
       "Comment": "",
@@ -8902,7 +8902,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NU4",
       "System": "V4",
       "Comment": "",
@@ -8934,7 +8934,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "TU8",
       "System": "V4",
       "Comment": "",
@@ -8966,7 +8966,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "TU9",
       "System": "V4",
       "Comment": "",
@@ -8987,7 +8987,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 89,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 1.0,
       "Units": "A",
@@ -9003,7 +9003,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0142,
       "Units": "A",
@@ -9019,7 +9019,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 90,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 1.0,
       "Units": "A",
@@ -9035,7 +9035,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 71.4286,
       "Units": "A",
@@ -9051,7 +9051,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 91,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 957.5,
       "Units": "KV",
@@ -9062,12 +9062,12 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU3SV",
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "KV",
@@ -9083,7 +9083,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 92,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 957.5,
       "Units": "KV",
@@ -9094,12 +9094,12 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "EU3RZ",
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "KV",
@@ -9131,7 +9131,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9163,7 +9163,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9195,7 +9195,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9227,7 +9227,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9243,7 +9243,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 97,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 100.0,
       "Units": "A",
@@ -9259,7 +9259,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9275,7 +9275,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 98,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 100.0,
       "Units": "A",
@@ -9291,7 +9291,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9307,7 +9307,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 99,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 100.0,
       "Units": "A",
@@ -9323,7 +9323,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": null,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 0.0,
       "Units": "A",
@@ -9366,7 +9366,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTX1",
       "System": "V4",
       "Comment": "",
@@ -9414,7 +9414,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTX2",
       "System": "V4",
       "Comment": "",
@@ -9462,7 +9462,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX1",
       "System": "V4",
       "Comment": "",
@@ -9510,7 +9510,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX2",
       "System": "V4",
       "Comment": "",
@@ -9558,7 +9558,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX3",
       "System": "V4",
       "Comment": "",
@@ -9606,7 +9606,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX4",
       "System": "V4",
       "Comment": "",
@@ -9654,7 +9654,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTZ1",
       "System": "V4",
       "Comment": "",
@@ -9702,7 +9702,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTZ2",
       "System": "V4",
       "Comment": "",
@@ -9750,7 +9750,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTZ3",
       "System": "V4",
       "Comment": "",
@@ -9798,7 +9798,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTS0",
       "System": "V4",
       "Comment": "",
@@ -9846,7 +9846,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ1",
       "System": "V4",
       "Comment": "",
@@ -9894,7 +9894,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ1-2",
       "System": "V4",
       "Comment": "",
@@ -9942,7 +9942,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ2",
       "System": "V4",
       "Comment": "",
@@ -9990,7 +9990,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ2-2",
       "System": "V4",
       "Comment": "",
@@ -10038,7 +10038,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ3",
       "System": "V4",
       "Comment": "",
@@ -10086,7 +10086,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ3-2",
       "System": "V4",
       "Comment": "",
@@ -10134,7 +10134,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ4",
       "System": "V4",
       "Comment": "",
@@ -10182,7 +10182,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ4-2",
       "System": "V4",
       "Comment": "",
@@ -10230,7 +10230,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTG1",
       "System": "V4",
       "Comment": "",
@@ -10278,7 +10278,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTG2",
       "System": "V4",
       "Comment": "",
@@ -10326,7 +10326,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTG3",
       "System": "V4",
       "Comment": "",
@@ -10374,7 +10374,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NTG4",
       "System": "V4",
       "Comment": "",
@@ -10422,7 +10422,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG1",
       "System": "V4",
       "Comment": "",
@@ -10470,7 +10470,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG2",
       "System": "V4",
       "Comment": "",
@@ -10518,7 +10518,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG3",
       "System": "V4",
       "Comment": "",
@@ -10566,7 +10566,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG4",
       "System": "V4",
       "Comment": "",
@@ -10614,7 +10614,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG5",
       "System": "V4",
       "Comment": "",
@@ -10662,7 +10662,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG6",
       "System": "V4",
       "Comment": "",
@@ -10710,7 +10710,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG7",
       "System": "V4",
       "Comment": "",
@@ -10758,7 +10758,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG8",
       "System": "V4",
       "Comment": "",
@@ -10806,7 +10806,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STX1",
       "System": "V4",
       "Comment": "",
@@ -10854,7 +10854,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STX2",
       "System": "V4",
       "Comment": "",
@@ -10902,7 +10902,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "CTX",
       "System": "V4",
       "Comment": "",
@@ -10950,7 +10950,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX1",
       "System": "V4",
       "Comment": "",
@@ -10998,7 +10998,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX2",
       "System": "V4",
       "Comment": "",
@@ -11046,7 +11046,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX3",
       "System": "V4",
       "Comment": "",
@@ -11094,7 +11094,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX4",
       "System": "V4",
       "Comment": "",
@@ -11142,7 +11142,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STZ1",
       "System": "V4",
       "Comment": "",
@@ -11190,7 +11190,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STZ2",
       "System": "V4",
       "Comment": "",
@@ -11238,7 +11238,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STZ3",
       "System": "V4",
       "Comment": "",
@@ -11286,7 +11286,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STZ0",
       "System": "V4",
       "Comment": "",
@@ -11334,7 +11334,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ1",
       "System": "V4",
       "Comment": "",
@@ -11382,7 +11382,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ1-2",
       "System": "V4",
       "Comment": "",
@@ -11430,7 +11430,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ2",
       "System": "V4",
       "Comment": "",
@@ -11478,7 +11478,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ2-2",
       "System": "V4",
       "Comment": "",
@@ -11526,7 +11526,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ3",
       "System": "V4",
       "Comment": "",
@@ -11574,7 +11574,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ3-2",
       "System": "V4",
       "Comment": "",
@@ -11622,7 +11622,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ4",
       "System": "V4",
       "Comment": "",
@@ -11670,7 +11670,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ4-2",
       "System": "V4",
       "Comment": "",
@@ -11718,7 +11718,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STG1",
       "System": "V4",
       "Comment": "",
@@ -11766,7 +11766,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STG2",
       "System": "V4",
       "Comment": "",
@@ -11814,7 +11814,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STG3",
       "System": "V4",
       "Comment": "",
@@ -11862,7 +11862,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "STG4",
       "System": "V4",
       "Comment": "",
@@ -11910,7 +11910,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG1",
       "System": "V4",
       "Comment": "",
@@ -11958,7 +11958,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG2",
       "System": "V4",
       "Comment": "",
@@ -12006,7 +12006,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG3",
       "System": "V4",
       "Comment": "",
@@ -12054,7 +12054,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG4",
       "System": "V4",
       "Comment": "",
@@ -12102,7 +12102,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG5",
       "System": "V4",
       "Comment": "",
@@ -12150,7 +12150,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG6",
       "System": "V4",
       "Comment": "",
@@ -12198,7 +12198,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG7",
       "System": "V4",
       "Comment": "",
@@ -12246,7 +12246,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG8",
       "System": "V4",
       "Comment": "",
@@ -12294,7 +12294,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX5",
       "System": "V4",
       "Comment": "",
@@ -12342,7 +12342,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX6",
       "System": "V4",
       "Comment": "",
@@ -12390,7 +12390,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX7",
       "System": "V4",
       "Comment": "",
@@ -12438,7 +12438,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX8",
       "System": "V4",
       "Comment": "",
@@ -12486,7 +12486,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX9",
       "System": "V4",
       "Comment": "",
@@ -12534,7 +12534,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ5",
       "System": "V4",
       "Comment": "",
@@ -12582,7 +12582,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ5-2",
       "System": "V4",
       "Comment": "",
@@ -12630,7 +12630,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ6",
       "System": "V4",
       "Comment": "",
@@ -12678,7 +12678,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ6-2",
       "System": "V4",
       "Comment": "",
@@ -12726,7 +12726,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ7",
       "System": "V4",
       "Comment": "",
@@ -12774,7 +12774,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ7-2",
       "System": "V4",
       "Comment": "",
@@ -12822,7 +12822,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ8",
       "System": "V4",
       "Comment": "",
@@ -12870,7 +12870,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ8-2",
       "System": "V4",
       "Comment": "",
@@ -12918,7 +12918,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ9",
       "System": "V4",
       "Comment": "",
@@ -12966,7 +12966,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ9-2",
       "System": "V4",
       "Comment": "",
@@ -13014,7 +13014,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG9",
       "System": "V4",
       "Comment": "",
@@ -13062,7 +13062,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG10",
       "System": "V4",
       "Comment": "",
@@ -13110,7 +13110,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG11",
       "System": "V4",
       "Comment": "",
@@ -13158,7 +13158,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG12",
       "System": "V4",
       "Comment": "",
@@ -13206,7 +13206,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG13",
       "System": "V4",
       "Comment": "",
@@ -13254,7 +13254,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG14",
       "System": "V4",
       "Comment": "",
@@ -13302,7 +13302,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG15",
       "System": "V4",
       "Comment": "",
@@ -13350,7 +13350,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG16",
       "System": "V4",
       "Comment": "",
@@ -13398,7 +13398,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG17",
       "System": "V4",
       "Comment": "",
@@ -13446,7 +13446,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG18",
       "System": "V4",
       "Comment": "",
@@ -13494,7 +13494,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIG1",
       "System": "V4",
       "Comment": "",
@@ -13542,7 +13542,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIG2",
       "System": "V4",
       "Comment": "",
@@ -13590,7 +13590,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIX1",
       "System": "V4",
       "Comment": "",
@@ -13638,7 +13638,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIX2",
       "System": "V4",
       "Comment": "",
@@ -13686,7 +13686,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX10",
       "System": "V4",
       "Comment": "",
@@ -13734,7 +13734,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX11",
       "System": "V4",
       "Comment": "",
@@ -13782,7 +13782,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX12",
       "System": "V4",
       "Comment": "",
@@ -13830,7 +13830,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX13",
       "System": "V4",
       "Comment": "",
@@ -13878,7 +13878,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX14",
       "System": "V4",
       "Comment": "",
@@ -13926,7 +13926,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "@NL2",
       "System": "V4",
       "Comment": "",
@@ -13974,7 +13974,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "@NL4",
       "System": "V4",
       "Comment": "",
@@ -14022,7 +14022,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ10",
       "System": "V4",
       "Comment": "",
@@ -14070,7 +14070,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ10-2",
       "System": "V4",
       "Comment": "",
@@ -14118,7 +14118,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ11",
       "System": "V4",
       "Comment": "",
@@ -14166,7 +14166,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ11-2",
       "System": "V4",
       "Comment": "",
@@ -14214,7 +14214,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ12",
       "System": "V4",
       "Comment": "",
@@ -14262,7 +14262,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ12-2",
       "System": "V4",
       "Comment": "",
@@ -14310,7 +14310,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ13",
       "System": "V4",
       "Comment": "",
@@ -14358,7 +14358,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ13-2",
       "System": "V4",
       "Comment": "",
@@ -14406,7 +14406,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ14",
       "System": "V4",
       "Comment": "",
@@ -14454,7 +14454,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ14-2",
       "System": "V4",
       "Comment": "",
@@ -14502,7 +14502,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIX3",
       "System": "V4",
       "Comment": "",
@@ -14550,7 +14550,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIX4",
       "System": "V4",
       "Comment": "",
@@ -14598,7 +14598,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIG3",
       "System": "V4",
       "Comment": "",
@@ -14646,7 +14646,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NIG4",
       "System": "V4",
       "Comment": "",
@@ -14694,7 +14694,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG19",
       "System": "V4",
       "Comment": "",
@@ -14742,7 +14742,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG20",
       "System": "V4",
       "Comment": "",
@@ -14790,7 +14790,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG21",
       "System": "V4",
       "Comment": "",
@@ -14838,7 +14838,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG22",
       "System": "V4",
       "Comment": "",
@@ -14886,7 +14886,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG23",
       "System": "V4",
       "Comment": "",
@@ -14934,7 +14934,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG24",
       "System": "V4",
       "Comment": "",
@@ -14982,7 +14982,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG25",
       "System": "V4",
       "Comment": "",
@@ -15030,7 +15030,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG26",
       "System": "V4",
       "Comment": "",
@@ -15078,7 +15078,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG27",
       "System": "V4",
       "Comment": "",
@@ -15126,7 +15126,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG28",
       "System": "V4",
       "Comment": "",
@@ -15174,7 +15174,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX5",
       "System": "V4",
       "Comment": "",
@@ -15222,7 +15222,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX6",
       "System": "V4",
       "Comment": "",
@@ -15270,7 +15270,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX7",
       "System": "V4",
       "Comment": "",
@@ -15318,7 +15318,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX8",
       "System": "V4",
       "Comment": "",
@@ -15366,7 +15366,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX9",
       "System": "V4",
       "Comment": "",
@@ -15414,7 +15414,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "@SL2",
       "System": "V4",
       "Comment": "",
@@ -15462,7 +15462,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ5",
       "System": "V4",
       "Comment": "",
@@ -15510,7 +15510,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ5-2",
       "System": "V4",
       "Comment": "",
@@ -15558,7 +15558,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ6",
       "System": "V4",
       "Comment": "",
@@ -15606,7 +15606,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ6-2",
       "System": "V4",
       "Comment": "",
@@ -15654,7 +15654,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ7",
       "System": "V4",
       "Comment": "",
@@ -15702,7 +15702,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ7-2",
       "System": "V4",
       "Comment": "",
@@ -15750,7 +15750,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ8",
       "System": "V4",
       "Comment": "",
@@ -15798,7 +15798,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ8-2",
       "System": "V4",
       "Comment": "",
@@ -15846,7 +15846,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ9",
       "System": "V4",
       "Comment": "",
@@ -15894,7 +15894,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ9-2",
       "System": "V4",
       "Comment": "",
@@ -15942,7 +15942,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "@SL1",
       "System": "V4",
       "Comment": "",
@@ -15990,7 +15990,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "@SL4",
       "System": "V4",
       "Comment": "",
@@ -16038,7 +16038,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG9",
       "System": "V4",
       "Comment": "",
@@ -16086,7 +16086,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG10",
       "System": "V4",
       "Comment": "",
@@ -16134,7 +16134,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG11",
       "System": "V4",
       "Comment": "",
@@ -16182,7 +16182,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG12",
       "System": "V4",
       "Comment": "",
@@ -16230,7 +16230,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG13",
       "System": "V4",
       "Comment": "",
@@ -16278,7 +16278,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG14",
       "System": "V4",
       "Comment": "",
@@ -16326,7 +16326,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG15",
       "System": "V4",
       "Comment": "",
@@ -16374,7 +16374,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG16",
       "System": "V4",
       "Comment": "",
@@ -16422,7 +16422,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG17",
       "System": "V4",
       "Comment": "",
@@ -16470,7 +16470,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG18",
       "System": "V4",
       "Comment": "",
@@ -16518,7 +16518,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIG1",
       "System": "V4",
       "Comment": "",
@@ -16566,7 +16566,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIG2",
       "System": "V4",
       "Comment": "",
@@ -16614,7 +16614,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIX1",
       "System": "V4",
       "Comment": "",
@@ -16662,7 +16662,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIX2",
       "System": "V4",
       "Comment": "",
@@ -16710,7 +16710,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX10",
       "System": "V4",
       "Comment": "",
@@ -16758,7 +16758,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX11",
       "System": "V4",
       "Comment": "",
@@ -16806,7 +16806,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX12",
       "System": "V4",
       "Comment": "",
@@ -16854,7 +16854,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX13",
       "System": "V4",
       "Comment": "",
@@ -16902,7 +16902,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX14",
       "System": "V4",
       "Comment": "",
@@ -16950,7 +16950,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ10",
       "System": "V4",
       "Comment": "",
@@ -16998,7 +16998,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ10-2",
       "System": "V4",
       "Comment": "",
@@ -17046,7 +17046,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ11",
       "System": "V4",
       "Comment": "",
@@ -17094,7 +17094,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ11-2",
       "System": "V4",
       "Comment": "",
@@ -17142,7 +17142,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ12",
       "System": "V4",
       "Comment": "",
@@ -17190,7 +17190,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ12-2",
       "System": "V4",
       "Comment": "",
@@ -17238,7 +17238,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ13",
       "System": "V4",
       "Comment": "",
@@ -17286,7 +17286,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ13-2",
       "System": "V4",
       "Comment": "",
@@ -17334,7 +17334,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ14",
       "System": "V4",
       "Comment": "",
@@ -17382,7 +17382,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ14-2",
       "System": "V4",
       "Comment": "",
@@ -17430,7 +17430,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIX3",
       "System": "V4",
       "Comment": "",
@@ -17478,7 +17478,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIX4",
       "System": "V4",
       "Comment": "",
@@ -17526,7 +17526,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIG3",
       "System": "V4",
       "Comment": "",
@@ -17574,7 +17574,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SIG4",
       "System": "V4",
       "Comment": "",
@@ -17622,7 +17622,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG19",
       "System": "V4",
       "Comment": "",
@@ -17670,7 +17670,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG20",
       "System": "V4",
       "Comment": "",
@@ -17718,7 +17718,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG21",
       "System": "V4",
       "Comment": "",
@@ -17766,7 +17766,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG22",
       "System": "V4",
       "Comment": "",
@@ -17814,7 +17814,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG23",
       "System": "V4",
       "Comment": "",
@@ -17862,7 +17862,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG24",
       "System": "V4",
       "Comment": "",
@@ -17910,7 +17910,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG25",
       "System": "V4",
       "Comment": "",
@@ -17958,7 +17958,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG26",
       "System": "V4",
       "Comment": "",
@@ -18006,7 +18006,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG27",
       "System": "V4",
       "Comment": "",
@@ -18054,7 +18054,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG28",
       "System": "V4",
       "Comment": "",
@@ -18102,7 +18102,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX15",
       "System": "V4",
       "Comment": "",
@@ -18150,7 +18150,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX16",
       "System": "V4",
       "Comment": "",
@@ -18198,7 +18198,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRX17",
       "System": "V4",
       "Comment": "",
@@ -18246,7 +18246,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEX5",
       "System": "V4",
       "Comment": "",
@@ -18294,7 +18294,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEX3",
       "System": "V4",
       "Comment": "",
@@ -18342,7 +18342,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEZ2",
       "System": "V4",
       "Comment": "",
@@ -18390,7 +18390,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ15",
       "System": "V4",
       "Comment": "",
@@ -18438,7 +18438,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ15-2",
       "System": "V4",
       "Comment": "",
@@ -18486,7 +18486,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ16",
       "System": "V4",
       "Comment": "",
@@ -18534,7 +18534,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRZ16-2",
       "System": "V4",
       "Comment": "",
@@ -18582,7 +18582,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEZ3",
       "System": "V4",
       "Comment": "",
@@ -18630,7 +18630,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG29",
       "System": "V4",
       "Comment": "",
@@ -18678,7 +18678,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG30",
       "System": "V4",
       "Comment": "",
@@ -18726,7 +18726,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG31",
       "System": "V4",
       "Comment": "",
@@ -18774,7 +18774,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG32",
       "System": "V4",
       "Comment": "",
@@ -18822,7 +18822,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NRG33",
       "System": "V4",
       "Comment": "",
@@ -18870,7 +18870,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEG5",
       "System": "V4",
       "Comment": "",
@@ -18918,7 +18918,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEG4",
       "System": "V4",
       "Comment": "",
@@ -18966,7 +18966,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEG3",
       "System": "V4",
       "Comment": "",
@@ -19014,7 +19014,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEG2",
       "System": "V4",
       "Comment": "",
@@ -19062,7 +19062,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEG1",
       "System": "V4",
       "Comment": "",
@@ -19110,7 +19110,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEQ3",
       "System": "V4",
       "Comment": "",
@@ -19158,7 +19158,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "NEQ2",
       "System": "V4",
       "Comment": "",
@@ -19206,7 +19206,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX15",
       "System": "V4",
       "Comment": "",
@@ -19254,7 +19254,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX16",
       "System": "V4",
       "Comment": "",
@@ -19302,7 +19302,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRX17",
       "System": "V4",
       "Comment": "",
@@ -19350,7 +19350,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEX5",
       "System": "V4",
       "Comment": "",
@@ -19398,7 +19398,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEX3",
       "System": "V4",
       "Comment": "",
@@ -19446,7 +19446,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ15",
       "System": "V4",
       "Comment": "",
@@ -19494,7 +19494,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ15-2",
       "System": "V4",
       "Comment": "",
@@ -19542,7 +19542,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ16",
       "System": "V4",
       "Comment": "",
@@ -19590,7 +19590,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRZ16-2",
       "System": "V4",
       "Comment": "",
@@ -19638,7 +19638,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEZ3",
       "System": "V4",
       "Comment": "",
@@ -19686,7 +19686,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEZ2",
       "System": "V4",
       "Comment": "",
@@ -19734,7 +19734,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG29",
       "System": "V4",
       "Comment": "",
@@ -19782,7 +19782,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG30",
       "System": "V4",
       "Comment": "",
@@ -19830,7 +19830,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG31",
       "System": "V4",
       "Comment": "",
@@ -19878,7 +19878,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG32",
       "System": "V4",
       "Comment": "",
@@ -19926,7 +19926,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SRG33",
       "System": "V4",
       "Comment": "",
@@ -19974,7 +19974,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEG5",
       "System": "V4",
       "Comment": "",
@@ -20022,7 +20022,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEG4",
       "System": "V4",
       "Comment": "",
@@ -20070,7 +20070,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEG3",
       "System": "V4",
       "Comment": "",
@@ -20118,7 +20118,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEG2",
       "System": "V4",
       "Comment": "",
@@ -20166,7 +20166,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEG1",
       "System": "V4",
       "Comment": "",
@@ -20214,7 +20214,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEQ3",
       "System": "V4",
       "Comment": "",
@@ -20262,7 +20262,7 @@
   },
   {
       "Class": "ADC channel",
-      "Name": "UM",
+      "Name": "UN",
       "Element": "SEQ2",
       "System": "V4",
       "Comment": "",
@@ -20510,7 +20510,7 @@
       "Module": "24CAPI16",
       "Channel": 4,
       "Cod/Value": -33.0,
-      "Units": "NUL",
+      "Units": null,
       "Max": 80.0,
       "Monit": true,
       "MonitType": "O",
@@ -20526,7 +20526,7 @@
       "Module": "90KAS",
       "Channel": 1,
       "Cod/Value": 11.6,
-      "Units": "NUL",
+      "Units": null,
       "Max": null,
       "Monit": true,
       "MonitType": "O",
@@ -20638,7 +20638,7 @@
       "Module": "24CAPI16",
       "Channel": 5,
       "Cod/Value": -300.0,
-      "Units": "NUL",
+      "Units": null,
       "Max": 60.0,
       "Monit": true,
       "MonitType": "O",
@@ -20651,7 +20651,7 @@
       "System": "V4",
       "Comment": "",
       "BANK": 362,
-      "Module": "NUL",
+      "Module": null,
       "Channel": 0,
       "Cod/Value": 2220.0,
       "Units": "HZ",
@@ -21262,7 +21262,7 @@
       "Module": "24CAPI16",
       "Channel": 13,
       "Cod/Value": 10950.0,
-      "Units": "NUL",
+      "Units": null,
       "Max": 6.0,
       "Monit": true,
       "MonitType": "O",
@@ -21278,7 +21278,7 @@
       "Module": "90KAS",
       "Channel": 62,
       "Cod/Value": 0.0,
-      "Units": "NUL",
+      "Units": null,
       "Max": null,
       "Monit": true,
       "MonitType": "O",
@@ -21294,7 +21294,7 @@
       "Module": "24CAPI16",
       "Channel": 14,
       "Cod/Value": 10950.0,
-      "Units": "NUL",
+      "Units": null,
       "Max": 6.0,
       "Monit": true,
       "MonitType": "O",
@@ -21310,7 +21310,7 @@
       "Module": "90KAS",
       "Channel": 63,
       "Cod/Value": 0.0,
-      "Units": "NUL",
+      "Units": null,
       "Max": null,
       "Monit": true,
       "MonitType": "O",
@@ -23894,7 +23894,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -23914,7 +23914,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -23934,7 +23934,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -23954,7 +23954,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -23974,7 +23974,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -23994,7 +23994,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24014,7 +24014,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24034,7 +24034,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24054,7 +24054,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24074,7 +24074,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24094,7 +24094,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24114,7 +24114,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24134,7 +24134,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24154,7 +24154,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24174,7 +24174,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24194,7 +24194,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24214,7 +24214,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24234,7 +24234,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24254,7 +24254,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24312,7 +24312,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]
@@ -24332,7 +24332,7 @@
               "Control channel": "U"
           },
           {
-              "ADC channel": "UM",
+              "ADC channel": "UN",
               "OK": true
           }
       ]

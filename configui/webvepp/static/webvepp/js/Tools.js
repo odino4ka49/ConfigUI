@@ -32,6 +32,7 @@ WEBVEPP.List = function(settings){
 
     function loadListData(){
         $(document).trigger("set_loading_cursor");
+        setWaitingText()
         $.ajax({
             type: "GET",
             data: {scheme_names: JSON.stringify(scheme_names) },
@@ -51,38 +52,45 @@ WEBVEPP.List = function(settings){
 
     function loadListSettings(){
         $(document).trigger("set_loading_cursor");
-            $.ajax({
-                type: "GET",
-                data: {scheme_names: JSON.stringify(scheme_names) },
-                url: WEBVEPP.serveradr()+"webvepp/getTreeSample",
-                error: function(xhr, ajaxOptions, thrownError) {
-                    $(document).trigger("unset_loading_cursor");
-                    $(document).trigger("error_message",thrownError);
-                },
-                success: function(data){
-                    list_settings = data;
-                    $(document).trigger("unset_loading_cursor");
-                }
-            });
-        };
+        setWaitingText();
+        $.ajax({
+            type: "GET",
+            data: {scheme_names: JSON.stringify(scheme_names) },
+            url: WEBVEPP.serveradr()+"webvepp/getTreeSample",
+            error: function(xhr, ajaxOptions, thrownError) {
+                $(document).trigger("unset_loading_cursor");
+                $(document).trigger("error_message",thrownError);
+            },
+            success: function(data){
+                list_settings = data;
+                $(document).trigger("unset_loading_cursor");
+            }
+        });
+    };
 
     function loadValidationData(){
         $(document).trigger("set_loading_cursor");
-            $.ajax({
-                type: "GET",
-                data: {scheme_names: JSON.stringify(scheme_names) },
-                url: WEBVEPP.serveradr()+"webvepp/getValidationData",
-                error: function(xhr, ajaxOptions, thrownError) {
-                    $(document).trigger("unset_loading_cursor");
-                    $(document).trigger("error_message",thrownError);
-                },
-                success: function(data){
-                    text_data = data;
-                    drawTextData();
-                    $(document).trigger("unset_loading_cursor");
-                }
-            });
+        setWaitingText();
+        $.ajax({
+            type: "GET",
+            data: {scheme_names: JSON.stringify(scheme_names) },
+            url: WEBVEPP.serveradr()+"webvepp/getValidationData",
+            error: function(xhr, ajaxOptions, thrownError) {
+                $(document).trigger("unset_loading_cursor");
+                $(document).trigger("error_message",thrownError);
+            },
+            success: function(data){
+                text_data = data;
+                drawTextData();
+                $(document).trigger("unset_loading_cursor");
+            }
+        });
     };
+
+    function setWaitingText(){
+        text_data = "Wait for it...";
+        drawTextData();
+    }
 
     function drawTextData(){
         //text_data.replace(/\n/g, "<br />");
