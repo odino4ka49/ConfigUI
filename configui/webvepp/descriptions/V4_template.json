@@ -264,7 +264,7 @@
       "System"
     ],
     "components": "Channels",
-    "component_connection_num": "Channel",
+    "component_ID": "Channel",
     "component_types": [
       "MilStd"
     ],
@@ -954,7 +954,7 @@
       "Element"
     ],
     "components": null,
-    "component_connection_num": null,
+    "component_ID": null,
     "component_types": null,
     "component_check_values": null
   },
@@ -1012,7 +1012,7 @@
       "System"
     ],
     "components": null,
-    "component_connection_num": null,
+    "component_ID": null,
     "component_types": null,
     "component_check_values": null
   }

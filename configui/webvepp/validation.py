@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 __author__ = 'oidin'
 import json
 import inspect, os
+import codecs
 
 system_name = "CHAN"
 objects = []
@@ -236,145 +238,179 @@ def validateTemplate(template):
     for rfield in template_required_fields:
         if rfield not in template:
             log_temp(template,"There is no such field: "+rfield+".")
-        else:
-            if rfield=="class" or rfield=="comment":
-                if not isinstance(template[rfield], basestring):
-                    log_temp(template,"Wrong type of data in field: "+rfield+". Should be String.")
-                    result = False
-            elif rfield=="fields":
-                for ofield in template["fields"]:
-                    if "key" in ofield:
-                        if not isinstance(ofield["key"], basestring):
-                            log_temp(template,"Wrong type of data in field: fields/key for key "+ofield["key"]+". Should be string")
-                            result = False
-                        else:
-                            if ofield["key"] in fields_names:
-                                log_temp(template,"Field name is not unique: "+ofield["key"]+".")
-                                result = False
-                            else:
-                                fields_names.append(ofield["key"])
-                    else:
-                        log_temp(template,"There is no field: fields/key.")
-                        result = False
-                    if "type" in ofield:
-                        if not isinstance(ofield["type"], basestring):
-                            log_temp(template,"Wrong type of data in field: fields/type. Should be string")
-                            result = False
-                    else:
-                        log_temp(template,"There is no field: fields/type.")
-                        result = False
-                    if "uniqueness" in ofield and ofield["uniqueness"]:
-                        if "key" in ofield and not checkUniqueness(template,ofield["key"]):
-                            result = False
-                    for key in ofield:
-                        if key!="key" and key!="type" and key!="uniqueness":
-                            log_temp(template,"There is a weird field in fields of template: "+key+".")
-                            result = False
-            elif rfield=="foreign_keys":
-                if not isinstance(template[rfield], list):
-                    log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
+    if "fields" in template:
+        for field in template["fields"]:
+            if "key" in field:
+                if field["key"] in fields_names:
+                    log_temp(template,"Field name is not unique: "+field["key"]+".")
                     result = False
                 else:
-                    for key in template[rfield]:
-                        if not isinstance(key, basestring):
-                            log_temp(template,"Wrong type of data in field foreign_keys for key "+key+". Should be string")
-                            result = False
-                        else:
-                            #check if template has such field
-                            if key not in fields_names:
-                                log_temp(template,"There is a problem with foreign_keys. There are no such field "+key+".")
-                                result = False
-            elif rfield=="primary_key":
-                if not isinstance(template[rfield], list):
-                    log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
-                    result = False
-                else:
-                    for key in template[rfield]:
-                        if not isinstance(key, basestring):
-                            log_temp(template,"Wrong type of data in field primary_key for key "+key+". Should be string")
-                            result = False
-                        else:
-                            #check if template has such field
-                            if key not in fields_names:
-                                log_temp(template,"There is a problem with primary_key. There are no such field "+key+".")
-                                result = False
-            elif rfield=="components":
-                if template["components"]:
-                    if not isinstance(template["components"], basestring):
-                        log_temp(template,"Wrong type of data in field components. Should be string")
-                        result = False
-                    else:
-                        if template["components"] not in fields_names:
-                            log_temp(template,"There is a problem with components. There are no such field "+template["components"]+".")
-                            result = False
-                        else:
-                            if "component_ID" not in template:
-                                log_temp(template,"There are supposed to be component_ID field.")
-                                result = False
-                            if "component_types" not in template:
-                                log_temp(template,"There are supposed to be component_types field.")
-                                result = False
-                            else:
-                                if not template["component_types"]:
-                                    log_temp(template,"component_types field is not supposed to be null.")
-                                    result = False
-                            if "component_check_values" not in template:
-                                log_temp(template,"There are supposed to be component_check_values field.")
-                                result = False
-                            else:
-                                if not template["component_check_values"]:
-                                    log_temp(template,"component_check_values field is not supposed to be null.")
-                                    result = False
-            elif rfield=="component_ID":
-                if template["component_ID"]:
-                    if not isinstance(template["component_ID"], basestring):
-                        log_temp(template,"Wrong type of data in field component_ID. Should be string")
-                        result = False
-                if "components" not in template:
-                    log_temp(template,"There are supposed to be components field.")
-                    result = False
-            elif rfield=="component_types":
-                if template["component_types"]:
-                    if not isinstance(template["component_types"], list):
-                        log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
-                        result = False
-                    else:
-                        for ctype in template["component_types"]:
-                            if not isinstance(ctype, basestring):
-                                log_temp(template,"Wrong type of data in field: "+ctype+". Should be string.")
-                                result = False
-                            else:
-                                found = False
-                                for templ in templates:
-                                    if "class" in templ and templ["class"]==ctype:
-                                        found=True
-                                if not found:
-                                    log_temp(template,"There are no template for "+ctype+" from component_types.")
-                                    result = False
-                if "components" not in template:
-                    log_temp(template,"There are supposed to be components field.")
-                    result = False
-            elif rfield=="component_check_values":
-                if template["component_check_values"]:
-                    if not isinstance(template["component_types"], list):
-                        log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
-                        result = False
-                    else:
-                        for key in template["component_check_values"]:
-                            if not isinstance(ctype, basestring):
-                                log_temp(template,"Wrong type of data in field: "+key+". Should be string.")
-                                result = False
-                            else:
-                                if key!="Component_name":
-                                    if key not in fields_names:
-                                        log_temp(template,"There is a problem with component_check_values. There are no such field "+key+".")
-                                        result = False
-                if "components" not in template:
-                    log_temp(template,"There are supposed to be components field.")
-                    result = False
-            else:
-                log_temp(template,"There are not supposed to be field "+rfield+" in this template.")
+                    fields_names.append(field["key"])
+    for rfield in template:
+        if rfield=="class" or rfield=="comment":
+            if not isinstance(template[rfield], basestring):
+                log_temp(template,"Wrong type of data in field: "+rfield+". Should be String.")
                 result = False
+        elif rfield=="fields":
+            for ofield in template["fields"]:
+                if "key" in ofield:
+                    if not isinstance(ofield["key"], basestring):
+                        log_temp(template,"Wrong type of data in field: fields/key for key "+ofield["key"]+". Should be string")
+                        result = False
+                else:
+                    log_temp(template,"There is no field: fields/key.")
+                    result = False
+                if "type" in ofield:
+                    if not isinstance(ofield["type"], basestring):
+                        log_temp(template,"Wrong type of data in field: fields/type. Should be string")
+                        result = False
+                else:
+                    log_temp(template,"There is no field: fields/type.")
+                    result = False
+                if "uniqueness" in ofield and ofield["uniqueness"]:
+                    if "key" in ofield and not checkUniqueness(template,ofield["key"]):
+                        result = False
+                for key in ofield:
+                    if key!="key" and key!="type" and key!="uniqueness":
+                        log_temp(template,"There is a weird field in fields of template: "+key+".")
+                        result = False
+        elif rfield=="foreign_keys":
+            if not isinstance(template[rfield], list):
+                log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
+                result = False
+            else:
+                for key in template[rfield]:
+                    if not isinstance(key, basestring):
+                        log_temp(template,"Wrong type of data in field foreign_keys for key "+key+". Should be string")
+                        result = False
+                    else:
+                        #check if template has such field
+                        if key not in fields_names:
+                            log_temp(template,"There is a problem with foreign_keys. There are no such field "+key+".")
+                            result = False
+                        #check if there's such class
+                        found = False
+                        for templ in templates:
+                            if "class" in templ and templ["class"]==key:
+                                found=True
+                        if not found:
+                            log_temp(template,"There are no template for "+key+" from component_types.")
+                            result = False
+        elif rfield=="primary_key":
+            if not isinstance(template[rfield], list):
+                log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
+                result = False
+            else:
+                for key in template[rfield]:
+                    if not isinstance(key, basestring):
+                        log_temp(template,"Wrong type of data in field primary_key for key "+key+". Should be string")
+                        result = False
+                    else:
+                        #check if template has such field
+                        if key not in fields_names:
+                            log_msg(unicode(fields_names)+":"+key)
+                            log_temp(template,"There is a problem with primary_key. There are no such field "+key+".")
+                            result = False
+        elif rfield=="components":
+            if template["components"]:
+                if not isinstance(template["components"], basestring):
+                    log_temp(template,"Wrong type of data in field components. Should be string")
+                    result = False
+                else:
+                    if template["components"] not in fields_names:
+                        log_temp(template,"There is a problem with components. There are no such field "+template["components"]+".")
+                        result = False
+                    else:
+                        if "component_ID" not in template:
+                            log_temp(template,"There are supposed to be component_ID field.")
+                            result = False
+                        if "component_types" not in template:
+                            log_temp(template,"There are supposed to be component_types field.")
+                            result = False
+                        else:
+                            if not template["component_types"]:
+                                log_temp(template,"component_types field is not supposed to be null.")
+                                result = False
+                        if "component_check_values" not in template:
+                            log_temp(template,"There are supposed to be component_check_values field.")
+                            result = False
+                        else:
+                            if not template["component_check_values"]:
+                                log_temp(template,"component_check_values field is not supposed to be null.")
+                                result = False
+        elif rfield=="component_ID":
+            if template["component_ID"]:
+                if not isinstance(template["component_ID"], basestring):
+                    log_temp(template,"Wrong type of data in field component_ID. Should be string")
+                    result = False
+            if "components" not in template:
+                log_temp(template,"There are supposed to be components field.")
+                result = False
+        elif rfield=="component_types":
+            if template["component_types"]:
+                if not isinstance(template["component_types"], list):
+                    log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
+                    result = False
+                else:
+                    for ctype in template["component_types"]:
+                        if not isinstance(ctype, basestring):
+                            log_temp(template,"Wrong type of data in field: "+ctype+". Should be string.")
+                            result = False
+                        else:
+                            found = False
+                            for templ in templates:
+                                if "class" in templ and templ["class"]==ctype:
+                                    found=True
+                                    #let's check primary_key and component_check_values
+                                    if "primary_key" in templ and "component_check_values" in template:
+                                        check_list = template["component_check_values"]
+                                        pk_list = templ["primary_key"]
+                                        if len(check_list)==len(pk_list):
+                                            for i in range(0,len(check_list)-1):
+                                                if check_list[i]=="Component_name":
+                                                    if pk_list[i]!="Name":
+                                                        log_temp(template,"There are supposed to be conformity of fields Name and Component_name for class: "+ctype+".")
+                                                        result = False
+                                                if "fields" in template:
+                                                    if(check_list[i]=="Component_name"):
+                                                        check_field = next((x for x in template["fields"] if x["key"] == "Name"), None)
+                                                    else:
+                                                        check_field = next((x for x in template["fields"] if x["key"] == check_list[i]), None)
+                                                if "fields" in templ:
+                                                    pk_field = next((x for x in template["fields"] if x["key"] == pk_list[i]), None)
+                                                if "type" in check_field and "type" in pk_field and check_field["type"]!=pk_field["type"]:
+                                                    log_temp(template,"Different types of field "+pk_list[i]+" in class: "+ctype+".")
+                                                    result = False
+                                        else:
+                                            log_temp(template,"There are different lengths for primary_key and component_check_values for class: "+ctype+".")
+                                            result = False
+                            if not found:
+                                log_temp(template,"There are no template for "+ctype+" from component_types.")
+                                result = False
+            if "components" not in template:
+                log_temp(template,"There are supposed to be components field.")
+                result = False
+        elif rfield=="component_check_values":
+            if template["component_check_values"]:
+                if not isinstance(template["component_types"], list):
+                    log_temp(template,"Wrong type of data in field: "+rfield+". Should be Array.")
+                    result = False
+                else:
+                    for key in template["component_check_values"]:
+                        if not isinstance(ctype, basestring):
+                            log_temp(template,"Wrong type of data in field: "+key+". Should be string.")
+                            result = False
+                        else:
+                            if key!="Component_name":
+                                if key not in fields_names:
+                                    log_temp(template,"There is a problem with component_check_values. There are no such field "+key+".")
+                                    result = False
+            if "components" not in template:
+                log_temp(template,"There are supposed to be components field.")
+                result = False
+        else:
+            log_temp(template,"There are not supposed to be field "+rfield+" in this template.")
+            result = False
     return result
 
 def log_msg(message):
@@ -384,8 +420,9 @@ def log_temp(template,message):
     if "class" not in template:
         template_name = unicode(template)
     else:
-        template_name = template["class"]
-    logfile.write("Error: tempate '"+template_name+"'. "+message+"\n")
+        template_name = unicode(template["class"])
+    print template_name
+    logfile.write("Error: tempate "+template_name+". "+message+"\n")
     return 0
 
 def log_warning(object,template,message):
@@ -441,7 +478,7 @@ def validate():
 def getValidationLog():
     global file_name,logfile,system_name
     file_name = os.path.dirname(os.path.abspath(__file__))+"/descriptions/validation_log/validation_log.txt"
-    logfile = open(file_name,"w")
+    logfile = codecs.open(file_name,"w","utf-8")
     logfile.write("System name: " + system_name+"\n")
     validate()
     logfile.close()

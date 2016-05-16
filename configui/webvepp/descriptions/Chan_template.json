@@ -194,82 +194,6 @@
     ]
   },
   {
-    "class": "MilStd",
-    "comment": "шаблон для магистрали MilStd",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "Address",
-        "type": "string"
-      },
-      {
-        "key": "Modules",
-        "type": "array"
-      }
-    ],
-    "foreign_keys":[ ],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": "Modules",
-    "component_ID": "ID",
-    "component_types": [
-      "Module"
-    ],
-    "component_check_values": [
-      "Component_name",
-      "System"
-    ]
-  },
-  {
-    "class": "КЛИПС",
-    "comment": "шаблон связи  для соединения с MilStd через КЛИПС",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "Channels",
-        "type": "array"
-      }
-    ],
-    "foreign_keys":[],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": "Channels",
-    "component_connection_num": "Channel",
-    "component_types": [
-      "MilStd"
-    ],
-    "component_check_values": [
-      "Component_name",
-      "System"
-    ]
-  },
-  {
     "class": "Serial",
     "comment": "шаблон для нифонтовской связи S7-S6-S5-S4/3",
     "fields": [
@@ -950,7 +874,7 @@
       "Element"
     ],
     "components": null,
-    "component_connection_num": null,
+    "component_ID": null,
     "component_types": null,
     "component_check_values": null
   },
@@ -1008,7 +932,7 @@
       "System"
     ],
     "components": null,
-    "component_connection_num": null,
+    "component_ID": null,
     "component_types": null,
     "component_check_values": null
   }
