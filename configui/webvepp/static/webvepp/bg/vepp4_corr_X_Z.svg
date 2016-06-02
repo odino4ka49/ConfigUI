@@ -578,8 +578,8 @@ viewBox="0 0 297 210"
   <g transform="matrix(-0.00150517 -0.999999 0.999999 -0.00150517 97.0347 170.848)">
    <text x="148.5" y="105"  class="fil10 fnt0">STL4</text>
   </g>
-  <g transform="matrix(0.999999 -0.00150517 0.00150517 0.999999 59.663 -83.9601)">
-   <text x="148.5" y="105"  class="fil10 fnt3">STW</text>
+  <g transform="matrix(0.999999 -0.00150517 0.00150517 0.999999 43.8427 10.6329)">
+   <text x="105" y="148.5"  class="fil10 fnt3">STW</text>
   </g>
   <g transform="matrix(0.00150517 0.999999 -0.999999 0.00150517 208.582 -130.926)">
    <text x="148.5" y="105"  class="fil10 fnt0">NTL3</text>
@@ -587,8 +587,8 @@ viewBox="0 0 297 210"
   <g transform="matrix(0.00150517 0.999999 -0.999999 0.00150517 205.998 -130.945)">
    <text x="148.5" y="105"  class="fil10 fnt0">NTL4</text>
   </g>
-  <g transform="matrix(0.999999 -0.00150517 0.00150517 0.999999 -59.4747 -83.9566)">
-   <text x="148.5" y="105"  class="fil10 fnt3">NTW</text>
+  <g transform="matrix(0.999999 -0.00150517 0.00150517 0.999999 -47.6017 10.6356)">
+   <text x="105" y="148.5"  class="fil10 fnt3">NTW</text>
   </g>
   <g transform="matrix(0.986347 0.164677 -0.164677 0.986347 -34.826 -40.6331)">
    <text x="148.5" y="105"  class="fil10 fnt0">SIM4</text>
@@ -1367,6 +1367,16 @@ viewBox="0 0 297 210"
   <g id="_42202368" link="SRX16" class="link" >
    <rect id="_42207680" class="fil55 str2" transform="matrix(2.11073E-014 -0.796968 1.50538 3.98694E-014 182.625 108.816)" width="3.961" height="2.097"/>
    <text x="181.495" y="110.736" id="_42202672" class="fil45 fnt0">SRX16</text>
+  </g>
+  <g id="_86622672" link="NTX3" class="link" >
+   <rect id="_83610128" class="fil55 str2" transform="matrix(3.80133E-014 -0.728803 2.71113 3.64594E-014 88.9542 21.4366)" width="3.961" height="2.097"/>
+   <text x="89.549" y="23.4217" id="_274069440" class="fil45 fnt0">NTX</text>
+   <text x="93.2258" y="23.4217" id="_274069440" class="fil45 fnt0">3</text>
+  </g>
+  <g id="_274011976" link="STX3" class="link" >
+   <rect id="_274094664" class="fil55 str2" transform="matrix(3.80133E-014 -0.728803 2.71113 3.64594E-014 208.029 21.4364)" width="3.961" height="2.097"/>
+   <text x="208.39" y="23.6155" id="_274264840" class="fil45 fnt0">STX</text>
+   <text x="211.966" y="23.6155" id="_274264840" class="fil45 fnt0">3</text>
   </g>
  </g>
 </svg>
