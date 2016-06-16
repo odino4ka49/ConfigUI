@@ -1,12 +1,37 @@
 [
   {
+    "name": "Menu",
+    "buttons": [
+      {
+        "title": "Аппаратура",
+        "sample": "Chan_camacs",
+        "link_name": "camacs"
+      },
+      {
+        "title": "Элементы",
+        "sample": "Chan_elements",
+        "link_name": "elements"
+      },
+      {
+        "title": "Схема",
+        "sample": "Scheme",
+        "link_name": "scheme"
+      },
+      {
+        "title": "Инструменты",
+        "sample": "Tools",
+        "link_name": "tools"
+      }
+    ]
+  },
+  {
     "name": "Chan_camacs",
     "root": {
       "type": "new",
       "level": 0,
       "fields": {
-        "System": "CHAN",
-        "Name": "CHAN_camacs"
+        "System": "V4",
+        "Name": "Chan_camacs"
       },
       "sort_field": "Name",
       "display_filter": {
@@ -26,7 +51,8 @@
       "level": 1,
       "filter": {
         "Class": [
-          "CAMAC","Serial"
+          "CAMAC",
+          "Serial"
         ]
       },
       "sort_field": "Name",
@@ -53,7 +79,10 @@
             "link_to": {
               "Name": "&Dispatcher name",
               "System": "&System",
-              "Class": ["DS-24","Б0634"]
+              "Class": [
+                "DS-24",
+                "Б0634"
+              ]
             },
             "value": "ID"
           },
@@ -72,7 +101,10 @@
             "link_to": {
               "Name": "&Dispatcher name",
               "System": "&System",
-              "Class": ["DS-24","Б0634"]
+              "Class": [
+                "DS-24",
+                "Б0634"
+              ]
             },
             "value": "ID"
           },
@@ -82,7 +114,7 @@
           "Rack/cabinet",
           "Rack level",
           {
-            "key":"Modules",
+            "key": "Modules",
             "value": "len"
           },
           {
@@ -229,7 +261,7 @@
         "matrix_size": "&Module Type->Channels number",
         "field_name": false
       },
-      "action":{
+      "action": {
         "type": "open_another_map",
         "map": "elements",
         "info": "&Element"
@@ -273,7 +305,9 @@
           "Rack/cabinet",
           "Rack level"
         ],
-        "max": ["*"]
+        "max": [
+          "*"
+        ]
       },
       "display_attributes": {
         "width": 200,
@@ -286,7 +320,8 @@
       "level": 1,
       "filter": {
         "Class": [
-          "Element","Hand"
+          "Element",
+          "Hand"
         ]
       },
       "display_filter": {
@@ -302,7 +337,7 @@
           "Comment",
           "Polarity",
           {
-            "key":"Channels",
+            "key": "Channels",
             "value": "len"
           },
           "EnergyLock",
@@ -320,11 +355,23 @@
         "hiding": "true",
         "field_name": false
       },
-      "remote_attributes":{
+      "remote_attributes": {
         "Class": "Hand",
         "type": "matrix_equation",
-        "open_extra": [150,150],
-        "attributes": ["variables","Graphs","Elements","Elements","Lines","variables","Elements","BANK"]
+        "open_extra": [
+          150,
+          150
+        ],
+        "attributes": [
+          "variables",
+          "Graphs",
+          "Elements",
+          "Elements",
+          "Lines",
+          "variables",
+          "Elements",
+          "BANK"
+        ]
       }
     },
     "level2": {
@@ -421,7 +468,8 @@
       "level": 1,
       "filter": {
         "Class": [
-          "CAMAC","Serial"
+          "CAMAC",
+          "Serial"
         ]
       },
       "sort_field": "Name",
@@ -477,7 +525,7 @@
           "Rack/cabinet",
           "Rack level",
           {
-            "key":"Modules",
+            "key": "Modules",
             "value": "len"
           }
         ]
@@ -487,7 +535,7 @@
         "height": 130,
         "field_name": true
       },
-      "action":{
+      "action": {
         "type": "open_another_map",
         "map": "camacs",
         "info": "&Name"
@@ -495,7 +543,26 @@
     }
   },
   {
-    "name": "Chan_banks",
+    "name": "Tools",
+    "buttons": [
+      {
+        "title": "Валидация",
+        "id": "validation"
+      },
+      {
+        "title": "BANK",
+        "id": "tool_banks",
+        "sample": "Tool_banks"
+      },
+      {
+        "title": "Модули",
+        "id": "tool_modules",
+        "sample": "Tool_modules"
+      }
+    ]
+  },
+  {
+    "name": "Tool_banks",
     "type": "list",
     "root": {
       "type": "filter",
@@ -568,7 +635,9 @@
             "key": "Module Position",
             "link_to": {
               "System": "&System",
-              "Class": ["CAMAC"]
+              "Class": [
+                "CAMAC"
+              ]
             },
             "value": "Position"
           }

@@ -27,8 +27,8 @@ $(document).on("unset_loading_cursor",function(){
 $(document).ready(function(){
     var cookies = WEBVEPP.Cookies(),
         settings = WEBVEPP.Settings(cookies),
-        scheme = WEBVEPP.List(settings),
-        menu_bar = WEBVEPP.MenuBar();
+        scheme = WEBVEPP.List(d3.select("#Tool_bar"),settings),
+        menu_bar = WEBVEPP.MenuBar(d3.select("#Navigation_bar"),settings);
 });
 
 

@@ -28,14 +28,14 @@ $(document).on("unset_loading_cursor",function(){
 $(document).ready(function(){
     var cookies = WEBVEPP.Cookies(),
         settings = WEBVEPP.Settings(cookies),
-        tree_model = WEBVEPP.TreeModel(settings),
+        menu_bar = WEBVEPP.MenuBar(d3.select("#Navigation_bar"),settings),
+        tree_model = WEBVEPP.TreeModel(menu_bar,settings),
         tree = "",
         tree_view = WEBVEPP.TreeView(tree_model,{
             //"canvas": d3.select("#tree_map"),
             "body": d3.select("body")
         },tree);
         tree_controller = WEBVEPP.TreeController(tree_model,tree_view),
-        menu_bar = WEBVEPP.MenuBar(),
         filter_bar = WEBVEPP.FilterBar();
 });
 

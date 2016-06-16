@@ -73,11 +73,11 @@ def to_float(string):
 
 def makeBPMObject(line):
     bmp = {}
-    bmp["Class"] = "BMP"
+    bmp["Class"] = "BPM"
     bmp["Name"] = line[0]
     bmp["System"] = "V4"
     bmp["Comment"] = ""
-    bmp["BMP Type"] = to_int(line[1])
+    bmp["BMP Type"] = "BPM"+line[1]
     bmp["Azimuth"] = to_float(line[2])
     bmp["GX"] = to_float(line[3])
     bmp["GZ"] = to_float(line[4])

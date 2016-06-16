@@ -1,6 +1,31 @@
 [
   {
-    "name": "Chan_camacs",
+    "name": "Menu",
+    "buttons": [
+      {
+        "title": "Аппаратура",
+        "sample": "V4_camacs",
+        "link_name": "camacs"
+      },
+      {
+        "title": "Элементы",
+        "sample": "V4_elements",
+        "link_name": "elements"
+      },
+      {
+        "title": "Схема",
+        "sample": "Scheme",
+        "link_name": "scheme"
+      },
+      {
+        "title": "Инструменты",
+        "sample": "Tools",
+        "link_name": "tools"
+      }
+    ]
+  },
+  {
+    "name": "V4_camacs",
     "root": {
       "type": "new",
       "level": 0,
@@ -237,7 +262,7 @@
     }
   },
   {
-    "name": "Chan_elements",
+    "name": "V4_elements",
     "filter_buttons": [
       {
         "name": "Main",
@@ -252,14 +277,14 @@
         }
       },
       {
-        "name": "Orbit X",
+        "name": "Orbit_X",
         "filter": {
           "Type": ["Orbit Correction"],
           "Name": "hasX"
         }
       },
       {
-        "name": "Orbit Z",
+        "name": "Orbit_Z",
         "filter": {
           "Type": ["Orbit Correction"],
           "Name": "hasZ"
@@ -565,6 +590,25 @@
         "info": "&Name"
       }
     }
+  },
+  {
+    "name": "Tools",
+    "buttons": [
+      {
+        "title": "Валидация",
+        "id": "validation"
+      },
+      {
+        "title": "BANK",
+        "id": "tool_bank",
+        "sample": "Chan_banks"
+      },
+      {
+        "title": "Модули",
+        "id": "tool_modules",
+        "sample": "Tool_modules"
+      }
+    ]
   },
   {
     "name": "Chan_banks",

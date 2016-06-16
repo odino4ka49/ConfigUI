@@ -1,0 +1,237 @@
+[
+  {
+    "name": "Menu",
+    "buttons": [
+      {
+        "title": "Коммутации",
+        "sample": "BPM_nodes",
+        "link_name": "camacs"
+      },
+      {
+        "title": "Пикапы",
+        "sample": "BPM_bpms",
+        "link_name": "elements"
+      },
+      {
+        "title": "Схема",
+        "sample": "Scheme",
+        "link_name": "scheme"
+      },
+      {
+        "title": "Инструменты",
+        "sample": "Tools",
+        "link_name": "tools"
+      }
+    ]
+  },
+  {
+    "name": "BPM_nodes",
+    "root": {
+      "type": "new",
+      "level": 0,
+      "fields": {
+        "System": "V4",
+        "Name": "BPM_nodes"
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "System"
+        ],
+        "max": []
+      },
+      "display_attributes": {
+        "width": 0,
+        "height": 0,
+        "field_name": false
+      }
+    },
+    "level1": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "Node"
+        ]
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "Name",
+          "Host",
+          "Area"
+        ],
+        "max": [
+          "Class",
+          "Name",
+          "System",
+          "Comment",
+          "Host",
+          "Area"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 130,
+        "field_name": true
+      }
+    },
+    "level2": {
+      "type": "filter",
+      "level": 2,
+      "filter": {
+        "Class": [
+          "Module",
+          "Node"
+        ]
+      },
+      "sort_field": "Position",
+      "display_filter": {
+        "min": [
+          "Name",
+          "Module Type",
+          {
+            "key": "Position",
+            "value": "link_id"
+          }
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      }
+    }
+  },
+  {
+    "name": "BPM_bpms",
+    "root": {
+      "type": "new",
+      "level": 0,
+      "fields": {
+        "System": "V4",
+        "Name": "BPM_bpms"
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "System",
+          "Name"
+        ],
+        "max": []
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 70,
+        "field_name": false
+      }
+    },
+    "level1": {
+      "type": "filter",
+      "level": 1,
+      "filter": {
+        "Class": [
+          "BPM"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "Name"
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "BMP Type",
+          "Azimuth",
+          "GX",
+          "GZ",
+          "GeodX",
+          "GeodZ",
+          "X0",
+          "Z0"
+        ]
+      },
+      "display_attributes": {
+        "width": 60,
+        "height": 30,
+        "positioning": "matrix",
+        "matrix_type": "simple",
+        "matrix_size": 64,
+        "hiding": "true",
+        "field_name": false
+      }
+    }
+  },
+  {
+    "name": "Tools",
+    "buttons": [
+      {
+        "title": "Валидация",
+        "id": "validation"
+      },
+      {
+        "title": "Типы пикапов",
+        "id": "tool_bpmtypes",
+        "sample": "Tool_bpmtypes"
+      }
+    ]
+  },
+  {
+    "name": "Tool_bpmtypes",
+    "type": "list",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "Control channel",
+          "UR channel",
+          "ADC channel",
+          "Meas channel",
+          "DBLUR channel",
+          "Module channel"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "BANK",
+          "Element",
+          "Name",
+          "Cod/Value",
+          "Units",
+          "MonitType",
+          "Deviation",
+          "Module",
+          "Channel"
+        ],
+        "max": [
+          "BANK",
+          "Name",
+          "Element"
+        ]
+      },
+      "sort_field": "BANK",
+      "display_attributes": {
+        "field_name": false,
+        "inline": true,
+        "sort_type": "cells"
+      }
+    }
+  },
+  {
+    "name": "Scheme",
+    "type": "single",
+    "schemes": [
+      {
+        "name": "Main",
+        "filename": "vepp4_pickups"
+      }
+    ]
+  }
+]

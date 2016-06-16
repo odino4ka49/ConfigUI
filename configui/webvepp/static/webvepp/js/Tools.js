@@ -1,7 +1,8 @@
 WEBVEPP.namespace("WEBVEPP.List");
-WEBVEPP.List = function(settings){
+WEBVEPP.List = function(tool_bar,settings){
     var list, list_settings,
         settings = settings,
+        tool_data = [],
         scheme_names = {"system":"","sample":""},
         table = d3.select("body").select("table"),
         text_data = "";
@@ -12,16 +13,7 @@ WEBVEPP.List = function(settings){
         scheme_names.system = settings.getSystemName();
         if(path[1]=="webvepp"){
             if(path[2]=="tools"){
-                if(tool_name=="bank"){
-                    scheme_names.sample = "bank";
-                }
-                else if(tool_name=="tool_modules"){
-                    scheme_names.sample = "tool_modules";
-                }
-                else
-                {
-                    scheme_names.sample = "";
-                }
+                scheme_names.sample = tool_name;
             }
             else
             {
@@ -155,26 +147,53 @@ WEBVEPP.List = function(settings){
             text += attr.value+"  ";
         });
         return text;
-    }
+    };
+
+    function loadToolData(){
+        $(document).trigger("set_loading_cursor");
+        $.ajax({
+            type: "GET",
+            data: {system_name: JSON.stringify(scheme_names.system) },
+            url: WEBVEPP.serveradr()+"webvepp/getToolData",
+            error: function(xhr, ajaxOptions, thrownError) {
+                $(document).trigger("unset_loading_cursor");
+                $(document).trigger("error_message",thrownError);
+            },
+            success: function(data){
+                tool_data = data["buttons"];
+                setToolbar();
+                $(document).trigger("tools_menu_loaded",data);
+                $(document).trigger("unset_loading_cursor");
+            }
+        });
+    };
 
     function setToolbar(){
-        $("#tool_bank").click(function(){
-            setSchemeNames("bank");
-            loadListSettings();
-            loadListData();
-        })
-        $("#tool_modules").click(function(){
-            setSchemeNames("tool_modules");
-            loadListSettings();
-            loadListData();
-        })
-        $("#validation").click(function(){
-            setSchemeNames("");
-            loadValidationData()
-        })
-    }
+        var button = tool_bar.selectAll("li.button")
+            .data(tool_data);
+        var buttonEnter = button.enter().insert("li")
+            .attr("class", "button")
+            .attr("id",function(d){
+                return d.id;
+            })
+            .on('click', function(d){
+                if(d.id!="validation"){
+                    setSchemeNames(d.sample);
+                    loadListSettings();
+                    loadListData();
+                }
+                else{
+                    setSchemeNames("");
+                    loadValidationData();
+                }
+            })
+            .text(function(d){
+                return d.title;
+            })
+    };
 
-    setToolbar();
+    setSchemeNames();
+    loadToolData();
 
     return {
     };

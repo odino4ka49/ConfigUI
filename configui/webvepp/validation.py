@@ -20,12 +20,7 @@ def getSystemName():
 
 def getAllTemplates():
     global system_name
-    if system_name == "CHAN":
-        tree_template = getDataFile("Chan_template.json")
-    elif system_name == "V4":
-        tree_template = getDataFile("V4_template.json")
-    else:
-        tree_template = []
+    tree_template = getDataFile(system_name+"_template.json")
     return tree_template
 
 def getTemplate(object):
@@ -45,12 +40,7 @@ def getTemplateByName(classname):
 
 def getAllObjects():
     global system_name
-    if system_name == "CHAN":
-        return getDataFile("CHAN.json")
-    elif system_name == "V4":
-        return getDataFile("V4.json")
-    else:
-        return []
+    return getDataFile(system_name+".json")
 
 def filterObjects(data,rules):
     objects = []

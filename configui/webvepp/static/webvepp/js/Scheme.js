@@ -1,5 +1,5 @@
 WEBVEPP.namespace("WEBVEPP.Scheme");
-WEBVEPP.Scheme = function(settings){
+WEBVEPP.Scheme = function(menu,settings){
     var scheme_names = {},
         settings = settings;
     var scheme, schemeSVG,
@@ -13,68 +13,6 @@ WEBVEPP.Scheme = function(settings){
         .on('zoom', function(){
             svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
         }),
-
-        //заглушка
-        setSchemeSample = function(){
-            var system_name = settings.getSystemName();
-            switch(system_name){
-                case "CHAN":
-                    scheme_names = {
-                        "name": "Scheme",
-                        "type": "single",
-                        "schemes": [
-                          {
-                            "name": "Main",
-                            "filename": "Chan_V3-V4_scheme_bbg"
-                          }
-                        ]
-                      }
-                    break;
-                case "V4":
-                    scheme_names = {
-                        "name": "Scheme",
-                        "type": "list",
-                        "schemes": [
-                            {
-                              "name":"Main",
-                              "filename": "vepp4_main"
-                            },
-                            {
-                              "name":"Non-linear",
-                              "filename": "vepp4_RF_elstat_non-linear"
-                            },
-                            {
-                              "name":"Orbit X",
-                              "filename": "vepp4_corr_X_Z"
-                            },
-                            {
-                              "name":"Orbit Z",
-                              "filename": "vepp4_corr_X_Z"
-                            },
-                            {
-                              "name":"Gradient",
-                              "filename": "vepp4_gradient "
-                            },
-                            {
-                              "name":"Electrostatic",
-                              "filename": "vepp4_RF_elstat_non-linear"
-                            },
-                            {
-                              "name":"RF",
-                              "filename": "vepp4_RF_elstat_non-linear"
-                            },
-                            {
-                              "name":"Hand",
-                              "filename": "vepp4_main"
-                            }
-                        ]
-                    }
-                    break;
-                default:
-                    scheme_names = {"type":null,"schemes":{}}
-                    break;
-               }
-        },
 
         loadSchemeSample = function(){
             $(document).trigger("set_loading_cursor");
@@ -215,7 +153,7 @@ WEBVEPP.Scheme = function(settings){
 
     function setSchemeNames(){
         tree_scheme_names.system = settings.getSystemName();
-        tree_scheme_names.sample = "Scheme";
+        tree_scheme_names.sample = menu.getSampleName("scheme");
     };
 
     svg = d3.select("body").append("svg")
@@ -225,8 +163,12 @@ WEBVEPP.Scheme = function(settings){
         .call(zoom)
         .append('g')
         .attr('id','schemeSVG');
-    setSchemeNames();
-    loadSchemeSample();
+
+
+    $(document).on("menu_loaded",function(){
+        setSchemeNames();
+        loadSchemeSample();
+    })
 
     return {
     };

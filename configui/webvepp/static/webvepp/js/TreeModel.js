@@ -1,5 +1,5 @@
 WEBVEPP.namespace("WEBVEPP.TreeModel");
-WEBVEPP.TreeModel = function(settings){
+WEBVEPP.TreeModel = function(menu,settings){
     var tree_data = {},
         tree_settings = {},
         tree_scheme_names = {"system":"","sample":""},
@@ -19,12 +19,9 @@ WEBVEPP.TreeModel = function(settings){
         var path = pathname.split('/');
         tree_scheme_names.system = settings.getSystemName();
         if(path[1]=="webvepp"){
-            if(path[2]==""||path[2]=="camacs"){
-                tree_scheme_names.sample = "camacs";
-            }
-            else
+            if(path[2]!="")
             {
-                tree_scheme_names.sample = path[2];
+                tree_scheme_names.sample = menu.getSampleName(path[2]);
             }
         }
     };
@@ -118,10 +115,12 @@ WEBVEPP.TreeModel = function(settings){
         return a;
     }
 
-    setSchemeNames();
-    loadTreeSettings();
-    loadTreeData();
 
+    $(document).on("menu_loaded",function(){
+        setSchemeNames();
+        loadTreeSettings();
+        loadTreeData();
+    })
 
     $(document).on("reload_tree",function(event,filter_name){
         loadTreeData(filter_name);

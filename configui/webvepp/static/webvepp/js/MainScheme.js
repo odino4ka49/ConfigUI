@@ -28,8 +28,8 @@ $(document).on("unset_loading_cursor",function(){
 $(document).ready(function(){
     var cookies = WEBVEPP.Cookies(),
         settings = WEBVEPP.Settings(cookies),
-        scheme = WEBVEPP.Scheme(settings),
-        menu_bar = WEBVEPP.MenuBar();
+        menu_bar = WEBVEPP.MenuBar(d3.select("#Navigation_bar"),settings),
+        scheme = WEBVEPP.Scheme(menu_bar,settings);
 });
 
 

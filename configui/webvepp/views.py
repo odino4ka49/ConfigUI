@@ -76,6 +76,24 @@ def loadSchemeData(request):
     svg = doc.getElementsByTagName("svg")[0]
     return HttpResponse(svg)
 
+def loadToolData(request):
+    try:
+        data = request.GET
+        system_name = json.loads(data['system_name'])
+        tool_data = getTools(system_name)
+    except Exception as e:
+        print e
+    return HttpResponse(json.dumps(tool_data, ensure_ascii=False), content_type="application/json")
+
+def loadMenuData(request):
+    try:
+        data = request.GET
+        system_name = json.loads(data['system_name'])
+        menu_data = getMenu(system_name)
+    except Exception as e:
+        print e
+    return HttpResponse(json.dumps(menu_data, ensure_ascii=False), content_type="application/json")
+
 def loadValidationData(request):
     data = request.GET
     scheme_names = json.loads(data["scheme_names"])
@@ -753,51 +771,45 @@ def getObjectById(id):
             object = obj
     return object
 
+def getTools(system_name):
+    global tree_sample
+    if system_name not in tree_sample:
+        tree_sample[system_name] = getDataFile(system_name+"_sample.json")
+    samples = tree_sample[system_name]
+    return next((x for x in samples if x["name"] == "Tools"), None)
+
+def getMenu(system_name):
+    global tree_sample
+    if system_name not in tree_sample:
+        tree_sample[system_name] = getDataFile(system_name+"_sample.json")
+    samples = tree_sample[system_name]
+    return next((x for x in samples if x["name"] == "Menu"), None)
+
 def getSample():
     global tree_sample,current_scheme_name
     system_name = current_scheme_name["system"]
-    sample_name = current_scheme_name["sample"]
-    tree_sample_name = "Chan_camacs"
-    if sample_name == "elements":
-        tree_sample_name = "Chan_elements"
-    elif sample_name == "bank":
-        tree_sample_name = "Chan_banks"
-    elif sample_name == "tool_modules":
-        tree_sample_name = "Tool_modules"
-    elif sample_name == "Scheme":
-        tree_sample_name = sample_name
-    if system_name not in tree_sample:
-        if system_name == "CHAN":
-            tree_sample[system_name] = getDataFile("Chan_sample.json")
-        elif system_name == "V4":
-            tree_sample[system_name] = getDataFile("V4_sample.json")
-        else:
-            tree_sample[system_name] = []
+    sample_link = current_scheme_name["sample"]
+    #menu = getMenu(system_name)
+    #sample_button = next((x for x in menu["buttons"] if x["link_name"] == sample_link), None)
+    #if not sample_button:
+    #    print "Error: no such menu button: "+ sample_link
+    #    return None
+    sample_name = sample_link#_button["sample"]
     samples = tree_sample[system_name]
-    return next((x for x in samples if x["name"] == tree_sample_name), None)
+    return next((x for x in samples if x["name"] == sample_name), None)
 
 def getAllTemplates():
     global tree_template,current_scheme_name
     system_name = current_scheme_name["system"]
     if system_name not in tree_template:
-        if system_name == "CHAN":
-            tree_template[system_name] = getDataFile("Chan_template.json")
-        elif system_name == "V4":
-            tree_template[system_name] = getDataFile("V4_template.json")
-        else:
-            tree_template[system_name] = []
+        tree_template[system_name] = getDataFile(system_name+"_template.json")
     return tree_template[system_name]
 
 def getAllObjects():
     global tree_data,current_scheme_name
     system_name = current_scheme_name["system"]
     if system_name not in tree_data:
-        if system_name == "CHAN":
-            tree_data[system_name] = getDataFile("CHAN.json")
-        elif system_name == "V4":
-            tree_data[system_name] = getDataFile("V4.json")
-        else:
-            tree_data[system_name] = []
+        tree_data[system_name] = getDataFile(system_name+".json")
     return tree_data[system_name]
 
 def getObjects(rules):

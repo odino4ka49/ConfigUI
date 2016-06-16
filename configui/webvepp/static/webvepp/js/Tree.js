@@ -375,9 +375,6 @@ WEBVEPP.Tree = function(params){
                 // Add any new nodes
                 var nodeEnter = node.enter().insert("g")
                   .attr("class", "person " + selector)
-
-                  // Add new nodes at the right side of their child's box.
-                  // They will be transitioned into their proper position.
                   .attr('transform', function(person){
                     return 'translate(' + (direction * (source.y0 + person.width/2)) + ',' + source.x0 + ')';
                   })
@@ -385,17 +382,9 @@ WEBVEPP.Tree = function(params){
                     togglePerson(person);
                     if("link_to_map" in person){
                         var win = window.open(WEBVEPP.serveradr()+"webvepp/"+person.link_to_map,'_self');
-                        //this is for new tab
-                        //'_blank');
-                        /*if(win){
-                            win.focus();
-                        }else{
-                            alert('Please allow popups for this site');
-                        }*/
                     }
                   })
                   .on('wheel.zoom', function(){
-                    //d3.event.stopPropagation();
                   })
                   .on('contextmenu', function(person){
                     d3.event.preventDefault();
@@ -405,12 +394,7 @@ WEBVEPP.Tree = function(params){
                         $(document).trigger("load_details",person);
                     revealPerson(person);
                   })
-                  /*.on('mouseout', function(person){
-                    revealPerson(person);
-                  })*/;
-                // Draw the rectangle person boxes.
-                // Start new boxes with 0 size so that
-                // we can transition them to their proper size.
+
                 nodeEnter.append("rect")
                   .attr({
                     x: 0,
@@ -423,17 +407,7 @@ WEBVEPP.Tree = function(params){
                   .attr("class",function(d){
                     return countNodeClass(d);
                   });
-                // Draw the person's name and position it inside the box
-                /*nodeEnter.append("text")
-                  .attr("dx", 0)
-                  .attr("dy", 0)
-                  .attr("text-anchor", "start")
-                  .attr('class', 'name')
-                  .text(function(d) {
-                    var text = attributesToString(d.attributes);
-                    return text;
-                  })
-                  .style('fill-opacity', 0);*/
+
                   nodeEnter.append('foreignObject')
                         .attr('x', 0)
                         .attr('y', 0)

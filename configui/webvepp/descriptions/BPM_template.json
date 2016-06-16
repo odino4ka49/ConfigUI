@@ -13,7 +13,7 @@
       },
       {
         "key": "BPM Type",
-        "type": "integer"
+        "type": "string"
       },
       {
         "key": "Azimuth",
@@ -67,7 +67,7 @@
     "fields": [
       {
         "key": "Name",
-        "type": "integer"
+        "type": "string"
       },
       {
         "key": "System",
@@ -119,12 +119,16 @@
     "component_check_values": null
   },
   {
-    "class": "BPM reciever",
+    "class": "Module",
     "comment": "шаблон пикап-станции",
     "fields": [
       {
         "key": "Name",
-        "type": "integer"
+        "type": "string"
+      },
+      {
+        "key": "Module Type",
+        "type": "string"
       },
       {
         "key": "System",
@@ -145,10 +149,6 @@
       {
         "key": "MAC",
         "type": "string"
-      },
-      {
-        "key": "BPM controller Type",
-        "type": "integer"
       },
       {
         "key": "GI",
@@ -200,7 +200,7 @@
         "type": "string"
       }
     ],
-    "foreign_keys":[ "BPM controller Type" ],
+    "foreign_keys":[ "Module Type" ],
     "primary_key": [
       "Name",
       "System"
@@ -211,20 +211,32 @@
     "component_check_values": null
   },
   {
-    "class": "BPM controller Type",
+    "class": "Module Type",
     "comment": "шаблон для пикап-станции",
     "fields": [
       {
         "key": "Name",
-        "type": "integer"
+        "type": "string"
       },
       {
         "key": "System",
         "type": "string"
       },
       {
+        "key": "System_ID",
+        "type": "integer"
+      },
+      {
+        "key": "Dispatcher",
+        "type": "boolean"
+      },
+      {
         "key": "Comment",
         "type": "string"
+      },
+      {
+        "key": "Channels number",
+        "type": "integer"
       },
       {
         "key": "BandWidth",
@@ -241,5 +253,41 @@
     "component_ID": null,
     "component_types": null,
     "component_check_values": null
+  },
+
+  {
+    "class": "Node",
+    "comment": "шаблон для узла",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Host",
+        "type": "string"
+      },
+      {
+        "key": "Area",
+        "type": "string"
+      }
+    ],
+    "foreign_keys":[],
+    "primary_key": [
+      "Name",
+      "System"
+    ],
+    "components": "Modules",
+    "component_ID": "Position",
+    "component_types": ["Module","Node"],
+    "component_check_values": ["Component_name", "System"]
   }
 ]

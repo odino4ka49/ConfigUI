@@ -3,23 +3,26 @@ WEBVEPP.FilterBar = function(){
     var settings,
         filters = d3.select("#Filter_bar");
 
-    function checkActive(){
-        var address = location.pathname.split('/')[2];
-        if(address == "") address = "camacs";
-        $("#menu_"+address).addClass("active");
+    function checkActive(name){
+        filters.selectAll("li").classed("active",false);
+        $("#filter_"+name).addClass("active");
     };
 
     function drawButtons(){
         var buttons = filters.selectAll("li")
             .data(settings);
         var button = buttons.enter();
-        button.append("li");
+        button.append("li")
+            .attr("id",function(d){
+                return "filter_"+d.name;
+            });
 
         var button_update = buttons;
 
         button_update
             .on('click', function(d){
-               $(document).trigger("reload_tree",d.name);
+                checkActive(d.name)
+                $(document).trigger("reload_tree",d.name);
             })
             .text(function(d) {
                 if(d.name)

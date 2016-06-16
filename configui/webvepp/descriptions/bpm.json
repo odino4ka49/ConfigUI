@@ -1,10 +1,10 @@
 [
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "STP0",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 271.0,
         "GX": 35.6,
         "GZ": 34.8,
@@ -14,11 +14,11 @@
         "Z0": 0.65
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "STP2",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 1003.8,
         "GX": 35.3,
         "GZ": 34.6,
@@ -28,11 +28,11 @@
         "Z0": -1.05
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "STP4",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 1670.5,
         "GX": 35.3,
         "GZ": 34.3,
@@ -42,11 +42,11 @@
         "Z0": 0.6
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP1",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 2022.8,
         "GX": 32.9,
         "GZ": 17.8,
@@ -56,11 +56,11 @@
         "Z0": 0.05
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP2",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 2737.5,
         "GX": 32.9,
         "GZ": 17.8,
@@ -70,11 +70,11 @@
         "Z0": -0.3
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP3",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 3452.2,
         "GX": 32.9,
         "GZ": 17.8,
@@ -84,25 +84,11 @@
         "Z0": -3.0
     },
     {
-        "Class": "BMP",
-        "Name": "SRP3",
-        "System": "V4",
-        "Comment": "",
-        "BMP Type": 1,
-        "Azimuth": 3452.2,
-        "GX": 32.9,
-        "GZ": 17.8,
-        "GeodX": 0.0,
-        "GeodZ": -2.0,
-        "X0": -0.3,
-        "Z0": -3.0
-    },
-    {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP4",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 4166.9,
         "GX": 32.9,
         "GZ": 17.8,
@@ -112,11 +98,11 @@
         "Z0": -0.05
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP5",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 4881.7,
         "GX": 40.0,
         "GZ": 40.0,
@@ -126,11 +112,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP6",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 5596.4,
         "GX": 40.0,
         "GZ": 40.0,
@@ -140,11 +126,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP7",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 6311.1,
         "GX": 32.9,
         "GZ": 17.8,
@@ -154,11 +140,11 @@
         "Z0": 0.35
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP8",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 7025.8,
         "GX": 40.0,
         "GZ": 40.0,
@@ -168,11 +154,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP9",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 7740.5,
         "GX": 32.9,
         "GZ": 17.8,
@@ -182,11 +168,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SIP1",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 8749.0,
         "GX": 35.1,
         "GZ": 34.5,
@@ -196,11 +182,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SIP2",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 6,
+        "BMP Type": "BPM6",
         "Azimuth": 9167.1,
         "GX": 14.5,
         "GZ": 24.2,
@@ -210,11 +196,11 @@
         "Z0": 0.35
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP10",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 9884.5,
         "GX": 32.9,
         "GZ": 17.8,
@@ -224,11 +210,11 @@
         "Z0": 0.4
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP11",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 10599.2,
         "GX": 40.0,
         "GZ": 40.0,
@@ -238,11 +224,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP12",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 11313.9,
         "GX": 32.9,
         "GZ": 17.8,
@@ -252,11 +238,11 @@
         "Z0": 0.05
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP13",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 12028.6,
         "GX": 40.0,
         "GZ": 40.0,
@@ -266,11 +252,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP14",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 12743.3,
         "GX": 32.9,
         "GZ": 17.8,
@@ -280,11 +266,11 @@
         "Z0": 0.4
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP15",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 13458.0,
         "GX": 40.0,
         "GZ": 40.0,
@@ -294,11 +280,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP16",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 14172.7,
         "GX": 32.9,
         "GZ": 17.8,
@@ -308,11 +294,11 @@
         "Z0": 0.55
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SRP17",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 14887.5,
         "GX": 40.0,
         "GZ": 40.0,
@@ -322,11 +308,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SEP5",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 15257.3,
         "GX": 35.2,
         "GZ": 34.6,
@@ -336,11 +322,11 @@
         "Z0": -0.65
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SEP4",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 15838.3,
         "GX": 35.5,
         "GZ": 34.2,
@@ -350,11 +336,11 @@
         "Z0": -0.15
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SEP3",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 4,
+        "BMP Type": "BPM4",
         "Azimuth": 16668.7,
         "GX": 54.3,
         "GZ": 40.2,
@@ -364,11 +350,11 @@
         "Z0": -1.55
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SEP1",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 5,
+        "BMP Type": "BPM5",
         "Azimuth": 17395.6,
         "GX": 56.3,
         "GZ": 41.7,
@@ -378,11 +364,11 @@
         "Z0": -1.45
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "SEP0",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 3,
+        "BMP Type": "BPM3",
         "Azimuth": 17964.8,
         "GX": 43.0,
         "GZ": -42.0,
@@ -392,11 +378,11 @@
         "Z0": -0.8
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NEP0",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 3,
+        "BMP Type": "BPM3",
         "Azimuth": 18642.8,
         "GX": -42.4,
         "GZ": 42.7,
@@ -406,11 +392,11 @@
         "Z0": 1.6
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NEP1",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 5,
+        "BMP Type": "BPM5",
         "Azimuth": 19211.9,
         "GX": 55.4,
         "GZ": 41.2,
@@ -420,11 +406,11 @@
         "Z0": -0.75
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NEP3",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 4,
+        "BMP Type": "BPM4",
         "Azimuth": 19938.8,
         "GX": 54.0,
         "GZ": 40.0,
@@ -434,11 +420,11 @@
         "Z0": -0.8
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NEP4",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 20769.2,
         "GX": 35.3,
         "GZ": 34.6,
@@ -448,11 +434,11 @@
         "Z0": -0.55
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NEP5",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 21350.2,
         "GX": -35.2,
         "GZ": 34.7,
@@ -462,11 +448,11 @@
         "Z0": 1.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP17",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 21720.0,
         "GX": 40.0,
         "GZ": 40.0,
@@ -476,11 +462,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP16",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 22434.8,
         "GX": 32.9,
         "GZ": -17.8,
@@ -490,11 +476,11 @@
         "Z0": -0.2
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP15",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 23149.5,
         "GX": 40.0,
         "GZ": 40.0,
@@ -504,11 +490,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP14",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 23864.2,
         "GX": 32.9,
         "GZ": -17.8,
@@ -518,11 +504,11 @@
         "Z0": 0.15
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP13",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 24578.9,
         "GX": 40.0,
         "GZ": 40.0,
@@ -532,11 +518,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP12",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 25293.6,
         "GX": 32.9,
         "GZ": -17.8,
@@ -546,11 +532,11 @@
         "Z0": -0.2
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP11",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 26008.3,
         "GX": 40.0,
         "GZ": 40.0,
@@ -560,11 +546,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP10",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 26723.0,
         "GX": 32.9,
         "GZ": -17.8,
@@ -574,11 +560,11 @@
         "Z0": 0.15
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NIP3",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 7,
+        "BMP Type": "BPM7",
         "Azimuth": 27188.2,
         "GX": 14.6,
         "GZ": 24.8,
@@ -588,11 +574,11 @@
         "Z0": -0.55
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NIP1",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 27858.5,
         "GX": 35.6,
         "GZ": 34.5,
@@ -602,11 +588,11 @@
         "Z0": 1.25
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP9",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 28867.0,
         "GX": 32.9,
         "GZ": -17.8,
@@ -616,11 +602,11 @@
         "Z0": -0.05
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP8",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 29581.7,
         "GX": 40.0,
         "GZ": 40.0,
@@ -630,11 +616,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP7",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 30296.4,
         "GX": 32.9,
         "GZ": -17.8,
@@ -644,11 +630,11 @@
         "Z0": 0.3
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP6",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 31011.1,
         "GX": 40.0,
         "GZ": 40.0,
@@ -658,11 +644,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP5",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 31725.8,
         "GX": 40.0,
         "GZ": 40.0,
@@ -672,11 +658,11 @@
         "Z0": 0.0
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP4",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 32440.6,
         "GX": 32.9,
         "GZ": -17.8,
@@ -686,11 +672,11 @@
         "Z0": -0.2
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP3",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 33155.3,
         "GX": 32.9,
         "GZ": -17.8,
@@ -700,25 +686,11 @@
         "Z0": 0.05
     },
     {
-        "Class": "BMP",
-        "Name": "NRP3",
-        "System": "V4",
-        "Comment": "",
-        "BMP Type": 1,
-        "Azimuth": 33155.3,
-        "GX": 32.9,
-        "GZ": -17.8,
-        "GeodX": -2.3,
-        "GeodZ": 0.7,
-        "X0": 0.75,
-        "Z0": 0.05
-    },
-    {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP2",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 33870.0,
         "GX": 32.9,
         "GZ": -17.8,
@@ -728,11 +700,11 @@
         "Z0": 0.05
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NRP1",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 1,
+        "BMP Type": "BPM1",
         "Azimuth": 34584.7,
         "GX": 32.9,
         "GZ": -17.8,
@@ -742,11 +714,11 @@
         "Z0": 0.1
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NTP4",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 34937.0,
         "GX": 35.4,
         "GZ": 34.7,
@@ -756,11 +728,11 @@
         "Z0": -0.25
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NTP2",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 35603.7,
         "GX": -35.0,
         "GZ": 34.6,
@@ -770,11 +742,11 @@
         "Z0": -0.45
     },
     {
-        "Class": "BMP",
+        "Class": "BPM",
         "Name": "NTP0",
         "System": "V4",
         "Comment": "",
-        "BMP Type": 2,
+        "BMP Type": "BPM2",
         "Azimuth": 36334.5,
         "GX": 35.6,
         "GZ": 34.7,

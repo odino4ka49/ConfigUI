@@ -73,15 +73,15 @@ def to_float(string):
 
 def makeRecieverObject(line):
     obj = {}
-    obj["Class"] = "BMP"
-    obj["Name"] = to_int(line[0])
+    obj["Class"] = "Module"
+    obj["Name"] = line[0]+"BPMC"
+    obj["Module Type"] = "BPMcontroller"+line[5]
     obj["System"] = "V4"
     obj["Comment"] = ""
     obj["BMP"] = line[1]
     obj["IP"] = line[2]
     obj["Port"] = to_int(line[3])
     obj["MAC"] = line[4]
-    obj["BPM controller Type"] = to_int(line[5])
     obj["GI"] = to_float(line[6])
     obj["g0_button0"] = to_float(line[7])
     obj["g0_button1"] = to_float(line[8])
@@ -112,7 +112,7 @@ def getDataFile(name):
 
 file_txt = getTextFile("station.data")
 py_recievers = []
-custom_sort = make_custom_sort([["Class", "Name", "System", "Comment", "BMP", "IP", "Port", "MAC", "BPM controller Type", "GI", "g0_button0", "g0_button1", "g0_button2", "g0_button3", "g1_button0", "g1_button1", "g1_button2","g1_button3", "g0_gI", "g1_gI", "Date"]])
+custom_sort = make_custom_sort([["Class", "Name", "Module Type", "System", "Comment", "BMP", "IP", "Port", "MAC", "GI", "g0_button0", "g0_button1", "g0_button2", "g0_button3", "g1_button0", "g1_button1", "g1_button2","g1_button3", "g0_gI", "g1_gI", "Date"]])
 for line_txt in file_txt:
     line_splitted = line_txt.split()
     py_object = makeRecieverObject(line_splitted)
