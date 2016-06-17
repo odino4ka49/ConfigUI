@@ -148,14 +148,42 @@
           "Name",
           "System",
           "Comment",
-          "BMP Type",
           "Azimuth",
           "GX",
           "GZ",
           "GeodX",
           "GeodZ",
           "X0",
-          "Z0"
+          "Z0",
+          "BPM Type",
+          {
+            "key": "Formula",
+            "value": "&BPM Type->Formula"
+          },
+          {
+            "key": "Form",
+            "value": "&BPM Type->Form"
+          },
+          {
+            "key": "Type comment",
+            "value": "&BPM Type->Comment"
+          },
+          {
+            "key": "AppertureX",
+            "value": "&BPM Type->AppertureX"
+          },
+          {
+            "key": "AppertureZ",
+            "value": "&BPM Type->AppertureZ"
+          },
+          {
+            "key": "PlateType",
+            "value": "&BPM Type->PlateType"
+          },
+          {
+            "key": "PlateSize",
+            "value": "&BPM Type->PlateSize"
+          }
         ]
       },
       "display_attributes": {
@@ -167,6 +195,73 @@
         "hiding": "true",
         "field_name": false
       }
+    },
+    "level2": {
+      "type": "filter",
+      "level": 2,
+      "filter": {
+        "Class": [
+          "Module"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          "Name",
+          "System",
+          "Module Type"
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "IP",
+          "Port",
+          "MAC",
+          "GI",
+          "g0_button0",
+          "g0_button1",
+          "g0_button2",
+          "g0_button3",
+          "g1_button0",
+          "g1_button1",
+          "g1_button2",
+          "g1_button3",
+          "g0_gI",
+          "g1_gI",
+          "Date",
+          "Module Type",
+          {
+            "key": "System_ID",
+            "value": "&Module Type->System_ID"
+          },
+          {
+            "key": "Dispatcher",
+            "value": "&Module Type->Dispatcher"
+          },
+          {
+            "key": "System_ID",
+            "value": "&Module Type->System_ID"
+          },
+          {
+            "key": "Type comment",
+            "value": "&Module Type->Comment"
+          },
+          {
+            "key": "Channels number",
+            "value": "&Module Type->Channels number"
+          },
+          {
+            "key": "Bandwidth",
+            "value": "&Module Type->Bandwidth"
+          }
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "autorevealing": true,
+        "field_name": true
+      }
     }
   },
   {
@@ -174,55 +269,17 @@
     "buttons": [
       {
         "title": "Валидация",
+        "type": "validation",
         "id": "validation"
       },
       {
         "title": "Типы пикапов",
+        "type": "image",
         "id": "tool_bpmtypes",
-        "sample": "Tool_bpmtypes"
+        "filename": "V4_Pick-up_Types.jpg",
+        "width": "600px"
       }
     ]
-  },
-  {
-    "name": "Tool_bpmtypes",
-    "type": "list",
-    "root": {
-      "type": "filter",
-      "filter": {
-        "Class": [
-          "Control channel",
-          "UR channel",
-          "ADC channel",
-          "Meas channel",
-          "DBLUR channel",
-          "Module channel"
-        ]
-      },
-      "display_filter": {
-        "min": [
-          "BANK",
-          "Element",
-          "Name",
-          "Cod/Value",
-          "Units",
-          "MonitType",
-          "Deviation",
-          "Module",
-          "Channel"
-        ],
-        "max": [
-          "BANK",
-          "Name",
-          "Element"
-        ]
-      },
-      "sort_field": "BANK",
-      "display_attributes": {
-        "field_name": false,
-        "inline": true,
-        "sort_type": "cells"
-      }
-    }
   },
   {
     "name": "Scheme",

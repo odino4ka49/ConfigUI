@@ -3,6 +3,7 @@ WEBVEPP.List = function(tool_bar,settings){
     var list, list_settings,
         settings = settings,
         tool_data = [],
+        image_data = "",
         scheme_names = {"system":"","sample":""},
         table = d3.select("body").select("table"),
         text_data = "";
@@ -34,7 +35,7 @@ WEBVEPP.List = function(tool_bar,settings){
                 $(document).trigger("error_message",thrownError);
             },
             success: function(data){
-                list = data;
+                list = data;i
                 drawListData();
                 $(document).trigger("unset_loading_cursor");
                 $(document).trigger("tree_created");
@@ -90,7 +91,18 @@ WEBVEPP.List = function(tool_bar,settings){
         table.select('tbody').remove();
         var thead = table.append('thead');
         var tbody = table.append('tbody');
-        thead.append("tr").append("td").text(text_data);
+        tbody.append("tr").append("td").text(text_data);
+    };
+
+    function drawImageData(filename,width){
+        table.select('thead').remove();
+        table.select('tbody').remove();
+        var thead = table.append('thead');
+        var tbody = table.append('tbody');
+        thead.append("tr").append("td").append("img")
+            .attr("src",WEBVEPP.serveradr()+"static/webvepp/bg/"+filename)
+            .attr("alt","Image tool")
+            .attr("width",width);
     };
 
     function drawListData(){
@@ -177,14 +189,20 @@ WEBVEPP.List = function(tool_bar,settings){
                 return d.id;
             })
             .on('click', function(d){
-                if(d.id!="validation"){
+                if(d.type=="list"){
                     setSchemeNames(d.sample);
                     loadListSettings();
                     loadListData();
                 }
-                else{
+                else if(d.type=="validation"){
                     setSchemeNames("");
                     loadValidationData();
+                }
+                else if(d.type=="image"){
+                    var width = "60%";
+                    setSchemeNames(d.sample);
+                    if(d.width) width = d.width;
+                    drawImageData(d.filename,width);
                 }
             })
             .text(function(d){

@@ -17,7 +17,6 @@ urlpatterns = [
     url(r'^settings/$', 'webvepp.views.settings', name="index-settings"),
     url(r'^getTreeData', 'webvepp.views.loadTreeData', name="views-tree-data"),
     url(r'^getListData', 'webvepp.views.loadListData', name="views-list-data"),
-    url(r'^getSchemeData', 'webvepp.views.loadSchemeData', name="views-scheme-data"),
     url(r'^getMenuData', 'webvepp.views.loadMenuData', name="views-menu-data"),
     url(r'^getToolData', 'webvepp.views.loadToolData', name="views-tool-data"),
     url(r'^getTreeSample', 'webvepp.views.loadTreeSample', name="views-tree-sample"),

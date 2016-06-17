@@ -547,15 +547,18 @@
     "buttons": [
       {
         "title": "Валидация",
+        "type": "validation",
         "id": "validation"
       },
       {
         "title": "BANK",
+        "type": "list",
         "id": "tool_banks",
         "sample": "Tool_banks"
       },
       {
         "title": "Модули",
+        "type": "list",
         "id": "tool_modules",
         "sample": "Tool_modules"
       }
@@ -563,7 +566,6 @@
   },
   {
     "name": "Tool_banks",
-    "type": "list",
     "root": {
       "type": "filter",
       "filter": {
@@ -614,7 +616,6 @@
   },
   {
     "name": "Tool_modules",
-    "type": "list",
     "root": {
       "type": "filter",
       "filter": {

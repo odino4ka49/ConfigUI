@@ -69,13 +69,6 @@ def loadListData(request):
     list = parseList()
     return HttpResponse(json.dumps(list, ensure_ascii=False), content_type="application/json")
 
-def loadSchemeData(request):
-    data = request.GET
-    scheme_name = "bg/"+json.loads(data["scheme_name"])+".svg"
-    doc = minidom.parse(os.path.dirname(os.path.abspath(__file__))+'/descriptions/'+scheme_name)
-    svg = doc.getElementsByTagName("svg")[0]
-    return HttpResponse(svg)
-
 def loadToolData(request):
     try:
         data = request.GET
@@ -641,7 +634,7 @@ def parseTree(rules):
 def parseList():
     result = []
     samples = getSample()
-    if "type" not in samples or samples["type"]!="list":
+    if "type" not in samples:
         return result
     sample = samples["root"]
 
