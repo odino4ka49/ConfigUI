@@ -543,6 +543,16 @@
     }
   },
   {
+    "name": "Scheme",
+    "type": "single",
+    "schemes": [
+      {
+        "name": "Main",
+        "filename": "Chan_V3-V4_scheme_bbg"
+      }
+    ]
+  },
+  {
     "name": "Tools",
     "buttons": [
       {
@@ -603,16 +613,6 @@
         "sort_type": "cells"
       }
     }
-  },
-  {
-    "name": "Scheme",
-    "type": "single",
-    "schemes": [
-      {
-        "name": "Main",
-        "filename": "Chan_V3-V4_scheme_bbg"
-      }
-    ]
   },
   {
     "name": "Tool_modules",

@@ -104,7 +104,7 @@
 
     {
        "Class": "Node",
-       "Name": "КЕР",
+       "Name": "KEP",
        "System": "V4",
        "Comment": "коммутатор в к.E, 13 зд.",
        "Host": "Pult-6",
@@ -158,7 +158,7 @@
      },
     {
        "Class": "Node",
-       "Name": "NЕР",
+       "Name": "NEP",
        "System": "V4",
        "Comment": "в N-полукольце от промежутка E, у ЛЩ 703",
        "Host": "КЕР",
@@ -301,7 +301,7 @@
     },
     {
        "Class": "Node",
-       "Name": "NTP",
+       "Name": "STP",
        "System": "V4",
        "Comment": "в середине T-промежутка у 4-го резонатора",
        "Host": "SIP",
@@ -1279,8 +1279,8 @@
         "Formula": 1,
         "Form": "R",
         "Comment": "",
-        "AppertureX": 65.0,
-        "AppertureZ": 35.0,
+        "ApertureX": 65.0,
+        "ApertureZ": 35.0,
         "PlateType": "R",
         "PlateSize": 0.0
     },
@@ -1291,8 +1291,8 @@
         "Formula": 2,
         "Form": "E",
         "Comment": "",
-        "AppertureX": 102.0,
-        "AppertureZ": 102.0,
+        "ApertureX": 102.0,
+        "ApertureZ": 102.0,
         "PlateType": "C",
         "PlateSize": 46.0
     },
@@ -1303,8 +1303,8 @@
         "Formula": 2,
         "Form": "E",
         "Comment": "",
-        "AppertureX": 102.0,
-        "AppertureZ": 102.0,
+        "ApertureX": 102.0,
+        "ApertureZ": 102.0,
         "PlateType": "C",
         "PlateSize": 46.0
     },
@@ -1315,8 +1315,8 @@
         "Formula": 2,
         "Form": "R",
         "Comment": "",
-        "AppertureX": 306.0,
-        "AppertureZ": 104.0,
+        "ApertureX": 306.0,
+        "ApertureZ": 104.0,
         "PlateType": "C",
         "PlateSize": 44.0
     },
@@ -1327,8 +1327,8 @@
         "Formula": 2,
         "Form": "R",
         "Comment": "",
-        "AppertureX": 245.0,
-        "AppertureZ": 104.0,
+        "ApertureX": 245.0,
+        "ApertureZ": 104.0,
         "PlateType": "C",
         "PlateSize": 44.0
     },
@@ -1339,8 +1339,8 @@
         "Formula": 2,
         "Form": "R",
         "Comment": "",
-        "AppertureX": 95.0,
-        "AppertureZ": 35.0,
+        "ApertureX": 95.0,
+        "ApertureZ": 35.0,
         "PlateType": "C",
         "PlateSize": 34.0
     },
@@ -1351,8 +1351,8 @@
         "Formula": 2,
         "Form": "E",
         "Comment": "",
-        "AppertureX": 110.0,
-        "AppertureZ": 35.0,
+        "ApertureX": 110.0,
+        "ApertureZ": 35.0,
         "PlateType": "C",
         "PlateSize": 34.0
     },

@@ -166,71 +166,85 @@ def parseObject(object):
     return result
 
 #returns list of attributes of the object according to its template
-def parseAttributes(template,object,attr_type="min"):
+def parseAttributes(desplay_det,object,attr_type="min"):
     attributes = {"min":[],"extra":[]}
     def parsing(field_list):
+        template = getTemplate(object)
         attrs = []
         for field in field_list:
-            if (type(field) is dict) and ('link_to' in field) and ('link_from' in field):
-                obj1 = getObject(parseRulesToString(object,field['link_from']))
-                obj2 = getObject(parseRulesToString(object,field['link_to']))
-                if obj2 and obj1:
-                    link = getLink(obj1,obj2)
-                    attrs += [{
-                        "key": field["key"],
-                        "value": link[field["value"]]
-                    }]
-            elif (type(field) is dict) and ('link_to' in field):
-                #if we do this channels->id thing
-                rules = parseRulesToString(object,field['link_to'])
-                objs2 = getObjects(rules)
-                for obj2 in objs2:
-                    link = getLink(object,obj2)
-                    if link:
+            if (type(field) is dict):
+                if ('link_to' in field) and ('link_from' in field):
+                    obj1 = getObject(parseRulesToString(object,field['link_from']))
+                    obj2 = getObject(parseRulesToString(object,field['link_to']))
+                    if obj2 and obj1:
+                        link = getLink(obj1,obj2)
                         attrs += [{
                             "key": field["key"],
                             "value": link[field["value"]]
                         }]
-            elif (type(field) is dict) and (field["value"]=="len"):
-                if field["key"] in object:
-                    attrs += [{
-                        "key": field["key"],
-                        "value": len(object[field["key"]])
-                    }]
-            elif (type(field) is dict) and (field["value"][0]=="&"):
-                value = getValueByPath(object,field["value"])
-                if value!=None:
-                    attrs += [{
-                        "key": field["key"],
-                        "value": value
-                    }]
-            elif (type(field) is dict) and ("to_array" in field):
-                field_array = getValuesByPath(object,field["to_array"]["Path"])
-                if field["to_array"]["Operation"]=="sum":
-                    sum = 0.0
-                    for val in field_array:
-                        sum+=val
-                    if sum!=0:
+                elif ('link_to' in field):
+                    #if we do this channels->id thing
+                    rules = parseRulesToString(object,field['link_to'])
+                    objs2 = getObjects(rules)
+                    for obj2 in objs2:
+                        link = getLink(object,obj2)
+                        if link:
+                            attrs += [{
+                                "key": field["key"],
+                                "value": link[field["value"]]
+                            }]
+                elif (field["value"]=="len"):
+                    if field["key"] in object:
                         attrs += [{
                             "key": field["key"],
-                            "value": round(sum,1)
+                            "value": len(object[field["key"]])
                         }]
-            elif ("link_id" in object) and (type(field) is dict) and ("value" in field) and (field["value"]=="link_id"):
-                attrs += [{
-                        "key": field["key"],
-                        "value": object["link_id"]
-                    }]
-            elif field=="*":
-                for key in object:
+                elif (field["value"][0]=="&"):
+                    value = getValueByPath(object,field["value"])
+                    if value!=None:
+                        attrs += [{
+                            "key": field["key"],
+                            "value": value
+                        }]
+                elif ("to_array" in field):
+                    field_array = getValuesByPath(object,field["to_array"]["Path"])
+                    if field["to_array"]["Operation"]=="sum":
+                        sum = 0.0
+                        for val in field_array:
+                            sum+=val
+                        if sum!=0:
+                            attrs += [{
+                                "key": field["key"],
+                                "value": round(sum,1)
+                            }]
+                elif ("link_id" in object)and ("value" in field) and (field["value"]=="link_id"):
                     attrs += [{
-                        "key": key,
-                        "value": object[key]
+                            "key": field["key"],
+                            "value": object["link_id"]
+                        }]
+            else:
+                temp_field = {}
+                if field=="*":
+                    for key in object:
+                        if template:
+                            temp_field = next((x for x in template["fields"] if x["key"] == key), {})
+                        units = " "
+                        if "units" in temp_field:
+                            units += str(temp_field["units"])
+                        attrs += [{
+                            "key": key,
+                            "value": unicode(object[key])+units
+                        }]
+                elif field in object:
+                    if template:
+                        temp_field = next((x for x in template["fields"] if x["key"] == field), {})
+                    units = " "
+                    if "units" in temp_field:
+                        units += str(temp_field["units"])
+                    attrs += [{
+                        "key": field,
+                        "value": unicode(object[field])+units
                     }]
-            elif field in object:
-                attrs += [{
-                    "key": field,
-                    "value": object[field]
-                }]
         return attrs
 
     def check_unique(attrs):
@@ -239,17 +253,17 @@ def parseAttributes(template,object,attr_type="min"):
                 attrs["extra"].remove(attr)
         return attrs
 
-    if(attr_type in template):
+    if(attr_type in desplay_det):
         if(attr_type=="max"):
-            attributes["extra"] = parsing(template["max"])
+            attributes["extra"] = parsing(desplay_det["max"])
         else:
-            attributes[attr_type] = parsing(template[attr_type])
+            attributes[attr_type] = parsing(desplay_det[attr_type])
         #attributes["extra"] = parsing(template["max"])
         """elif(attr_type=="remote"):
         attributes = parsing(template)
         print object"""
     else:
-        for field in template["fields"]:
+        for field in desplay_det["fields"]:
             field_name = field["key"]
             attributes["min"] += [{
                 "key": field_name,
@@ -634,8 +648,6 @@ def parseTree(rules):
 def parseList():
     result = []
     samples = getSample()
-    if "type" not in samples:
-        return result
     sample = samples["root"]
 
     basic_list = getObjects(parseRulesToString({},sample["filter"]))
@@ -705,7 +717,13 @@ def getValueByPath(object,path):
     for i in range(0,len(path)-1):
         value = getNeighbour(value,path[i])
     if value and path[-1] in value:
-        value = value[path[-1]]
+        template = getTemplate(value)
+        if template:
+            temp_field = next((x for x in template["fields"] if x["key"] == path[-1]), {})
+        units = " "
+        if "units" in temp_field:
+            units += str(temp_field["units"])
+        value = unicode(value[path[-1]])+units
     return value
 
 def getNeighbour(object,foreign_key):
@@ -866,6 +884,8 @@ def getFilter(filter_name):
     return rules
 
 def getTemplate(object):
+    if "Class" not in object:
+        return None
     templates = getAllTemplates()
     for t in templates:
         if object["Class"]==t["class"]:

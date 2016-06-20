@@ -109,6 +109,14 @@ def validateObject(object,template):
                     is_right_type = False
             if object[field["key"]]==None:
                 is_right_type = True
+            if field["type"] in ["integer","double","float"] and "limits" in field and field["limits"]:
+                if object[field["key"]]<field["limits"][0] or object[field["key"]]>field["limits"][1]:
+                    log(object,template,"Out of limits: "+ field["key"])
+                    result = False
+            if "values" in field and field["values"]:
+                print field
+                if object[field["key"]] not in field["values"]:
+                    log(object,template,"Not in possible values: "+ field["key"])
             if not is_right_type:
                 log(object,template,"Wrong type of the field: "+ field["key"] +". It actually is "+type(object[field["key"]]).__name__)
                 result = False
@@ -260,8 +268,26 @@ def validateTemplate(template):
                 if "uniqueness" in ofield and ofield["uniqueness"]:
                     if "key" in ofield and not checkUniqueness(template,ofield["key"]):
                         result = False
+                if "limits" in ofield and ofield["limits"]:
+                    if not isinstance(ofield["limits"], list):
+                        log_temp(template,"Wrong type of data in field: fields/limits. Should be array")
+                        result = False
+                    if len(ofield["limits"])!=2:
+                        log_temp(template,"Wrong number of elements in: fields/limits. Should be 2")
+                        result = False
+                    if ofield["type"] not in ["integer","float","double"]:
+                        log_temp(template,"Wrong type of elements in: fields/type. It has limits")
+                        result = False
+                if "values" in ofield and ofield["values"]:
+                    if not isinstance(ofield["values"], list):
+                        log_temp(template,"Wrong type of data in field: fields/values. Should be array")
+                        result = False
+                if "units" in ofield and ofield["units"]:
+                    if not isinstance(ofield["units"], basestring):
+                        log_temp(template,"Wrong type of data in field: fields/units. Should be string")
+                        result = False
                 for key in ofield:
-                    if key!="key" and key!="type" and key!="uniqueness":
+                    if key!="key" and key!="type" and key!="uniqueness" and key!="units" and key!="limits" and key!="values":
                         log_temp(template,"There is a weird field in fields of template: "+key+".")
                         result = False
         elif rfield=="foreign_keys":

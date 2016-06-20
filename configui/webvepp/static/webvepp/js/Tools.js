@@ -35,7 +35,7 @@ WEBVEPP.List = function(tool_bar,settings){
                 $(document).trigger("error_message",thrownError);
             },
             success: function(data){
-                list = data;i
+                list = data;
                 drawListData();
                 $(document).trigger("unset_loading_cursor");
                 $(document).trigger("tree_created");

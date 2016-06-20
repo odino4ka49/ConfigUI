@@ -16,6 +16,10 @@
         "type": "string"
       },
       {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
         "key": "Azimuth",
         "type": "float",
         "units": "cm"
@@ -51,7 +55,7 @@
         "units": "mm"
       }
     ],
-    "foreign_keys":["Type" ],
+    "foreign_keys":["BPM Type" ],
     "primary_key": [
       "Name",
       "System"
@@ -132,6 +136,10 @@
       },
       {
         "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
         "type": "string"
       },
       {
@@ -239,7 +247,7 @@
         "type": "integer"
       },
       {
-        "key": "BandWidth",
+        "key": "Bandwidth",
         "type": "float",
         "units": "MHz"
       }
@@ -278,6 +286,10 @@
       {
         "key": "Area",
         "type": "string"
+      },
+      {
+        "key": "Modules",
+        "type": "array"
       }
     ],
     "foreign_keys":[],

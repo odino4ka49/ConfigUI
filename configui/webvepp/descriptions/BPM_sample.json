@@ -51,23 +51,36 @@
       "level": 1,
       "filter": {
         "Class": [
-          "Node"
+          "Module"
+        ],
+        "Name": [
+          "pult6"
         ]
       },
       "sort_field": "Name",
       "display_filter": {
         "min": [
           "Name",
-          "Host",
-          "Area"
+          "System",
+          "Comment"
         ],
         "max": [
           "Class",
           "Name",
           "System",
           "Comment",
-          "Host",
-          "Area"
+          {
+            "key": "System_ID",
+            "value": "&Module Type->System_ID"
+          },
+          {
+            "key": "Dispatcher",
+            "value": "&Module Type->Dispatcher"
+          },
+          {
+            "key": "Type comment",
+            "value": "&Module Type->Comment"
+          }
         ]
       },
       "display_attributes": {
@@ -99,7 +112,111 @@
           "Name",
           "System",
           "Comment",
-          "Module Type"
+          "Module Type",
+          "Host",
+          "Area"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      }
+    },
+    "level3": {
+      "type": "filter",
+      "level": 3,
+      "filter": {
+        "Class": [
+          "Module",
+          "Node"
+        ]
+      },
+      "sort_field": "Position",
+      "display_filter": {
+        "min": [
+          "Name",
+          "Module Type",
+          {
+            "key": "Position",
+            "value": "link_id"
+          }
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type",
+          "Host",
+          "Area"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      }
+    },
+    "level4": {
+      "type": "filter",
+      "level": 4,
+      "filter": {
+        "Class": [
+          "Module",
+          "Node"
+        ]
+      },
+      "sort_field": "Position",
+      "display_filter": {
+        "min": [
+          "Name",
+          "Module Type",
+          {
+            "key": "Position",
+            "value": "link_id"
+          }
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type",
+          "Host",
+          "Area"
+        ]
+      },
+      "display_attributes": {
+        "width": 200,
+        "height": 80,
+        "field_name": true
+      }
+    },
+    "level5": {
+      "type": "filter",
+      "level": 5,
+      "filter": {
+        "Class": [
+          "Module",
+          "Node"
+        ]
+      },
+      "sort_field": "Position",
+      "display_filter": {
+        "min": [
+          "Name",
+          "Module Type",
+          {
+            "key": "Position",
+            "value": "link_id"
+          }
+        ],
+        "max": [
+          "Name",
+          "System",
+          "Comment",
+          "Module Type",
+          "Host",
+          "Area"
         ]
       },
       "display_attributes": {
@@ -265,6 +382,16 @@
     }
   },
   {
+    "name": "Scheme",
+    "type": "single",
+    "schemes": [
+      {
+        "name": "Main",
+        "filename": "vepp4_pickups"
+      }
+    ]
+  },
+  {
     "name": "Tools",
     "buttons": [
       {
@@ -278,17 +405,93 @@
         "id": "tool_bpmtypes",
         "filename": "V4_Pick-up_Types.jpg",
         "width": "600px"
+      },
+      {
+        "title": "Пикапы",
+        "type": "list",
+        "id": "tool_bpms",
+        "sample": "Tool_bpms"
+      },
+      {
+        "title": "Пикап-станции",
+        "type": "list",
+        "id": "tool_modules",
+        "sample": "Tool_modules"
       }
     ]
   },
   {
-    "name": "Scheme",
-    "type": "single",
-    "schemes": [
-      {
-        "name": "Main",
-        "filename": "vepp4_pickups"
+    "name": "Tool_bpms",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "BPM"
+        ]
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "BPM Type",
+          "Name",
+          "System",
+          "Comment",
+          "Azimuth",
+          "GX",
+          "GZ",
+          "GeodX",
+          "GeodZ",
+          "X0",
+          "Z0"
+        ],
+        "max": [
+        ]
+      },
+      "display_attributes": {
+        "field_name": false,
+        "sort_type": "numbered"
       }
-    ]
+    }
+  },
+  {
+    "name": "Tool_modules",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "Module"
+        ]
+      },
+      "sort_field": "Name",
+      "display_filter": {
+        "min": [
+          "Module Type",
+          "Name",
+          "System",
+          "Comment",
+          "IP",
+          "Port",
+          "MAC",
+          "GI",
+          "g0_button0",
+          "g0_button1",
+          "g0_button2",
+          "g0_button3",
+          "g1_button0",
+          "g1_button1",
+          "g1_button2",
+          "g1_button3",
+          "g0_gI",
+          "g1_gI",
+          "Date"
+        ],
+        "max": [
+        ]
+      },
+      "display_attributes": {
+        "field_name": false,
+        "sort_type": "numbered"
+      }
+    }
   }
 ]
