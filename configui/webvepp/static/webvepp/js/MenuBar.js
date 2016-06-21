@@ -61,7 +61,6 @@ WEBVEPP.MenuBar = function(menu_bar,settings){
     };
 
     function getSampleName(sample_link){
-        console.log(menu_data,sample_link);
         return $.grep(menu_data, function(e){ return e.link_name == sample_link; })[0].sample;
     };
 

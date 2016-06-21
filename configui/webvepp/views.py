@@ -131,11 +131,9 @@ def loadMaxAttributes(request):
     return HttpResponse(json.dumps(attributes, ensure_ascii=False), content_type="application/json")
 
 #returns packed object
-def parseObject(object):
+"""def parseObject(object):
     result = {"name":object["Name"],"id":object["Name"],"_parents":[]}
-    """if "type" in object and object["type"]=="new":
-        template = None
-        sample = object"""
+
     template = getTemplate(object)
     obj_attributes = parseAttributes(template,object)
     result["attributes"]=obj_attributes
@@ -163,7 +161,7 @@ def parseObject(object):
             #if we do number of position on link:
             comp_obj["link_id"] = comp[template["component_ID"]]
             result["_parents"].append(parseObject(comp_obj))
-    return result
+    return result"""
 
 #returns list of attributes of the object according to its template
 def parseAttributes(desplay_det,object,attr_type="min"):
@@ -177,21 +175,22 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                     obj1 = getObject(parseRulesToString(object,field['link_from']))
                     obj2 = getObject(parseRulesToString(object,field['link_to']))
                     if obj2 and obj1:
-                        link = getLink(obj1,obj2)
-                        attrs += [{
-                            "key": field["key"],
-                            "value": link[field["value"]]
-                        }]
+                        links = getLink(obj1,obj2)
+                        if(len(links)>0):
+                            attrs += [{
+                                "key": field["key"],
+                                "value": links[0][field["value"]]
+                            }]
                 elif ('link_to' in field):
                     #if we do this channels->id thing
                     rules = parseRulesToString(object,field['link_to'])
                     objs2 = getObjects(rules)
                     for obj2 in objs2:
-                        link = getLink(object,obj2)
-                        if link:
+                        links = getLink(object,obj2)
+                        if len(links)>0:
                             attrs += [{
                                 "key": field["key"],
-                                "value": link[field["value"]]
+                                "value": links[0][field["value"]]
                             }]
                 elif (field["value"]=="len"):
                     if field["key"] in object:
@@ -218,9 +217,24 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                                 "value": round(sum,1)
                             }]
                 elif ("link_id" in object)and ("value" in field) and (field["value"]=="link_id"):
-                    attrs += [{
+                    if "positioning" in field and field["positioning"]=="link_text":
+                        if len(object["link_id"])==2:
+                            attrs += [{
+                                "key": field["key"],
+                                "value": object["link_id"][0],
+                                "link_end_id": object["link_id"][1],
+                                "positioning": field["positioning"]
+                            }]
+                        else:
+                            attrs += [{
+                                "key": field["key"],
+                                "value": object["link_id"][0],
+                                "positioning": field["positioning"]
+                            }]
+                    else:
+                        attrs += [{
                             "key": field["key"],
-                            "value": object["link_id"]
+                            "value": object["link_id"][0]
                         }]
             else:
                 temp_field = {}
@@ -228,23 +242,31 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                     for key in object:
                         if template:
                             temp_field = next((x for x in template["fields"] if x["key"] == key), {})
-                        units = " "
                         if "units" in temp_field:
-                            units += str(temp_field["units"])
-                        attrs += [{
-                            "key": key,
-                            "value": unicode(object[key])+units
-                        }]
+                            units = " "+str(temp_field["units"])
+                            attrs += [{
+                                "key": key,
+                                "value": unicode(object[key])+units
+                            }]
+                        else:
+                            attrs += [{
+                                "key": key,
+                                "value": object[key]
+                            }]
                 elif field in object:
                     if template:
                         temp_field = next((x for x in template["fields"] if x["key"] == field), {})
-                    units = " "
                     if "units" in temp_field:
-                        units += str(temp_field["units"])
-                    attrs += [{
-                        "key": field,
-                        "value": unicode(object[field])+units
-                    }]
+                        units = " "+str(temp_field["units"])
+                        attrs += [{
+                            "key": field,
+                            "value": unicode(object[field])+units
+                        }]
+                    else:
+                        attrs += [{
+                            "key": field,
+                            "value": object[field]
+                        }]
         return attrs
 
     def check_unique(attrs):
@@ -319,11 +341,13 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 neighbours.append(neighbour)
         else:
             for n in next_level:
-                link = getLink(n,node)
-                if link != {}:
+                links = getLink(node,n)
+                if len(links)!=0:
                     template = getTemplate(node)
-                    if template["component_ID"]!=None:
-                        n["link_id"] = link[template["component_ID"]]
+                    n["link_id"] = []
+                    for l in links:
+                        if "link_id" in l:
+                            n["link_id"].append(l["link_id"])
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
                         neighbour["id"] = parseId(n)
@@ -723,7 +747,9 @@ def getValueByPath(object,path):
         units = " "
         if "units" in temp_field:
             units += str(temp_field["units"])
-        value = unicode(value[path[-1]])+units
+            value = unicode(value[path[-1]])+units
+        else:
+            value = value[path[-1]]
     return value
 
 def getNeighbour(object,foreign_key):
@@ -739,7 +765,7 @@ def getNeighbour(object,foreign_key):
         link = {}
         for n in neighbours:
             link = getLink(object,n)
-            if link!={}:
+            if len(link)!=0:
                 neighbour = n
     return neighbour
 
@@ -891,7 +917,65 @@ def getTemplate(object):
         if object["Class"]==t["class"]:
             return t
 
+def getLinkDirectioned(obj1,obj2,temp1,temp2):
+    links = []
+    #check foreign keys
+    if "foreign_keys" in temp1 and temp2["class"] in temp1["foreign_keys"] and temp2["class"] in obj1:
+        linked = True
+        for i in range(0,len(temp2["primary_key"])-1):
+            check_field = temp2["primary_key"][i]
+            if check_field=="Name":
+                if obj1[temp2["class"]]!=obj2["Name"]:
+                    linked = False
+            elif check_field in obj1:
+                if obj1[check_field]!=obj2[check_field]:
+                    linked = False
+            elif check_field in temp2["foreign_keys"] and check_field==temp1["class"]:
+                if obj1["Name"]!=obj2[check_field]:
+                    linked = False
+            else:
+                 linked = False
+        if linked == True:
+            #just don't know what to add
+            links += [{
+                "from": obj1["Name"],
+                "to": obj2["Name"]
+            }]
+    #check components
+    if "components" in temp1 and temp1["components"]:
+        components = obj1[temp1["components"]]
+        for l in components:
+            linked = True
+            for i in range(0,len(temp2["primary_key"])-1):
+                field1 = temp1["component_check_values"][i]
+                field2 = temp2["primary_key"][i]
+                if field1=="Component_name":
+                    if obj2["Class"] in l:
+                        if l[obj2["Class"]]!=obj2[field2]:
+                            linked = False
+                    else:
+                        linked = False
+                elif field1 in l and l[field1]:
+                    if l[field1]!=obj2[field2]:
+                        linked = False
+                else:
+                    if obj1[field1]!=obj2[field2]:
+                        linked = False
+            if linked == True:
+                if "component_ID" in temp1 and temp1["component_ID"]:
+                    l["link_id"] = l[temp1["component_ID"]]
+                links.append(l)
+    return links
+
 def getLink(obj1,obj2):
+    links = []
+    temp1 = getTemplate(obj1)
+    temp2 = getTemplate(obj2)
+    links += getLinkDirectioned(obj1,obj2,temp1,temp2)
+    links += getLinkDirectioned(obj2,obj1,temp2,temp1)
+    return links
+
+"""def getLink(obj1,obj2):
     link = {}
     class1 = getTemplate(obj1)
     class2 = getTemplate(obj2)
@@ -953,7 +1037,7 @@ def getLink(obj1,obj2):
             link = l
     if link=={}:
         return checkForLinkLike(obj1,obj2,class1,class2)
-    return link
+    return link"""
 
 
 def parseRulesToString(object,rules):

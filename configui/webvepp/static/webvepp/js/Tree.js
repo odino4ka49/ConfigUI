@@ -320,7 +320,10 @@ WEBVEPP.Tree = function(params){
                 var o = {x: source.x, y: direction * (source.y + boxWidth/2)};
                 return transitionElbow({source: o, target: o});
               });
-            newlink.append("text");
+            newlink.append("text")
+                .attr("class", "link_from");
+            newlink.append("text")
+                .attr("class", "link_to");
 
             var link_update = link.transition()
                 .duration(duration);
@@ -337,15 +340,42 @@ WEBVEPP.Tree = function(params){
                     }
                 });
 
-            link_update.select("text")
+            link_update.select("text.link_from")
                 .attr("transform", function(d) {
-                    return "translate(" +
-                        (d.target.y-boxWidth/2-20) + "," +
-                        (d.target.x-5) + ")";
+                    if(d.source.coord)
+                        return "translate(" +
+                        (d.source.coord[0]/2+d.target.coord[0]/2-4) + "," +
+                        (d.target.coord[1]-5) + ")";
                 })
                 .text(function(d) {
-                    if(d.target.link_id)
-                     return d.target.link_id;
+                    if(d.target.attributes.min){
+                        for(i=0;i<d.target.attributes.min.length;i++){
+                            attr = d.target.attributes.min[i];
+                            if(attr.positioning=="link_text"){
+                                return attr.value;
+                            }
+                        }
+                    }
+                })
+                .attr("text-anchor","end")
+                .attr("startOffset","100%");
+
+            link_update.select("text.link_to")
+                .attr("transform", function(d) {
+                    if(d.source.coord)
+                        return "translate(" +
+                        (d.source.coord[0]/2+d.target.coord[0]/2+4) + "," +
+                        (d.target.coord[1]-5) + ")";
+                })
+                .text(function(d) {
+                    if(d.target.attributes.min){
+                        for(i=0;i<d.target.attributes.min.length;i++){
+                            attr = d.target.attributes.min[i];
+                            if(attr.positioning=="link_text"&&attr.link_end_id){
+                                return attr.link_end_id;
+                            }
+                        }
+                    }
                 });
 
             link_remove = link.exit()
@@ -359,7 +389,7 @@ WEBVEPP.Tree = function(params){
                 return transitionElbow({source: o, target: o});
               });
 
-            link_remove.select("text")
+            link_remove.selectAll("text")
                 .attr("transform", function(d) {
                     return "translate(" +
                         (d.source.y) + "," +
@@ -839,7 +869,8 @@ WEBVEPP.Tree = function(params){
     function attributesToString(attributes){
         var text = "";
         attributes.forEach(function(attr){
-            text += attr.key+": "+attr.value+"<br/>";
+            if(!attr.positioning)
+                text += attr.key+": "+attr.value+"<br/>";
         });
         return text;
     };

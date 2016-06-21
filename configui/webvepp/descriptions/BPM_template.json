@@ -208,7 +208,7 @@
         "type": "string"
       }
     ],
-    "foreign_keys":[ "Module Type" ],
+    "foreign_keys":[ "Module Type", "BPM" ],
     "primary_key": [
       "Name",
       "System"
@@ -290,9 +290,13 @@
       {
         "key": "Modules",
         "type": "array"
+      },
+      {
+        "key": "Module Type",
+        "type": "string"
       }
     ],
-    "foreign_keys":[],
+    "foreign_keys":["Module Type"],
     "primary_key": [
       "Name",
       "System"
