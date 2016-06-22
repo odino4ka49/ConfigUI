@@ -44,6 +44,8 @@ WEBVEPP.Tree = function(params){
             var nodes = tree.nodes(root);
             nodes.forEach(function(d){
                 if(d.depth==0) return;
+                if("expanded" in d)
+                    recountSize(d);
                 //loadDetailsOpenExtra(d);
                 if(d.coord) return;
                 d.coord = [countNodeX(d),countNodeY(d)];
@@ -517,6 +519,9 @@ WEBVEPP.Tree = function(params){
                             if(d.open_extra && (!d.collapsed&&("collapsed" in d))){
                                 text= attributesToString(d.attributes.extra)
                             }
+                            else if(d.expanded && d.attributes.extra){
+                                text = attributesToString(d.attributes.extra);
+                            }
                             else if(d.attributes.min){
                                 text=minAttributesToString(d)
                             }
@@ -676,6 +681,26 @@ WEBVEPP.Tree = function(params){
                 var level_info = settings[level_name].display_attributes;
                 return level_info
             },
+            recountSize = function(person){
+                if(person.expanded){
+                    person.expandwidth = boxWidthMax;
+                    person.expandheight = countTextHeight(person.attributes.extra,person.width);
+                    person.width = person.expandwidth;
+                    person.height = person.expandheight;
+                }
+            },
+            expandPerson = function(person){
+                person.expanded = !person.expanded;
+                if(person.expanded && person.expandwidth){
+                    person.width = person.expandwidth;
+                    person.height = person.expandheight;
+                }
+                else{
+                    var level_info = getLevelInfo(person);
+                    person.width = level_info.width;
+                    person.height = level_info.height;
+                }
+            },
             togglePerson = function(person){
                 // Don't allow the root to be collapsed because that's
                 // silly (it also makes our life easier)
@@ -686,6 +711,11 @@ WEBVEPP.Tree = function(params){
                 else {
                     var level_name = "level"+person.depth;
                     var level_info = settings[level_name].display_attributes;
+                    if(level_info.autoexpanding){
+                        if(!person.attributes.extra || person.attributes.extra.length == 0)
+                            $(document).trigger("load_details",person);
+                        expandPerson(person);
+                    }
                     if(level_info.autorevealing)
                         return;
                     if(person.collapsed){

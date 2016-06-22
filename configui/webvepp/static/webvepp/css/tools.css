@@ -21,7 +21,13 @@
     font-size: 11pt;
     text-align: center;
     white-space:pre;
+    border-spacing: 20px 5px;
 }
 #list body{
     margin: 0px;
+}
+#legend{
+    display: inline-block;
+    white-space: pre;
+    margin: 10px;
 }

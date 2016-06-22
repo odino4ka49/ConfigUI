@@ -744,9 +744,8 @@ def getValueByPath(object,path):
         template = getTemplate(value)
         if template:
             temp_field = next((x for x in template["fields"] if x["key"] == path[-1]), {})
-        units = " "
         if "units" in temp_field:
-            units += str(temp_field["units"])
+            units = " " + str(temp_field["units"])
             value = unicode(value[path[-1]])+units
         else:
             value = value[path[-1]]

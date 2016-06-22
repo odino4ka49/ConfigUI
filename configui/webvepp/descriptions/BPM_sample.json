@@ -298,12 +298,12 @@
             "value": "&BPM Type->Comment"
           },
           {
-            "key": "AppertureX",
-            "value": "&BPM Type->AppertureX"
+            "key": "ApertureX",
+            "value": "&BPM Type->ApertureX"
           },
           {
-            "key": "AppertureZ",
-            "value": "&BPM Type->AppertureZ"
+            "key": "ApertureZ",
+            "value": "&BPM Type->ApertureZ"
           },
           {
             "key": "PlateType",
@@ -322,7 +322,8 @@
         "matrix_type": "simple",
         "matrix_size": 64,
         "hiding": "true",
-        "field_name": false
+        "field_name": false,
+        "autoexpanding": true
       }
     },
     "level2": {
@@ -337,7 +338,47 @@
         "min": [
           "Name",
           "System",
-          "Module Type"
+          "Comment",
+          "IP",
+          "Port",
+          "MAC",
+          "GI",
+          "g0_button0",
+          "g0_button1",
+          "g0_button2",
+          "g0_button3",
+          "g1_button0",
+          "g1_button1",
+          "g1_button2",
+          "g1_button3",
+          "g0_gI",
+          "g1_gI",
+          "Date",
+          "Module Type",
+          {
+            "key": "System_ID",
+            "value": "&Module Type->System_ID"
+          },
+          {
+            "key": "Dispatcher",
+            "value": "&Module Type->Dispatcher"
+          },
+          {
+            "key": "System_ID",
+            "value": "&Module Type->System_ID"
+          },
+          {
+            "key": "Type comment",
+            "value": "&Module Type->Comment"
+          },
+          {
+            "key": "Channels number",
+            "value": "&Module Type->Channels number"
+          },
+          {
+            "key": "Bandwidth",
+            "value": "&Module Type->Bandwidth"
+          }
         ],
         "max": [
           "Name",
@@ -386,8 +427,8 @@
         ]
       },
       "display_attributes": {
-        "width": 200,
-        "height": 80,
+        "width": 300,
+        "height": 450,
         "autorevealing": true,
         "field_name": true
       }
@@ -441,29 +482,27 @@
           "BPM"
         ]
       },
-      "sort_field": "Name",
       "display_filter": {
         "min": [
-          "BPM Type",
           "Name",
-          "System",
-          "Comment",
+          "BPM Type",
           "Azimuth",
           "GX",
           "GZ",
           "GeodX",
           "GeodZ",
           "X0",
-          "Z0"
+          "Z0",
+          "Comment"
         ],
         "max": [
         ]
       },
       "display_attributes": {
-        "field_name": false,
-        "sort_type": "numbered"
+        "field_name": false
       }
-    }
+    },
+    "legend": "Name - имя пикапа [string]\nBPM Type - тип пикапа в файле bpm.type [int]\nAzimuth - азимут пикапа (положение) [real - cm]\nGX - горизонтальный масштабирующий коэффициент [real - mm] \nGZ - вертикальный масштабирующий коэффициент [real - mm]\nGeodX - горизонтальное геодезическое смещение [real - mm]\nGeodZ - вертикальное геодезическое смещение [real - mm]\nX0 - горизонтальное смещение нуля [real - mm]\nZ0 - вертикальное смещение нуля [real - mm]"
   },
   {
     "name": "Tool_modules",
@@ -477,13 +516,12 @@
       "sort_field": "Name",
       "display_filter": {
         "min": [
-          "Module Type",
           "Name",
-          "System",
-          "Comment",
+          "BPM",
           "IP",
           "Port",
           "MAC",
+          "Module Type",
           "GI",
           "g0_button0",
           "g0_button1",
@@ -495,15 +533,16 @@
           "g1_button3",
           "g0_gI",
           "g1_gI",
-          "Date"
+          "Date",
+          "Comment"
         ],
         "max": [
         ]
       },
       "display_attributes": {
-        "field_name": false,
-        "sort_type": "numbered"
+        "field_name": false
       }
-    }
+    },
+    "legend": "Name - номер пикап-станции [int] + 'BPMC'\nBPM - имя пикапа, к которому подключена пикап-станиция\nIP - IP-адрес\nPort - порт [int]\nMAC - MAC-адресс\nModule Type - тип пикап-станции [int]\nGI - коэффициент усиления [real]\ng0_button0 - коэффициент усиления 0 для 0 канала [real]\ng0_button1 - коэффициент усиления 0 для 1 канала [real]\ng0_button2 - коэффициент усиления 0 для2 канала [real]\ng0_button3 - коэффициент усиления 0 для3 канала [real]\ng1_button0 - коэффициент усиления 1 для 0 канала [real] \ng1_button1 - коэффициент усиления 1 для 1 канала [real]\ng1_button2 - коэффициент усиления 1 для 2 канала [real]\ng1_button3 - коэффициент усиления 1 для 3 канала [real]\ng0_gI - коэффициент тока для коэффициента усиления 0 [real]\ng1_gI - коэффициент тока для коэффициента усиления 1 [real]\nDate - дата создания"
   }
 ]

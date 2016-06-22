@@ -6,6 +6,7 @@ WEBVEPP.List = function(tool_bar,settings){
         image_data = "",
         scheme_names = {"system":"","sample":""},
         table = d3.select("body").select("table"),
+        legend = d3.select("body").select("#legend"),
         text_data = "";
 
     function setSchemeNames(tool_name){
@@ -56,6 +57,7 @@ WEBVEPP.List = function(tool_bar,settings){
             },
             success: function(data){
                 list_settings = data;
+                drawLegend();
                 $(document).trigger("unset_loading_cursor");
             }
         });
@@ -103,6 +105,15 @@ WEBVEPP.List = function(tool_bar,settings){
             .attr("src",WEBVEPP.serveradr()+"static/webvepp/bg/"+filename)
             .attr("alt","Image tool")
             .attr("width",width);
+    };
+
+    function drawLegend(){
+        if(list_settings.legend){
+            legend.text(list_settings.legend);
+        }
+        else{
+            legend.text("");
+        }
     };
 
     function drawListData(){
