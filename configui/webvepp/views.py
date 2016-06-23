@@ -175,7 +175,7 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                     obj1 = getObject(parseRulesToString(object,field['link_from']))
                     obj2 = getObject(parseRulesToString(object,field['link_to']))
                     if obj2 and obj1:
-                        links = getLink(obj1,obj2)
+                        links = getLink(obj1,obj2,{})
                         if(len(links)>0):
                             attrs += [{
                                 "key": field["key"],
@@ -186,7 +186,7 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                     rules = parseRulesToString(object,field['link_to'])
                     objs2 = getObjects(rules)
                     for obj2 in objs2:
-                        links = getLink(object,obj2)
+                        links = getLink(object,obj2,{})
                         if len(links)>0:
                             attrs += [{
                                 "key": field["key"],
@@ -218,23 +218,17 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                             }]
                 elif ("link_id" in object)and ("value" in field) and (field["value"]=="link_id"):
                     if "positioning" in field and field["positioning"]=="link_text":
-                        if len(object["link_id"])==2:
-                            attrs += [{
-                                "key": field["key"],
-                                "value": object["link_id"][0],
-                                "link_end_id": object["link_id"][1],
-                                "positioning": field["positioning"]
-                            }]
-                        else:
-                            attrs += [{
-                                "key": field["key"],
-                                "value": object["link_id"][0],
-                                "positioning": field["positioning"]
-                            }]
+                        #if len(object["link_id"])==2:
+                        attrs += [{
+                            "key": field["key"],
+                            "value": object["link_id"]["from"],
+                            "link_end_id": object["link_id"]["to"],
+                            "positioning": field["positioning"]
+                        }]
                     else:
                         attrs += [{
                             "key": field["key"],
-                            "value": object["link_id"][0]
+                            "value": object["link_id"]["from"]
                         }]
             else:
                 temp_field = {}
@@ -341,13 +335,12 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 neighbours.append(neighbour)
         else:
             for n in next_level:
-                links = getLink(node,n)
+                link_positions = {}
+                links = getLink(node,n,link_positions)
+                print link_positions
                 if len(links)!=0:
                     template = getTemplate(node)
-                    n["link_id"] = []
-                    for l in links:
-                        if "link_id" in l:
-                            n["link_id"].append(l["link_id"])
+                    n["link_id"] = link_positions
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
                         neighbour["id"] = parseId(n)
@@ -763,7 +756,7 @@ def getNeighbour(object,foreign_key):
         neighbours = getObjects(rules)
         link = {}
         for n in neighbours:
-            link = getLink(object,n)
+            link = getLink(object,n,{})
             if len(link)!=0:
                 neighbour = n
     return neighbour
@@ -916,7 +909,7 @@ def getTemplate(object):
         if object["Class"]==t["class"]:
             return t
 
-def getLinkDirectioned(obj1,obj2,temp1,temp2):
+def getLinkDirectioned(obj1,obj2,temp1,temp2,link_pos,direction):
     links = []
     #check foreign keys
     if "foreign_keys" in temp1 and temp2["class"] in temp1["foreign_keys"] and temp2["class"] in obj1:
@@ -962,16 +955,19 @@ def getLinkDirectioned(obj1,obj2,temp1,temp2):
                         linked = False
             if linked == True:
                 if "component_ID" in temp1 and temp1["component_ID"]:
-                    l["link_id"] = l[temp1["component_ID"]]
+                    #l["link_id"] = l[temp1["component_ID"]]
+                    link_pos[direction] = l[temp1["component_ID"]]
                 links.append(l)
     return links
 
-def getLink(obj1,obj2):
+def getLink(obj1,obj2,link_pos):
     links = []
+    link_pos["from"] = None
+    link_pos["to"] = None
     temp1 = getTemplate(obj1)
     temp2 = getTemplate(obj2)
-    links += getLinkDirectioned(obj1,obj2,temp1,temp2)
-    links += getLinkDirectioned(obj2,obj1,temp2,temp1)
+    links += getLinkDirectioned(obj1,obj2,temp1,temp2,link_pos,"from")
+    links += getLinkDirectioned(obj2,obj1,temp2,temp1,link_pos,"to")
     return links
 
 """def getLink(obj1,obj2):

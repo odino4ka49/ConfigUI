@@ -151,7 +151,7 @@ def validateObject(object,template):
                         log(object,template,"There are several objects on this foreign key: {"+fk+": "+object[fk]+"}")
                         result = False
             else:
-                log(object,template,"Object doesn't have this foreign key: "+fk+".")
+                log_warning(object,template,"Object doesn't have this foreign key: "+fk+".")
                 result = False
     #component check
     if "components" in template and template["components"]:

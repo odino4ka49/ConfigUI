@@ -89,6 +89,7 @@ WEBVEPP.List = function(tool_bar,settings){
 
     function drawTextData(){
         //text_data.replace(/\n/g, "<br />");
+        legend.text("");
         table.select('thead').remove();
         table.select('tbody').remove();
         var thead = table.append('thead');
@@ -97,6 +98,7 @@ WEBVEPP.List = function(tool_bar,settings){
     };
 
     function drawImageData(filename,width){
+        legend.text("");
         table.select('thead').remove();
         table.select('tbody').remove();
         var thead = table.append('thead');

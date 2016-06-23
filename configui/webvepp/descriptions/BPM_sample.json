@@ -68,7 +68,6 @@
           "Class",
           "Name",
           "System",
-          "Comment",
           {
             "key": "System_ID",
             "value": "&Module Type->System_ID"
@@ -78,14 +77,15 @@
             "value": "&Module Type->Dispatcher"
           },
           {
-            "key": "Type comment",
+            "key": "Cmment",
             "value": "&Module Type->Comment"
-          }
+          },
+          "Comment"
         ]
       },
       "display_attributes": {
         "width": 220,
-        "height": 60,
+        "height": 65,
         "field_name": true
       }
     },
@@ -116,15 +116,15 @@
         "max": [
           "Name",
           "System",
-          "Comment",
           "Module Type",
           "Host",
-          "Area"
+          "Area",
+          "Comment"
         ]
       },
       "display_attributes": {
         "width": 220,
-        "height": 60,
+        "height": 65,
         "field_name": true
       }
     },
@@ -155,15 +155,15 @@
         "max": [
           "Name",
           "System",
-          "Comment",
           "Module Type",
           "Host",
-          "Area"
+          "Area",
+          "Comment"
         ]
       },
       "display_attributes": {
         "width": 220,
-        "height": 60,
+        "height": 65,
         "field_name": true
       }
     },
@@ -190,15 +190,15 @@
         "max": [
           "Name",
           "System",
-          "Comment",
           "Module Type",
           "Host",
-          "Area"
+          "Area",
+          "Comment"
         ]
       },
       "display_attributes": {
         "width": 220,
-        "height": 60,
+        "height": 65,
         "field_name": true
       }
     },
@@ -233,7 +233,7 @@
       },
       "display_attributes": {
         "width": 220,
-        "height": 60,
+        "height": 65,
         "field_name": true
       }
     }
@@ -276,7 +276,6 @@
         "max": [
           "Name",
           "System",
-          "Comment",
           "Azimuth",
           "GX",
           "GZ",
@@ -294,10 +293,6 @@
             "value": "&BPM Type->Form"
           },
           {
-            "key": "Type comment",
-            "value": "&BPM Type->Comment"
-          },
-          {
             "key": "ApertureX",
             "value": "&BPM Type->ApertureX"
           },
@@ -312,6 +307,11 @@
           {
             "key": "PlateSize",
             "value": "&BPM Type->PlateSize"
+          },
+          "Comment",
+          {
+            "key": "Comment",
+            "value": "&BPM Type->Comment"
           }
         ]
       },
@@ -338,7 +338,6 @@
         "min": [
           "Name",
           "System",
-          "Comment",
           "IP",
           "Port",
           "MAC",
@@ -378,6 +377,11 @@
           {
             "key": "Bandwidth",
             "value": "&Module Type->Bandwidth"
+          },
+          "Comment",
+          {
+            "key": "Comment",
+            "value": "&Module Type->Comment"
           }
         ],
         "max": [
@@ -413,16 +417,17 @@
             "value": "&Module Type->System_ID"
           },
           {
-            "key": "Type comment",
-            "value": "&Module Type->Comment"
-          },
-          {
             "key": "Channels number",
             "value": "&Module Type->Channels number"
           },
           {
             "key": "Bandwidth",
             "value": "&Module Type->Bandwidth"
+          },
+          "Comment",
+          {
+            "key": "Comment",
+            "value": "&Module Type->Comment"
           }
         ]
       },
@@ -485,6 +490,10 @@
       "display_filter": {
         "min": [
           "Name",
+          {
+            "key": "BPMC",
+            "value": "&Module->Name"
+          },
           "BPM Type",
           "Azimuth",
           "GX",
@@ -502,7 +511,7 @@
         "field_name": false
       }
     },
-    "legend": "Name - имя пикапа [string]\nBPM Type - тип пикапа в файле bpm.type [int]\nAzimuth - азимут пикапа (положение) [real - cm]\nGX - горизонтальный масштабирующий коэффициент [real - mm] \nGZ - вертикальный масштабирующий коэффициент [real - mm]\nGeodX - горизонтальное геодезическое смещение [real - mm]\nGeodZ - вертикальное геодезическое смещение [real - mm]\nX0 - горизонтальное смещение нуля [real - mm]\nZ0 - вертикальное смещение нуля [real - mm]"
+    "legend": "Name - имя пикапа\nBPMC - имя пикап-станции, подключенной к пикапу\nBPM Type - тип пикапа в файле bpm.type\nAzimuth - азимут/положение пикапа\nGX - горизонтальный масштабирующий коэффициент\nGZ - вертикальный масштабирующий коэффициент\nGeodX - горизонтальное геодезическое смещение\nGeodZ - вертикальное геодезическое смещение\nX0 - горизонтальное смещение нуля\nZ0 - вертикальное смещение нуля"
   },
   {
     "name": "Tool_modules",
@@ -543,6 +552,6 @@
         "field_name": false
       }
     },
-    "legend": "Name - номер пикап-станции [int] + 'BPMC'\nBPM - имя пикапа, к которому подключена пикап-станиция\nIP - IP-адрес\nPort - порт [int]\nMAC - MAC-адресс\nModule Type - тип пикап-станции [int]\nGI - коэффициент усиления [real]\ng0_button0 - коэффициент усиления 0 для 0 канала [real]\ng0_button1 - коэффициент усиления 0 для 1 канала [real]\ng0_button2 - коэффициент усиления 0 для2 канала [real]\ng0_button3 - коэффициент усиления 0 для3 канала [real]\ng1_button0 - коэффициент усиления 1 для 0 канала [real] \ng1_button1 - коэффициент усиления 1 для 1 канала [real]\ng1_button2 - коэффициент усиления 1 для 2 канала [real]\ng1_button3 - коэффициент усиления 1 для 3 канала [real]\ng0_gI - коэффициент тока для коэффициента усиления 0 [real]\ng1_gI - коэффициент тока для коэффициента усиления 1 [real]\nDate - дата создания"
+    "legend": "Name - номер пикап-станции + 'BPMC'\nBPM - имя пикапа, к которому подключена пикап-станиция\nIP - IP-адрес\nPort - порт\nMAC - MAC-адресс\nModule Type - тип пикап-станции\nGI - коэффициент усиления\ng0_button0 - коэффициент усиления 0 для 0 канала\ng0_button1 - коэффициент усиления 0 для 1 канала\ng0_button2 - коэффициент усиления 0 для2 канала\ng0_button3 - коэффициент усиления 0 для3 канала\ng1_button0 - коэффициент усиления 1 для 0 канала\ng1_button1 - коэффициент усиления 1 для 1 канала\ng1_button2 - коэффициент усиления 1 для 2 канала\ng1_button3 - коэффициент усиления 1 для 3 канала\ng0_gI - коэффициент тока для коэффициента усиления 0\ng1_gI - коэффициент тока для коэффициента усиления 1\nDate - дата создания"
   }
 ]

@@ -9,3 +9,7 @@ svg {
 .link:hover{
     fill:white;
 }
+
+text{
+    white-space: pre;
+}

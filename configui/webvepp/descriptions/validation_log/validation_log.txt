@@ -1,2 +1,1 @@
-System name: CHAN
-Error: tempate CAN. There are no template for Controller from component_types.
+System name: V4

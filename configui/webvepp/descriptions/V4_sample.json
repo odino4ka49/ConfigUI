@@ -89,7 +89,6 @@
           "Class",
           "Name",
           "System",
-          "Comment",
           "Controller",
           "Dispatcher name",
           {
@@ -157,7 +156,8 @@
               "Operation": "sum"
             },
             "value": "sum"
-          }
+          },
+          "Comment"
         ]
       },
       "display_attributes": {
@@ -187,8 +187,8 @@
         "max": [
           "Name",
           "System",
-          "Comment",
-          "Module Type"
+          "Module Type",
+          "Comment"
         ]
       },
       "display_attributes": {
@@ -225,7 +225,6 @@
           "Name",
           "Element",
           "System",
-          "Comment",
           "BANK",
           "Module",
           "Channel",
@@ -242,7 +241,8 @@
           "Relay",
           "Relay ON",
           "Master Element",
-          "Maste Channel"
+          "Maste Channel",
+          "Comment"
         ]
       },
       "sort_field": "Channel",
@@ -382,7 +382,6 @@
           "System",
           "Group",
           "Type",
-          "Comment",
           "Polarity",
           {
             "key":"Channels",
@@ -391,7 +390,8 @@
           "EnergyLock",
           "Inputs",
           "Outputs",
-          "Shift"
+          "Shift",
+          "Comment"
         ]
       },
       "display_attributes": {
@@ -434,7 +434,6 @@
           "Name",
           "Element",
           "System",
-          "Comment",
           "BANK",
           "Module",
           "Channel",
@@ -452,7 +451,8 @@
           "Relay",
           "Relay ON",
           "Master Element",
-          "Maste Channel"
+          "Maste Channel",
+          "Comment"
         ]
       },
       "display_attributes": {
@@ -502,8 +502,8 @@
         "max": [
           "Name",
           "System",
-          "Comment",
-          "Module Type"
+          "Module Type",
+          "Comment"
         ]
       },
       "sort_field": "Name",
@@ -556,7 +556,6 @@
           "Class",
           "Name",
           "System",
-          "Comment",
           "Controller",
           "Dispatcher name",
           {
@@ -576,7 +575,8 @@
           {
             "key":"Modules",
             "value": "len"
-          }
+          },
+          "Comment"
         ]
       },
       "display_attributes": {
