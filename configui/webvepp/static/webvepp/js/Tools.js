@@ -123,21 +123,22 @@ WEBVEPP.List = function(tool_bar,settings){
         table.select('tbody').remove();
         var thead = table.append('thead');
         var tbody = table.append('tbody');
+        var list_attrs = list_settings.root.display_filter.min;
         thead.append("tr")
             .each(function(d,i){
                 var row = d3.select(this);
                 if(!list_settings) return;
-                var attrs = list_settings.root.display_filter.min;
+                //var attrs = list_settings.root.display_filter.min;
                 if(list_settings.root.display_attributes.sort_type=="numbered"){
                     row.append("td").text("Index")
                 }
-                for(var j=0;j<attrs.length;j++){
+                for(var j=0;j<list_attrs.length;j++){
                     var key = "";
-                    if(typeof(attrs[j])=="string"){
-                        key = attrs[j];
+                    if(typeof(list_attrs[j])=="string"){
+                        key = list_attrs[j];
                     }
-                    else if(typeof(attrs[j]=="object")){
-                        key = attrs[j].key;
+                    else if(typeof(list_attrs[j]=="object")){
+                        key = list_attrs[j].key;
                     }
                     row.append("td").text(key);
                 }
@@ -153,7 +154,21 @@ WEBVEPP.List = function(tool_bar,settings){
                 var attrs = d.attributes.min;
                 //row.selectAll("td").remove();
                 for(var j=0;j<attrs.length;j++){
-                    row.append("td").text(attrs[j].value);
+                    if(list_attrs[j].type=="image"){
+                        row.append("td").append("img")
+                            .attr("src",WEBVEPP.serveradr()+"static/webvepp/bg/"+attrs[j].value)
+                            .attr("alt",attrs[j].value)
+                            .attr("width",list_attrs[j].width);
+                    }
+                    else if(attrs[j].value instanceof Array){
+                        var rowvalue = row.append("td");
+                        for(var i in attrs[j].value){
+                            rowvalue.append("div").text(attrs[j].value[i]);
+                        }
+                    }
+                    else{
+                        row.append("td").text(attrs[j].value);
+                    }
                 }
             })
             /*.selectAll("body")

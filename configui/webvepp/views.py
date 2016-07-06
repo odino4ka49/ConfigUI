@@ -199,7 +199,7 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                             "value": len(object[field["key"]])
                         }]
                 elif (field["value"][0]=="&"):
-                    value = getValueByPath(object,field["value"])
+                    value = getValuesByPath(object,field["value"])
                     if value!=None:
                         attrs += [{
                             "key": field["key"],
@@ -230,6 +230,16 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                             "key": field["key"],
                             "value": object["link_id"]["from"]
                         }]
+                elif field["value"] in object:
+                    attrs += [{
+                        "key": field["key"],
+                        "value": object[field["key"]]
+                    }]
+                if "type" in field:
+                    if field["type"]=="len":
+                        attr = next((x for x in attrs if x["key"] == field["key"]), {})
+                        if attr and type(attr["value"]) is list:
+                            attr["value"] = len(attr["value"])
             else:
                 temp_field = {}
                 if field=="*":
@@ -337,7 +347,6 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
             for n in next_level:
                 link_positions = {}
                 links = getLink(node,n,link_positions)
-                print link_positions
                 if len(links)!=0:
                     template = getTemplate(node)
                     n["link_id"] = link_positions
@@ -712,7 +721,7 @@ def getValuesByPath(object,path):
                         rules = {"Class":key,"Name":comp[key],"System":object["System"]}
                 next += getObjects(rules)
         else:
-            next.append(getNeighbour(object,step))
+            next+=getNeighbours(object,step)
         return next
     #loop where we go through path and change current value (it might be an object if it's not the end of the path)
     for i in range(0,len(path)-1):
@@ -743,6 +752,23 @@ def getValueByPath(object,path):
         else:
             value = value[path[-1]]
     return value
+
+def getNeighbours(object,foreign_key):
+    result = []
+    if foreign_key in object:
+        #create rules
+        rules = {"Class":foreign_key,"Name":object[foreign_key],"System":object["System"]}
+        #get object
+        result.append(getObject(rules))
+    else:
+        rules = {"Class":foreign_key,"System":object["System"]}
+        neighbours = getObjects(rules)
+        link = {}
+        for n in neighbours:
+            link = getLink(object,n,{})
+            if len(link)!=0:
+                result.append(n)
+    return result
 
 def getNeighbour(object,foreign_key):
     neighbour = None

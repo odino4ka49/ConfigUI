@@ -459,10 +459,9 @@
       },
       {
         "title": "Типы пикапов",
-        "type": "image",
+        "type": "list",
         "id": "tool_bpmtypes",
-        "filename": "V4_Pick-up_Types.jpg",
-        "width": "600px"
+        "sample": "Tool_bpmtypes"
       },
       {
         "title": "Пикапы",
@@ -477,6 +476,44 @@
         "sample": "Tool_modules"
       }
     ]
+  },
+  {
+    "name": "Tool_bpmtypes",
+    "root": {
+      "type": "filter",
+      "filter": {
+        "Class": [
+          "BPM Type"
+        ]
+      },
+      "display_filter": {
+        "min": [
+          {
+            "key": "BPM",
+            "value": "&BPM->Name"
+          },
+          "Name",
+          {
+            "key": "Image",
+            "value": "&Image",
+            "type": "image",
+            "width": "300px"
+          },
+          "ApertureX",
+          "ApertureZ",
+          {
+            "key": "BPM number",
+            "value": "&BPM->Name",
+            "type": "len"
+          }
+        ],
+        "max": [
+        ]
+      },
+      "display_attributes": {
+        "field_name": false
+      }
+    }
   },
   {
     "name": "Tool_bpms",

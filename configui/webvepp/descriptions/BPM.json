@@ -1287,7 +1287,8 @@
         "ApertureX": 65.0,
         "ApertureZ": 35.0,
         "PlateType": "R",
-        "PlateSize": 0.0
+        "PlateSize": 0.0,
+        "Image": "V4_Pick-up_Type_1.jpg"
     },
     {
         "Class": "BPM Type",
@@ -1299,7 +1300,8 @@
         "ApertureX": 102.0,
         "ApertureZ": 102.0,
         "PlateType": "C",
-        "PlateSize": 46.0
+        "PlateSize": 46.0,
+        "Image": "V4_Pick-up_Type_2.jpg"
     },
     {
         "Class": "BPM Type",
@@ -1311,7 +1313,8 @@
         "ApertureX": 102.0,
         "ApertureZ": 102.0,
         "PlateType": "C",
-        "PlateSize": 46.0
+        "PlateSize": 46.0,
+        "Image": "V4_Pick-up_Type_3.jpg"
     },
     {
         "Class": "BPM Type",
@@ -1323,7 +1326,8 @@
         "ApertureX": 306.0,
         "ApertureZ": 104.0,
         "PlateType": "C",
-        "PlateSize": 44.0
+        "PlateSize": 44.0,
+        "Image": "V4_Pick-up_Type_4.jpg"
     },
     {
         "Class": "BPM Type",
@@ -1335,7 +1339,8 @@
         "ApertureX": 245.0,
         "ApertureZ": 104.0,
         "PlateType": "C",
-        "PlateSize": 44.0
+        "PlateSize": 44.0,
+        "Image": "V4_Pick-up_Type_5.jpg"
     },
     {
         "Class": "BPM Type",
@@ -1347,7 +1352,8 @@
         "ApertureX": 95.0,
         "ApertureZ": 35.0,
         "PlateType": "C",
-        "PlateSize": 34.0
+        "PlateSize": 34.0,
+        "Image": "V4_Pick-up_Type_6.jpg"
     },
     {
         "Class": "BPM Type",
@@ -1359,7 +1365,8 @@
         "ApertureX": 110.0,
         "ApertureZ": 35.0,
         "PlateType": "C",
-        "PlateSize": 34.0
+        "PlateSize": 34.0,
+        "Image": "V4_Pick-up_Type_7.jpg"
     },
 
     {

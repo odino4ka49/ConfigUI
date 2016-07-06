@@ -110,6 +110,10 @@
         "key": "PlateSize",
         "type": "float",
         "units": "mm"
+      },
+      {
+        "key": "Image",
+        "type": "string"
       }
     ],
     "foreign_keys":[],

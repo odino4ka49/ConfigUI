@@ -30,7 +30,7 @@
       "type": "new",
       "level": 0,
       "fields": {
-        "System": "V4",
+        "System": "Chan",
         "Name": "Chan_camacs"
       },
       "sort_field": "Name",
@@ -114,7 +114,8 @@
           "Rack level",
           {
             "key": "Modules",
-            "value": "len"
+            "value": "Modules",
+            "type": "len"
           },
           {
             "key": "+24",
@@ -337,7 +338,8 @@
           "Polarity",
           {
             "key": "Channels",
-            "value": "len"
+            "value": "Channels",
+            "type": "len"
           },
           "EnergyLock",
           "Inputs",
@@ -525,7 +527,8 @@
           "Rack level",
           {
             "key": "Modules",
-            "value": "len"
+            "value": "Modules",
+            "type": "len"
           },
           "Comment"
         ]
