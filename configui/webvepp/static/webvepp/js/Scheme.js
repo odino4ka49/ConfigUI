@@ -126,6 +126,7 @@ WEBVEPP.Scheme = function(menu,settings){
                 scheme = xml.documentElement.getElementById("Слой_x0020_1");
                 schemeSVG.appendChild(scheme);
                 addLinks();
+                addEyes();
                 svg.transition().attr("transform",'translate(' + zoom.translate() + ') scale(' + zoom.scale() + ')');
                 zoomToNode(schemeSVG);
             });
@@ -138,9 +139,6 @@ WEBVEPP.Scheme = function(menu,settings){
                     $(document).trigger("switch_system",aim_system);
                 }
                 var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_self');
-                win.onpopstate = function(){
-                    alert("yeah");
-                };
                 //this is for new tab
                 //'_blank');
                 /*if(win){
@@ -148,6 +146,29 @@ WEBVEPP.Scheme = function(menu,settings){
                 }else{
                     alert('Please allow popups for this site');
                 }*/
+            });
+        },
+        addEyes = function(){
+            svg.selectAll(".eye").on("click",function(){
+                d3.event.stopPropagation();
+                d3.event.preventDefault();
+                var image_name = $(this).attr("eye");
+                var mcoords = [0, 0];
+                var image_size = [200,100];
+                //var image_size = [$(this).attr("width"),$(this).attr("height")]
+                mcoords = d3.mouse(this);
+                console.log(this);
+                //var image = loadImage(image_name);
+                if(image_name){
+                    //putImageInBox
+                    svg.append("image")
+                        .attr("xlink:href", WEBVEPP.serveradr()+"static/webvepp/bg/"+image_name+".jpg")
+                        .attr("x", mcoords[0]-image_size[0]/2)
+                        .attr("y", mcoords[1]-image_size[1]/2)
+                        .attr("width", image_size[0])
+                        .attr("height", image_size[1]);
+                    //setBoxSize
+                }
             });
         };
 
@@ -162,7 +183,11 @@ WEBVEPP.Scheme = function(menu,settings){
         .attr('height', "100%")
         .call(zoom)
         .append('g')
-        .attr('id','schemeSVG');
+        .attr('id','schemeSVG')
+        ;
+    svg.on("click",function(){
+            svg.selectAll("image").remove();
+        });
 
 
     $(document).on("menu_loaded",function(){
