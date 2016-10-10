@@ -155,7 +155,10 @@ WEBVEPP.Scheme = function(menu,settings){
                 var image_name = $(this).attr("eye");
                 var mcoords = [0, 0];
                 var image_size = [200,100];
-                //var image_size = [$(this).attr("width"),$(this).attr("height")]
+                var width = $(this).attr("width");
+                var height = $(this).attr("height");
+                if(width) image_size[0]=width;
+                if(height) image_size[1]=height;
                 mcoords = d3.mouse(this);
                 console.log(this);
                 //var image = loadImage(image_name);
