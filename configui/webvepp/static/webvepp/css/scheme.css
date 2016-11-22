@@ -3,6 +3,9 @@ svg {
     font-family: arial;
 }
 
+.eye{
+    cursor: pointer;
+}
 .link{
     cursor: pointer;
 }

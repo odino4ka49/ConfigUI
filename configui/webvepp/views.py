@@ -426,7 +426,7 @@ def getRemoteAttributes(node,level):
             #elif attr == "Graphs":
             #    obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))
             else:
-                obj_attributes.append(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"]))
+                obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))
         remote["attributes"]=obj_attributes
         if node["Outputs"]==1 and node["Inputs"]==1:
             remote["noborders"] = True

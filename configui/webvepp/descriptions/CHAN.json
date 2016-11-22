@@ -758,10 +758,66 @@
  },
  {
    "Class": "Module",
+   "Name": "GZI2",
+   "Module Type": "GZI",
+   "System": "CHAN",
+   "Comment": "синхронизация IV4P"
+ },
+ {
+   "Class": "Module",
+   "Name": "GZI3",
+   "Module Type": "GZI",
+   "System": "CHAN",
+   "Comment": "синхронизация IV4E"
+ },
+{
+   "Class": "Module",
+   "Name": "GZI4",
+   "Module Type": "GZI",
+   "System": "CHAN",
+   "Comment": "синхронизация DV3"
+ }, 
+ {
+   "Class": "Module",
+   "Name": "GZI5",
+   "Module Type": "GZI",
+   "System": "CHAN",
+   "Comment": "синхронизация пикапов ВЭПП-4"
+ },
+ {
+   "Class": "Module",
    "Name": "URG1",
    "Module Type": "UR GZI",
    "System": "CHAN",
    "Comment": "включение синхронизации X-удара и осциллографа (модуль GZI1, 17-й бит регистра)"
+ },
+ {
+   "Class": "Module",
+   "Name": "URG2",
+   "Module Type": "UR GZI",
+   "System": "CHAN",
+   "Comment": "включение синхронизации IV4P(модуль GZI2, 17-й бит регистра)"
+ },
+ {
+   "Class": "Module",
+   "Name": "URG3",
+   "Module Type": "UR GZI",
+   "System": "CHAN",
+   "Comment": "включение синхронизации IV4E(модуль GZI3, 17-й бит регистра)"
+ },
+ {
+   "Class": "Module",
+   "Name": "URG4",
+   "Module Type": "UR GZI",
+   "System": "CHAN",
+   "Comment": "включение синхронизации DV3(модуль GZI4, 17-й бит регистра)"
+ },
+ {
+   "Class": "Module",
+   "Name": "URG5",
+   "Module Type": "UR GZI",
+   "System": "CHAN",
+   "Comment": "включение синхронизации пикапов ВЭПП-4(модуль GZI5, 17-й бит регистра)"
  },
  {
    "Class": "Module",
@@ -790,6 +846,13 @@
    "Module Type": "CC-24",
    "System": "CHAN",
    "Comment": "контроллер крейта I1017"
+ },
+ {
+   "Class": "Module",
+   "Name": "7CC",
+   "Module Type": "CC-24",
+   "System": "CHAN",
+   "Comment": "контроллер крейта I1020"
  },
  {
    "Class": "Module",
@@ -854,7 +917,6 @@
    "System": "CHAN",
    "Comment": "Включение выходных импульсов ГЗИ-8"
  },
-
 
  {
    "Class": "CAMAC",
@@ -1253,6 +1315,58 @@
      {
        "Position": 25,
        "Module": "6CC"
+     }
+   ]
+ },
+
+ {
+   "Class": "CAMAC",
+   "Name": "I1020",
+   "System": "CHAN",
+   "Comment": "Управление запусками инфлекторов ВЭПП-4 и дефлектора ВЭПП-3",
+   "Controller": "7CC",
+   "Dispatcher name": "11DS",
+   "PINT": 9,
+   "Address": "#263",
+   "Area": "РП",
+   "Rack/cabinet": "KC11",
+   "Rack level": 3,
+   "Modules": [
+     {
+       "Position": 4,
+       "Module": "GZI2"
+     },
+     {
+       "Position": 5,
+       "Module": "URG2"
+     },
+     {
+       "Position": 6,
+       "Module": "GZI3"
+     },
+     {
+       "Position": 7,
+       "Module": "URG3"
+     },
+     {
+       "Position": 8,
+       "Module": "GZI4"
+     },
+     {
+       "Position": 9,
+       "Module": "URG4"
+     },
+     {
+       "Position": 10,
+       "Module": "GZI5"
+     },
+     {
+       "Position": 11,
+       "Module": "URG5"
+     },
+     {
+       "Position": 25,
+       "Module": "7CC"
      }
    ]
  },
@@ -6990,14 +7104,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 137,
-   "Module": "LZD",
-   "Channel": 4,
-   "Cod/Value": 5.0,
+   "Module": "GZI4",
+   "Channel": 0,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
  },
  {
    "Class": "Control channel",
@@ -7006,14 +7120,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 138,
-   "Module": "LZD",
-   "Channel": 5,
-   "Cod/Value": 5.0,
+   "Module": "GZI4",
+   "Channel": 1,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
  },
  {
    "Class": "Control channel",
@@ -7105,9 +7219,9 @@
    "System": "CHAN",
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 139,
-   "Module": "URLZ",
-   "Channel": [4],
-   "Channel ON": [4]
+   "Module": "URG4",
+   "Channel": [0],
+   "Channel ON": [0]
  },   
  {
    "Class": "UR channel",
@@ -7116,9 +7230,9 @@
    "System": "CHAN",
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 140,
-   "Module": "URLZ",
-   "Channel": [5],
-   "Channel ON": [5]
+   "Module": "URG4",
+   "Channel": [1],
+   "Channel ON": [1]
  },   
  {
    "Class": "UR channel",
@@ -7148,14 +7262,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 162,
-   "Module": "LZD",
-   "Channel": 2,
-   "Cod/Value": 5.0,
+   "Module": "GZI3",
+   "Channel": 0,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
  },
  {
    "Class": "Control channel",
@@ -7164,14 +7278,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 163,
-   "Module": "LZD",
-   "Channel": 3,
-   "Cod/Value": 5.0,
+   "Module": "GZI3",
+   "Channel": 1,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
  },    
  {
    "Class": "Control channel",
@@ -7263,9 +7377,9 @@
    "System": "CHAN",
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 166,
-   "Module": "URLZ",
-   "Channel": [2],
-   "Channel ON": [2]
+   "Module": "URG3",
+   "Channel": [0],
+   "Channel ON": [0]
  },     
  {
    "Class": "UR channel",
@@ -7274,9 +7388,9 @@
    "System": "CHAN",
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 167,
-   "Module": "URLZ",
-   "Channel": [3],
-   "Channel ON": [3]
+   "Module": "URG3",
+   "Channel": [1],
+   "Channel ON": [1]
  },      
  {
    "Class": "UR channel",
@@ -7306,14 +7420,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 160,
-   "Module": "LZD",
+   "Module": "GZI2",
    "Channel": 0,
-   "Cod/Value": 5.0,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
  },
  {
    "Class": "Control channel",
@@ -7322,14 +7436,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска тиратрона",
    "BANK": 161,
-   "Module": "LZD",
+   "Module": "GZI2",
    "Channel": 1,
-   "Cod/Value": 5.0,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
  },    
  {
    "Class": "Control channel",
@@ -7421,7 +7535,7 @@
    "System": "CHAN",
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 164,
-   "Module": "URLZ",
+   "Module": "URG2",
    "Channel": [0],
    "Channel ON": [0]
  },     
@@ -7432,7 +7546,7 @@
    "System": "CHAN",
    "Comment": " вкл. блокировки запуска тиратрона",
    "BANK": 165,
-   "Module": "URLZ",
+   "Module": "URG2",
    "Channel": [1],
    "Channel ON": [1]
  },      
@@ -7667,14 +7781,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска IVIS",
    "BANK": 145,
-   "Module": "LZD",
-   "Channel": 6,
-   "Cod/Value": 5.0,
+   "Module": "GZI5",
+   "Channel": 0,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
   },       
   {
    "Class": "Control channel",
@@ -7846,9 +7960,9 @@
    "System": "CHAN",
    "Comment": "вкл. блокировки запуска IVIS",
    "BANK": 146,
-   "Module": "URLZ",
-   "Channel": [6],
-   "Channel ON": [6]
+   "Module": "URG5",
+   "Channel": [0],
+   "Channel ON": [0]
   },    
 
   {
@@ -7858,14 +7972,14 @@
    "System": "CHAN",
    "Comment": "уставка задержки запуска IVIS",
    "BANK": 170,
-   "Module": "LZD",
-   "Channel": 7,
-   "Cod/Value": 5.0,
+   "Module": "GZI5",
+   "Channel": 1,
+   "Cod/Value": 12.8,
    "Units": "ns",
-   "Max": 6500.0,
+   "Max": 5000.0,
    "Monit": true,
    "MonitType": "A",
-   "Deviation": 2.0
+   "Deviation": 1.0
   },     
   {
    "Class": "Control channel",
@@ -7890,9 +8004,9 @@
    "System": "CHAN",
    "Comment": "вкл. блокировки запуска пикапов",
    "BANK": 171,
-   "Module": "URLZ",
-   "Channel": [7],
-   "Channel ON": [7]
+   "Module": "URG5",
+   "Channel": [1],
+   "Channel ON": [1]
   },    
   
   {
