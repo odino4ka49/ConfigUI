@@ -702,46 +702,18 @@
  },
  {
    "Class": "Module",
-   "Name": "0KVC",
-   "Module Type": "КВЧ-8-1",
+   "Name": "8GVI",
+   "Module Type": "ГВИ-8М",
    "System": "CHAN",
    "Comment": null
  },
  {
    "Class": "Module",
-   "Name": "1KVC",
-   "Module Type": "КВЧ-8-1",
+   "Name": "7PKS",
+   "Module Type": "ПКС-8",
    "System": "CHAN",
    "Comment": null
- },
- {
-   "Class": "Module",
-   "Name": "2KVC",
-   "Module Type": "КВЧ-8-1",
-   "System": "CHAN",
-   "Comment": null
- },
- {
-   "Class": "Module",
-   "Name": "3KVC",
-   "Module Type": "КВЧ-8-1",
-   "System": "CHAN",
-   "Comment": null
- },
- {
-   "Class": "Module",
-   "Name": "4KVC",
-   "Module Type": "КВЧ-8-1",
-   "System": "CHAN",
-   "Comment": null
- },
- {
-   "Class": "Module",
-   "Name": "ACPS",
-   "Module Type": "ADC-101S",
-   "System": "CHAN",
-   "Comment": null
- },
+ }, 
  {
    "Class": "Module",
    "Name": "5CC",
@@ -770,7 +742,7 @@
    "System": "CHAN",
    "Comment": "синхронизация IV4E"
  },
-{
+ {
    "Class": "Module",
    "Name": "GZI4",
    "Module Type": "GZI",
@@ -903,21 +875,6 @@
    "System": "CHAN",
    "Comment": null
  },
- {
-   "Class": "Module",
-   "Name": "LZD",
-   "Module Type": "LZ.2",
-   "System": "CHAN",
-   "Comment": "Значения задержек каналов ГЗИ-8"
- },
- {
-   "Class": "Module",
-   "Name": "URLZ",
-   "Module Type": "UR LZ.2",
-   "System": "CHAN",
-   "Comment": "Включение выходных импульсов ГЗИ-8"
- },
-
  {
    "Class": "CAMAC",
    "Name": "I1000",
@@ -1203,28 +1160,12 @@
        "Module": "6PKS"
      },
      {
-       "Position": 10,
-       "Module": "0KVC"
+       "Position": 11,
+       "Module": "8GVI"
      },
      {
-       "Position": 12,
-       "Module": "1KVC"
-     },
-     {
-       "Position": 14,
-       "Module": "2KVC"
-     },
-     {
-       "Position": 16,
-       "Module": "3KVC"
-     },
-     {
-       "Position": 18,
-       "Module": "4KVC"
-     },
-     {
-       "Position": 20,
-       "Module": "ACPS"
+       "Position": 13,
+       "Module": "7PKS"
      },
      {
        "Position": 25,
@@ -1452,25 +1393,6 @@
      {
        "ID": 0,
        "Module": "2KAS"
-     }
-   ]
- },
-
- {
-   "Class": "Serial",
-   "Name": "I100002",
-   "System": "CHAN",
-   "Comment": "Связь с блоком ГЗИ-8",
-   "Dispatcher name": "10DC",
-   "Address": "#02000",
-   "Modules": [
-     {
-       "S6": 1,
-       "Module": "LZD"
-     },
-     {
-       "S6": 2,
-       "Module": "URLZ"
      }
    ]
  },
@@ -2217,6 +2139,62 @@
      }
    ]
  },
+
+{
+   "Class": "Element",
+   "Name": "LP4",
+   "System": "CHAN",
+   "Group": "Magnetic System",
+   "Type": "Quadrupole",
+   "Comment": "квадрупольная линза",
+   "Polarity": "+",
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "U"
+     },
+     {
+       "OK": true,
+       "Control channel": "T"
+     },
+     {
+       "OK": true,
+       "ADC channel": "ULP4"
+     },
+     {
+       "OK": true,
+       "Meas channel": "HLP4"
+     }
+   ]
+ },    
+
+{
+   "Class": "Element",
+   "Name": "LP5",
+   "System": "CHAN",
+   "Group": "Magnetic System",
+   "Type": "Quadrupole",
+   "Comment": "квадрупольная линза",
+   "Polarity": "+",
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "U"
+     },
+     {
+       "OK": true,
+       "Control channel": "T"
+     },
+     {
+       "OK": true,
+       "ADC channel": "ULP5"
+     },
+     {
+       "OK": true,
+       "Meas channel": "HLP5"
+     }
+   ]
+ },    
 
  {
    "Class": "Element",
@@ -5407,6 +5385,142 @@
    "Module": "5UR",
    "Channel": [11],
    "Channel ON": [11]
+ },
+
+{
+   "Class": "Control channel",
+   "Name": "U",
+   "Element": "LP4",
+   "System": "CHAN",
+   "Comment": "уставка напряжения на конденсаторной батарее",
+   "BANK": 212,
+   "Module": "7PKS",
+   "Channel": 0,
+   "Cod/Value": 1.0,
+   "Units": "V",
+   "Max": 65000.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 5.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "T",
+   "Element": "LP4",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска",
+   "BANK": 213,
+   "Module": "8GVI",
+   "Channel": 0,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },
+ {
+   "Class": "ADC channel",
+   "Name": "ULP4",
+   "Element": "LP4",
+   "System": "CHAN",
+   "Comment": "измерение напряжения на конденсаторной батарее",
+   "BANK": 214,
+   "Module": "0KAS",
+   "Channel": 19,
+   "Cod/Value": 1000.0,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "5 ms",
+   "Diapasone": 0,
+   "Interval": 2,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 5.0
+ },
+ {
+   "Class": "Meas channel",
+   "Name": "HLP4",
+   "Element": "LP4",
+   "System": "CHAN",
+   "Comment": "измерение поля в магните",
+   "BANK": 215,
+   "Module": "12BP",
+   "Channel": 0,
+   "Cod/Value": 1.0,
+   "Units": "Gs/cm",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 10.0
+ },
+
+{
+   "Class": "Control channel",
+   "Name": "U",
+   "Element": "LP5",
+   "System": "CHAN",
+   "Comment": "уставка напряжения на конденсаторной батарее",
+   "BANK": 216,
+   "Module": "7PKS",
+   "Channel": 1,
+   "Cod/Value": 1.0,
+   "Units": "V",
+   "Max": 65000.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 5.0
+ },
+ {
+   "Class": "Control channel",
+   "Name": "T",
+   "Element": "LP5",
+   "System": "CHAN",
+   "Comment": "уставка задержки запуска",
+   "BANK": 217,
+   "Module": "8GVI",
+   "Channel": 1,
+   "Cod/Value": 10.0,
+   "Units": "mks",
+   "Max": 6500.0,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 0.2
+ },
+ {
+   "Class": "ADC channel",
+   "Name": "ULP5",
+   "Element": "LP5",
+   "System": "CHAN",
+   "Comment": "измерение напряжения на конденсаторной батарее",
+   "BANK": 218,
+   "Module": "0KAS",
+   "Channel": 20,
+   "Cod/Value": 1000.0,
+   "Units": "V",
+   "Polarity": null,
+   "Int time": "5 ms",
+   "Diapasone": 0,
+   "Interval": 2,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 5.0
+ },
+ {
+   "Class": "Meas channel",
+   "Name": "HLP5",
+   "Element": "LP5",
+   "System": "CHAN",
+   "Comment": "измерение поля в магните",
+   "BANK": 219,
+   "Module": "12BP",
+   "Channel": 1,
+   "Cod/Value": 1.0,
+   "Units": "Gs/cm",
+   "Polarity": null,
+   "Monit": true,
+   "MonitType": "A",
+   "Deviation": 10.0
  },
 
 {
