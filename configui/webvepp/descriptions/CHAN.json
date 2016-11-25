@@ -2140,62 +2140,6 @@
    ]
  },
 
-{
-   "Class": "Element",
-   "Name": "LP4",
-   "System": "CHAN",
-   "Group": "Magnetic System",
-   "Type": "Quadrupole",
-   "Comment": "квадрупольная линза",
-   "Polarity": "+",
-   "Channels": [
-     {
-       "OK": true,
-       "Control channel": "U"
-     },
-     {
-       "OK": true,
-       "Control channel": "T"
-     },
-     {
-       "OK": true,
-       "ADC channel": "ULP4"
-     },
-     {
-       "OK": true,
-       "Meas channel": "HLP4"
-     }
-   ]
- },    
-
-{
-   "Class": "Element",
-   "Name": "LP5",
-   "System": "CHAN",
-   "Group": "Magnetic System",
-   "Type": "Quadrupole",
-   "Comment": "квадрупольная линза",
-   "Polarity": "+",
-   "Channels": [
-     {
-       "OK": true,
-       "Control channel": "U"
-     },
-     {
-       "OK": true,
-       "Control channel": "T"
-     },
-     {
-       "OK": true,
-       "ADC channel": "ULP5"
-     },
-     {
-       "OK": true,
-       "Meas channel": "HLP5"
-     }
-   ]
- },    
-
  {
    "Class": "Element",
    "Name": "N14",
@@ -2673,7 +2617,63 @@
        "DBLUR channel": "W"
      }
    ]
- },    
+ },
+
+{
+   "Class": "Element",
+   "Name": "LP4",
+   "System": "CHAN",
+   "Group": "Magnetic System",
+   "Type": "Quadrupole",
+   "Comment": "квадрупольная линза",
+   "Polarity": "+",
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "U"
+     },
+     {
+       "OK": true,
+       "Control channel": "T"
+     },
+     {
+       "OK": true,
+       "ADC channel": "ULP4"
+     },
+     {
+       "OK": true,
+       "Meas channel": "HLP4"
+     }
+   ]
+ },
+
+{
+   "Class": "Element",
+   "Name": "LP5",
+   "System": "CHAN",
+   "Group": "Magnetic System",
+   "Type": "Quadrupole",
+   "Comment": "квадрупольная линза",
+   "Polarity": "+",
+   "Channels": [
+     {
+       "OK": true,
+       "Control channel": "U"
+     },
+     {
+       "OK": true,
+       "Control channel": "T"
+     },
+     {
+       "OK": true,
+       "ADC channel": "ULP5"
+     },
+     {
+       "OK": true,
+       "Meas channel": "HLP5"
+     }
+   ]
+ },
 
 {
    "Class": "Element",

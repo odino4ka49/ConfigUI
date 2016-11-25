@@ -687,10 +687,10 @@ viewBox="0 0 297 210"
   <text x="219.334" y="70.1103"  class="fil2 fnt5">CH8</text>
   <ellipse class="fil41 str1" cx="264.86" cy="65.2977" rx="1.10712" ry="1.14346"/>
   <text x="264.116" y="79.0415"  class="fil2 fnt5">CH9</text>
-  <g transform="matrix(-7.94536E-014 0.99873 -1 -7.94536E-014 385.769 -103.269)">
+  <g link="N14" class="link" transform="matrix(-7.94536E-014 0.99873 -1 -7.94536E-014 385.769 -103.269)">
    <text x="148.5" y="105"  class="fil2 fnt1">X</text>
   </g>
-  <g transform="matrix(-7.94536E-014 0.99873 -1 -7.94536E-014 385.769 -99.2777)">
+  <g link="N14" class="link" transform="matrix(-7.94536E-014 0.99873 -1 -7.94536E-014 385.769 -99.2777)">
    <text x="148.5" y="105"  class="fil2 fnt1">X</text>
   </g>
   <line class="fil0 str1" x1="249.509" y1="77.4107" x2="277.784" y2= "84.4851" />
