@@ -970,22 +970,26 @@ WEBVEPP.Tree = function(params){
             return "<table><tr><td>Null</td></tr></table>";
         }
         var matrixtype = (!Array.isArray(matrix[0])) ? "vector":"matrix";
-        var table = "<table class='matrix'><tr>";
-        matrix.forEach(function(row){
-            if(matrixtype=="vector"){
-                table += "<td>"+row+"</td>";
+        var table = "<table class='matrix'>";
+        var rows_number = matrix[0].length;
+        var columns_number = matrix.length;
+        if(matrixtype=="vector"){
+            rows_number = matrix.length;
+            columns_number = 0;
+        }
+        for(i=0;i<rows_number;i++){
+            table+="<tr>";
+            if(matrixtype!="vector"){
+                for(j=0;j<columns_number;j++){
+                    table += "<td>"+matrix[j][i]+"</td>";
+                }
             }
             else{
-                table += "<td>"+row[0]+"</td>";
+                table += "<td>"+matrix[i]+"</td>";
             }
-        });
-        if(matrixtype != "vector"){
-            table += "</tr><tr>"
-            matrix.forEach(function(row){
-                table += "<td>"+row[1]+"</td>";
-            });
+            table += "</tr>";
         }
-        table += "</tr></table>";
+        table += "</table>";
         return table;
     };
     function movePerson(person,shift){

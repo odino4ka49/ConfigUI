@@ -27,38 +27,28 @@
       <file leaf-file-name="CHAN.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="2592" column="20" selection-start-line="2592" selection-start-column="20" selection-end-line="2592" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeView.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/TreeView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tree.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tree.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="686" column="96" selection-start-line="686" selection-start-column="96" selection-end-line="686" selection-end-column="96" />
+            <state vertical-scroll-proportion="0.26204818">
+              <caret line="974" column="43" selection-start-line="974" selection-start-column="43" selection-end-line="974" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chan_V3-V4_scheme_V2.svg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/Chan_V3-V4_scheme_V2.svg">
+      <file leaf-file-name="V4.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3754386">
-              <caret line="692" column="29" selection-start-line="692" selection-start-column="29" selection-end-line="692" selection-end-column="29" />
+            <state vertical-scroll-proportion="-9.576923">
+              <caret line="2330" column="2" selection-start-line="2330" selection-start-column="2" selection-end-line="2330" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -67,8 +57,8 @@
       <file leaf-file-name="V4_sample.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_sample.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="25" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="25" />
+            <state vertical-scroll-proportion="-35.0">
+              <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -77,8 +67,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.964285">
-              <caret line="184" column="39" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="39" />
+            <state vertical-scroll-proportion="-12.178572">
+              <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -87,8 +77,8 @@
       <file leaf-file-name="Scheme.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.428572">
-              <caret line="132" column="10" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="174" column="15" selection-start-line="174" selection-start-column="15" selection-end-line="174" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -142,7 +132,6 @@
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/MenuBar.js" />
         <option value="$PROJECT_DIR$/webvepp/templates/webvepp/tools.html" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/tools.css" />
-        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Tree.js" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/css/scheme.css" />
         <option value="$PROJECT_DIR$/webvepp/validation.py" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/CHAN_template.json" />
@@ -153,11 +142,12 @@
         <option value="$PROJECT_DIR$/webvepp/descriptions/BPM_sample.json" />
         <option value="$PROJECT_DIR$/cx-gateway-beginning.py" />
         <option value="$PROJECT_DIR$/webvepp/urls.py" />
-        <option value="$PROJECT_DIR$/webvepp/views.py" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/CHAN.json" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js" />
         <option value="$PROJECT_DIR$/webvepp/descriptions/CHAN_sample.json" />
         <option value="$PROJECT_DIR$/webvepp/static/webvepp/bg/Chan_V3-V4_scheme_V2.svg" />
+        <option value="$PROJECT_DIR$/webvepp/views.py" />
+        <option value="$PROJECT_DIR$/webvepp/static/webvepp/js/Tree.js" />
       </list>
     </option>
   </component>
@@ -167,7 +157,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-3" />
     <option name="width" value="1206" />
-    <option name="height" value="1577" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -192,8 +182,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,38 +276,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webvepp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webvepp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="descriptions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,7 +446,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1206" height="1577" extended-state="6" />
+    <frame x="-3" y="0" width="1206" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -526,6 +490,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="10" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/vepp4_gradient.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49356222">
@@ -551,13 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="227" column="18" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -775,15 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1368" column="35" selection-start-line="1368" selection-start-column="35" selection-end-line="1368" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_sample.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="25" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15485203">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,39 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.949615">
           <caret line="281" column="7" selection-start-line="281" selection-start-column="7" selection-end-line="281" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.428572">
-          <caret line="132" column="10" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.964285">
-          <caret line="184" column="39" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="686" column="96" selection-start-line="686" selection-start-column="96" selection-end-line="686" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/TreeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,22 +789,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3426123">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/Chan_V3-V4_scheme_V2.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="692" column="29" selection-start-line="692" selection-start-column="29" selection-end-line="692" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4_sample.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.0">
+          <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Scheme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="174" column="15" selection-start-line="174" selection-start-column="15" selection-end-line="174" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/TreeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6980057">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webvepp/descriptions/CHAN.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2592" column="20" selection-start-line="2592" selection-start-column="20" selection-end-line="2592" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/bg/Chan_V3-V4_scheme_V2.svg">
+    <entry file="file://$PROJECT_DIR$/webvepp/descriptions/V4.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3754386">
-          <caret line="692" column="29" selection-start-line="692" selection-start-column="29" selection-end-line="692" selection-end-column="29" />
+        <state vertical-scroll-proportion="-9.576923">
+          <caret line="2330" column="2" selection-start-line="2330" selection-start-column="2" selection-end-line="2330" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.178572">
+          <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webvepp/static/webvepp/js/Tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26204818">
+          <caret line="974" column="43" selection-start-line="974" selection-start-column="43" selection-end-line="974" selection-end-column="43" />
           <folding />
         </state>
       </provider>
