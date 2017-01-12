@@ -423,8 +423,9 @@ def getRemoteAttributes(node,level):
                 elif node["Outputs"]==1:
                     obj_attributes.append(["Out1"])
             #wanted to reverse matrix here
-            #elif attr == "Graphs":
-            #    obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))
+            elif attr == "Graphs":
+                m = getValueByPath(node,attr)
+                obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))
             else:
                 obj_attributes.append(reverseMatrix(normalizeMatrix(getValueByPath(node,attr),node["Inputs"],node["Outputs"])))
         remote["attributes"]=obj_attributes
@@ -468,9 +469,10 @@ def normalizeMatrix(matrix,inputs,outputs):
                     if item!=0:
                         item_to_add = item
                         break
-                result.append(item_to_add)
+                result.append([item_to_add])
             matrix = result
-            matrixtype = "matrix" if type(matrix[0]) is list else "vector"
+            if not type(matrix[0]) is list:
+                matrixtype = "vector"
     for i in range(0,inputs):
         if len(matrix)-1>=i:
             if matrixtype=="matrix":
