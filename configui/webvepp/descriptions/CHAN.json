@@ -660,6 +660,13 @@
  },
  {
    "Class": "Module",
+   "Name": "12BP",
+   "Module Type": "БИИП-4",
+   "System": "CHAN",
+   "Comment": null
+ },
+ {
+   "Class": "Module",
    "Name": "1KAS",
    "Module Type": "КАС-128",
    "System": "CHAN",
@@ -1074,6 +1081,10 @@
        "Module": "5BP"
      },
      {
+       "Position": 17,
+       "Module": "12BP"
+     },
+     {
        "Position": 25,
        "Module": "2CC"
      }
@@ -1403,10 +1414,6 @@
    "System": "CHAN",
    "Comment": "диспетчер 10DC (Б0634) одренка CHAN",
    "Channels": [
-     {
-       "ID": 2,
-       "Serial": "I100002"
-     }
    ]
  },
 

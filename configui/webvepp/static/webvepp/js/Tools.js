@@ -124,13 +124,15 @@ WEBVEPP.List = function(tool_bar,settings){
         var thead = table.append('thead');
         var tbody = table.append('tbody');
         var list_attrs = list_settings.root.display_filter.min;
+        var list_titles = [];
         thead.append("tr")
             .each(function(d,i){
                 var row = d3.select(this);
                 if(!list_settings) return;
                 //var attrs = list_settings.root.display_filter.min;
                 if(list_settings.root.display_attributes.sort_type=="numbered"){
-                    row.append("td").text("Index")
+                    list_attrs.unshift("Index");
+                    //row.append("td").text("Index")
                 }
                 for(var j=0;j<list_attrs.length;j++){
                     var key = "";
@@ -141,6 +143,7 @@ WEBVEPP.List = function(tool_bar,settings){
                         key = list_attrs[j].key;
                     }
                     row.append("td").text(key);
+                    list_titles.push(key);
                 }
             })
         var row = tbody.selectAll("tr").data(list);
@@ -153,21 +156,27 @@ WEBVEPP.List = function(tool_bar,settings){
                 var row = d3.select(this);
                 var attrs = d.attributes.min;
                 //row.selectAll("td").remove();
-                for(var j=0;j<attrs.length;j++){
+                for(var j=0;j<list_attrs.length;j++){
+                    var attr_name = list_titles[j];
+                    var attr_field = attrs.filter(function( obj ) { return obj.key == attr_name; })[0];
+                    var attr_value="";
+                    if(attr_field){
+                        attr_value = attr_field.value;
+                    }
                     if(list_attrs[j].type=="image"){
                         row.append("td").append("img")
-                            .attr("src",WEBVEPP.serveradr()+"static/webvepp/bg/"+attrs[j].value)
+                            .attr("src",WEBVEPP.serveradr()+"static/webvepp/bg/"+attr_value)
                             .attr("alt",attrs[j].value)
                             .attr("width",list_attrs[j].width);
                     }
-                    else if(attrs[j].value instanceof Array){
+                    else if(attr_value instanceof Array){
                         var rowvalue = row.append("td");
-                        for(var i in attrs[j].value){
-                            rowvalue.append("div").text(attrs[j].value[i]);
+                        for(var i in attr_value){
+                            rowvalue.append("div").text(attr_value[i]);
                         }
                     }
                     else{
-                        row.append("td").text(attrs[j].value);
+                        row.append("td").text(attr_value);
                     }
                 }
             })
