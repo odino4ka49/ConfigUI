@@ -1,0 +1,113 @@
+[
+  {
+    "class": "Controller",
+    "comment": "шаблон контроллера",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "Address",
+        "type": "integer"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Position",
+        "type": "string"
+      },
+      {
+        "key": "Area",
+        "type": "string"
+      },
+      {
+        "key": "Sensors",
+        "type": "array"
+      }
+    ],
+    "foreign_keys":[ ],
+    "primary_key": [
+      "Name",
+      "System"
+    ],
+    "components": "Sensors",
+    "component_ID": "Position",
+    "component_types": [
+      "Measuring sensor",
+      "Blocking sensor"
+    ],
+    "component_check_values": [
+      "Component_name",
+      "System"
+    ]
+  },
+  {
+    "class": "Measuring sensor",
+    "comment": "Шаблон измерительного датчика",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Full position",
+        "type": "string"
+      }
+    ],
+    "foreign_keys":[],
+    "primary_key": [
+      "Name",
+      "System"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  },
+  {
+    "class": "Blocking sensor",
+    "comment": "Шаблон блокировочного датчика",
+    "fields": [
+      {
+        "key": "Name",
+        "type": "string"
+      },
+      {
+        "key": "System",
+        "type": "string"
+      },
+      {
+        "key": "Comment",
+        "type": "string"
+      },
+      {
+        "key": "Full position",
+        "type": "string"
+      }
+    ],
+    "foreign_keys":[],
+    "primary_key": [
+      "Name",
+      "System"
+    ],
+    "components": null,
+    "component_ID": null,
+    "component_types": null,
+    "component_check_values": null
+  }
+]

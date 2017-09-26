@@ -1,0 +1,24 @@
+[
+  {
+    "Class": "Controller",
+    "Name": "T_3M6",
+    "System": "TC",
+    "Comment": "",
+    "Address": 1,
+    "Position": "над магнитом 3M6",
+    "Area": "",
+    "Sensors": [
+      {
+        "Position": 10,
+        "Blocking sensor": "3M7_SW_top_ext"
+      }
+    ]
+  },
+  {
+    "Class": "Blocking sensor",
+    "Name": "3M7_SW_top_ext",
+    "System": "TC",
+    "Comment": "",
+    "Full position": "верхняя внешняя шина магнита 3M7"
+  }
+]
