@@ -1,24 +1,113 @@
 [
-  {
-    "Class": "Controller",
-    "Name": "T_3M6",
-    "System": "TC",
-    "Comment": "",
-    "Address": 1,
-    "Position": "над магнитом 3M6",
-    "Area": "",
-    "Sensors": [
-      {
-        "Position": 10,
-        "Blocking sensor": "3M7_SW_top_ext"
-      }
-    ]
-  },
-  {
-    "Class": "Blocking sensor",
-    "Name": "3M7_SW_top_ext",
-    "System": "TC",
-    "Comment": "",
-    "Full position": "верхняя внешняя шина магнита 3M7"
-  }
+    {
+        "Class": "Controller",
+        "Name": "T_3M6",
+        "System": "TC",
+        "Comment": "",
+        "Address": 1,
+        "Position": "над магнитом 3M6",
+        "Area": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "Шлейф 1"
+            }
+        ]
+    },
+    {
+        "Class": "Loop",
+        "Name": "Шлейф 1",
+        "System": "TC",
+        "Comment": "",
+        "Sensors": [
+            {
+                "Position": 0,
+                "Blocking sensor": "3M7_SW_top_ext"
+            },
+            {
+                "Position": 1,
+                "Blocking sensor": "3M7_SW_top_int"
+            },
+            {
+                "Position": 2,
+                "Blocking sensor": "3M7_SW_bot_ext"
+            },
+            {
+                "Position": 3,
+                "Blocking sensor": "3M7_SW_bot_int"
+            },
+            {
+                "Position": 4,
+                "Blocking sensor": "3M7_SW_top"
+            },
+            {
+                "Position": 5,
+                "Blocking sensor": "3M7_SW_bot"
+            },
+            {
+                "Position": 6,
+                "Blocking sensor": "3M7F_SW_com"
+            },
+            {
+                "Position": 7,
+                "Blocking sensor": "3M7D_SW_com"
+            }
+        ]
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7_SW_top_ext",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "верхняя внешняя шина магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7_SW_top_int",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "верхняя внутренняя шина магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7_SW_bot_ext",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "нижняя внешняя шина магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7_SW_bot_int",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "нижняя внутренняя шина магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7_SW_top",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "центр верхней плоскости магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7_SW_bot",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "центр нижней плоскости магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7F_SW_com",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "охлаждаемый токоподвод катушки F-коррекции магнита 3M7"
+    },
+    {
+        "Class": "Blocking sensor",
+        "Name": "3M7D_SW_com",
+        "System": "TC",
+        "Comment": "",
+        "Full position": "охлаждаемый токоподвод катушки D-коррекции магнита 3M7"
+    }
 ]

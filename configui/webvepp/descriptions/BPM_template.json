@@ -1,313 +1,332 @@
 [
-  {
-    "class": "BPM",
-    "comment": "шаблон пикапа",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "BPM Type",
-        "type": "string"
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "Azimuth",
-        "type": "float",
-        "units": "cm"
-      },
-      {
-        "key": "GX",
-        "type": "float"
-
-      },
-      {
-        "key": "GZ",
-        "type": "float"
-
-      },
-      {
-        "key": "GeodX",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "GeodZ",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "X0",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "Z0",
-        "type": "float",
-        "units": "mm"
-      }
-    ],
-    "foreign_keys":["BPM Type" ],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": null,
-    "component_ID": null,
-    "component_types": null,
-    "component_check_values": null
-  },
-  {
-    "class": "BPM Type",
-    "comment": "шаблон типа пикапа",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "Formula",
-        "type": "integer",
-        "limits": [1,2]
-      },
-      {
-        "key": "Form",
-        "type": "string",
-        "values": ["R","E"]
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "ApertureX",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "ApertureZ",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "PlateType",
-        "type": "string",
-        "values": ["R","C"]
-      },
-      {
-        "key": "PlateSize",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "Image",
-        "type": "string"
-      }
-    ],
-    "foreign_keys":[],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": null,
-    "component_ID": null,
-    "component_types": null,
-    "component_check_values": null
-  },
-  {
-    "class": "Module",
-    "comment": "шаблон пикап-станции",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "Module Type",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "BPM",
-        "type": "string"
-      },
-      {
-        "key": "IP",
-        "type": "string"
-      },
-      {
-        "key": "Port",
-        "type": "integer"
-      },
-      {
-        "key": "MAC",
-        "type": "string"
-      },
-      {
-        "key": "GI",
-        "type": "float",
-        "units": "mm"
-      },
-      {
-        "key": "g0_button0",
-        "type": "float"
-      },
-      {
-        "key": "g0_button1",
-        "type": "float"
-      },
-      {
-        "key": "g0_button2",
-        "type": "float"
-      },
-      {
-        "key": "g0_button3",
-        "type": "float"
-      },
-      {
-        "key": "g1_button0",
-        "type": "float"
-      },
-      {
-        "key": "g1_button1",
-        "type": "float"
-      },
-      {
-        "key": "g1_button2",
-        "type": "float"
-      },
-      {
-        "key": "g1_button3",
-        "type": "float"
-      },
-      {
-        "key": "g0_gI",
-        "type": "float"
-      },
-      {
-        "key": "g1_gI",
-        "type": "float"
-      },
-      {
-        "key": "Date",
-        "type": "string"
-      }
-    ],
-    "foreign_keys":[ "Module Type", "BPM" ],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": null,
-    "component_ID": null,
-    "component_types": null,
-    "component_check_values": null
-  },
-  {
-    "class": "Module Type",
-    "comment": "шаблон для пикап-станции",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "System_ID",
-        "type": "integer"
-      },
-      {
-        "key": "Dispatcher",
-        "type": "boolean"
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "Channels number",
-        "type": "integer"
-      },
-      {
-        "key": "Bandwidth",
-        "type": "float",
-        "units": "MHz"
-      }
-    ],
-    "foreign_keys":[],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": null,
-    "component_ID": null,
-    "component_types": null,
-    "component_check_values": null
-  },
-
-  {
-    "class": "Node",
-    "comment": "шаблон для узла",
-    "fields": [
-      {
-        "key": "Name",
-        "type": "string"
-      },
-      {
-        "key": "System",
-        "type": "string"
-      },
-      {
-        "key": "Comment",
-        "type": "string"
-      },
-      {
-        "key": "Host",
-        "type": "string"
-      },
-      {
-        "key": "Area",
-        "type": "string"
-      },
-      {
-        "key": "Modules",
-        "type": "array"
-      },
-      {
-        "key": "Module Type",
-        "type": "string"
-      }
-    ],
-    "foreign_keys":["Module Type"],
-    "primary_key": [
-      "Name",
-      "System"
-    ],
-    "components": "Modules",
-    "component_ID": "Position",
-    "component_types": ["Module","Node"],
-    "component_check_values": ["Component_name", "System"]
-  }
+    {
+        "class": "BPM",
+        "comment": "шаблон пикапа",
+        "fields": [
+            {
+                "key": "Name",
+                "type": "string"
+            },
+            {
+                "key": "System",
+                "type": "string"
+            },
+            {
+                "key": "BPM Type",
+                "type": "string"
+            },
+            {
+                "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "Azimuth",
+                "type": "float",
+                "units": "cm"
+            },
+            {
+                "key": "GX",
+                "type": "float"
+            },
+            {
+                "key": "GZ",
+                "type": "float"
+            },
+            {
+                "key": "GeodX",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "GeodZ",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "X0",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "Z0",
+                "type": "float",
+                "units": "mm"
+            }
+        ],
+        "foreign_keys": [
+            "BPM Type"
+        ],
+        "primary_key": [
+            "Name",
+            "System"
+        ],
+        "components": null,
+        "component_ID": null,
+        "component_types": null,
+        "component_check_values": null
+    },
+    {
+        "class": "BPM Type",
+        "comment": "шаблон типа пикапа",
+        "fields": [
+            {
+                "key": "Name",
+                "type": "string"
+            },
+            {
+                "key": "System",
+                "type": "string"
+            },
+            {
+                "key": "Formula",
+                "type": "integer",
+                "limits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "key": "Form",
+                "type": "string",
+                "values": [
+                    "R",
+                    "E"
+                ]
+            },
+            {
+                "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "ApertureX",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "ApertureZ",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "PlateType",
+                "type": "string",
+                "values": [
+                    "R",
+                    "C"
+                ]
+            },
+            {
+                "key": "PlateSize",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "Image",
+                "type": "string"
+            }
+        ],
+        "foreign_keys": [],
+        "primary_key": [
+            "Name",
+            "System"
+        ],
+        "components": null,
+        "component_ID": null,
+        "component_types": null,
+        "component_check_values": null
+    },
+    {
+        "class": "Module",
+        "comment": "шаблон пикап-станции",
+        "fields": [
+            {
+                "key": "Name",
+                "type": "string"
+            },
+            {
+                "key": "Module Type",
+                "type": "string"
+            },
+            {
+                "key": "System",
+                "type": "string"
+            },
+            {
+                "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "BPM",
+                "type": "string"
+            },
+            {
+                "key": "IP",
+                "type": "string"
+            },
+            {
+                "key": "Port",
+                "type": "integer"
+            },
+            {
+                "key": "MAC",
+                "type": "string"
+            },
+            {
+                "key": "GI",
+                "type": "float",
+                "units": "mm"
+            },
+            {
+                "key": "g0_button0",
+                "type": "float"
+            },
+            {
+                "key": "g0_button1",
+                "type": "float"
+            },
+            {
+                "key": "g0_button2",
+                "type": "float"
+            },
+            {
+                "key": "g0_button3",
+                "type": "float"
+            },
+            {
+                "key": "g1_button0",
+                "type": "float"
+            },
+            {
+                "key": "g1_button1",
+                "type": "float"
+            },
+            {
+                "key": "g1_button2",
+                "type": "float"
+            },
+            {
+                "key": "g1_button3",
+                "type": "float"
+            },
+            {
+                "key": "g0_gI",
+                "type": "float"
+            },
+            {
+                "key": "g1_gI",
+                "type": "float"
+            },
+            {
+                "key": "Date",
+                "type": "string"
+            }
+        ],
+        "foreign_keys": [
+            "Module Type",
+            "BPM"
+        ],
+        "primary_key": [
+            "Name",
+            "System"
+        ],
+        "components": null,
+        "component_ID": null,
+        "component_types": null,
+        "component_check_values": null
+    },
+    {
+        "class": "Module Type",
+        "comment": "шаблон для пикап-станции",
+        "fields": [
+            {
+                "key": "Name",
+                "type": "string"
+            },
+            {
+                "key": "System",
+                "type": "string"
+            },
+            {
+                "key": "System_ID",
+                "type": "integer"
+            },
+            {
+                "key": "Dispatcher",
+                "type": "boolean"
+            },
+            {
+                "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "Channels number",
+                "type": "integer"
+            },
+            {
+                "key": "Bandwidth",
+                "type": "float",
+                "units": "MHz"
+            }
+        ],
+        "foreign_keys": [],
+        "primary_key": [
+            "Name",
+            "System"
+        ],
+        "components": null,
+        "component_ID": null,
+        "component_types": null,
+        "component_check_values": null
+    },
+    {
+        "class": "Node",
+        "comment": "шаблон для узла",
+        "fields": [
+            {
+                "key": "Name",
+                "type": "string"
+            },
+            {
+                "key": "System",
+                "type": "string"
+            },
+            {
+                "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "Host",
+                "type": "string"
+            },
+            {
+                "key": "Area",
+                "type": "string"
+            },
+            {
+                "key": "Modules",
+                "type": "array"
+            },
+            {
+                "key": "Module Type",
+                "type": "string"
+            }
+        ],
+        "foreign_keys": [
+            "Module Type"
+        ],
+        "primary_key": [
+            "Name",
+            "System"
+        ],
+        "components": "Modules",
+        "component_ID": "Position",
+        "component_types": [
+            "Module",
+            "Node"
+        ],
+        "component_check_values": [
+            "Component_name",
+            "System"
+        ]
+    }
 ]

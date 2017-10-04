@@ -1,212 +1,262 @@
 [
-  {
-    "name": "Menu",
-    "buttons": [
-      {
-        "title": "Аппаратура",
-        "sample": "TC_controllers",
-        "link_name": "camacs"
-      },
-      {
-        "title": "Элементы",
-        "sample": "TC_sensors",
-        "link_name": "elements"
-      },
-      {
-        "title": "Схема",
-        "sample": "Scheme",
-        "link_name": "scheme"
-      },
-      {
-        "title": "Инструменты",
-        "sample": "Tools",
-        "link_name": "tools"
-      }
-    ]
-  },
-  {
-    "name": "TC_controllers",
-    "root": {
-      "type": "new",
-      "level": 0,
-      "fields": {
-        "System": "TC",
-        "Name": "TC_controllers"
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "System"
-        ],
-        "max": []
-      },
-      "display_attributes": {
-        "width": 170,
-        "height": 40,
-        "field_name": false
-      }
+    {
+        "name": "Menu",
+        "buttons": [
+            {
+                "title": "Аппаратура",
+                "sample": "TC_controllers",
+                "link_name": "camacs"
+            },
+            {
+                "title": "Элементы",
+                "sample": "TC_sensors",
+                "link_name": "elements"
+            },
+            {
+                "title": "Схема",
+                "sample": "Scheme",
+                "link_name": "scheme"
+            },
+            {
+                "title": "Инструменты",
+                "sample": "Tools",
+                "link_name": "tools"
+            }
+        ]
     },
-    "level1": {
-      "type": "filter",
-      "level": 1,
-      "filter": {
-        "Class": [
-          "Controller"
-        ]
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "Name",
-          "Position",
-          "Address"
-        ],
-        "max": [
-          "Class",
-          "Name",
-          "System",
-          "Position",
-          "Comment",
-          "Address",
-          "Area"
-        ]
-      },
-      "display_attributes": {
-        "width": 200,
-        "height": 130,
-        "field_name": true
-      }
+    {
+        "name": "TC_controllers",
+        "root": {
+            "type": "new",
+            "level": 0,
+            "fields": {
+                "System": "TC",
+                "Name": "TC_controllers"
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "System"
+                ],
+                "max": []
+            },
+            "display_attributes": {
+                "width": 170,
+                "height": 40,
+                "field_name": false
+            }
+        },
+        "level1": {
+            "type": "filter",
+            "level": 1,
+            "filter": {
+                "Class": [
+                    "Controller"
+                ]
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "Position",
+                    "Address"
+                ],
+                "max": [
+                    "Class",
+                    "Name",
+                    "System",
+                    "Position",
+                    "Comment",
+                    "Address",
+                    "Area"
+                ]
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 130,
+                "field_name": true
+            }
+        },
+        "level2": {
+            "type": "filter",
+            "level": 2,
+            "filter": {
+                "Class": [
+                    "Loop"
+                ]
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "Name"
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 80,
+                "field_name": true
+            }
+        },
+        "level3": {
+            "type": "filter",
+            "level": 3,
+            "filter": {
+                "Class": [
+                    "Measuring sensor",
+                    "Blocking sensor"
+                ]
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "Name"
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Full position",
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 80,
+                "field_name": true
+            }
+        }
     },
-    "level2": {
-      "type": "filter",
-      "level": 2,
-      "filter": {
-        "Class": [
-          "Measuring sensor",
-          "Blocking sensor"
+    {
+        "name": "TC_sensors",
+        "root": {
+            "type": "new",
+            "level": 0,
+            "fields": {
+                "System": "TC",
+                "Name": "TC_sensors"
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "System",
+                    "Name"
+                ],
+                "max": []
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 70,
+                "field_name": false
+            }
+        },
+        "level1": {
+            "type": "filter",
+            "level": 1,
+            "filter": {
+                "Class": [
+                    "Measuring sensor",
+                    "Blocking sensor"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "Position"
+                ],
+                "max": [
+                    "Name",
+                    "Position",
+                    "System",
+                    "Full position",
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 150,
+                "height": 30,
+                "positioning": "matrix",
+                "matrix_type": "simple",
+                "matrix_size": 64,
+                "hiding": "true",
+                "field_name": false
+            }
+        },
+        "level2": {
+            "type": "filter",
+            "level": 2,
+            "filter": {
+                "Class": [
+                    "Loop"
+                ],
+                "Element": "&Name"
+            },
+            "display_filter": {
+                "min": [
+                    "Name"
+                ],
+                "max": [
+                    "Class",
+                    "Name",
+                    "System"
+                ]
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 80,
+                "autorevealing": true,
+                "field_name": true
+            }
+        },
+        "level3": {
+            "type": "filter",
+            "level": 3,
+            "filter": {
+                "Class": [
+                    "Controller"
+                ],
+                "Element": "&Name"
+            },
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "Position",
+                    "Address"
+                ],
+                "max": [
+                    "Class",
+                    "Name",
+                    "System",
+                    "Position",
+                    "Comment",
+                    "Address",
+                    "Area"
+                ]
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 80,
+                "autorevealing": true,
+                "field_name": true
+            }
+        }
+    },
+    {
+        "name": "Scheme",
+        "type": "single",
+        "schemes": [
+            {
+                "name": "Main",
+                "filename": "vepp4-termo_2008-eng"
+            }
         ]
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "Name"
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Full position",
-          "Comment"
+    },
+    {
+        "name": "Tools",
+        "buttons": [
         ]
-      },
-      "display_attributes": {
-        "width": 200,
-        "height": 80,
-        "field_name": true
-      }
     }
-  },
-  {
-    "name": "TC_sensors",
-    "root": {
-      "type": "new",
-      "level": 0,
-      "fields": {
-        "System": "TC",
-        "Name": "TC_sensors"
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "System",
-          "Name"
-        ],
-        "max": []
-      },
-      "display_attributes": {
-        "width": 200,
-        "height": 70,
-        "field_name": false
-      }
-    },
-    "level1": {
-      "type": "filter",
-      "level": 1,
-      "filter": {
-        "Class": [
-          "Measuring sensor",
-          "Blocking sensor"
-        ]
-      },
-      "display_filter": {
-        "min": [
-          "Name",
-          "Position"
-        ],
-        "max": [
-          "Name",
-          "Position",
-          "System",
-          "Full position",
-          "Comment"
-        ]
-      },
-      "display_attributes": {
-        "width": 150,
-        "height": 30,
-        "positioning": "matrix",
-        "matrix_type": "simple",
-        "matrix_size": 64,
-        "hiding": "true",
-        "field_name": false
-      }
-    },
-    "level2": {
-      "type": "filter",
-      "level": 2,
-      "filter": {
-        "Class": [
-          "Controller"
-        ],
-        "Element": "&Name"
-      },
-      "display_filter": {
-        "min": [
-          "Name",
-          "Position",
-          "Address"
-        ],
-        "max": [
-          "Class",
-          "Name",
-          "System",
-          "Position",
-          "Comment",
-          "Address",
-          "Area"
-        ]
-      },
-      "display_attributes": {
-        "width": 200,
-        "height": 80,
-        "autorevealing": true,
-        "field_name": true
-      }
-    }
-  },
-  {
-    "name": "Scheme",
-    "type": "single",
-    "schemes": [
-      {
-        "name": "Main",
-        "filename": "vepp4-termo_2008-eng"
-      }
-    ]
-  },
-  {
-    "name": "Tools",
-    "buttons": [
-
-    ]
-  }
 ]

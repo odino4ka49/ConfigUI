@@ -1,12 +1,12 @@
 [
     {
-       "Class": "Module Type",
-       "Name": "Pult PC",
-       "System": "V4",
-       "System_ID": 200,
-       "Dispatcher": true,
-       "Comment": "Пультовой компьютер",
-       "Channels number": null
+        "Class": "Module Type",
+        "Name": "Pult PC",
+        "System": "V4",
+        "System_ID": 200,
+        "Dispatcher": true,
+        "Comment": "Пультовой компьютер",
+        "Channels number": null
     },
     {
         "Class": "Module Type",
@@ -57,14 +57,12 @@
         "Channels number": 4,
         "Bandwidth": 35.0
     },
-
-
     {
-       "Class": "Module",
-       "Name": "pult6",
-       "Module Type": "Pult PC",
-       "System": "V4",
-       "Comment": "Пульт 6"
+        "Class": "Module",
+        "Name": "pult6",
+        "Module Type": "Pult PC",
+        "System": "V4",
+        "Comment": "Пульт 6"
     },
     {
         "Class": "Module",
@@ -101,260 +99,257 @@
         "System": "V4",
         "Comment": " "
     },
-
     {
-       "Class": "Node",
-       "Name": "KEP",
-       "System": "V4",
-       "Module Type": "Switch16",
-       "Comment": "коммутатор в к.E, 13 зд.",
-       "Host": "Pult-6",
-       "Area": "к.E, 13 зд.",
-       "Modules": [
-         {
-           "Position": 1,
-           "Module": "30BPMC"
-         },
-         {
-           "Position": 2,
-           "Module": "22BPMC"
-         },
-         {
-           "Position": 3,
-           "Module": "24BPMC"
-         },
-         {
-           "Position": 4,
-           "Module": "58BPMC"
-         },
-         {
-           "Position": 5,
-           "Module": "54BPMC"
-         },
-         {
-           "Position": 7,
-           "Module": "68BPMC"
-         },
-         {
-           "Position": 9,
-           "Module": "39BPMC"
-         },
-         {
-           "Position": 10,
-           "Node": "NEP"
-         },
-         {
-           "Position": 11,
-           "Node": "SIP"
-         },
-         {
-           "Position": 12,
-           "Module": "23BPMC"
-         },
-         {
-           "Position": 16,
-           "Module": "pult6"
-         }
-       ]
-     },
-    {
-       "Class": "Node",
-       "Name": "NEP",
-       "System": "V4",
-       "Module Type": "Switch16",
-       "Comment": "в N-полукольце от промежутка E, у ЛЩ 703",
-       "Host": "КЕР",
-       "Area": "N-полукольцо",
-       "Modules": [
-         {
-           "Position": 1,
-           "Module": "26BPMC"
-         },
-         {
-           "Position": 2,
-           "Module": "31BPMC"
-         },
-         {
-           "Position": 3,
-           "Module": "56BPMC"
-         },
-         {
-           "Position": 4,
-           "Module": "28BPMC"
-         },
-         {
-           "Position": 6,
-           "Module": "69BPMC"
-         },
-         {
-           "Position": 11,
-           "Module": "40BPMC"
-         },
-         {
-           "Position": 12,
-           "Module": "65BPMC"
-         },
-         {
-           "Position": 14,
-           "Module": "67BPMC"
-         },
-         {
-           "Position": 15,
-           "Node": "NRP"
-         },
-         {
-           "Position": 16,
-           "Node": "KEP"
-         }
-       ]
-     },
-
-    {
-       "Class": "Node",
-       "Name": "SIP",
-       "System": "V4",
-       "Module Type": "Switch16",
-       "Comment": "в S-полукольце у вставки, у ЛЩ 719",
-       "Host": "КЕР",
-       "Area": "S-полукольцо",
-       "Modules": [
-         {
-           "Position": 2,
-           "Module": "64BPMC"
-         },
-         {
-           "Position": 4,
-           "Module": "60BPMC"
-         },
-         {
-           "Position": 7,
-           "Module": "62BPMC"
-         },
-         {
-           "Position": 9,
-           "Module": "51BPMC"
-         },
-         {
-           "Position": 10,
-           "Module": "41BPMC"
-         },
-         {
-           "Position": 11,
-           "Module": "33BPMC"
-         },
-         {
-           "Position": 12,
-           "Module": "34BPMC"
-         },
-         {
-           "Position": 13,
-           "Node": "STP"
-         },
-         {
-           "Position": 16,
-           "Node": "KEP"
-         }
-       ]
+        "Class": "Node",
+        "Name": "KEP",
+        "System": "V4",
+        "Module Type": "Switch16",
+        "Comment": "коммутатор в к.E, 13 зд.",
+        "Host": "Pult-6",
+        "Area": "к.E, 13 зд.",
+        "Modules": [
+            {
+                "Position": 1,
+                "Module": "30BPMC"
+            },
+            {
+                "Position": 2,
+                "Module": "22BPMC"
+            },
+            {
+                "Position": 3,
+                "Module": "24BPMC"
+            },
+            {
+                "Position": 4,
+                "Module": "58BPMC"
+            },
+            {
+                "Position": 5,
+                "Module": "54BPMC"
+            },
+            {
+                "Position": 7,
+                "Module": "68BPMC"
+            },
+            {
+                "Position": 9,
+                "Module": "39BPMC"
+            },
+            {
+                "Position": 10,
+                "Node": "NEP"
+            },
+            {
+                "Position": 11,
+                "Node": "SIP"
+            },
+            {
+                "Position": 12,
+                "Module": "23BPMC"
+            },
+            {
+                "Position": 16,
+                "Module": "pult6"
+            }
+        ]
     },
     {
-       "Class": "Node",
-       "Name": "NRP",
-       "System": "V4",
-       "Module Type": "Switch16",
-       "Comment": "в N-полукольце от промежутка T, у ЛЩ 709",
-       "Host": "NЕР",
-       "Area": "N-полукольцо",
-       "Modules": [
-         {
-           "Position": 1,
-           "Module": "55BPMC"
-         },
-         {
-           "Position": 2,
-           "Module": "59BPMC"
-         },
-         {
-           "Position": 3,
-           "Module": "70BPMC"
-         },
-         {
-           "Position": 4,
-           "Module": "61BPMC"
-         },
-         {
-           "Position": 7,
-           "Module": "63BPMC"
-         },
-         {
-           "Position": 9,
-           "Module": "52BPMC"
-         },
-         {
-           "Position": 10,
-           "Module": "37BPMC"
-         },
-         {
-           "Position": 11,
-           "Module": "35BPMC"
-         },
-         {
-           "Position": 16,
-           "Node": "NEP"
-         }
-       ]
+        "Class": "Node",
+        "Name": "NEP",
+        "System": "V4",
+        "Module Type": "Switch16",
+        "Comment": "в N-полукольце от промежутка E, у ЛЩ 703",
+        "Host": "КЕР",
+        "Area": "N-полукольцо",
+        "Modules": [
+            {
+                "Position": 1,
+                "Module": "26BPMC"
+            },
+            {
+                "Position": 2,
+                "Module": "31BPMC"
+            },
+            {
+                "Position": 3,
+                "Module": "56BPMC"
+            },
+            {
+                "Position": 4,
+                "Module": "28BPMC"
+            },
+            {
+                "Position": 6,
+                "Module": "69BPMC"
+            },
+            {
+                "Position": 11,
+                "Module": "40BPMC"
+            },
+            {
+                "Position": 12,
+                "Module": "65BPMC"
+            },
+            {
+                "Position": 14,
+                "Module": "67BPMC"
+            },
+            {
+                "Position": 15,
+                "Node": "NRP"
+            },
+            {
+                "Position": 16,
+                "Node": "KEP"
+            }
+        ]
     },
     {
-       "Class": "Node",
-       "Name": "STP",
-       "System": "V4",
-       "Module Type": "Switch16",
-       "Comment": "в середине T-промежутка у 4-го резонатора",
-       "Host": "SIP",
-       "Area": "T-промежуток",
-       "Modules": [
-         {
-           "Position": 1,
-           "Module": "38BPMC"
-         },
-         {
-           "Position": 2,
-           "Module": "32BPMC"
-         },
-         {
-           "Position": 3,
-           "Module": "36BPMC"
-         },
-         {
-           "Position": 4,
-           "Module": "25BPMC"
-         },
-         {
-           "Position": 5,
-           "Module": "27BPMC"
-         },
-         {
-           "Position": 6,
-           "Module": "50BPMC"
-         },
-         {
-           "Position": 7,
-           "Module": "53BPMC"
-         },
-         {
-           "Position": 8,
-           "Module": "57BPMC"
-         },
-         {
-           "Position": 9,
-           "Module": "66BPMC"
-         },
-         {
-           "Position": 16,
-           "Node": "SIP"
-         }
-       ]
+        "Class": "Node",
+        "Name": "SIP",
+        "System": "V4",
+        "Module Type": "Switch16",
+        "Comment": "в S-полукольце у вставки, у ЛЩ 719",
+        "Host": "КЕР",
+        "Area": "S-полукольцо",
+        "Modules": [
+            {
+                "Position": 2,
+                "Module": "64BPMC"
+            },
+            {
+                "Position": 4,
+                "Module": "60BPMC"
+            },
+            {
+                "Position": 7,
+                "Module": "62BPMC"
+            },
+            {
+                "Position": 9,
+                "Module": "51BPMC"
+            },
+            {
+                "Position": 10,
+                "Module": "41BPMC"
+            },
+            {
+                "Position": 11,
+                "Module": "33BPMC"
+            },
+            {
+                "Position": 12,
+                "Module": "34BPMC"
+            },
+            {
+                "Position": 13,
+                "Node": "STP"
+            },
+            {
+                "Position": 16,
+                "Node": "KEP"
+            }
+        ]
     },
-
+    {
+        "Class": "Node",
+        "Name": "NRP",
+        "System": "V4",
+        "Module Type": "Switch16",
+        "Comment": "в N-полукольце от промежутка T, у ЛЩ 709",
+        "Host": "NЕР",
+        "Area": "N-полукольцо",
+        "Modules": [
+            {
+                "Position": 1,
+                "Module": "55BPMC"
+            },
+            {
+                "Position": 2,
+                "Module": "59BPMC"
+            },
+            {
+                "Position": 3,
+                "Module": "70BPMC"
+            },
+            {
+                "Position": 4,
+                "Module": "61BPMC"
+            },
+            {
+                "Position": 7,
+                "Module": "63BPMC"
+            },
+            {
+                "Position": 9,
+                "Module": "52BPMC"
+            },
+            {
+                "Position": 10,
+                "Module": "37BPMC"
+            },
+            {
+                "Position": 11,
+                "Module": "35BPMC"
+            },
+            {
+                "Position": 16,
+                "Node": "NEP"
+            }
+        ]
+    },
+    {
+        "Class": "Node",
+        "Name": "STP",
+        "System": "V4",
+        "Module Type": "Switch16",
+        "Comment": "в середине T-промежутка у 4-го резонатора",
+        "Host": "SIP",
+        "Area": "T-промежуток",
+        "Modules": [
+            {
+                "Position": 1,
+                "Module": "38BPMC"
+            },
+            {
+                "Position": 2,
+                "Module": "32BPMC"
+            },
+            {
+                "Position": 3,
+                "Module": "36BPMC"
+            },
+            {
+                "Position": 4,
+                "Module": "25BPMC"
+            },
+            {
+                "Position": 5,
+                "Module": "27BPMC"
+            },
+            {
+                "Position": 6,
+                "Module": "50BPMC"
+            },
+            {
+                "Position": 7,
+                "Module": "53BPMC"
+            },
+            {
+                "Position": 8,
+                "Module": "57BPMC"
+            },
+            {
+                "Position": 9,
+                "Module": "66BPMC"
+            },
+            {
+                "Position": 16,
+                "Node": "SIP"
+            }
+        ]
+    },
     {
         "Class": "Module",
         "Name": "22BPMC",
@@ -1275,8 +1270,6 @@
         "g1_gI": 0.297318,
         "Date": "01.01.16"
     },
-
-
     {
         "Class": "BPM Type",
         "Name": "BPM1",
@@ -1368,7 +1361,6 @@
         "PlateSize": 34.0,
         "Image": "V4_Pick-up_Type_7.jpg"
     },
-
     {
         "Class": "BPM",
         "Name": "STP0",

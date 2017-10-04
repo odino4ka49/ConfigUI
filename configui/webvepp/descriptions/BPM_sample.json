@@ -1,594 +1,594 @@
 [
-  {
-    "name": "Menu",
-    "buttons": [
-      {
-        "title": "Коммутации",
-        "sample": "BPM_nodes",
-        "link_name": "camacs"
-      },
-      {
-        "title": "Пикапы",
-        "sample": "BPM_bpms",
-        "link_name": "elements"
-      },
-      {
-        "title": "Схема",
-        "sample": "Scheme",
-        "link_name": "scheme"
-      },
-      {
-        "title": "Инструменты",
-        "sample": "Tools",
-        "link_name": "tools"
-      }
-    ]
-  },
-  {
-    "name": "BPM_nodes",
-    "root": {
-      "type": "new",
-      "level": 0,
-      "fields": {
-        "System": "V4",
-        "Name": "BPM_nodes"
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "System"
-        ],
-        "max": []
-      },
-      "display_attributes": {
-        "width": 0,
-        "height": 0,
-        "field_name": false
-      }
+    {
+        "name": "Menu",
+        "buttons": [
+            {
+                "title": "Коммутации",
+                "sample": "BPM_nodes",
+                "link_name": "camacs"
+            },
+            {
+                "title": "Пикапы",
+                "sample": "BPM_bpms",
+                "link_name": "elements"
+            },
+            {
+                "title": "Схема",
+                "sample": "Scheme",
+                "link_name": "scheme"
+            },
+            {
+                "title": "Инструменты",
+                "sample": "Tools",
+                "link_name": "tools"
+            }
+        ]
     },
-    "level1": {
-      "type": "filter",
-      "level": 1,
-      "filter": {
-        "Class": [
-          "Module"
-        ],
-        "Name": [
-          "pult6"
-        ]
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "Name",
-          "System",
-          "Comment"
-        ],
-        "max": [
-          "Class",
-          "Name",
-          "System",
-          {
-            "key": "System_ID",
-            "value": "&Module Type->System_ID"
-          },
-          {
-            "key": "Dispatcher",
-            "value": "&Module Type->Dispatcher"
-          },
-          {
-            "key": "Cmment",
-            "value": "&Module Type->Comment"
-          },
-          "Comment"
-        ]
-      },
-      "display_attributes": {
-        "width": 220,
-        "height": 65,
-        "field_name": true
-      }
+    {
+        "name": "BPM_nodes",
+        "root": {
+            "type": "new",
+            "level": 0,
+            "fields": {
+                "System": "V4",
+                "Name": "BPM_nodes"
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "System"
+                ],
+                "max": []
+            },
+            "display_attributes": {
+                "width": 0,
+                "height": 0,
+                "field_name": false
+            }
+        },
+        "level1": {
+            "type": "filter",
+            "level": 1,
+            "filter": {
+                "Class": [
+                    "Module"
+                ],
+                "Name": [
+                    "pult6"
+                ]
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "System",
+                    "Comment"
+                ],
+                "max": [
+                    "Class",
+                    "Name",
+                    "System",
+                    {
+                        "key": "System_ID",
+                        "value": "&Module Type->System_ID"
+                    },
+                    {
+                        "key": "Dispatcher",
+                        "value": "&Module Type->Dispatcher"
+                    },
+                    {
+                        "key": "Cmment",
+                        "value": "&Module Type->Comment"
+                    },
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 220,
+                "height": 65,
+                "field_name": true
+            }
+        },
+        "level2": {
+            "type": "filter",
+            "level": 2,
+            "filter": {
+                "Class": [
+                    "Module",
+                    "Node"
+                ]
+            },
+            "sort_field": "Position",
+            "display_filter": {
+                "min": [
+                    {
+                        "key": "BPM",
+                        "value": "&BPM->Name"
+                    },
+                    "Name",
+                    "Module Type",
+                    {
+                        "key": "Position",
+                        "value": "link_id",
+                        "positioning": "link_text"
+                    }
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Module Type",
+                    "Host",
+                    "Area",
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 220,
+                "height": 65,
+                "field_name": true
+            }
+        },
+        "level3": {
+            "type": "filter",
+            "level": 3,
+            "filter": {
+                "Class": [
+                    "Module",
+                    "Node"
+                ]
+            },
+            "sort_field": "Position",
+            "display_filter": {
+                "min": [
+                    {
+                        "key": "BPM",
+                        "value": "&BPM->Name"
+                    },
+                    "Name",
+                    "Module Type",
+                    {
+                        "key": "Position",
+                        "value": "link_id",
+                        "positioning": "link_text"
+                    }
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Module Type",
+                    "Host",
+                    "Area",
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 220,
+                "height": 65,
+                "field_name": true
+            }
+        },
+        "level4": {
+            "type": "filter",
+            "level": 4,
+            "filter": {
+                "Class": [
+                    "Module",
+                    "Node"
+                ]
+            },
+            "sort_field": "Position",
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "Module Type",
+                    {
+                        "key": "Position",
+                        "value": "link_id",
+                        "positioning": "link_text"
+                    }
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Module Type",
+                    "Host",
+                    "Area",
+                    "Comment"
+                ]
+            },
+            "display_attributes": {
+                "width": 220,
+                "height": 65,
+                "field_name": true
+            }
+        },
+        "level5": {
+            "type": "filter",
+            "level": 5,
+            "filter": {
+                "Class": [
+                    "Module",
+                    "Node"
+                ]
+            },
+            "sort_field": "Position",
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "Module Type",
+                    {
+                        "key": "Position",
+                        "value": "link_id",
+                        "positioning": "link_text"
+                    }
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Comment",
+                    "Module Type",
+                    "Host",
+                    "Area"
+                ]
+            },
+            "display_attributes": {
+                "width": 220,
+                "height": 65,
+                "field_name": true
+            }
+        }
     },
-    "level2": {
-      "type": "filter",
-      "level": 2,
-      "filter": {
-        "Class": [
-          "Module",
-          "Node"
-        ]
-      },
-      "sort_field": "Position",
-      "display_filter": {
-        "min": [
-          {
-            "key": "BPM",
-            "value": "&BPM->Name"
-          },
-          "Name",
-          "Module Type",
-          {
-            "key": "Position",
-            "value": "link_id",
-            "positioning": "link_text"
-          }
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Module Type",
-          "Host",
-          "Area",
-          "Comment"
-        ]
-      },
-      "display_attributes": {
-        "width": 220,
-        "height": 65,
-        "field_name": true
-      }
+    {
+        "name": "BPM_bpms",
+        "root": {
+            "type": "new",
+            "level": 0,
+            "fields": {
+                "System": "V4",
+                "Name": "BPM_bpms"
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "System",
+                    "Name"
+                ],
+                "max": []
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 70,
+                "field_name": false
+            }
+        },
+        "level1": {
+            "type": "filter",
+            "level": 1,
+            "filter": {
+                "Class": [
+                    "BPM"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    "Name"
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Azimuth",
+                    "GX",
+                    "GZ",
+                    "GeodX",
+                    "GeodZ",
+                    "X0",
+                    "Z0",
+                    "BPM Type",
+                    {
+                        "key": "Formula",
+                        "value": "&BPM Type->Formula"
+                    },
+                    {
+                        "key": "Form",
+                        "value": "&BPM Type->Form"
+                    },
+                    {
+                        "key": "ApertureX",
+                        "value": "&BPM Type->ApertureX"
+                    },
+                    {
+                        "key": "ApertureZ",
+                        "value": "&BPM Type->ApertureZ"
+                    },
+                    {
+                        "key": "PlateType",
+                        "value": "&BPM Type->PlateType"
+                    },
+                    {
+                        "key": "PlateSize",
+                        "value": "&BPM Type->PlateSize"
+                    },
+                    "Comment",
+                    {
+                        "key": "Comment",
+                        "value": "&BPM Type->Comment"
+                    }
+                ]
+            },
+            "display_attributes": {
+                "width": 60,
+                "height": 30,
+                "positioning": "matrix",
+                "matrix_type": "simple",
+                "matrix_size": 64,
+                "hiding": "true",
+                "field_name": false,
+                "autoexpanding": true
+            }
+        },
+        "level2": {
+            "type": "filter",
+            "level": 2,
+            "filter": {
+                "Class": [
+                    "Module"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "System",
+                    "IP",
+                    "Port",
+                    "MAC",
+                    "GI",
+                    "g0_button0",
+                    "g0_button1",
+                    "g0_button2",
+                    "g0_button3",
+                    "g1_button0",
+                    "g1_button1",
+                    "g1_button2",
+                    "g1_button3",
+                    "g0_gI",
+                    "g1_gI",
+                    "Date",
+                    "Module Type",
+                    {
+                        "key": "System_ID",
+                        "value": "&Module Type->System_ID"
+                    },
+                    {
+                        "key": "Dispatcher",
+                        "value": "&Module Type->Dispatcher"
+                    },
+                    {
+                        "key": "System_ID",
+                        "value": "&Module Type->System_ID"
+                    },
+                    {
+                        "key": "Type comment",
+                        "value": "&Module Type->Comment"
+                    },
+                    {
+                        "key": "Channels number",
+                        "value": "&Module Type->Channels number"
+                    },
+                    {
+                        "key": "Bandwidth",
+                        "value": "&Module Type->Bandwidth"
+                    },
+                    "Comment",
+                    {
+                        "key": "Comment",
+                        "value": "&Module Type->Comment"
+                    }
+                ],
+                "max": [
+                    "Name",
+                    "System",
+                    "Comment",
+                    "IP",
+                    "Port",
+                    "MAC",
+                    "GI",
+                    "g0_button0",
+                    "g0_button1",
+                    "g0_button2",
+                    "g0_button3",
+                    "g1_button0",
+                    "g1_button1",
+                    "g1_button2",
+                    "g1_button3",
+                    "g0_gI",
+                    "g1_gI",
+                    "Date",
+                    "Module Type",
+                    {
+                        "key": "System_ID",
+                        "value": "&Module Type->System_ID"
+                    },
+                    {
+                        "key": "Dispatcher",
+                        "value": "&Module Type->Dispatcher"
+                    },
+                    {
+                        "key": "System_ID",
+                        "value": "&Module Type->System_ID"
+                    },
+                    {
+                        "key": "Channels number",
+                        "value": "&Module Type->Channels number"
+                    },
+                    {
+                        "key": "Bandwidth",
+                        "value": "&Module Type->Bandwidth"
+                    },
+                    "Comment",
+                    {
+                        "key": "Comment",
+                        "value": "&Module Type->Comment"
+                    }
+                ]
+            },
+            "display_attributes": {
+                "width": 300,
+                "height": 450,
+                "autorevealing": true,
+                "field_name": true
+            }
+        }
     },
-    "level3": {
-      "type": "filter",
-      "level": 3,
-      "filter": {
-        "Class": [
-          "Module",
-          "Node"
+    {
+        "name": "Scheme",
+        "type": "single",
+        "schemes": [
+            {
+                "name": "Main",
+                "filename": "vepp4_pickups"
+            }
         ]
-      },
-      "sort_field": "Position",
-      "display_filter": {
-        "min": [
-          {
-            "key": "BPM",
-            "value": "&BPM->Name"
-          },
-          "Name",
-          "Module Type",
-          {
-            "key": "Position",
-            "value": "link_id",
-            "positioning": "link_text"
-          }
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Module Type",
-          "Host",
-          "Area",
-          "Comment"
-        ]
-      },
-      "display_attributes": {
-        "width": 220,
-        "height": 65,
-        "field_name": true
-      }
     },
-    "level4": {
-      "type": "filter",
-      "level": 4,
-      "filter": {
-        "Class": [
-          "Module",
-          "Node"
+    {
+        "name": "Tools",
+        "buttons": [
+            {
+                "title": "Валидация",
+                "type": "validation",
+                "id": "validation"
+            },
+            {
+                "title": "Типы пикапов",
+                "type": "list",
+                "id": "tool_bpmtypes",
+                "sample": "Tool_bpmtypes"
+            },
+            {
+                "title": "Пикапы",
+                "type": "list",
+                "id": "tool_bpms",
+                "sample": "Tool_bpms"
+            },
+            {
+                "title": "Пикап-станции",
+                "type": "list",
+                "id": "tool_modules",
+                "sample": "Tool_modules"
+            }
         ]
-      },
-      "sort_field": "Position",
-      "display_filter": {
-        "min": [
-          "Name",
-          "Module Type",
-          {
-            "key": "Position",
-            "value": "link_id",
-            "positioning": "link_text"
-          }
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Module Type",
-          "Host",
-          "Area",
-          "Comment"
-        ]
-      },
-      "display_attributes": {
-        "width": 220,
-        "height": 65,
-        "field_name": true
-      }
     },
-    "level5": {
-      "type": "filter",
-      "level": 5,
-      "filter": {
-        "Class": [
-          "Module",
-          "Node"
-        ]
-      },
-      "sort_field": "Position",
-      "display_filter": {
-        "min": [
-          "Name",
-          "Module Type",
-          {
-            "key": "Position",
-            "value": "link_id",
-            "positioning": "link_text"
-          }
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Comment",
-          "Module Type",
-          "Host",
-          "Area"
-        ]
-      },
-      "display_attributes": {
-        "width": 220,
-        "height": 65,
-        "field_name": true
-      }
+    {
+        "name": "Tool_bpmtypes",
+        "root": {
+            "type": "filter",
+            "filter": {
+                "Class": [
+                    "BPM Type"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    {
+                        "key": "BPM",
+                        "value": "&BPM->Name"
+                    },
+                    "Name",
+                    {
+                        "key": "Image",
+                        "value": "&Image",
+                        "type": "image",
+                        "width": "300px"
+                    },
+                    "ApertureX",
+                    "ApertureZ",
+                    {
+                        "key": "BPM number",
+                        "value": "&BPM->Name",
+                        "type": "len"
+                    }
+                ],
+                "max": [
+                ]
+            },
+            "display_attributes": {
+                "field_name": false
+            }
+        }
+    },
+    {
+        "name": "Tool_bpms",
+        "root": {
+            "type": "filter",
+            "filter": {
+                "Class": [
+                    "BPM"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    "Name",
+                    {
+                        "key": "BPMC",
+                        "value": "&Module->Name"
+                    },
+                    "BPM Type",
+                    "Azimuth",
+                    "GX",
+                    "GZ",
+                    "GeodX",
+                    "GeodZ",
+                    "X0",
+                    "Z0",
+                    "Comment"
+                ],
+                "max": [
+                ]
+            },
+            "display_attributes": {
+                "field_name": false
+            }
+        },
+        "legend": "Name - имя пикапа\nBPMC - имя пикап-станции, подключенной к пикапу\nBPM Type - тип пикапа в файле bpm.type\nAzimuth - азимут/положение пикапа\nGX - горизонтальный масштабирующий коэффициент\nGZ - вертикальный масштабирующий коэффициент\nGeodX - горизонтальное геодезическое смещение\nGeodZ - вертикальное геодезическое смещение\nX0 - горизонтальное смещение нуля\nZ0 - вертикальное смещение нуля"
+    },
+    {
+        "name": "Tool_modules",
+        "root": {
+            "type": "filter",
+            "filter": {
+                "Class": [
+                    "Module"
+                ]
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "Name",
+                    "BPM",
+                    "IP",
+                    "Port",
+                    "MAC",
+                    "Module Type",
+                    "GI",
+                    "g0_button0",
+                    "g0_button1",
+                    "g0_button2",
+                    "g0_button3",
+                    "g1_button0",
+                    "g1_button1",
+                    "g1_button2",
+                    "g1_button3",
+                    "g0_gI",
+                    "g1_gI",
+                    "Date",
+                    "Comment"
+                ],
+                "max": [
+                ]
+            },
+            "display_attributes": {
+                "field_name": false
+            }
+        },
+        "legend": "Name - номер пикап-станции + 'BPMC'\nBPM - имя пикапа, к которому подключена пикап-станиция\nIP - IP-адрес\nPort - порт\nMAC - MAC-адресс\nModule Type - тип пикап-станции\nGI - коэффициент усиления\ng0_button0 - коэффициент усиления 0 для 0 канала\ng0_button1 - коэффициент усиления 0 для 1 канала\ng0_button2 - коэффициент усиления 0 для2 канала\ng0_button3 - коэффициент усиления 0 для3 канала\ng1_button0 - коэффициент усиления 1 для 0 канала\ng1_button1 - коэффициент усиления 1 для 1 канала\ng1_button2 - коэффициент усиления 1 для 2 канала\ng1_button3 - коэффициент усиления 1 для 3 канала\ng0_gI - коэффициент тока для коэффициента усиления 0\ng1_gI - коэффициент тока для коэффициента усиления 1\nDate - дата создания"
     }
-  },
-  {
-    "name": "BPM_bpms",
-    "root": {
-      "type": "new",
-      "level": 0,
-      "fields": {
-        "System": "V4",
-        "Name": "BPM_bpms"
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "System",
-          "Name"
-        ],
-        "max": []
-      },
-      "display_attributes": {
-        "width": 200,
-        "height": 70,
-        "field_name": false
-      }
-    },
-    "level1": {
-      "type": "filter",
-      "level": 1,
-      "filter": {
-        "Class": [
-          "BPM"
-        ]
-      },
-      "display_filter": {
-        "min": [
-          "Name"
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Azimuth",
-          "GX",
-          "GZ",
-          "GeodX",
-          "GeodZ",
-          "X0",
-          "Z0",
-          "BPM Type",
-          {
-            "key": "Formula",
-            "value": "&BPM Type->Formula"
-          },
-          {
-            "key": "Form",
-            "value": "&BPM Type->Form"
-          },
-          {
-            "key": "ApertureX",
-            "value": "&BPM Type->ApertureX"
-          },
-          {
-            "key": "ApertureZ",
-            "value": "&BPM Type->ApertureZ"
-          },
-          {
-            "key": "PlateType",
-            "value": "&BPM Type->PlateType"
-          },
-          {
-            "key": "PlateSize",
-            "value": "&BPM Type->PlateSize"
-          },
-          "Comment",
-          {
-            "key": "Comment",
-            "value": "&BPM Type->Comment"
-          }
-        ]
-      },
-      "display_attributes": {
-        "width": 60,
-        "height": 30,
-        "positioning": "matrix",
-        "matrix_type": "simple",
-        "matrix_size": 64,
-        "hiding": "true",
-        "field_name": false,
-        "autoexpanding": true
-      }
-    },
-    "level2": {
-      "type": "filter",
-      "level": 2,
-      "filter": {
-        "Class": [
-          "Module"
-        ]
-      },
-      "display_filter": {
-        "min": [
-          "Name",
-          "System",
-          "IP",
-          "Port",
-          "MAC",
-          "GI",
-          "g0_button0",
-          "g0_button1",
-          "g0_button2",
-          "g0_button3",
-          "g1_button0",
-          "g1_button1",
-          "g1_button2",
-          "g1_button3",
-          "g0_gI",
-          "g1_gI",
-          "Date",
-          "Module Type",
-          {
-            "key": "System_ID",
-            "value": "&Module Type->System_ID"
-          },
-          {
-            "key": "Dispatcher",
-            "value": "&Module Type->Dispatcher"
-          },
-          {
-            "key": "System_ID",
-            "value": "&Module Type->System_ID"
-          },
-          {
-            "key": "Type comment",
-            "value": "&Module Type->Comment"
-          },
-          {
-            "key": "Channels number",
-            "value": "&Module Type->Channels number"
-          },
-          {
-            "key": "Bandwidth",
-            "value": "&Module Type->Bandwidth"
-          },
-          "Comment",
-          {
-            "key": "Comment",
-            "value": "&Module Type->Comment"
-          }
-        ],
-        "max": [
-          "Name",
-          "System",
-          "Comment",
-          "IP",
-          "Port",
-          "MAC",
-          "GI",
-          "g0_button0",
-          "g0_button1",
-          "g0_button2",
-          "g0_button3",
-          "g1_button0",
-          "g1_button1",
-          "g1_button2",
-          "g1_button3",
-          "g0_gI",
-          "g1_gI",
-          "Date",
-          "Module Type",
-          {
-            "key": "System_ID",
-            "value": "&Module Type->System_ID"
-          },
-          {
-            "key": "Dispatcher",
-            "value": "&Module Type->Dispatcher"
-          },
-          {
-            "key": "System_ID",
-            "value": "&Module Type->System_ID"
-          },
-          {
-            "key": "Channels number",
-            "value": "&Module Type->Channels number"
-          },
-          {
-            "key": "Bandwidth",
-            "value": "&Module Type->Bandwidth"
-          },
-          "Comment",
-          {
-            "key": "Comment",
-            "value": "&Module Type->Comment"
-          }
-        ]
-      },
-      "display_attributes": {
-        "width": 300,
-        "height": 450,
-        "autorevealing": true,
-        "field_name": true
-      }
-    }
-  },
-  {
-    "name": "Scheme",
-    "type": "single",
-    "schemes": [
-      {
-        "name": "Main",
-        "filename": "vepp4_pickups"
-      }
-    ]
-  },
-  {
-    "name": "Tools",
-    "buttons": [
-      {
-        "title": "Валидация",
-        "type": "validation",
-        "id": "validation"
-      },
-      {
-        "title": "Типы пикапов",
-        "type": "list",
-        "id": "tool_bpmtypes",
-        "sample": "Tool_bpmtypes"
-      },
-      {
-        "title": "Пикапы",
-        "type": "list",
-        "id": "tool_bpms",
-        "sample": "Tool_bpms"
-      },
-      {
-        "title": "Пикап-станции",
-        "type": "list",
-        "id": "tool_modules",
-        "sample": "Tool_modules"
-      }
-    ]
-  },
-  {
-    "name": "Tool_bpmtypes",
-    "root": {
-      "type": "filter",
-      "filter": {
-        "Class": [
-          "BPM Type"
-        ]
-      },
-      "display_filter": {
-        "min": [
-          {
-            "key": "BPM",
-            "value": "&BPM->Name"
-          },
-          "Name",
-          {
-            "key": "Image",
-            "value": "&Image",
-            "type": "image",
-            "width": "300px"
-          },
-          "ApertureX",
-          "ApertureZ",
-          {
-            "key": "BPM number",
-            "value": "&BPM->Name",
-            "type": "len"
-          }
-        ],
-        "max": [
-        ]
-      },
-      "display_attributes": {
-        "field_name": false
-      }
-    }
-  },
-  {
-    "name": "Tool_bpms",
-    "root": {
-      "type": "filter",
-      "filter": {
-        "Class": [
-          "BPM"
-        ]
-      },
-      "display_filter": {
-        "min": [
-          "Name",
-          {
-            "key": "BPMC",
-            "value": "&Module->Name"
-          },
-          "BPM Type",
-          "Azimuth",
-          "GX",
-          "GZ",
-          "GeodX",
-          "GeodZ",
-          "X0",
-          "Z0",
-          "Comment"
-        ],
-        "max": [
-        ]
-      },
-      "display_attributes": {
-        "field_name": false
-      }
-    },
-    "legend": "Name - имя пикапа\nBPMC - имя пикап-станции, подключенной к пикапу\nBPM Type - тип пикапа в файле bpm.type\nAzimuth - азимут/положение пикапа\nGX - горизонтальный масштабирующий коэффициент\nGZ - вертикальный масштабирующий коэффициент\nGeodX - горизонтальное геодезическое смещение\nGeodZ - вертикальное геодезическое смещение\nX0 - горизонтальное смещение нуля\nZ0 - вертикальное смещение нуля"
-  },
-  {
-    "name": "Tool_modules",
-    "root": {
-      "type": "filter",
-      "filter": {
-        "Class": [
-          "Module"
-        ]
-      },
-      "sort_field": "Name",
-      "display_filter": {
-        "min": [
-          "Name",
-          "BPM",
-          "IP",
-          "Port",
-          "MAC",
-          "Module Type",
-          "GI",
-          "g0_button0",
-          "g0_button1",
-          "g0_button2",
-          "g0_button3",
-          "g1_button0",
-          "g1_button1",
-          "g1_button2",
-          "g1_button3",
-          "g0_gI",
-          "g1_gI",
-          "Date",
-          "Comment"
-        ],
-        "max": [
-        ]
-      },
-      "display_attributes": {
-        "field_name": false
-      }
-    },
-    "legend": "Name - номер пикап-станции + 'BPMC'\nBPM - имя пикапа, к которому подключена пикап-станиция\nIP - IP-адрес\nPort - порт\nMAC - MAC-адресс\nModule Type - тип пикап-станции\nGI - коэффициент усиления\ng0_button0 - коэффициент усиления 0 для 0 канала\ng0_button1 - коэффициент усиления 0 для 1 канала\ng0_button2 - коэффициент усиления 0 для2 канала\ng0_button3 - коэффициент усиления 0 для3 канала\ng1_button0 - коэффициент усиления 1 для 0 канала\ng1_button1 - коэффициент усиления 1 для 1 канала\ng1_button2 - коэффициент усиления 1 для 2 канала\ng1_button3 - коэффициент усиления 1 для 3 канала\ng0_gI - коэффициент тока для коэффициента усиления 0\ng1_gI - коэффициент тока для коэффициента усиления 1\nDate - дата создания"
-  }
 ]
