@@ -1,0 +1,509 @@
+   1 | NTL1_SW_top_ext | 20         | T_RF3_2    |    1 |          0 |          0 | NTL1_SW_top_ext            |       55 |    1 |        60 |       2
+   2 | NTL1_SW_top_int | 20         | T_RF3_2    |    1 |          1 |          1 | NTL1_SW_top_int            |       55 |    1 |        60 |       2
+   3 | NTL1_SW_bot_ext | 20         | T_RF3_2    |    1 |          2 |          2 | NTL1_SW_bot_ext            |       55 |    1 |        60 |       2
+   4 | NTL1_SW_bot_int | 20         | T_RF3_2    |    1 |          3 |          3 | NTL1_SW_bot_int            |       55 |    1 |        60 |       2
+   5 | NTL2_SW_top_ext | 20         | T_RF3_2    |    1 |          4 |          4 | NTL2_SW_top_ext            |       55 |    1 |        60 |       2
+   6 | NTL2_SW_top_int | 20         | T_RF3_2    |    1 |          5 |          5 | NTL2_SW_top_int            |       55 |    1 |        60 |       2
+   7 | NTL2_SW_bot_ext | 20         | T_RF3_2    |    1 |          6 |          6 | NTL2_SW_bot_ext            |       55 |    1 |        60 |       2
+   8 | NTL2_SW_bot_int | 20         | T_RF3_2    |    1 |          7 |          7 | NTL2_SW_bot_int            |       55 |    1 |        60 |       2
+   9 | NTL3_SW_top_ext | 20         | T_RF3_2    |    2 |          0 |          8 | NTL3_SW_top_ext            |       55 |    1 |        60 |       2
+  10 | NTL3_SW_top_int | 20         | T_RF3_2    |    2 |          1 |          9 | NTL3_SW_top_int            |       55 |    1 |        60 |       2
+  11 | NTL3_SW_bot_ext | 20         | T_RF3_2    |    2 |          2 |         10 | NTL3_SW_bot_ext            |       55 |    1 |        60 |       2
+  12 | NTL3_SW_bot_int | 20         | T_RF3_2    |    2 |          3 |         11 | NTL3_SW_bot_int            |       55 |    1 |        60 |       2
+  13 | NTL4_SW_top_ext | 20         | T_RF3_2    |    2 |          4 |         12 | NTL4_SW_top_ext            |       55 |    1 |        60 |       2
+  14 | NTL4_SW_top_int | 20         | T_RF3_2    |    2 |          5 |         13 | NTL4_SW_top_int            |       55 |    1 |        60 |       2
+  15 | NTL4_SW_bot_ext | 20         | T_RF3_2    |    2 |          6 |         14 | NTL4_SW_bot_ext            |       55 |    1 |        60 |       2
+  16 | NTL4_SW_bot_int | 20         | T_RF3_2    |    2 |          7 |         15 | NTL4_SW_bot_int            |       55 |    1 |        60 |       2
+  17 | NTW_SW_top_1    | 20         | T_RF3_2    |    3 |          0 |         16 | NTW_SW_top_1               |       55 |    1 |        60 |       2
+  18 | NTW_SW_top_2    | 20         | T_RF3_2    |    3 |          1 |         17 | NTW_SW_top_2               |       55 |    1 |        60 |       2
+  19 | NTW_SW_top_3    | 20         | T_RF3_2    |    3 |          2 |         18 | NTW_SW_top_3               |       55 |    1 |        60 |       2
+  20 | NTW_SW_top_4    | 20         | T_RF3_2    |    3 |          3 |         19 | NTW_SW_top_4               |       55 |    1 |        60 |       2
+  21 | NTW_SW_top_5    | 20         | T_RF3_2    |    3 |          4 |         20 | NTW_SW_top_5               |       55 |    1 |        60 |       2
+  22 | NTW_SW_bot_1    | 20         | T_RF3_2    |    4 |          0 |         24 | NTW_SW_bot_1               |       55 |    1 |        60 |       2
+  23 | NTW_SW_bot_2    | 20         | T_RF3_2    |    4 |          1 |         25 | NTW_SW_bot_2               |       55 |    1 |        60 |       2
+  24 | NTW_SW_bot_3    | 20         | T_RF3_2    |    4 |          2 |         26 | NTW_SW_bot_3               |       55 |    1 |        60 |       2
+  25 | NTW_SW_bot_4    | 20         | T_RF3_2    |    4 |          3 |         27 | NTW_SW_bot_4               |       55 |    1 |        60 |       2
+  26 | NTW_SW_bot_5    | 20         | T_RF3_2    |    4 |          4 |         28 | NTW_SW_bot_5               |       55 |    1 |        60 |       2
+  27 | N1F_SW_top      | 09         | T_N2F      |    3 |          0 |         16 | N1F_SW_top                 |       55 |    1 |        60 |       2
+  28 | N1F_SW_bot      | 09         | T_N2F      |    3 |          1 |         17 | N1F_SW_bot                 |       55 |    1 |        60 |       2
+  29 | N5F_SW_top_ext  | 10         | T_N5F      |    3 |          0 |         16 | N5F_SW_top_ext             |       55 |    1 |        60 |       2
+  30 | N5F_SW_top_int  | 10         | T_N5F      |    3 |          1 |         17 | N5F_SW_top_int             |       55 |    1 |        60 |       2
+  31 | N5F_SW_bot_ext  | 10         | T_N5F      |    3 |          2 |         18 | N5F_SW_bot_ext             |       55 |    1 |        60 |       2
+  32 | N5F_SW_bot_int  | 10         | T_N5F      |    3 |          3 |         19 | N5F_SW_bot_int             |       55 |    1 |        60 |       2
+  33 | N9D_SW_top      | 21         | T_NIM2_2   |    1 |          0 |          0 | N9D_SW_top                 |       55 |    1 |        60 |       2
+  34 | N9D_SW_bot      | 21         | T_NIM2_2   |    1 |          1 |          1 | N9D_SW_bot                 |       55 |    1 |        60 |       2
+  35 | NIM1_SW_top_ext | 21         | T_NIM2_2   |    1 |          2 |          2 | NIM1_SW_top_ext            |       55 |    1 |        60 |       2
+  36 | NIM1_SW_bot_ext | 21         | T_NIM2_2   |    1 |          3 |          3 | NIM1_SW_bot_ext            |       55 |    1 |        60 |       2
+  37 | NIM1_SW-cor     | 21         | T_NIM2_2   |    1 |          4 |          4 | NIM1_SW-cor                |       55 |    1 |        60 |       2
+  38 | NIM2_SW_top     | 21         | T_NIM2_2   |    1 |          5 |          5 | NIM2_SW_top                |       55 |    1 |        60 |       2
+  39 | NIM2_SW_bot     | 21         | T_NIM2_2   |    1 |          6 |          6 | NIM2_SW_bot                |       55 |    1 |        60 |       2
+  40 | NIL1_SW_top_ext | 21         | T_NIM2_2   |    2 |          0 |          8 | NIL1_SW_top_ext            |       55 |    1 |        60 |       2
+  41 | NIL1_SW_top_int | 21         | T_NIM2_2   |    2 |          1 |          9 | NIL1_SW_top_int            |       55 |    1 |        60 |       2
+  42 | NIL1_SW_bot_ext | 21         | T_NIM2_2   |    2 |          2 |         10 | NIL1_SW_bot_ext            |       55 |    1 |        60 |       2
+  43 | NIL1_SW_bot_int | 21         | T_NIM2_2   |    2 |          3 |         11 | NIL1_SW_bot_int            |       55 |    1 |        60 |       2
+  44 | NIL2_SW_top_ext | 21         | T_NIM2_2   |    2 |          4 |         12 | NIL2_SW_top_ext            |       55 |    1 |        60 |       2
+  45 | NIL2_SW_top_int | 21         | T_NIM2_2   |    2 |          5 |         13 | NIL2_SW_top_int            |       55 |    1 |        60 |       2
+  46 | NIL2_SW_bot_ext | 21         | T_NIM2_2   |    2 |          6 |         14 | NIL2_SW_bot_ext            |       55 |    1 |        60 |       2
+  47 | NIL2_SW_bot_int | 21         | T_NIM2_2   |    2 |          7 |         15 | NIL2_SW_bot_int            |       55 |    1 |        60 |       2
+  48 | NIL3_SW_top_ext | 21         | T_NIM2_2   |    3 |          0 |         16 | NIL3_SW_top_ext            |       55 |    1 |        60 |       2
+  49 | NIL3_SW_top_int | 21         | T_NIM2_2   |    3 |          1 |         17 | NIL3_SW_top_int            |       55 |    1 |        60 |       2
+  50 | NIL3_SW_bot_ext | 21         | T_NIM2_2   |    3 |          2 |         18 | NIL3_SW_bot_ext            |       55 |    1 |        60 |       2
+  51 | NIL3_SW_bot_int | 21         | T_NIM2_2   |    3 |          3 |         19 | NIL3_SW_bot_int            |       55 |    1 |        60 |       2
+  52 | NIL4_SW_top_ext | 21         | T_NIM2_2   |    3 |          4 |         20 | NIL4_SW_top_ext            |       55 |    1 |        60 |       2
+  53 | NIL4_SW_top_int | 21         | T_NIM2_2   |    3 |          5 |         21 | NIL4_SW_top_int            |       55 |    1 |        60 |       2
+  54 | NIL4_SW_bot_ext | 21         | T_NIM2_2   |    3 |          6 |         22 | NIL4_SW_bot_ext            |       55 |    1 |        60 |       2
+  55 | NIL4_SW_bot_int | 21         | T_NIM2_2   |    3 |          7 |         23 | NIL4_SW_bot_int            |       55 |    1 |        60 |       2
+  56 | NIM3_SW_top     | 21         | T_NIM2_2   |    4 |          0 |         24 | NIM3_SW_top                |       55 |    1 |        60 |       2
+  57 | NIM3_SW_bot     | 21         | T_NIM2_2   |    4 |          1 |         25 | NIM3_SW_bot                |       55 |    1 |        60 |       2
+  58 | NIM4_SW_top_ext | 21         | T_NIM2_2   |    4 |          2 |         26 | NIM4_SW_top_ext            |       55 |    1 |        60 |       2
+  59 | NIM4_SW_bot_ext | 21         | T_NIM2_2   |    4 |          3 |         27 | NIM4_SW_bot_ext            |       55 |    1 |        60 |       2
+  60 | NIM4_SW-cor     | 21         | T_NIM2_2   |    4 |          4 |         28 | NIM4_SW-cor                |       55 |    1 |        60 |       2
+  61 | NIL1_SW_shunt   | 21         | T_NIM2_2   |    4 |          5 |         29 | NIL1_SW_shunt              |       55 |    1 |        60 |       2
+  62 | NIL2_SW_shunt   | 21         | T_NIM2_2   |    4 |          6 |         30 | NIL2_SW_shunt              |       55 |    1 |        60 |       2
+  63 | NIL4_SW_shunt   | 21         | T_NIM2_2   |    4 |          7 |         31 | NIL4_SW_shunt              |       55 |    1 |        60 |       2
+  64 | N17F_SW_top     | 14         | T_N14F     |    3 |          0 |         16 | N17F_SW_top                |       55 |    1 |        60 |       2
+  65 | N17F_SW_bot     | 14         | T_N14F     |    3 |          1 |         17 | N17F_SW_bot                |       55 |    1 |        60 |       2
+  66 | N14F_SW_top_ext | 14         | T_N14F     |    4 |          0 |         24 | N14F_SW_top_ext            |       55 |    1 |        60 |       2
+  67 | N14F_SW_top_int | 14         | T_N14F     |    4 |          1 |         25 | N14F_SW_top_int            |       55 |    1 |        60 |       2
+  68 | N14F_SW_bot_ext | 14         | T_N14F     |    4 |          2 |         26 | N14F_SW_bot_ext            |       55 |    1 |        60 |       2
+  69 | N14F_SW_bot_int | 14         | T_N14F     |    4 |          3 |         27 | N14F_SW_bot_int            |       55 |    1 |        60 |       2
+  70 | NEL5_SW_top_ext | 15         | T_N17F     |    3 |          2 |         18 | NEL5_SW_top_ext            |       55 |    1 |        60 |       2
+  71 | NEL5_SW_top_int | 15         | T_N17F     |    3 |          3 |         19 | NEL5_SW_top_int            |       55 |    1 |        60 |       2
+  72 | NEL5_SW_bot_ext | 15         | T_N17F     |    3 |          4 |         20 | NEL5_SW_bot_ext            |       55 |    1 |        60 |       2
+  73 | NEL5_SW_bot_int | 15         | T_N17F     |    3 |          5 |         21 | NEL5_SW_bot_int            |       55 |    1 |        60 |       2
+  74 | NEM3_SW_top     | 15         | T_N17F     |    3 |          6 |         22 | NEM3_SW_top                |       55 |    1 |        60 |       2
+  75 | NEM3_SW_bot     | 15         | T_N17F     |    3 |          7 |         23 | NEM3_SW_bot                |       55 |    1 |        60 |       2
+  76 | NEM1_SW_top     | 28         | T_NEM2_2   |    1 |          0 |          0 | NEM1_SW_top                |       55 |    0 |        60 |       0
+  77 | NEM1_SW_bot     | 28         | T_NEM2_2   |    1 |          1 |          1 | NEM1_SW_bot                |       55 |    1 |        60 |       2
+  78 | NEM2_SW_top     | 28         | T_NEM2_2   |    1 |          2 |          2 | NEM2_SW_top                |       55 |    1 |        60 |       2
+  79 | NEM2_SW_bot     | 28         | T_NEM2_2   |    1 |          3 |          3 | NEM2_SW_bot                |       55 |    1 |        60 |       2
+  80 | NEL1_SW_top_ext | 28         | T_NEM2_2   |    2 |          0 |          8 | NEL1_SW_top_ext            |       55 |    1 |        60 |       2
+  81 | NEL1_SW_top_int | 28         | T_NEM2_2   |    2 |          1 |          9 | NEL1_SW_top_int            |       55 |    1 |        60 |       2
+  82 | NEL1_SW_bot_ext | 28         | T_NEM2_2   |    2 |          2 |         10 | NEL1_SW_bot_ext            |       55 |    1 |        60 |       2
+  83 | NEL1_SW_bot_int | 28         | T_NEM2_2   |    2 |          3 |         11 | NEL1_SW_bot_int            |       55 |    1 |        60 |       2
+  84 | NEL2_SW_top_ext | 28         | T_NEM2_2   |    2 |          4 |         12 | NEL2_SW_top_ext            |       55 |    1 |        60 |       2
+  85 | NEL2_SW_top_int | 28         | T_NEM2_2   |    2 |          5 |         13 | NEL2_SW_top_int            |       55 |    1 |        60 |       2
+  86 | NEL2_SW_bot_ext | 28         | T_NEM2_2   |    2 |          6 |         14 | NEL2_SW_bot_ext            |       55 |    1 |        60 |       2
+  87 | NEL2_SW_bot_int | 28         | T_NEM2_2   |    2 |          7 |         15 | NEL2_SW_bot_int            |       55 |    1 |        60 |       2
+  88 | NEL3_SW_top_ext | 28         | T_NEM2_2   |    3 |          0 |         16 | NEL3_SW_top_ext            |       55 |    1 |        60 |       2
+  89 | NEL3_SW_top_int | 28         | T_NEM2_2   |    3 |          1 |         17 | NEL3_SW_top_int            |       55 |    1 |        60 |       2
+  90 | NEL3_SW_bot_ext | 28         | T_NEM2_2   |    3 |          2 |         18 | NEL3_SW_bot_ext            |       55 |    1 |        60 |       2
+  91 | NEL3_SW_bot_int | 28         | T_NEM2_2   |    3 |          2 |         18 | NEL3_SW_bot_int            |       55 |    1 |        60 |       2
+  92 | NEL4_SW_top_ext | 28         | T_NEM2_2   |    3 |          4 |         20 | NEL4_SW_top_ext            |       55 |    1 |        60 |       2
+  93 | NEL4_SW_top_int | 28         | T_NEM2_2   |    3 |          5 |         21 | NEL4_SW_top_int            |       55 |    1 |        60 |       2
+  94 | NEL4_SW_bot_ext | 28         | T_NEM2_2   |    3 |          6 |         22 | NEL4_SW_bot_ext            |       55 |    1 |        60 |       2
+  95 | NEL4_SW_bot_int | 28         | T_NEM2_2   |    3 |          7 |         23 | NEL4_SW_bot_int            |       55 |    1 |        60 |       2
+  96 | NEZM_SW_top_S   | 28         | T_NEM2_2   |    4 |          0 |         24 | NEZM_SW_top_S              |       55 |    1 |        60 |       2
+  97 | NEZM_SW_top_mid | 28         | T_NEM2_2   |    4 |          1 |         25 | NEZM_SW_top_mid            |       55 |    1 |        60 |       2
+  98 | NEZM_SW_top_N   | 28         | T_NEM2_2   |    4 |          2 |         26 | NEZM_SW_top_N              |       55 |    1 |        60 |       2
+  99 | NEZM_SW_bot_S   | 28         | T_NEM2_2   |    4 |          3 |         27 | NEZM_SW_bot_S              |       55 |    1 |        60 |       2
+ 100 | NEZM_SW_bot_mid | 28         | T_NEM2_2   |    4 |          4 |         28 | NEZM_SW_bot_mid            |       55 |    1 |        60 |       2
+ 101 | NEZM_SW_bot_N   | 28         | T_NEM2_2   |    4 |          5 |         29 | NEZM_SW_bot_N              |       55 |    1 |        60 |       2
+ 102 | SEM1_SW_top     | 29         | T_SEM2_2   |    1 |          0 |          0 | SEM1_SW_top                |       55 |    1 |        60 |       2
+ 103 | SEM1_SW_bot     | 29         | T_SEM2_2   |    1 |          1 |          1 | SEM1_SW_bot                |       55 |    1 |        60 |       2
+ 104 | SEM2_SW_top     | 29         | T_SEM2_2   |    1 |          2 |          2 | SEM2_SW_top                |       55 |    1 |        60 |       2
+ 105 | SEM2_SW_bot     | 29         | T_SEM2_2   |    1 |          3 |          3 | SEM2_SW_bot                |       55 |    1 |        60 |       2
+ 106 | SEL1_SW_top_ext | 29         | T_SEM2_2   |    2 |          0 |          8 | SEL1_SW_top_ext            |       55 |    1 |        60 |       2
+ 107 | SEL1_SW_top_int | 29         | T_SEM2_2   |    2 |          1 |          9 | SEL1_SW_top_int            |       55 |    1 |        60 |       2
+ 108 | SEL1_SW_bot_ext | 29         | T_SEM2_2   |    2 |          2 |         10 | SEL1_SW_bot_ext            |       55 |    1 |        60 |       2
+ 109 | SEL1_SW_bot_int | 29         | T_SEM2_2   |    2 |          3 |         11 | SEL1_SW_bot_int            |       55 |    1 |        60 |       2
+ 110 | SEL2_SW_top_ext | 29         | T_SEM2_2   |    2 |          4 |         12 | SEL2_SW_top_ext            |       55 |    1 |        60 |       2
+ 111 | SEL2_SW_top_int | 29         | T_SEM2_2   |    2 |          5 |         13 | SEL2_SW_top_int            |       55 |    1 |        60 |       2
+ 112 | SEL2_SW_bot_ext | 29         | T_SEM2_2   |    2 |          6 |         14 | SEL2_SW_bot_ext            |       55 |    1 |        60 |       2
+ 113 | SEL2_SW_bot_int | 29         | T_SEM2_2   |    2 |          7 |         15 | SEL2_SW_bot_int            |       55 |    1 |        60 |       2
+ 114 | SEL3_SW_top_ext | 29         | T_SEM2_2   |    3 |          0 |         16 | SEL3_SW_top_ext            |       55 |    1 |        60 |       2
+ 115 | SEL3_SW_top_int | 29         | T_SEM2_2   |    3 |          1 |         17 | SEL3_SW_top_int            |       55 |    1 |        60 |       2
+ 116 | SEL3_SW_bot_ext | 29         | T_SEM2_2   |    3 |          2 |         18 | SEL3_SW_bot_ext            |       55 |    1 |        60 |       2
+ 117 | SEL3_SW_bot_int | 29         | T_SEM2_2   |    3 |          3 |         19 | SEL3_SW_bot_int            |       55 |    1 |        60 |       2
+ 118 | SEL4_SW_top_ext | 29         | T_SEM2_2   |    3 |          4 |         20 | SEL4_SW_top_ext            |       55 |    1 |        60 |       2
+ 119 | SEL4_SW_top_int | 29         | T_SEM2_2   |    3 |          5 |         21 | SEL4_SW_top_int            |       55 |    1 |        60 |       2
+ 120 | SEL4_SW_bot_ext | 29         | T_SEM2_2   |    3 |          6 |         22 | SEL4_SW_bot_ext            |       55 |    1 |        60 |       2
+ 121 | SEL4_SW_bot_int | 29         | T_SEM2_2   |    3 |          7 |         23 | SEL4_SW_bot_int            |       55 |    1 |        60 |       2
+ 122 | SEZM_SW_top_N   | 29         | T_SEM2_2   |    4 |          0 |         24 | SEZM_SW_top_N              |       55 |    1 |        60 |       2
+ 123 | SEZM_SW_top_mid | 29         | T_SEM2_2   |    4 |          1 |         25 | SEZM_SW_top_mid            |       55 |    1 |        60 |       2
+ 124 | SEZM_SW_top_S   | 29         | T_SEM2_2   |    4 |          2 |         26 | SEZM_SW_top_S              |       55 |    1 |        60 |       2
+ 125 | SEZM_SW_bot_N   | 29         | T_SEM2_2   |    4 |          3 |         27 | SEZM_SW_bot_N              |       55 |    1 |        60 |       2
+ 126 | SEZM_SW_bot_mid | 29         | T_SEM2_2   |    4 |          4 |         28 | SEZM_SW_bot_mid            |       55 |    1 |        60 |       2
+ 127 | SEZM_SW_bot_S   | 29         | T_SEM2_2   |    4 |          5 |         29 | SEZM_SW_bot_S              |       55 |    1 |        60 |       2
+ 128 | SEL5_SW_top_ext | 18         | T_S17F     |    3 |          2 |         18 | SEL5_SW_top_ext            |       55 |    1 |        60 |       2
+ 129 | SEL5_SW_top_int | 18         | T_S17F     |    3 |          3 |         19 | SEL5_SW_top_int            |       55 |    1 |        60 |       2
+ 130 | SEL5_SW_bot_ext | 18         | T_S17F     |    3 |          4 |         20 | SEL5_SW_bot_ext            |       55 |    1 |        60 |       2
+ 131 | SEL5_SW_bot_int | 18         | T_S17F     |    3 |          5 |         21 | SEL5_SW_bot_int            |       55 |    1 |        60 |       2
+ 132 | SEM3_SW_top     | 18         | T_S17F     |    3 |          6 |         22 | SEM3_SW_top                |       55 |    1 |        60 |       2
+ 133 | SEM3_SW_bot     | 18         | T_S17F     |    3 |          7 |         23 | SEM3_SW_bot                |       55 |    1 |        60 |       2
+ 134 | S17F_SW_top     | 05         | T_S14F     |    4 |          4 |         28 | S17F_SW_top                |       55 |    1 |        60 |       2
+ 135 | S17F_SW_bot     | 05         | T_S14F     |    4 |          1 |         25 | S17F_SW_bot                |       55 |    1 |        60 |       2
+ 136 | CM_SW_top       | 05         | T_S14F     |    3 |          5 |         21 | CM_SW_top                  |       55 |    1 |        60 |       2
+ 137 | CM_SW_bot       | 05         | T_S14F     |    3 |          6 |         22 | CM_SW_bot                  |       55 |    1 |        60 |       2
+ 138 | S14F_SW_top_ext | 06         | T_S12F     |    4 |          0 |         24 | S14F_SW_top_ext            |       55 |    1 |        60 |       2
+ 139 | S14F_SW_top_int | 06         | T_S12F     |    4 |          1 |         25 | S14F_SW_top_int            |       55 |    1 |        60 |       2
+ 140 | S14F_SW_bot_ext | 06         | T_S12F     |    4 |          2 |         26 | S14F_SW_bot_ext            |       55 |    1 |        60 |       2
+ 141 | S14F_SW_bot_int | 06         | T_S12F     |    4 |          3 |         27 | S14F_SW_bot_int            |       55 |    1 |        60 |       2
+ 142 | S9D_SW_top      | 22         | T_SIM2_2   |    1 |          0 |          0 | S9D_SW_top                 |       55 |    1 |        60 |       2
+ 143 | S9D_SW_bot      | 22         | T_SIM2_2   |    1 |          1 |          1 | S9D_SW_bot                 |       55 |    1 |        60 |       2
+ 144 | SIM1_SW_top_ext | 22         | T_SIM2_2   |    1 |          2 |          2 | SIM1_SW_top_ext            |       55 |    1 |        60 |       2
+ 145 | SIM1_SW_bot_ext | 22         | T_SIM2_2   |    1 |          3 |          3 | SIM1_SW_bot_ext            |       55 |    1 |        60 |       2
+ 146 | SIM1_SW-cor     | 22         | T_SIM2_2   |    1 |          4 |          4 | SIM1_SW-cor                |       55 |    1 |        60 |       2
+ 147 | SIM2_SW_top     | 22         | T_SIM2_2   |    1 |          5 |          5 | SIM2_SW_top                |       55 |    1 |        60 |       2
+ 148 | SIM2_SW_bot     | 22         | T_SIM2_2   |    1 |          6 |          6 | SIM2_SW_bot                |       55 |    1 |        60 |       2
+ 149 | SIL1_SW_top_ext | 22         | T_SIM2_2   |    2 |          0 |          8 | SIL1_SW_top_ext            |       55 |    1 |        60 |       2
+ 150 | SIL1_SW_top_int | 22         | T_SIM2_2   |    2 |          1 |          9 | SIL1_SW_top_int            |       55 |    1 |        60 |       2
+ 151 | SIL1_SW_bot_ext | 22         | T_SIM2_2   |    2 |          2 |         10 | SIL1_SW_bot_bot            |       55 |    1 |        60 |       2
+ 152 | SIL1_SW_bot_int | 22         | T_SIM2_2   |    2 |          3 |         11 | SIL1_SW_bot_int            |       55 |    1 |        60 |       2
+ 153 | SIL2_SW_top_ext | 22         | T_SIM2_2   |    2 |          4 |         12 | SIL1_SW_top_ext            |       55 |    1 |        60 |       2
+ 154 | SIL2_SW_top_int | 22         | T_SIM2_2   |    2 |          5 |         13 | SIL1_SW_top_int            |       55 |    1 |        60 |       2
+ 155 | SIL2_SW_bot_ext | 22         | T_SIM2_2   |    2 |          6 |         14 | SIL1_SW_bot_ext            |       55 |    1 |        60 |       2
+ 156 | SIL2_SW_bot_int | 22         | T_SIM2_2   |    2 |          7 |         15 | SIL1_SW_bot_int            |       55 |    1 |        60 |       2
+ 157 | SIL3_SW_top_ext | 22         | T_SIM2_2   |    3 |          0 |         16 | SIL3_SW_top_ext            |       55 |    1 |        60 |       2
+ 158 | SIL3_SW_top_int | 22         | T_SIM2_2   |    3 |          1 |         17 | SIL3_SW_top_int            |       55 |    1 |        60 |       2
+ 159 | SIL3_SW_bot_ext | 22         | T_SIM2_2   |    3 |          2 |         18 | SIL3_SW_bot_ext            |       55 |    1 |        60 |       2
+ 160 | SIL3_SW_bot_int | 22         | T_SIM2_2   |    3 |          3 |         19 | SIL3_SW_bot_int            |       55 |    1 |        60 |       2
+ 161 | SIL4_SW_top_ext | 22         | T_SIM2_2   |    3 |          0 |         16 | SIL4_SW_top_ext            |       55 |    1 |        60 |       2
+ 162 | SIL4_SW_top_int | 22         | T_SIM2_2   |    3 |          1 |         17 | SIL4_SW_top_int            |       55 |    1 |        60 |       2
+ 163 | SIL4_SW_bot_ext | 22         | T_SIM2_2   |    3 |          2 |         18 | SIL4_SW_bot_ext            |       55 |    1 |        60 |       2
+ 164 | SIL4_SW_bot_int | 22         | T_SIM2_2   |    3 |          3 |         19 | SIL4_SW_bot_int            |       55 |    1 |        60 |       2
+ 165 | SIM3_SW_top     | 22         | T_SIM2_2   |    4 |          0 |         24 | SIM3_SW_top                |       55 |    1 |        60 |       2
+ 166 | SIM3_SW_bot     | 22         | T_SIM2_2   |    4 |          1 |         25 | SIM3_SW_bot                |       55 |    1 |        60 |       2
+ 167 | SIM4_SW_top_ext | 22         | T_SIM2_2   |    4 |          2 |         26 | SIM4_SW_top_ext            |       55 |    1 |        60 |       2
+ 168 | SIM4_SW_bot_ext | 22         | T_SIM2_2   |    4 |          3 |         27 | SIM4_SW_bot_ext            |       55 |    1 |        60 |       2
+ 169 | SIM4_SW-cor     | 22         | T_SIM2_2   |    4 |          4 |         28 | SIM4_SW-cor                |       55 |    1 |        60 |       2
+ 170 | SIL1_SW_shunt   | 21         | T_NIM2_2   |    4 |          5 |         29 | SIL1_SW_shunt              |       55 |    1 |        60 |       2
+ 171 | SIL2_SW_shunt   | 21         | T_NIM2_2   |    4 |          6 |         30 | SIL2_SW_shunt              |       55 |    1 |        60 |       2
+ 172 | SIL4_SW_shunt   | 21         | T_NIM2_2   |    4 |          7 |         31 | SIL4_SW_shunt              |       55 |    1 |        60 |       2
+ 173 | S10F_SW_top     | 07         | T_SIM2     |    4 |          1 |         25 | S10F_SW_top                |       55 |    1 |        60 |       2
+ 174 | S10F_SW_bot     | 07         | T_SIM2     |    4 |          2 |         26 | S10F_SW_bot                |       55 |    1 |        60 |       2
+ 175 | S5F_SW_top_ext  | 02         | T_S5F      |    4 |          0 |         24 | S14F_SW_top_ext            |       55 |    1 |        60 |       2
+ 176 | S5F_SW_top_int  | 02         | T_S5F      |    4 |          1 |         25 | S14F_SW_top_int            |       55 |    1 |        60 |       2
+ 177 | S5F_SW_bot_ext  | 02         | T_S5F      |    4 |          2 |         26 | S14F_SW_bot_ext            |       55 |    1 |        60 |       2
+ 178 | S5F_SW_bot_int  | 02         | T_S5F      |    4 |          3 |         27 | S14F_SW_bot_int            |       55 |    1 |        60 |       2
+ 179 | S1F_SW_top      | 19         | T_S2F      |    3 |          0 |         16 | S1F_SW_top                 |       55 |    1 |        60 |       2
+ 180 | S1F_SW_bot      | 19         | T_S2F      |    3 |          1 |         17 | S1F_SW_bot                 |       55 |    1 |        60 |       2
+ 181 | STL1_SW_top_ext | 23         | T_RF4_2    |    1 |          0 |          0 | STL1_SW_top_ext            |       55 |    1 |        60 |       2
+ 182 | STL1_SW_top_int | 23         | T_RF4_2    |    1 |          1 |          1 | STL1_SW_top_int            |       55 |    1 |        60 |       2
+ 183 | STL1_SW_bot_ext | 23         | T_RF4_2    |    1 |          2 |          2 | STL1_SW_bot_ext            |       55 |    1 |        60 |       2
+ 184 | STL1_SW_bot_int | 23         | T_RF4_2    |    1 |          3 |          3 | STL1_SW_bot_int            |       55 |    1 |        60 |       2
+ 185 | STL2_SW_top_ext | 23         | T_RF4_2    |    1 |          4 |          4 | STL2_SW_top_ext            |       55 |    1 |        60 |       2
+ 186 | STL2_SW_top_int | 23         | T_RF4_2    |    1 |          5 |          5 | STL2_SW_top_int            |       55 |    1 |        60 |       2
+ 187 | STL2_SW_bot_ext | 23         | T_RF4_2    |    1 |          6 |          6 | STL2_SW_bot_ext            |       55 |    1 |        60 |       2
+ 188 | STL2_SW_bot_int | 23         | T_RF4_2    |    1 |          7 |          7 | STL2_SW_bot_int            |       55 |    1 |        60 |       2
+ 189 | STL3_SW_top_ext | 23         | T_RF4_2    |    2 |          0 |          8 | STL3_SW_top_ext            |       55 |    1 |        60 |       2
+ 190 | STL3_SW_top_int | 23         | T_RF4_2    |    2 |          1 |          9 | STL3_SW_top_int            |       55 |    1 |        60 |       2
+ 191 | STL3_SW_bot_ext | 23         | T_RF4_2    |    2 |          2 |         10 | STL3_SW_bot_ext            |       55 |    1 |        60 |       2
+ 192 | STL3_SW_bot_int | 23         | T_RF4_2    |    2 |          3 |         11 | STL3_SW_bot_int            |       55 |    1 |        60 |       2
+ 193 | STL4_SW_top_ext | 23         | T_RF4_2    |    2 |          4 |         12 | STL4_SW_top_ext            |       55 |    1 |        60 |       2
+ 194 | STL4_SW_top_int | 23         | T_RF4_2    |    2 |          5 |         13 | STL4_SW_top_int            |       55 |    1 |        60 |       2
+ 195 | STL4_SW_bot_ext | 23         | T_RF4_2    |    2 |          6 |         14 | STL4_SW_bot_ext            |       55 |    1 |        60 |       2
+ 196 | STL4_SW_bot_int | 23         | T_RF4_2    |    2 |          7 |         15 | STL4_SW_bot_int            |       55 |    1 |        60 |       2
+ 197 | STW_SW_top_1    | 23         | T_RF4_2    |    3 |          0 |         16 | STW_SW_top_1               |       55 |    1 |        60 |       2
+ 198 | STW_SW_top_2    | 23         | T_RF4_2    |    3 |          1 |         17 | STW_SW_top_2               |       55 |    1 |        60 |       2
+ 199 | STW_SW_top_3    | 23         | T_RF4_2    |    3 |          2 |         18 | STW_SW_top_3               |       55 |    1 |        60 |       2
+ 200 | STW_SW_top_4    | 23         | T_RF4_2    |    3 |          3 |         19 | STW_SW_top_4               |       55 |    1 |        60 |       2
+ 201 | STW_SW_top_5    | 23         | T_RF4_2    |    3 |          4 |         20 | STW_SW_top_5               |       55 |    1 |        60 |       2
+ 202 | STW_SW_bot_1    | 23         | T_RF4_2    |    4 |          0 |         24 | STW_SW_bot_1               |       55 |    1 |        60 |       2
+ 203 | STW_SW_bot_2    | 23         | T_RF4_2    |    4 |          1 |         25 | STW_SW_bot_2               |       55 |    1 |        60 |       2
+ 204 | STW_SW_bot_3    | 23         | T_RF4_2    |    4 |          2 |         26 | STW_SW_bot_3               |       55 |    1 |        60 |       2
+ 205 | STW_SW_bot_4    | 23         | T_RF4_2    |    4 |          3 |         27 | STW_SW_bot_4               |       55 |    1 |        60 |       2
+ 206 | STW_SW_bot_5    | 23         | T_RF4_2    |    4 |          4 |         28 | STW_SW_bot_5               |       55 |    1 |        60 |       2
+ 244 | v4Tin           | 04         | T_Dist1    |    1 |          3 |          3 | VEPP4 Tech in              |          |      |           |
+ 245 | v4Tout          | 04         | T_Dist1    |    2 |          7 |         15 | VEPP4 Tech out             |          |      |           |
+ 246 | v4Dout          | 04         | T_Dist1    |    2 |          5 |         13 | VEPP4 Dist out             |          |      |           |
+ 247 | v4Din           | 04         | T_Dist1    |    2 |          6 |         14 | VEPP4 Dist in              |          |      |           |
+ 248 | v3Din           | 04         | T_Dist1    |    3 |          1 |         17 | VEPP3 Dist in              |          |      |           |
+ 249 | Tin             | 04         | T_Dist1    |    4 |          1 |         25 | Total Tech in              |          |      |           |
+ 250 | NTL3top         | 08         | T_RF3      |    1 |          0 |          0 | TL3 top iron               |          |      |           |
+ 251 | NTL3bot         | 08         | T_RF3      |    1 |          1 |          1 | TL3 bottom iron            |          |      |           |
+ 252 | NTL4top         | 08         | T_RF3      |    1 |          2 |          2 | TL4 top iron               |          |      |           |
+ 253 | NTL4bot         | 08         | T_RF3      |    1 |          3 |          3 | TL4 bottom iron            |          |      |           |
+ 254 | NTWtop          | 08         | T_RF3      |    1 |          4 |          4 | TLW top iron               |          |      |           |
+ 255 | NTWbot          | 08         | T_RF3      |    1 |          5 |          5 | TLW bottom iron            |          |      |           |
+ 256 | RF3in           | 08         | T_RF3      |    2 |          7 |         15 | Res3 Dist in               |          |      |           |
+ 257 | RF3out          | 08         | T_RF3      |    2 |          6 |         14 | Res3 Dist out              |          |      |           |
+ 258 | RF3air          | 08         | T_RF3      |    2 |          4 |         12 | Res3 air                   |          |      |           |
+ 259 | RF3Nin          | 08         | T_RF3      |    2 |          2 |         10 | NRing in                   |          |      |           |
+ 260 | RF3Sin          | 08         | T_RF3      |    2 |          1 |          9 | Res3 SRing in              |          |      |           |
+ 261 | RF3totalout     | 08         | T_RF3      |    2 |          5 |         13 | Res3 Total Dist out        |          |      |           |
+ 262 | M10             | 08         | T_RF3      |    3 |          0 |         16 | M10 iron                   |          |      |           |
+ 263 | M9              | 08         | T_RF3      |    3 |          1 |         17 | M9 iron                    |          |      |           |
+ 264 | NTL2top         | 08         | T_RF3      |    3 |          2 |         18 | NTL2 top iron              |          |      |           |
+ 265 | NTL2bot         | 08         | T_RF3      |    3 |          3 |         19 | NTL2 bottom iron           |          |      |           |
+ 266 | NTL1top         | 08         | T_RF3      |    3 |          4 |         20 | NTL1 top iron              |          |      |           |
+ 267 | NTL1bot         | 08         | T_RF3      |    3 |          7 |         23 | NTL1 bottom iron           |          |      |           |
+ 268 | M8              | 08         | T_RF3      |    3 |          6 |         22 | M8 iron                    |          |      |           |
+ 269 | IST_Hair        | 08         | T_RF3      |    3 |          5 |         21 | air inside IST H1          |          |      |           |
+ 270 | RF2in           | 08         | T_RF3      |    4 |          3 |         27 | Res2 Dist in               |          |      |           |
+ 271 | RF2out          | 08         | T_RF3      |    4 |          2 |         26 | Res2 Dist out              |          |      |           |
+ 272 | ShuntH          | 08         | T_RF3      |    4 |          5 |         29 | Shunt H                    |          |      |           |
+ 273 | N1Ftop          | 09         | T_N2F      |    1 |          4 |          4 | N1F top iron               |          |      |           |
+ 274 | N1Fbot          | 09         | T_N2F      |    1 |          5 |          5 | N1F bottom iron            |          |      |           |
+ 275 | N1Dtop          | 09         | T_N2F      |    1 |          2 |          2 | N1D top iron               |          |      |           |
+ 276 | N1Dbot          | 09         | T_N2F      |    1 |          3 |          3 | N1D bottom iron            |          |      |           |
+ 277 | N2Fair          | 09         | T_N2F      |    1 |          0 |          0 | N2F air                    |          |      |           |
+ 278 | N2Ftop          | 09         | T_N2F      |    2 |          0 |          8 | N2F top iron               |          |      |           |
+ 279 | N2Fbot          | 09         | T_N2F      |    2 |          1 |          9 | N2F bottom iron            |          |      |           |
+ 280 | N2Dtop          | 09         | T_N2F      |    2 |          2 |         10 | N2D top iron               |          |      |           |
+ 281 | N2Dbot          | 09         | T_N2F      |    2 |          3 |         11 | N2D bottom iron            |          |      |           |
+ 282 | N3Ftop          | 09         | T_N2F      |    2 |          4 |         12 | N3F top iron               |          |      |           |
+ 283 | N3Fbot          | 09         | T_N2F      |    2 |          5 |         13 | N3F bottom iron            |          |      |           |
+ 284 | N3Dtop          | 09         | T_N2F      |    2 |          6 |         14 | N3D top iron               |          |      |           |
+ 285 | N3Dbot          | 09         | T_N2F      |    2 |          7 |         15 | N3D bottom iron            |          |      |           |
+ 286 | N4Ftop          | 10         | T_N5F      |    1 |          6 |          6 | N4F top iron               |          |      |           |
+ 287 | N4Fbot          | 10         | T_N5F      |    1 |          5 |          5 | N4F bottom iron            |          |      |           |
+ 288 | N4Dtop          | 10         | T_N5F      |    1 |          4 |          4 | N4D top iron               |          |      |           |
+ 289 | N4Dbot          | 10         | T_N5F      |    1 |          3 |          3 | N4D bottom iron            |          |      |           |
+ 290 | N5FIW           | 10         | T_N5F      |    1 |          2 |          2 | N5F Internal Wall          |          |      |           |
+ 291 | N5FEW           | 10         | T_N5F      |    1 |          1 |          1 | N5F External Wall          |          |      |           |
+ 292 | N5Fair          | 10         | T_N5F      |    1 |          0 |          0 | N5F air                    |          |      |           |
+ 293 | N5Ftop          | 10         | T_N5F      |    2 |          0 |          8 | N5F top iron               |          |      |           |
+ 294 | N5Fbot          | 10         | T_N5F      |    2 |          1 |          9 | N5F bottom iron            |          |      |           |
+ 295 | N5Dtop          | 10         | T_N5F      |    2 |          2 |         10 | N5D top iron               |          |      |           |
+ 296 | N5Dbot          | 10         | T_N5F      |    2 |          3 |         11 | N5D bottom iron            |          |      |           |
+ 297 | N6Ftop          | 10         | T_N5F      |    2 |          4 |         12 | N6F top iron               |          |      |           |
+ 298 | N6Fbot          | 10         | T_N5F      |    2 |          5 |         13 | N6F bottom iron            |          |      |           |
+ 299 | N6Dtop          | 10         | T_N5F      |    2 |          6 |         14 | N6D top iron               |          |      |           |
+ 300 | N6Dbot          | 10         | T_N5F      |    2 |          7 |         15 | N6D bottom iron            |          |      |           |
+ 301 | N7Ftop          | 11         | T_N8F      |    1 |          6 |          6 | N7F top iron               |          |      |           |
+ 302 | N7Fbot          | 11         | T_N8F      |    1 |          7 |          7 | N7F bottom iron            |          |      |           |
+ 303 | N7Dtop          | 11         | T_N8F      |    1 |          4 |          4 | N7D top iron               |          |      |           |
+ 304 | N7Dbot          | 11         | T_N8F      |    1 |          5 |          5 | N7D bottom iron            |          |      |           |
+ 305 | N8Fair          | 11         | T_N8F      |    1 |          0 |          0 | N8F air                    |          |      |           |
+ 306 | N8Ftop          | 11         | T_N8F      |    1 |          2 |          2 | N8F top iron               |          |      |           |
+ 307 | N8Fbot          | 11         | T_N8F      |    1 |          3 |          3 | N8F bottom iron            |          |      |           |
+ 308 | N8Dtop          | 11         | T_N8F      |    2 |          4 |         12 | N8D top iron               |          |      |           |
+ 309 | N8Dbot          | 11         | T_N8F      |    2 |          5 |         13 | N8D bottom iron            |          |      |           |
+ 310 | N9Ftop          | 11         | T_N8F      |    2 |          6 |         14 | N9F top iron               |          |      |           |
+ 311 | N9Fbot          | 11         | T_N8F      |    2 |          7 |         15 | N9F bottom iron            |          |      |           |
+ 312 | N9Dair          | 12         | T_NIM2     |    1 |          0 |          0 | N9D air                    |          |      |           |
+ 313 | N9Dtop          | 12         | T_NIM2     |    1 |          6 |          6 | N9D top iron               |          |      |           |
+ 314 | N9Dbot          | 12         | T_NIM2     |    1 |          7 |          7 | N9D bottom iron            |          |      |           |
+ 315 | NIM1top         | 12         | T_NIM2     |    1 |          4 |          4 | NIM1 top iron              |          |      |           |
+ 316 | NIM1bot         | 12         | T_NIM2     |    1 |          5 |          5 | NIM1 bottom iron           |          |      |           |
+ 317 | NIL1top         | 12         | T_NIM2     |    1 |          2 |          2 | NIL1 top iron              |          |      |           |
+ 318 | NIL1bot         | 12         | T_NIM2     |    1 |          3 |          3 | NIL1 bottom iron           |          |      |           |
+ 319 | NIM2IW          | 12         | T_NIM2     |    2 |          0 |          8 | NIM2 Internal Wall         |          |      |           |
+ 320 | NIM2EW          | 12         | T_NIM2     |    2 |          1 |          9 | NIM2 External Wall         |          |      |           |
+ 321 | NIM2top         | 12         | T_NIM2     |    2 |          2 |         10 | NIM2 top iron              |          |      |           |
+ 322 | NIM2bot         | 12         | T_NIM2     |    2 |          3 |         11 | NIM2 bottom iron           |          |      |           |
+ 323 | NIL2top         | 12         | T_NIM2     |    2 |          4 |         12 | NIL2 top iron              |          |      |           |
+ 324 | NIL2bot         | 12         | T_NIM2     |    2 |          5 |         13 | NIL2 bottom iron           |          |      |           |
+ 325 | NIM3top         | 12         | T_NIM2     |    2 |          6 |         14 | NIM3 top iron              |          |      |           |
+ 326 | NIM3bot         | 12         | T_NIM2     |    2 |          7 |         15 | NIM3 bottom iron           |          |      |           |
+ 327 | NIL3top         | 12         | T_NIM2     |    3 |          0 |         16 | NIL3 top iron              |          |      |           |
+ 328 | NIL3bot         | 12         | T_NIM2     |    3 |          1 |         17 | NIL3 bottom iron           |          |      |           |
+ 329 | NIM4top         | 12         | T_NIM2     |    3 |          2 |         18 | NIM4 top iron              |          |      |           |
+ 330 | NIM4bot         | 12         | T_NIM2     |    3 |          3 |         19 | NIM4 bottom iron           |          |      |           |
+ 331 | NIL4top         | 12         | T_NIM2     |    3 |          4 |         20 | NIL4 top iron              |          |      |           |
+ 332 | NIL4bot         | 12         | T_NIM2     |    3 |          5 |         21 | NIL4 bottom iron           |          |      |           |
+ 333 | N10Ftop         | 12         | T_NIM2     |    3 |          6 |         22 | N10F top iron              |          |      |           |
+ 334 | N10Fbot         | 12         | T_NIM2     |    3 |          7 |         23 | N10F bottom iron           |          |      |           |
+ 335 | N10Dtop         | 13         | T_N12F     |    1 |          6 |          6 | N10D top iron              |          |      |           |
+ 336 | N10Dbot         | 13         | T_N12F     |    1 |          7 |          7 | N10D bottom iron           |          |      |           |
+ 337 | N11Ftop         | 13         | T_N12F     |    1 |          4 |          4 | N11F top iron              |          |      |           |
+ 338 | N11Fbot         | 13         | T_N12F     |    1 |          5 |          5 | N11F bottom iron           |          |      |           |
+ 339 | N11Dtop         | 13         | T_N12F     |    1 |          2 |          2 | N11D top iron              |          |      |           |
+ 340 | N11Dbot         | 13         | T_N12F     |    1 |          3 |          3 | N11D bottom iron           |          |      |           |
+ 341 | N12Ftop         | 13         | T_N12F     |    1 |          0 |          0 | N12F top iron              |          |      |           |
+ 342 | N12Fbot         | 13         | T_N12F     |    1 |          1 |          1 | N12F bottom iron           |          |      |           |
+ 343 | N12Fair         | 13         | T_N12F     |    2 |          0 |          8 | N12F air                   |          |      |           |
+ 344 | N12Dtop         | 13         | T_N12F     |    2 |          2 |         10 | N12D top iron              |          |      |           |
+ 345 | N12Dbot         | 13         | T_N12F     |    2 |          3 |         11 | N12D bottom iron           |          |      |           |
+ 346 | N13Ftop         | 14         | T_N14F     |    1 |          6 |          6 | N13F top iron              |          |      |           |
+ 347 | N13Fbot         | 14         | T_N14F     |    1 |          7 |          7 | N13F bottom iron           |          |      |           |
+ 348 | N13Dtop         | 14         | T_N14F     |    1 |          4 |          4 | N13D top iron              |          |      |           |
+ 349 | N13Dbot         | 14         | T_N14F     |    1 |          5 |          5 | N13D bottom iron           |          |      |           |
+ 350 | N14Ftop         | 14         | T_N14F     |    1 |          2 |          2 | N14F top iron              |          |      |           |
+ 351 | N14Fbot         | 14         | T_N14F     |    1 |          3 |          3 | N14F bottom iron           |          |      |           |
+ 352 | N14Fair         | 14         | T_N14F     |    1 |          0 |          0 | N14F air                   |          |      |           |
+ 353 | N14FIW          | 14         | T_N14F     |    2 |          0 |          8 | N14F Internal Wall         |          |      |           |
+ 354 | N14FEW          | 14         | T_N14F     |    2 |          1 |          9 | N14F External Wall         |          |      |           |
+ 355 | N14Dtop         | 14         | T_N14F     |    2 |          2 |         10 | N14D top iron              |          |      |           |
+ 356 | N14Dbot         | 14         | T_N14F     |    2 |          3 |         11 | N14D bottom iron           |          |      |           |
+ 357 | N15Ftop         | 14         | T_N14F     |    2 |          4 |         12 | N15F top iron              |          |      |           |
+ 358 | N15Fbot         | 14         | T_N14F     |    2 |          5 |         13 | N15F bottom iron           |          |      |           |
+ 359 | N15Dtop         | 14         | T_N14F     |    2 |          6 |         14 | N15D top iron              |          |      |           |
+ 360 | N15Dbot         | 14         | T_N14F     |    2 |          7 |         15 | N15D bottom iron           |          |      |           |
+ 361 | N16Ftop         | 15         | T_N17F     |    1 |          6 |          6 | N16F top iron              |          |      |           |
+ 362 | N16Fbot         | 15         | T_N17F     |    1 |          7 |          7 | N16F bottom iron           |          |      |           |
+ 363 | N16Dtop         | 15         | T_N17F     |    1 |          4 |          4 | N16D top iron              |          |      |           |
+ 364 | N16Dbot         | 15         | T_N17F     |    1 |          5 |          5 | N16D bottom iron           |          |      |           |
+ 365 | N17Ftop         | 15         | T_N17F     |    1 |          2 |          2 | N17F top iron              |          |      |           |
+ 366 | N17Fbot         | 15         | T_N17F     |    1 |          3 |          3 | N17F bottom iron           |          |      |           |
+ 367 | N17Fair         | 15         | T_N17F     |    1 |          0 |          0 | N17F air                   |          |      |           |
+ 368 | NEL5top         | 15         | T_N17F     |    2 |          4 |         12 | NEL5 top iron              |          |      |           |
+ 369 | NEL5bot         | 15         | T_N17F     |    2 |          5 |         13 | NEL5 bottom iron           |          |      |           |
+ 370 | NEM3top         | 16         | T_NEM2     |    1 |          2 |          2 | NEM3 top iron              |          |      |           |
+ 371 | NEM3bot         | 16         | T_NEM2     |    1 |          1 |          1 | NEM3 bottom iron           |          |      |           |
+ 372 | NEZMbot         | 16         | T_NEM2     |    1 |          3 |          3 | NEZM bottom iron           |          |      |           |
+ 373 | NEL4top         | 16         | T_NEM2     |    1 |          4 |          4 | NEL4 top iron              |          |      |           |
+ 374 | NEL4bot         | 16         | T_NEM2     |    1 |          5 |          5 | NEL4 bottom iron           |          |      |           |
+ 375 | NEL3top         | 16         | T_NEM2     |    1 |          6 |          6 | NEL3 top iron              |          |      |           |
+ 376 | NEL3bot         | 16         | T_NEM2     |    1 |          7 |          7 | NEL3 bottom iron           |          |      |           |
+ 377 | NEM2air         | 16         | T_NEM2     |    1 |          0 |          0 | NEM2 air                   |          |      |           |
+ 378 | NEM2top         | 16         | T_NEM2     |    2 |          0 |          8 | NEM2 top iron              |          |      |           |
+ 379 | NEM2bot         | 16         | T_NEM2     |    2 |          1 |          9 | NEM2 bottom iron           |          |      |           |
+ 380 | NEM1top         | 16         | T_NEM2     |    2 |          2 |         10 | NEM1 top iron              |          |      |           |
+ 381 | NEM1bot         | 16         | T_NEM2     |    2 |          3 |         11 | NEM1 bottom iron           |          |      |           |
+ 382 | NEL2top         | 16         | T_NEM2     |    2 |          4 |         12 | NEL2 top iron              |          |      |           |
+ 383 | NEL2bot         | 16         | T_NEM2     |    2 |          5 |         13 | NEL2 bottom iron           |          |      |           |
+ 384 | NEL1top         | 16         | T_NEM2     |    2 |          6 |         14 | NEL1 top iron              |          |      |           |
+ 385 | NEL1bot         | 16         | T_NEM2     |    2 |          7 |         15 | NEL1 bottom iron           |          |      |           |
+ 386 | SEL1top         | 17         | T_SEM2     |    2 |          6 |         14 | SEL1 top iron              |          |      |           |
+ 387 | SEL1bot         | 17         | T_SEM2     |    2 |          7 |         15 | SEL1 bottom iron           |          |      |           |
+ 388 | SEL2top         | 17         | T_SEM2     |    2 |          4 |         12 | SEL2 top iron              |          |      |           |
+ 389 | SEL2bot         | 17         | T_SEM2     |    2 |          5 |         13 | SEL2 bottom iron           |          |      |           |
+ 390 | SEM1top         | 17         | T_SEM2     |    2 |          2 |         10 | SEM1 top iron              |          |      |           |
+ 391 | SEM1bot         | 17         | T_SEM2     |    2 |          3 |         11 | SEM1 bottom iron           |          |      |           |
+ 392 | SEM2top         | 17         | T_SEM2     |    2 |          0 |          8 | SEM2 top iron              |          |      |           |
+ 393 | SEM2bot         | 17         | T_SEM2     |    2 |          1 |          9 | SEM2 bottom iron           |          |      |           |
+ 394 | SEM2air         | 17         | T_SEM2     |    1 |          0 |          0 | SEM2 air                   |          |      |           |
+ 395 | SEL3top         | 17         | T_SEM2     |    1 |          6 |          6 | SEL3 top iron              |          |      |           |
+ 396 | SEL3bot         | 17         | T_SEM2     |    1 |          7 |          7 | SEL3 bottom iron           |          |      |           |
+ 397 | SEL4top         | 17         | T_SEM2     |    1 |          4 |          4 | SEL4 top iron              |          |      |           |
+ 398 | SEL4bot         | 17         | T_SEM2     |    1 |          5 |          5 | SEL4 bottom iron           |          |      |           |
+ 399 | SEZMbot         | 17         | T_SEM2     |    1 |          3 |          3 | SEZM bottom iron           |          |      |           |
+ 400 | SEM3top         | 17         | T_SEM2     |    1 |          2 |          2 | SEM3 top iron              |          |      |           |
+ 401 | SEM3bot         | 17         | T_SEM2     |    1 |          1 |          1 | SEM3 bottom iron           |          |      |           |
+ 402 | SEL5top         | 18         | T_S17F     |    2 |          4 |         12 | SEL5 top iron              |          |      |           |
+ 403 | SEL5bot         | 18         | T_S17F     |    2 |          5 |         13 | SEL5 bottom iron           |          |      |           |
+ 404 | S17Fair         | 18         | T_S17F     |    1 |          0 |          0 | S17F air                   |          |      |           |
+ 405 | S17Ftop         | 18         | T_S17F     |    1 |          2 |          2 | S17F top iron              |          |      |           |
+ 406 | S17Fbot         | 18         | T_S17F     |    1 |          3 |          3 | S17F bottom iron           |          |      |           |
+ 407 | S16Dtop         | 18         | T_S17F     |    1 |          4 |          4 | S16D top iron              |          |      |           |
+ 408 | S16Dbot         | 18         | T_S17F     |    1 |          5 |          5 | power bus DS1 (S16Dbot)    |          |      |           |
+ 409 | S16Ftop         | 18         | T_S17F     |    1 |          6 |          6 | S16F top iron              |          |      |           |
+ 410 | S16Fbot         | 18         | T_S17F     |    1 |          7 |          7 | S16F bottom iron           |          |      |           |
+ 411 | S15Dtop         | 05         | T_S14F     |    2 |          6 |         14 | S15D top iron              |          |      |           |
+ 412 | S15Dbot         | 05         | T_S14F     |    2 |          7 |         15 | S15D bottom iron           |          |      |           |
+ 413 | S15Ftop         | 05         | T_S14F     |    2 |          4 |         12 | S15F top iron              |          |      |           |
+ 414 | S15Fbot         | 05         | T_S14F     |    2 |          5 |         13 | S15F bottom iron           |          |      |           |
+ 415 | S14Dtop         | 05         | T_S14F     |    2 |          2 |         10 | S14D top iron              |          |      |           |
+ 416 | S14Dbot         | 05         | T_S14F     |    2 |          3 |         11 | S14D bottom iron           |          |      |           |
+ 417 | S14FIW          | 05         | T_S14F     |    2 |          0 |          8 | S14F Internal Wall         |          |      |           |
+ 418 | S14FEW          | 05         | T_S14F     |    2 |          1 |          9 | S14F External Wall         |          |      |           |
+ 419 | S14Fair         | 05         | T_S14F     |    1 |          0 |          0 | S14F air                   |          |      |           |
+ 420 | S14Ftop         | 05         | T_S14F     |    1 |          2 |          2 | S14F top iron              |          |      |           |
+ 421 | S14Fbot         | 05         | T_S14F     |    1 |          3 |          3 | S14F bottom iron           |          |      |           |
+ 422 | S13Dtop         | 05         | T_S14F     |    1 |          4 |          4 | S13D top iron              |          |      |           |
+ 423 | S13Dbot         | 05         | T_S14F     |    1 |          5 |          5 | S13D bottom iron           |          |      |           |
+ 424 | S13Ftop         | 05         | T_S14F     |    1 |          6 |          6 | S13F top iron              |          |      |           |
+ 425 | S13Fbot         | 05         | T_S14F     |    1 |          7 |          7 | S13F bottom iron           |          |      |           |
+ 426 | CMint           | 05         | T_S14F     |    3 |          0 |         16 | CM iron Internal           |          |      |           |
+ 427 | CMtop           | 05         | T_S14F     |    3 |          2 |         18 | CM top iron                |          |      |           |
+ 428 | CMbot           | 05         | T_S14F     |    3 |          3 |         19 | CM bottom iron             |          |      |           |
+ 429 | S12Fair         | 06         | T_S12F     |    2 |          0 |          8 | S12F air                   |          |      |           |
+ 430 | S12Dtop         | 06         | T_S12F     |    2 |          2 |         10 | S12D top iron              |          |      |           |
+ 431 | S12Dbot         | 06         | T_S12F     |    2 |          3 |         11 | S12D bottom iron           |          |      |           |
+ 432 | S12Ftop         | 06         | T_S12F     |    1 |          0 |          0 | S12F top iron              |          |      |           |
+ 433 | S12Fbot         | 06         | T_S12F     |    1 |          1 |          1 | S12F bottom iron           |          |      |           |
+ 434 | S11Dtop         | 06         | T_S12F     |    1 |          2 |          2 | S11D top iron              |          |      |           |
+ 435 | S11Dbot         | 06         | T_S12F     |    1 |          3 |          3 | S11D bottom iron           |          |      |           |
+ 436 | S11Ftop         | 06         | T_S12F     |    1 |          4 |          4 | S11F top iron              |          |      |           |
+ 437 | S11Fbot         | 06         | T_S12F     |    1 |          5 |          5 | S11F bottom iron           |          |      |           |
+ 438 | S10Dtop         | 06         | T_S12F     |    1 |          6 |          6 | S10D top iron              |          |      |           |
+ 439 | S10Dbot         | 06         | T_S12F     |    1 |          7 |          7 | S10D bottom iron           |          |      |           |
+ 440 | SIL1top         | 07         | T_SIM2     |    3 |          2 |         18 | SIL1 top iron              |          |      |           |
+ 441 | SIL1bot         | 07         | T_SIM2     |    3 |          3 |         19 | SIL1 bottom iron           |          |      |           |
+ 442 | SIM1top         | 07         | T_SIM2     |    3 |          4 |         20 | SIM1 top iron              |          |      |           |
+ 443 | SIM1bot         | 07         | T_SIM2     |    3 |          5 |         21 | SIM1 bottom iron           |          |      |           |
+ 444 | S9Dtop          | 07         | T_SIM2     |    3 |          6 |         22 | S9D top iron               |          |      |           |
+ 445 | S9Dbot          | 07         | T_SIM2     |    3 |          7 |         23 | S9D bottom iron            |          |      |           |
+ 446 | S9Dair          | 07         | T_SIM2     |    3 |          0 |         16 | S9D air                    |          |      |           |
+ 447 | SIM3top         | 07         | T_SIM2     |    2 |          6 |         14 | SIM3 top iron              |          |      |           |
+ 448 | SIM3bot         | 07         | T_SIM2     |    2 |          7 |         15 | SIM3 bottom iron           |          |      |           |
+ 449 | SIL2top         | 07         | T_SIM2     |    2 |          4 |         12 | SIL2 top iron              |          |      |           |
+ 450 | SIL2bot         | 07         | T_SIM2     |    2 |          5 |         13 | SIL2 bottom iron           |          |      |           |
+ 451 | SIM2top         | 07         | T_SIM2     |    2 |          2 |         10 | SIM2 top iron              |          |      |           |
+ 452 | SIM2bot         | 07         | T_SIM2     |    2 |          3 |         11 | SIM2 bottom iron           |          |      |           |
+ 453 | SIM2IW          | 07         | T_SIM2     |    2 |          0 |          8 | SIM2 Internal Wall         |          |      |           |
+ 454 | SIM2EW          | 07         | T_SIM2     |    2 |          1 |          9 | SIM2 External Wall         |          |      |           |
+ 455 | S10Ftop         | 07         | T_SIM2     |    1 |          6 |          6 | S10F top iron              |          |      |           |
+ 456 | S10Fbot         | 07         | T_SIM2     |    1 |          7 |          7 | S10F bottom iron           |          |      |           |
+ 457 | SIL4top         | 07         | T_SIM2     |    1 |          4 |          4 | SIL4 top iron              |          |      |           |
+ 458 | SIL4bot         | 07         | T_SIM2     |    1 |          5 |          5 | SIL4 bottom iron           |          |      |           |
+ 459 | SIM4top         | 07         | T_SIM2     |    1 |          2 |          2 | SIM4 top iron              |          |      |           |
+ 460 | SIM4bot         | 07         | T_SIM2     |    1 |          3 |          3 | SIM4 bottom iron           |          |      |           |
+ 461 | SIL3top         | 07         | T_SIM2     |    1 |          0 |          0 | SIL3 top iron              |          |      |           |
+ 462 | SIL3bot         | 07         | T_SIM2     |    1 |          1 |          1 | SIL3 bottom iron           |          |      |           |
+ 463 | S9Ftop          | 01         | T_S8F      |    2 |          6 |         14 | S9F top iron               |          |      |           |
+ 464 | S9Fbot          | 01         | T_S8F      |    2 |          7 |         15 | S9F bottom iron            |          |      |           |
+ 465 | S8Dtop          | 01         | T_S8F      |    2 |          4 |         12 | S8D top iron               |          |      |           |
+ 466 | S8Dbot          | 01         | T_S8F      |    2 |          5 |         13 | S8D bottom iron            |          |      |           |
+ 467 | S8Ftop          | 01         | T_S8F      |    2 |          2 |         10 | S8F top iron               |          |      |           |
+ 468 | S8Fbot          | 01         | T_S8F      |    2 |          3 |         11 | S8F bottom iron            |          |      |           |
+ 469 | S8Fair          | 01         | T_S8F      |    1 |          0 |          0 | S8F air                    |          |      |           |
+ 470 | S7Dtop          | 01         | T_S8F      |    1 |          4 |          4 | S7D top iron               |          |      |           |
+ 471 | S7Dbot          | 01         | T_S8F      |    1 |          5 |          5 | S7D bottom iron            |          |      |           |
+ 472 | S7Ftop          | 01         | T_S8F      |    1 |          6 |          6 | S7F top iron               |          |      |           |
+ 473 | S7Fbot          | 01         | T_S8F      |    1 |          7 |          7 | S7F bottom iron            |          |      |           |
+ 474 | S6Dtop          | 02         | T_S5F      |    2 |          6 |         14 | S6D top iron               |          |      |           |
+ 475 | S6Dbot          | 02         | T_S5F      |    2 |          7 |         15 | S6D bottom iron            |          |      |           |
+ 476 | S6Ftop          | 02         | T_S5F      |    2 |          4 |         12 | S6F top iron               |          |      |           |
+ 477 | S6Fbot          | 02         | T_S5F      |    2 |          5 |         13 | S6F bottom iron            |          |      |           |
+ 478 | S5Dtop          | 02         | T_S5F      |    2 |          2 |         10 | S5D top iron               |          |      |           |
+ 479 | S5Dbot          | 02         | T_S5F      |    2 |          3 |         11 | S5D bottom iron            |          |      |           |
+ 480 | S5Ftop          | 02         | T_S5F      |    2 |          0 |          8 | S5F top iron               |          |      |           |
+ 481 | S5Fbot          | 02         | T_S5F      |    2 |          1 |          9 | S5F bottom iron            |          |      |           |
+ 482 | S5Fair          | 02         | T_S5F      |    1 |          0 |          0 | S5F air                    |          |      |           |
+ 483 | S4Dtop          | 02         | T_S5F      |    1 |          2 |          2 | S4D top iron               |          |      |           |
+ 484 | S4Dbot          | 02         | T_S5F      |    1 |          3 |          3 | S4D bottom iron            |          |      |           |
+ 485 | S4Ftop          | 02         | T_S5F      |    1 |          4 |          4 | S4F top iron               |          |      |           |
+ 486 | S4Fbot          | 02         | T_S5F      |    1 |          5 |          5 | S4F bottom iron            |          |      |           |
+ 487 | S5FIW           | 02         | T_S5F      |    3 |          6 |         22 | S5F Internal Wall          |          |      |           |
+ 488 | S5FEW           | 02         | T_S5F      |    3 |          7 |         23 | S5F External Wall          |          |      |           |
+ 489 | S3Dtop          | 19         | T_S2F      |    2 |          6 |         14 | S3D top iron               |          |      |           |
+ 490 | S3Dbot          | 19         | T_S2F      |    2 |          7 |         15 | S3D bottom iron            |          |      |           |
+ 491 | S3Ftop          | 19         | T_S2F      |    2 |          4 |         12 | S3F top iron               |          |      |           |
+ 492 | S3Fbot          | 19         | T_S2F      |    2 |          5 |         13 | S3F bottom iron            |          |      |           |
+ 493 | S2Dtop          | 19         | T_S2F      |    2 |          2 |         10 | S2D top iron               |          |      |           |
+ 494 | S2Dbot          | 19         | T_S2F      |    2 |          3 |         11 | S2D bottom iron            |          |      |           |
+ 495 | S2Ftop          | 19         | T_S2F      |    2 |          0 |          8 | S2F top iron               |          |      |           |
+ 496 | S2Fbot          | 19         | T_S2F      |    2 |          1 |          9 | S2F bottom iron            |          |      |           |
+ 497 | S2Fair          | 19         | T_S2F      |    1 |          0 |          0 | S2F air                    |          |      |           |
+ 498 | S2FIWair        | 19         | T_S2F      |    1 |          6 |          6 | S2F Air near Internal Wall |          |      |           |
+ 499 | S2FEWair        | 19         | T_S2F      |    1 |          7 |          7 | S2F Air near External Wall |          |      |           |
+ 500 | S1Dtop          | 19         | T_S2F      |    1 |          2 |          2 | S1D top iron               |          |      |           |
+ 501 | S1Dbot          | 19         | T_S2F      |    1 |          3 |          3 | S1D bottom iron            |          |      |           |
+ 502 | S1Ftop          | 19         | T_S2F      |    1 |          4 |          4 | S1F top iron               |          |      |           |
+ 503 | S1Fbot          | 19         | T_S2F      |    1 |          5 |          5 | S1F bottom iron            |          |      |           |
+ 504 | STWtop          | 03         | T_RF4      |    1 |          0 |          0 | STW top iron               |          |      |           |
+ 505 | STWbot          | 03         | T_RF4      |    1 |          1 |          1 | STW bottom iron            |          |      |           |
+ 506 | STL4top         | 03         | T_RF4      |    1 |          2 |          2 | STL4 top iron              |          |      |           |
+ 507 | STL4bot         | 03         | T_RF4      |    1 |          3 |          3 | STL4 bottom iron           |          |      |           |
+ 508 | STL3top         | 03         | T_RF4      |    1 |          4 |          4 | STL3 top iron              |          |      |           |
+ 509 | STL3bot         | 03         | T_RF4      |    1 |          5 |          5 | STL3 bottom iron           |          |      |           |
+ 510 | RF6in           | 03         | T_RF4      |    2 |          5 |         13 | Res6 Dist in               |          |      |           |
+ 511 | RF6out          | 03         | T_RF4      |    2 |          6 |         14 | Res6 Dist out              |          |      |           |
+ 512 | RF5in           | 03         | T_RF4      |    2 |          3 |         11 | Res5 Dist in               |          |      |           |
+ 513 | RF5out          | 03         | T_RF4      |    2 |          4 |         12 | Res5 Dist out              |          |      |           |
+ 514 | RF4in           | 03         | T_RF4      |    4 |          1 |         25 | Res4 Dist in               |          |      |           |
+ 515 | RF4out          | 03         | T_RF4      |    4 |          0 |         24 | Res4 Dist out              |          |      |           |
+ 516 | M14             | 03         | T_RF4      |    3 |          0 |         16 | M14 iron                   |          |      |           |
+ 517 | M13             | 03         | T_RF4      |    3 |          1 |         17 | M13 iron                   |          |      |           |
+ 518 | STL2top         | 03         | T_RF4      |    3 |          2 |         18 | STL2 top iron              |          |      |           |
+ 519 | STL2bot         | 03         | T_RF4      |    3 |          3 |         19 | STL2 bottom iron           |          |      |           |
+ 520 | STL1top         | 03         | T_RF4      |    3 |          4 |         20 | STL1 top iron              |          |      |           |
+ 521 | STL1bot         | 03         | T_RF4      |    3 |          5 |         21 | STL1 bottom iron           |          |      |           |
+ 522 | M12             | 03         | T_RF4      |    3 |          6 |         22 | M12 iron                   |          |      |           |
+ 523 | M7              | 03         | T_RF4      |    3 |          7 |         23 | M7 iron                    |          |      |           |
+ 608 | kedr_BGO_e      | 16         | T_NEM2     |    4 |          7 |         31 | kedr_BGO_e                 |          |      |           |
+ 609 | kedr_BGO_p      | 17         | T_SEM2     |    4 |          7 |         31 | kedr_BGO_p                 |          |      |           |
+ 647 | NIWdist_in      | 24         | T_NIW      |    3 |          1 |         17 | NIW_dist_in                |          |      |           |
+ 649 | NIWdist_out1    | 24         | T_NIW      |    3 |          5 |         21 | NIW_dist_out1              |          |      |           |
+ 651 | NIWdist_out2    | 24         | T_NIW      |    3 |          7 |         23 | NIW_dist_out2              |          |      |           |
+ 652 | NIWcoil9_SW_top | 24         | T_NIW      |    1 |          0 |          0 | NIW_coil9_SW_top           |       55 |    1 |        60 |       2
+ 653 | NIWcoil8_SW_top | 24         | T_NIW      |    1 |          1 |          1 | NIW_coil8_SW_top           |       55 |    1 |        60 |       2
+ 654 | NIWcoil7_SW_top | 24         | T_NIW      |    1 |          2 |          2 | NIW_coil7_SW_top           |       55 |    1 |        60 |       2
+ 655 | NIWcoil6_SW_top | 24         | T_NIW      |    1 |          3 |          3 | NIW_coil6_SW_top           |       55 |    1 |        60 |       2
+ 656 | NIWcoil6_SW_bot | 24         | T_NIW      |    1 |          4 |          4 | NIW_coil6_SW_bot           |       55 |    1 |        60 |       2
+ 657 | NIWcoil7_SW_bot | 24         | T_NIW      |    1 |          5 |          5 | NIW_coil7_SW_bot           |       55 |    1 |        60 |       2
+ 658 | NIWcoil8_SW_bot | 24         | T_NIW      |    1 |          6 |          6 | NIW_coil8_SW_bot           |       55 |    1 |        60 |       2
+ 659 | NIWcoil9_SW_bot | 24         | T_NIW      |    1 |          7 |          7 | NIW_coil9_SW_bot           |       55 |    1 |        60 |       2
+ 660 | NIWcoil2_SW_top | 24         | T_NIW      |    2 |          0 |          8 | NIW_coil2_SW_top           |       55 |    1 |        60 |       2
+ 661 | NIWcoil3_SW_top | 24         | T_NIW      |    2 |          1 |          9 | NIW_coil3_SW_top           |       55 |    1 |        60 |       2
+ 662 | NIWcoil4_SW_top | 24         | T_NIW      |    2 |          2 |         10 | NIW_coil4_SW_top           |       55 |    1 |        60 |       2
+ 663 | NIWcoil5_SW_top | 24         | T_NIW      |    2 |          3 |         11 | NIW_coil5_SW_top           |       55 |    1 |        60 |       2
+ 664 | NIWcoil5_SW_bot | 24         | T_NIW      |    2 |          4 |         12 | NIW_coil5_SW_bot           |       55 |    1 |        60 |       2
+ 665 | NIWcoil4_SW_bot | 24         | T_NIW      |    2 |          5 |         13 | NIW_coil4_SW_bot           |       55 |    1 |        60 |       2
+ 666 | NIWcoil3_SW_bot | 24         | T_NIW      |    2 |          6 |         14 | NIW_coil3_SW_bot           |       55 |    1 |        60 |       2
+ 667 | NIWcoil2_SW_bot | 24         | T_NIW      |    2 |          7 |         15 | NIW_coil2_SW_bot           |       55 |    1 |        60 |       2
+ 668 | NIWcoil1_SW_bot | 24         | T_NIW      |    3 |          4 |         20 | NIW_coil1_SW_bot           |       55 |    1 |        60 |       2
+ 669 | NIWcoil1_SW_top | 24         | T_NIW      |    3 |          6 |         22 | NIW_coil1_SW_top           |       55 |    1 |        60 |       2

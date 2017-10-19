@@ -54,9 +54,10 @@
                     "Controller"
                 ]
             },
-            "sort_field": "Name",
+            "sort_field": "Address",
             "display_filter": {
                 "min": [
+                    "Class",
                     "Name",
                     "Position",
                     "Address"
@@ -67,13 +68,12 @@
                     "System",
                     "Position",
                     "Comment",
-                    "Address",
-                    "Area"
+                    "Address"
                 ]
             },
             "display_attributes": {
-                "width": 200,
-                "height": 130,
+                "width": 150,
+                "height": 80,
                 "field_name": true
             }
         },
@@ -88,17 +88,19 @@
             "sort_field": "Name",
             "display_filter": {
                 "min": [
+                    "Class",
                     "Name"
                 ],
                 "max": [
+                    "Class",
                     "Name",
                     "System",
                     "Comment"
                 ]
             },
             "display_attributes": {
-                "width": 200,
-                "height": 80,
+                "width": 150,
+                "height": 50,
                 "field_name": true
             }
         },
@@ -114,11 +116,16 @@
             "sort_field": "Name",
             "display_filter": {
                 "min": [
-                    "Name"
+                    "Class",
+                    "Name",
+                    "Bank number"
                 ],
                 "max": [
+                    "Class",
                     "Name",
                     "System",
+                    "Bank number",
+                    "Full name",
                     "Full position",
                     "Comment"
                 ]
@@ -168,19 +175,21 @@
                     "Position"
                 ],
                 "max": [
+                    "Class",
                     "Name",
-                    "Position",
                     "System",
+                    "Bank number",
+                    "Full name",
                     "Full position",
                     "Comment"
                 ]
             },
             "display_attributes": {
-                "width": 150,
+                "width": 180,
                 "height": 30,
                 "positioning": "matrix",
                 "matrix_type": "simple",
-                "matrix_size": 64,
+                "matrix_size": null,
                 "hiding": "true",
                 "field_name": false
             }
@@ -196,17 +205,19 @@
             },
             "display_filter": {
                 "min": [
+                    "Class",
                     "Name"
                 ],
                 "max": [
                     "Class",
                     "Name",
-                    "System"
+                    "System",
+                    "Comment"
                 ]
             },
             "display_attributes": {
-                "width": 200,
-                "height": 80,
+                "width": 150,
+                "height": 50,
                 "autorevealing": true,
                 "field_name": true
             }
@@ -222,6 +233,7 @@
             },
             "display_filter": {
                 "min": [
+                    "Class",
                     "Name",
                     "Position",
                     "Address"
@@ -232,12 +244,11 @@
                     "System",
                     "Position",
                     "Comment",
-                    "Address",
-                    "Area"
+                    "Address"
                 ]
             },
             "display_attributes": {
-                "width": 200,
+                "width": 150,
                 "height": 80,
                 "autorevealing": true,
                 "field_name": true

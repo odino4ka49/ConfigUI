@@ -22,14 +22,6 @@
             {
                 "key": "Position",
                 "type": "string"
-            },
-            {
-                "key": "Area",
-                "type": "string"
-            },
-            {
-                "key": "Loops",
-                "type": "array"
             }
         ],
         "foreign_keys": [],
@@ -37,15 +29,10 @@
             "Name",
             "System"
         ],
-        "components": "Loops",
-        "component_ID": "Position",
-        "component_types": [
-            "Loop"
-        ],
-        "component_check_values": [
-            "Component_name",
-            "System"
-        ]
+        "components": null,
+        "component_ID": null,
+        "component_types": null,
+        "component_check_values": null
     },
     {
         "class": "Loop",
@@ -53,6 +40,10 @@
         "fields": [
             {
                 "key": "Name",
+                "type": "string"
+            },
+            {
+                "key": "Controller",
                 "type": "string"
             },
             {
@@ -68,9 +59,10 @@
                 "type": "array"
             }
         ],
-        "foreign_keys": [],
+        "foreign_keys": ["Controller"],
         "primary_key": [
             "Name",
+            "Controller",
             "System"
         ],
         "components": "Sensors",
@@ -98,6 +90,14 @@
             },
             {
                 "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "Bank number",
+                "type": "integer"
+            },
+            {
+                "key": "Full name",
                 "type": "string"
             },
             {
@@ -129,6 +129,14 @@
             },
             {
                 "key": "Comment",
+                "type": "string"
+            },
+            {
+                "key": "Bank number",
+                "type": "integer"
+            },
+            {
+                "key": "Full name",
                 "type": "string"
             },
             {
