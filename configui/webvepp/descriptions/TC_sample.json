@@ -3,12 +3,12 @@
         "name": "Menu",
         "buttons": [
             {
-                "title": "Аппаратура",
+                "title": "Контроллеры",
                 "sample": "TC_controllers",
                 "link_name": "camacs"
             },
             {
-                "title": "Элементы",
+                "title": "Сенсоры",
                 "sample": "TC_sensors",
                 "link_name": "elements"
             },
@@ -57,13 +57,11 @@
             "sort_field": "Address",
             "display_filter": {
                 "min": [
-                    "Class",
                     "Name",
                     "Position",
                     "Address"
                 ],
                 "max": [
-                    "Class",
                     "Name",
                     "System",
                     "Position",
@@ -72,9 +70,13 @@
                 ]
             },
             "display_attributes": {
-                "width": 150,
-                "height": 80,
-                "field_name": true
+                "width": 90,
+                "height": 30,
+                "positioning": "matrix",
+                "matrix_type": "simple",
+                "matrix_size": null,
+                "hiding": "true",
+                "field_name": false
             }
         },
         "level2": {
@@ -82,17 +84,18 @@
             "level": 2,
             "filter": {
                 "Class": [
-                    "Loop"
+                    "Line"
                 ]
             },
-            "sort_field": "Name",
+            "sort_field": "Line",
             "display_filter": {
                 "min": [
-                    "Class",
-                    "Name"
+                    {
+                        "key": "Line",
+                        "value": "Name"
+                    }
                 ],
                 "max": [
-                    "Class",
                     "Name",
                     "System",
                     "Comment"
@@ -100,7 +103,7 @@
             },
             "display_attributes": {
                 "width": 150,
-                "height": 50,
+                "height": 30,
                 "field_name": true
             }
         },
@@ -116,7 +119,6 @@
             "sort_field": "Name",
             "display_filter": {
                 "min": [
-                    "Class",
                     "Name",
                     "Bank number"
                 ],
@@ -126,19 +128,139 @@
                     "System",
                     "Bank number",
                     "Full name",
-                    "Full position",
+                    "Position",
+                    "Alarm",
+                    "RelayAlarm",
+                    "PowerOff",
+                    "RelayOff",
                     "Comment"
                 ]
             },
             "display_attributes": {
                 "width": 200,
-                "height": 80,
+                "height": 50,
                 "field_name": true
             }
         }
     },
     {
         "name": "TC_sensors",
+        "root": {
+            "type": "new",
+            "level": 0,
+            "fields": {
+                "System": "TC",
+                "Name": "TC_sensors"
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "System",
+                    "Name"
+                ],
+                "max": []
+            },
+            "display_attributes": {
+                "width": 200,
+                "height": 70,
+                "field_name": false
+            }
+        },
+        "level1": {
+            "type": "filter",
+            "level": 1,
+            "filter": {
+                "Class": [
+                    "Controller"
+                ]
+            },
+            "sort_field": "Address",
+            "display_filter": {
+                "min": [
+                    "Name"
+                ],
+                "max": [
+                    "Name"
+                ]
+            },
+            "display_attributes": {
+                "width": 90,
+                "height": 30,
+                "field_name": false,
+                "autorevealing": true
+            }
+        },
+        "level2": {
+            "type": "filter",
+            "level": 2,
+            "filter": {
+                "Class": [
+                    "Line"
+                ]
+            },
+            "sort_field": "Name",
+            "display_filter": {
+                "min": [
+                    "Name"
+                ],
+                "max": [
+                    "Name"
+                ]
+            },
+            "display_attributes": {
+                "width": 50,
+                "height": 30,
+                "field_name": false,
+                "autorevealing": true
+            }
+        },
+        "level3": {
+            "type": "filter",
+            "level": 3,
+            "filter": {
+                "Class": [
+                    "Measuring sensor",
+                    "Blocking sensor"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    {
+                        "key": "Position",
+                        "value": "link_id"
+                    },
+                    "Name"
+                ],
+                "max": [
+                    "Class",
+                    "Name",
+                    "System",
+                    "Bank number",
+                    "Full name",
+                    "Position",
+                    "Alarm",
+                    "RelayAlarm",
+                    "PowerOff",
+                    "RelayOff",
+                    "Comment"
+                ]
+            },
+            "sort_field": "Position",
+            "display_attributes": {
+                "width": 200,
+                "height": 25,
+                "positioning": "matrix",
+                "matrix_type": "channels",
+                "matrix_size": 8,
+                "matrix_cols": 8,
+                "hiding": "true",
+                "field_name": false,
+                "autorevealing": true
+            }
+        }
+    },
+    {
+        "name": "TC_sensors2",
         "root": {
             "type": "new",
             "level": 0,
@@ -180,12 +302,16 @@
                     "System",
                     "Bank number",
                     "Full name",
-                    "Full position",
+                    "Position",
+                    "Alarm",
+                    "RelayAlarm",
+                    "PowerOff",
+                    "RelayOff",
                     "Comment"
                 ]
             },
             "display_attributes": {
-                "width": 180,
+                "width": 200,
                 "height": 30,
                 "positioning": "matrix",
                 "matrix_type": "simple",
@@ -199,17 +325,15 @@
             "level": 2,
             "filter": {
                 "Class": [
-                    "Loop"
+                    "Line"
                 ],
                 "Element": "&Name"
             },
             "display_filter": {
                 "min": [
-                    "Class",
                     "Name"
                 ],
                 "max": [
-                    "Class",
                     "Name",
                     "System",
                     "Comment"
@@ -233,13 +357,11 @@
             },
             "display_filter": {
                 "min": [
-                    "Class",
                     "Name",
                     "Position",
                     "Address"
                 ],
                 "max": [
-                    "Class",
                     "Name",
                     "System",
                     "Position",

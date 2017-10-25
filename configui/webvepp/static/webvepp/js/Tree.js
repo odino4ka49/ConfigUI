@@ -716,8 +716,9 @@ WEBVEPP.Tree = function(params){
                             $(document).trigger("load_details",person);
                         expandPerson(person);
                     }
-                    if(level_info.autorevealing)
+                    if(level_info.autorevealing){
                         return;
+                    }
                     if(person.collapsed){
                         if(person._parents.length==0)
                             $(document).trigger("load_neighbours",person);

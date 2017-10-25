@@ -233,7 +233,7 @@ def parseAttributes(desplay_det,object,attr_type="min"):
                 elif field["value"] in object:
                     attrs += [{
                         "key": field["key"],
-                        "value": object[field["key"]]
+                        "value": object[field["value"]]
                     }]
                 if "type" in field:
                     if field["type"]=="len":
@@ -323,7 +323,12 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
         level_n = "level"+str(int(level)+1)
     if level_n in sample:
         sample_l = sample[level_n]
-        next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
+        if("type" in sample_l and sample_l["type"]=="new"):
+            next_level = [
+                sample_l["fields"]
+            ]
+        else:
+            next_level = getObjects(parseRulesToString(node,sample_l["filter"]))
         #let's filter if there's some additional filter as 'rules'
         if rules:
             next_level = filterObjects(next_level,rules)
@@ -342,6 +347,9 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 if "remote_attributes" in sample_l and "Class" in sample_l["remote_attributes"] and n["Class"] in sample_l["remote_attributes"]["Class"]:
                     if "open_extra" in sample_l["remote_attributes"]:
                         neighbour["open_extra"] = sample_l["remote_attributes"]["open_extra"]
+                if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
+                    neighbour["collapsed"]=False
+                    neighbour["_parents"]=getNodeNeighbours(n,str(int(level)+1))
                 neighbours.append(neighbour)
         else:
             for n in next_level:
