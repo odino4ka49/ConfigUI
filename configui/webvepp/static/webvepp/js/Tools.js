@@ -9,6 +9,7 @@ WEBVEPP.List = function(tool_bar,settings){
         legend = d3.select("body").select("#legend"),
         text_data = "";
 
+
     function setSchemeNames(tool_name){
         var pathname = location.pathname;
         var path = pathname.split('/');
@@ -95,6 +96,9 @@ WEBVEPP.List = function(tool_bar,settings){
         var thead = table.append('thead');
         var tbody = table.append('tbody');
         tbody.append("tr").append("td").text(text_data);
+
+        resetTableExport();
+
     };
 
     function drawImageData(filename,width){
@@ -107,6 +111,8 @@ WEBVEPP.List = function(tool_bar,settings){
             .attr("src",WEBVEPP.serveradr()+"static/webvepp/bg/"+filename)
             .attr("alt","Image tool")
             .attr("width",width);
+
+        resetTableExport();
     };
 
     function drawLegend(){
@@ -188,6 +194,7 @@ WEBVEPP.List = function(tool_bar,settings){
         var rowExit = row.exit();
             rowExit.remove();
 
+        resetTableExport();
     };
 
     function minAttributesToLine(object){
@@ -247,8 +254,28 @@ WEBVEPP.List = function(tool_bar,settings){
             })
     };
 
+    function resetTableExport(){
+        jtable.reset();
+    }
+
+    function setTableExport(){
+        TableExport.prototype.txt = {
+            defaultClass: "txt",
+            buttonContent: "Export to txt",
+            separator: "\t|",
+            mimeType: "text/plain",
+            fileExtension: ".txt"
+        };
+
+        jtable = TableExport(document.getElementById("list"),{
+            bootstrap: false,
+            formats: ["txt"]
+        })
+    };
+
     setSchemeNames();
     loadToolData();
+    setTableExport();
 
     return {
     };

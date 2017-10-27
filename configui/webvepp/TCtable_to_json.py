@@ -24,7 +24,7 @@ def make_custom_sort(orders):
 
 def identifySensorType(sensorname):
     if "SW" in sensorname:
-        return "Blocking sensor"
+        return "Interlock sensor"
     else:
         return "Measuring sensor"
 
@@ -97,7 +97,7 @@ def makeSensorObject(line,systemname):
     element["Bank number"] = to_int(line[6].strip())
     element["Full name"] = line[7].strip()
     element["Position"] = ""
-    if element["Class"] == "Blocking sensor":
+    if element["Class"] == "Interlock sensor":
         element["Alarm"] = to_int(line[8].strip())
         element["RelayAlarm"] = to_int(line[9].strip())
         element["PowerOff"] = to_int(line[10].strip())

@@ -69,7 +69,7 @@
         "component_ID": "Position",
         "component_types": [
             "Measuring sensor",
-            "Blocking sensor"
+            "Interlock sensor"
         ],
         "component_check_values": [
             "Component_name",
@@ -116,7 +116,7 @@
         "component_check_values": null
     },
     {
-        "class": "Blocking sensor",
+        "class": "Interlock sensor",
         "comment": "Шаблон блокировочного датчика",
         "fields": [
             {

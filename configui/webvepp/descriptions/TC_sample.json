@@ -113,7 +113,7 @@
             "filter": {
                 "Class": [
                     "Measuring sensor",
-                    "Blocking sensor"
+                    "Interlock sensor"
                 ]
             },
             "sort_field": "Name",
@@ -137,7 +137,7 @@
                 ]
             },
             "display_attributes": {
-                "width": 200,
+                "width": 180,
                 "height": 50,
                 "field_name": true
             }
@@ -220,7 +220,7 @@
             "filter": {
                 "Class": [
                     "Measuring sensor",
-                    "Blocking sensor"
+                    "Interlock sensor"
                 ]
             },
             "display_filter": {
@@ -247,7 +247,7 @@
             },
             "sort_field": "Position",
             "display_attributes": {
-                "width": 200,
+                "width": 180,
                 "height": 25,
                 "positioning": "matrix",
                 "matrix_type": "channels",
@@ -288,7 +288,7 @@
             "filter": {
                 "Class": [
                     "Measuring sensor",
-                    "Blocking sensor"
+                    "Interlock sensor"
                 ]
             },
             "display_filter": {
@@ -311,7 +311,7 @@
                 ]
             },
             "display_attributes": {
-                "width": 200,
+                "width": 180,
                 "height": 30,
                 "positioning": "matrix",
                 "matrix_type": "simple",
@@ -390,6 +390,52 @@
     {
         "name": "Tools",
         "buttons": [
+            {
+                "title": "BANK",
+                "type": "list",
+                "id": "tool_bank",
+                "sample": "TC_banks"
+            }
         ]
+    },
+    {
+        "name": "TC_banks",
+        "root": {
+            "type": "filter",
+            "filter": {
+                "Class": [
+                    "Measuring sensor",
+                    "Interlock sensor"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    "Bank number",
+                    "Name",
+                    {
+                        "key": "Line",
+                        "value": "&Line->Name"
+                    },
+                    {
+                        "key": "Controller",
+                        "value": "&Line->Controller->Name"
+                    },
+                    "Full name",
+                    "Alarm",
+                    "RelayAlarm",
+                    "PowerOff",
+                    "RelayOff"
+                ],
+                "max": [
+                    "Name"
+                ]
+            },
+            "sort_field": "Bank number",
+            "display_attributes": {
+                "field_name": false,
+                "inline": true,
+                "sort_type": "cells"
+            }
+        }
     }
 ]

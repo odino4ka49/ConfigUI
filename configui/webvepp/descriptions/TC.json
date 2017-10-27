@@ -216,35 +216,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NTL1_SW_top_ext"
+                "Interlock sensor": "NTL1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NTL1_SW_top_int"
+                "Interlock sensor": "NTL1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NTL1_SW_bot_ext"
+                "Interlock sensor": "NTL1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NTL1_SW_bot_int"
+                "Interlock sensor": "NTL1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NTL2_SW_top_ext"
+                "Interlock sensor": "NTL2_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NTL2_SW_top_int"
+                "Interlock sensor": "NTL2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NTL2_SW_bot_ext"
+                "Interlock sensor": "NTL2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NTL2_SW_bot_int"
+                "Interlock sensor": "NTL2_SW_bot_int"
             }
         ]
     },
@@ -257,35 +257,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NTL3_SW_top_ext"
+                "Interlock sensor": "NTL3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NTL3_SW_top_int"
+                "Interlock sensor": "NTL3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NTL3_SW_bot_ext"
+                "Interlock sensor": "NTL3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NTL3_SW_bot_int"
+                "Interlock sensor": "NTL3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NTL4_SW_top_ext"
+                "Interlock sensor": "NTL4_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NTL4_SW_top_int"
+                "Interlock sensor": "NTL4_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NTL4_SW_bot_ext"
+                "Interlock sensor": "NTL4_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NTL4_SW_bot_int"
+                "Interlock sensor": "NTL4_SW_bot_int"
             }
         ]
     },
@@ -298,23 +298,23 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NTW_SW_top_1"
+                "Interlock sensor": "NTW_SW_top_1"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NTW_SW_top_2"
+                "Interlock sensor": "NTW_SW_top_2"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NTW_SW_top_3"
+                "Interlock sensor": "NTW_SW_top_3"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NTW_SW_top_4"
+                "Interlock sensor": "NTW_SW_top_4"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NTW_SW_top_5"
+                "Interlock sensor": "NTW_SW_top_5"
             }
         ]
     },
@@ -327,23 +327,23 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NTW_SW_bot_1"
+                "Interlock sensor": "NTW_SW_bot_1"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NTW_SW_bot_2"
+                "Interlock sensor": "NTW_SW_bot_2"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NTW_SW_bot_3"
+                "Interlock sensor": "NTW_SW_bot_3"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NTW_SW_bot_4"
+                "Interlock sensor": "NTW_SW_bot_4"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NTW_SW_bot_5"
+                "Interlock sensor": "NTW_SW_bot_5"
             }
         ]
     },
@@ -356,11 +356,11 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "N1F_SW_top"
+                "Interlock sensor": "N1F_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "N1F_SW_bot"
+                "Interlock sensor": "N1F_SW_bot"
             }
         ]
     },
@@ -373,19 +373,19 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "N5F_SW_top_ext"
+                "Interlock sensor": "N5F_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "N5F_SW_top_int"
+                "Interlock sensor": "N5F_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "N5F_SW_bot_ext"
+                "Interlock sensor": "N5F_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "N5F_SW_bot_int"
+                "Interlock sensor": "N5F_SW_bot_int"
             }
         ]
     },
@@ -398,31 +398,31 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "N9D_SW_top"
+                "Interlock sensor": "N9D_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "N9D_SW_bot"
+                "Interlock sensor": "N9D_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NIM1_SW_top_ext"
+                "Interlock sensor": "NIM1_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NIM1_SW_bot_ext"
+                "Interlock sensor": "NIM1_SW_bot_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIM1_SW-cor"
+                "Interlock sensor": "NIM1_SW-cor"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NIM2_SW_top"
+                "Interlock sensor": "NIM2_SW_top"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIM2_SW_bot"
+                "Interlock sensor": "NIM2_SW_bot"
             }
         ]
     },
@@ -435,35 +435,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NIL1_SW_top_ext"
+                "Interlock sensor": "NIL1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NIL1_SW_top_int"
+                "Interlock sensor": "NIL1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NIL1_SW_bot_ext"
+                "Interlock sensor": "NIL1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NIL1_SW_bot_int"
+                "Interlock sensor": "NIL1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIL2_SW_top_ext"
+                "Interlock sensor": "NIL2_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NIL2_SW_top_int"
+                "Interlock sensor": "NIL2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIL2_SW_bot_ext"
+                "Interlock sensor": "NIL2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NIL2_SW_bot_int"
+                "Interlock sensor": "NIL2_SW_bot_int"
             }
         ]
     },
@@ -476,35 +476,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NIL3_SW_top_ext"
+                "Interlock sensor": "NIL3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NIL3_SW_top_int"
+                "Interlock sensor": "NIL3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NIL3_SW_bot_ext"
+                "Interlock sensor": "NIL3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NIL3_SW_bot_int"
+                "Interlock sensor": "NIL3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIL4_SW_top_ext"
+                "Interlock sensor": "NIL4_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NIL4_SW_top_int"
+                "Interlock sensor": "NIL4_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIL4_SW_bot_ext"
+                "Interlock sensor": "NIL4_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NIL4_SW_bot_int"
+                "Interlock sensor": "NIL4_SW_bot_int"
             }
         ]
     },
@@ -517,35 +517,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NIM3_SW_top"
+                "Interlock sensor": "NIM3_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NIM3_SW_bot"
+                "Interlock sensor": "NIM3_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NIM4_SW_top_ext"
+                "Interlock sensor": "NIM4_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NIM4_SW_bot_ext"
+                "Interlock sensor": "NIM4_SW_bot_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIM4_SW-cor"
+                "Interlock sensor": "NIM4_SW-cor"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NIL1_SW_shunt"
+                "Interlock sensor": "NIL1_SW_shunt"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIL2_SW_shunt"
+                "Interlock sensor": "NIL2_SW_shunt"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NIL4_SW_shunt"
+                "Interlock sensor": "NIL4_SW_shunt"
             }
         ]
     },
@@ -558,11 +558,11 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "N17F_SW_top"
+                "Interlock sensor": "N17F_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "N17F_SW_bot"
+                "Interlock sensor": "N17F_SW_bot"
             }
         ]
     },
@@ -575,19 +575,19 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "N14F_SW_top_ext"
+                "Interlock sensor": "N14F_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "N14F_SW_top_int"
+                "Interlock sensor": "N14F_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "N14F_SW_bot_ext"
+                "Interlock sensor": "N14F_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "N14F_SW_bot_int"
+                "Interlock sensor": "N14F_SW_bot_int"
             }
         ]
     },
@@ -600,27 +600,27 @@
         "Sensors": [
             {
                 "Position": 2,
-                "Blocking sensor": "NEL5_SW_top_ext"
+                "Interlock sensor": "NEL5_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NEL5_SW_top_int"
+                "Interlock sensor": "NEL5_SW_top_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NEL5_SW_bot_ext"
+                "Interlock sensor": "NEL5_SW_bot_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NEL5_SW_bot_int"
+                "Interlock sensor": "NEL5_SW_bot_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NEM3_SW_top"
+                "Interlock sensor": "NEM3_SW_top"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NEM3_SW_bot"
+                "Interlock sensor": "NEM3_SW_bot"
             }
         ]
     },
@@ -633,19 +633,19 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NEM1_SW_top"
+                "Interlock sensor": "NEM1_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NEM1_SW_bot"
+                "Interlock sensor": "NEM1_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NEM2_SW_top"
+                "Interlock sensor": "NEM2_SW_top"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NEM2_SW_bot"
+                "Interlock sensor": "NEM2_SW_bot"
             }
         ]
     },
@@ -658,35 +658,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NEL1_SW_top_ext"
+                "Interlock sensor": "NEL1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NEL1_SW_top_int"
+                "Interlock sensor": "NEL1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NEL1_SW_bot_ext"
+                "Interlock sensor": "NEL1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NEL1_SW_bot_int"
+                "Interlock sensor": "NEL1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NEL2_SW_top_ext"
+                "Interlock sensor": "NEL2_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NEL2_SW_top_int"
+                "Interlock sensor": "NEL2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NEL2_SW_bot_ext"
+                "Interlock sensor": "NEL2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NEL2_SW_bot_int"
+                "Interlock sensor": "NEL2_SW_bot_int"
             }
         ]
     },
@@ -699,35 +699,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NEL3_SW_top_ext"
+                "Interlock sensor": "NEL3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NEL3_SW_top_int"
+                "Interlock sensor": "NEL3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NEL3_SW_bot_ext"
+                "Interlock sensor": "NEL3_SW_bot_ext"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NEL3_SW_bot_int"
+                "Interlock sensor": "NEL3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NEL4_SW_top_ext"
+                "Interlock sensor": "NEL4_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NEL4_SW_top_int"
+                "Interlock sensor": "NEL4_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NEL4_SW_bot_ext"
+                "Interlock sensor": "NEL4_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NEL4_SW_bot_int"
+                "Interlock sensor": "NEL4_SW_bot_int"
             }
         ]
     },
@@ -740,27 +740,27 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NEZM_SW_top_S"
+                "Interlock sensor": "NEZM_SW_top_S"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NEZM_SW_top_mid"
+                "Interlock sensor": "NEZM_SW_top_mid"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NEZM_SW_top_N"
+                "Interlock sensor": "NEZM_SW_top_N"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NEZM_SW_bot_S"
+                "Interlock sensor": "NEZM_SW_bot_S"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NEZM_SW_bot_mid"
+                "Interlock sensor": "NEZM_SW_bot_mid"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NEZM_SW_bot_N"
+                "Interlock sensor": "NEZM_SW_bot_N"
             }
         ]
     },
@@ -773,19 +773,19 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SEM1_SW_top"
+                "Interlock sensor": "SEM1_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SEM1_SW_bot"
+                "Interlock sensor": "SEM1_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SEM2_SW_top"
+                "Interlock sensor": "SEM2_SW_top"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SEM2_SW_bot"
+                "Interlock sensor": "SEM2_SW_bot"
             }
         ]
     },
@@ -798,35 +798,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SEL1_SW_top_ext"
+                "Interlock sensor": "SEL1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SEL1_SW_top_int"
+                "Interlock sensor": "SEL1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SEL1_SW_bot_ext"
+                "Interlock sensor": "SEL1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SEL1_SW_bot_int"
+                "Interlock sensor": "SEL1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SEL2_SW_top_ext"
+                "Interlock sensor": "SEL2_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SEL2_SW_top_int"
+                "Interlock sensor": "SEL2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SEL2_SW_bot_ext"
+                "Interlock sensor": "SEL2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "SEL2_SW_bot_int"
+                "Interlock sensor": "SEL2_SW_bot_int"
             }
         ]
     },
@@ -839,35 +839,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SEL3_SW_top_ext"
+                "Interlock sensor": "SEL3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SEL3_SW_top_int"
+                "Interlock sensor": "SEL3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SEL3_SW_bot_ext"
+                "Interlock sensor": "SEL3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SEL3_SW_bot_int"
+                "Interlock sensor": "SEL3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SEL4_SW_top_ext"
+                "Interlock sensor": "SEL4_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SEL4_SW_top_int"
+                "Interlock sensor": "SEL4_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SEL4_SW_bot_ext"
+                "Interlock sensor": "SEL4_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "SEL4_SW_bot_int"
+                "Interlock sensor": "SEL4_SW_bot_int"
             }
         ]
     },
@@ -880,27 +880,27 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SEZM_SW_top_N"
+                "Interlock sensor": "SEZM_SW_top_N"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SEZM_SW_top_mid"
+                "Interlock sensor": "SEZM_SW_top_mid"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SEZM_SW_top_S"
+                "Interlock sensor": "SEZM_SW_top_S"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SEZM_SW_bot_N"
+                "Interlock sensor": "SEZM_SW_bot_N"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SEZM_SW_bot_mid"
+                "Interlock sensor": "SEZM_SW_bot_mid"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SEZM_SW_bot_S"
+                "Interlock sensor": "SEZM_SW_bot_S"
             }
         ]
     },
@@ -913,27 +913,27 @@
         "Sensors": [
             {
                 "Position": 2,
-                "Blocking sensor": "SEL5_SW_top_ext"
+                "Interlock sensor": "SEL5_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SEL5_SW_top_int"
+                "Interlock sensor": "SEL5_SW_top_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SEL5_SW_bot_ext"
+                "Interlock sensor": "SEL5_SW_bot_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SEL5_SW_bot_int"
+                "Interlock sensor": "SEL5_SW_bot_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SEM3_SW_top"
+                "Interlock sensor": "SEM3_SW_top"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "SEM3_SW_bot"
+                "Interlock sensor": "SEM3_SW_bot"
             }
         ]
     },
@@ -946,11 +946,11 @@
         "Sensors": [
             {
                 "Position": 4,
-                "Blocking sensor": "S17F_SW_top"
+                "Interlock sensor": "S17F_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "S17F_SW_bot"
+                "Interlock sensor": "S17F_SW_bot"
             }
         ]
     },
@@ -963,11 +963,11 @@
         "Sensors": [
             {
                 "Position": 5,
-                "Blocking sensor": "CM_SW_top"
+                "Interlock sensor": "CM_SW_top"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "CM_SW_bot"
+                "Interlock sensor": "CM_SW_bot"
             }
         ]
     },
@@ -980,19 +980,19 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "S14F_SW_top_ext"
+                "Interlock sensor": "S14F_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "S14F_SW_top_int"
+                "Interlock sensor": "S14F_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "S14F_SW_bot_ext"
+                "Interlock sensor": "S14F_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "S14F_SW_bot_int"
+                "Interlock sensor": "S14F_SW_bot_int"
             }
         ]
     },
@@ -1005,31 +1005,31 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "S9D_SW_top"
+                "Interlock sensor": "S9D_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "S9D_SW_bot"
+                "Interlock sensor": "S9D_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SIM1_SW_top_ext"
+                "Interlock sensor": "SIM1_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SIM1_SW_bot_ext"
+                "Interlock sensor": "SIM1_SW_bot_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SIM1_SW-cor"
+                "Interlock sensor": "SIM1_SW-cor"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SIM2_SW_top"
+                "Interlock sensor": "SIM2_SW_top"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SIM2_SW_bot"
+                "Interlock sensor": "SIM2_SW_bot"
             }
         ]
     },
@@ -1042,35 +1042,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SIL1_SW_top_ext"
+                "Interlock sensor": "SIL1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SIL1_SW_top_int"
+                "Interlock sensor": "SIL1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SIL1_SW_bot_ext"
+                "Interlock sensor": "SIL1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SIL1_SW_bot_int"
+                "Interlock sensor": "SIL1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SIL2_SW_top_ext"
+                "Interlock sensor": "SIL2_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SIL2_SW_top_int"
+                "Interlock sensor": "SIL2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SIL2_SW_bot_ext"
+                "Interlock sensor": "SIL2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "SIL2_SW_bot_int"
+                "Interlock sensor": "SIL2_SW_bot_int"
             }
         ]
     },
@@ -1083,35 +1083,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SIL3_SW_top_ext"
+                "Interlock sensor": "SIL3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SIL3_SW_top_int"
+                "Interlock sensor": "SIL3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SIL3_SW_bot_ext"
+                "Interlock sensor": "SIL3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SIL3_SW_bot_int"
+                "Interlock sensor": "SIL3_SW_bot_int"
             },
             {
                 "Position": 0,
-                "Blocking sensor": "SIL4_SW_top_ext"
+                "Interlock sensor": "SIL4_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SIL4_SW_top_int"
+                "Interlock sensor": "SIL4_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SIL4_SW_bot_ext"
+                "Interlock sensor": "SIL4_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SIL4_SW_bot_int"
+                "Interlock sensor": "SIL4_SW_bot_int"
             }
         ]
     },
@@ -1124,35 +1124,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SIM3_SW_top"
+                "Interlock sensor": "SIM3_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SIM3_SW_bot"
+                "Interlock sensor": "SIM3_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SIM4_SW_top_ext"
+                "Interlock sensor": "SIM4_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SIM4_SW_bot_ext"
+                "Interlock sensor": "SIM4_SW_bot_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SIM4_SW-cor"
+                "Interlock sensor": "SIM4_SW-cor"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SIL1_SW_shunt"
+                "Interlock sensor": "SIL1_SW_shunt"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SIL2_SW_shunt"
+                "Interlock sensor": "SIL2_SW_shunt"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "SIL4_SW_shunt"
+                "Interlock sensor": "SIL4_SW_shunt"
             }
         ]
     },
@@ -1165,11 +1165,11 @@
         "Sensors": [
             {
                 "Position": 1,
-                "Blocking sensor": "S10F_SW_top"
+                "Interlock sensor": "S10F_SW_top"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "S10F_SW_bot"
+                "Interlock sensor": "S10F_SW_bot"
             }
         ]
     },
@@ -1182,19 +1182,19 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "S5F_SW_top_ext"
+                "Interlock sensor": "S5F_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "S5F_SW_top_int"
+                "Interlock sensor": "S5F_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "S5F_SW_bot_ext"
+                "Interlock sensor": "S5F_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "S5F_SW_bot_int"
+                "Interlock sensor": "S5F_SW_bot_int"
             }
         ]
     },
@@ -1207,11 +1207,11 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "S1F_SW_top"
+                "Interlock sensor": "S1F_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "S1F_SW_bot"
+                "Interlock sensor": "S1F_SW_bot"
             }
         ]
     },
@@ -1224,35 +1224,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "STL1_SW_top_ext"
+                "Interlock sensor": "STL1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "STL1_SW_top_int"
+                "Interlock sensor": "STL1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "STL1_SW_bot_ext"
+                "Interlock sensor": "STL1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "STL1_SW_bot_int"
+                "Interlock sensor": "STL1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "STL2_SW_top_ext"
+                "Interlock sensor": "STL2_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "STL2_SW_top_int"
+                "Interlock sensor": "STL2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "STL2_SW_bot_ext"
+                "Interlock sensor": "STL2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "STL2_SW_bot_int"
+                "Interlock sensor": "STL2_SW_bot_int"
             }
         ]
     },
@@ -1265,35 +1265,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "STL3_SW_top_ext"
+                "Interlock sensor": "STL3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "STL3_SW_top_int"
+                "Interlock sensor": "STL3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "STL3_SW_bot_ext"
+                "Interlock sensor": "STL3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "STL3_SW_bot_int"
+                "Interlock sensor": "STL3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "STL4_SW_top_ext"
+                "Interlock sensor": "STL4_SW_top_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "STL4_SW_top_int"
+                "Interlock sensor": "STL4_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "STL4_SW_bot_ext"
+                "Interlock sensor": "STL4_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "STL4_SW_bot_int"
+                "Interlock sensor": "STL4_SW_bot_int"
             }
         ]
     },
@@ -1306,23 +1306,23 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "STW_SW_top_1"
+                "Interlock sensor": "STW_SW_top_1"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "STW_SW_top_2"
+                "Interlock sensor": "STW_SW_top_2"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "STW_SW_top_3"
+                "Interlock sensor": "STW_SW_top_3"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "STW_SW_top_4"
+                "Interlock sensor": "STW_SW_top_4"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "STW_SW_top_5"
+                "Interlock sensor": "STW_SW_top_5"
             }
         ]
     },
@@ -1335,23 +1335,23 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "STW_SW_bot_1"
+                "Interlock sensor": "STW_SW_bot_1"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "STW_SW_bot_2"
+                "Interlock sensor": "STW_SW_bot_2"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "STW_SW_bot_3"
+                "Interlock sensor": "STW_SW_bot_3"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "STW_SW_bot_4"
+                "Interlock sensor": "STW_SW_bot_4"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "STW_SW_bot_5"
+                "Interlock sensor": "STW_SW_bot_5"
             }
         ]
     },
@@ -2954,35 +2954,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NIWcoil9_SW_top"
+                "Interlock sensor": "NIWcoil9_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NIWcoil8_SW_top"
+                "Interlock sensor": "NIWcoil8_SW_top"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NIWcoil7_SW_top"
+                "Interlock sensor": "NIWcoil7_SW_top"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NIWcoil6_SW_top"
+                "Interlock sensor": "NIWcoil6_SW_top"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIWcoil6_SW_bot"
+                "Interlock sensor": "NIWcoil6_SW_bot"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NIWcoil7_SW_bot"
+                "Interlock sensor": "NIWcoil7_SW_bot"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIWcoil8_SW_bot"
+                "Interlock sensor": "NIWcoil8_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NIWcoil9_SW_bot"
+                "Interlock sensor": "NIWcoil9_SW_bot"
             }
         ]
     },
@@ -2995,48 +2995,48 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "NIWcoil2_SW_top"
+                "Interlock sensor": "NIWcoil2_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "NIWcoil3_SW_top"
+                "Interlock sensor": "NIWcoil3_SW_top"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "NIWcoil4_SW_top"
+                "Interlock sensor": "NIWcoil4_SW_top"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "NIWcoil5_SW_top"
+                "Interlock sensor": "NIWcoil5_SW_top"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIWcoil5_SW_bot"
+                "Interlock sensor": "NIWcoil5_SW_bot"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "NIWcoil4_SW_bot"
+                "Interlock sensor": "NIWcoil4_SW_bot"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIWcoil3_SW_bot"
+                "Interlock sensor": "NIWcoil3_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "NIWcoil2_SW_bot"
+                "Interlock sensor": "NIWcoil2_SW_bot"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "NIWcoil1_SW_bot"
+                "Interlock sensor": "NIWcoil1_SW_bot"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "NIWcoil1_SW_top"
+                "Interlock sensor": "NIWcoil1_SW_top"
             }
         ]
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3049,7 +3049,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL1_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3062,7 +3062,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3075,7 +3075,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL1_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3088,7 +3088,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL2_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3101,7 +3101,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL2_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3114,7 +3114,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL2_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3127,7 +3127,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL2_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3140,7 +3140,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL3_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3153,7 +3153,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL3_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3166,7 +3166,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL3_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3179,7 +3179,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL3_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3192,7 +3192,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3205,7 +3205,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL4_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3218,7 +3218,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3231,7 +3231,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTL4_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3244,7 +3244,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_top_1",
         "System": "V4",
         "Comment": "",
@@ -3257,7 +3257,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_top_2",
         "System": "V4",
         "Comment": "",
@@ -3270,7 +3270,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_top_3",
         "System": "V4",
         "Comment": "",
@@ -3283,7 +3283,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_top_4",
         "System": "V4",
         "Comment": "",
@@ -3296,7 +3296,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_top_5",
         "System": "V4",
         "Comment": "",
@@ -3309,7 +3309,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_bot_1",
         "System": "V4",
         "Comment": "",
@@ -3322,7 +3322,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_bot_2",
         "System": "V4",
         "Comment": "",
@@ -3335,7 +3335,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_bot_3",
         "System": "V4",
         "Comment": "",
@@ -3348,7 +3348,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_bot_4",
         "System": "V4",
         "Comment": "",
@@ -3361,7 +3361,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NTW_SW_bot_5",
         "System": "V4",
         "Comment": "",
@@ -3374,7 +3374,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N1F_SW_top",
         "System": "V4",
         "Comment": "",
@@ -3387,7 +3387,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N1F_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -3400,7 +3400,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N5F_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3413,7 +3413,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N5F_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3426,7 +3426,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N5F_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3439,7 +3439,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N5F_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3452,7 +3452,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N9D_SW_top",
         "System": "V4",
         "Comment": "",
@@ -3465,7 +3465,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N9D_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -3478,7 +3478,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3491,7 +3491,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3504,7 +3504,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM1_SW-cor",
         "System": "V4",
         "Comment": "",
@@ -3517,7 +3517,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM2_SW_top",
         "System": "V4",
         "Comment": "",
@@ -3530,7 +3530,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM2_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -3543,7 +3543,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3556,7 +3556,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL1_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3569,7 +3569,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3582,7 +3582,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL1_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3595,7 +3595,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL2_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3608,7 +3608,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL2_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3621,7 +3621,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL2_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3634,7 +3634,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL2_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3647,7 +3647,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL3_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3660,7 +3660,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL3_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3673,7 +3673,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL3_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3686,7 +3686,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL3_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3699,7 +3699,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3712,7 +3712,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL4_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3725,7 +3725,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3738,7 +3738,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL4_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3751,7 +3751,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM3_SW_top",
         "System": "V4",
         "Comment": "",
@@ -3764,7 +3764,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM3_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -3777,7 +3777,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3790,7 +3790,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3803,7 +3803,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIM4_SW-cor",
         "System": "V4",
         "Comment": "",
@@ -3816,7 +3816,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL1_SW_shunt",
         "System": "V4",
         "Comment": "",
@@ -3829,7 +3829,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL2_SW_shunt",
         "System": "V4",
         "Comment": "",
@@ -3842,7 +3842,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIL4_SW_shunt",
         "System": "V4",
         "Comment": "",
@@ -3855,7 +3855,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N17F_SW_top",
         "System": "V4",
         "Comment": "",
@@ -3868,7 +3868,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N17F_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -3881,7 +3881,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N14F_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3894,7 +3894,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N14F_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3907,7 +3907,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N14F_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3920,7 +3920,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "N14F_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3933,7 +3933,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL5_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -3946,7 +3946,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL5_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -3959,7 +3959,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL5_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -3972,7 +3972,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL5_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -3985,7 +3985,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEM3_SW_top",
         "System": "V4",
         "Comment": "",
@@ -3998,7 +3998,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEM3_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4011,7 +4011,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEM1_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4024,7 +4024,7 @@
         "RelayOff": 0
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEM1_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4037,7 +4037,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEM2_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4050,7 +4050,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEM2_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4063,7 +4063,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4076,7 +4076,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL1_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4089,7 +4089,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4102,7 +4102,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL1_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4115,7 +4115,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL2_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4128,7 +4128,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL2_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4141,7 +4141,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL2_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4154,7 +4154,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL2_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4167,7 +4167,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL3_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4180,7 +4180,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL3_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4193,7 +4193,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL3_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4206,7 +4206,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL3_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4219,7 +4219,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4232,7 +4232,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL4_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4245,7 +4245,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4258,7 +4258,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEL4_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4271,7 +4271,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEZM_SW_top_S",
         "System": "V4",
         "Comment": "",
@@ -4284,7 +4284,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEZM_SW_top_mid",
         "System": "V4",
         "Comment": "",
@@ -4297,7 +4297,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEZM_SW_top_N",
         "System": "V4",
         "Comment": "",
@@ -4310,7 +4310,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEZM_SW_bot_S",
         "System": "V4",
         "Comment": "",
@@ -4323,7 +4323,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEZM_SW_bot_mid",
         "System": "V4",
         "Comment": "",
@@ -4336,7 +4336,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NEZM_SW_bot_N",
         "System": "V4",
         "Comment": "",
@@ -4349,7 +4349,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEM1_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4362,7 +4362,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEM1_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4375,7 +4375,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEM2_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4388,7 +4388,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEM2_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4401,7 +4401,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4414,7 +4414,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL1_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4427,7 +4427,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4440,7 +4440,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL1_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4453,7 +4453,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL2_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4466,7 +4466,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL2_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4479,7 +4479,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL2_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4492,7 +4492,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL2_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4505,7 +4505,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL3_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4518,7 +4518,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL3_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4531,7 +4531,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL3_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4544,7 +4544,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL3_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4557,7 +4557,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4570,7 +4570,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL4_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4583,7 +4583,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4596,7 +4596,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL4_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4609,7 +4609,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEZM_SW_top_N",
         "System": "V4",
         "Comment": "",
@@ -4622,7 +4622,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEZM_SW_top_mid",
         "System": "V4",
         "Comment": "",
@@ -4635,7 +4635,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEZM_SW_top_S",
         "System": "V4",
         "Comment": "",
@@ -4648,7 +4648,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEZM_SW_bot_N",
         "System": "V4",
         "Comment": "",
@@ -4661,7 +4661,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEZM_SW_bot_mid",
         "System": "V4",
         "Comment": "",
@@ -4674,7 +4674,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEZM_SW_bot_S",
         "System": "V4",
         "Comment": "",
@@ -4687,7 +4687,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL5_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4700,7 +4700,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL5_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4713,7 +4713,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL5_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4726,7 +4726,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEL5_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4739,7 +4739,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEM3_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4752,7 +4752,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SEM3_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4765,7 +4765,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S17F_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4778,7 +4778,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S17F_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4791,7 +4791,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "CM_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4804,7 +4804,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "CM_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4817,7 +4817,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S14F_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4830,7 +4830,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S14F_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4843,7 +4843,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S14F_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4856,7 +4856,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S14F_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -4869,7 +4869,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S9D_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4882,7 +4882,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S9D_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4895,7 +4895,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4908,7 +4908,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4921,7 +4921,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM1_SW-cor",
         "System": "V4",
         "Comment": "",
@@ -4934,7 +4934,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM2_SW_top",
         "System": "V4",
         "Comment": "",
@@ -4947,7 +4947,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM2_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -4960,7 +4960,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -4973,7 +4973,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL1_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -4986,7 +4986,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -4999,7 +4999,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL1_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5012,7 +5012,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL2_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5025,7 +5025,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL2_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5038,7 +5038,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL2_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5051,7 +5051,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL2_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5064,7 +5064,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL3_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5077,7 +5077,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL3_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5090,7 +5090,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL3_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5103,7 +5103,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL3_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5116,7 +5116,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5129,7 +5129,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL4_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5142,7 +5142,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5155,7 +5155,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL4_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5168,7 +5168,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM3_SW_top",
         "System": "V4",
         "Comment": "",
@@ -5181,7 +5181,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM3_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -5194,7 +5194,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5207,7 +5207,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5220,7 +5220,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIM4_SW-cor",
         "System": "V4",
         "Comment": "",
@@ -5233,7 +5233,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL1_SW_shunt",
         "System": "V4",
         "Comment": "",
@@ -5246,7 +5246,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL2_SW_shunt",
         "System": "V4",
         "Comment": "",
@@ -5259,7 +5259,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SIL4_SW_shunt",
         "System": "V4",
         "Comment": "",
@@ -5272,7 +5272,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S10F_SW_top",
         "System": "V4",
         "Comment": "",
@@ -5285,7 +5285,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S10F_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -5298,7 +5298,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S5F_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5311,7 +5311,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S5F_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5324,7 +5324,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S5F_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5337,7 +5337,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S5F_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5350,7 +5350,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S1F_SW_top",
         "System": "V4",
         "Comment": "",
@@ -5363,7 +5363,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "S1F_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -5376,7 +5376,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL1_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5389,7 +5389,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL1_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5402,7 +5402,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL1_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5415,7 +5415,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL1_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5428,7 +5428,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL2_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5441,7 +5441,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL2_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5454,7 +5454,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL2_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5467,7 +5467,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL2_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5480,7 +5480,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL3_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5493,7 +5493,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL3_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5506,7 +5506,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL3_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5519,7 +5519,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL3_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5532,7 +5532,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL4_SW_top_ext",
         "System": "V4",
         "Comment": "",
@@ -5545,7 +5545,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL4_SW_top_int",
         "System": "V4",
         "Comment": "",
@@ -5558,7 +5558,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL4_SW_bot_ext",
         "System": "V4",
         "Comment": "",
@@ -5571,7 +5571,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STL4_SW_bot_int",
         "System": "V4",
         "Comment": "",
@@ -5584,7 +5584,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_top_1",
         "System": "V4",
         "Comment": "",
@@ -5597,7 +5597,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_top_2",
         "System": "V4",
         "Comment": "",
@@ -5610,7 +5610,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_top_3",
         "System": "V4",
         "Comment": "",
@@ -5623,7 +5623,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_top_4",
         "System": "V4",
         "Comment": "",
@@ -5636,7 +5636,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_top_5",
         "System": "V4",
         "Comment": "",
@@ -5649,7 +5649,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_bot_1",
         "System": "V4",
         "Comment": "",
@@ -5662,7 +5662,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_bot_2",
         "System": "V4",
         "Comment": "",
@@ -5675,7 +5675,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_bot_3",
         "System": "V4",
         "Comment": "",
@@ -5688,7 +5688,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_bot_4",
         "System": "V4",
         "Comment": "",
@@ -5701,7 +5701,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "STW_SW_bot_5",
         "System": "V4",
         "Comment": "",
@@ -8279,7 +8279,7 @@
         "Position": ""
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil9_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8292,7 +8292,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil8_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8305,7 +8305,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil7_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8318,7 +8318,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil6_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8331,7 +8331,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil6_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8344,7 +8344,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil7_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8357,7 +8357,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil8_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8370,7 +8370,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil9_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8383,7 +8383,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil2_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8396,7 +8396,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil3_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8409,7 +8409,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil4_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8422,7 +8422,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil5_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8435,7 +8435,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil5_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8448,7 +8448,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil4_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8461,7 +8461,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil3_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8474,7 +8474,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil2_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8487,7 +8487,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil1_SW_bot",
         "System": "V4",
         "Comment": "",
@@ -8500,7 +8500,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "NIWcoil1_SW_top",
         "System": "V4",
         "Comment": "",
@@ -8601,27 +8601,27 @@
         "Sensors": [
             {
                 "Position": 4,
-                "Blocking sensor": "1B1A_SW_top"
+                "Interlock sensor": "1B1A_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1B1A_SW_bot"
+                "Interlock sensor": "1B1A_SW_bot"
             },
             {
                 "Position": 0,
-                "Blocking sensor": "1D1_SW_top_ext"
+                "Interlock sensor": "1D1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1D1_SW_top_int"
+                "Interlock sensor": "1D1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1D1_SW_bot_ext"
+                "Interlock sensor": "1D1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1D1_SW_bot_int"
+                "Interlock sensor": "1D1_SW_bot_int"
             }
         ]
     },
@@ -8634,27 +8634,27 @@
         "Sensors": [
             {
                 "Position": 4,
-                "Blocking sensor": "1B1B_SW_top"
+                "Interlock sensor": "1B1B_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1B1B_SW_bot"
+                "Interlock sensor": "1B1B_SW_bot"
             },
             {
                 "Position": 0,
-                "Blocking sensor": "1F1_SW_top_ext"
+                "Interlock sensor": "1F1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1F1_SW_top_int"
+                "Interlock sensor": "1F1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1F1_SW_bot_ext"
+                "Interlock sensor": "1F1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1F1_SW_bot_int"
+                "Interlock sensor": "1F1_SW_bot_int"
             }
         ]
     },
@@ -8667,35 +8667,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M2_SW_top_ext"
+                "Interlock sensor": "1M2_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M2_SW_top_int"
+                "Interlock sensor": "1M2_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M2_SW_bot_ext"
+                "Interlock sensor": "1M2_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M2_SW_bot_int"
+                "Interlock sensor": "1M2_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M2_SW_top"
+                "Interlock sensor": "1M2_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M2_SW_bot"
+                "Interlock sensor": "1M2_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M2D_SW"
+                "Interlock sensor": "1M2D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M2F_SW"
+                "Interlock sensor": "1M2F_SW"
             }
         ]
     },
@@ -8708,35 +8708,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M3_SW_top_ext"
+                "Interlock sensor": "1M3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M3_SW_top_int"
+                "Interlock sensor": "1M3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M3_SW_bot_ext"
+                "Interlock sensor": "1M3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M3_SW_bot_int"
+                "Interlock sensor": "1M3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M3_SW_top"
+                "Interlock sensor": "1M3_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M3_SW_bot"
+                "Interlock sensor": "1M3_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M3D_SW"
+                "Interlock sensor": "1M3D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M3F_SW"
+                "Interlock sensor": "1M3F_SW"
             }
         ]
     },
@@ -8749,35 +8749,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M4_SW_top_ext"
+                "Interlock sensor": "1M4_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M4_SW_top_int"
+                "Interlock sensor": "1M4_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M4_SW_bot_ext"
+                "Interlock sensor": "1M4_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M4_SW_bot_int"
+                "Interlock sensor": "1M4_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M4_SW_top"
+                "Interlock sensor": "1M4_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M4_SW_bot"
+                "Interlock sensor": "1M4_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M4D_SW"
+                "Interlock sensor": "1M4D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M4F_SW"
+                "Interlock sensor": "1M4F_SW"
             }
         ]
     },
@@ -8790,35 +8790,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M5_SW_top_ext"
+                "Interlock sensor": "1M5_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M5_SW_top_int"
+                "Interlock sensor": "1M5_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M5_SW_bot_ext"
+                "Interlock sensor": "1M5_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M5_SW_bot_int"
+                "Interlock sensor": "1M5_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M5_SW_top"
+                "Interlock sensor": "1M5_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M5_SW_bot"
+                "Interlock sensor": "1M5_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M5D_SW"
+                "Interlock sensor": "1M5D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M5F_SW"
+                "Interlock sensor": "1M5F_SW"
             }
         ]
     },
@@ -8831,35 +8831,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M6_SW_top_ext"
+                "Interlock sensor": "1M6_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M6_SW_top_int"
+                "Interlock sensor": "1M6_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M6_SW_bot_ext"
+                "Interlock sensor": "1M6_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M6_SW_bot_int"
+                "Interlock sensor": "1M6_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M6_SW_top"
+                "Interlock sensor": "1M6_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M6_SW_bot"
+                "Interlock sensor": "1M6_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M6D_SW"
+                "Interlock sensor": "1M6D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M6F_SW"
+                "Interlock sensor": "1M6F_SW"
             }
         ]
     },
@@ -8872,35 +8872,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M7_SW_top_ext"
+                "Interlock sensor": "1M7_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M7_SW_top_int"
+                "Interlock sensor": "1M7_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M7_SW_bot_ext"
+                "Interlock sensor": "1M7_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M7_SW_bot_int"
+                "Interlock sensor": "1M7_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M7_SW_top"
+                "Interlock sensor": "1M7_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M7_SW_bot"
+                "Interlock sensor": "1M7_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M7D_SW"
+                "Interlock sensor": "1M7D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M7F_SW"
+                "Interlock sensor": "1M7F_SW"
             }
         ]
     },
@@ -8913,35 +8913,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "1M8_SW_top_ext"
+                "Interlock sensor": "1M8_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "1M8_SW_top_int"
+                "Interlock sensor": "1M8_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "1M8_SW_bot_ext"
+                "Interlock sensor": "1M8_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "1M8_SW_bot_int"
+                "Interlock sensor": "1M8_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "1M8_SW_top"
+                "Interlock sensor": "1M8_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "1M8_SW_bot"
+                "Interlock sensor": "1M8_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "1M8D_SW"
+                "Interlock sensor": "1M8D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "1M8F_SW"
+                "Interlock sensor": "1M8F_SW"
             }
         ]
     },
@@ -8954,35 +8954,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "2D1_SW_bot_ext"
+                "Interlock sensor": "2D1_SW_bot_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "2D1_SW_bot_int"
+                "Interlock sensor": "2D1_SW_bot_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "2D1_SW_top_ext"
+                "Interlock sensor": "2D1_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "2D1_SW_top_int"
+                "Interlock sensor": "2D1_SW_top_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "2F2_SW_bot_ext"
+                "Interlock sensor": "2F2_SW_bot_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "2F2_SW_bot_int"
+                "Interlock sensor": "2F2_SW_bot_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "2F2_SW_top_ext"
+                "Interlock sensor": "2F2_SW_top_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "2F2_SW_top_int"
+                "Interlock sensor": "2F2_SW_top_int"
             }
         ]
     },
@@ -8995,35 +8995,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "2D3_SW_bot_int"
+                "Interlock sensor": "2D3_SW_bot_int"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "2D3_SW_top_int"
+                "Interlock sensor": "2D3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "2D3_SW_bot_ext"
+                "Interlock sensor": "2D3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "2D3_SW_top_ext"
+                "Interlock sensor": "2D3_SW_top_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "2F4_SW_bot_ext"
+                "Interlock sensor": "2F4_SW_bot_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "2F4_SW_bot_int"
+                "Interlock sensor": "2F4_SW_bot_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "2F4_SW_top_ext"
+                "Interlock sensor": "2F4_SW_top_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "2F4_SW_top_int"
+                "Interlock sensor": "2F4_SW_top_int"
             }
         ]
     },
@@ -9036,35 +9036,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "2F1_SW"
+                "Interlock sensor": "2F1_SW"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "2F2_SW"
+                "Interlock sensor": "2F2_SW"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "2F3_SW"
+                "Interlock sensor": "2F3_SW"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "2F4_SW"
+                "Interlock sensor": "2F4_SW"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "2D1_SW"
+                "Interlock sensor": "2D1_SW"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "2D2_SW"
+                "Interlock sensor": "2D2_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "2D3_SW"
+                "Interlock sensor": "2D3_SW"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "2D4_SW"
+                "Interlock sensor": "2D4_SW"
             }
         ]
     },
@@ -9077,35 +9077,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "2D5_SW_bot_ext"
+                "Interlock sensor": "2D5_SW_bot_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "2D5_SW_bot_int"
+                "Interlock sensor": "2D5_SW_bot_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "2D5_SW_top_ext"
+                "Interlock sensor": "2D5_SW_top_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "2D5_SW_top_int"
+                "Interlock sensor": "2D5_SW_top_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "2F6_SW_bot_ext"
+                "Interlock sensor": "2F6_SW_bot_ext"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "2F6_SW_bot_int"
+                "Interlock sensor": "2F6_SW_bot_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "2F6_SW_top_ext"
+                "Interlock sensor": "2F6_SW_top_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "2F6_SW_top_int"
+                "Interlock sensor": "2F6_SW_top_int"
             }
         ]
     },
@@ -9118,35 +9118,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "2D7_SW_bot_int"
+                "Interlock sensor": "2D7_SW_bot_int"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "2D7_SW_top_int"
+                "Interlock sensor": "2D7_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "2D7_SW_bot_ext"
+                "Interlock sensor": "2D7_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "2D7_SW_top_ext"
+                "Interlock sensor": "2D7_SW_top_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "2F8_SW_bot_int"
+                "Interlock sensor": "2F8_SW_bot_int"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "2F8_SW_top_int"
+                "Interlock sensor": "2F8_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "2F8_SW_bot_ext"
+                "Interlock sensor": "2F8_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "2F8_SW_top_ext"
+                "Interlock sensor": "2F8_SW_top_ext"
             }
         ]
     },
@@ -9159,7 +9159,7 @@
         "Sensors": [
             {
                 "Position": 2,
-                "Blocking sensor": "2G12_SW"
+                "Interlock sensor": "2G12_SW"
             }
         ]
     },
@@ -9172,7 +9172,7 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "2G78_SW"
+                "Interlock sensor": "2G78_SW"
             }
         ]
     },
@@ -9226,35 +9226,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M1_SW_top_ext"
+                "Interlock sensor": "3M1_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M1_SW_top_int"
+                "Interlock sensor": "3M1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M1_SW_bot_ext"
+                "Interlock sensor": "3M1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M1_SW_bot_int"
+                "Interlock sensor": "3M1_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M1_SW_top"
+                "Interlock sensor": "3M1_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M1_SW_bot"
+                "Interlock sensor": "3M1_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M1D_SW"
+                "Interlock sensor": "3M1D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M1F_SW"
+                "Interlock sensor": "3M1F_SW"
             }
         ]
     },
@@ -9267,11 +9267,11 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M1_SW_top_com"
+                "Interlock sensor": "3M1_SW_top_com"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M1_SW_bot_com"
+                "Interlock sensor": "3M1_SW_bot_com"
             }
         ]
     },
@@ -9284,35 +9284,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M2_SW_top_ext"
+                "Interlock sensor": "3M2_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M2_SW_top_int"
+                "Interlock sensor": "3M2_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M2_SW_bot_ext"
+                "Interlock sensor": "3M2_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M2_SW_bot_int"
+                "Interlock sensor": "3M2_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M2_SW_top"
+                "Interlock sensor": "3M2_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M2_SW_bot"
+                "Interlock sensor": "3M2_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M2D_SW"
+                "Interlock sensor": "3M2D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M2F_SW"
+                "Interlock sensor": "3M2F_SW"
             }
         ]
     },
@@ -9325,35 +9325,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M3_SW_top_ext"
+                "Interlock sensor": "3M3_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M3_SW_top_int"
+                "Interlock sensor": "3M3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M3_SW_bot_ext"
+                "Interlock sensor": "3M3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M3_SW_bot_int"
+                "Interlock sensor": "3M3_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M3_SW_top"
+                "Interlock sensor": "3M3_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M3_SW_bot"
+                "Interlock sensor": "3M3_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M3D_SW"
+                "Interlock sensor": "3M3D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M3F_SW"
+                "Interlock sensor": "3M3F_SW"
             }
         ]
     },
@@ -9366,35 +9366,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M4_SW_top_ext"
+                "Interlock sensor": "3M4_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M4_SW_top_int"
+                "Interlock sensor": "3M4_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M4_SW_bot_ext"
+                "Interlock sensor": "3M4_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M4_SW_bot_int"
+                "Interlock sensor": "3M4_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M4_SW_top"
+                "Interlock sensor": "3M4_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M4_SW_bot"
+                "Interlock sensor": "3M4_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M4D_SW"
+                "Interlock sensor": "3M4D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M4F_SW"
+                "Interlock sensor": "3M4F_SW"
             }
         ]
     },
@@ -9407,35 +9407,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M5_SW_top_ext"
+                "Interlock sensor": "3M5_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M5_SW_top_int"
+                "Interlock sensor": "3M5_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M5_SW_bot_ext"
+                "Interlock sensor": "3M5_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M5_SW_bot_int"
+                "Interlock sensor": "3M5_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M5_SW_top"
+                "Interlock sensor": "3M5_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M5_SW_bot"
+                "Interlock sensor": "3M5_SW_bot"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M5F_SW"
+                "Interlock sensor": "3M5F_SW"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M5D_SW"
+                "Interlock sensor": "3M5D_SW"
             }
         ]
     },
@@ -9448,35 +9448,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M6_SW_top_ext"
+                "Interlock sensor": "3M6_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M6_SW_top_int"
+                "Interlock sensor": "3M6_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M6_SW_bot_ext"
+                "Interlock sensor": "3M6_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M6_SW_bot_int"
+                "Interlock sensor": "3M6_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M6_SW_top"
+                "Interlock sensor": "3M6_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M6_SW_bot"
+                "Interlock sensor": "3M6_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M6D_SW"
+                "Interlock sensor": "3M6D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M6F_SW"
+                "Interlock sensor": "3M6F_SW"
             }
         ]
     },
@@ -9489,43 +9489,43 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3M7_SW_top_ext"
+                "Interlock sensor": "3M7_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M7_SW_top_int"
+                "Interlock sensor": "3M7_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M7_SW_bot_ext"
+                "Interlock sensor": "3M7_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3M7_SW_bot_int"
+                "Interlock sensor": "3M7_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3M7_SW_top"
+                "Interlock sensor": "3M7_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3M7_SW_bot"
+                "Interlock sensor": "3M7_SW_bot"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "3M7D_SW"
+                "Interlock sensor": "3M7D_SW"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "3M7F_SW"
+                "Interlock sensor": "3M7F_SW"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3M7_SW_top_com"
+                "Interlock sensor": "3M7_SW_top_com"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3M7_SW_bot_com"
+                "Interlock sensor": "3M7_SW_bot_com"
             }
         ]
     },
@@ -9538,11 +9538,11 @@
         "Sensors": [
             {
                 "Position": 4,
-                "Blocking sensor": "3B8A_SW_top"
+                "Interlock sensor": "3B8A_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3B8A_SW_bot"
+                "Interlock sensor": "3B8A_SW_bot"
             }
         ]
     },
@@ -9555,51 +9555,51 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "3F8_SW_top_ext"
+                "Interlock sensor": "3F8_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3F8_SW_top_int"
+                "Interlock sensor": "3F8_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3F8_SW_bot_ext"
+                "Interlock sensor": "3F8_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3F8_SW_bot_int"
+                "Interlock sensor": "3F8_SW_bot_int"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "3B8B_SW_top"
+                "Interlock sensor": "3B8B_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "3B8B_SW_bot"
+                "Interlock sensor": "3B8B_SW_bot"
             },
             {
                 "Position": 0,
-                "Blocking sensor": "3D8_SW_top_ext"
+                "Interlock sensor": "3D8_SW_top_ext"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "3D8_SW_top_int"
+                "Interlock sensor": "3D8_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "3D8_SW_bot_ext"
+                "Interlock sensor": "3D8_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "3D8_SW_bot_int"
+                "Interlock sensor": "3D8_SW_bot_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "SR1_SW_top"
+                "Interlock sensor": "SR1_SW_top"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "SR1_SW_bot"
+                "Interlock sensor": "SR1_SW_bot"
             }
         ]
     },
@@ -9612,27 +9612,27 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "SR2_SW_top"
+                "Interlock sensor": "SR2_SW_top"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "SR2_SW_bot"
+                "Interlock sensor": "SR2_SW_bot"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "SR3_SW_top"
+                "Interlock sensor": "SR3_SW_top"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "SR3_SW_bot"
+                "Interlock sensor": "SR3_SW_bot"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "SR4_SW_top"
+                "Interlock sensor": "SR4_SW_top"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "SR4_SW_bot"
+                "Interlock sensor": "SR4_SW_bot"
             }
         ]
     },
@@ -9658,35 +9658,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "WG_SW_top_1"
+                "Interlock sensor": "WG_SW_top_1"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "WG_SW_bot_1"
+                "Interlock sensor": "WG_SW_bot_1"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "WG_SW_top_mid_L"
+                "Interlock sensor": "WG_SW_top_mid_L"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "WG_SW_bot_mid_L"
+                "Interlock sensor": "WG_SW_bot_mid_L"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "WG_SW_top_mid_R"
+                "Interlock sensor": "WG_SW_top_mid_R"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "WG_SW_bot_mid_R"
+                "Interlock sensor": "WG_SW_bot_mid_R"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "WG_SW_top_3"
+                "Interlock sensor": "WG_SW_top_3"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "WG_SW_bot_3"
+                "Interlock sensor": "WG_SW_bot_3"
             }
         ]
     },
@@ -9699,35 +9699,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "4D1_SW_bot_int"
+                "Interlock sensor": "4D1_SW_bot_int"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "4D1_SW_top_int"
+                "Interlock sensor": "4D1_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "4D1_SW_bot_ext"
+                "Interlock sensor": "4D1_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "4D1_SW_top_ext"
+                "Interlock sensor": "4D1_SW_top_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "4F2_SW_bot_int"
+                "Interlock sensor": "4F2_SW_bot_int"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "4F2_SW_top_int"
+                "Interlock sensor": "4F2_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "4F2_SW_bot_ext"
+                "Interlock sensor": "4F2_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "4F2_SW_top_ext"
+                "Interlock sensor": "4F2_SW_top_ext"
             }
         ]
     },
@@ -9740,35 +9740,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "4D3_SW_bot_int"
+                "Interlock sensor": "4D3_SW_bot_int"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "4D3_SW_top_int"
+                "Interlock sensor": "4D3_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "4D3_SW_bot_ext"
+                "Interlock sensor": "4D3_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "4D3_SW_top_ext"
+                "Interlock sensor": "4D3_SW_top_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "4F4_SW_bot_int"
+                "Interlock sensor": "4F4_SW_bot_int"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "4F4_SW_top_int"
+                "Interlock sensor": "4F4_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "4F4_SW_bot_ext"
+                "Interlock sensor": "4F4_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "4F4_SW_top_ext"
+                "Interlock sensor": "4F4_SW_top_ext"
             }
         ]
     },
@@ -9781,35 +9781,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "4D5_SW_bot_int"
+                "Interlock sensor": "4D5_SW_bot_int"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "4D5_SW_top_int"
+                "Interlock sensor": "4D5_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "4D5_SW_bot_ext"
+                "Interlock sensor": "4D5_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "4D5_SW_top_ext"
+                "Interlock sensor": "4D5_SW_top_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "4F6_SW_bot_int"
+                "Interlock sensor": "4F6_SW_bot_int"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "4F6_SW_top_int"
+                "Interlock sensor": "4F6_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "4F6_SW_bot_ext"
+                "Interlock sensor": "4F6_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "4F6_SW_top_ext"
+                "Interlock sensor": "4F6_SW_top_ext"
             }
         ]
     },
@@ -9822,35 +9822,35 @@
         "Sensors": [
             {
                 "Position": 0,
-                "Blocking sensor": "4D7_SW_bot_int"
+                "Interlock sensor": "4D7_SW_bot_int"
             },
             {
                 "Position": 1,
-                "Blocking sensor": "4D7_SW_top_int"
+                "Interlock sensor": "4D7_SW_top_int"
             },
             {
                 "Position": 2,
-                "Blocking sensor": "4D7_SW_bot_ext"
+                "Interlock sensor": "4D7_SW_bot_ext"
             },
             {
                 "Position": 3,
-                "Blocking sensor": "4D7_SW_top_ext"
+                "Interlock sensor": "4D7_SW_top_ext"
             },
             {
                 "Position": 4,
-                "Blocking sensor": "4F8_SW_bot_int"
+                "Interlock sensor": "4F8_SW_bot_int"
             },
             {
                 "Position": 5,
-                "Blocking sensor": "4F8_SW_top_int"
+                "Interlock sensor": "4F8_SW_top_int"
             },
             {
                 "Position": 6,
-                "Blocking sensor": "4F8_SW_bot_ext"
+                "Interlock sensor": "4F8_SW_bot_ext"
             },
             {
                 "Position": 7,
-                "Blocking sensor": "4F8_SW_top_ext"
+                "Interlock sensor": "4F8_SW_top_ext"
             }
         ]
     },
@@ -9872,7 +9872,7 @@
         ]
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1B1A_SW_top",
         "System": "V3",
         "Comment": "",
@@ -9885,7 +9885,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1B1A_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -9898,7 +9898,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1D1_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -9911,7 +9911,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1D1_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -9924,7 +9924,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1D1_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -9937,7 +9937,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1D1_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -9950,7 +9950,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1B1B_SW_top",
         "System": "V3",
         "Comment": "",
@@ -9963,7 +9963,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1B1B_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -9976,7 +9976,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1F1_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -9989,7 +9989,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1F1_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10002,7 +10002,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1F1_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10015,7 +10015,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1F1_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10028,7 +10028,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10041,7 +10041,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10054,7 +10054,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10067,7 +10067,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10080,7 +10080,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10093,7 +10093,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10106,7 +10106,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2D_SW",
         "System": "V3",
         "Comment": "",
@@ -10119,7 +10119,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M2F_SW",
         "System": "V3",
         "Comment": "",
@@ -10132,7 +10132,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10145,7 +10145,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10158,7 +10158,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10171,7 +10171,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10184,7 +10184,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10197,7 +10197,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10210,7 +10210,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3D_SW",
         "System": "V3",
         "Comment": "",
@@ -10223,7 +10223,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M3F_SW",
         "System": "V3",
         "Comment": "",
@@ -10236,7 +10236,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10249,7 +10249,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10262,7 +10262,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10275,7 +10275,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10288,7 +10288,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10301,7 +10301,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10314,7 +10314,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4D_SW",
         "System": "V3",
         "Comment": "",
@@ -10327,7 +10327,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M4F_SW",
         "System": "V3",
         "Comment": "",
@@ -10340,7 +10340,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10353,7 +10353,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10366,7 +10366,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10379,7 +10379,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10392,7 +10392,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10405,7 +10405,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10418,7 +10418,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5D_SW",
         "System": "V3",
         "Comment": "",
@@ -10431,7 +10431,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M5F_SW",
         "System": "V3",
         "Comment": "",
@@ -10444,7 +10444,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10457,7 +10457,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10470,7 +10470,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10483,7 +10483,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10496,7 +10496,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10509,7 +10509,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10522,7 +10522,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6D_SW",
         "System": "V3",
         "Comment": "",
@@ -10535,7 +10535,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M6F_SW",
         "System": "V3",
         "Comment": "",
@@ -10548,7 +10548,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10561,7 +10561,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10574,7 +10574,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10587,7 +10587,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10600,7 +10600,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10613,7 +10613,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10626,7 +10626,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7D_SW",
         "System": "V3",
         "Comment": "",
@@ -10639,7 +10639,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M7F_SW",
         "System": "V3",
         "Comment": "",
@@ -10652,7 +10652,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10665,7 +10665,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10678,7 +10678,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10691,7 +10691,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10704,7 +10704,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8_SW_top",
         "System": "V3",
         "Comment": "",
@@ -10717,7 +10717,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -10730,7 +10730,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8D_SW",
         "System": "V3",
         "Comment": "",
@@ -10743,7 +10743,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "1M8F_SW",
         "System": "V3",
         "Comment": "",
@@ -10756,7 +10756,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D1_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10769,7 +10769,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D1_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10782,7 +10782,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D1_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10795,7 +10795,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D1_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10808,7 +10808,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F2_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10821,7 +10821,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F2_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10834,7 +10834,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F2_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10847,7 +10847,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F2_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10860,7 +10860,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D3_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10873,7 +10873,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D3_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10886,7 +10886,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D3_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10899,7 +10899,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D3_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10912,7 +10912,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F4_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -10925,7 +10925,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F4_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -10938,7 +10938,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F4_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -10951,7 +10951,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F4_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -10964,7 +10964,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F1_SW",
         "System": "V3",
         "Comment": "",
@@ -10977,7 +10977,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F2_SW",
         "System": "V3",
         "Comment": "",
@@ -10990,7 +10990,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F3_SW",
         "System": "V3",
         "Comment": "",
@@ -11003,7 +11003,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F4_SW",
         "System": "V3",
         "Comment": "",
@@ -11016,7 +11016,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D1_SW",
         "System": "V3",
         "Comment": "",
@@ -11029,7 +11029,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D2_SW",
         "System": "V3",
         "Comment": "",
@@ -11042,7 +11042,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D3_SW",
         "System": "V3",
         "Comment": "",
@@ -11055,7 +11055,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D4_SW",
         "System": "V3",
         "Comment": "",
@@ -11068,7 +11068,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D5_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11081,7 +11081,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D5_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11094,7 +11094,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D5_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11107,7 +11107,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D5_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11120,7 +11120,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F6_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11133,7 +11133,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F6_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11146,7 +11146,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F6_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11159,7 +11159,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F6_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11172,7 +11172,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D7_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11185,7 +11185,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D7_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11198,7 +11198,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D7_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11211,7 +11211,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2D7_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11224,7 +11224,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F8_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11237,7 +11237,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F8_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11250,7 +11250,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F8_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11263,7 +11263,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2F8_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11276,7 +11276,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2G12_SW",
         "System": "V3",
         "Comment": "",
@@ -11289,7 +11289,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "2G78_SW",
         "System": "V3",
         "Comment": "",
@@ -11374,7 +11374,7 @@
         "Position": ""
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11387,7 +11387,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11400,7 +11400,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11413,7 +11413,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11426,7 +11426,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_top",
         "System": "V3",
         "Comment": "",
@@ -11439,7 +11439,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -11452,7 +11452,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1D_SW",
         "System": "V3",
         "Comment": "",
@@ -11465,7 +11465,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1F_SW",
         "System": "V3",
         "Comment": "",
@@ -11478,7 +11478,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_top_com",
         "System": "V3",
         "Comment": "",
@@ -11491,7 +11491,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M1_SW_bot_com",
         "System": "V3",
         "Comment": "",
@@ -11504,7 +11504,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11517,7 +11517,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11530,7 +11530,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11543,7 +11543,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11556,7 +11556,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2_SW_top",
         "System": "V3",
         "Comment": "",
@@ -11569,7 +11569,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -11582,7 +11582,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2D_SW",
         "System": "V3",
         "Comment": "",
@@ -11595,7 +11595,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M2F_SW",
         "System": "V3",
         "Comment": "",
@@ -11608,7 +11608,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11621,7 +11621,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11634,7 +11634,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11647,7 +11647,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11660,7 +11660,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3_SW_top",
         "System": "V3",
         "Comment": "",
@@ -11673,7 +11673,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -11686,7 +11686,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3D_SW",
         "System": "V3",
         "Comment": "",
@@ -11699,7 +11699,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M3F_SW",
         "System": "V3",
         "Comment": "",
@@ -11712,7 +11712,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11725,7 +11725,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11738,7 +11738,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11751,7 +11751,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11764,7 +11764,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4_SW_top",
         "System": "V3",
         "Comment": "",
@@ -11777,7 +11777,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -11790,7 +11790,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4D_SW",
         "System": "V3",
         "Comment": "",
@@ -11803,7 +11803,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M4F_SW",
         "System": "V3",
         "Comment": "",
@@ -11816,7 +11816,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11829,7 +11829,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11842,7 +11842,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11855,7 +11855,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11868,7 +11868,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5_SW_top",
         "System": "V3",
         "Comment": "",
@@ -11881,7 +11881,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -11894,7 +11894,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5F_SW",
         "System": "V3",
         "Comment": "",
@@ -11907,7 +11907,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M5D_SW",
         "System": "V3",
         "Comment": "",
@@ -11920,7 +11920,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -11933,7 +11933,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -11946,7 +11946,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -11959,7 +11959,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -11972,7 +11972,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6_SW_top",
         "System": "V3",
         "Comment": "",
@@ -11985,7 +11985,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -11998,7 +11998,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6D_SW",
         "System": "V3",
         "Comment": "",
@@ -12011,7 +12011,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M6F_SW",
         "System": "V3",
         "Comment": "",
@@ -12024,7 +12024,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12037,7 +12037,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12050,7 +12050,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12063,7 +12063,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12076,7 +12076,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12089,7 +12089,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12102,7 +12102,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7D_SW",
         "System": "V3",
         "Comment": "",
@@ -12115,7 +12115,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7F_SW",
         "System": "V3",
         "Comment": "",
@@ -12128,7 +12128,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_top_com",
         "System": "V3",
         "Comment": "",
@@ -12141,7 +12141,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3M7_SW_bot_com",
         "System": "V3",
         "Comment": "",
@@ -12154,7 +12154,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3B8A_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12167,7 +12167,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3B8A_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12180,7 +12180,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3F8_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12193,7 +12193,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3F8_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12206,7 +12206,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3F8_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12219,7 +12219,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3F8_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12232,7 +12232,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3B8B_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12245,7 +12245,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3B8B_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12258,7 +12258,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3D8_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12271,7 +12271,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3D8_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12284,7 +12284,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3D8_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12297,7 +12297,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "3D8_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12310,7 +12310,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR1_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12323,7 +12323,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR1_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12336,7 +12336,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR2_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12349,7 +12349,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR2_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12362,7 +12362,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR3_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12375,7 +12375,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR3_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12388,7 +12388,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR4_SW_top",
         "System": "V3",
         "Comment": "",
@@ -12401,7 +12401,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "SR4_SW_bot",
         "System": "V3",
         "Comment": "",
@@ -12423,7 +12423,7 @@
         "Position": ""
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_top_1",
         "System": "V3",
         "Comment": "",
@@ -12436,7 +12436,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_bot_1",
         "System": "V3",
         "Comment": "",
@@ -12449,7 +12449,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_top_mid_L",
         "System": "V3",
         "Comment": "",
@@ -12462,7 +12462,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_bot_mid_L",
         "System": "V3",
         "Comment": "",
@@ -12475,7 +12475,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_top_mid_R",
         "System": "V3",
         "Comment": "",
@@ -12488,7 +12488,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_bot_mid_R",
         "System": "V3",
         "Comment": "",
@@ -12501,7 +12501,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_top_3",
         "System": "V3",
         "Comment": "",
@@ -12514,7 +12514,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "WG_SW_bot_3",
         "System": "V3",
         "Comment": "",
@@ -12527,7 +12527,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D1_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12540,7 +12540,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D1_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12553,7 +12553,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D1_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12566,7 +12566,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D1_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12579,7 +12579,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F2_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12592,7 +12592,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F2_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12605,7 +12605,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F2_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12618,7 +12618,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F2_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12631,7 +12631,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D3_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12644,7 +12644,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D3_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12657,7 +12657,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D3_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12670,7 +12670,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D3_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12683,7 +12683,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F4_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12696,7 +12696,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F4_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12709,7 +12709,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F4_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12722,7 +12722,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F4_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12735,7 +12735,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D5_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12748,7 +12748,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D5_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12761,7 +12761,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D5_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12774,7 +12774,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D5_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12787,7 +12787,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F6_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12800,7 +12800,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F6_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12813,7 +12813,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F6_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12826,7 +12826,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F6_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12839,7 +12839,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D7_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12852,7 +12852,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D7_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12865,7 +12865,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D7_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12878,7 +12878,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4D7_SW_top_ext",
         "System": "V3",
         "Comment": "",
@@ -12891,7 +12891,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F8_SW_bot_int",
         "System": "V3",
         "Comment": "",
@@ -12904,7 +12904,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F8_SW_top_int",
         "System": "V3",
         "Comment": "",
@@ -12917,7 +12917,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F8_SW_bot_ext",
         "System": "V3",
         "Comment": "",
@@ -12930,7 +12930,7 @@
         "RelayOff": 2
     },
     {
-        "Class": "Blocking sensor",
+        "Class": "Interlock sensor",
         "Name": "4F8_SW_top_ext",
         "System": "V3",
         "Comment": "",
