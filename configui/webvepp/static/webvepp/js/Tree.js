@@ -53,11 +53,36 @@ WEBVEPP.Tree = function(params){
                     return
                 d.collapsed = true;
             });
+            checkIntersections(nodes[0]);
         },
         loadDetailsOpenExtra = function(node){
             if(node.open_extra){
                 if(!node.attributes.extra || node.attributes.extra.length == 0)
                     $(document).trigger("load_details",node);
+            }
+        },
+        recursiveYrecount = function(node){
+            if(!node.children) return;
+            node.children.forEach(function(child){
+                child.coord[1] = countNodeY(child);
+                recursiveYrecount(child);
+            });
+        },
+        checkIntersections = function(rootnode){
+            if(!rootnode.children) return;
+            for(var i = 0; i<rootnode.children.length-1; i++){
+                var parent1 = rootnode.children[i];
+                var parent2 = rootnode.children[i+1];
+                if(!parent1.children||!parent2.children) return;
+                if(parent1.children.length>0 && parent2.children.length>0 && !parent1.collapsed && !parent2.collapsed){
+                    var child1 = parent1.children[parent1.children.length-1];
+                    var child2 = parent2.children[0];
+                    var childrenlevel = settings["level"+child1.depth].display_attributes;
+                    if(child1.coord[1]+childrenlevel.height/2+10>child2.coord[1]-childrenlevel.height/2){
+                        parent2.coord[1]+=child1.coord[1]-child2.coord[1]+childrenlevel.height+10;
+                        recursiveYrecount(parent2);
+                    }
+                }
             }
         },
         countNodeY = function(node){
@@ -127,7 +152,7 @@ WEBVEPP.Tree = function(params){
                         result+=(index%matrix.cols)*(node.width+20) - level_info.width/2-10;
                     }
                 }
-                else{
+                else {
                     result = 0;
                 }
                 return result;

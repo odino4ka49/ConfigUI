@@ -187,6 +187,7 @@
                 "width": 90,
                 "height": 30,
                 "field_name": false,
+                "positioning": "nextlevel",
                 "autorevealing": true
             }
         },
