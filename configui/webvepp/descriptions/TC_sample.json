@@ -54,12 +54,13 @@
                     "Controller"
                 ]
             },
-            "sort_field": "Address",
+            "sort_field": ["Address","System"],
             "display_filter": {
                 "min": [
                     "Name",
                     "Position",
-                    "Address"
+                    "Address",
+                    "System"
                 ],
                 "max": [
                     "Name",
@@ -174,18 +175,20 @@
                     "Controller"
                 ]
             },
-            "sort_field": "Address",
+            "sort_field":  ["Address","System"],
             "display_filter": {
                 "min": [
-                    "Name"
+                    "Name",
+                    "System"
                 ],
                 "max": [
-                    "Name"
+                    "Name",
+                    "System"
                 ]
             },
             "display_attributes": {
                 "width": 90,
-                "height": 30,
+                "height": 40,
                 "field_name": false,
                 "positioning": "nextlevel",
                 "autorevealing": true
@@ -411,15 +414,15 @@
             },
             "display_filter": {
                 "min": [
+                    {
+                        "key": "Controller",
+                        "value": "&Line->Controller->Name"
+                    },
                     "Bank number",
                     "Name",
                     {
                         "key": "Line",
                         "value": "&Line->Name"
-                    },
-                    {
-                        "key": "Controller",
-                        "value": "&Line->Controller->Name"
                     },
                     "Full name",
                     "Alarm",
@@ -431,11 +434,10 @@
                     "Name"
                 ]
             },
-            "sort_field": "Bank number",
+            "sort_field": ["Bank number","Controller"],
             "display_attributes": {
                 "field_name": false,
-                "inline": true,
-                "sort_type": "cells"
+                "inline": true
             }
         }
     }

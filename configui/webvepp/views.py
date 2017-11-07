@@ -401,14 +401,27 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 matrix["height"]=(sample_l["display_attributes"]["height"]+10)*matrix_rows
                 matrix["matrix"]=True
                 if "sort_field" in sample_l:
+                    sortfields = []
+                    if isinstance(sample_l["sort_field"],basestring):
+                        sortfields.append(sample_l["sort_field"])
+                    elif type(sample_l["sort_field"]) is list:
+                        sortfields = sample_l["sort_field"]
                     if sample_l["display_attributes"]["matrix_type"]=="channels":
-                        neighbours = sortMatrixObjects(neighbours,sample_l["sort_field"],matrix_size,node)
+                        for sortfield in sortfields:
+                            neighbours = sortMatrixObjects(neighbours,sortfield,matrix_size,node)
                     else:
-                        neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
+                        for sortfield in sortfields:
+                            neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sortfield),{"value":""})["value"])
                 #append it to neighbours
                 neighbours.insert(0,matrix)
         elif "sort_field" in sample_l:
-            neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample_l["sort_field"]),{"value":""})["value"])
+            sortfields = []
+            if isinstance(sample_l["sort_field"],basestring):
+                sortfields.append(sample_l["sort_field"])
+            elif type(sample_l["sort_field"]) is list:
+                sortfields = sample_l["sort_field"]
+            for sortfield in sortfields:
+                neighbours = sorted(neighbours, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sortfield),{"value":""})["value"])
     return neighbours
 
 def getRemoteAttributes(node,level):
@@ -709,11 +722,18 @@ def parseList():
         else:
             result.append(obj)
     if "sort_field" in sample:
-        result = sorted(result, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sample["sort_field"]),{"value":""})["value"])
-        if "sort_type" in display_attributes and display_attributes["sort_type"]=="cells":
-            result = listFillGaps(result,sample["sort_field"])
-        if "sort_type" in display_attributes and display_attributes["sort_type"]=="numbered":
-            listNumbering(result);
+        sortfields = []
+        if isinstance(sample["sort_field"],basestring):
+            sortfields.append(sample["sort_field"])
+        elif type(sample["sort_field"]) is list:
+            sortfields = sample["sort_field"]
+        for sortfield in sortfields:
+            result = sorted(result, key=lambda k: next((attr for attr in k["attributes"]["min"] if attr["key"]==sortfield),{"value":""})["value"])
+        if isinstance(sample["sort_field"],basestring):
+            if "sort_type" in display_attributes and display_attributes["sort_type"]=="cells":
+                result = listFillGaps(result,sample["sort_field"])
+            if "sort_type" in display_attributes and display_attributes["sort_type"]=="numbered":
+                listNumbering(result);
     return result
 
 def getValuesByPath(object,path):
