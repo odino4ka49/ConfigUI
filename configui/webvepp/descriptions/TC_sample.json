@@ -26,6 +26,24 @@
     },
     {
         "name": "TC_controllers",
+        "filter_buttons": [
+            {
+                "name": "ВЭПП3",
+                "filter": {
+                    "System": [
+                        "V3"
+                    ]
+                }
+            },
+            {
+                "name": "ВЭПП4",
+                "filter": {
+                    "System": [
+                        "V4"
+                    ]
+                }
+            }
+        ],
         "root": {
             "type": "new",
             "level": 0,
@@ -85,14 +103,14 @@
             "level": 2,
             "filter": {
                 "Class": [
-                    "Line"
+                    "Loop"
                 ]
             },
-            "sort_field": "Line",
+            "sort_field": "Loop",
             "display_filter": {
                 "min": [
                     {
-                        "key": "Line",
+                        "key": "Loop",
                         "value": "Name"
                     }
                 ],
@@ -146,6 +164,24 @@
     },
     {
         "name": "TC_sensors",
+        "filter_buttons": [
+            {
+                "name": "ВЭПП3",
+                "filter": {
+                    "System": [
+                        "V3"
+                    ]
+                }
+            },
+            {
+                "name": "ВЭПП4",
+                "filter": {
+                    "System": [
+                        "V4"
+                    ]
+                }
+            }
+        ],
         "root": {
             "type": "new",
             "level": 0,
@@ -178,8 +214,7 @@
             "sort_field":  ["Address","System"],
             "display_filter": {
                 "min": [
-                    "Name",
-                    "System"
+                    "Name"
                 ],
                 "max": [
                     "Name",
@@ -188,7 +223,7 @@
             },
             "display_attributes": {
                 "width": 90,
-                "height": 40,
+                "height": 30,
                 "field_name": false,
                 "positioning": "nextlevel",
                 "autorevealing": true
@@ -199,7 +234,7 @@
             "level": 2,
             "filter": {
                 "Class": [
-                    "Line"
+                    "Loop"
                 ]
             },
             "sort_field": "Name",
@@ -265,6 +300,24 @@
     },
     {
         "name": "TC_sensors2",
+        "filter_buttons": [
+            {
+                "name": "ВЭПП3",
+                "filter": {
+                    "System": [
+                        "V3"
+                    ]
+                }
+            },
+            {
+                "name": "ВЭПП4",
+                "filter": {
+                    "System": [
+                        "V4"
+                    ]
+                }
+            }
+        ],
         "root": {
             "type": "new",
             "level": 0,
@@ -329,7 +382,7 @@
             "level": 2,
             "filter": {
                 "Class": [
-                    "Line"
+                    "Loop"
                 ],
                 "Element": "&Name"
             },
@@ -421,7 +474,7 @@
                     "Bank number",
                     "Name",
                     {
-                        "key": "Line",
+                        "key": "Loop",
                         "value": "&Line->Name"
                     },
                     "Full name",

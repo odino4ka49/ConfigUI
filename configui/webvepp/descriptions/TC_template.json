@@ -35,7 +35,7 @@
         "component_check_values": null
     },
     {
-        "class": "Line",
+        "class": "Loop",
         "comment": "шаблон шлейфа",
         "fields": [
             {
