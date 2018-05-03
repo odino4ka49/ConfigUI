@@ -179,6 +179,10 @@
             "sort_field": "Position",
             "display_filter": {
                 "min": [
+                    {
+                        "key": "BPM",
+                        "value": "&BPM->Name"
+                    },
                     "Name",
                     "Module Type",
                     {
@@ -214,6 +218,10 @@
             "sort_field": "Position",
             "display_filter": {
                 "min": [
+                    {
+                        "key": "BPM",
+                        "value": "&BPM->Name"
+                    },
                     "Name",
                     "Module Type",
                     {
