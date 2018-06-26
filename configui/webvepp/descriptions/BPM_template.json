@@ -51,6 +51,14 @@
                 "key": "Z0",
                 "type": "float",
                 "units": "mm"
+            },
+            {
+                "key": "Form",
+                "type": "string",
+                "values": [
+                    "X",
+                    "HV"
+                ]
             }
         ],
         "foreign_keys": [
@@ -217,7 +225,31 @@
                 "type": "float"
             },
             {
-                "key": "Date",
+                "key": "fine_auto",
+                "type": "string"
+            },
+            {
+                "key": "fine_bunch_auto",
+                "type": "string"
+            },
+            {
+                "key": "delay_button_auto",
+                "type": "string"
+            },
+            {
+                "key": "delay_button_e_auto",
+                "type": "string"
+            },
+            {
+                "key": "delay_button_p_auto",
+                "type": "string"
+            },
+            {
+                "key": "gain_scan",
+                "type": "string"
+            },
+            {
+                "key": "g_delay_button_auto",
                 "type": "string"
             }
         ],

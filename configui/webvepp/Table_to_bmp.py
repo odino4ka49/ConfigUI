@@ -85,6 +85,7 @@ def makeBPMObject(line):
     bmp["GeodZ"] = to_float(line[6])
     bmp["X0"] = to_float(line[7])
     bmp["Z0"] = to_float(line[8])
+    bmp["Form"] = line[9]
     return bmp
 
 def findElement(elements,name):
@@ -103,7 +104,7 @@ def getDataFile(name):
 
 file_txt = getTextFile("bpm.data")
 py_bpms = []
-custom_sort = make_custom_sort([["Class", "Name", "System", "Comment", "BMP Type", "Azimuth", "GX", "GZ", "GeodX", "GeodZ", "X0", "Z0"]])
+custom_sort = make_custom_sort([["Class", "Name", "System", "Comment", "BMP Type", "Azimuth", "GX", "GZ", "GeodX", "GeodZ", "X0", "Z0", "Form"]])
 for line_txt in file_txt:
     line_splitted = line_txt.split()
     py_object = makeBPMObject(line_splitted)

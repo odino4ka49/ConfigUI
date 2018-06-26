@@ -72,29 +72,38 @@ def to_float(string):
         return float(string)
 
 def makeRecieverObject(line):
-    obj = {}
-    obj["Class"] = "Module"
-    obj["Name"] = line[0]+"BPMC"
-    obj["Module Type"] = "BPMcontroller"+line[5]
-    obj["System"] = "V4"
-    obj["Comment"] = ""
-    obj["BMP"] = line[1]
-    obj["IP"] = line[2]
-    obj["Port"] = to_int(line[3])
-    obj["MAC"] = line[4]
-    obj["GI"] = to_float(line[6])
-    obj["g0_button0"] = to_float(line[7])
-    obj["g0_button1"] = to_float(line[8])
-    obj["g0_button2"] = to_float(line[9])
-    obj["g0_button3"] = to_float(line[10])
-    obj["g1_button0"] = to_float(line[11])
-    obj["g1_button1"] = to_float(line[12])
-    obj["g1_button2"] = to_float(line[13])
-    obj["g1_button3"] = to_float(line[14])
-    obj["g0_gI"] = to_float(line[15])
-    obj["g1_gI"] = to_float(line[16])
-    obj["Date"] = line[17]
-    return obj
+    try:
+        obj = {}
+        obj["Class"] = "Module"
+        obj["Name"] = line[0]+"BPMC"
+        obj["Module Type"] = "BPMcontroller"+line[5]
+        obj["System"] = "V4"
+        obj["Comment"] = ""
+        obj["BMP"] = line[1]
+        obj["IP"] = line[2]
+        obj["Port"] = to_int(line[3])
+        obj["MAC"] = line[4]
+        obj["GI"] = to_float(line[6])
+        obj["g0_button0"] = to_float(line[7])
+        obj["g0_button1"] = to_float(line[8])
+        obj["g0_button2"] = to_float(line[9])
+        obj["g0_button3"] = to_float(line[10])
+        obj["g1_button0"] = to_float(line[11])
+        obj["g1_button1"] = to_float(line[12])
+        obj["g1_button2"] = to_float(line[13])
+        obj["g1_button3"] = to_float(line[14])
+        obj["g0_gI"] = to_float(line[15])
+        obj["g1_gI"] = to_float(line[16])
+        obj["fine_auto"] = line[17]
+        obj["fine_bunch_auto"] = line[18]
+        obj["delay_button_auto"] = line[19]
+        obj["delay_button_e_auto"] = line[20]
+        obj["delay_button_p_auto"] = line[21]
+        obj["gain_scan"] = line[22]
+        obj["g_delay_button_auto"] = line[23]
+        return obj
+    except Exception as e:
+        print obj["Name"]
 
 def findElement(elements,name):
     result = next((x for x in elements if x["Name"] == name), None)
@@ -109,10 +118,13 @@ def getDataFile(name):
         data = json.load(data_file)
     return data
 
-
 file_txt = getTextFile("station.data")
 py_recievers = []
-custom_sort = make_custom_sort([["Class", "Name", "Module Type", "System", "Comment", "BMP", "IP", "Port", "MAC", "GI", "g0_button0", "g0_button1", "g0_button2", "g0_button3", "g1_button0", "g1_button1", "g1_button2","g1_button3", "g0_gI", "g1_gI", "Date"]])
+custom_sort = make_custom_sort([["Class", "Name", "Module Type", "System", "Comment", "BMP", "IP", "Port", "MAC", "GI",
+                                 "g0_button0", "g0_button1", "g0_button2", "g0_button3", "g1_button0", "g1_button1",
+                                 "g1_button2","g1_button3", "g0_gI", "g1_gI", "fine_auto", "fine_bunch_auto",
+                                 "delay_button_auto","delay_button_e_auto", "delay_button_p_auto", "gain_scan",
+                                 "g_delay_button_auto"]])
 for line_txt in file_txt:
     line_splitted = line_txt.split()
     py_object = makeRecieverObject(line_splitted)

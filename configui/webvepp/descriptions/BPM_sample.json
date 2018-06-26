@@ -318,7 +318,7 @@
                     },
                     "Comment",
                     {
-                        "key": "Comment",
+                        "key": "Type Comment",
                         "value": "&BPM Type->Comment"
                     }
                 ]
@@ -360,7 +360,13 @@
                     "g1_button3",
                     "g0_gI",
                     "g1_gI",
-                    "Date",
+                    "fine_auto",
+                    "fine_bunch_auto",
+                    "delay_button_auto",
+                    "delay_button_e_auto",
+                    "delay_button_p_auto",
+                    "gain_scan",
+                    "g_delay_button_auto",
                     "Module Type",
                     {
                         "key": "System_ID",
@@ -388,7 +394,7 @@
                     },
                     "Comment",
                     {
-                        "key": "Comment",
+                        "key": "Type Comment",
                         "value": "&Module Type->Comment"
                     }
                 ],
@@ -410,7 +416,13 @@
                     "g1_button3",
                     "g0_gI",
                     "g1_gI",
-                    "Date",
+                    "fine_auto",
+                    "fine_bunch_auto",
+                    "delay_button_auto",
+                    "delay_button_e_auto",
+                    "delay_button_p_auto",
+                    "gain_scan",
+                    "g_delay_button_auto",
                     "Module Type",
                     {
                         "key": "System_ID",
@@ -434,7 +446,7 @@
                     },
                     "Comment",
                     {
-                        "key": "Comment",
+                        "key": "Type Comment",
                         "value": "&Module Type->Comment"
                     }
                 ]
