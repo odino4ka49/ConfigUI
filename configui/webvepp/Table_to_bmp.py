@@ -77,7 +77,7 @@ def makeBPMObject(line):
     bmp["Name"] = line[0]
     bmp["System"] = "V4"
     bmp["Comment"] = ""
-    bmp["BMP Type"] = "BPM"+line[1]
+    bmp["BPM Type"] = "BPM"+line[1]
     bmp["Azimuth"] = to_float(line[2])
     bmp["GX"] = to_float(line[3])
     bmp["GZ"] = to_float(line[4])

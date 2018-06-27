@@ -291,6 +291,7 @@
                     "GeodZ",
                     "X0",
                     "Z0",
+                    "Form",
                     "BPM Type",
                     {
                         "key": "Formula",
@@ -453,7 +454,7 @@
             },
             "display_attributes": {
                 "width": 300,
-                "height": 450,
+                "height": 560,
                 "autorevealing": true,
                 "field_name": true
             }
