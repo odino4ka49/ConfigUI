@@ -432,6 +432,12 @@ WEBVEPP.Tree = function(params){
                 // Add any new nodes
                 var nodeEnter = node.enter().insert("g")
                   .attr("class", "person " + selector)
+                  .classed("disabled", function(p){
+                    if (p.disabled)
+                    {
+                        return p.disabled;
+                    }
+                  })
                   .attr('transform', function(person){
                     return 'translate(' + (direction * (source.y0 + person.width/2)) + ',' + source.x0 + ')';
                   })

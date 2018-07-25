@@ -51,3 +51,6 @@ table.matrix td{
     /*overflow-x: hidden;
     --webkit-transform: translate(50px,25px);*/
 }
+.disabled{
+    color: gray;
+}

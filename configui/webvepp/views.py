@@ -337,6 +337,8 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                 neighbour = {"name":n["Name"],"id":"","_parents":[]}
                 if "Class" in n:
                     neighbour["id"] = parseId(n)
+                if "Disabled" in n:
+                    neighbour["disabled"] = n["Disabled"]
                 display_details = sample_l["display_filter"]
                 obj_attributes = parseAttributes(display_details,n)
                 neighbour["attributes"] = obj_attributes
@@ -361,6 +363,8 @@ def getNodeNeighbours(node,level,direction=1,rules=None):
                     neighbour = {"name":n["Name"],"id":"","_parents":[]}
                     if "Class" in n:
                         neighbour["id"] = parseId(n)
+                    if "Disabled" in n:
+                        neighbour["disabled"] = n["Disabled"]
                     display_details = sample_l["display_filter"]
                     obj_attributes = parseAttributes(display_details,n)
                     neighbour["attributes"] = obj_attributes
@@ -759,6 +763,8 @@ def getValuesByPath(object,path):
         for obj in values:
             next_vals += getObjectInChain(obj,path[i])
         values = next_vals
+    if len(values)==0:
+        return None
     next_vals = []
     for value in values:
         if value and path[-1] in value:

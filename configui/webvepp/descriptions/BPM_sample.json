@@ -102,10 +102,9 @@
             "display_filter": {
                 "min": [
                     {
-                        "key": "BPM",
-                        "value": "&BPM->Name"
+                        "key": "Switch",
+                        "value": "Name"
                     },
-                    "Name",
                     "Module Type",
                     {
                         "key": "Position",
@@ -114,7 +113,10 @@
                     }
                 ],
                 "max": [
-                    "Name",
+                    {
+                        "key": "Switch",
+                        "value": "Name"
+                    },
                     "System",
                     "Module Type",
                     "Host",
@@ -285,6 +287,10 @@
                     "Name",
                     "System",
                     "Azimuth",
+                    "BX",
+                    "BZ",
+                    "PX",
+                    "PZ",
                     "GX",
                     "GZ",
                     "GeodX",
@@ -554,6 +560,10 @@
                     },
                     "BPM Type",
                     "Azimuth",
+                    "BX",
+                    "BZ",
+                    "PX",
+                    "PZ",
                     "GX",
                     "GZ",
                     "GeodX",

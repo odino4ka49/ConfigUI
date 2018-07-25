@@ -128,7 +128,7 @@ WEBVEPP.List = function(tool_bar,settings){
         table.select('thead').remove();
         table.select('tbody').remove();
         var thead = table.append('thead');
-        var tbody = table.append('tbody');
+        var tbody = table.append('tbody').attr("class","list");
         var list_attrs = list_settings.root.display_filter.min;
         var list_titles = [];
         thead.append("tr")
@@ -148,10 +148,15 @@ WEBVEPP.List = function(tool_bar,settings){
                     else if(typeof(list_attrs[j]=="object")){
                         key = list_attrs[j].key;
                     }
-                    row.append("td").text(key);
+                    row.append("td")
+                    .append("button")
+                    .attr("class","sort")
+                    .attr("data-sort",key)
+                    .text(key);
                     list_titles.push(key);
                 }
             })
+
         var row = tbody.selectAll("tr").data(list);
         var rowEnter = row.enter().append("tr")/*.append("td")
             .append('foreignObject')
@@ -176,13 +181,13 @@ WEBVEPP.List = function(tool_bar,settings){
                             .attr("width",list_attrs[j].width);
                     }
                     else if(attr_value instanceof Array){
-                        var rowvalue = row.append("td");
+                        var rowvalue = row.append("td").attr("class",attr_name);
                         for(var i in attr_value){
-                            rowvalue.append("div").text(attr_value[i]);
+                            rowvalue.text(attr_value[i]);
                         }
                     }
                     else{
-                        row.append("td").text(attr_value);
+                        row.append("td").text(attr_value).attr("class",attr_name);
                     }
                 }
             })
@@ -203,6 +208,28 @@ WEBVEPP.List = function(tool_bar,settings){
             text += attr.value+"  ";
         });
         return text;
+    };
+
+    function setSearch(){
+        $("#search").removeClass("hidden");
+        var list_attrs = list_settings.root.display_filter.min;
+        var options = {valueNames: []};
+        for(var j=0;j<list_attrs.length;j++){
+            var key = "";
+            if(typeof(list_attrs[j])=="string"){
+                key = list_attrs[j];
+            }
+            else if(typeof(list_attrs[j]=="object")){
+                key = list_attrs[j].key;
+            }
+            options["valueNames"].push(key);
+        };
+        var searchList = new List('search_list',options);
+    };
+
+    function unsetSearch(){
+        $("#search").addClass("hidden");
+        $(document).off("tree_created");
     };
 
     function loadToolData(){
@@ -233,10 +260,22 @@ WEBVEPP.List = function(tool_bar,settings){
                 return d.id;
             })
             .on('click', function(d){
+                unsetSearch();
                 if(d.type=="list"){
                     setSchemeNames(d.sample);
                     loadListSettings();
                     loadListData();
+                    $(document).on("tree_created",function(event,d){
+                        setSearch();
+                    });
+                }
+                else if(d.type=="search"){
+                    setSchemeNames(d.sample);
+                    loadListSettings();
+                    loadListData();
+                    $(document).on("tree_created",function(event,d){
+                        setSearch();
+                    });
                 }
                 else if(d.type=="validation"){
                     setSchemeNames("");

@@ -16,6 +16,7 @@
     <script type="text/javascript" src="/static/webvepp/js/TableExport.min.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/Blob.min.js"></script>
     <script type="text/javascript" src="/static/webvepp/js/xlsx.core.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/webvepp/css/main.css" >
     <link rel="stylesheet" type="text/css" href="/static/webvepp/css/tools.css" >
 </head>
@@ -31,9 +32,13 @@
       </li>
     </ul>
     <div id="toolbar">
-    <ul id="Tool_bar">
-    </ul></div>
+        <ul id="Tool_bar">
+        </ul>
+    </div>
     <div id="legend"></div>
-    <table id="list"></table>
+    <div id="search_list">
+        <input id="search" type="text" placeholder="Search" class="search hidden"/>
+        <table id="list"></table>
+    </div>
 </body>
 </html>

@@ -96,7 +96,7 @@ WEBVEPP.Scheme = function(menu,settings){
 
         getSchemeName = function(){
             var sname = decodeURI(location.pathname.split('/')[3]);
-            if(sname == "") sname = "Main";
+            if(sname == "") sname = scheme_names.schemes[0].name;
             $("#scheme_"+sname).addClass("active");
             if(scheme_names.type=="single"||sname==null){
                 return $.grep(scheme_names.schemes, function(e){ return e.name == "Main"; })[0].filename;

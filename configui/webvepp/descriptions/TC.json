@@ -8590,7 +8590,8 @@
         "System": "V3",
         "Comment": "",
         "Address": 27,
-        "Position": ""
+        "Position": "",
+        "Disabled": "true"
     },
     {
         "Class": "Loop",
@@ -9860,6 +9861,7 @@
         "Controller": "T_pozi",
         "System": "V3",
         "Comment": "",
+        "Disabled": "true",
         "Sensors": [
             {
                 "Position": 3,
@@ -12949,7 +12951,8 @@
         "Comment": "",
         "Bank number": 27,
         "Full name": "B4 floor air 2",
-        "Position": ""
+        "Position": "",
+        "Disabled": "true"
     },
     {
         "Class": "Measuring sensor",
@@ -12958,6 +12961,7 @@
         "Comment": "",
         "Bank number": 30,
         "Full name": "B4 floor air 1",
-        "Position": ""
+        "Position": "",
+        "Disabled": "true"
     }
 ]

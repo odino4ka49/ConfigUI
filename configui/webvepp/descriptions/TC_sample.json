@@ -8,7 +8,7 @@
                 "link_name": "camacs"
             },
             {
-                "title": "Сенсоры",
+                "title": "Датчики",
                 "sample": "TC_sensors",
                 "link_name": "elements"
             },
@@ -156,7 +156,7 @@
                 ]
             },
             "display_attributes": {
-                "width": 180,
+                "width": 220,
                 "height": 50,
                 "field_name": true
             }
@@ -436,10 +436,14 @@
     },
     {
         "name": "Scheme",
-        "type": "single",
+        "type": "list",
         "schemes": [
             {
-                "name": "Main",
+                "name": "ВЭПП3",
+                "filename": "vepp4-termo_2008-eng"
+            },
+            {
+                "name": "ВЭПП4",
                 "filename": "vepp4-termo_2008-eng"
             }
         ]
@@ -447,13 +451,98 @@
     {
         "name": "Tools",
         "buttons": [
+
             {
-                "title": "BANK",
+                "title": "Sort",
                 "type": "list",
-                "id": "tool_bank",
-                "sample": "TC_banks"
+                "id": "tc_sort",
+                "sample": "TC_sort"
+            },
+            {
+                "title": "Search",
+                "type": "search",
+                "id": "tc_search",
+                "sample": "TC_search"
             }
         ]
+    },
+    {
+        "name": "TC_sort",
+        "root": {
+            "type": "filter",
+            "filter": {
+                "Class": [
+                    "Measuring sensor",
+                    "Interlock sensor"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    {
+                        "key": "Controller",
+                        "value": "&Loop->Controller->Name"
+                    },
+                    "Bank number",
+                    "Name",
+                    {
+                        "key": "Loop",
+                        "value": "&Loop->Name"
+                    },
+                    "Full name",
+                    "Alarm",
+                    "RelayAlarm",
+                    "PowerOff",
+                    "RelayOff"
+                ],
+                "max": [
+                    "Name"
+                ]
+            },
+            "sort_field": ["Name","Controller"],
+            "display_attributes": {
+                "field_name": false,
+                "inline": true
+            }
+        }
+    },
+    {
+        "name": "TC_search",
+        "root": {
+            "type": "filter",
+            "filter": {
+                "Class": [
+                    "Measuring sensor",
+                    "Interlock sensor"
+                ]
+            },
+            "display_filter": {
+                "min": [
+                    {
+                        "key": "Controller",
+                        "value": "&Loop->Controller->Name"
+                    },
+                    "Bank number",
+                    "Name",
+                    {
+                        "key": "Loop",
+                        "value": "&Loop->Name"
+                    },
+                    "Full name",
+                    "Alarm",
+                    "RelayAlarm",
+                    "PowerOff",
+                    "RelayOff"
+                ],
+                "max": [
+                    "Name"
+                ]
+            },
+            "sort_field": ["Name"],
+            "display_attributes": {
+                "field_name": false,
+                "inline": true
+            }
+        }
     },
     {
         "name": "TC_banks",

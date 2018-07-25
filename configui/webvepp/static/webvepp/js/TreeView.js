@@ -74,8 +74,8 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         //descendantRoot._children.forEach(collapse);
 
         // Set the root nodes
-        ancestorTree.setData(ancestorRoot);
         ancestorTree.setSettings(model.getTreeSettings());
+        ancestorTree.setData(ancestorRoot);
         ancestorTree.recountXY();
         //descendantsTree.data(descendantRoot);
 

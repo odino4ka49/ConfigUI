@@ -88,6 +88,14 @@ def makeBPMObject(line):
     bmp["Form"] = line[9]
     return bmp
 
+def addBPMFields(bmp,line):
+    print line
+    bmp["BX"] = to_float(line[1])
+    bmp["BZ"] = to_float(line[2])
+    bmp["PX"] = to_float(line[3])
+    bmp["PZ"] = to_float(line[4])
+    return bmp
+
 def findElement(elements,name):
     result = next((x for x in elements if x["Name"] == name), None)
     return result
@@ -103,11 +111,16 @@ def getDataFile(name):
 
 
 file_txt = getTextFile("bpm.data")
+file_2 = getTextFile("bpm_bp.data")
 py_bpms = []
-custom_sort = make_custom_sort([["Class", "Name", "System", "Comment", "BMP Type", "Azimuth", "GX", "GZ", "GeodX", "GeodZ", "X0", "Z0", "Form"]])
+custom_sort = make_custom_sort([["Class", "Name", "System", "Comment", "BMP Type", "Azimuth", "BX", "BZ", "PX", "PZ", "GX", "GZ", "GeodX", "GeodZ", "X0", "Z0", "Form"]])
 for line_txt in file_txt:
     line_splitted = line_txt.split()
     py_object = makeBPMObject(line_splitted)
     py_bpms.append(py_object)
+for line_txt in file_2:
+    line_splitted = line_txt.split()
+    py_object = findElement(py_bpms,line_splitted[0])
+    py_object = addBPMFields(py_object,line_splitted)
 bpms = custom_sort(py_bpms)
 saveJson(bpms,"bpm.json")
