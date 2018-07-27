@@ -122,15 +122,23 @@
             },
             {
                 "Position": 4,
-                "Module": "58BPMC"
+                "Module": "28BPMC"
             },
             {
                 "Position": 5,
                 "Module": "54BPMC"
             },
             {
+                "Position": 6,
+                "Module": "78BPMC"
+            },
+            {
                 "Position": 7,
                 "Module": "68BPMC"
+            },
+            {
+                "Position": 8,
+                "Module": "79BPMC"
             },
             {
                 "Position": 9,
@@ -146,7 +154,7 @@
             },
             {
                 "Position": 12,
-                "Module": "23BPMC"
+                "Module": "85BPMC"
             },
             {
                 "Position": 16,
@@ -177,11 +185,19 @@
             },
             {
                 "Position": 4,
-                "Module": "28BPMC"
+                "Module": "87BPMC"
+            },
+            {
+                "Position": 5,
+                "Module": "62BPMC"
             },
             {
                 "Position": 6,
                 "Module": "69BPMC"
+            },
+            {
+                "Position": 7,
+                "Module": "74BPMC"
             },
             {
                 "Position": 11,
@@ -190,6 +206,10 @@
             {
                 "Position": 12,
                 "Module": "65BPMC"
+            },
+            {
+                "Position": 13,
+                "Module": "73BPMC"
             },
             {
                 "Position": 14,
@@ -215,16 +235,36 @@
         "Area": "S-полукольцо",
         "Modules": [
             {
+                "Position": 1,
+                "Module": "82BPMC"
+            },
+            {
                 "Position": 2,
                 "Module": "64BPMC"
+            },
+            {
+                "Position": 3,
+                "Module": "81BPMC"
             },
             {
                 "Position": 4,
                 "Module": "60BPMC"
             },
             {
+                "Position": 5,
+                "Module": "80BPMC"
+            },
+            {
+                "Position": 6,
+                "Module": "86BPMC"
+            },
+            {
                 "Position": 7,
-                "Module": "62BPMC"
+                "Module": "84BPMC"
+            },
+            {
+                "Position": 8,
+                "Module": "83BPMC"
             },
             {
                 "Position": 9,
@@ -262,14 +302,6 @@
         "Area": "N-полукольцо",
         "Modules": [
             {
-                "Position": 1,
-                "Module": "55BPMC"
-            },
-            {
-                "Position": 2,
-                "Module": "59BPMC"
-            },
-            {
                 "Position": 3,
                 "Module": "70BPMC"
             },
@@ -278,8 +310,20 @@
                 "Module": "61BPMC"
             },
             {
+                "Position": 5,
+                "Module": "76BPMC"
+            },
+            {
+                "Position": 6,
+                "Module": "71BPMC"
+            },
+            {
                 "Position": 7,
                 "Module": "63BPMC"
+            },
+            {
+                "Position": 8,
+                "Module": "72BPMC"
             },
             {
                 "Position": 9,
@@ -291,7 +335,7 @@
             },
             {
                 "Position": 11,
-                "Module": "35BPMC"
+                "Module": "23BPMC"
             },
             {
                 "Position": 16,
@@ -314,7 +358,7 @@
             },
             {
                 "Position": 2,
-                "Module": "32BPMC"
+                "Module": "35BPMC"
             },
             {
                 "Position": 3,
@@ -343,6 +387,14 @@
             {
                 "Position": 9,
                 "Module": "66BPMC"
+            },
+            {
+                "Position": 11,
+                "Module": "55BPMC"
+            },
+            {
+                "Position": 12,
+                "Module": "59BPMC"
             },
             {
                 "Position": 16,
