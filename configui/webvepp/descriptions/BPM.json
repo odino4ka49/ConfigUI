@@ -200,6 +200,10 @@
                 "Module": "74BPMC"
             },
             {
+                "Position": 10,
+                "Module": "77BPMC"
+            },
+            {
                 "Position": 11,
                 "Module": "40BPMC"
             },
