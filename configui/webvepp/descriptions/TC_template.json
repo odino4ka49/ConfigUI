@@ -22,6 +22,10 @@
             {
                 "key": "Position",
                 "type": "string"
+            },
+            {
+                "key": "Loops",
+                "type": "array"
             }
         ],
         "foreign_keys": [],
@@ -29,10 +33,16 @@
             "Name",
             "System"
         ],
-        "components": null,
-        "component_ID": null,
-        "component_types": null,
-        "component_check_values": null
+        "components": "Loops",
+        "component_ID": "Position",
+        "component_types": [
+            "Loop"
+        ],
+        "component_check_values": [
+            "Component_name",
+            "System",
+            "Name"
+        ]
     },
     {
         "class": "Loop",

@@ -65,12 +65,16 @@ def makeControllerObject(line,systemname):
     element["Address"] = to_int(line[2].strip())
     element["Position"] = ""
     element["Comment"] = ""
+    element["Loops"] = [{
+        "Loop": line[4].strip(),
+        "Position": to_int(line[4].strip())
+    }]
     return element
 
 
 def makeLoopObject(line,controller,systemname):
     element = {}
-    element["Class"] = "Line"
+    element["Class"] = "Loop"
     element["Name"] = line[4].strip()
     element["Controller"] = controller.strip()
     element["System"] = systemname
@@ -85,6 +89,12 @@ def addSensorToLoop(line,loop):
     loop["Sensors"].append({
         identifySensorType(line[1].strip()): line[1].strip(),
         "Position": to_int(line[5].strip())
+    })
+
+def addLoopToController(loop,controller):
+    controller["Loops"].append({
+        "Loop": loop["Name"],
+        "Position": to_int(loop["Name"])
     })
 
 
@@ -112,7 +122,7 @@ def parseFile(systemname):
     sensors = []
     controller_names = []
     loop_ids = []
-    controller_sort = make_custom_sort([["Class", "Name", "System", "Comment", "Address", "Position"]])
+    controller_sort = make_custom_sort([["Class", "Name", "System", "Comment", "Address", "Position","Loops"]])
     loop_sort = make_custom_sort([["Class", "Name", "Controller", "System", "Comment","Sensors"]])
     sensor_sort = make_custom_sort([["Class", "Name", "System", "Comment", "Bank number", "Full name", "Position", "Alarm", "RelayAlarm", "PowerOff", "RelayOff"]])
     for line_txt in file_txt:
@@ -126,6 +136,7 @@ def parseFile(systemname):
             controller_names.append(line_splitted[3])
         elif line_splitted[3]+line_splitted[4] not in loop_ids:
             loop = makeLoopObject(line_splitted,line_splitted[3],systemname)
+            addLoopToController(loop,controllers[-1])
             loops.append(loop)
             loop_ids.append(line_splitted[3]+line_splitted[4])
         else:
@@ -141,4 +152,5 @@ def parseFile(systemname):
 elements = parseFile("V4")
 elements += parseFile("V3")
 saveJson(elements,"TC.json")
+
 

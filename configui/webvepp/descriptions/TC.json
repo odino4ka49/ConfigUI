@@ -5,7 +5,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 20,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -13,7 +31,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 9,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -21,7 +45,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 10,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -29,7 +59,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 21,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -37,7 +85,17 @@
         "System": "V4",
         "Comment": "",
         "Address": 14,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -45,7 +103,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 15,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -53,7 +117,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 28,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -61,7 +143,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 29,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -69,7 +169,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 18,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -77,7 +183,17 @@
         "System": "V4",
         "Comment": "",
         "Address": 5,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -85,7 +201,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 6,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -93,7 +215,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 22,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -101,7 +241,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 7,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -109,7 +255,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 2,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -117,7 +269,13 @@
         "System": "V4",
         "Comment": "",
         "Address": 19,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -125,7 +283,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 23,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -133,7 +309,25 @@
         "System": "V4",
         "Comment": "",
         "Address": 4,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -141,7 +335,41 @@
         "System": "V4",
         "Comment": "",
         "Address": 8,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -149,7 +377,17 @@
         "System": "V4",
         "Comment": "",
         "Address": 11,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -157,7 +395,21 @@
         "System": "V4",
         "Comment": "",
         "Address": 12,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -165,7 +417,33 @@
         "System": "V4",
         "Comment": "",
         "Address": 13,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -173,7 +451,17 @@
         "System": "V4",
         "Comment": "",
         "Address": 16,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -181,7 +469,53 @@
         "System": "V4",
         "Comment": "",
         "Address": 17,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -189,7 +523,37 @@
         "System": "V4",
         "Comment": "",
         "Address": 1,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -197,7 +561,33 @@
         "System": "V4",
         "Comment": "",
         "Address": 3,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -205,7 +595,21 @@
         "System": "V4",
         "Comment": "",
         "Address": 24,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            }
+        ]
     },
     {
         "Class": "Loop",
@@ -8518,7 +8922,17 @@
         "System": "V3",
         "Comment": "",
         "Address": 9,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8526,7 +8940,25 @@
         "System": "V3",
         "Comment": "",
         "Address": 8,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8534,7 +8966,21 @@
         "System": "V3",
         "Comment": "",
         "Address": 7,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8542,7 +8988,21 @@
         "System": "V3",
         "Comment": "",
         "Address": 6,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8550,7 +9010,29 @@
         "System": "V3",
         "Comment": "",
         "Address": 4,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8558,7 +9040,25 @@
         "System": "V3",
         "Comment": "",
         "Address": 2,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8566,7 +9066,25 @@
         "System": "V3",
         "Comment": "",
         "Address": 1,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8574,7 +9092,21 @@
         "System": "V3",
         "Comment": "",
         "Address": 11,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8582,7 +9114,33 @@
         "System": "V3",
         "Comment": "",
         "Address": 10,
-        "Position": ""
+        "Position": "",
+        "Loops": [
+            {
+                "Position": 3,
+                "Loop": "3"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 2,
+                "Loop": "2"
+            },
+            {
+                "Position": 1,
+                "Loop": "1"
+            },
+            {
+                "Position": 4,
+                "Loop": "4"
+            },
+            {
+                "Position": 3,
+                "Loop": "3"
+            }
+        ]
     },
     {
         "Class": "Controller",
@@ -8591,7 +9149,12 @@
         "Comment": "",
         "Address": 27,
         "Position": "",
-        "Disabled": "true"
+        "Loops": [
+            {
+                "Position": 4,
+                "Loop": "4"
+            }
+        ]
     },
     {
         "Class": "Loop",
@@ -9861,7 +10424,6 @@
         "Controller": "T_pozi",
         "System": "V3",
         "Comment": "",
-        "Disabled": "true",
         "Sensors": [
             {
                 "Position": 3,
@@ -12951,8 +13513,7 @@
         "Comment": "",
         "Bank number": 27,
         "Full name": "B4 floor air 2",
-        "Position": "",
-        "Disabled": "true"
+        "Position": ""
     },
     {
         "Class": "Measuring sensor",
@@ -12961,7 +13522,6 @@
         "Comment": "",
         "Bank number": 30,
         "Full name": "B4 floor air 1",
-        "Position": "",
-        "Disabled": "true"
+        "Position": ""
     }
 ]
