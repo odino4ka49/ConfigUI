@@ -108,10 +108,10 @@ def makeSensorObject(line,systemname):
     element["Full name"] = line[7].strip()
     element["Position"] = ""
     if element["Class"] == "Interlock sensor":
-        element["Alarm"] = to_int(line[8].strip())
-        element["RelayAlarm"] = to_int(line[9].strip())
+        element["AlarmOn"] = to_int(line[8].strip())
+        element["AlarmRelay"] = to_int(line[9].strip())
         element["PowerOff"] = to_int(line[10].strip())
-        element["RelayOff"] = to_int(line[11].strip())
+        element["PowerRelay"] = to_int(line[11].strip())
     return element
 
 
@@ -124,7 +124,7 @@ def parseFile(systemname):
     loop_ids = []
     controller_sort = make_custom_sort([["Class", "Name", "System", "Comment", "Address", "Position","Loops"]])
     loop_sort = make_custom_sort([["Class", "Name", "Controller", "System", "Comment","Sensors"]])
-    sensor_sort = make_custom_sort([["Class", "Name", "System", "Comment", "Bank number", "Full name", "Position", "Alarm", "RelayAlarm", "PowerOff", "RelayOff"]])
+    sensor_sort = make_custom_sort([["Class", "Name", "System", "Comment", "Bank number", "Full name", "Position", "AlarmOn", "AlarmRelay", "PowerOff", "PowerRelay"]])
     for line_txt in file_txt:
         line_splitted = line_txt.split("|")
         if line_splitted[3] not in controller_names:

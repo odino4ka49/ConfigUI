@@ -139,8 +139,6 @@ Warning: object 'Module/NRP/V4/'. There is no such field in object: delay_button
 Warning: object 'Module/NRP/V4/'. There is no such field in object: gain_scan.
 Warning: object 'Module/NRP/V4/'. There is no such field in object: g_delay_button_auto.
 Warning: object 'Module/NRP/V4/'. Object doesn't have this foreign key: BPM.
-Error: object 'Node/KEP/V4/'. There is no such object: {u'System': u'V4', 'Class': u'Module', 'Name': u'58BPMC'}}
-Error: object 'Node/STP/V4/'. There is no such object: {u'System': u'V4', 'Class': u'Module', 'Name': u'32BPMC'}}
 Error: object 'Module/38BPMC/V4/'. There is no such object: {Module Type: BPMcontroller0}
 Error: object 'Module/35BPMC/V4/'. There is no such object: {Module Type: BPMcontroller0}
 Error: object 'Module/36BPMC/V4/'. There is no such object: {Module Type: BPMcontroller0}

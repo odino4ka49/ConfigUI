@@ -23,6 +23,8 @@
     white-space:pre;
     border-spacing: 20px 5px;
     border-collapse:collapse;
+    position: absolute;
+    top: 24px;
 }
 #list tr{
     border-bottom: 1px solid black;
@@ -30,13 +32,26 @@
 #list body{
     margin: 0px;
 }
+#list caption button {
+    position: absolute;
+    top: -24px;
+    left: 179px;
+}
+#search {
+    position: relative;
+    display: block;
+}
+
 #legend{
     display: inline-block;
     white-space: pre;
     margin: 10px;
+    position: relative;
 }
 #search_list{
-    display: inline;
+    display: block;
+    position: relative;
+    left: 150px;
 }
 
 .hidden{

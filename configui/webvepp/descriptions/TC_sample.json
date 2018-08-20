@@ -148,10 +148,10 @@
                     "Bank number",
                     "Full name",
                     "Position",
-                    "Alarm",
-                    "RelayAlarm",
+                    "AlarmOn",
+                    "AlarmRelay",
                     "PowerOff",
-                    "RelayOff",
+                    "PowerRelay",
                     "Comment"
                 ]
             },
@@ -277,10 +277,10 @@
                     "Bank number",
                     "Full name",
                     "Position",
-                    "Alarm",
-                    "RelayAlarm",
+                    "AlarmOn",
+                    "AlarmRelay",
                     "PowerOff",
-                    "RelayOff",
+                    "PowerRelay",
                     "Comment"
                 ]
             },
@@ -360,10 +360,10 @@
                     "Bank number",
                     "Full name",
                     "Position",
-                    "Alarm",
-                    "RelayAlarm",
+                    "AlarmOn",
+                    "AlarmRelay",
                     "PowerOff",
-                    "RelayOff",
+                    "PowerRelay",
                     "Comment"
                 ]
             },
@@ -440,7 +440,7 @@
         "schemes": [
             {
                 "name": "ВЭПП3",
-                "filename": "vepp4-termo_2008-eng"
+                "filename": null
             },
             {
                 "name": "ВЭПП4",
@@ -451,13 +451,6 @@
     {
         "name": "Tools",
         "buttons": [
-
-            {
-                "title": "Sort",
-                "type": "list",
-                "id": "tc_sort",
-                "sample": "TC_sort"
-            },
             {
                 "title": "Search",
                 "type": "search",
@@ -489,10 +482,10 @@
                         "value": "&Loop->Name"
                     },
                     "Full name",
-                    "Alarm",
-                    "RelayAlarm",
+                    "AlarmOn",
+                    "AlarmRelay",
                     "PowerOff",
-                    "RelayOff"
+                    "PowerRelay"
                 ],
                 "max": [
                     "Name"
@@ -528,10 +521,10 @@
                         "value": "&Loop->Name"
                     },
                     "Full name",
-                    "Alarm",
-                    "RelayAlarm",
+                    "AlarmOn",
+                    "AlarmRelay",
                     "PowerOff",
-                    "RelayOff"
+                    "PowerRelay"
                 ],
                 "max": [
                     "Name"
@@ -567,10 +560,10 @@
                         "value": "&Line->Name"
                     },
                     "Full name",
-                    "Alarm",
-                    "RelayAlarm",
+                    "AlarmOn",
+                    "AlarmRelay",
                     "PowerOff",
-                    "RelayOff"
+                    "PowerRelay"
                 ],
                 "max": [
                     "Name"

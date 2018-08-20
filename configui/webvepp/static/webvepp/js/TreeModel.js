@@ -120,7 +120,7 @@ WEBVEPP.TreeModel = function(menu,settings){
     $(document).on("menu_loaded",function(){
         setSchemeNames();
         loadTreeSettings();
-        loadTreeData();
+        //loadTreeData();
     })
 
     $(document).on("reload_tree",function(event,filter_name){

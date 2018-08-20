@@ -154,11 +154,11 @@
                 "type": "string"
             },
             {
-                "key": "Alarm",
+                "key": "AlarmOn",
                 "type": "integer"
             },
             {
-                "key": "RelayAlarm",
+                "key": "AlarmRelay",
                 "type": "integer"
             },
             {
@@ -166,7 +166,7 @@
                 "type": "integer"
             },
             {
-                "key": "RelayOff",
+                "key": "PowerRelay",
                 "type": "integer"
             }
         ],

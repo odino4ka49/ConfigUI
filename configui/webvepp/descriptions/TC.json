@@ -3447,10 +3447,10 @@
         "Bank number": 0,
         "Full name": "NTL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3460,10 +3460,10 @@
         "Bank number": 1,
         "Full name": "NTL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3473,10 +3473,10 @@
         "Bank number": 2,
         "Full name": "NTL1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3486,10 +3486,10 @@
         "Bank number": 3,
         "Full name": "NTL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3499,10 +3499,10 @@
         "Bank number": 4,
         "Full name": "NTL2_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3512,10 +3512,10 @@
         "Bank number": 5,
         "Full name": "NTL2_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3525,10 +3525,10 @@
         "Bank number": 6,
         "Full name": "NTL2_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3538,10 +3538,10 @@
         "Bank number": 7,
         "Full name": "NTL2_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3551,10 +3551,10 @@
         "Bank number": 8,
         "Full name": "NTL3_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3564,10 +3564,10 @@
         "Bank number": 9,
         "Full name": "NTL3_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3577,10 +3577,10 @@
         "Bank number": 10,
         "Full name": "NTL3_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3590,10 +3590,10 @@
         "Bank number": 11,
         "Full name": "NTL3_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3603,10 +3603,10 @@
         "Bank number": 12,
         "Full name": "NTL4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3616,10 +3616,10 @@
         "Bank number": 13,
         "Full name": "NTL4_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3629,10 +3629,10 @@
         "Bank number": 14,
         "Full name": "NTL4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3642,10 +3642,10 @@
         "Bank number": 15,
         "Full name": "NTL4_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3655,10 +3655,10 @@
         "Bank number": 16,
         "Full name": "NTW_SW_top_1",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3668,10 +3668,10 @@
         "Bank number": 17,
         "Full name": "NTW_SW_top_2",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3681,10 +3681,10 @@
         "Bank number": 18,
         "Full name": "NTW_SW_top_3",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3694,10 +3694,10 @@
         "Bank number": 19,
         "Full name": "NTW_SW_top_4",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3707,10 +3707,10 @@
         "Bank number": 20,
         "Full name": "NTW_SW_top_5",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3720,10 +3720,10 @@
         "Bank number": 24,
         "Full name": "NTW_SW_bot_1",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3733,10 +3733,10 @@
         "Bank number": 25,
         "Full name": "NTW_SW_bot_2",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3746,10 +3746,10 @@
         "Bank number": 26,
         "Full name": "NTW_SW_bot_3",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3759,10 +3759,10 @@
         "Bank number": 27,
         "Full name": "NTW_SW_bot_4",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3772,10 +3772,10 @@
         "Bank number": 28,
         "Full name": "NTW_SW_bot_5",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3785,10 +3785,10 @@
         "Bank number": 16,
         "Full name": "N1F_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3798,10 +3798,10 @@
         "Bank number": 17,
         "Full name": "N1F_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3811,10 +3811,10 @@
         "Bank number": 16,
         "Full name": "N5F_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3824,10 +3824,10 @@
         "Bank number": 17,
         "Full name": "N5F_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3837,10 +3837,10 @@
         "Bank number": 18,
         "Full name": "N5F_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3850,10 +3850,10 @@
         "Bank number": 19,
         "Full name": "N5F_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3863,10 +3863,10 @@
         "Bank number": 0,
         "Full name": "N9D_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3876,10 +3876,10 @@
         "Bank number": 1,
         "Full name": "N9D_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3889,10 +3889,10 @@
         "Bank number": 2,
         "Full name": "NIM1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3902,10 +3902,10 @@
         "Bank number": 3,
         "Full name": "NIM1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3915,10 +3915,10 @@
         "Bank number": 4,
         "Full name": "NIM1_SW-cor",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3928,10 +3928,10 @@
         "Bank number": 5,
         "Full name": "NIM2_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3941,10 +3941,10 @@
         "Bank number": 6,
         "Full name": "NIM2_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3954,10 +3954,10 @@
         "Bank number": 8,
         "Full name": "NIL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3967,10 +3967,10 @@
         "Bank number": 9,
         "Full name": "NIL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3980,10 +3980,10 @@
         "Bank number": 10,
         "Full name": "NIL1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -3993,10 +3993,10 @@
         "Bank number": 11,
         "Full name": "NIL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4006,10 +4006,10 @@
         "Bank number": 12,
         "Full name": "NIL2_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4019,10 +4019,10 @@
         "Bank number": 13,
         "Full name": "NIL2_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4032,10 +4032,10 @@
         "Bank number": 14,
         "Full name": "NIL2_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4045,10 +4045,10 @@
         "Bank number": 15,
         "Full name": "NIL2_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4058,10 +4058,10 @@
         "Bank number": 16,
         "Full name": "NIL3_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4071,10 +4071,10 @@
         "Bank number": 17,
         "Full name": "NIL3_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4084,10 +4084,10 @@
         "Bank number": 18,
         "Full name": "NIL3_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4097,10 +4097,10 @@
         "Bank number": 19,
         "Full name": "NIL3_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4110,10 +4110,10 @@
         "Bank number": 20,
         "Full name": "NIL4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4123,10 +4123,10 @@
         "Bank number": 21,
         "Full name": "NIL4_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4136,10 +4136,10 @@
         "Bank number": 22,
         "Full name": "NIL4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4149,10 +4149,10 @@
         "Bank number": 23,
         "Full name": "NIL4_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4162,10 +4162,10 @@
         "Bank number": 24,
         "Full name": "NIM3_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4175,10 +4175,10 @@
         "Bank number": 25,
         "Full name": "NIM3_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4188,10 +4188,10 @@
         "Bank number": 26,
         "Full name": "NIM4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4201,10 +4201,10 @@
         "Bank number": 27,
         "Full name": "NIM4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4214,10 +4214,10 @@
         "Bank number": 28,
         "Full name": "NIM4_SW-cor",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4227,10 +4227,10 @@
         "Bank number": 29,
         "Full name": "NIL1_SW_shunt",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4240,10 +4240,10 @@
         "Bank number": 30,
         "Full name": "NIL2_SW_shunt",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4253,10 +4253,10 @@
         "Bank number": 31,
         "Full name": "NIL4_SW_shunt",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4266,10 +4266,10 @@
         "Bank number": 16,
         "Full name": "N17F_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4279,10 +4279,10 @@
         "Bank number": 17,
         "Full name": "N17F_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4292,10 +4292,10 @@
         "Bank number": 24,
         "Full name": "N14F_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4305,10 +4305,10 @@
         "Bank number": 25,
         "Full name": "N14F_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4318,10 +4318,10 @@
         "Bank number": 26,
         "Full name": "N14F_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4331,10 +4331,10 @@
         "Bank number": 27,
         "Full name": "N14F_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4344,10 +4344,10 @@
         "Bank number": 18,
         "Full name": "NEL5_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4357,10 +4357,10 @@
         "Bank number": 19,
         "Full name": "NEL5_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4370,10 +4370,10 @@
         "Bank number": 20,
         "Full name": "NEL5_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4383,10 +4383,10 @@
         "Bank number": 21,
         "Full name": "NEL5_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4396,10 +4396,10 @@
         "Bank number": 22,
         "Full name": "NEM3_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4409,10 +4409,10 @@
         "Bank number": 23,
         "Full name": "NEM3_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4422,10 +4422,10 @@
         "Bank number": 0,
         "Full name": "NEM1_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 0,
+        "AlarmOn": 55,
+        "AlarmRelay": 0,
         "PowerOff": 60,
-        "RelayOff": 0
+        "PowerRelay": 0
     },
     {
         "Class": "Interlock sensor",
@@ -4435,10 +4435,10 @@
         "Bank number": 1,
         "Full name": "NEM1_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4448,10 +4448,10 @@
         "Bank number": 2,
         "Full name": "NEM2_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4461,10 +4461,10 @@
         "Bank number": 3,
         "Full name": "NEM2_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4474,10 +4474,10 @@
         "Bank number": 8,
         "Full name": "NEL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4487,10 +4487,10 @@
         "Bank number": 9,
         "Full name": "NEL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4500,10 +4500,10 @@
         "Bank number": 10,
         "Full name": "NEL1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4513,10 +4513,10 @@
         "Bank number": 11,
         "Full name": "NEL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4526,10 +4526,10 @@
         "Bank number": 12,
         "Full name": "NEL2_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4539,10 +4539,10 @@
         "Bank number": 13,
         "Full name": "NEL2_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4552,10 +4552,10 @@
         "Bank number": 14,
         "Full name": "NEL2_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4565,10 +4565,10 @@
         "Bank number": 15,
         "Full name": "NEL2_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4578,10 +4578,10 @@
         "Bank number": 16,
         "Full name": "NEL3_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4591,10 +4591,10 @@
         "Bank number": 17,
         "Full name": "NEL3_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4604,10 +4604,10 @@
         "Bank number": 18,
         "Full name": "NEL3_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4617,10 +4617,10 @@
         "Bank number": 18,
         "Full name": "NEL3_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4630,10 +4630,10 @@
         "Bank number": 20,
         "Full name": "NEL4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4643,10 +4643,10 @@
         "Bank number": 21,
         "Full name": "NEL4_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4656,10 +4656,10 @@
         "Bank number": 22,
         "Full name": "NEL4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4669,10 +4669,10 @@
         "Bank number": 23,
         "Full name": "NEL4_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4682,10 +4682,10 @@
         "Bank number": 24,
         "Full name": "NEZM_SW_top_S",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4695,10 +4695,10 @@
         "Bank number": 25,
         "Full name": "NEZM_SW_top_mid",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4708,10 +4708,10 @@
         "Bank number": 26,
         "Full name": "NEZM_SW_top_N",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4721,10 +4721,10 @@
         "Bank number": 27,
         "Full name": "NEZM_SW_bot_S",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4734,10 +4734,10 @@
         "Bank number": 28,
         "Full name": "NEZM_SW_bot_mid",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4747,10 +4747,10 @@
         "Bank number": 29,
         "Full name": "NEZM_SW_bot_N",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4760,10 +4760,10 @@
         "Bank number": 0,
         "Full name": "SEM1_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4773,10 +4773,10 @@
         "Bank number": 1,
         "Full name": "SEM1_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4786,10 +4786,10 @@
         "Bank number": 2,
         "Full name": "SEM2_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4799,10 +4799,10 @@
         "Bank number": 3,
         "Full name": "SEM2_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4812,10 +4812,10 @@
         "Bank number": 8,
         "Full name": "SEL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4825,10 +4825,10 @@
         "Bank number": 9,
         "Full name": "SEL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4838,10 +4838,10 @@
         "Bank number": 10,
         "Full name": "SEL1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4851,10 +4851,10 @@
         "Bank number": 11,
         "Full name": "SEL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4864,10 +4864,10 @@
         "Bank number": 12,
         "Full name": "SEL2_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4877,10 +4877,10 @@
         "Bank number": 13,
         "Full name": "SEL2_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4890,10 +4890,10 @@
         "Bank number": 14,
         "Full name": "SEL2_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4903,10 +4903,10 @@
         "Bank number": 15,
         "Full name": "SEL2_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4916,10 +4916,10 @@
         "Bank number": 16,
         "Full name": "SEL3_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4929,10 +4929,10 @@
         "Bank number": 17,
         "Full name": "SEL3_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4942,10 +4942,10 @@
         "Bank number": 18,
         "Full name": "SEL3_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4955,10 +4955,10 @@
         "Bank number": 19,
         "Full name": "SEL3_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4968,10 +4968,10 @@
         "Bank number": 20,
         "Full name": "SEL4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4981,10 +4981,10 @@
         "Bank number": 21,
         "Full name": "SEL4_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -4994,10 +4994,10 @@
         "Bank number": 22,
         "Full name": "SEL4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5007,10 +5007,10 @@
         "Bank number": 23,
         "Full name": "SEL4_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5020,10 +5020,10 @@
         "Bank number": 24,
         "Full name": "SEZM_SW_top_N",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5033,10 +5033,10 @@
         "Bank number": 25,
         "Full name": "SEZM_SW_top_mid",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5046,10 +5046,10 @@
         "Bank number": 26,
         "Full name": "SEZM_SW_top_S",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5059,10 +5059,10 @@
         "Bank number": 27,
         "Full name": "SEZM_SW_bot_N",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5072,10 +5072,10 @@
         "Bank number": 28,
         "Full name": "SEZM_SW_bot_mid",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5085,10 +5085,10 @@
         "Bank number": 29,
         "Full name": "SEZM_SW_bot_S",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5098,10 +5098,10 @@
         "Bank number": 18,
         "Full name": "SEL5_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5111,10 +5111,10 @@
         "Bank number": 19,
         "Full name": "SEL5_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5124,10 +5124,10 @@
         "Bank number": 20,
         "Full name": "SEL5_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5137,10 +5137,10 @@
         "Bank number": 21,
         "Full name": "SEL5_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5150,10 +5150,10 @@
         "Bank number": 22,
         "Full name": "SEM3_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5163,10 +5163,10 @@
         "Bank number": 23,
         "Full name": "SEM3_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5176,10 +5176,10 @@
         "Bank number": 28,
         "Full name": "S17F_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5189,10 +5189,10 @@
         "Bank number": 25,
         "Full name": "S17F_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5202,10 +5202,10 @@
         "Bank number": 21,
         "Full name": "CM_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5215,10 +5215,10 @@
         "Bank number": 22,
         "Full name": "CM_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5228,10 +5228,10 @@
         "Bank number": 24,
         "Full name": "S14F_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5241,10 +5241,10 @@
         "Bank number": 25,
         "Full name": "S14F_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5254,10 +5254,10 @@
         "Bank number": 26,
         "Full name": "S14F_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5267,10 +5267,10 @@
         "Bank number": 27,
         "Full name": "S14F_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5280,10 +5280,10 @@
         "Bank number": 0,
         "Full name": "S9D_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5293,10 +5293,10 @@
         "Bank number": 1,
         "Full name": "S9D_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5306,10 +5306,10 @@
         "Bank number": 2,
         "Full name": "SIM1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5319,10 +5319,10 @@
         "Bank number": 3,
         "Full name": "SIM1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5332,10 +5332,10 @@
         "Bank number": 4,
         "Full name": "SIM1_SW-cor",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5345,10 +5345,10 @@
         "Bank number": 5,
         "Full name": "SIM2_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5358,10 +5358,10 @@
         "Bank number": 6,
         "Full name": "SIM2_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5371,10 +5371,10 @@
         "Bank number": 8,
         "Full name": "SIL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5384,10 +5384,10 @@
         "Bank number": 9,
         "Full name": "SIL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5397,10 +5397,10 @@
         "Bank number": 10,
         "Full name": "SIL1_SW_bot_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5410,10 +5410,10 @@
         "Bank number": 11,
         "Full name": "SIL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5423,10 +5423,10 @@
         "Bank number": 12,
         "Full name": "SIL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5436,10 +5436,10 @@
         "Bank number": 13,
         "Full name": "SIL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5449,10 +5449,10 @@
         "Bank number": 14,
         "Full name": "SIL1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5462,10 +5462,10 @@
         "Bank number": 15,
         "Full name": "SIL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5475,10 +5475,10 @@
         "Bank number": 16,
         "Full name": "SIL3_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5488,10 +5488,10 @@
         "Bank number": 17,
         "Full name": "SIL3_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5501,10 +5501,10 @@
         "Bank number": 18,
         "Full name": "SIL3_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5514,10 +5514,10 @@
         "Bank number": 19,
         "Full name": "SIL3_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5527,10 +5527,10 @@
         "Bank number": 16,
         "Full name": "SIL4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5540,10 +5540,10 @@
         "Bank number": 17,
         "Full name": "SIL4_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5553,10 +5553,10 @@
         "Bank number": 18,
         "Full name": "SIL4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5566,10 +5566,10 @@
         "Bank number": 19,
         "Full name": "SIL4_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5579,10 +5579,10 @@
         "Bank number": 24,
         "Full name": "SIM3_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5592,10 +5592,10 @@
         "Bank number": 25,
         "Full name": "SIM3_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5605,10 +5605,10 @@
         "Bank number": 26,
         "Full name": "SIM4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5618,10 +5618,10 @@
         "Bank number": 27,
         "Full name": "SIM4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5631,10 +5631,10 @@
         "Bank number": 28,
         "Full name": "SIM4_SW-cor",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5644,10 +5644,10 @@
         "Bank number": 29,
         "Full name": "SIL1_SW_shunt",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5657,10 +5657,10 @@
         "Bank number": 30,
         "Full name": "SIL2_SW_shunt",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5670,10 +5670,10 @@
         "Bank number": 31,
         "Full name": "SIL4_SW_shunt",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5683,10 +5683,10 @@
         "Bank number": 25,
         "Full name": "S10F_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5696,10 +5696,10 @@
         "Bank number": 26,
         "Full name": "S10F_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5709,10 +5709,10 @@
         "Bank number": 24,
         "Full name": "S14F_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5722,10 +5722,10 @@
         "Bank number": 25,
         "Full name": "S14F_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5735,10 +5735,10 @@
         "Bank number": 26,
         "Full name": "S14F_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5748,10 +5748,10 @@
         "Bank number": 27,
         "Full name": "S14F_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5761,10 +5761,10 @@
         "Bank number": 16,
         "Full name": "S1F_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5774,10 +5774,10 @@
         "Bank number": 17,
         "Full name": "S1F_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5787,10 +5787,10 @@
         "Bank number": 0,
         "Full name": "STL1_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5800,10 +5800,10 @@
         "Bank number": 1,
         "Full name": "STL1_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5813,10 +5813,10 @@
         "Bank number": 2,
         "Full name": "STL1_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5826,10 +5826,10 @@
         "Bank number": 3,
         "Full name": "STL1_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5839,10 +5839,10 @@
         "Bank number": 4,
         "Full name": "STL2_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5852,10 +5852,10 @@
         "Bank number": 5,
         "Full name": "STL2_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5865,10 +5865,10 @@
         "Bank number": 6,
         "Full name": "STL2_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5878,10 +5878,10 @@
         "Bank number": 7,
         "Full name": "STL2_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5891,10 +5891,10 @@
         "Bank number": 8,
         "Full name": "STL3_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5904,10 +5904,10 @@
         "Bank number": 9,
         "Full name": "STL3_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5917,10 +5917,10 @@
         "Bank number": 10,
         "Full name": "STL3_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5930,10 +5930,10 @@
         "Bank number": 11,
         "Full name": "STL3_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5943,10 +5943,10 @@
         "Bank number": 12,
         "Full name": "STL4_SW_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5956,10 +5956,10 @@
         "Bank number": 13,
         "Full name": "STL4_SW_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5969,10 +5969,10 @@
         "Bank number": 14,
         "Full name": "STL4_SW_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5982,10 +5982,10 @@
         "Bank number": 15,
         "Full name": "STL4_SW_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -5995,10 +5995,10 @@
         "Bank number": 16,
         "Full name": "STW_SW_top_1",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6008,10 +6008,10 @@
         "Bank number": 17,
         "Full name": "STW_SW_top_2",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6021,10 +6021,10 @@
         "Bank number": 18,
         "Full name": "STW_SW_top_3",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6034,10 +6034,10 @@
         "Bank number": 19,
         "Full name": "STW_SW_top_4",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6047,10 +6047,10 @@
         "Bank number": 20,
         "Full name": "STW_SW_top_5",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6060,10 +6060,10 @@
         "Bank number": 24,
         "Full name": "STW_SW_bot_1",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6073,10 +6073,10 @@
         "Bank number": 25,
         "Full name": "STW_SW_bot_2",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6086,10 +6086,10 @@
         "Bank number": 26,
         "Full name": "STW_SW_bot_3",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6099,10 +6099,10 @@
         "Bank number": 27,
         "Full name": "STW_SW_bot_4",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -6112,10 +6112,10 @@
         "Bank number": 28,
         "Full name": "STW_SW_bot_5",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Measuring sensor",
@@ -8690,10 +8690,10 @@
         "Bank number": 0,
         "Full name": "NIW_coil9_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8703,10 +8703,10 @@
         "Bank number": 1,
         "Full name": "NIW_coil8_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8716,10 +8716,10 @@
         "Bank number": 2,
         "Full name": "NIW_coil7_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8729,10 +8729,10 @@
         "Bank number": 3,
         "Full name": "NIW_coil6_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8742,10 +8742,10 @@
         "Bank number": 4,
         "Full name": "NIW_coil6_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8755,10 +8755,10 @@
         "Bank number": 5,
         "Full name": "NIW_coil7_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8768,10 +8768,10 @@
         "Bank number": 6,
         "Full name": "NIW_coil8_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8781,10 +8781,10 @@
         "Bank number": 7,
         "Full name": "NIW_coil9_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8794,10 +8794,10 @@
         "Bank number": 8,
         "Full name": "NIW_coil2_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8807,10 +8807,10 @@
         "Bank number": 9,
         "Full name": "NIW_coil3_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8820,10 +8820,10 @@
         "Bank number": 10,
         "Full name": "NIW_coil4_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8833,10 +8833,10 @@
         "Bank number": 11,
         "Full name": "NIW_coil5_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8846,10 +8846,10 @@
         "Bank number": 12,
         "Full name": "NIW_coil5_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8859,10 +8859,10 @@
         "Bank number": 13,
         "Full name": "NIW_coil4_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8872,10 +8872,10 @@
         "Bank number": 14,
         "Full name": "NIW_coil3_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8885,10 +8885,10 @@
         "Bank number": 15,
         "Full name": "NIW_coil2_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8898,10 +8898,10 @@
         "Bank number": 20,
         "Full name": "NIW_coil1_SW_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -8911,10 +8911,10 @@
         "Bank number": 22,
         "Full name": "NIW_coil1_SW_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Controller",
@@ -10443,10 +10443,10 @@
         "Bank number": 12,
         "Full name": "1B1A_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10456,10 +10456,10 @@
         "Bank number": 13,
         "Full name": "1B1A_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10469,10 +10469,10 @@
         "Bank number": 8,
         "Full name": "1D1_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10482,10 +10482,10 @@
         "Bank number": 9,
         "Full name": "1D1_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10495,10 +10495,10 @@
         "Bank number": 10,
         "Full name": "1D1_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10508,10 +10508,10 @@
         "Bank number": 11,
         "Full name": "1D1_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10521,10 +10521,10 @@
         "Bank number": 4,
         "Full name": "1B1B_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10534,10 +10534,10 @@
         "Bank number": 5,
         "Full name": "1B1B_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10547,10 +10547,10 @@
         "Bank number": 0,
         "Full name": "1F1_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10560,10 +10560,10 @@
         "Bank number": 1,
         "Full name": "1F1_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10573,10 +10573,10 @@
         "Bank number": 2,
         "Full name": "1F1_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10586,10 +10586,10 @@
         "Bank number": 3,
         "Full name": "1F1_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10599,10 +10599,10 @@
         "Bank number": 24,
         "Full name": "1M2_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10612,10 +10612,10 @@
         "Bank number": 25,
         "Full name": "1M2_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10625,10 +10625,10 @@
         "Bank number": 26,
         "Full name": "1M2_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10638,10 +10638,10 @@
         "Bank number": 27,
         "Full name": "1M2_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10651,10 +10651,10 @@
         "Bank number": 28,
         "Full name": "1M2_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10664,10 +10664,10 @@
         "Bank number": 29,
         "Full name": "1M2_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10677,10 +10677,10 @@
         "Bank number": 31,
         "Full name": "1M2D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10690,10 +10690,10 @@
         "Bank number": 30,
         "Full name": "1M2F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10703,10 +10703,10 @@
         "Bank number": 16,
         "Full name": "1M3_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10716,10 +10716,10 @@
         "Bank number": 17,
         "Full name": "1M3_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10729,10 +10729,10 @@
         "Bank number": 18,
         "Full name": "1M3_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10742,10 +10742,10 @@
         "Bank number": 19,
         "Full name": "1M3_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10755,10 +10755,10 @@
         "Bank number": 20,
         "Full name": "1M3_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10768,10 +10768,10 @@
         "Bank number": 21,
         "Full name": "1M3_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10781,10 +10781,10 @@
         "Bank number": 23,
         "Full name": "1M3D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10794,10 +10794,10 @@
         "Bank number": 22,
         "Full name": "1M3F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10807,10 +10807,10 @@
         "Bank number": 8,
         "Full name": "1M4_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10820,10 +10820,10 @@
         "Bank number": 9,
         "Full name": "1M4_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10833,10 +10833,10 @@
         "Bank number": 10,
         "Full name": "1M4_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10846,10 +10846,10 @@
         "Bank number": 11,
         "Full name": "1M4_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10859,10 +10859,10 @@
         "Bank number": 12,
         "Full name": "1M4_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10872,10 +10872,10 @@
         "Bank number": 13,
         "Full name": "1M4_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10885,10 +10885,10 @@
         "Bank number": 15,
         "Full name": "1M4D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10898,10 +10898,10 @@
         "Bank number": 14,
         "Full name": "1M4F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10911,10 +10911,10 @@
         "Bank number": 0,
         "Full name": "1M5_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10924,10 +10924,10 @@
         "Bank number": 1,
         "Full name": "1M5_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10937,10 +10937,10 @@
         "Bank number": 2,
         "Full name": "1M5_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10950,10 +10950,10 @@
         "Bank number": 3,
         "Full name": "1M5_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10963,10 +10963,10 @@
         "Bank number": 4,
         "Full name": "1M5_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10976,10 +10976,10 @@
         "Bank number": 5,
         "Full name": "1M5_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -10989,10 +10989,10 @@
         "Bank number": 7,
         "Full name": "1M5D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11002,10 +11002,10 @@
         "Bank number": 6,
         "Full name": "1M5F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11015,10 +11015,10 @@
         "Bank number": 16,
         "Full name": "1M6_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11028,10 +11028,10 @@
         "Bank number": 17,
         "Full name": "1M6_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11041,10 +11041,10 @@
         "Bank number": 18,
         "Full name": "1M6_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11054,10 +11054,10 @@
         "Bank number": 19,
         "Full name": "1M6_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11067,10 +11067,10 @@
         "Bank number": 20,
         "Full name": "1M6_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11080,10 +11080,10 @@
         "Bank number": 21,
         "Full name": "1M6_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11093,10 +11093,10 @@
         "Bank number": 23,
         "Full name": "1M6D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11106,10 +11106,10 @@
         "Bank number": 22,
         "Full name": "1M6F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11119,10 +11119,10 @@
         "Bank number": 8,
         "Full name": "1M7_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11132,10 +11132,10 @@
         "Bank number": 9,
         "Full name": "1M7_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11145,10 +11145,10 @@
         "Bank number": 10,
         "Full name": "1M7_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11158,10 +11158,10 @@
         "Bank number": 11,
         "Full name": "1M7_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11171,10 +11171,10 @@
         "Bank number": 12,
         "Full name": "1M7_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11184,10 +11184,10 @@
         "Bank number": 13,
         "Full name": "1M7_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11197,10 +11197,10 @@
         "Bank number": 15,
         "Full name": "1M7D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11210,10 +11210,10 @@
         "Bank number": 14,
         "Full name": "1M7F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11223,10 +11223,10 @@
         "Bank number": 0,
         "Full name": "1M8_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11236,10 +11236,10 @@
         "Bank number": 1,
         "Full name": "1M8_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11249,10 +11249,10 @@
         "Bank number": 2,
         "Full name": "1M8_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11262,10 +11262,10 @@
         "Bank number": 3,
         "Full name": "1M8_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11275,10 +11275,10 @@
         "Bank number": 4,
         "Full name": "1M8_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11288,10 +11288,10 @@
         "Bank number": 5,
         "Full name": "1M8_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11301,10 +11301,10 @@
         "Bank number": 7,
         "Full name": "1M8D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11314,10 +11314,10 @@
         "Bank number": 6,
         "Full name": "1M8F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11327,10 +11327,10 @@
         "Bank number": 0,
         "Full name": "2D1_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11340,10 +11340,10 @@
         "Bank number": 1,
         "Full name": "2D1_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11353,10 +11353,10 @@
         "Bank number": 2,
         "Full name": "2D1_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11366,10 +11366,10 @@
         "Bank number": 3,
         "Full name": "2D1_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11379,10 +11379,10 @@
         "Bank number": 4,
         "Full name": "2F2_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11392,10 +11392,10 @@
         "Bank number": 5,
         "Full name": "2F2_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11405,10 +11405,10 @@
         "Bank number": 6,
         "Full name": "2F2_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11418,10 +11418,10 @@
         "Bank number": 7,
         "Full name": "2F2_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11431,10 +11431,10 @@
         "Bank number": 8,
         "Full name": "2D3_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11444,10 +11444,10 @@
         "Bank number": 9,
         "Full name": "2D3_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11457,10 +11457,10 @@
         "Bank number": 10,
         "Full name": "2D3_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11470,10 +11470,10 @@
         "Bank number": 11,
         "Full name": "2D3_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11483,10 +11483,10 @@
         "Bank number": 12,
         "Full name": "2F4_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11496,10 +11496,10 @@
         "Bank number": 13,
         "Full name": "2F4_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11509,10 +11509,10 @@
         "Bank number": 14,
         "Full name": "2F4_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11522,10 +11522,10 @@
         "Bank number": 15,
         "Full name": "2F4_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11535,10 +11535,10 @@
         "Bank number": 24,
         "Full name": "2F1_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11548,10 +11548,10 @@
         "Bank number": 25,
         "Full name": "2F2_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11561,10 +11561,10 @@
         "Bank number": 26,
         "Full name": "2F3_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 70,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11574,10 +11574,10 @@
         "Bank number": 27,
         "Full name": "2F4_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11587,10 +11587,10 @@
         "Bank number": 28,
         "Full name": "2D1_DEUT",
         "Position": "",
-        "Alarm": 60,
-        "RelayAlarm": 1,
+        "AlarmOn": 60,
+        "AlarmRelay": 1,
         "PowerOff": 65,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11600,10 +11600,10 @@
         "Bank number": 29,
         "Full name": "2D2_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11613,10 +11613,10 @@
         "Bank number": 30,
         "Full name": "2D3_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11626,10 +11626,10 @@
         "Bank number": 31,
         "Full name": "2D4_DEUT",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11639,10 +11639,10 @@
         "Bank number": 0,
         "Full name": "2D5_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11652,10 +11652,10 @@
         "Bank number": 1,
         "Full name": "2D5_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11665,10 +11665,10 @@
         "Bank number": 2,
         "Full name": "2D5_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11678,10 +11678,10 @@
         "Bank number": 3,
         "Full name": "2D5_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11691,10 +11691,10 @@
         "Bank number": 4,
         "Full name": "2F6_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11704,10 +11704,10 @@
         "Bank number": 5,
         "Full name": "2F6_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11717,10 +11717,10 @@
         "Bank number": 6,
         "Full name": "2F6_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11730,10 +11730,10 @@
         "Bank number": 7,
         "Full name": "2F6_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11743,10 +11743,10 @@
         "Bank number": 8,
         "Full name": "2D7_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11756,10 +11756,10 @@
         "Bank number": 9,
         "Full name": "2D7_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11769,10 +11769,10 @@
         "Bank number": 10,
         "Full name": "2D7_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11782,10 +11782,10 @@
         "Bank number": 11,
         "Full name": "2D7_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11795,10 +11795,10 @@
         "Bank number": 12,
         "Full name": "2F8_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11808,10 +11808,10 @@
         "Bank number": 13,
         "Full name": "2F8_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11821,10 +11821,10 @@
         "Bank number": 14,
         "Full name": "2F8_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11834,10 +11834,10 @@
         "Bank number": 15,
         "Full name": "2F8_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11847,10 +11847,10 @@
         "Bank number": 18,
         "Full name": "2G12",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11860,10 +11860,10 @@
         "Bank number": 24,
         "Full name": "2G78",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Measuring sensor",
@@ -11945,10 +11945,10 @@
         "Bank number": 16,
         "Full name": "3M1_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11958,10 +11958,10 @@
         "Bank number": 17,
         "Full name": "3M1_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11971,10 +11971,10 @@
         "Bank number": 18,
         "Full name": "3M1_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11984,10 +11984,10 @@
         "Bank number": 19,
         "Full name": "3M1_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -11997,10 +11997,10 @@
         "Bank number": 20,
         "Full name": "3M1_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12010,10 +12010,10 @@
         "Bank number": 21,
         "Full name": "3M1_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12023,10 +12023,10 @@
         "Bank number": 23,
         "Full name": "3M1D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12036,10 +12036,10 @@
         "Bank number": 22,
         "Full name": "3M1F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12049,10 +12049,10 @@
         "Bank number": 24,
         "Full name": "3M1_top_com",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12062,10 +12062,10 @@
         "Bank number": 31,
         "Full name": "3M1_bot_com",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12075,10 +12075,10 @@
         "Bank number": 8,
         "Full name": "3M2_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12088,10 +12088,10 @@
         "Bank number": 9,
         "Full name": "3M2_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12101,10 +12101,10 @@
         "Bank number": 10,
         "Full name": "3M2_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12114,10 +12114,10 @@
         "Bank number": 11,
         "Full name": "3M2_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12127,10 +12127,10 @@
         "Bank number": 12,
         "Full name": "3M2_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12140,10 +12140,10 @@
         "Bank number": 13,
         "Full name": "3M2_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12153,10 +12153,10 @@
         "Bank number": 15,
         "Full name": "3M2D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12166,10 +12166,10 @@
         "Bank number": 14,
         "Full name": "3M2F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12179,10 +12179,10 @@
         "Bank number": 0,
         "Full name": "3M3_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12192,10 +12192,10 @@
         "Bank number": 1,
         "Full name": "3M3_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12205,10 +12205,10 @@
         "Bank number": 2,
         "Full name": "3M3_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12218,10 +12218,10 @@
         "Bank number": 3,
         "Full name": "3M3_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12231,10 +12231,10 @@
         "Bank number": 4,
         "Full name": "3M3_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12244,10 +12244,10 @@
         "Bank number": 5,
         "Full name": "3M3_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12257,10 +12257,10 @@
         "Bank number": 7,
         "Full name": "3M3D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12270,10 +12270,10 @@
         "Bank number": 6,
         "Full name": "3M3F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12283,10 +12283,10 @@
         "Bank number": 24,
         "Full name": "3M4_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12296,10 +12296,10 @@
         "Bank number": 25,
         "Full name": "3M4_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12309,10 +12309,10 @@
         "Bank number": 26,
         "Full name": "3M4_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12322,10 +12322,10 @@
         "Bank number": 27,
         "Full name": "3M4_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12335,10 +12335,10 @@
         "Bank number": 28,
         "Full name": "3M4_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12348,10 +12348,10 @@
         "Bank number": 29,
         "Full name": "3M4_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12361,10 +12361,10 @@
         "Bank number": 31,
         "Full name": "3M4D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12374,10 +12374,10 @@
         "Bank number": 30,
         "Full name": "3M4F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12387,10 +12387,10 @@
         "Bank number": 16,
         "Full name": "3M5_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12400,10 +12400,10 @@
         "Bank number": 17,
         "Full name": "3M5_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12413,10 +12413,10 @@
         "Bank number": 18,
         "Full name": "3M5_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12426,10 +12426,10 @@
         "Bank number": 19,
         "Full name": "3M5_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12439,10 +12439,10 @@
         "Bank number": 20,
         "Full name": "3M5_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12452,10 +12452,10 @@
         "Bank number": 21,
         "Full name": "3M5_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12465,10 +12465,10 @@
         "Bank number": 22,
         "Full name": "3M5F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12478,10 +12478,10 @@
         "Bank number": 23,
         "Full name": "3M5D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12491,10 +12491,10 @@
         "Bank number": 8,
         "Full name": "3M6_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12504,10 +12504,10 @@
         "Bank number": 9,
         "Full name": "3M6_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12517,10 +12517,10 @@
         "Bank number": 10,
         "Full name": "3M6_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12530,10 +12530,10 @@
         "Bank number": 11,
         "Full name": "3M6_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12543,10 +12543,10 @@
         "Bank number": 12,
         "Full name": "3M6_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12556,10 +12556,10 @@
         "Bank number": 13,
         "Full name": "3M6_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12569,10 +12569,10 @@
         "Bank number": 15,
         "Full name": "3M6D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12582,10 +12582,10 @@
         "Bank number": 14,
         "Full name": "3M6F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12595,10 +12595,10 @@
         "Bank number": 0,
         "Full name": "3M7_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12608,10 +12608,10 @@
         "Bank number": 1,
         "Full name": "3M7_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12621,10 +12621,10 @@
         "Bank number": 2,
         "Full name": "3M7_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12634,10 +12634,10 @@
         "Bank number": 3,
         "Full name": "3M7_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12647,10 +12647,10 @@
         "Bank number": 4,
         "Full name": "3M7_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12660,10 +12660,10 @@
         "Bank number": 5,
         "Full name": "3M7_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12673,10 +12673,10 @@
         "Bank number": 7,
         "Full name": "3M7D",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12686,10 +12686,10 @@
         "Bank number": 6,
         "Full name": "3M7F",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12699,10 +12699,10 @@
         "Bank number": 25,
         "Full name": "3M7_top_com",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12712,10 +12712,10 @@
         "Bank number": 26,
         "Full name": "3M7_bot_com",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12725,10 +12725,10 @@
         "Bank number": 20,
         "Full name": "3B8A_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12738,10 +12738,10 @@
         "Bank number": 21,
         "Full name": "3B8A_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12751,10 +12751,10 @@
         "Bank number": 8,
         "Full name": "3F8_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12764,10 +12764,10 @@
         "Bank number": 9,
         "Full name": "3F8_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12777,10 +12777,10 @@
         "Bank number": 10,
         "Full name": "3F8_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12790,10 +12790,10 @@
         "Bank number": 11,
         "Full name": "3F8_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12803,10 +12803,10 @@
         "Bank number": 12,
         "Full name": "3B8B_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12816,10 +12816,10 @@
         "Bank number": 13,
         "Full name": "3B8B_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12829,10 +12829,10 @@
         "Bank number": 16,
         "Full name": "3D8_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12842,10 +12842,10 @@
         "Bank number": 17,
         "Full name": "3D8_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12855,10 +12855,10 @@
         "Bank number": 18,
         "Full name": "3D8_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12868,10 +12868,10 @@
         "Bank number": 19,
         "Full name": "3D8_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12881,10 +12881,10 @@
         "Bank number": 22,
         "Full name": "SR1_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12894,10 +12894,10 @@
         "Bank number": 23,
         "Full name": "SR1_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12907,10 +12907,10 @@
         "Bank number": 24,
         "Full name": "SR2_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12920,10 +12920,10 @@
         "Bank number": 25,
         "Full name": "SR2_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12933,10 +12933,10 @@
         "Bank number": 26,
         "Full name": "SR3_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12946,10 +12946,10 @@
         "Bank number": 27,
         "Full name": "SR3_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12959,10 +12959,10 @@
         "Bank number": 28,
         "Full name": "SR4_top",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -12972,10 +12972,10 @@
         "Bank number": 29,
         "Full name": "SR4_bot",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Measuring sensor",
@@ -12994,10 +12994,10 @@
         "Bank number": 0,
         "Full name": "WG_top_1",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13007,10 +13007,10 @@
         "Bank number": 2,
         "Full name": "WG_bot_1",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13020,10 +13020,10 @@
         "Bank number": 1,
         "Full name": "WG_top_mid_L",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13033,10 +13033,10 @@
         "Bank number": 3,
         "Full name": "WG_bot_mid_L",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13046,10 +13046,10 @@
         "Bank number": 4,
         "Full name": "WG_top_mid_R",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13059,10 +13059,10 @@
         "Bank number": 5,
         "Full name": "WG_bot_mid_R",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13072,10 +13072,10 @@
         "Bank number": 6,
         "Full name": "WG_top_3",
         "Position": "",
-        "Alarm": 65,
-        "RelayAlarm": 1,
+        "AlarmOn": 65,
+        "AlarmRelay": 1,
         "PowerOff": 70,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13085,10 +13085,10 @@
         "Bank number": 7,
         "Full name": "WG_bot_3",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13098,10 +13098,10 @@
         "Bank number": 8,
         "Full name": "4D1_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13111,10 +13111,10 @@
         "Bank number": 9,
         "Full name": "4D1_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13124,10 +13124,10 @@
         "Bank number": 10,
         "Full name": "4D1_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13137,10 +13137,10 @@
         "Bank number": 11,
         "Full name": "4D1_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13150,10 +13150,10 @@
         "Bank number": 12,
         "Full name": "4F2_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13163,10 +13163,10 @@
         "Bank number": 13,
         "Full name": "4F2_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13176,10 +13176,10 @@
         "Bank number": 14,
         "Full name": "4F2_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13189,10 +13189,10 @@
         "Bank number": 15,
         "Full name": "4F2_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13202,10 +13202,10 @@
         "Bank number": 0,
         "Full name": "4D3_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13215,10 +13215,10 @@
         "Bank number": 1,
         "Full name": "4D3_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13228,10 +13228,10 @@
         "Bank number": 2,
         "Full name": "4D3_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13241,10 +13241,10 @@
         "Bank number": 3,
         "Full name": "4D3_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13254,10 +13254,10 @@
         "Bank number": 4,
         "Full name": "4F4_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13267,10 +13267,10 @@
         "Bank number": 5,
         "Full name": "4F4_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13280,10 +13280,10 @@
         "Bank number": 6,
         "Full name": "4F4_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13293,10 +13293,10 @@
         "Bank number": 7,
         "Full name": "4F4_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13306,10 +13306,10 @@
         "Bank number": 24,
         "Full name": "4D5_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13319,10 +13319,10 @@
         "Bank number": 25,
         "Full name": "4D5_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13332,10 +13332,10 @@
         "Bank number": 26,
         "Full name": "4D5_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13345,10 +13345,10 @@
         "Bank number": 27,
         "Full name": "4D5_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13358,10 +13358,10 @@
         "Bank number": 28,
         "Full name": "4F6_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13371,10 +13371,10 @@
         "Bank number": 29,
         "Full name": "4F6_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13384,10 +13384,10 @@
         "Bank number": 30,
         "Full name": "4F6_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13397,10 +13397,10 @@
         "Bank number": 31,
         "Full name": "4F6_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13410,10 +13410,10 @@
         "Bank number": 16,
         "Full name": "4D7_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13423,10 +13423,10 @@
         "Bank number": 17,
         "Full name": "4D7_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13436,10 +13436,10 @@
         "Bank number": 18,
         "Full name": "4D7_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13449,10 +13449,10 @@
         "Bank number": 19,
         "Full name": "4D7_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13462,10 +13462,10 @@
         "Bank number": 20,
         "Full name": "4F8_bot_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13475,10 +13475,10 @@
         "Bank number": 21,
         "Full name": "4F8_top_int",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13488,10 +13488,10 @@
         "Bank number": 22,
         "Full name": "4F8_bot_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Interlock sensor",
@@ -13501,10 +13501,10 @@
         "Bank number": 23,
         "Full name": "4F8_top_ext",
         "Position": "",
-        "Alarm": 55,
-        "RelayAlarm": 1,
+        "AlarmOn": 55,
+        "AlarmRelay": 1,
         "PowerOff": 60,
-        "RelayOff": 2
+        "PowerRelay": 2
     },
     {
         "Class": "Measuring sensor",

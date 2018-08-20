@@ -7,6 +7,7 @@ WEBVEPP.List = function(tool_bar,settings){
         scheme_names = {"system":"","sample":""},
         table = d3.select("body").select("table"),
         legend = d3.select("body").select("#legend"),
+        toolbar = d3.select("body").select("#toolbar"),
         text_data = "";
 
 
@@ -38,6 +39,7 @@ WEBVEPP.List = function(tool_bar,settings){
             },
             success: function(data){
                 list = data;
+                console.log(list);
                 drawListData();
                 $(document).trigger("unset_loading_cursor");
                 $(document).trigger("tree_created");
@@ -181,9 +183,10 @@ WEBVEPP.List = function(tool_bar,settings){
                             .attr("width",list_attrs[j].width);
                     }
                     else if(attr_value instanceof Array){
+                        console.log(attr_value)
                         var rowvalue = row.append("td").attr("class",attr_name);
                         for(var i in attr_value){
-                            rowvalue.text(attr_value[i]);
+                            rowvalue.append("div").append("text").text(attr_value[i]);
                         }
                     }
                     else{
@@ -232,6 +235,11 @@ WEBVEPP.List = function(tool_bar,settings){
         $(document).off("tree_created");
     };
 
+    function activate(id){
+        toolbar.selectAll("li").classed("active",false);
+        $("#"+id).addClass("active");
+    };
+
     function loadToolData(){
         $(document).trigger("set_loading_cursor");
         $.ajax({
@@ -261,6 +269,7 @@ WEBVEPP.List = function(tool_bar,settings){
             })
             .on('click', function(d){
                 unsetSearch();
+                activate(d.id);
                 if(d.type=="list"){
                     setSchemeNames(d.sample);
                     loadListSettings();
@@ -308,8 +317,12 @@ WEBVEPP.List = function(tool_bar,settings){
 
         jtable = TableExport(document.getElementById("list"),{
             bootstrap: false,
-            formats: ["txt"]
+            formats: ["txt"],
+            position: "bottom"
         })
+/*
+        $exportbutton = $("#list").find('caption').children().detach();
+        $exportbutton.appendTo('#search');*/
     };
 
     setSchemeNames();
