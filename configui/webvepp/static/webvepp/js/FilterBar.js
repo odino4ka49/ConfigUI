@@ -34,11 +34,12 @@ WEBVEPP.FilterBar = function(){
     };
 
     function setSettings(data){
-        if(!data.filter_buttons){
+        //console.log(data);
+        settings = (data["filter_buttons"]===undefined)? undefined: jQuery.extend(true,[],data["filter_buttons"]);
+        if(settings==undefined){
             $(document).trigger("reload_tree",null);
             return;
         }
-        settings = (data["filter_buttons"]===undefined)? undefined: jQuery.extend(true,[],data["filter_buttons"]);
         drawButtons();
         $("#Filter_bar li:first-child").trigger("click");
         //$("#Filter_bar li:first-child").addClass("active");
