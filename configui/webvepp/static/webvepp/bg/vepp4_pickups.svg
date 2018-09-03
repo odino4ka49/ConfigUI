@@ -74,8 +74,8 @@ viewBox="0 0 297 210"
     .str5 {stroke:#1F1A17;stroke-width:0.0762}
     .str3 {stroke:#1F1A17;stroke-width:0.1}
     .str4 {stroke:#1F1A17;stroke-width:0.1764}
-    .str0 {stroke:#1F1A17;stroke-width:0.18}
-    .str2 {stroke:#1F1A17;stroke-width:0.25}
+    .str0 {stroke:#1F1A17;stroke-width:0.018}
+    .str2 {stroke:#1F1A17;stroke-width:0.025}
     .str6 {stroke:#1F1A17;stroke-width:0.3528}
     .str1 {stroke:#838281;stroke-width:0.3528}
     .str7 {stroke:#192761;stroke-width:0.3528}
@@ -341,7 +341,7 @@ viewBox="0 0 297 210"
   <line class="fil1 str1" x1="97.8708" y1="138.656" x2="97.8707" y2= "144.994" />
   <rect class="fil0 str0" transform="matrix(0.016276 -11.3207 -14.4257 -0.0127728 196.425 155.525)" width="2.9455" height="1.5755"/>
   <line class="fil1 str1" x1="185.513" y1="126.84" x2="188.598" y2= "126.841" />
-  <rect class="fil0 str2" transform="matrix(0.00730683 -1.45744 -6.47614 -0.00164439 185.501 129.25)" width="2.9455" height="1.5755"/>
+  <rect class="fil0 str2" transform="matrix(0.00730683 -1.45744 -6.47614 -0.00164439 185.501 129.25)" width="2.9455px" height="1.5755px"/>
   <line class="fil1 str1" x1="148.502" y1="44.9466" x2="148.502" y2= "48.4042" />
   <line class="fil1 str1" x1="150.283" y1="44.9003" x2="150.283" y2= "48.3579" />
   <line class="fil1 str1" x1="152.064" y1="44.9485" x2="152.064" y2= "48.4061" />
