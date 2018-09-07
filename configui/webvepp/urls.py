@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^scheme/[- \w]+$', 'webvepp.views.scheme', name="index-scheme"),
     url(r'^tools/$', 'webvepp.views.tools', name="index-tools"),
     url(r'^settings/$', 'webvepp.views.settings', name="index-settings"),
+    url(r'^findObject', 'webvepp.views.findObject', name="find-object"),
     url(r'^getTreeData', 'webvepp.views.loadTreeData', name="views-tree-data"),
     url(r'^getListData', 'webvepp.views.loadListData', name="views-list-data"),
     url(r'^getMenuData', 'webvepp.views.loadMenuData', name="views-menu-data"),

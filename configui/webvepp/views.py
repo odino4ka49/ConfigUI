@@ -52,8 +52,24 @@ def scheme(request):
     template = loader.get_template('webvepp/scheme.html')
     return HttpResponse(template.render())
 
-def loadTreeData(request):
+def findObject(request):
     global start_name,current_scheme_name
+    data = request.GET
+    current_scheme_name = json.loads(data['scheme_names'])
+    start_name = json.loads(data['start_name'])
+    result = {"reload": "true","tree":[]}
+    rules = {"Name": start_name}
+    start_obj = getObjects(rules)
+    if len(start_obj) != 0:
+        result["reload"] = "false"
+        tree_filter_data = searchTreeThrough(start_obj[0])
+        result["filter_name"] = tree_filter_data["filter_name"]
+        #result["tree"] = tree_filter_data["tree"]
+        #result["path"] = tree_filter_data["path"]
+    return HttpResponse(json.dumps(result, ensure_ascii=False), content_type="application/json")
+
+def loadTreeData(request):
+    global current_scheme_name
     data = request.GET
     current_scheme_name = json.loads(data['scheme_names'])
     filter_name = json.loads(data['filter_name'])
@@ -673,7 +689,39 @@ def hideSiblings(neighbours,start_name,level):
             n["unhidden"] = True
     return
 
+def searchTreeThrough(start_object):
+    tree = parseTree(None)
+    found_object = None
+    print start_object
+    for child in tree["_parents"]:
+        if start_object["Name"] == child["name"]:
+            found_object = child
+    if found_object == None:
+        print "second level"
+        for child in tree["_parents"]:
+            object = getObjectById(child["id"])
+            object["_parents"] = getNodeNeighbours(object,"2")
+    else:
+        filter_name = checkFilter(start_object)
+        return {
+            "filter_name": filter_name,
+            "tree": tree,
+            "path":[start_object["Name"]]
+        }
+
+def checkFilter(object):
+    sample = getSample()
+    rules = None
+    if "filter_buttons" in sample:
+        for filter in sample["filter_buttons"]:
+            if "filter" in filter and "name" in filter:
+                filterres = filterObjects([object],filter["filter"])
+                if len(filterres)!=0:
+                    return filter["name"]
+    return rules
+
 def parseTree(rules):
+    global start_name
     tree = {}
     sample = getSample()
     max_level = 1

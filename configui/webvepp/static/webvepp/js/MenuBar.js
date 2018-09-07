@@ -55,7 +55,6 @@ WEBVEPP.MenuBar = function(menu_bar,settings){
         var address = location.pathname.split('/')[2];
         if(address == "")
             goToPage(menu_data[0].link_name);
-            //menu_bar.select("li.button").attr("class", "active");
         else
             menu_bar.select("#menu_"+address).attr("class", "active");
     };

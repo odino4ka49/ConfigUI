@@ -8,15 +8,12 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         .on('zoom', function(){
             svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
         })
-        // Offset so that first pan and zoom does not jump back to the origin
         .translate([400, 200]);
     var svg = d3.select("body").append("svg")
         .attr('width', "100%")
         .attr('height', "100%")
         .call(zoom)
         .append('g')
-        // Left padding of tree so that the whole root node is on the screen.
-        // TODO: find a better way
         .attr("transform", "translate(400,200)");
 
 
@@ -24,8 +21,6 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
 
     var ancestorTree = WEBVEPP.Tree(params);
         ancestorTree.setChildren(function(person){
-        // If the person is collapsed then tell d3
-        // that they don't have any ancestors.
         if(person.collapsed){
           return;
         } else if(person._children){
@@ -34,16 +29,6 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
             return person._parents;
         }
     });
-
-    // Use a separate tree to display the descendants
-    /*var descendantsTree = WEBVEPP.Tree(params);
-        descendantsTree.setChildren(function(person){
-        if(person.collapsed){
-          return;
-        } else {
-          return person._children;
-        }
-    });*/
 
     function collapse(person){
       person.collapsed = true;
@@ -57,43 +42,22 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
 
     function reloadTree(){
         var tree_data = model.getTreeData();
-
-        // D3 modifies the objects by setting properties such as
-        // coordinates, parent, and children. Thus the same node
-        // node can't exist in two trees. But we need the root to
-        // be in both so we create proxy nodes for the root only.
         var ancestorRoot = rootProxy(tree_data);
-        //var descendantRoot = rootProxy(tree_data);
-
-        // Start with only the first few generations of ancestors showing
-        /*ancestorRoot._parents.forEach(function(parents){
-          parents._parents.forEach(collapse);
-        });*/
-
-        // Start with only one generation of descendants showing
-        //descendantRoot._children.forEach(collapse);
-
-        // Set the root nodes
         ancestorTree.setSettings(model.getTreeSettings());
         ancestorTree.setData(ancestorRoot);
         ancestorTree.recountXY();
-        //descendantsTree.data(descendantRoot);
-
-        // Draw the tree
         ancestorTree.draw(ancestorRoot);
-        //descendantsTree.draw(descendantRoot);
-
-      //});
       };
 
     function toggleStartName(){
-        //figure out start name
         var path = location.pathname.split('/');
         var startname = path[3];
         if(startname!=""){
             var person = ancestorTree.findObjectByName(startname);
-            ancestorTree.togglePerson(person);
-            ancestorTree.moveToStartPosition(person);
+            if(person){
+                ancestorTree.togglePerson(person);
+                ancestorTree.moveToStartPosition(person);
+            }
         }
     };
 
@@ -119,7 +83,7 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
     });
 
     $(document).on("tree_changed",function(){
-        reloadTree();//ancestorTree.draw();
+        reloadTree();
     })
 
     return {

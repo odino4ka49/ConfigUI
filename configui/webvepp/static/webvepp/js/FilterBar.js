@@ -34,22 +34,47 @@ WEBVEPP.FilterBar = function(){
     };
 
     function setSettings(data){
-        //console.log(data);
+        var path = location.pathname.split('/');
+        var startname = path[3];
         settings = (data["filter_buttons"]===undefined)? undefined: jQuery.extend(true,[],data["filter_buttons"]);
-        if(settings==undefined){
-            $(document).trigger("reload_tree",null);
-            return;
+        if(settings!=undefined){
+            drawButtons();
         }
-        drawButtons();
-        $("#Filter_bar li:first-child").trigger("click");
-        //$("#Filter_bar li:first-child").addClass("active");
+        if(startname!=""){
+            $(document).trigger("find_object",startname);
+        }
+        else{
+            if(settings==undefined){
+                $(document).trigger("reload_tree",null);
+            }
+            else{
+                $("#Filter_bar li:first-child").trigger("click");
+            }
+        }
+    };
+
+    function processFoundData(found_data){
+        if(found_data["reload"]=="true"){
+            var path = location.pathname.split('/');
+            goToPage(path[2]);
+        }
+        else{
+            $("#filter_"+found_data["filter_name"]).trigger("click");
+            /*$("#filter_"+found_data["filter_name"]).addClass("active");
+            $(document).trigger("tree_created");*/
+        }
     };
 
     $(document).on("settings_loaded",function(event,settings_data){
         setSettings(settings_data);
     });
 
+    $(document).on("object_found",function(event,found_data){
+        processFoundData(found_data);
+    });
+
     return {
+
     }
 };
 

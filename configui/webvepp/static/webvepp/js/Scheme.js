@@ -139,13 +139,6 @@ WEBVEPP.Scheme = function(menu,settings){
                     $(document).trigger("switch_system",aim_system);
                 }
                 var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_self');
-                //this is for new tab
-                //'_blank');
-                /*if(win){
-                    win.focus();
-                }else{
-                    alert('Please allow popups for this site');
-                }*/
             });
         },
         addEyes = function(){

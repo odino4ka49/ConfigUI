@@ -40,9 +40,27 @@ WEBVEPP.TreeModel = function(menu,settings){
                 },
                 success: function(data){
                     tree_data = data;
-                    console.log(data);
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("tree_created");
+                }
+            });
+        };
+
+    function findObject(start_name){
+            $(document).trigger("set_loading_cursor");
+            $.ajax({
+                type: "GET",
+                data: {scheme_names: JSON.stringify(tree_scheme_names),start_name: JSON.stringify(start_name) },
+                url: WEBVEPP.serveradr()+"webvepp/findObject",
+                error: function(xhr, ajaxOptions, thrownError) {
+                    $(document).trigger("unset_loading_cursor");
+                    $(document).trigger("error_message",thrownError);
+                },
+                success: function(data){
+                    tree_data = data["tree"]
+                    console.log(data);
+                    $(document).trigger("unset_loading_cursor");
+                    $(document).trigger("object_found",data);
                 }
             });
         };
@@ -116,11 +134,13 @@ WEBVEPP.TreeModel = function(menu,settings){
         return a;
     }
 
+    $(document).on("find_object",function(event,name){
+        findObject(name);
+    })
 
     $(document).on("menu_loaded",function(){
         setSchemeNames();
         loadTreeSettings();
-        //loadTreeData();
     })
 
     $(document).on("reload_tree",function(event,filter_name){
