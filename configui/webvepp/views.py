@@ -64,7 +64,7 @@ def findObject(request):
         result["reload"] = "false"
         tree_filter_data = searchTreeThrough(start_obj[0])
         result["filter_name"] = tree_filter_data["filter_name"]
-        #result["tree"] = tree_filter_data["tree"]
+        result["tree"] = tree_filter_data["tree"]
         #result["path"] = tree_filter_data["path"]
     return HttpResponse(json.dumps(result, ensure_ascii=False), content_type="application/json")
 
@@ -75,7 +75,6 @@ def loadTreeData(request):
     filter_name = json.loads(data['filter_name'])
     rules = getFilter(filter_name)
     tree = parseTree(rules)
-    tree["additional_links"] = []
     return HttpResponse(json.dumps(tree, ensure_ascii=False), content_type="application/json")
 
 def loadListData(request):
@@ -692,30 +691,57 @@ def hideSiblings(neighbours,start_name,level):
 def searchTreeThrough(start_object):
     tree = parseTree(None)
     found_object = None
+    path = []
+    first_level_names = []
     print start_object
     for child in tree["_parents"]:
+	first_level_names.append(child["name"])
         if start_object["Name"] == child["name"]:
             found_object = child
     if found_object == None:
         print "second level"
-        for child in tree["_parents"]:
-            object = getObjectById(child["id"])
-            object["_parents"] = getNodeNeighbours(object,"2")
+	#add recursion
+	objects = tree["_parents"]
+	level = 2
+	while path == []:
+	    for obj in objects:
+		curr_obj = getObjectById(obj["id"])
+                obj["_parents"] = getNodeNeighbours(curr_obj,str(level))
+		objects = obj["_parents"]
+		level+=1
+		for child in objects:
+		    if start_object["Name"] == child["name"]:
+			curr_obj = getObjectById(obj["id"])
+            		child["_parents"] = getNodeNeighbours(curr_obj,str(level))
+			path = "hello, sir"
+			print found_object
     else:
         filter_name = checkFilter(start_object)
+	print filter_name
         return {
             "filter_name": filter_name,
             "tree": tree,
             "path":[start_object["Name"]]
         }
 
-def checkFilter(object):
+def findParent(obj):
+    links = []
+    link_pos = {"to": None,"from": None}
+    array = getAllObjects()
+    temp1 = getTemplate(obj)
+    for obj2 in array:
+        temp2 = getTemplate(obj2)
+    	links = getLinkDirectioned(obj,obj2,temp1,temp2,link_pos,"to")
+	if len(links)!=0:
+	    return obj2
+
+def checkFilter(obj):
     sample = getSample()
     rules = None
     if "filter_buttons" in sample:
         for filter in sample["filter_buttons"]:
             if "filter" in filter and "name" in filter:
-                filterres = filterObjects([object],filter["filter"])
+                filterres = filterObjects([obj],filter["filter"])
                 if len(filterres)!=0:
                     return filter["name"]
     return rules
@@ -740,6 +766,7 @@ def parseTree(rules):
         result["height"] = obj_display_attributes["height"]
 
         result["_parents"]=getNodeNeighbours(result,"0",1,rules)
+        result["additional_links"] = []
         return result
 
     if sample["root"]["type"]=="new":
@@ -961,16 +988,6 @@ def getObject(rules):
     def filter(o):
         result = True
         for r in rules:
-            """ if we use '->':
-            deep_r = r.split("->")
-            o_value = o
-            for i in range(0,len(deep_r)-1):
-                if deep_r[i] in o_value:
-                    o_value = o_value[deep_r[i]]
-                else:
-                    result = False
-            if (o_value!=rules[r]):
-                result = False"""
             if r in o and o[r]!=rules[r]:
                 result = False
         return result
