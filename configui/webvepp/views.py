@@ -343,8 +343,10 @@ def getNodeNeighbours(node, level, direction=1, rules=None):
     sample = getSample()
     if level == "0":
         obj_sample = sample["root"]
-    else:
+    elif "level"+level in sample:
         obj_sample = sample["level" + level]
+    else:
+        return neighbours
 
     if direction == -1:
         if level == "1":
@@ -737,7 +739,6 @@ def hideSiblings(neighbours, start_name, level):
     return
 
 def searchthrough(objects_array,name,level):
-    parentid = None
     for objects in objects_array:
         for obj in objects:
             parentid = obj["id"]
@@ -745,16 +746,18 @@ def searchthrough(objects_array,name,level):
             obj["_parents"] = getNodeNeighbours(curr_obj, str(level))
             obj["collapsed"] = False
             objects = obj["_parents"]
-            level = level+1
+            print obj["name"],level
             for child in objects:
                 if name == child["name"]:
-                    curr_obj = getObjectById(child["id"])
-                    #child["_parents"] = getNodeNeighbours(curr_obj, str(level))
-                    return parentid
+                    return
+    level = level+1
     new_array = []
     for objects in objects_array:
         for obj in objects:
             new_array.append(obj["_parents"])
+    print level
+    if len(new_array)==0:
+        return
     return searchthrough(new_array,name,level)
 
 def findPath(tree,objid):
@@ -783,10 +786,9 @@ def searchTreeThrough(start_object):
             found_object = child
     if found_object == None:
         print "second level"
-        # add recursion
         objects = tree["_parents"]
-        level = 2
-        objid = searchthrough([objects],start_object["Name"],level)
+        level = 1
+        searchthrough([objects],start_object["Name"],level)
         return {
             "filter_name": None,
             "tree": tree,
