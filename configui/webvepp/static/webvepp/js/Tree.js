@@ -16,6 +16,7 @@ WEBVEPP.Tree = function(params){
         root,
         details_obj,
         additional_links,
+        field_shift = 0,
 
 
         setChildren = function(children){
@@ -273,7 +274,7 @@ WEBVEPP.Tree = function(params){
                 }
                 result += (node_width+50)*direction;
             }
-            return result;
+            return result+field_shift;
         },
         isMatrix = function(person){
             /*var level_name = "level"+person.depth;
@@ -1029,13 +1030,16 @@ WEBVEPP.Tree = function(params){
             person.coord = [person.coord[0]+shift[0],person.coord[1]+shift[1]];
         }
     };
+
     function moveToStartPosition(person){
         var coords = person.coord;
         var nodes = tree.nodes(root);
         var shift = [-coords[0],-coords[1]];
+        //svg.attr("transform", "translate('"+coords[0]+","+coords[1]+"')")
         nodes.forEach(function(n){
             movePerson(n,shift);
         });
+        field_shift = -coords[0];
     };
 
     return {

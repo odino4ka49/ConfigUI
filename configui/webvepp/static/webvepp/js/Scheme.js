@@ -135,10 +135,16 @@ WEBVEPP.Scheme = function(menu,settings){
             $(".link").click(function(){
                 var id = $(this).attr("link");
                 var aim_system = $(this).attr("system");
+                var tab = $(this).attr("tab");
                 if(aim_system){
                     $(document).trigger("switch_system",aim_system);
                 }
-                var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_self');
+                if(tab && tab=="camacs"){
+                    var win = window.open(WEBVEPP.serveradr()+"webvepp/camacs/"+id,'_self');
+                }
+                else{
+                    var win = window.open(WEBVEPP.serveradr()+"webvepp/elements/"+id,'_self');
+                }
             });
         },
         addEyes = function(){

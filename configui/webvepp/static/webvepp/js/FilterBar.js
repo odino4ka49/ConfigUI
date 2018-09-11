@@ -59,11 +59,11 @@ WEBVEPP.FilterBar = function(){
             goToPage(path[2]);
         }
         else{
-	    if(found_data["filter_name"] != null){
-	        $("#filter_"+found_data["filter_name"]).trigger("click");
-	    }
-	    else{
-		$(document).trigger("tree_created");
+            if(found_data["filter_name"] != null){
+                $("#filter_"+found_data["filter_name"]).trigger("click");
+            }
+            else{
+                $(document).trigger("tree_created");
 	    }
             /*$("#filter_"+found_data["filter_name"]).addClass("active");
             $(document).trigger("tree_created");*/
