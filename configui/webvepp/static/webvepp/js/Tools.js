@@ -39,7 +39,6 @@ WEBVEPP.List = function(tool_bar,settings){
             },
             success: function(data){
                 list = data;
-                console.log(list);
                 drawListData();
                 $(document).trigger("unset_loading_cursor");
                 $(document).trigger("tree_created");
@@ -160,15 +159,12 @@ WEBVEPP.List = function(tool_bar,settings){
             })
 
         var row = tbody.selectAll("tr").data(list);
-        var rowEnter = row.enter().append("tr")/*.append("td")
-            .append('foreignObject')
-            .append("xhtml:body")*/;
+        var rowEnter = row.enter().append("tr")
 
         var rowUpdate = row;
             rowUpdate.each(function(d,i){
                 var row = d3.select(this);
                 var attrs = d.attributes.min;
-                //row.selectAll("td").remove();
                 for(var j=0;j<list_attrs.length;j++){
                     var attr_name = list_titles[j];
                     var attr_field = attrs.filter(function( obj ) { return obj.key == attr_name; })[0];
@@ -183,7 +179,6 @@ WEBVEPP.List = function(tool_bar,settings){
                             .attr("width",list_attrs[j].width);
                     }
                     else if(attr_value instanceof Array){
-                        console.log(attr_value)
                         var rowvalue = row.append("td").attr("class",attr_name);
                         for(var i in attr_value){
                             rowvalue.append("div").append("text").text(attr_value[i]);
@@ -194,11 +189,6 @@ WEBVEPP.List = function(tool_bar,settings){
                     }
                 }
             })
-            /*.selectAll("body")
-            .html(function(d){
-                text=minAttributesToLine(d)
-                return '<div style="width: '+(d.width)+'px; height: '+(d.height)+'px" class="attributes">'+text+'</div>'
-            });*/
         var rowExit = row.exit();
             rowExit.remove();
 
