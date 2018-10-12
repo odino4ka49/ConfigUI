@@ -934,7 +934,7 @@ WEBVEPP.Tree = function(params){
             }
             rows_number+=(row_width/width>>0)+1;
         }
-        return rows_number*17+20;
+        return rows_number*17+25;
     };
     function minAttributesToString(d){
         var level_info = getLevelInfo(d);
