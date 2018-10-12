@@ -18,6 +18,7 @@ import validation
 tree_data = {}
 tree_template = {}
 tree_sample = {}
+tree = {}
 tree_sample_name = ""
 start_name = None
 current_scheme_name = {"system": "CHAN", "sample": "camacs"}
@@ -67,16 +68,19 @@ def findObject(request):
     result = {"reload": "true", "tree": []}
     rules = {"Name": start_name}
     start_obj = getObjects(rules)
-    if len(start_obj) != 0:
+    if len(start_obj) > 0:
         result["reload"] = "false"
         tree_filter_data = searchTreeThrough(start_obj[0])
         result["filter_name"] = tree_filter_data["filter_name"]
-        result["tree"] = tree_filter_data["tree"]
+        rules = getFilter(result["filter_name"])
+        result["tree"] = parseTree(rules)
+        #result["tree"] = tree_filter_data["tree"]
+        result["path"] = tree_filter_data["path"]
     return HttpResponse(json.dumps(result, ensure_ascii=False), content_type="application/json")
 
 
 def loadTreeData(request):
-    global current_scheme_name
+    global current_scheme_name, tree
     data = request.GET
     current_scheme_name = json.loads(data['scheme_names'])
     filter_name = json.loads(data['filter_name'])
@@ -133,17 +137,21 @@ def loadTreeSample(request):
 
 
 def loadNodeNeighbours(request):
-    global current_scheme_name
+    global current_scheme_name,tree
     data = request.GET
     node_id = data["node_id"]
     level = data["level"]
     current_scheme_name = json.loads(data['scheme_names'])
 
     node = getObjectById(node_id)
-    n_list = getNodeNeighbours(node, level)
-    n_left_list = getNodeNeighbours(node, level, -1)
+    tree_node = getNodeById(tree,node_id)
+    n_list = getNodeNeighbours(tree_node, node, level)
+    n_left_list = getNodeNeighbours(tree_node, node, level, -1)
     r_list = getRemoteAttributes(node, level)
     l_list = getAdditionalLinks(n_list, int(level) + 1)
+    tree_node["_parents"] = n_list
+    tree_node["_children"] = n_left_list
+    #tree_node["_parents"].append(r_list)
     return HttpResponse(json.dumps([n_list, n_left_list, l_list, r_list], ensure_ascii=False),
                         content_type="application/json")
 
@@ -192,6 +200,19 @@ def loadMaxAttributes(request):
             comp_obj["link_id"] = comp[template["component_ID"]]
             result["_parents"].append(parseObject(comp_obj))
     return result"""
+
+
+def getNodeById(node, id):
+    if "id" in node and node["id"]==id:
+        return node
+    if "_parents" in node:
+        children = node["_parents"]
+        if len(children)!=0:
+            for ch in children:
+                result = getNodeById(ch,id)
+                if result:
+                    return result
+    return None
 
 
 # returns list of attributes of the object according to its template
@@ -338,7 +359,7 @@ def getMaxAttributes(node, level):
     return obj_attributes["extra"]
 
 
-def getNodeNeighbours(node, level, direction=1, rules=None):
+def getNodeNeighbours(treenode, node, level, direction=1, rules=None):
     neighbours = []
     sample = getSample()
     if level == "0":
@@ -370,7 +391,7 @@ def getNodeNeighbours(node, level, direction=1, rules=None):
             next_level = filterObjects(next_level, rules)
         if "type" in obj_sample and obj_sample["type"] == "new":
             for n in next_level:
-                neighbour = {"name": n["Name"], "id": "", "_parents": []}
+                neighbour = {"name": n["Name"], "id": "", "_parents": [], "parent_id": node["id"]}
                 if "Class" in n:
                     neighbour["id"] = parseId(n)
                 if "Disabled" in n:
@@ -388,7 +409,7 @@ def getNodeNeighbours(node, level, direction=1, rules=None):
                         neighbour["open_extra"] = sample_l["remote_attributes"]["open_extra"]
                 if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
                     neighbour["collapsed"] = False
-                    neighbour["_parents"] = getNodeNeighbours(n, str(int(level) + 1))
+                    neighbour["_parents"] = getNodeNeighbours(neighbour, n, str(int(level) + 1))
                 neighbours.append(neighbour)
         else:
             for n in next_level:
@@ -397,30 +418,31 @@ def getNodeNeighbours(node, level, direction=1, rules=None):
                 if len(links) != 0:
                     template = getTemplate(node)
                     n["link_id"] = link_positions
-                    neighbour = {"name": n["Name"], "id": "", "_parents": []}
+                    neighbour = {"name": n["Name"], "id": "", "_parents": [], "parent_id": treenode["id"]}
                     if "Class" in n:
                         neighbour["id"] = parseId(n)
-                    if "Disabled" in n:
-                        neighbour["disabled"] = n["Disabled"]
-                    display_details = sample_l["display_filter"]
-                    obj_attributes = parseAttributes(display_details, n)
-                    neighbour["attributes"] = obj_attributes
-                    n_display_attributes = sample_l["display_attributes"]
-                    neighbour["width"] = n_display_attributes["width"]
-                    neighbour["height"] = n_display_attributes["height"]
-                    neighbour["direction"] = direction
-                    if "remote_attributes" in sample_l and "Class" in sample_l["remote_attributes"] and neighbour[
-                        "Class"] in sample_l["remote_attributes"]["Class"]:
-                        if "open_extra" in sample_l["remote_attributes"]:
-                            neighbour["open_extra"] = sample_l["remote_attributes"]["open_extra"]
-                    if "action" in sample_l:
-                        action = parseRulesToString(n, sample_l["action"])
-                        if action["type"] == "open_another_map" and "info" in action:
-                            neighbour["link_to_map"] = action["map"] + "/" + action["info"]
-                    if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
-                        neighbour["collapsed"] = False
-                        neighbour["_parents"] = getNodeNeighbours(n, str(int(level) + 1))
-                    neighbours.append(neighbour)
+                    if(neighbour["id"]!=treenode["parent_id"]):
+                        if "Disabled" in n:
+                            neighbour["disabled"] = n["Disabled"]
+                        display_details = sample_l["display_filter"]
+                        obj_attributes = parseAttributes(display_details, n)
+                        neighbour["attributes"] = obj_attributes
+                        n_display_attributes = sample_l["display_attributes"]
+                        neighbour["width"] = n_display_attributes["width"]
+                        neighbour["height"] = n_display_attributes["height"]
+                        neighbour["direction"] = direction
+                        if "remote_attributes" in sample_l and "Class" in sample_l["remote_attributes"] and neighbour[
+                            "Class"] in sample_l["remote_attributes"]["Class"]:
+                            if "open_extra" in sample_l["remote_attributes"]:
+                                neighbour["open_extra"] = sample_l["remote_attributes"]["open_extra"]
+                        if "action" in sample_l:
+                            action = parseRulesToString(n, sample_l["action"])
+                            if action["type"] == "open_another_map" and "info" in action:
+                                neighbour["link_to_map"] = action["map"] + "/" + action["info"]
+                        if "autorevealing" in n_display_attributes and n_display_attributes["autorevealing"]:
+                            neighbour["collapsed"] = False
+                            neighbour["_parents"] = getNodeNeighbours(neighbour, n, str(int(level) + 1))
+                        neighbours.append(neighbour)
         # if we have a matrix neighbours, we add some kind of "matrix" object in the beginning of all neighbours
         if "positioning" in sample_l["display_attributes"] and sample_l["display_attributes"][
             "positioning"] == "matrix":
@@ -739,26 +761,26 @@ def hideSiblings(neighbours, start_name, level):
     return
 
 def searchthrough(objects_array,name,level):
+    global tree
     for objects in objects_array:
         for obj in objects:
             parentid = obj["id"]
-            curr_obj = getObjectById(obj["id"])
-            obj["_parents"] = getNodeNeighbours(curr_obj, str(level))
+            curr_obj = getObjectById(parentid)
+            obj["_parents"] = getNodeNeighbours(obj, curr_obj, str(level))
             obj["collapsed"] = False
             objects = obj["_parents"]
-            print obj["name"],level
             for child in objects:
                 if name == child["name"]:
-                    return
+                    return child
     level = level+1
     new_array = []
     for objects in objects_array:
         for obj in objects:
             new_array.append(obj["_parents"])
-    print level
     if len(new_array)==0:
         return
     return searchthrough(new_array,name,level)
+
 
 def findPath(tree,objid):
     def findpath(root,objid,path):
@@ -775,31 +797,54 @@ def findPath(tree,objid):
 
 
 def searchTreeThrough(start_object):
+    global tree
     tree = parseTree(None)
     found_object = None
-    objid = None
     first_level_names = []
-    print start_object
+    path = []
     for child in tree["_parents"]:
         first_level_names.append(child["name"])
         if start_object["Name"] == child["name"]:
             found_object = child
     if found_object == None:
-        print "second level"
         objects = tree["_parents"]
         level = 1
-        searchthrough([objects],start_object["Name"],level)
+        found_object = searchthrough([objects],start_object["Name"],level)
+        #if not found_object:
+        collapseTreeNodes()
+        if found_object:
+            parent_id = found_object["parent_id"]
+            path = [found_object["id"]]
+            while parent_id!=None:
+                path.insert(0,parent_id)
+                parent = getNodeById(tree,parent_id)
+                #parent["collapsed"] = False
+                if "parent_id" in parent:
+                    parent_id = parent["parent_id"]
+                else:
+                    parent_id = None
         return {
             "filter_name": None,
             "tree": tree,
+            "path": path
         }
     else:
         filter_name = checkFilter(start_object)
-        print filter_name
         return {
             "filter_name": filter_name,
             "tree": tree,
+            "path": path
         }
+
+
+def collapseTreeNodes():
+    def collapseBranch(branch):
+        if "_parents" in branch:
+            for child in branch["_parents"]:
+                child["collapsed"] = True
+                collapseBranch(child)
+    global tree
+    collapseBranch(tree)
 
 
 def findParent(obj):
@@ -809,9 +854,10 @@ def findParent(obj):
     temp1 = getTemplate(obj)
     for obj2 in array:
         temp2 = getTemplate(obj2)
-        links = getLinkDirectioned(obj, obj2, temp1, temp2, link_pos, "to")
-        if len(links) != 0:
-            return obj2
+        if temp1 and temp2:
+            links = getLinkDirectioned(obj, obj2, temp1, temp2, link_pos, "to")
+            if len(links) != 0:
+                return obj2
 
 
 def checkFilter(obj):
@@ -845,7 +891,7 @@ def parseTree(rules):
         result["width"] = obj_display_attributes["width"]
         result["height"] = obj_display_attributes["height"]
 
-        result["_parents"] = getNodeNeighbours(result, "0", 1, rules)
+        result["_parents"] = getNodeNeighbours(result, result, "0", 1, rules)
         result["additional_links"] = []
         return result
 
@@ -1147,7 +1193,7 @@ def getTemplate(object):
 def getLinkDirectioned(obj1, obj2, temp1, temp2, link_pos, direction):
     links = []
     # check foreign keys
-    if "foreign_keys" in temp1 and temp2["class"] in temp1["foreign_keys"] and temp2["class"] in obj1:
+    if "foreign_keys" in temp1 and "class" in temp2 and temp2["class"] in temp1["foreign_keys"] and temp2["class"] in obj1:
         linked = True
         for i in range(0, len(temp2["primary_key"]) - 1):
             check_field = temp2["primary_key"][i]
@@ -1202,8 +1248,9 @@ def getLink(obj1, obj2, link_pos):
     link_pos["to"] = None
     temp1 = getTemplate(obj1)
     temp2 = getTemplate(obj2)
-    links += getLinkDirectioned(obj1, obj2, temp1, temp2, link_pos, "from")
-    links += getLinkDirectioned(obj2, obj1, temp2, temp1, link_pos, "to")
+    if temp1 and temp2:
+        links += getLinkDirectioned(obj1, obj2, temp1, temp2, link_pos, "from")
+        links += getLinkDirectioned(obj2, obj1, temp2, temp1, link_pos, "to")
     return links
 
 

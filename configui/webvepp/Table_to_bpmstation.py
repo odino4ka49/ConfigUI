@@ -79,7 +79,7 @@ def makeRecieverObject(line):
         obj["Module Type"] = "BPMcontroller"+line[5]
         obj["System"] = "V4"
         obj["Comment"] = ""
-        obj["BMP"] = line[1]
+        obj["BPM"] = line[1]
         obj["IP"] = line[2]
         obj["Port"] = to_int(line[3])
         obj["MAC"] = line[4]

@@ -4,9 +4,15 @@ WEBVEPP.TreeModel = function(menu,settings){
         tree_settings = {},
         tree_scheme_names = {"system":"","sample":""},
         settings = settings,
+        path = [],
 
         getTreeData = function(){
             var result = tree_data;//(tree_data===undefined)? undefined: jQuery.extend(true,{},tree_data);
+            return result;
+        },
+
+        getPath = function(){
+            var result = path;//(tree_data===undefined)? undefined: jQuery.extend(true,{},tree_data);
             return result;
         },
 
@@ -57,8 +63,8 @@ WEBVEPP.TreeModel = function(menu,settings){
                     $(document).trigger("error_message",thrownError);
                 },
                 success: function(data){
-                    tree_data = data["tree"]
-                    console.log(data);
+                    tree_data = data["tree"];
+                    path = data["path"];
                     $(document).trigger("unset_loading_cursor");
                     $(document).trigger("object_found",data);
                 }
@@ -118,7 +124,7 @@ WEBVEPP.TreeModel = function(menu,settings){
                 success: function(data){
                     node.attributes.extra = data;
                     $(document).trigger("unset_loading_cursor");
-                    $(document).trigger("tree_changed");
+                    $(document).trigger("details_loaded");
                 }
             });
     };
@@ -152,5 +158,6 @@ WEBVEPP.TreeModel = function(menu,settings){
         getTreeSettings: getTreeSettings,
         loadNodeNeighbours: loadNodeNeighbours,
         loadDetails: loadDetails,
+        getPath: getPath
     };
 }

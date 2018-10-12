@@ -40,18 +40,25 @@ WEBVEPP.Tree = function(params){
                 //throw new Error('Missing root');
             }
         },
-        //doesn't work
         recountXY = function(){
             var nodes = tree.nodes(root);
             nodes.forEach(function(d){
                 if(d.depth==0) return;
+                /*var level_name = "level"+d.depth;
+                var level_info = settings[level_name].display_attributes;
+                //loadDetailsOpenExtra(d);
+                if(level_info.autoexpanding&&d.collapsed==false){
+                    if(!d.attributes.extra || d.attributes.extra.length == 0)
+                        $(document).trigger("load_details",d);
+                    expandPerson(d);
+                }*/
                 if("expanded" in d)
                     recountSize(d);
-                //loadDetailsOpenExtra(d);
                 if(d.coord) return;
                 d.coord = [countNodeX(d),countNodeY(d)];
-                if("collapsed" in d)
-                    return
+                if("collapsed" in d){
+                    return;
+                }
                 d.collapsed = true;
             });
             checkIntersections(nodes[0]);
@@ -361,6 +368,7 @@ WEBVEPP.Tree = function(params){
                     if(d.source.depth==0)
                         return "";
                     if(d.target.direction){
+                        console.log(d,elbow(d,d.target.direction))
                         return elbow(d, d.target.direction);
                     }
                     else{
@@ -494,6 +502,9 @@ WEBVEPP.Tree = function(params){
                   .attr('x',function(d){
                     if(d.depth==0)
                         return 0;
+                    if(!d.coord){
+                        recountXY(d);
+                    }
                     var x = d.coord[0];
                     return x-(d.width/2);
                   })
@@ -723,6 +734,9 @@ WEBVEPP.Tree = function(params){
             },
             expandPerson = function(person){
                 person.expanded = !person.expanded;
+                if(!person.collapsed){
+                    person.expanded = false;
+                }
                 if(person.expanded && person.expandwidth){
                     person.width = person.expandwidth;
                     person.height = person.expandheight;
@@ -877,8 +891,10 @@ WEBVEPP.Tree = function(params){
             }
         }
 
+        console.log(sourceY,targetY,target_levelY)
+
         return "M" + (sourceY) + "," + sourceX
-        + "H" + ((sourceY + (target_levelY-sourceY)/2))
+        + "H" + ((sourceY + (targetY-sourceY)/2))
         + "V" + targetX
         + "H" + (targetY);
     };
@@ -1052,6 +1068,7 @@ WEBVEPP.Tree = function(params){
         togglePerson:togglePerson,
         recountXY:recountXY,
         findObjectByName: findObjectByName,
+        findObjectById: findObjectById,
         moveToStartPosition: moveToStartPosition,
     };
 };

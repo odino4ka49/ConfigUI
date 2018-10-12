@@ -64,7 +64,7 @@ WEBVEPP.FilterBar = function(){
             }
             else{
                 $(document).trigger("tree_created");
-	    }
+    	    }
             /*$("#filter_"+found_data["filter_name"]).addClass("active");
             $(document).trigger("tree_created");*/
         }

@@ -1,7 +1,9 @@
 WEBVEPP.namespace("WEBVEPP.Tree");
 WEBVEPP.TreeView = function(model,html_elements,tree){
     var model = model,
-        tree = tree;
+        tree = tree,
+        path = null,
+        pathindex = 1;
 
     var zoom = d3.behavior.zoom()
         .scaleExtent([.1,1])
@@ -47,7 +49,20 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
         ancestorTree.setData(ancestorRoot);
         ancestorTree.recountXY();
         ancestorTree.draw(ancestorRoot);
-      };
+    };
+
+    function togglePath(){
+        if(pathindex<path.length){
+            var person = ancestorTree.findObjectById(path[pathindex]);
+            if(pathindex==path.length-1){
+                //console.log("move",person)
+                ancestorTree.moveToStartPosition(person);
+                reloadTree();
+            }
+            ancestorTree.togglePerson(person);
+            pathindex++;
+        }
+    };
 
     function toggleStartName(){
         var path = location.pathname.split('/');
@@ -79,10 +94,19 @@ WEBVEPP.TreeView = function(model,html_elements,tree){
 
     $(document).on("tree_created",function(){
         reloadTree();
-        toggleStartName();
+        path = model.getPath();
+        console.log(path);
+        togglePath();
+        //toggleStartName();
     });
 
     $(document).on("tree_changed",function(){
+        console.log("tree_changed");
+        reloadTree();
+        togglePath();
+    })
+
+    $(document).on("details_loaded",function(){
         reloadTree();
     })
 
